@@ -11,4 +11,7 @@ public class EntityTypeInRole_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
     return new EntityTypeInRole_EditorBuilder_a(editorContext, node).createCell();
   }
+  public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
+    return new EntityTypeInRole_InspectorBuilder_a(editorContext, node).createCell();
+  }
 }

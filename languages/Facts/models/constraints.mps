@@ -51,23 +51,15 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
-        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
-      </concept>
       <concept id="1163200368514" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSetHandler" flags="in" index="3k9gUc" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
-      <concept id="1159285995602" name="jetbrains.mps.lang.constraints.structure.NodeDefaultSearchScope" flags="ng" index="3EP7_v">
-        <child id="1159286114227" name="searchScopeFactory" index="3EP$qY" />
-      </concept>
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213100494875" name="referent" index="1Mr941" />
-        <child id="1213101058038" name="defaultScope" index="1MtirG" />
       </concept>
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
         <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
         <child id="1163203787401" name="referentSetHandler" index="3kmjI7" />
-        <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -216,17 +208,10 @@
   <node concept="1M2fIO" id="74LG_7KYC7i">
     <property role="3GE5qa" value="values" />
     <ref role="1M2myG" to="gq3g:EOKdUeqxa4" resolve="EntityValue" />
-    <node concept="1N5Pfh" id="3e11SfRumfm" role="1Mr941">
-      <ref role="1N5Vy1" to="gq3g:EOKdUeqxa5" resolve="value" />
-      <node concept="1dDu$B" id="3e11SfRzz8E" role="1N6uqs">
-        <ref role="1dDu$A" to="gq3g:EOKdUeqx9Z" resolve="Entity" />
-      </node>
-    </node>
-    <node concept="3EP7_v" id="3e11SfRx$lr" role="1MtirG">
-      <node concept="1dDu$B" id="3e11SfRx_BE" role="3EP$qY">
-        <ref role="1dDu$A" to="gq3g:EOKdUeqx9Z" resolve="Entity" />
-      </node>
-    </node>
+  </node>
+  <node concept="1M2fIO" id="3e11SfR$GQ7">
+    <property role="3GE5qa" value="facts" />
+    <ref role="1M2myG" to="gq3g:T7nEYMX7MG" resolve="Variable" />
   </node>
 </model>
 

@@ -11,7 +11,12 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import Facts.editor.Styles_StyleSheet.UnderlinedStyleClass;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 /*package*/ class IntegerType_EditorBuilder_a extends AbstractEditorBuilder {
@@ -39,8 +44,9 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
     editorCell.setBig(true);
     editorCell.setCellContext(getCellFactory().getCellContext());
     editorCell.addEditorCell(createProperty_26eqe2_a0());
-    editorCell.addEditorCell(createConstant_26eqe2_b0());
+    editorCell.addEditorCell(createComponent_26eqe2_b0());
     editorCell.addEditorCell(createConstant_26eqe2_c0());
+    editorCell.addEditorCell(createConstant_26eqe2_d0());
     return editorCell;
   }
   private EditorCell createProperty_26eqe2_a0() {
@@ -50,6 +56,11 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_name");
+    Style style = new StyleImpl();
+    if (_StyleParameter_QueryFunction_26eqe2_a0a0()) {
+      new UnderlinedStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    }
+    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
@@ -58,15 +69,22 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
     } else
     return editorCell;
   }
-  private EditorCell createConstant_26eqe2_b0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
-    editorCell.setCellId("Constant_26eqe2_b0");
-    editorCell.setDefaultText("");
+  private boolean _StyleParameter_QueryFunction_26eqe2_a0a0() {
+    return (SPropertyOperations.getBoolean(getNode(), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL, 0x33810783f7b1aff2L, "unique")) == true);
+  }
+  private EditorCell createComponent_26eqe2_b0() {
+    EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "Facts.editor.Mandatory");
     return editorCell;
   }
   private EditorCell createConstant_26eqe2_c0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Getal");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
     editorCell.setCellId("Constant_26eqe2_c0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_26eqe2_d0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Getal");
+    editorCell.setCellId("Constant_26eqe2_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }

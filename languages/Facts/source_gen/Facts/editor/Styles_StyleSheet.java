@@ -10,7 +10,7 @@ import jetbrains.mps.editor.runtime.style.AbstractStyleClass;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.MPSFonts;
 
-public class Bold_StyleSheet {
+public class Styles_StyleSheet {
   /**
    * 
    * @deprecated Since MPS 3.5 use generated StyleClass
@@ -19,7 +19,17 @@ public class Bold_StyleSheet {
   public static void apply_Bold(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Bold_StyleSheet.BoldStyleClass(editorContext, node).apply(style, editorCell);
+    new Styles_StyleSheet.BoldStyleClass(editorContext, node).apply(style, editorCell);
+  }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
+  public static void apply_Underlined(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new Styles_StyleSheet.UnderlinedStyleClass(editorContext, node).apply(style, editorCell);
   }
 
   public static class BoldStyleClass extends AbstractStyleClass {
@@ -30,6 +40,17 @@ public class Bold_StyleSheet {
     @Override
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
+    }
+
+  }
+  public static class UnderlinedStyleClass extends AbstractStyleClass {
+    public UnderlinedStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.UNDERLINED, true);
     }
 
   }

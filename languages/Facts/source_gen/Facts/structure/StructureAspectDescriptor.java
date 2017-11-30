@@ -179,8 +179,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592108053");
-    b.aggregate("entities", 0xab4c0de8e6a1287L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1380L).optional(true).ordered(true).multiple(true).origin("771453498291786375").done();
-    b.aggregate("tables", 0xe475eafb2f49216L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f67893L).optional(true).ordered(true).multiple(true).origin("1028895148592108054").done();
+    b.aggregate("entityTables", 0xab4c0de8e6a1287L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1380L).optional(true).ordered(true).multiple(true).origin("771453498291786375").done();
+    b.aggregate("factTables", 0xe475eafb2f49216L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f67893L).optional(true).ordered(true).multiple(true).origin("1028895148592108054").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFactModel() {
@@ -243,6 +243,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, true, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592067374");
+    b.prop("mandatory", 0x33810783f7b1afeeL, "3711255831307726830");
+    b.prop("unique", 0x33810783f7b1aff2L, "3711255831307726834");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForStringType() {

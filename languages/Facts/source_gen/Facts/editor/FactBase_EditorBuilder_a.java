@@ -105,9 +105,9 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createRefNodeList_inh6iv_a3a() {
-    AbstractCellListHandler handler = new FactBase_EditorBuilder_a.entitiesListHandler_inh6iv_a3a(myNode, "entities", getEditorContext());
+    AbstractCellListHandler handler = new FactBase_EditorBuilder_a.entityTablesListHandler_inh6iv_a3a(myNode, "entityTables", getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_entities");
+    editorCell.setCellId("refNodeList_entityTables");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
@@ -115,11 +115,11 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class entitiesListHandler_inh6iv_a3a extends RefNodeListHandler {
+  private static class entityTablesListHandler_inh6iv_a3a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public entitiesListHandler_inh6iv_a3a(SNode ownerNode, String childRole, EditorContext context) {
+    public entityTablesListHandler_inh6iv_a3a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
       myNode = ownerNode;
     }
@@ -140,7 +140,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(entitiesListHandler_inh6iv_a3a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, 0xab4c0de8e6a1287L, "entities")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(entityTablesListHandler_inh6iv_a3a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, 0xab4c0de8e6a1287L, "entityTables")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -159,7 +159,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
           elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
         }
         if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.setSubstituteInfo(new SChildSubstituteInfo(elementCell, getNode(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, 0xab4c0de8e6a1287L, "entities"), elementNode));
+          elementCell.setSubstituteInfo(new SChildSubstituteInfo(elementCell, getNode(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, 0xab4c0de8e6a1287L, "entityTables"), elementNode));
         }
       }
     }
@@ -192,9 +192,9 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createRefNodeList_inh6iv_c4a() {
-    AbstractCellListHandler handler = new FactBase_EditorBuilder_a.tablesListHandler_inh6iv_c4a(myNode, "tables", getEditorContext());
+    AbstractCellListHandler handler = new FactBase_EditorBuilder_a.factTablesListHandler_inh6iv_c4a(myNode, "factTables", getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_tables");
+    editorCell.setCellId("refNodeList_factTables");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
@@ -203,11 +203,11 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class tablesListHandler_inh6iv_c4a extends RefNodeListHandler {
+  private static class factTablesListHandler_inh6iv_c4a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public tablesListHandler_inh6iv_c4a(SNode ownerNode, String childRole, EditorContext context) {
+    public factTablesListHandler_inh6iv_c4a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
       myNode = ownerNode;
     }
@@ -228,7 +228,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(tablesListHandler_inh6iv_c4a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, 0xe475eafb2f49216L, "tables")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(factTablesListHandler_inh6iv_c4a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, 0xe475eafb2f49216L, "factTables")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -247,7 +247,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
           elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
         }
         if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.setSubstituteInfo(new SChildSubstituteInfo(elementCell, getNode(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, 0xe475eafb2f49216L, "tables"), elementNode));
+          elementCell.setSubstituteInfo(new SChildSubstituteInfo(elementCell, getNode(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, 0xe475eafb2f49216L, "factTables"), elementNode));
         }
       }
     }

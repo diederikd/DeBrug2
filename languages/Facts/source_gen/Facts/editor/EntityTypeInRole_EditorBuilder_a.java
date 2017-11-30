@@ -11,14 +11,17 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import Facts.editor.Styles_StyleSheet.UnderlinedStyleClass;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.util.Computable;
 import jetbrains.mps.editor.runtime.impl.CellUtil;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import Facts.editor.Bold_StyleSheet.BoldStyleClass;
+import Facts.editor.Styles_StyleSheet.BoldStyleClass;
 
 /*package*/ class EntityTypeInRole_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -45,8 +48,9 @@ import Facts.editor.Bold_StyleSheet.BoldStyleClass;
     editorCell.setBig(true);
     editorCell.setCellContext(getCellFactory().getCellContext());
     editorCell.addEditorCell(createProperty_p05uze_a0());
-    editorCell.addEditorCell(createConstant_p05uze_b0());
-    editorCell.addEditorCell(createRefCell_p05uze_c0());
+    editorCell.addEditorCell(createComponent_p05uze_b0());
+    editorCell.addEditorCell(createConstant_p05uze_c0());
+    editorCell.addEditorCell(createRefCell_p05uze_d0());
     return editorCell;
   }
   private EditorCell createProperty_p05uze_a0() {
@@ -56,6 +60,11 @@ import Facts.editor.Bold_StyleSheet.BoldStyleClass;
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_name");
+    Style style = new StyleImpl();
+    if (_StyleParameter_QueryFunction_p05uze_a0a0()) {
+      new UnderlinedStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    }
+    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
@@ -64,20 +73,27 @@ import Facts.editor.Bold_StyleSheet.BoldStyleClass;
     } else
     return editorCell;
   }
-  private EditorCell createConstant_p05uze_b0() {
+  private boolean _StyleParameter_QueryFunction_p05uze_a0a0() {
+    return (SPropertyOperations.getBoolean(getNode(), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL, 0x33810783f7b1aff2L, "unique")) == true);
+  }
+  private EditorCell createComponent_p05uze_b0() {
+    EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "Facts.editor.Mandatory");
+    return editorCell;
+  }
+  private EditorCell createConstant_p05uze_c0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
-    editorCell.setCellId("Constant_p05uze_b0");
+    editorCell.setCellId("Constant_p05uze_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_p05uze_c0() {
+  private EditorCell createRefCell_p05uze_d0() {
     CellProviderWithRole provider = new RefCellCellProvider(myNode, getEditorContext()) {
 
       @Override
       protected EditorCell createRefCell(EditorContext context, final SNode effectiveNode, SNode node) {
         EditorCell cell = getUpdateSession().updateReferencedNodeCell(new Computable<EditorCell>() {
           public EditorCell compute() {
-            return new EntityTypeInRole_EditorBuilder_a.Inline_Builder_p05uze_a2a(getEditorContext(), myNode, effectiveNode).createCell();
+            return new EntityTypeInRole_EditorBuilder_a.Inline_Builder_p05uze_a3a(getEditorContext(), myNode, effectiveNode).createCell();
           }
         }, effectiveNode, "entityType");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
@@ -102,19 +118,19 @@ import Facts.editor.Bold_StyleSheet.BoldStyleClass;
     } else
     return editorCell;
   }
-  /*package*/ static class Inline_Builder_p05uze_a2a extends AbstractEditorBuilder {
+  /*package*/ static class Inline_Builder_p05uze_a3a extends AbstractEditorBuilder {
     @NotNull
     private SNode myNode;
     private SNode myReferencingNode;
 
-    /*package*/ Inline_Builder_p05uze_a2a(@NotNull EditorContext context, SNode referencingNode, @NotNull SNode node) {
+    /*package*/ Inline_Builder_p05uze_a3a(@NotNull EditorContext context, SNode referencingNode, @NotNull SNode node) {
       super(context);
       myReferencingNode = referencingNode;
       myNode = node;
     }
 
     /*package*/ EditorCell createCell() {
-      return createProperty_p05uze_a0c0();
+      return createProperty_p05uze_a0d0();
     }
 
     @NotNull
@@ -123,7 +139,7 @@ import Facts.editor.Bold_StyleSheet.BoldStyleClass;
       return myNode;
     }
 
-    private EditorCell createProperty_p05uze_a0c0() {
+    private EditorCell createProperty_p05uze_a0d0() {
       CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
