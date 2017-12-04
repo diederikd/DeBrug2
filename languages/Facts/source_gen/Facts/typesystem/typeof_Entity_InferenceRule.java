@@ -30,7 +30,7 @@ public class typeof_Entity_InferenceRule extends AbstractInferenceRule_Runtime i
     }).isNotEmpty()) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportInfo(entity, "Name of entity should be unique", "r:b10ef954-55f4-4774-8fb6-82453f7c9940(Facts.typesystem)", "771453498292279996", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(entity, "Name of entity should be unique", "r:b10ef954-55f4-4774-8fb6-82453f7c9940(Facts.typesystem)", "3711255831309095538", null, errorTarget);
       }
     }
   }

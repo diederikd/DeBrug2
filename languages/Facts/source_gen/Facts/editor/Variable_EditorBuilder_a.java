@@ -81,6 +81,8 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       if (editorCell.getRole() == null) {
         editorCell.setRole("value");
       }
+      ActionMap_Variable.setCellActions(editorCell, getNode(), getEditorContext());
+      editorCell.addKeyMap(new KeyMap_Variable());
     }
     @Override
     protected EditorCell createEmptyCell() {
@@ -97,7 +99,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       }
     }
     protected String getNoTargetText() {
-      return "<no value>";
+      return "<niet verplichte variabele>";
     }
   }
 }

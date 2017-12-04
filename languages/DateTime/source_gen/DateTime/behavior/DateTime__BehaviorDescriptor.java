@@ -36,10 +36,10 @@ public final class DateTime__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static LocalDateTime geefDatumTijd_id5riiL_BUVyA(@NotNull SNode __thisNode__) {
-    return LocalDateTime.of(Date__BehaviorDescriptor.geefdatum_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum"))), Time__BehaviorDescriptor.geefTijd_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd"))));
+    return LocalDateTime.of(Date__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum"))), Time__BehaviorDescriptor.geefTijd_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd"))));
   }
   /*package*/ static void zetDatumTijd_id5riiL_BUXYm(@NotNull SNode __thisNode__, LocalDateTime ldt) {
-    Date__BehaviorDescriptor.zetdatum_id5riiL_BUmpQ.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum")), ldt.toLocalDate());
+    Date__BehaviorDescriptor.setDate_id5riiL_BUmpQ.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum")), ldt.toLocalDate());
     Time__BehaviorDescriptor.zetTijd_id5riiL_BUAB9.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd")), ldt.toLocalTime());
   }
   /*package*/ static String geefDatumTijdString_id5vursKRvZal(@NotNull SNode __thisNode__) {

@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class FacttypeReference_Editor extends DefaultNodeEditor {
+public class FactTypeWordVerb_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new FacttypeReference_EditorBuilder_a(editorContext, node).createCell();
+    return new FactTypeWordVerb_EditorBuilder_a(editorContext, node).createCell();
   }
 }

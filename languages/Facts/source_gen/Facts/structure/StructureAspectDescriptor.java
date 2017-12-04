@@ -24,12 +24,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptFactBase = createDescriptorForFactBase();
   /*package*/ final ConceptDescriptor myConceptFactModel = createDescriptorForFactModel();
   /*package*/ final ConceptDescriptor myConceptFactTable = createDescriptorForFactTable();
-  /*package*/ final ConceptDescriptor myConceptFacttype = createDescriptorForFacttype();
-  /*package*/ final ConceptDescriptor myConceptFacttypeReference = createDescriptorForFacttypeReference();
+  /*package*/ final ConceptDescriptor myConceptFactType = createDescriptorForFactType();
+  /*package*/ final ConceptDescriptor myConceptFactTypeReference = createDescriptorForFactTypeReference();
+  /*package*/ final ConceptDescriptor myConceptFactTypeWord = createDescriptorForFactTypeWord();
+  /*package*/ final ConceptDescriptor myConceptFactTypeWordRole = createDescriptorForFactTypeWordRole();
+  /*package*/ final ConceptDescriptor myConceptFactTypeWordVerb = createDescriptorForFactTypeWordVerb();
+  /*package*/ final ConceptDescriptor myConceptFactTypeWording = createDescriptorForFactTypeWording();
+  /*package*/ final ConceptDescriptor myConceptFactWording = createDescriptorForFactWording();
   /*package*/ final ConceptDescriptor myConceptIdentifier = createDescriptorForIdentifier();
   /*package*/ final ConceptDescriptor myConceptIntegerType = createDescriptorForIntegerType();
   /*package*/ final ConceptDescriptor myConceptIntegerValue = createDescriptorForIntegerValue();
   /*package*/ final ConceptDescriptor myConceptRole = createDescriptorForRole();
+  /*package*/ final ConceptDescriptor myConceptRoleReference = createDescriptorForRoleReference();
   /*package*/ final ConceptDescriptor myConceptStringType = createDescriptorForStringType();
   /*package*/ final ConceptDescriptor myConceptStringValue = createDescriptorForStringValue();
   /*package*/ final ConceptDescriptor myConceptValue = createDescriptorForValue();
@@ -43,7 +49,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptConcept, myConceptDateType, myConceptDateValue, myConceptEntity, myConceptEntityTable, myConceptEntityType, myConceptEntityTypeInRole, myConceptEntityValue, myConceptFact, myConceptFactBase, myConceptFactModel, myConceptFactTable, myConceptFacttype, myConceptFacttypeReference, myConceptIdentifier, myConceptIntegerType, myConceptIntegerValue, myConceptRole, myConceptStringType, myConceptStringValue, myConceptValue, myConceptValueType, myConceptVariable);
+    return Arrays.asList(myConceptConcept, myConceptDateType, myConceptDateValue, myConceptEntity, myConceptEntityTable, myConceptEntityType, myConceptEntityTypeInRole, myConceptEntityValue, myConceptFact, myConceptFactBase, myConceptFactModel, myConceptFactTable, myConceptFactType, myConceptFactTypeReference, myConceptFactTypeWord, myConceptFactTypeWordRole, myConceptFactTypeWordVerb, myConceptFactTypeWording, myConceptFactWording, myConceptIdentifier, myConceptIntegerType, myConceptIntegerValue, myConceptRole, myConceptRoleReference, myConceptStringType, myConceptStringValue, myConceptValue, myConceptValueType, myConceptVariable);
   }
 
   @Override
@@ -74,10 +80,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFactModel;
       case LanguageConceptSwitch.FactTable:
         return myConceptFactTable;
-      case LanguageConceptSwitch.Facttype:
-        return myConceptFacttype;
-      case LanguageConceptSwitch.FacttypeReference:
-        return myConceptFacttypeReference;
+      case LanguageConceptSwitch.FactType:
+        return myConceptFactType;
+      case LanguageConceptSwitch.FactTypeReference:
+        return myConceptFactTypeReference;
+      case LanguageConceptSwitch.FactTypeWord:
+        return myConceptFactTypeWord;
+      case LanguageConceptSwitch.FactTypeWordRole:
+        return myConceptFactTypeWordRole;
+      case LanguageConceptSwitch.FactTypeWordVerb:
+        return myConceptFactTypeWordVerb;
+      case LanguageConceptSwitch.FactTypeWording:
+        return myConceptFactTypeWording;
+      case LanguageConceptSwitch.FactWording:
+        return myConceptFactWording;
       case LanguageConceptSwitch.Identifier:
         return myConceptIdentifier;
       case LanguageConceptSwitch.IntegerType:
@@ -86,6 +102,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptIntegerValue;
       case LanguageConceptSwitch.Role:
         return myConceptRole;
+      case LanguageConceptSwitch.RoleReference:
+        return myConceptRoleReference;
       case LanguageConceptSwitch.StringType:
         return myConceptStringType;
       case LanguageConceptSwitch.StringValue:
@@ -122,6 +140,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "DateValue", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30e53bcL);
     b.class_(false, false, false);
     b.super_("Facts.structure.Value", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d415aL);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148593796028");
     b.aggregate("value", 0xe475eafb30f0aecL).target(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L).optional(false).ordered(true).multiple(false).origin("1028895148593842924").done();
     return b.create();
@@ -147,6 +166,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/503348701156726176");
+    b.prop("article", 0x33810783f7f97de4L, "3711255831312432612");
     b.aggregate("identifiedBy", 0x7131b251f0eafcdcL).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0eafc6bL).optional(true).ordered(true).multiple(false).origin("8156496465148706012").done();
     return b.create();
   }
@@ -169,6 +189,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForFact() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "Fact", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592102567");
     b.associate("facttype", 0xe475eafb2f47ca8L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL).optional(false).origin("1028895148592102568").done();
     b.aggregate("variabeles", 0xe475eafb2f47cafL).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL).optional(true).ordered(true).multiple(true).origin("1028895148592102575").done();
@@ -198,29 +219,70 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592232595");
     b.associate("facttype", 0xe475eafb2f67894L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL).optional(false).origin("1028895148592232596").done();
     b.aggregate("facts", 0xe475eafb2f67896L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L).optional(true).ordered(true).multiple(true).origin("1028895148592232598").done();
+    b.aggregate("wordings", 0x33810783f82693a8L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f82657e7L).optional(true).ordered(true).multiple(true).origin("3711255831315387304").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForFacttype() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "Facttype", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL);
+  private static ConceptDescriptor createDescriptorForFactType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "FactType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL);
     b.class_(false, false, false);
     b.super_("Facts.structure.Concept", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32cL);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592067373");
     b.aggregate("roles", 0xe475eafb2f3f367L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL).optional(true).ordered(true).multiple(true).origin("1028895148592067431").done();
+    b.aggregate("wordings", 0x33810783f7eaea9cL).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea37L).optional(true).ordered(true).multiple(true).origin("3711255831311477404").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForFacttypeReference() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "FacttypeReference", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0ec0054L);
+  private static ConceptDescriptor createDescriptorForFactTypeReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "FactTypeReference", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0ec0054L);
     b.class_(false, false, false);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/8156496465148772436");
     b.associate("facttype", 0x7131b251f0ec0055L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL).optional(false).origin("8156496465148772437").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForFactTypeWord() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "FactTypeWord", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea38L);
+    b.class_(false, true, false);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/3711255831311477304");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForFactTypeWordRole() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "FactTypeWordRole", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L);
+    b.class_(false, false, false);
+    b.super_("Facts.structure.FactTypeWord", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea38L);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/3711255831311477305");
+    b.associate("roleOfWord", 0x33810783f7eaea3aL).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL).optional(false).origin("3711255831311477306").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForFactTypeWordVerb() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "FactTypeWordVerb", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7f6ffb4L);
+    b.class_(false, false, false);
+    b.super_("Facts.structure.FactTypeWord", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea38L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/3711255831312269236");
+    b.alias("Text");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForFactTypeWording() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "FactTypeWording", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea37L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/3711255831311477303");
+    b.aggregate("words", 0x33810783f7eca685L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea38L).optional(false).ordered(true).multiple(true).origin("3711255831311591045").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForFactWording() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "FactWording", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f82657e7L);
+    b.class_(false, false, false);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/3711255831315372007");
+    b.associate("factTypeWording", 0x33810783f82657e8L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea37L).optional(false).origin("3711255831315372008").done();
+    b.associate("fact", 0x33810783f82657eaL).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L).optional(false).origin("3711255831315372010").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIdentifier() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "Identifier", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0eafc6bL);
     b.class_(false, false, false);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/8156496465148705899");
-    b.aggregate("identifiers", 0x7131b251f0ec0052L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0ec0054L).optional(false).ordered(true).multiple(true).origin("8156496465148772434").done();
+    b.aggregate("identifiers", 0x7131b251f0ec0052L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7e44d86L).optional(false).ordered(true).multiple(true).origin("8156496465148772434").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIntegerType() {
@@ -245,6 +307,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592067374");
     b.prop("mandatory", 0x33810783f7b1afeeL, "3711255831307726830");
     b.prop("unique", 0x33810783f7b1aff2L, "3711255831307726834");
+    b.prop("article", 0x33810783f7fb3e6fL, "3711255831312547439");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRoleReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "RoleReference", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7e44d86L);
+    b.class_(false, false, false);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/3711255831311043974");
+    b.associate("role", 0x33810783f7e44d87L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL).optional(false).origin("3711255831311043975").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForStringType() {

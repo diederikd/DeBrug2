@@ -14,21 +14,27 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myFact__BehaviorDescriptor = new Fact__BehaviorDescriptor();
   private final BHDescriptor myVariable__BehaviorDescriptor = new Variable__BehaviorDescriptor();
+  private final BHDescriptor myFactTable__BehaviorDescriptor = new FactTable__BehaviorDescriptor();
+  private final BHDescriptor myFactTypeWording__BehaviorDescriptor = new FactTypeWording__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
   }
 
   @Nullable
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
-    SAbstractConcept cncpt_a0f = concept;
-    switch (index_846f5o_a0f.index(cncpt_a0f)) {
+    SAbstractConcept cncpt_a0h = concept;
+    switch (index_846f5o_a0h.index(cncpt_a0h)) {
       case 0:
         return myFact__BehaviorDescriptor;
       case 1:
+        return myFactTable__BehaviorDescriptor;
+      case 2:
+        return myFactTypeWording__BehaviorDescriptor;
+      case 3:
         return myVariable__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex index_846f5o_a0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL)).seal();
+  private static final ConceptSwitchIndex index_846f5o_a0h = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f67893L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea37L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL)).seal();
 }

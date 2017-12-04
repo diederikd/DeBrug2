@@ -15,12 +15,12 @@ import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuPart;
 
-public class FacttypeReference_SubstituteMenu extends SubstituteMenuBase {
+public class FactTypeWordRole_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new FacttypeReference_SubstituteMenu.SMP_ReferenceScope_rp5gsp_a(), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0ec0054L, "Facts.structure.FacttypeReference")));
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new FactTypeWordRole_SubstituteMenu.SMP_ReferenceScope_q3t2wp_a(), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, "Facts.structure.FactTypeWordRole")));
     return result;
   }
 
@@ -28,7 +28,7 @@ public class FacttypeReference_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for FacttypeReference. Generated from implicit smart reference attribute.", new SNodePointer("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)", "8156496465148772436")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for FactTypeWordRole. Generated from implicit smart reference attribute.", new SNodePointer("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)", "3711255831311477305")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -37,10 +37,10 @@ public class FacttypeReference_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_rp5gsp_a extends ReferenceScopeSubstituteMenuPart {
+  public static class SMP_ReferenceScope_q3t2wp_a extends ReferenceScopeSubstituteMenuPart {
 
-    public SMP_ReferenceScope_rp5gsp_a() {
-      super(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0ec0054L, "Facts.structure.FacttypeReference"), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0ec0054L, 0x7131b251f0ec0055L, "facttype"));
+    public SMP_ReferenceScope_q3t2wp_a() {
+      super(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, "Facts.structure.FactTypeWordRole"), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord"));
     }
     @NotNull
     @Override

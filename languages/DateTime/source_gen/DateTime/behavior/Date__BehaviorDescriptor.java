@@ -18,6 +18,7 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import java.time.format.DateTimeFormatter;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -26,24 +27,26 @@ public final class Date__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, "DateTime.structure.Date");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<LocalDate> geefdatum_id5riiL_BUg0c = new SMethodBuilder<LocalDate>(new SJavaCompoundTypeImpl(LocalDate.class)).name("geefdatum").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUg0c").registry(REGISTRY).build();
-  public static final SMethod<String> geefDatumString_id5vursKRvRmQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("geefDatumString").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5vursKRvRmQ").registry(REGISTRY).build();
-  public static final SMethod<Void> zetdatum_id5riiL_BUmpQ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("zetdatum").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUmpQ").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(LocalDate.class, ""));
+  public static final SMethod<LocalDate> getdate_id5riiL_BUg0c = new SMethodBuilder<LocalDate>(new SJavaCompoundTypeImpl(LocalDate.class)).name("getdate").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUg0c").registry(REGISTRY).build();
+  public static final SMethod<String> getDateString_id5vursKRvRmQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDateString").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5vursKRvRmQ").registry(REGISTRY).build();
+  public static final SMethod<Void> setDate_id5riiL_BUmpQ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setDate").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUmpQ").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(LocalDate.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(geefdatum_id5riiL_BUg0c, geefDatumString_id5vursKRvRmQ, zetdatum_id5riiL_BUmpQ);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getdate_id5riiL_BUg0c, getDateString_id5vursKRvRmQ, setDate_id5riiL_BUmpQ);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static LocalDate geefdatum_id5riiL_BUg0c(@NotNull SNode __thisNode__) {
+  /*package*/ static LocalDate getdate_id5riiL_BUg0c(@NotNull SNode __thisNode__) {
     LocalDate ld;
     ld = LocalDate.of(SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")), SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand")), SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag")));
     return ld;
   }
-  /*package*/ static String geefDatumString_id5vursKRvRmQ(@NotNull SNode __thisNode__) {
-    return Date__BehaviorDescriptor.geefdatum_id5riiL_BUg0c.invoke(__thisNode__).toString();
+  /*package*/ static String getDateString_id5vursKRvRmQ(@NotNull SNode __thisNode__) {
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-uuuu");
+    String formattedDate = Date__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(__thisNode__).format(formatter);
+    return formattedDate;
   }
-  /*package*/ static void zetdatum_id5riiL_BUmpQ(@NotNull SNode __thisNode__, LocalDate ld) {
+  /*package*/ static void setDate_id5riiL_BUmpQ(@NotNull SNode __thisNode__, LocalDate ld) {
     SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar"), "" + (ld.getYear()));
     SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand"), "" + (ld.getMonthValue()));
     SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag"), "" + (ld.getDayOfMonth()));
@@ -66,11 +69,11 @@ public final class Date__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((LocalDate) geefdatum_id5riiL_BUg0c(node));
+        return (T) ((LocalDate) getdate_id5riiL_BUg0c(node));
       case 1:
-        return (T) ((String) geefDatumString_id5vursKRvRmQ(node));
+        return (T) ((String) getDateString_id5vursKRvRmQ(node));
       case 2:
-        zetdatum_id5riiL_BUmpQ(node, (LocalDate) parameters[0]);
+        setDate_id5riiL_BUmpQ(node, (LocalDate) parameters[0]);
         return null;
       default:
         throw new BHMethodNotFoundException(this, method);

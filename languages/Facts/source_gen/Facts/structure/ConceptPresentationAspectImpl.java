@@ -21,12 +21,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FactBase;
   private ConceptPresentation props_FactModel;
   private ConceptPresentation props_FactTable;
-  private ConceptPresentation props_Facttype;
-  private ConceptPresentation props_FacttypeReference;
+  private ConceptPresentation props_FactType;
+  private ConceptPresentation props_FactTypeReference;
+  private ConceptPresentation props_FactTypeWord;
+  private ConceptPresentation props_FactTypeWordRole;
+  private ConceptPresentation props_FactTypeWordVerb;
+  private ConceptPresentation props_FactTypeWording;
+  private ConceptPresentation props_FactWording;
   private ConceptPresentation props_Identifier;
   private ConceptPresentation props_IntegerType;
   private ConceptPresentation props_IntegerValue;
   private ConceptPresentation props_Role;
+  private ConceptPresentation props_RoleReference;
   private ConceptPresentation props_StringType;
   private ConceptPresentation props_StringValue;
   private ConceptPresentation props_Value;
@@ -55,7 +61,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.DateValue:
         if (props_DateValue == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("DateValue");
+          cpb.presentationByName();
           props_DateValue = cpb.create();
         }
         return props_DateValue;
@@ -97,7 +103,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Fact:
         if (props_Fact == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype", "", "");
+          cpb.presentationByName();
           props_Fact = cpb.create();
         }
         return props_Fact;
@@ -122,20 +128,54 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FactTable = cpb.create();
         }
         return props_FactTable;
-      case LanguageConceptSwitch.Facttype:
-        if (props_Facttype == null) {
+      case LanguageConceptSwitch.FactType:
+        if (props_FactType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_Facttype = cpb.create();
+          props_FactType = cpb.create();
         }
-        return props_Facttype;
-      case LanguageConceptSwitch.FacttypeReference:
-        if (props_FacttypeReference == null) {
+        return props_FactType;
+      case LanguageConceptSwitch.FactTypeReference:
+        if (props_FactTypeReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0ec0054L, 0x7131b251f0ec0055L, "facttype", "", "");
-          props_FacttypeReference = cpb.create();
+          props_FactTypeReference = cpb.create();
         }
-        return props_FacttypeReference;
+        return props_FactTypeReference;
+      case LanguageConceptSwitch.FactTypeWord:
+        if (props_FactTypeWord == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_FactTypeWord = cpb.create();
+        }
+        return props_FactTypeWord;
+      case LanguageConceptSwitch.FactTypeWordRole:
+        if (props_FactTypeWordRole == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord", "", "");
+          props_FactTypeWordRole = cpb.create();
+        }
+        return props_FactTypeWordRole;
+      case LanguageConceptSwitch.FactTypeWordVerb:
+        if (props_FactTypeWordVerb == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_FactTypeWordVerb = cpb.create();
+        }
+        return props_FactTypeWordVerb;
+      case LanguageConceptSwitch.FactTypeWording:
+        if (props_FactTypeWording == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_FactTypeWording = cpb.create();
+        }
+        return props_FactTypeWording;
+      case LanguageConceptSwitch.FactWording:
+        if (props_FactWording == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("FactWording");
+          props_FactWording = cpb.create();
+        }
+        return props_FactWording;
       case LanguageConceptSwitch.Identifier:
         if (props_Identifier == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -163,6 +203,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Role = cpb.create();
         }
         return props_Role;
+      case LanguageConceptSwitch.RoleReference:
+        if (props_RoleReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7e44d86L, 0x33810783f7e44d87L, "role", "", "");
+          props_RoleReference = cpb.create();
+        }
+        return props_RoleReference;
       case LanguageConceptSwitch.StringType:
         if (props_StringType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

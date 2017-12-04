@@ -89,7 +89,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
     return editorCell;
   }
   private EditorCell createConstant_vp3880_a0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "tabel met entiteiten van");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "entiteiten van");
     editorCell.setCellId("Constant_vp3880_a0");
     editorCell.setDefaultText("");
     return editorCell;
