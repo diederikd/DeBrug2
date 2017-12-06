@@ -100,6 +100,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "entiteiten");
     editorCell.setCellId("Constant_inh6iv_d0");
     Style style = new StyleImpl();
+    new LargeStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
@@ -109,6 +110,9 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
   private EditorCell createConstant_inh6iv_e0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
     editorCell.setCellId("Constant_inh6iv_e0");
+    Style style = new StyleImpl();
+    new LargeStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -208,6 +212,9 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
   private EditorCell createConstant_inh6iv_a7a() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "feiten");
     editorCell.setCellId("Constant_inh6iv_a7a");
+    Style style = new StyleImpl();
+    new LargeStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -215,6 +222,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
     editorCell.setCellId("Constant_inh6iv_b7a");
     Style style = new StyleImpl();
+    new LargeStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);

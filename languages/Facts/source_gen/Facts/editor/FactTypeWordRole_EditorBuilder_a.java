@@ -9,14 +9,25 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.util.EqualUtil;
+import jetbrains.mps.openapi.editor.cells.CellActionType;
+import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.util.Computable;
 import jetbrains.mps.editor.runtime.impl.CellUtil;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
 import Facts.editor.Styles_StyleSheet.WordingRoleStyleClass;
 
 /*package*/ class FactTypeWordRole_EditorBuilder_a extends AbstractEditorBuilder {
@@ -43,79 +54,33 @@ import Facts.editor.Styles_StyleSheet.WordingRoleStyleClass;
     editorCell.setCellId("Collection_pgz5pf_a");
     editorCell.setBig(true);
     editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createRefCell_pgz5pf_a0());
+    editorCell.addEditorCell(createReadOnlyModelAccessor_pgz5pf_a0());
     editorCell.addEditorCell(createRefCell_pgz5pf_b0());
     return editorCell;
   }
-  private EditorCell createRefCell_pgz5pf_a0() {
-    CellProviderWithRole provider = new RefCellCellProvider(myNode, getEditorContext()) {
-
-      @Override
-      protected EditorCell createRefCell(EditorContext context, final SNode effectiveNode, SNode node) {
-        EditorCell cell = getUpdateSession().updateReferencedNodeCell(new Computable<EditorCell>() {
-          public EditorCell compute() {
-            return new FactTypeWordRole_EditorBuilder_a.Inline_Builder_pgz5pf_a0a(getEditorContext(), myNode, effectiveNode).createCell();
-          }
-        }, effectiveNode, "roleOfWord");
-        CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
-        setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_notnull_smartReference(cell);
-        return cell;
+  private EditorCell createReadOnlyModelAccessor_pgz5pf_a0() {
+    EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
+      public String getText() {
+        String article = SPropertyOperations.getString_def(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord")), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL, 0x33810783f7fb3e6fL, "article"), "de");
+        SNode factTypeWording = (SNode) SNodeOperations.getParent(myNode);
+        if (ListSequence.fromList(SLinkOperations.getChildren(factTypeWording, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea37L, 0x33810783f7eca685L, "words"))).first() == myNode) {
+          article = article.substring(0, 1).toUpperCase() + article.substring(1);
+        }
+        return article;
       }
-    };
-    provider.setRole("roleOfWord");
-    provider.setNoTargetText("<no roleOfWord>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(getEditorContext());
-    if (editorCell.getRole() == null) {
-      editorCell.setReferenceCell(true);
-      editorCell.setRole("roleOfWord");
-    }
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
+      public void setText(String s) {
+      }
+      public boolean isValidText(String s) {
+        return EqualUtil.equals(s, getText());
+      }
+    }, myNode);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_pgz5pf_a0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.EDITABLE, false);
+    editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  /*package*/ static class Inline_Builder_pgz5pf_a0a extends AbstractEditorBuilder {
-    @NotNull
-    private SNode myNode;
-    private SNode myReferencingNode;
-
-    /*package*/ Inline_Builder_pgz5pf_a0a(@NotNull EditorContext context, SNode referencingNode, @NotNull SNode node) {
-      super(context);
-      myReferencingNode = referencingNode;
-      myNode = node;
-    }
-
-    /*package*/ EditorCell createCell() {
-      return createProperty_pgz5pf_a0a0();
-    }
-
-    @NotNull
-    @Override
-    public SNode getNode() {
-      return myNode;
-    }
-
-    private EditorCell createProperty_pgz5pf_a0a0() {
-      CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
-      provider.setRole("article");
-      provider.setNoTargetText("<no article>");
-      provider.setReadOnly(true);
-      EditorCell editorCell;
-      editorCell = provider.createEditorCell(getEditorContext());
-      editorCell.setCellId("property_article");
-      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-      SNode attributeConcept = provider.getRoleAttribute();
-      if (attributeConcept != null) {
-        EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
-        return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-      } else
-      return editorCell;
-    }
   }
   private EditorCell createRefCell_pgz5pf_b0() {
     CellProviderWithRole provider = new RefCellCellProvider(myNode, getEditorContext()) {

@@ -36,12 +36,12 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_tsdpi8_a();
+    return createCollection_tsdpi8_a_0();
   }
 
-  private EditorCell createCollection_tsdpi8_a() {
+  private EditorCell createCollection_tsdpi8_a_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-    editorCell.setCellId("Collection_tsdpi8_a");
+    editorCell.setCellId("Collection_tsdpi8_a_0");
     editorCell.setBig(true);
     editorCell.setCellContext(getCellFactory().getCellContext());
     editorCell.addEditorCell(createConstant_tsdpi8_a0());
@@ -53,7 +53,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
     return editorCell;
   }
   private EditorCell createConstant_tsdpi8_a0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "zinssjabloon");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "zinssjabloon[");
     editorCell.setCellId("Constant_tsdpi8_a0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -124,7 +124,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
       provider.setReadOnly(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(getEditorContext());
-      editorCell.setCellId("property_name");
+      editorCell.setCellId("property_name_2");
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {
@@ -209,7 +209,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
       provider.setReadOnly(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(getEditorContext());
-      editorCell.setCellId("property_name_1");
+      editorCell.setCellId("property_name_3");
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {

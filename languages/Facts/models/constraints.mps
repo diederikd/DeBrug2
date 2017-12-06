@@ -10,9 +10,9 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="gq3g" ref="r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="k0ub" ref="r:0c9da324-6503-4efe-bde7-efa21705c63b(Facts.behavior)" implicit="true" />
     <import index="thx9" ref="r:a4e8cbe4-7611-4e77-90f4-adc17bffa9af(DateTime.behavior)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -171,23 +171,10 @@
       <node concept="Eqf_E" id="3e11SfSdly0" role="EtsB7">
         <node concept="3clFbS" id="3e11SfSdly1" role="2VODD2">
           <node concept="3cpWs6" id="3e11SfSdlEp" role="3cqZAp">
-            <node concept="2OqwBi" id="3e11SfSdt_m" role="3cqZAk">
-              <node concept="2OqwBi" id="3e11SfSdoR_" role="2Oq$k0">
-                <node concept="2OqwBi" id="3e11SfSe4EL" role="2Oq$k0">
-                  <node concept="2OqwBi" id="3e11SfSdmyz" role="2Oq$k0">
-                    <node concept="EsrRn" id="3e11SfSdmc0" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="3e11SfSdmMp" role="2OqNvi">
-                      <ref role="3TtcxE" to="gq3g:T7nEYMX7MJ" resolve="variabeles" />
-                    </node>
-                  </node>
-                  <node concept="13MTOL" id="3e11SfSe6bj" role="2OqNvi">
-                    <ref role="13MTZf" to="gq3g:T7nEYN3pnH" resolve="value" />
-                  </node>
-                </node>
-                <node concept="ANE8D" id="3e11SfSdql6" role="2OqNvi" />
-              </node>
-              <node concept="liA8E" id="3e11SfSdv3R" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+            <node concept="2OqwBi" id="3e11SfSdmyz" role="3cqZAk">
+              <node concept="EsrRn" id="3e11SfSdmc0" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3MspsB88uX0" role="2OqNvi">
+                <ref role="37wK5l" to="k0ub:3MspsB88iYi" resolve="getFactAsString" />
               </node>
             </node>
           </node>
@@ -611,6 +598,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="3MspsB8fQKk">
+    <property role="3GE5qa" value="concept" />
+    <ref role="1M2myG" to="gq3g:74LG_7KUJLF" resolve="Identifier" />
   </node>
 </model>
 

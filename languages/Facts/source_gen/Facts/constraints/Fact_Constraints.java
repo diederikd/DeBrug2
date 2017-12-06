@@ -11,13 +11,12 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import Facts.behavior.Fact__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import Facts.behavior.Fact__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
@@ -38,7 +37,7 @@ public class Fact_Constraints extends BaseConstraintsDescriptor {
       @Override
       public Object getValue(SNode node) {
         String propertyName = "name";
-        return Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles")), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"))).toListSequence().toString();
+        return Fact__BehaviorDescriptor.getFactAsString_id3MspsB88iYi.invoke(node);
       }
     });
     return properties;

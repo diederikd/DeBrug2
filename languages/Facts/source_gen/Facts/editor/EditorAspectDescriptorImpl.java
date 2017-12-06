@@ -39,7 +39,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       case 6:
         return Collections.<ConceptEditor>singletonList(new EntityValue_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new Fact_Editor());
+        return Arrays.asList(new ConceptEditor[]{new Fact_Editor(), new Fact_nameOnly_Editor()});
       case 8:
         return Collections.<ConceptEditor>singletonList(new FactBase_Editor());
       case 9:

@@ -21,6 +21,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -31,8 +32,9 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Void> AddRoles_idEOKdUeu$et = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("AddRoles").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("EOKdUeu$et").registry(REGISTRY).build();
   public static final SMethod<SNode> getValueOfRole_id3e11SfSaCpP = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValueOfRole").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3e11SfSaCpP").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> getFactAsString_id3MspsB88iYi = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFactAsString").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3MspsB88iYi").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AddRoles_idEOKdUeu$et, getValueOfRole_id3e11SfSaCpP);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AddRoles_idEOKdUeu$et, getValueOfRole_id3e11SfSaCpP, getFactAsString_id3MspsB88iYi);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -56,6 +58,17 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
     }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"));
     return value;
   }
+  /*package*/ static String getFactAsString_id3MspsB88iYi(@NotNull SNode __thisNode__) {
+    String result = "[";
+    for (SNode variabel : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles")))) {
+      result = result + " " + Value__BehaviorDescriptor.getValueString_id3MspsB814vW.invoke(SLinkOperations.getTarget(variabel, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value")));
+      if ((SNodeOperations.getNextSibling(variabel) != null)) {
+        result = result + ",";
+      }
+    }
+    result = result + "]";
+    return result;
+  }
 
   /*package*/ Fact__BehaviorDescriptor() {
     super(REGISTRY);
@@ -78,6 +91,8 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
         return null;
       case 1:
         return (T) ((SNode) getValueOfRole_id3e11SfSaCpP(node, (SNode) parameters[0]));
+      case 2:
+        return (T) ((String) getFactAsString_id3MspsB88iYi(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

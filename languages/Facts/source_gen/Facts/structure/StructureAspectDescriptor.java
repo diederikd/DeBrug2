@@ -127,6 +127,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "Concept", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32cL);
     b.class_(false, false, false);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592067372");
+    b.aggregate("identifiedBy", 0x7131b251f0eafcdcL).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0eafc6bL).optional(true).ordered(true).multiple(true).origin("8156496465148706012").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDateType() {
@@ -164,10 +165,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForEntityType() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "EntityType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6fc40fa1299d5a0L);
     b.class_(false, false, false);
+    b.super_("Facts.structure.Concept", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32cL);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/503348701156726176");
     b.prop("article", 0x33810783f7f97de4L, "3711255831312432612");
-    b.aggregate("identifiedBy", 0x7131b251f0eafcdcL).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0eafc6bL).optional(true).ordered(true).multiple(false).origin("8156496465148706012").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEntityTypeInRole() {
