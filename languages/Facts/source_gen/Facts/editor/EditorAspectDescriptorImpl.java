@@ -19,7 +19,7 @@ import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
-  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("nameOnly", "", true, "Facts.editor.Hints.nameOnly"));
+  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("nameOnly", "", true, "Facts.editor.Hints.nameOnly"), new ConceptEditorHintImpl("table", "", true, "Facts.editor.Hints.table"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     SAbstractConcept cncpt_a0b = ((SAbstractConcept) concept);
@@ -45,7 +45,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       case 9:
         return Collections.<ConceptEditor>singletonList(new FactModel_Editor());
       case 10:
-        return Collections.<ConceptEditor>singletonList(new FactTable_Editor());
+        return Arrays.asList(new ConceptEditor[]{new FactTable_Editor(), new FactTable_table_Editor()});
       case 11:
         return Collections.<ConceptEditor>singletonList(new FactType_Editor());
       case 12:

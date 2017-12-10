@@ -383,6 +383,31 @@
         <ref role="3bDP1F" node="3e11SfSjPDT" resolve="[werknemer, is in dienst bij, werkgever]" />
         <ref role="3bDP1D" node="rWgfCiE_hh" resolve="[ Essent, Diederik, 01-03-2000]" />
       </node>
+      <node concept="2WGM88" id="2092lglm9X3" role="2WGioT">
+        <ref role="2WGM87" node="T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
+        <node concept="2WGM83" id="2092lglm9X4" role="2WGM80">
+          <ref role="2WGM82" node="T7nEYMX2mT" resolve="werkgever" />
+          <node concept="24RH9q" id="2092lglm9X5" role="2XiGH2">
+            <ref role="24RH9r" node="3MspsB8f1cF" resolve="ASML" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="2092lglm9X6" role="2WGM80">
+          <ref role="2WGM82" node="T7nEYMX2mY" resolve="werknemer" />
+          <node concept="24RH9q" id="2092lglm9X7" role="2XiGH2">
+            <ref role="24RH9r" node="3MspsB8f1dw" resolve="Henk" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="2092lglm9X8" role="2WGM80">
+          <ref role="2WGM82" node="T7nEYMX6_A" resolve="datum in dienst" />
+          <node concept="2XigOj" id="2092lglm9X9" role="2XiGH2">
+            <node concept="2B78Lw" id="2092lglm9Xa" role="2Xi5h3">
+              <property role="2B78LB" value="1" />
+              <property role="2B78L_" value="4" />
+              <property role="2B78LE" value="2000" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2WGioW" id="3e11SfRLPQM" role="2WGWMT">
       <ref role="2WGioV" node="3e11SfRJBFn" resolve="Werknemer" />

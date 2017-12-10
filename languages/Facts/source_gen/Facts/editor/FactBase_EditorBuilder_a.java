@@ -298,6 +298,18 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
         }
       }
     }
+    @Override
+    protected void createInnerCells() {
+      try {
+        getCellFactory().pushCellContext();
+        getCellFactory().addCellContextHints(new String[]{});
+        getCellFactory().removeCellContextHints();
+        super.createInnerCells();
+        setInnerCellsContext();
+      } finally {
+        getCellFactory().popCellContext();
+      }
+    }
   }
   private EditorCell createConstant_inh6iv_i0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");

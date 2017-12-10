@@ -37,8 +37,10 @@ public final class Date__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static LocalDate getdate_id5riiL_BUg0c(@NotNull SNode __thisNode__) {
-    LocalDate ld;
-    ld = LocalDate.of(SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")), SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand")), SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag")));
+    LocalDate ld = LocalDate.of(1, 1, 1);
+    if ((SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand")) > 0 && SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand")) < 13) && (SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag")) > 0 && SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag")) < 31) && (SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) > 0)) {
+      ld = LocalDate.of(SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")), SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand")), SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag")));
+    }
     return ld;
   }
   /*package*/ static String getDateString_id5vursKRvRmQ(@NotNull SNode __thisNode__) {
