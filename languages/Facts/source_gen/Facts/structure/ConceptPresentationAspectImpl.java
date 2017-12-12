@@ -179,7 +179,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Identifier:
         if (props_Identifier == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Identifier");
+          cpb.presentationByName();
           props_Identifier = cpb.create();
         }
         return props_Identifier;
@@ -206,7 +206,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.RoleReference:
         if (props_RoleReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7e44d86L, 0x33810783f7e44d87L, "role", "", "");
+          cpb.presentationByName();
           props_RoleReference = cpb.create();
         }
         return props_RoleReference;

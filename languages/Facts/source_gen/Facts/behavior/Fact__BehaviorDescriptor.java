@@ -33,8 +33,10 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> AddRoles_idEOKdUeu$et = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("AddRoles").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("EOKdUeu$et").registry(REGISTRY).build();
   public static final SMethod<SNode> getValueOfRole_id3e11SfSaCpP = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValueOfRole").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3e11SfSaCpP").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> getFactAsString_id3MspsB88iYi = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFactAsString").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3MspsB88iYi").registry(REGISTRY).build();
+  public static final SMethod<String> getPrimaryIdentifier_id14SuKMppbvK = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrimaryIdentifier").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("14SuKMppbvK").registry(REGISTRY).build();
+  public static final SMethod<Boolean> isTheSameAs_idU3O8mMZq$b = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isTheSameAs").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("U3O8mMZq$b").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AddRoles_idEOKdUeu$et, getValueOfRole_id3e11SfSaCpP, getFactAsString_id3MspsB88iYi);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AddRoles_idEOKdUeu$et, getValueOfRole_id3e11SfSaCpP, getFactAsString_id3MspsB88iYi, getPrimaryIdentifier_id14SuKMppbvK, isTheSameAs_idU3O8mMZq$b);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -69,6 +71,26 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
     result = result + "]";
     return result;
   }
+  /*package*/ static String getPrimaryIdentifier_id14SuKMppbvK(@NotNull SNode __thisNode__) {
+    String result = "";
+    if (ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32cL, 0x7131b251f0eafcdcL, "identifiedBy"))).isNotEmpty()) {
+      for (SNode roleReference : ListSequence.fromList(SLinkOperations.getChildren(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32cL, 0x7131b251f0eafcdcL, "identifiedBy"))).getElement(0), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0eafc6bL, 0x7131b251f0ec0052L, "identifiers")))) {
+        result = result + Value__BehaviorDescriptor.getValueString_id3MspsB814vW.invoke(Fact__BehaviorDescriptor.getValueOfRole_id3e11SfSaCpP.invoke(__thisNode__, SLinkOperations.getTarget(roleReference, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7e44d86L, 0x33810783f7e44d87L, "role"))));
+      }
+    }
+    return result;
+  }
+  /*package*/ static boolean isTheSameAs_idU3O8mMZq$b(@NotNull SNode __thisNode__, SNode fact) {
+    if (SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")) != SLinkOperations.getTarget(fact, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype"))) {
+      return false;
+    }
+    for (SNode variable : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles")))) {
+      if (!((Value__BehaviorDescriptor.getValueString_id3MspsB814vW.invoke(Fact__BehaviorDescriptor.getValueOfRole_id3e11SfSaCpP.invoke(__thisNode__, SLinkOperations.getTarget(variable, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")))).equals(Value__BehaviorDescriptor.getValueString_id3MspsB814vW.invoke(Fact__BehaviorDescriptor.getValueOfRole_id3e11SfSaCpP.invoke(fact, SLinkOperations.getTarget(variable, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")))))))) {
+        return false;
+      }
+    }
+    return true;
+  }
 
   /*package*/ Fact__BehaviorDescriptor() {
     super(REGISTRY);
@@ -93,6 +115,10 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((SNode) getValueOfRole_id3e11SfSaCpP(node, (SNode) parameters[0]));
       case 2:
         return (T) ((String) getFactAsString_id3MspsB88iYi(node));
+      case 3:
+        return (T) ((String) getPrimaryIdentifier_id14SuKMppbvK(node));
+      case 4:
+        return (T) ((Boolean) isTheSameAs_idU3O8mMZq$b(node, (SNode) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

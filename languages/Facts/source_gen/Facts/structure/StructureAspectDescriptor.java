@@ -282,6 +282,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForIdentifier() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "Identifier", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0eafc6bL);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/8156496465148705899");
     b.aggregate("identifiers", 0x7131b251f0ec0052L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7e44d86L).optional(false).ordered(true).multiple(true).origin("8156496465148772434").done();
     return b.create();
@@ -314,6 +315,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForRoleReference() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "RoleReference", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7e44d86L);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/3711255831311043974");
     b.associate("role", 0x33810783f7e44d87L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL).optional(false).origin("3711255831311043975").done();
     return b.create();
