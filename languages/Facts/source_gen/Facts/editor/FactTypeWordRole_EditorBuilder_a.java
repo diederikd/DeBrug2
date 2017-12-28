@@ -62,6 +62,9 @@ import Facts.editor.Styles_StyleSheet.WordingRoleStyleClass;
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
       public String getText() {
         String article = SPropertyOperations.getString_def(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord")), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL, 0x33810783f7fb3e6fL, "article"), "de");
+        if (article.equals("geen")) {
+          article = "";
+        }
         SNode factTypeWording = (SNode) SNodeOperations.getParent(myNode);
         if (ListSequence.fromList(SLinkOperations.getChildren(factTypeWording, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea37L, 0x33810783f7eca685L, "words"))).first() == myNode) {
           article = article.substring(0, 1).toUpperCase() + article.substring(1);
@@ -78,9 +81,13 @@ import Facts.editor.Styles_StyleSheet.WordingRoleStyleClass;
     editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
     editorCell.setCellId("ReadOnlyModelAccessor_pgz5pf_a0");
     Style style = new StyleImpl();
+    style.set(StyleAttributes.PUNCTUATION_RIGHT, _StyleParameter_QueryFunction_pgz5pf_a0a0());
     style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     return editorCell;
+  }
+  private boolean _StyleParameter_QueryFunction_pgz5pf_a0a0() {
+    return (SPropertyOperations.getString_def(SLinkOperations.getTarget(getNode(), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord")), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL, 0x33810783f7fb3e6fL, "article"), "de").equals("geen"));
   }
   private EditorCell createRefCell_pgz5pf_b0() {
     CellProviderWithRole provider = new RefCellCellProvider(myNode, getEditorContext()) {

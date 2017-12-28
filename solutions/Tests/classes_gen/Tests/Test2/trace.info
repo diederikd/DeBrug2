@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:8ea37756-8dfb-40e5-9744-14f0a28c185e(Tests.Test2@tests)/6415842129959151566">
+    <file name="Test2_Test.java">
+      <unit id="6415842129959151566" at="12,0,17,0" name="Tests.Test2.Test2_Test$TestBody" />
+      <unit id="6415842129959151566" at="9,0,18,0" name="Tests.Test2.Test2_Test" />
+    </file>
+  </root>
+</debug-info>
+

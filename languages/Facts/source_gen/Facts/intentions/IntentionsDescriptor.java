@@ -34,24 +34,38 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 0:
         if (true) {
           // Concept: Entity 
-          intentions = new IntentionFactory[2];
-          intentions[0] = new NewEntityInEntity_Intention();
-          intentions[1] = new DeleteEntity_Intention();
+          intentions = new IntentionFactory[1];
+          intentions[0] = new DeleteEntity_Intention();
         }
         break;
       case 1:
+        if (true) {
+          // Concept: EntityTable 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new NewEntityInEntityTable_Intention();
+        }
+        break;
+      case 2:
         if (true) {
           // Concept: EntityType 
           intentions = new IntentionFactory[1];
           intentions[0] = new NewEntityInEntityType_Intention();
         }
         break;
-      case 2:
+      case 3:
         if (true) {
           // Concept: Fact 
-          intentions = new IntentionFactory[2];
+          intentions = new IntentionFactory[3];
           intentions[0] = new DeleteFact_Intention();
           intentions[1] = new NewFact_Intention();
+          intentions[2] = new RefreshRolesFact_Intention();
+        }
+        break;
+      case 4:
+        if (true) {
+          // Concept: FactTable 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new RefreshRolesFactTable_Intention();
         }
         break;
       default:
@@ -63,13 +77,15 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[5];
+    IntentionFactory[] rv = new IntentionFactory[7];
     rv[0] = new DeleteFact_Intention();
-    rv[1] = new NewEntityInEntity_Intention();
-    rv[2] = new DeleteEntity_Intention();
-    rv[3] = new NewFact_Intention();
-    rv[4] = new NewEntityInEntityType_Intention();
+    rv[1] = new DeleteEntity_Intention();
+    rv[2] = new NewFact_Intention();
+    rv[3] = new NewEntityInEntityTable_Intention();
+    rv[4] = new RefreshRolesFact_Intention();
+    rv[5] = new RefreshRolesFactTable_Intention();
+    rv[6] = new NewEntityInEntityType_Intention();
     return Arrays.asList(rv);
   }
-  private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a127fL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6fc40fa1299d5a0L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L)).seal();
+  private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a127fL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1380L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6fc40fa1299d5a0L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f67893L)).seal();
 }

@@ -57,7 +57,7 @@ public class Fact_Constraints extends BaseConstraintsDescriptor {
       @Override
       public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
         if (ListSequence.fromList(SLinkOperations.getChildren(referenceNode, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles"))).isEmpty()) {
-          Fact__BehaviorDescriptor.AddRoles_idEOKdUeu$et.invoke(referenceNode);
+          Fact__BehaviorDescriptor.AddAndRemoveRoles_idEOKdUeu$et.invoke(referenceNode);
         }
       }
       @Nullable

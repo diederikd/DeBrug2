@@ -12,11 +12,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Concept;
   private ConceptPresentation props_DateType;
   private ConceptPresentation props_DateValue;
+  private ConceptPresentation props_DatetimeType;
+  private ConceptPresentation props_DatetimeValue;
   private ConceptPresentation props_Entity;
   private ConceptPresentation props_EntityTable;
   private ConceptPresentation props_EntityType;
   private ConceptPresentation props_EntityTypeInRole;
   private ConceptPresentation props_EntityValue;
+  private ConceptPresentation props_Enumeration;
+  private ConceptPresentation props_EnumerationType;
+  private ConceptPresentation props_EnumerationValue;
   private ConceptPresentation props_Fact;
   private ConceptPresentation props_FactBase;
   private ConceptPresentation props_FactModel;
@@ -29,12 +34,15 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FactTypeWording;
   private ConceptPresentation props_FactWording;
   private ConceptPresentation props_Identifier;
+  private ConceptPresentation props_Instance;
   private ConceptPresentation props_IntegerType;
   private ConceptPresentation props_IntegerValue;
   private ConceptPresentation props_Role;
   private ConceptPresentation props_RoleReference;
   private ConceptPresentation props_StringType;
   private ConceptPresentation props_StringValue;
+  private ConceptPresentation props_TimeType;
+  private ConceptPresentation props_TimeValue;
   private ConceptPresentation props_Value;
   private ConceptPresentation props_ValueType;
   private ConceptPresentation props_Variable;
@@ -65,6 +73,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DateValue = cpb.create();
         }
         return props_DateValue;
+      case LanguageConceptSwitch.DatetimeType:
+        if (props_DatetimeType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_DatetimeType = cpb.create();
+        }
+        return props_DatetimeType;
+      case LanguageConceptSwitch.DatetimeValue:
+        if (props_DatetimeValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_DatetimeValue = cpb.create();
+        }
+        return props_DatetimeValue;
       case LanguageConceptSwitch.Entity:
         if (props_Entity == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -100,6 +122,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EntityValue = cpb.create();
         }
         return props_EntityValue;
+      case LanguageConceptSwitch.Enumeration:
+        if (props_Enumeration == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Enumeration = cpb.create();
+        }
+        return props_Enumeration;
+      case LanguageConceptSwitch.EnumerationType:
+        if (props_EnumerationType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_EnumerationType = cpb.create();
+        }
+        return props_EnumerationType;
+      case LanguageConceptSwitch.EnumerationValue:
+        if (props_EnumerationValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97ff120aL, 0x432375ab97ff120bL, "value", "", "");
+          props_EnumerationValue = cpb.create();
+        }
+        return props_EnumerationValue;
       case LanguageConceptSwitch.Fact:
         if (props_Fact == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -183,6 +226,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Identifier = cpb.create();
         }
         return props_Identifier;
+      case LanguageConceptSwitch.Instance:
+        if (props_Instance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Instance = cpb.create();
+        }
+        return props_Instance;
       case LanguageConceptSwitch.IntegerType:
         if (props_IntegerType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -224,6 +274,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_StringValue = cpb.create();
         }
         return props_StringValue;
+      case LanguageConceptSwitch.TimeType:
+        if (props_TimeType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_TimeType = cpb.create();
+        }
+        return props_TimeType;
+      case LanguageConceptSwitch.TimeValue:
+        if (props_TimeValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_TimeValue = cpb.create();
+        }
+        return props_TimeValue;
       case LanguageConceptSwitch.Value:
         if (props_Value == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

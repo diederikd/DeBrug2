@@ -53,7 +53,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
     return editorCell;
   }
   private EditorCell createConstant_tsdpi8_a0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "zinssjabloon[");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "zinssjabloon");
     editorCell.setCellId("Constant_tsdpi8_a0");
     editorCell.setDefaultText("");
     return editorCell;

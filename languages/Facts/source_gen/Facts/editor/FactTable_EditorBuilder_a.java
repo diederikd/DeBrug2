@@ -199,6 +199,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.setCellId("Constant_8zow6d_e0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
@@ -323,7 +324,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
             for (int yi = 0; yi < sizeY; yi++) {
               final int x = xi;
               final int y = yi;
-              // node<> 
+              // SNode 
               Object queryResult_ = queryCellsSafely(node, x, y);
               grid.setElement(x, y, new GridElementFactory(editorContext, node, true, true, grid).create(queryResult_));
 

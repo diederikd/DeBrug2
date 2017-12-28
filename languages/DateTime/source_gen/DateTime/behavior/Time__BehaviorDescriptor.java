@@ -26,11 +26,12 @@ public final class Time__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, "DateTime.structure.Time");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<Void> zetTijd_id5riiL_BUAB9 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("zetTijd").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUAB9").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(LocalTime.class, ""));
-  public static final SMethod<LocalTime> geefTijd_id5riiL_BUHOa = new SMethodBuilder<LocalTime>(new SJavaCompoundTypeImpl(LocalTime.class)).name("geefTijd").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUHOa").registry(REGISTRY).build();
-  public static final SMethod<String> geefTijdString_id5vursKRvTA3 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("geefTijdString").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5vursKRvTA3").registry(REGISTRY).build();
+  public static final SMethod<Void> setTime_id5riiL_BUAB9 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setTime").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUAB9").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(LocalTime.class, ""));
+  public static final SMethod<Void> setTimeNow_id4cztqIn5k_w = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setTimeNow").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("4cztqIn5k_w").registry(REGISTRY).build();
+  public static final SMethod<LocalTime> getTime_id5riiL_BUHOa = new SMethodBuilder<LocalTime>(new SJavaCompoundTypeImpl(LocalTime.class)).name("getTime").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUHOa").registry(REGISTRY).build();
+  public static final SMethod<String> getTimeString_id5vursKRvTA3 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTimeString").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5vursKRvTA3").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(zetTijd_id5riiL_BUAB9, geefTijd_id5riiL_BUHOa, geefTijdString_id5vursKRvTA3);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setTime_id5riiL_BUAB9, setTimeNow_id4cztqIn5k_w, getTime_id5riiL_BUHOa, getTimeString_id5vursKRvTA3);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), "" + (0));
@@ -38,18 +39,21 @@ public final class Time__BehaviorDescriptor extends BaseBHDescriptor {
     SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), "" + (0));
   }
 
-  /*package*/ static void zetTijd_id5riiL_BUAB9(@NotNull SNode __thisNode__, LocalTime lt) {
+  /*package*/ static void setTime_id5riiL_BUAB9(@NotNull SNode __thisNode__, LocalTime lt) {
     SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), "" + (lt.getHour()));
     SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), "" + (lt.getMinute()));
     SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), "" + (lt.getSecond()));
   }
-  /*package*/ static LocalTime geefTijd_id5riiL_BUHOa(@NotNull SNode __thisNode__) {
+  /*package*/ static void setTimeNow_id4cztqIn5k_w(@NotNull SNode __thisNode__) {
+    Time__BehaviorDescriptor.setTime_id5riiL_BUAB9.invoke(__thisNode__, LocalTime.now());
+  }
+  /*package*/ static LocalTime getTime_id5riiL_BUHOa(@NotNull SNode __thisNode__) {
     LocalTime lt;
     lt = LocalTime.of(SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren")), SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten")), SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden")));
     return lt;
   }
-  /*package*/ static String geefTijdString_id5vursKRvTA3(@NotNull SNode __thisNode__) {
-    return Time__BehaviorDescriptor.geefTijd_id5riiL_BUHOa.invoke(__thisNode__).toString();
+  /*package*/ static String getTimeString_id5vursKRvTA3(@NotNull SNode __thisNode__) {
+    return Time__BehaviorDescriptor.getTime_id5riiL_BUHOa.invoke(__thisNode__).toString();
   }
 
   /*package*/ Time__BehaviorDescriptor() {
@@ -69,12 +73,15 @@ public final class Time__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        zetTijd_id5riiL_BUAB9(node, (LocalTime) parameters[0]);
+        setTime_id5riiL_BUAB9(node, (LocalTime) parameters[0]);
         return null;
       case 1:
-        return (T) ((LocalTime) geefTijd_id5riiL_BUHOa(node));
+        setTimeNow_id4cztqIn5k_w(node);
+        return null;
       case 2:
-        return (T) ((String) geefTijdString_id5vursKRvTA3(node));
+        return (T) ((LocalTime) getTime_id5riiL_BUHOa(node));
+      case 3:
+        return (T) ((String) getTimeString_id5vursKRvTA3(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

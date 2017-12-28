@@ -27,20 +27,24 @@ public final class DateTime__BehaviorDescriptor extends BaseBHDescriptor {
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<LocalDateTime> geefDatumTijd_id5riiL_BUVyA = new SMethodBuilder<LocalDateTime>(new SJavaCompoundTypeImpl(LocalDateTime.class)).name("geefDatumTijd").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUVyA").registry(REGISTRY).build();
-  public static final SMethod<Void> zetDatumTijd_id5riiL_BUXYm = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("zetDatumTijd").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUXYm").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(LocalDateTime.class, ""));
+  public static final SMethod<Void> setDateTime_id4cztqIn5fVA = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setDateTime").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("4cztqIn5fVA").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(LocalDateTime.class, ""));
+  public static final SMethod<Void> setDateTimeNow_id4cztqIn5h$s = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setDateTimeNow").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("4cztqIn5h$s").registry(REGISTRY).build();
   public static final SMethod<String> geefDatumTijdString_id5vursKRvZal = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("geefDatumTijdString").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5vursKRvZal").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(geefDatumTijd_id5riiL_BUVyA, zetDatumTijd_id5riiL_BUXYm, geefDatumTijdString_id5vursKRvZal);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(geefDatumTijd_id5riiL_BUVyA, setDateTime_id4cztqIn5fVA, setDateTimeNow_id4cztqIn5h$s, geefDatumTijdString_id5vursKRvZal);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static LocalDateTime geefDatumTijd_id5riiL_BUVyA(@NotNull SNode __thisNode__) {
-    return LocalDateTime.of(Date__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum"))), Time__BehaviorDescriptor.geefTijd_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd"))));
+    return LocalDateTime.of(Date__BehaviorDescriptor.getDate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum"))), Time__BehaviorDescriptor.getTime_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd"))));
   }
-  /*package*/ static void zetDatumTijd_id5riiL_BUXYm(@NotNull SNode __thisNode__, LocalDateTime ldt) {
+  /*package*/ static void setDateTime_id4cztqIn5fVA(@NotNull SNode __thisNode__, LocalDateTime ldt) {
     Date__BehaviorDescriptor.setDate_id5riiL_BUmpQ.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum")), ldt.toLocalDate());
-    Time__BehaviorDescriptor.zetTijd_id5riiL_BUAB9.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd")), ldt.toLocalTime());
+    Time__BehaviorDescriptor.setTime_id5riiL_BUAB9.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd")), ldt.toLocalTime());
+  }
+  /*package*/ static void setDateTimeNow_id4cztqIn5h$s(@NotNull SNode __thisNode__) {
+    DateTime__BehaviorDescriptor.setDateTime_id4cztqIn5fVA.invoke(__thisNode__, LocalDateTime.now());
   }
   /*package*/ static String geefDatumTijdString_id5vursKRvZal(@NotNull SNode __thisNode__) {
     LocalDateTime datumtijd = DateTime__BehaviorDescriptor.geefDatumTijd_id5riiL_BUVyA.invoke(__thisNode__);
@@ -69,9 +73,12 @@ public final class DateTime__BehaviorDescriptor extends BaseBHDescriptor {
       case 0:
         return (T) ((LocalDateTime) geefDatumTijd_id5riiL_BUVyA(node));
       case 1:
-        zetDatumTijd_id5riiL_BUXYm(node, (LocalDateTime) parameters[0]);
+        setDateTime_id4cztqIn5fVA(node, (LocalDateTime) parameters[0]);
         return null;
       case 2:
+        setDateTimeNow_id4cztqIn5h$s(node);
+        return null;
+      case 3:
         return (T) ((String) geefDatumTijdString_id5vursKRvZal(node));
       default:
         throw new BHMethodNotFoundException(this, method);

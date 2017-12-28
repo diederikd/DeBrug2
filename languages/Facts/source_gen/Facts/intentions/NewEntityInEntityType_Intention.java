@@ -4,6 +4,8 @@ package Facts.intentions;
 
 import jetbrains.mps.intentions.AbstractIntentionDescriptor;
 import jetbrains.mps.openapi.intentions.IntentionFactory;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 import java.util.Collection;
 import jetbrains.mps.openapi.intentions.IntentionExecutable;
 import jetbrains.mps.openapi.intentions.Kind;
@@ -16,15 +18,19 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
+import org.apache.log4j.Level;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
 public final class NewEntityInEntityType_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+  private static final Logger LOG = LogManager.getLogger(NewEntityInEntityType_Intention.class);
   private Collection<IntentionExecutable> myCachedExecutable;
   public NewEntityInEntityType_Intention() {
-    super(Kind.NORMAL, false, new SNodePointer("r:953367a7-ddee-4d54-9aba-da6cd438a7be(Facts.intentions)", "8156496465149464978"));
+    super(Kind.NORMAL, false, new SNodePointer("r:953367a7-ddee-4d54-9aba-da6cd438a7be(Facts.intentions)", "4837839804578144027"));
   }
   @Override
   public String getPresentation() {
@@ -55,11 +61,13 @@ public final class NewEntityInEntityType_Intention extends AbstractIntentionDesc
     public void execute(final SNode node, final EditorContext editorContext) {
       SNode entity = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a127fL, "Facts.structure.Entity"));
       SLinkOperations.setTarget(entity, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a127fL, 0xab4c0de8e6a1280L, "entitytype"), node);
-      ListSequence.fromList(SLinkOperations.getChildren(ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(SNodeOperations.getContainingRoot(node)), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1380L, "Facts.structure.EntityTable"))).where(new IWhereFilter<SNode>() {
+      SNode entityTable = ListSequence.fromList(SNodeOperations.getNodeDescendants(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, "Facts.structure.FactBase"), false, false), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1380L, "Facts.structure.EntityTable"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1380L, 0xab4c0de8e6a1381L, "entitytype")) == node;
+          return SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1380L, 0xab4c0de8e6a1381L, "entitytype")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).equals(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
         }
-      }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1380L, 0xab4c0de8e6a1383L, "entities"))).addElement(entity);
+      }).first();
+      LoggingRuntime.logMsgView(Level.INFO, "" + node + entityTable, NewEntityInEntityType_Intention.class, null, null);
+      ListSequence.fromList(SLinkOperations.getChildren(entityTable, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1380L, 0xab4c0de8e6a1383L, "entities"))).addElement(entity);
     }
     @Override
     public IntentionDescriptor getDescriptor() {

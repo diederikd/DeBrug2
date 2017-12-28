@@ -152,7 +152,7 @@
   <node concept="13h7C7" id="5riiL_BUfJI">
     <ref role="13h7C2" to="dljm:6c9haf45sz3" resolve="Date" />
     <node concept="13i0hz" id="5riiL_BUg0c" role="13h7CS">
-      <property role="TrG5h" value="getdate" />
+      <property role="TrG5h" value="getDate" />
       <node concept="3Tm1VV" id="5riiL_BUg0d" role="1B3o_S" />
       <node concept="3uibUv" id="5riiL_BUk5f" role="3clF45">
         <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
@@ -288,6 +288,25 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="4cztqIn5jpZ" role="13h7CS">
+      <property role="TrG5h" value="setDateNow" />
+      <node concept="3Tm1VV" id="4cztqIn5jq0" role="1B3o_S" />
+      <node concept="3cqZAl" id="4cztqIn5jEh" role="3clF45" />
+      <node concept="3clFbS" id="4cztqIn5jq2" role="3clF47">
+        <node concept="3clFbF" id="4cztqIn5jFm" role="3cqZAp">
+          <node concept="2OqwBi" id="4cztqIn5jMu" role="3clFbG">
+            <node concept="13iPFW" id="4cztqIn5jFl" role="2Oq$k0" />
+            <node concept="2qgKlT" id="4cztqIn5jWj" role="2OqNvi">
+              <ref role="37wK5l" node="5riiL_BUmpQ" resolve="setDate" />
+              <node concept="2YIFZM" id="4cztqIn5k41" role="37wK5m">
+                <ref role="37wK5l" to="28m1:~LocalDate.now():java.time.LocalDate" resolve="now" />
+                <ref role="1Pybhc" to="28m1:~LocalDate" resolve="LocalDate" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="5vursKRvRmQ" role="13h7CS">
       <property role="TrG5h" value="getDateString" />
       <node concept="3Tm1VV" id="5vursKRvRmR" role="1B3o_S" />
@@ -314,7 +333,7 @@
             <node concept="17QB3L" id="3e11SfShrJK" role="1tU5fm" />
             <node concept="2OqwBi" id="3e11SfSh7dg" role="33vP2m">
               <node concept="BsUDl" id="5vursKRvRMi" role="2Oq$k0">
-                <ref role="37wK5l" node="5riiL_BUg0c" resolve="getdate" />
+                <ref role="37wK5l" node="5riiL_BUg0c" resolve="getDate" />
               </node>
               <node concept="liA8E" id="3e11SfSh8or" role="2OqNvi">
                 <ref role="37wK5l" to="28m1:~LocalDate.format(java.time.format.DateTimeFormatter):java.lang.String" resolve="format" />
@@ -458,7 +477,7 @@
   <node concept="13h7C7" id="5riiL_BUAx0">
     <ref role="13h7C2" to="dljm:5riiL_BUfcl" resolve="Time" />
     <node concept="13i0hz" id="5riiL_BUAB9" role="13h7CS">
-      <property role="TrG5h" value="zetTijd" />
+      <property role="TrG5h" value="setTime" />
       <node concept="37vLTG" id="5riiL_BUHlq" role="3clF46">
         <property role="TrG5h" value="lt" />
         <node concept="3uibUv" id="5riiL_BUHum" role="1tU5fm">
@@ -524,8 +543,27 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="4cztqIn5k_w" role="13h7CS">
+      <property role="TrG5h" value="setTimeNow" />
+      <node concept="3Tm1VV" id="4cztqIn5k_x" role="1B3o_S" />
+      <node concept="3cqZAl" id="4cztqIn5kGE" role="3clF45" />
+      <node concept="3clFbS" id="4cztqIn5k_z" role="3clF47">
+        <node concept="3clFbF" id="4cztqIn5kHB" role="3cqZAp">
+          <node concept="2OqwBi" id="4cztqIn5kOB" role="3clFbG">
+            <node concept="13iPFW" id="4cztqIn5kHA" role="2Oq$k0" />
+            <node concept="2qgKlT" id="4cztqIn5kYs" role="2OqNvi">
+              <ref role="37wK5l" node="5riiL_BUAB9" resolve="setTime" />
+              <node concept="2YIFZM" id="4cztqIn5l$h" role="37wK5m">
+                <ref role="37wK5l" to="28m1:~LocalTime.now():java.time.LocalTime" resolve="now" />
+                <ref role="1Pybhc" to="28m1:~LocalTime" resolve="LocalTime" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="5riiL_BUHOa" role="13h7CS">
-      <property role="TrG5h" value="geefTijd" />
+      <property role="TrG5h" value="getTime" />
       <node concept="3Tm1VV" id="5riiL_BUHOb" role="1B3o_S" />
       <node concept="3uibUv" id="5riiL_BUHXG" role="3clF45">
         <ref role="3uigEE" to="28m1:~LocalTime" resolve="LocalTime" />
@@ -576,14 +614,14 @@
       </node>
     </node>
     <node concept="13i0hz" id="5vursKRvTA3" role="13h7CS">
-      <property role="TrG5h" value="geefTijdString" />
+      <property role="TrG5h" value="getTimeString" />
       <node concept="3Tm1VV" id="5vursKRvTA4" role="1B3o_S" />
       <node concept="17QB3L" id="5vursKRvTGW" role="3clF45" />
       <node concept="3clFbS" id="5vursKRvTA6" role="3clF47">
         <node concept="3cpWs6" id="5vursKRvTH7" role="3cqZAp">
           <node concept="2OqwBi" id="5vursKRvU9j" role="3cqZAk">
             <node concept="BsUDl" id="5vursKRvTHr" role="2Oq$k0">
-              <ref role="37wK5l" node="5riiL_BUHOa" resolve="geefTijd" />
+              <ref role="37wK5l" node="5riiL_BUHOa" resolve="getTime" />
             </node>
             <node concept="liA8E" id="5vursKRvVat" role="2OqNvi">
               <ref role="37wK5l" to="28m1:~LocalTime.toString():java.lang.String" resolve="toString" />
@@ -657,7 +695,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="5riiL_BUWDP" role="2OqNvi">
-                <ref role="37wK5l" node="5riiL_BUg0c" resolve="getdate" />
+                <ref role="37wK5l" node="5riiL_BUg0c" resolve="getDate" />
               </node>
             </node>
             <node concept="2OqwBi" id="5riiL_BUXBr" role="37wK5m">
@@ -668,59 +706,59 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="5riiL_BUXOh" role="2OqNvi">
-                <ref role="37wK5l" node="5riiL_BUHOa" resolve="geefTijd" />
+                <ref role="37wK5l" node="5riiL_BUHOa" resolve="getTime" />
               </node>
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="5riiL_BUXYm" role="13h7CS">
-      <property role="TrG5h" value="zetDatumTijd" />
-      <node concept="37vLTG" id="5riiL_BUYqP" role="3clF46">
+    <node concept="13i0hz" id="4cztqIn5fVA" role="13h7CS">
+      <property role="TrG5h" value="setDateTime" />
+      <node concept="37vLTG" id="4cztqIn5fVB" role="3clF46">
         <property role="TrG5h" value="ldt" />
-        <node concept="3uibUv" id="5riiL_BUYsV" role="1tU5fm">
+        <node concept="3uibUv" id="4cztqIn5fVC" role="1tU5fm">
           <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
         </node>
       </node>
-      <node concept="3Tm1VV" id="5riiL_BUXYn" role="1B3o_S" />
-      <node concept="3clFbS" id="5riiL_BUXYp" role="3clF47">
-        <node concept="3clFbF" id="5riiL_BUXZX" role="3cqZAp">
-          <node concept="2OqwBi" id="5riiL_BV1ky" role="3clFbG">
-            <node concept="2OqwBi" id="5riiL_BUY6V" role="2Oq$k0">
-              <node concept="13iPFW" id="5riiL_BUXZW" role="2Oq$k0" />
-              <node concept="3TrEf2" id="5riiL_BUYgc" role="2OqNvi">
+      <node concept="3Tm1VV" id="4cztqIn5fVD" role="1B3o_S" />
+      <node concept="3clFbS" id="4cztqIn5fVE" role="3clF47">
+        <node concept="3clFbF" id="4cztqIn5fVF" role="3cqZAp">
+          <node concept="2OqwBi" id="4cztqIn5fVG" role="3clFbG">
+            <node concept="2OqwBi" id="4cztqIn5fVH" role="2Oq$k0">
+              <node concept="13iPFW" id="4cztqIn5fVI" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4cztqIn5fVJ" role="2OqNvi">
                 <ref role="3Tt5mk" to="dljm:5riiL_BUfcM" resolve="Datum" />
               </node>
             </node>
-            <node concept="2qgKlT" id="5riiL_BV1vG" role="2OqNvi">
+            <node concept="2qgKlT" id="4cztqIn5fVK" role="2OqNvi">
               <ref role="37wK5l" node="5riiL_BUmpQ" resolve="setDate" />
-              <node concept="2OqwBi" id="5riiL_BV3U2" role="37wK5m">
-                <node concept="37vLTw" id="5riiL_BV3nX" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5riiL_BUYqP" resolve="ldt" />
+              <node concept="2OqwBi" id="4cztqIn5fVL" role="37wK5m">
+                <node concept="37vLTw" id="4cztqIn5fVM" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4cztqIn5fVB" resolve="ldt" />
                 </node>
-                <node concept="liA8E" id="5riiL_BV4G5" role="2OqNvi">
+                <node concept="liA8E" id="4cztqIn5fVN" role="2OqNvi">
                   <ref role="37wK5l" to="28m1:~LocalDateTime.toLocalDate():java.time.LocalDate" resolve="toLocalDate" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5riiL_BV4TG" role="3cqZAp">
-          <node concept="2OqwBi" id="5riiL_BV5IA" role="3clFbG">
-            <node concept="2OqwBi" id="5riiL_BV56K" role="2Oq$k0">
-              <node concept="13iPFW" id="5riiL_BV4TE" role="2Oq$k0" />
-              <node concept="3TrEf2" id="5riiL_BV5pr" role="2OqNvi">
+        <node concept="3clFbF" id="4cztqIn5fVO" role="3cqZAp">
+          <node concept="2OqwBi" id="4cztqIn5fVP" role="3clFbG">
+            <node concept="2OqwBi" id="4cztqIn5fVQ" role="2Oq$k0">
+              <node concept="13iPFW" id="4cztqIn5fVR" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4cztqIn5fVS" role="2OqNvi">
                 <ref role="3Tt5mk" to="dljm:5riiL_BUfcO" resolve="Tijd" />
               </node>
             </node>
-            <node concept="2qgKlT" id="5riiL_BV64u" role="2OqNvi">
-              <ref role="37wK5l" node="5riiL_BUAB9" resolve="zetTijd" />
-              <node concept="2OqwBi" id="5riiL_BV6Js" role="37wK5m">
-                <node concept="37vLTw" id="5riiL_BV6dq" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5riiL_BUYqP" resolve="ldt" />
+            <node concept="2qgKlT" id="4cztqIn5fVT" role="2OqNvi">
+              <ref role="37wK5l" node="5riiL_BUAB9" resolve="setTime" />
+              <node concept="2OqwBi" id="4cztqIn5fVU" role="37wK5m">
+                <node concept="37vLTw" id="4cztqIn5fVV" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4cztqIn5fVB" resolve="ldt" />
                 </node>
-                <node concept="liA8E" id="5riiL_BV8e5" role="2OqNvi">
+                <node concept="liA8E" id="4cztqIn5fVW" role="2OqNvi">
                   <ref role="37wK5l" to="28m1:~LocalDateTime.toLocalTime():java.time.LocalTime" resolve="toLocalTime" />
                 </node>
               </node>
@@ -728,7 +766,26 @@
           </node>
         </node>
       </node>
-      <node concept="3cqZAl" id="5riiL_BUXZS" role="3clF45" />
+      <node concept="3cqZAl" id="4cztqIn5fVX" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4cztqIn5h$s" role="13h7CS">
+      <property role="TrG5h" value="setDateTimeNow" />
+      <node concept="3Tm1VV" id="4cztqIn5h$t" role="1B3o_S" />
+      <node concept="3cqZAl" id="4cztqIn5hQ1" role="3clF45" />
+      <node concept="3clFbS" id="4cztqIn5h$v" role="3clF47">
+        <node concept="3clFbF" id="4cztqIn5i0$" role="3cqZAp">
+          <node concept="2OqwBi" id="4cztqIn5i7$" role="3clFbG">
+            <node concept="13iPFW" id="4cztqIn5i0z" role="2Oq$k0" />
+            <node concept="2qgKlT" id="4cztqIn5j75" role="2OqNvi">
+              <ref role="37wK5l" node="4cztqIn5fVA" resolve="setDateTime" />
+              <node concept="2YIFZM" id="4cztqIn5jjT" role="37wK5m">
+                <ref role="37wK5l" to="28m1:~LocalDateTime.now():java.time.LocalDateTime" resolve="now" />
+                <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="5vursKRvZal" role="13h7CS">
       <property role="TrG5h" value="geefDatumTijdString" />

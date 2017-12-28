@@ -5,6 +5,8 @@
       <modulePath path="$PROJECT_DIR$/languages/DateTime/DateTime.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Facts/Facts.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Facts/sandbox/Facts.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/MenuPlugin/MenuPlugin.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Test/Test.msd" folder="" />
     </projectModules>
   </component>
 </project>

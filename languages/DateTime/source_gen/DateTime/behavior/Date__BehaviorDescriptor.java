@@ -27,25 +27,29 @@ public final class Date__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, "DateTime.structure.Date");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<LocalDate> getdate_id5riiL_BUg0c = new SMethodBuilder<LocalDate>(new SJavaCompoundTypeImpl(LocalDate.class)).name("getdate").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUg0c").registry(REGISTRY).build();
+  public static final SMethod<LocalDate> getDate_id5riiL_BUg0c = new SMethodBuilder<LocalDate>(new SJavaCompoundTypeImpl(LocalDate.class)).name("getDate").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUg0c").registry(REGISTRY).build();
+  public static final SMethod<Void> setDateNow_id4cztqIn5jpZ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setDateNow").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("4cztqIn5jpZ").registry(REGISTRY).build();
   public static final SMethod<String> getDateString_id5vursKRvRmQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDateString").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5vursKRvRmQ").registry(REGISTRY).build();
   public static final SMethod<Void> setDate_id5riiL_BUmpQ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setDate").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5riiL_BUmpQ").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(LocalDate.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getdate_id5riiL_BUg0c, getDateString_id5vursKRvRmQ, setDate_id5riiL_BUmpQ);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDate_id5riiL_BUg0c, setDateNow_id4cztqIn5jpZ, getDateString_id5vursKRvRmQ, setDate_id5riiL_BUmpQ);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static LocalDate getdate_id5riiL_BUg0c(@NotNull SNode __thisNode__) {
+  /*package*/ static LocalDate getDate_id5riiL_BUg0c(@NotNull SNode __thisNode__) {
     LocalDate ld = LocalDate.of(1, 1, 1);
     if ((SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand")) > 0 && SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand")) < 13) && (SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag")) > 0 && SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag")) < 31) && (SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) > 0)) {
       ld = LocalDate.of(SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")), SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand")), SPropertyOperations.getInteger(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag")));
     }
     return ld;
   }
+  /*package*/ static void setDateNow_id4cztqIn5jpZ(@NotNull SNode __thisNode__) {
+    Date__BehaviorDescriptor.setDate_id5riiL_BUmpQ.invoke(__thisNode__, LocalDate.now());
+  }
   /*package*/ static String getDateString_id5vursKRvRmQ(@NotNull SNode __thisNode__) {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-uuuu");
-    String formattedDate = Date__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(__thisNode__).format(formatter);
+    String formattedDate = Date__BehaviorDescriptor.getDate_id5riiL_BUg0c.invoke(__thisNode__).format(formatter);
     return formattedDate;
   }
   /*package*/ static void setDate_id5riiL_BUmpQ(@NotNull SNode __thisNode__, LocalDate ld) {
@@ -71,10 +75,13 @@ public final class Date__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((LocalDate) getdate_id5riiL_BUg0c(node));
+        return (T) ((LocalDate) getDate_id5riiL_BUg0c(node));
       case 1:
-        return (T) ((String) getDateString_id5vursKRvRmQ(node));
+        setDateNow_id4cztqIn5jpZ(node);
+        return null;
       case 2:
+        return (T) ((String) getDateString_id5vursKRvRmQ(node));
+      case 3:
         setDate_id5riiL_BUmpQ(node, (LocalDate) parameters[0]);
         return null;
       default:
