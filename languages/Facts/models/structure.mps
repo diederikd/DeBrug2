@@ -120,11 +120,6 @@
       <property role="TrG5h" value="mandatory" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="3e11SfRGqZM" role="1TKVEl">
-      <property role="IQ2nx" value="3711255831307726834" />
-      <property role="TrG5h" value="unique" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyi" id="3e11SfRYNTJ" role="1TKVEl">
       <property role="IQ2nx" value="3711255831312547439" />
       <property role="TrG5h" value="article" />

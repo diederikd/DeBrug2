@@ -49,7 +49,6 @@
       </concept>
       <concept id="1028895148592067374" name="Facts.structure.Role" flags="ng" index="2WHaQ1">
         <property id="3711255831307726830" name="mandatory" index="34caxH" />
-        <property id="3711255831307726834" name="unique" index="34caxL" />
         <property id="3711255831312547439" name="article" index="34uzBG" />
       </concept>
       <concept id="1028895148592067373" name="Facts.structure.FactType" flags="ng" index="2WHaQ2">
@@ -182,13 +181,11 @@
       <node concept="2WHaRd" id="rWgfCiBnS8" role="2WHaR8">
         <property role="TrG5h" value="werknemer" />
         <property role="34caxH" value="true" />
-        <property role="34caxL" value="true" />
         <ref role="2WHaRc" node="3MspsB8eG6c" resolve="Werknemer" />
       </node>
       <node concept="2WHaR9" id="rWgfCiCh$4" role="2WHaR8">
         <property role="TrG5h" value="werknemernummer" />
         <property role="34caxH" value="true" />
-        <property role="34caxL" value="true" />
         <property role="34uzBG" value=" " />
       </node>
       <node concept="34qYQO" id="3e11SfRWlyH" role="34qYOv">
@@ -219,13 +216,11 @@
       <node concept="2WHaRd" id="3e11SfRJBHk" role="2WHaR8">
         <property role="TrG5h" value="werknemer" />
         <property role="34caxH" value="true" />
-        <property role="34caxL" value="true" />
         <ref role="2WHaRc" node="3MspsB8eG6c" resolve="Werknemer" />
       </node>
       <node concept="2WHaRa" id="3e11SfRJBHv" role="2WHaR8">
         <property role="TrG5h" value="burgerservicenummer" />
         <property role="34caxH" value="true" />
-        <property role="34caxL" value="true" />
         <property role="34uzBG" value="een" />
       </node>
     </node>
@@ -252,7 +247,6 @@
       <node concept="2WHaRd" id="3e11SfRJBFX" role="2WHaR8">
         <property role="TrG5h" value="werknemer" />
         <property role="34caxH" value="true" />
-        <property role="34caxL" value="true" />
         <ref role="2WHaRc" node="3MspsB8eG6c" resolve="Werknemer" />
       </node>
       <node concept="2WHaRa" id="3e11SfRJBG9" role="2WHaR8">
@@ -295,13 +289,11 @@
       <node concept="2WHaRd" id="rWgfCiCh$n" role="2WHaR8">
         <property role="TrG5h" value="werkgever" />
         <property role="34caxH" value="true" />
-        <property role="34caxL" value="true" />
         <ref role="2WHaRc" node="3MspsB8eG6p" resolve="Werkgever" />
       </node>
       <node concept="2WHaR9" id="T7nEYMX2mB" role="2WHaR8">
         <property role="TrG5h" value="werkgevernummer" />
         <property role="34caxH" value="true" />
-        <property role="34caxL" value="true" />
         <property role="34uzBG" value=" " />
       </node>
     </node>
@@ -335,13 +327,11 @@
       </node>
       <node concept="2WHaRd" id="T7nEYMX2mT" role="2WHaR8">
         <property role="TrG5h" value="werkgever" />
-        <property role="34caxL" value="true" />
         <property role="34caxH" value="true" />
         <ref role="2WHaRc" node="3MspsB8eG6p" resolve="Werkgever" />
       </node>
       <node concept="2WHaRd" id="T7nEYMX2mY" role="2WHaR8">
         <property role="TrG5h" value="werknemer" />
-        <property role="34caxL" value="true" />
         <property role="34caxH" value="true" />
         <ref role="2WHaRc" node="3MspsB8eG6c" resolve="Werknemer" />
       </node>
@@ -625,9 +615,19 @@
     </node>
     <node concept="kpplq" id="4cztqInRNGP" role="kobCs">
       <property role="TrG5h" value="Arbeidsovereenkomst" />
+      <node concept="21QOSU" id="4cztqIoppjm" role="21QOUd">
+        <node concept="34pkC5" id="4cztqIoppjt" role="21Rr83">
+          <ref role="34pkC4" node="4cztqInRNH5" resolve="arbeidsovereenkomst" />
+        </node>
+      </node>
     </node>
     <node concept="kpplq" id="4cztqInRNYH" role="kobCs">
       <property role="TrG5h" value="Verzoek aanpassing arbeidsduur" />
+      <node concept="21QOSU" id="4cztqIoppjw" role="21QOUd">
+        <node concept="34pkC5" id="4cztqIoppj$" role="21Rr83">
+          <ref role="34pkC4" node="4cztqInRNYY" resolve="verzoek aanpassing arbeidsduur" />
+        </node>
+      </node>
     </node>
     <node concept="kpplq" id="4cztqInRO4C" role="kobCs">
       <property role="TrG5h" value="Postcodegebied" />
@@ -642,12 +642,27 @@
     </node>
     <node concept="kpplq" id="4cztqInXtc0" role="kobCs">
       <property role="TrG5h" value="Arbeidsduur" />
+      <node concept="21QOSU" id="4cztqIoppjB" role="21QOUd">
+        <node concept="34pkC5" id="4cztqIoraMU" role="21Rr83">
+          <ref role="34pkC4" node="4cztqInRO2E" resolve="arbeidsduur" />
+        </node>
+      </node>
     </node>
     <node concept="kpplq" id="4cztqInXtcg" role="kobCs">
       <property role="TrG5h" value="Spreiding" />
+      <node concept="21QOSU" id="4cztqIojCoU" role="21QOUd">
+        <node concept="34pkC5" id="4cztqIoppjj" role="21Rr83">
+          <ref role="34pkC4" node="4cztqInYCfZ" resolve="spreiding" />
+        </node>
+      </node>
     </node>
     <node concept="kpplq" id="4cztqInYCdf" role="kobCs">
       <property role="TrG5h" value="Werkperiode" />
+      <node concept="21QOSU" id="4cztqIoraMX" role="21QOUd">
+        <node concept="34pkC5" id="4cztqIoraN1" role="21Rr83">
+          <ref role="34pkC4" node="4cztqInYCdL" resolve="werkperiode" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2WGWMU" id="T7nEYMXaG7">

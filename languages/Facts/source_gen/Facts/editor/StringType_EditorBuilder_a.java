@@ -11,12 +11,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import Facts.editor.Styles_StyleSheet.UnderlinedStyleClass;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 /*package*/ class StringType_EditorBuilder_a extends AbstractEditorBuilder {
@@ -56,11 +51,6 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_name");
-    Style style = new StyleImpl();
-    if (_StyleParameter_QueryFunction_vcvxr4_a0a0()) {
-      new UnderlinedStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
-    }
-    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
@@ -68,9 +58,6 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
       return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
     } else
     return editorCell;
-  }
-  private boolean _StyleParameter_QueryFunction_vcvxr4_a0a0() {
-    return (SPropertyOperations.getBoolean(getNode(), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL, 0x33810783f7b1aff2L, "unique")) == true);
   }
   private EditorCell createComponent_vcvxr4_b0() {
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "Facts.editor.Mandatory");

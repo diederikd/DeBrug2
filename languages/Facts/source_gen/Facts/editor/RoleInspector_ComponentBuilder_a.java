@@ -45,9 +45,6 @@ import jetbrains.mps.nodeEditor.EditorManager;
     editorCell.addEditorCell(createConstant_dbi1kw_d0());
     editorCell.addEditorCell(createConstant_dbi1kw_e0());
     editorCell.addEditorCell(createProperty_dbi1kw_f0());
-    editorCell.addEditorCell(createConstant_dbi1kw_g0());
-    editorCell.addEditorCell(createConstant_dbi1kw_h0());
-    editorCell.addEditorCell(createProperty_dbi1kw_i0());
     return editorCell;
   }
   private EditorCell createConstant_dbi1kw_a0() {
@@ -81,7 +78,7 @@ import jetbrains.mps.nodeEditor.EditorManager;
     return editorCell;
   }
   private EditorCell createConstant_dbi1kw_d0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "uniek");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "lidwoord");
     editorCell.setCellId("Constant_dbi1kw_d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
@@ -96,36 +93,6 @@ import jetbrains.mps.nodeEditor.EditorManager;
     return editorCell;
   }
   private EditorCell createProperty_dbi1kw_f0() {
-    CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
-    provider.setRole("unique");
-    provider.setNoTargetText("<no unique>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(getEditorContext());
-    editorCell.setCellId("RI_property_unique");
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
-    return editorCell;
-  }
-  private EditorCell createConstant_dbi1kw_g0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "lidwoord");
-    editorCell.setCellId("Constant_dbi1kw_g0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_dbi1kw_h0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
-    editorCell.setCellId("Constant_dbi1kw_h0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createProperty_dbi1kw_i0() {
     CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
     provider.setRole("article");
     provider.setNoTargetText("<no article>");
