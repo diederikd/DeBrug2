@@ -178,6 +178,11 @@
           <ref role="34pkC4" node="rWgfCiBnS8" resolve="werknemer" />
         </node>
       </node>
+      <node concept="21QOSU" id="1JuR_5SJrKG" role="21QOUd">
+        <node concept="34pkC5" id="1JuR_5SJrKU" role="21Rr83">
+          <ref role="34pkC4" node="rWgfCiCh$4" resolve="werknemernummer" />
+        </node>
+      </node>
       <node concept="2WHaRd" id="rWgfCiBnS8" role="2WHaR8">
         <property role="TrG5h" value="werknemer" />
         <property role="34caxH" value="true" />
@@ -186,7 +191,7 @@
       <node concept="2WHaR9" id="rWgfCiCh$4" role="2WHaR8">
         <property role="TrG5h" value="werknemernummer" />
         <property role="34caxH" value="true" />
-        <property role="34uzBG" value=" " />
+        <property role="34uzBG" value="een" />
       </node>
       <node concept="34qYQO" id="3e11SfRWlyH" role="34qYOv">
         <node concept="34qYQU" id="3e11SfRXJYJ" role="34rq46">
@@ -222,6 +227,16 @@
         <property role="TrG5h" value="burgerservicenummer" />
         <property role="34caxH" value="true" />
         <property role="34uzBG" value="een" />
+      </node>
+      <node concept="21QOSU" id="1JuR_5SJrKX" role="21QOUd">
+        <node concept="34pkC5" id="1JuR_5SJrL1" role="21Rr83">
+          <ref role="34pkC4" node="3e11SfRJBHk" resolve="werknemer" />
+        </node>
+      </node>
+      <node concept="21QOSU" id="1JuR_5SJrL8" role="21QOUd">
+        <node concept="34pkC5" id="1JuR_5SJrLe" role="21Rr83">
+          <ref role="34pkC4" node="3e11SfRJBHv" resolve="burgerservicenummer" />
+        </node>
       </node>
     </node>
     <node concept="2WHaQ2" id="3e11SfRJBFn" role="2WHal$">
@@ -263,10 +278,6 @@
           <ref role="34pkC4" node="3e11SfRJBFX" resolve="werknemer" />
         </node>
       </node>
-      <node concept="2WGKwB" id="4cztqIn_Ds3" role="2WHaR8">
-        <property role="TrG5h" value="known at" />
-        <property role="34caxH" value="true" />
-      </node>
     </node>
     <node concept="2WHaQ2" id="T7nEYMX2mw" role="2WHal$">
       <property role="TrG5h" value="WerkgeverNummer" />
@@ -294,7 +305,7 @@
       <node concept="2WHaR9" id="T7nEYMX2mB" role="2WHaR8">
         <property role="TrG5h" value="werkgevernummer" />
         <property role="34caxH" value="true" />
-        <property role="34uzBG" value=" " />
+        <property role="34uzBG" value="geen" />
       </node>
     </node>
     <node concept="2WHaQ2" id="T7nEYMX2mL" role="2WHal$">
@@ -914,15 +925,15 @@
       <ref role="2WGioV" node="3e11SfRJBFn" resolve="WerknemerNamen" />
       <node concept="3bDP1$" id="3MspsB8136p" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRYbI0" resolve="[werknemer, heeft, voornaam, en, achternaam]" />
-        <ref role="3bDP1D" node="3e11SfRLPSI" resolve="[ Henk, Diederik, Dulfer, 24-12-2017]" />
+        <ref role="3bDP1D" node="3e11SfRLPSI" resolve="[ Henk, Diederik, Dulfer]" />
       </node>
       <node concept="3bDP1$" id="3MspsB88etk" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRYbI0" resolve="[werknemer, heeft, voornaam, en, achternaam]" />
-        <ref role="3bDP1D" node="3MspsB8c$NR" resolve="[ Wim, Henk, Straver, 24-12-2017]" />
+        <ref role="3bDP1D" node="3MspsB8c$NR" resolve="[ Wim, Henk, Straver]" />
       </node>
       <node concept="3bDP1$" id="3MspsB8c$No" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRYbI0" resolve="[werknemer, heeft, voornaam, en, achternaam]" />
-        <ref role="3bDP1D" node="3MspsB8c$OU" resolve="[ Diederik, Wim, Zomers, 24-12-2017]" />
+        <ref role="3bDP1D" node="3MspsB8c$OU" resolve="[ Diederik, Wim, Zomers]" />
       </node>
       <node concept="2WGM88" id="3e11SfRLPSI" role="2WGioT">
         <ref role="2WGM87" node="3e11SfRJBFn" resolve="WerknemerNamen" />
@@ -942,16 +953,6 @@
           <ref role="2WGM82" node="3e11SfRJBGr" resolve="achternaam" />
           <node concept="2XiGHv" id="3e11SfRLPSN" role="2XiGH2">
             <property role="2XiGHu" value="Dulfer" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="4cztqIn_Dst" role="2WGM80">
-          <ref role="2WGM82" node="4cztqIn_Ds3" resolve="known at" />
-          <node concept="2XigOj" id="4cztqIn_Dsu" role="2XiGH2">
-            <node concept="2B78Lw" id="4cztqIn_Dsv" role="2Xi5h3">
-              <property role="2B78LB" value="24" />
-              <property role="2B78L_" value="12" />
-              <property role="2B78LE" value="2017" />
-            </node>
           </node>
         </node>
       </node>
@@ -975,16 +976,6 @@
             <property role="2XiGHu" value="Straver" />
           </node>
         </node>
-        <node concept="2WGM83" id="4cztqIn_Ds_" role="2WGM80">
-          <ref role="2WGM82" node="4cztqIn_Ds3" resolve="known at" />
-          <node concept="2XigOj" id="4cztqIn_DsA" role="2XiGH2">
-            <node concept="2B78Lw" id="4cztqIn_DsB" role="2Xi5h3">
-              <property role="2B78LE" value="2017" />
-              <property role="2B78L_" value="12" />
-              <property role="2B78LB" value="24" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="2WGM88" id="3MspsB8c$OU" role="2WGioT">
         <ref role="2WGM87" node="3e11SfRJBFn" resolve="WerknemerNamen" />
@@ -1004,16 +995,6 @@
           <ref role="2WGM82" node="3e11SfRJBGr" resolve="achternaam" />
           <node concept="2XiGHv" id="3MspsB8c$OZ" role="2XiGH2">
             <property role="2XiGHu" value="Zomers" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="4cztqIn_DsH" role="2WGM80">
-          <ref role="2WGM82" node="4cztqIn_Ds3" resolve="known at" />
-          <node concept="2XigOj" id="4cztqIn_DsI" role="2XiGH2">
-            <node concept="2B78Lw" id="4cztqIn_DsJ" role="2Xi5h3">
-              <property role="2B78LE" value="2017" />
-              <property role="2B78L_" value="12" />
-              <property role="2B78LB" value="24" />
-            </node>
           </node>
         </node>
       </node>

@@ -1112,6 +1112,17 @@
       <unit id="4837839804577838041" at="19,0,75,0" name="Facts.behavior.Instance__BehaviorDescriptor" />
     </file>
   </root>
+  <root nodeRef="r:0c9da324-6503-4efe-bde7-efa21705c63b(Facts.behavior)/4837839804591220534">
+    <file name="helper.java">
+      <node id="6770027970884103211" at="7,51,8,40" concept="7" />
+      <node id="6770027970884114052" at="7,0,10,0" concept="10" trace="ReplaceSpace#(Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="6770027970884103060" at="7,51,8,40" />
+      <scope id="6770027970884114052" at="7,0,10,0">
+        <var name="input" id="6770027970884103087" />
+      </scope>
+      <unit id="4837839804591220534" at="6,0,11,0" name="Facts.behavior.helper" />
+    </file>
+  </root>
   <root nodeRef="r:0c9da324-6503-4efe-bde7-efa21705c63b(Facts.behavior)/6415842129958216416">
     <file name="FactBase__BehaviorDescriptor.java">
       <node id="6415842129958216416" at="28,0,29,0" concept="9" trace="CONCEPT" />

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="15,0,77,0" name="SQL.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/2008286925354016779">
+    <file name="CREATEPROCEDURE_TextGen.java">
+      <node id="2008286925354016779" at="16,54,17,55" concept="4" />
+      <node id="2008286925354016779" at="17,55,18,36" concept="0" />
+      <node id="2008286925354016779" at="18,36,19,183" concept="0" />
+      <node id="2008286925354024298" at="19,183,20,21" concept="0" />
+      <node id="2008286925354061561" at="21,240,22,32" concept="0" />
+      <node id="2008286925354061077" at="23,243,24,24" concept="0" />
+      <node id="2008286925354026218" at="26,5,27,20" concept="0" />
+      <node id="2008286925354026675" at="27,20,28,18" concept="0" />
+      <node id="2008286925354021037" at="28,18,29,24" concept="0" />
+      <node id="2008286925354022606" at="30,212,31,27" concept="0" />
+      <node id="2008286925354016779" at="32,5,33,22" concept="0" />
+      <node id="2008286925354016779" at="33,22,34,18" concept="0" />
+      <node id="2008286925354051048" at="22,32,25,7" concept="2" />
+      <node id="2008286925354022606" at="29,24,32,5" concept="1" />
+      <node id="2008286925354049273" at="20,21,26,5" concept="1" />
+      <node id="2008286925354016779" at="15,0,36,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2008286925354051050" at="23,243,24,24" />
+      <scope id="2008286925354022606" at="30,212,31,27" />
+      <scope id="2008286925354022606" at="29,24,32,5">
+        <var name="item" id="2008286925354022606" />
+      </scope>
+      <scope id="2008286925354049279" at="21,240,25,7" />
+      <scope id="2008286925354049273" at="20,21,26,5">
+        <var name="parameter" id="2008286925354049275" />
+      </scope>
+      <scope id="2008286925354016779" at="16,54,34,18">
+        <var name="tgs" id="2008286925354016779" />
+      </scope>
+      <scope id="2008286925354016779" at="15,0,36,0">
+        <var name="ctx" id="2008286925354016779" />
+      </scope>
+      <unit id="2008286925354016779" at="14,0,37,0" name="SQL.textGen.CREATEPROCEDURE_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804584254452">
+    <file name="CREATETABLE_TextGen.java">
+      <node id="4837839804584254452" at="17,54,18,55" concept="4" />
+      <node id="4837839804592304074" at="18,55,19,18" concept="0" />
+      <node id="4837839804584254452" at="19,18,20,46" concept="0" />
+      <node id="4837839804584254452" at="20,46,21,195" concept="0" />
+      <node id="4837839804584254452" at="21,195,22,20" concept="0" />
+      <node id="4837839804584254452" at="22,20,23,198" concept="0" />
+      <node id="4837839804584254452" at="23,198,24,18" concept="0" />
+      <node id="4837839804584254452" at="24,18,25,20" concept="0" />
+      <node id="4837839804584254452" at="26,209,27,27" concept="0" />
+      <node id="4837839804595037254" at="30,39,31,186" concept="5" />
+      <node id="4837839804595070396" at="34,39,35,186" concept="5" />
+      <node id="4837839804595080538" at="37,290,38,39" concept="0" />
+      <node id="4837839804584254452" at="39,5,40,20" concept="0" />
+      <node id="4837839804584254452" at="40,20,41,20" concept="0" />
+      <node id="4837839804584254452" at="41,20,42,18" concept="0" />
+      <node id="4837839804584254452" at="25,20,28,5" concept="1" />
+      <node id="4837839804595036738" at="30,0,33,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="4837839804595069124" at="34,0,37,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="4837839804595023346" at="28,5,39,5" concept="2" />
+      <node id="4837839804584254452" at="16,0,44,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804584254452" at="26,209,27,27" />
+      <scope id="4837839804595036739" at="30,39,31,186" />
+      <scope id="4837839804595069125" at="34,39,35,186" />
+      <scope id="4837839804595023348" at="37,290,38,39" />
+      <scope id="4837839804584254452" at="25,20,28,5">
+        <var name="item" id="4837839804584254452" />
+      </scope>
+      <scope id="4837839804595036738" at="30,0,33,0">
+        <var name="it" id="4837839804595036738" />
+      </scope>
+      <scope id="4837839804595069124" at="34,0,37,0">
+        <var name="it" id="4837839804595069124" />
+      </scope>
+      <scope id="4837839804584254452" at="17,54,42,18">
+        <var name="tgs" id="4837839804584254452" />
+      </scope>
+      <scope id="4837839804584254452" at="16,0,44,0">
+        <var name="ctx" id="4837839804584254452" />
+      </scope>
+      <unit id="4837839804595036738" at="29,227,33,5" name="SQL.textGen.CREATETABLE_TextGen$2" />
+      <unit id="4837839804595069124" at="33,300,37,5" name="SQL.textGen.CREATETABLE_TextGen$1" />
+      <unit id="4837839804584254452" at="15,0,45,0" name="SQL.textGen.CREATETABLE_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804584273491">
+    <file name="COLUMN_TextGen.java">
+      <node id="4837839804584273491" at="16,54,17,55" concept="4" />
+      <node id="4837839804584273491" at="17,55,18,183" concept="0" />
+      <node id="4837839804584273491" at="18,183,19,20" concept="0" />
+      <node id="4837839804584273491" at="19,20,20,206" concept="0" />
+      <node id="4837839804592869156" at="21,355,22,31" concept="0" />
+      <node id="4837839804592869924" at="24,361,25,35" concept="0" />
+      <node id="2008286925353178899" at="27,368,28,22" concept="0" />
+      <node id="2008286925353177311" at="28,22,29,20" concept="0" />
+      <node id="4837839804593530795" at="29,20,30,28" concept="0" />
+      <node id="4837839804593530795" at="30,28,31,185" concept="0" />
+      <node id="4837839804593530795" at="31,185,32,24" concept="0" />
+      <node id="4837839804593530795" at="32,24,33,20" concept="0" />
+      <node id="4837839804593530795" at="33,20,34,34" concept="0" />
+      <node id="4837839804593530795" at="34,34,35,185" concept="0" />
+      <node id="4837839804593530795" at="35,185,36,22" concept="0" />
+      <node id="4837839804593530795" at="36,22,37,33" concept="0" />
+      <node id="4837839804593537267" at="37,33,38,563" concept="0" />
+      <node id="4837839804593530795" at="38,563,39,22" concept="0" />
+      <node id="4837839804593530795" at="39,22,40,511" concept="0" />
+      <node id="4837839804593530795" at="40,511,41,22" concept="0" />
+      <node id="4837839804584324527" at="43,74,44,22" concept="0" />
+      <node id="4837839804584321123" at="45,5,46,18" concept="0" />
+      <node id="4837839804592865756" at="20,206,23,5" concept="2" />
+      <node id="4837839804592869922" at="23,5,26,5" concept="2" />
+      <node id="4837839804584321507" at="42,5,45,5" concept="2" />
+      <node id="4837839804593530793" at="26,5,42,5" concept="2" />
+      <node id="4837839804584273491" at="15,0,48,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804592865758" at="21,355,22,31" />
+      <scope id="4837839804592869923" at="24,361,25,35" />
+      <scope id="4837839804584321509" at="43,74,44,22" />
+      <scope id="4837839804593530795" at="27,368,41,22" />
+      <scope id="4837839804584273491" at="16,54,46,18">
+        <var name="tgs" id="4837839804584273491" />
+      </scope>
+      <scope id="4837839804584273491" at="15,0,48,0">
+        <var name="ctx" id="4837839804584273491" />
+      </scope>
+      <unit id="4837839804584273491" at="14,0,49,0" name="SQL.textGen.COLUMN_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804584284418">
+    <file name="DDL_TextGen.java">
+      <node id="4837839804584284418" at="14,54,15,55" concept="4" />
+      <node id="4837839804584289464" at="16,212,17,27" concept="0" />
+      <node id="4837839804584289464" at="15,55,18,5" concept="1" />
+      <node id="4837839804584284418" at="13,0,20,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804584289464" at="16,212,17,27" />
+      <scope id="4837839804584289464" at="15,55,18,5">
+        <var name="item" id="4837839804584289464" />
+      </scope>
+      <scope id="4837839804584284418" at="14,54,18,5">
+        <var name="tgs" id="4837839804584284418" />
+      </scope>
+      <scope id="4837839804584284418" at="13,0,20,0">
+        <var name="ctx" id="4837839804584284418" />
+      </scope>
+      <unit id="4837839804584284418" at="12,0,21,0" name="SQL.textGen.DDL_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4837839804584285635" at="73,58,74,18" concept="5" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804584294242">
+    <file name="DATETIME_TextGen.java">
+      <node id="4837839804584294242" at="11,54,12,55" concept="4" />
+      <node id="4837839804584294263" at="12,55,13,27" concept="0" />
+      <node id="4837839804584294242" at="10,0,15,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804584294242" at="11,54,13,27">
+        <var name="tgs" id="4837839804584294242" />
+      </scope>
+      <scope id="4837839804584294242" at="10,0,15,0">
+        <var name="ctx" id="4837839804584294242" />
+      </scope>
+      <unit id="4837839804584294242" at="9,0,16,0" name="SQL.textGen.DATETIME_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804584310175">
+    <file name="DROPTABLE_TextGen.java">
+      <node id="4837839804584310175" at="13,54,14,55" concept="4" />
+      <node id="4837839804584310175" at="14,55,15,40" concept="0" />
+      <node id="4837839804584310175" at="15,40,16,198" concept="0" />
+      <node id="4837839804584310175" at="16,198,17,20" concept="0" />
+      <node id="4837839804584310175" at="17,20,18,18" concept="0" />
+      <node id="4837839804584310175" at="12,0,20,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804584310175" at="13,54,18,18">
+        <var name="tgs" id="4837839804584310175" />
+      </scope>
+      <scope id="4837839804584310175" at="12,0,20,0">
+        <var name="ctx" id="4837839804584310175" />
+      </scope>
+      <unit id="4837839804584310175" at="11,0,21,0" name="SQL.textGen.DROPTABLE_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804584353808">
+    <file name="USE_TextGen.java">
+      <node id="4837839804584353808" at="13,54,14,55" concept="4" />
+      <node id="4837839804584353808" at="14,55,15,23" concept="0" />
+      <node id="4837839804584353808" at="15,23,16,199" concept="0" />
+      <node id="4837839804584353808" at="16,199,17,20" concept="0" />
+      <node id="4837839804584353808" at="17,20,18,18" concept="0" />
+      <node id="4837839804584353808" at="12,0,20,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804584353808" at="13,54,18,18">
+        <var name="tgs" id="4837839804584353808" />
+      </scope>
+      <scope id="4837839804584353808" at="12,0,20,0">
+        <var name="ctx" id="4837839804584353808" />
+      </scope>
+      <unit id="4837839804584353808" at="11,0,21,0" name="SQL.textGen.USE_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804592291687">
+    <file name="DATE_TextGen.java">
+      <node id="4837839804592291687" at="11,54,12,55" concept="4" />
+      <node id="4837839804592291690" at="12,55,13,23" concept="0" />
+      <node id="4837839804592291687" at="10,0,15,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804592291687" at="11,54,13,23">
+        <var name="tgs" id="4837839804592291687" />
+      </scope>
+      <scope id="4837839804592291687" at="10,0,15,0">
+        <var name="ctx" id="4837839804592291687" />
+      </scope>
+      <unit id="4837839804592291687" at="9,0,16,0" name="SQL.textGen.DATE_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804592291713">
+    <file name="TIME_TextGen.java">
+      <node id="4837839804592291713" at="11,54,12,55" concept="4" />
+      <node id="4837839804592291716" at="12,55,13,23" concept="0" />
+      <node id="4837839804592291713" at="10,0,15,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804592291713" at="11,54,13,23">
+        <var name="tgs" id="4837839804592291713" />
+      </scope>
+      <scope id="4837839804592291713" at="10,0,15,0">
+        <var name="ctx" id="4837839804592291713" />
+      </scope>
+      <unit id="4837839804592291713" at="9,0,16,0" name="SQL.textGen.TIME_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804592291739">
+    <file name="INT_TextGen.java">
+      <node id="4837839804592291739" at="11,54,12,55" concept="4" />
+      <node id="4837839804592291742" at="12,55,13,22" concept="0" />
+      <node id="4837839804592291739" at="10,0,15,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804592291739" at="11,54,13,22">
+        <var name="tgs" id="4837839804592291739" />
+      </scope>
+      <scope id="4837839804592291739" at="10,0,15,0">
+        <var name="ctx" id="4837839804592291739" />
+      </scope>
+      <unit id="4837839804592291739" at="9,0,16,0" name="SQL.textGen.INT_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804592296968">
+    <file name="VARCHAR255_TextGen.java">
+      <node id="4837839804592296968" at="11,54,12,55" concept="4" />
+      <node id="4837839804592296971" at="12,55,13,32" concept="0" />
+      <node id="4837839804592296968" at="10,0,15,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804592296968" at="11,54,13,32">
+        <var name="tgs" id="4837839804592296968" />
+      </scope>
+      <scope id="4837839804592296968" at="10,0,15,0">
+        <var name="ctx" id="4837839804592296968" />
+      </scope>
+      <unit id="4837839804592296968" at="9,0,16,0" name="SQL.textGen.VARCHAR255_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804592862502">
+    <file name="BIGINT_TextGen.java">
+      <node id="4837839804592862502" at="11,54,12,55" concept="4" />
+      <node id="4837839804592862505" at="12,55,13,25" concept="0" />
+      <node id="4837839804592862502" at="10,0,15,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804592862502" at="11,54,13,25">
+        <var name="tgs" id="4837839804592862502" />
+      </scope>
+      <scope id="4837839804592862502" at="10,0,15,0">
+        <var name="ctx" id="4837839804592862502" />
+      </scope>
+      <unit id="4837839804592862502" at="9,0,16,0" name="SQL.textGen.BIGINT_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804592862558">
+    <file name="MEDIUMINT_TextGen.java">
+      <node id="4837839804592862558" at="11,54,12,55" concept="4" />
+      <node id="4837839804592862561" at="12,55,13,28" concept="0" />
+      <node id="4837839804592862558" at="10,0,15,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804592862558" at="11,54,13,28">
+        <var name="tgs" id="4837839804592862558" />
+      </scope>
+      <scope id="4837839804592862558" at="10,0,15,0">
+        <var name="ctx" id="4837839804592862558" />
+      </scope>
+      <unit id="4837839804592862558" at="9,0,16,0" name="SQL.textGen.MEDIUMINT_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804595837776">
+    <file name="ENUM_TextGen.java">
+      <node id="4837839804595837776" at="15,54,16,55" concept="4" />
+      <node id="4837839804595837797" at="16,55,17,23" concept="0" />
+      <node id="4837839804595837946" at="17,23,18,20" concept="0" />
+      <node id="4837839804595840081" at="19,232,20,28" concept="0" />
+      <node id="4837839804595862615" at="21,235,22,25" concept="0" />
+      <node id="4837839804595838199" at="24,5,25,20" concept="0" />
+      <node id="4837839804595841590" at="20,28,23,7" concept="2" />
+      <node id="4837839804595838300" at="18,20,24,5" concept="1" />
+      <node id="4837839804595837776" at="14,0,27,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804595841592" at="21,235,22,25" />
+      <scope id="4837839804595838306" at="19,232,23,7" />
+      <scope id="4837839804595838300" at="18,20,24,5">
+        <var name="value" id="4837839804595838302" />
+      </scope>
+      <scope id="4837839804595837776" at="15,54,25,20">
+        <var name="tgs" id="4837839804595837776" />
+      </scope>
+      <scope id="4837839804595837776" at="14,0,27,0">
+        <var name="ctx" id="4837839804595837776" />
+      </scope>
+      <unit id="4837839804595837776" at="13,0,28,0" name="SQL.textGen.ENUM_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:54cb82a1-a550-4768-8c88-cb3702ca2a0a(SQL.textGen)/4837839804595879511">
+    <file name="ENUMERATIONVALUE_TextGen.java">
+      <node id="4837839804595879511" at="13,54,14,55" concept="4" />
+      <node id="4837839804595879511" at="14,55,15,20" concept="0" />
+      <node id="4837839804595879511" at="15,20,16,183" concept="0" />
+      <node id="4837839804595879511" at="16,183,17,20" concept="0" />
+      <node id="4837839804595879511" at="12,0,19,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4837839804595879511" at="13,54,17,20">
+        <var name="tgs" id="4837839804595879511" />
+      </scope>
+      <scope id="4837839804595879511" at="12,0,19,0">
+        <var name="ctx" id="4837839804595879511" />
+      </scope>
+      <unit id="4837839804595879511" at="11,0,20,0" name="SQL.textGen.ENUMERATIONVALUE_TextGen" />
+    </file>
+  </root>
+</debug-info>
+

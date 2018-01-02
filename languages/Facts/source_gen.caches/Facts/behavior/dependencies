@@ -456,5 +456,8 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
+  <dependency className="Facts.behavior.helper" file="helper.java">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
 </dependenciesRoot>
 

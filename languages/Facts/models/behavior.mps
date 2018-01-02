@@ -57,6 +57,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -66,6 +67,7 @@
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -79,6 +81,8 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
+        <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -119,6 +123,9 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -2403,6 +2410,39 @@
     <node concept="13hLZK" id="4cztqIo6Rfq" role="13h7CW">
       <node concept="3clFbS" id="4cztqIo6Rfr" role="2VODD2" />
     </node>
+  </node>
+  <node concept="312cEu" id="4cztqIoTUsQ">
+    <property role="TrG5h" value="helper" />
+    <node concept="2YIFZL" id="5RNY9840pq4" role="jymVt">
+      <property role="TrG5h" value="ReplaceSpace" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="5RNY9840mIk" role="3clF47">
+        <node concept="3clFbF" id="5RNY9840mKF" role="3cqZAp">
+          <node concept="2OqwBi" id="5RNY9840n1U" role="3clFbG">
+            <node concept="37vLTw" id="5RNY9840mKE" role="2Oq$k0">
+              <ref role="3cqZAo" node="5RNY9840mIJ" resolve="input" />
+            </node>
+            <node concept="liA8E" id="5RNY9840nfK" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+              <node concept="Xl_RD" id="5RNY9840nkB" role="37wK5m">
+                <property role="Xl_RC" value="\\s" />
+              </node>
+              <node concept="Xl_RD" id="5RNY9840nuq" role="37wK5m">
+                <property role="Xl_RC" value="_" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5RNY9840mIJ" role="3clF46">
+        <property role="TrG5h" value="input" />
+        <node concept="17QB3L" id="5RNY9840mJ2" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="5RNY9840mI7" role="3clF45" />
+      <node concept="3Tm1VV" id="5RNY9840plm" role="1B3o_S" />
+    </node>
+    <node concept="3Tm1VV" id="4cztqIoTUsR" role="1B3o_S" />
   </node>
 </model>
 
