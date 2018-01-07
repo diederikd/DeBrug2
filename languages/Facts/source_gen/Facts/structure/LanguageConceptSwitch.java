@@ -37,15 +37,19 @@ public final class LanguageConceptSwitch {
   public static final int Instance = 25;
   public static final int IntegerType = 26;
   public static final int IntegerValue = 27;
-  public static final int Role = 28;
-  public static final int RoleReference = 29;
-  public static final int StringType = 30;
-  public static final int StringValue = 31;
-  public static final int TimeType = 32;
-  public static final int TimeValue = 33;
-  public static final int Value = 34;
-  public static final int ValueType = 35;
-  public static final int Variable = 36;
+  public static final int KnownAt = 28;
+  public static final int Role = 29;
+  public static final int RoleReference = 30;
+  public static final int Specializes = 31;
+  public static final int StringType = 32;
+  public static final int StringValue = 33;
+  public static final int TimeType = 34;
+  public static final int TimeValue = 35;
+  public static final int ValidityFrom = 36;
+  public static final int ValidityTo = 37;
+  public static final int Value = 38;
+  public static final int ValueType = 39;
+  public static final int Variable = 40;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x2aacdfbf487f43acL, 0xa43119468403f2c5L);
@@ -77,12 +81,16 @@ public final class LanguageConceptSwitch {
     builder.put(0x432375ab97df4163L, Instance);
     builder.put(0xe475eafb2f3f366L, IntegerType);
     builder.put(0xe475eafb30d95eaL, IntegerValue);
+    builder.put(0x60a1274b21e189e4L, KnownAt);
     builder.put(0xe475eafb2f3f32eL, Role);
     builder.put(0x33810783f7e44d86L, RoleReference);
+    builder.put(0x60a1274b2203d5eaL, Specializes);
     builder.put(0xe475eafb2f3f365L, StringType);
     builder.put(0xe475eafb30d95f0L, StringValue);
     builder.put(0x432375ab97f1465cL, TimeType);
     builder.put(0x432375ab9804ef1fL, TimeValue);
+    builder.put(0x1bdede51790b01a4L, ValidityFrom);
+    builder.put(0x1bdede51790b01a8L, ValidityTo);
     builder.put(0xe475eafb30d415aL, Value);
     builder.put(0xe475eafb2f3f32fL, ValueType);
     builder.put(0xe475eafb2f47cacL, Variable);

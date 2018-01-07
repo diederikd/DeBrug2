@@ -1,123 +1,85 @@
+SET FOREIGN_KEY_CHECKS=0;
 USE test;
-DROP TABLE IF EXISTS Entity_Werknemer;
-DROP TABLE IF EXISTS Entity_Werkgever;
-DROP TABLE IF EXISTS Entity_Arbeidsovereenkomst;
-DROP TABLE IF EXISTS Entity_Verzoek_aanpassing_arbeidsduur;
-DROP TABLE IF EXISTS Entity_Postcodegebied;
-DROP TABLE IF EXISTS Entity_Arbeidsduur;
-DROP TABLE IF EXISTS Entity_Spreiding;
-DROP TABLE IF EXISTS Entity_Werkperiode;
-DROP TABLE IF EXISTS Fact_WerknemerNummer;
-DROP TABLE IF EXISTS Fact_WerknemerBSN;
-DROP TABLE IF EXISTS Fact_WerknemerNamen;
-DROP TABLE IF EXISTS Fact_WerkgeverNummer;
-DROP TABLE IF EXISTS Fact_Arbeidsovereenkomst;
-DROP TABLE IF EXISTS Fact_Aanpassing_van_de_arbeidsduur;
-DROP TABLE IF EXISTS Fact_Arbeidsduurperiode_van_arbeidsovereenkomst;
-DROP TABLE IF EXISTS Fact_Postgebied_heeft_postcode;
-DROP TABLE IF EXISTS Fact_Spreiding;
-DROP TABLE IF EXISTS Fact_Werkperiode;
+DROP TABLE IF EXISTS Entity_Rechtssubjecttype;
+DROP TABLE IF EXISTS Entity_Rechtsfeittype;
+DROP TABLE IF EXISTS Entity_Rechtsfeittype_met_actief_rechtssubject;
+DROP TABLE IF EXISTS Entity_Tijdsverloop_met_rechtsgevolg;
+DROP TABLE IF EXISTS Entity_Gebeurtenis_met_rechtsgevolg;
+DROP TABLE IF EXISTS Entity_Feitelijke_handeling_met_rechtsgevolg;
+DROP TABLE IF EXISTS Entity_Rechtshandeling;
+DROP TABLE IF EXISTS Entity_Rechtsfeittype_zonder_actief_rechtssubject;
+DROP TABLE IF EXISTS Entity_OnderwerpType;
+DROP TABLE IF EXISTS Entity_RechtsbetrekkingType;
+DROP TABLE IF EXISTS Fact_Rechtsbetrekking;
+DROP TABLE IF EXISTS Fact_Rechtsgevolg;
 
-CREATE TABLE IF NOT EXISTS test.Entity_Werknemer
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT
+CREATE TABLE IF NOT EXISTS test.Entity_Rechtssubjecttype
+(Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Werkgever
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT
+CREATE TABLE IF NOT EXISTS test.Entity_Rechtsfeittype
+(Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Arbeidsovereenkomst
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT
+CREATE TABLE IF NOT EXISTS test.Entity_Rechtsfeittype_met_actief_rechtssubject
+(Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Verzoek_aanpassing_arbeidsduur
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT
+CREATE TABLE IF NOT EXISTS test.Entity_Tijdsverloop_met_rechtsgevolg
+(Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Postcodegebied
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT
+CREATE TABLE IF NOT EXISTS test.Entity_Gebeurtenis_met_rechtsgevolg
+(Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Arbeidsduur
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT
+CREATE TABLE IF NOT EXISTS test.Entity_Feitelijke_handeling_met_rechtsgevolg
+(Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Spreiding
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT
+CREATE TABLE IF NOT EXISTS test.Entity_Rechtshandeling
+(Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Werkperiode
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT
+CREATE TABLE IF NOT EXISTS test.Entity_Rechtsfeittype_zonder_actief_rechtssubject
+(Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Fact_WerknemerNummer
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT,
-werknemer MEDIUMINT NOT NULL ,
-werknemernummer INT
+CREATE TABLE IF NOT EXISTS test.Entity_OnderwerpType
+(Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Fact_WerknemerBSN
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT,
-werknemer MEDIUMINT NOT NULL ,
-burgerservicenummer VARCHAR (255)
+CREATE TABLE IF NOT EXISTS test.Entity_RechtsbetrekkingType
+(Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Fact_WerknemerNamen
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT,
-werknemer MEDIUMINT NOT NULL ,
-voornaam VARCHAR (255),
-achternaam VARCHAR (255)
+CREATE TABLE IF NOT EXISTS test.Fact_Rechtsbetrekking
+(Id MEDIUMINT,
+rechtsbetrekking MEDIUMINT NOT NULL ,
+INDEX (rechtsbetrekking), 
+FOREIGN KEY (rechtsbetrekking) REFERENCES Entity_RechtsbetrekkingType(Id),
+soort_rechtsbetrekking ENUM('Krachtige aanspraak - fatale verplichting', 'Aanspraak na ingebrekestelling-verplichting na ingebrekestelling', 'Zwakke aanspraak-zwakke verplichting', 'Optionele bevoegdheid-gehoudenheid', 'Verplichte bevoegdheid-gehoudenheid', 'Immuniteit-GeenBevoegdheid'),
+soort_subject_met_recht MEDIUMINT NOT NULL ,
+INDEX (soort_subject_met_recht), 
+FOREIGN KEY (soort_subject_met_recht) REFERENCES Entity_Rechtssubjecttype(Id),
+soort_subject_met_plicht MEDIUMINT NOT NULL ,
+INDEX (soort_subject_met_plicht), 
+FOREIGN KEY (soort_subject_met_plicht) REFERENCES Entity_Rechtssubjecttype(Id),
+rechtsfeit MEDIUMINT NOT NULL ,
+INDEX (rechtsfeit), 
+FOREIGN KEY (rechtsfeit) REFERENCES Entity_Rechtsfeittype(Id),
+onderwerp MEDIUMINT NOT NULL ,
+INDEX (onderwerp), 
+FOREIGN KEY (onderwerp) REFERENCES Entity_OnderwerpType(Id)
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Fact_WerkgeverNummer
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT,
-werkgever MEDIUMINT NOT NULL ,
-werkgevernummer INT
-, PRIMARY KEY (Id));
-
-CREATE TABLE IF NOT EXISTS test.Fact_Arbeidsovereenkomst
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT,
-werkgever MEDIUMINT NOT NULL ,
-werknemer MEDIUMINT NOT NULL ,
-arbeidsovereenkomst MEDIUMINT NOT NULL ,
-datum_in_dienst DATE,
-datum_van_tekenen_arbeidscontract DATE
-, PRIMARY KEY (Id));
-
-CREATE TABLE IF NOT EXISTS test.Fact_Aanpassing_van_de_arbeidsduur
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT,
-werknemer MEDIUMINT NOT NULL ,
-werkgever MEDIUMINT NOT NULL ,
-verzoek_aanpassing_arbeidsduur MEDIUMINT NOT NULL ,
-arbeidsovereenkomst MEDIUMINT NOT NULL ,
-datum_indienen_verzoek DATE
-, PRIMARY KEY (Id));
-
-CREATE TABLE IF NOT EXISTS test.Fact_Arbeidsduurperiode_van_arbeidsovereenkomst
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT,
-arbeidsduur INT,
-datum_geldig_van DATE,
-datum_geldig_tot DATE,
-spreiding MEDIUMINT NOT NULL 
-, PRIMARY KEY (Id));
-
-CREATE TABLE IF NOT EXISTS test.Fact_Postgebied_heeft_postcode
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT,
-postcodegebied MEDIUMINT NOT NULL ,
-postcodeNummer VARCHAR (255),
-postcodeLetters VARCHAR (255)
-, PRIMARY KEY (Id));
-
-CREATE TABLE IF NOT EXISTS test.Fact_Spreiding
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT,
-spreiding MEDIUMINT NOT NULL ,
-werkperiode MEDIUMINT NOT NULL 
-, PRIMARY KEY (Id));
-
-CREATE TABLE IF NOT EXISTS test.Fact_Werkperiode
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT,
-werkperiode MEDIUMINT NOT NULL ,
-dag ENUM('Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag', 'Zondag'),
-begintijd TIME,
-eindtijd TIME
+CREATE TABLE IF NOT EXISTS test.Fact_Rechtsgevolg
+(Id MEDIUMINT,
+rechtsfeit MEDIUMINT NOT NULL ,
+INDEX (rechtsfeit), 
+FOREIGN KEY (rechtsfeit) REFERENCES Entity_Rechtsfeittype(Id),
+aanpassing ENUM('creatie', 'wijziging', 'beeindiging'),
+rechtsbetrekking MEDIUMINT NOT NULL ,
+INDEX (rechtsbetrekking), 
+FOREIGN KEY (rechtsbetrekking) REFERENCES Entity_RechtsbetrekkingType(Id)
 , PRIMARY KEY (Id));

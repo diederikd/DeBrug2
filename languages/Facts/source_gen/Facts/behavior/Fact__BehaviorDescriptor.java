@@ -26,7 +26,7 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
 import org.apache.log4j.Level;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import DateTime.behavior.Date__BehaviorDescriptor;
+import DateTime.behavior.DateTime__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -76,8 +76,8 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
       if ((SLinkOperations.getTarget(variable, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")) == null)) {
         SNodeOperations.deleteNode(variable);
       }
-      if (SPropertyOperations.getString(SLinkOperations.getTarget(variable, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).equals("known at") && (SLinkOperations.getTarget(((SNode) SLinkOperations.getTarget(variable, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"))), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30e53bcL, 0xe475eafb30f0aecL, "value")) == null)) {
-        Date__BehaviorDescriptor.setDateNow_id4cztqIn5jpZ.invoke(SLinkOperations.getTarget(((SNode) SLinkOperations.getTarget(variable, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"))), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30e53bcL, 0xe475eafb30f0aecL, "value")));
+      if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(variable, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x60a1274b21e189e4L, "Facts.structure.KnownAt"))) {
+        DateTime__BehaviorDescriptor.setDateTimeNow_id4cztqIn5h$s.invoke(SLinkOperations.getTarget(((SNode) SLinkOperations.getTarget(variable, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"))), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, 0x432375ab9804ef37L, "value")));
       }
     }
   }

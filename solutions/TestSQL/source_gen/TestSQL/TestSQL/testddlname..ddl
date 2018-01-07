@@ -1,3 +1,4 @@
+SET FOREIGN_KEY_CHECKS=0;
 USE Test;
 DROP TABLE IF EXISTS TestTable;
 
@@ -8,15 +9,23 @@ column2 INT
 , PRIMARY KEY (Id));
 
 CREATE TABLE IF NOT EXISTS Test.Auto
-(eigenaar INT,
+(eigenaar MEDIUMINT,
 INDEX (eigenaar), 
-FOREIGN KEY (eigenaar) REFERENCES Persoon(Id),
-kleur ENUM('Zwart', 'Rood', 'Blauw')
+FOREIGN KEY (eigenaar) REFERENCES ABC(Id),
+kleur ENUM('Zwart', 'Rood', 'Wit')
 );
-CREATE PROCEDURE procedure_abc()
+
+DELIMITER //
+CREATE PROCEDURE procedure_abc (IN parm1 MEDIUMINT)
+
+COMMENT ''
+
 BEGIN
 
 CREATE TABLE IF NOT EXISTS test.ABC
-(Id MEDIUMINT NOT NULL AUTO_INCREMENT
-, PRIMARY KEY (Id));
-END
+(Id MEDIUMINT
+);
+INSERT INTO ABC (Id) VALUES (NULL);
+END //
+DELIMITER ;
+

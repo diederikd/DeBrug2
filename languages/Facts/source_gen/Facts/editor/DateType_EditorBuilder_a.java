@@ -70,7 +70,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
     return editorCell;
   }
   private EditorCell createConstant_tzq11e_d0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Date");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Datum");
     editorCell.setCellId("Constant_tzq11e_d0");
     editorCell.setDefaultText("");
     return editorCell;

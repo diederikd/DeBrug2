@@ -75,6 +75,12 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -286,16 +292,24 @@
             </node>
           </node>
         </node>
-        <node concept="2OqwBi" id="2092lgll_2Z" role="3clFbw">
-          <node concept="2OqwBi" id="2092lgll$88" role="2Oq$k0">
-            <node concept="1YBJjd" id="2092lgllzYK" role="2Oq$k0">
+        <node concept="1Wc70l" id="1JuR_5T1HxC" role="3clFbw">
+          <node concept="2OqwBi" id="1JuR_5T1I0a" role="3uHU7B">
+            <node concept="1YBJjd" id="1JuR_5T1HOv" role="2Oq$k0">
               <ref role="1YBMHb" node="EOKdUesaMp" resolve="entity" />
             </node>
-            <node concept="3TrcHB" id="2092lgll$$T" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-            </node>
+            <node concept="3x8VRR" id="1JuR_5T1Ixk" role="2OqNvi" />
           </node>
-          <node concept="17RvpY" id="2092lgll_vg" role="2OqNvi" />
+          <node concept="2OqwBi" id="2092lgll_2Z" role="3uHU7w">
+            <node concept="2OqwBi" id="2092lgll$88" role="2Oq$k0">
+              <node concept="1YBJjd" id="2092lgllzYK" role="2Oq$k0">
+                <ref role="1YBMHb" node="EOKdUesaMp" resolve="entity" />
+              </node>
+              <node concept="3TrcHB" id="2092lgll$$T" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="2092lgll_vg" role="2OqNvi" />
+          </node>
         </node>
       </node>
     </node>
@@ -484,6 +498,11 @@
     <property role="3GE5qa" value="entity" />
     <property role="TrG5h" value="typeof_FactHasUniquePrimairyIdentifier" />
     <node concept="3clFbS" id="4ytfZr48tBk" role="18ibNy">
+      <node concept="3SKdUt" id="1JuR_5T2JEE" role="3cqZAp">
+        <node concept="3SKdUq" id="1JuR_5T2JEG" role="3SKWNk">
+          <property role="3SKdUp" value="TODO does not work when facttype does not have an identifier" />
+        </node>
+      </node>
       <node concept="3cpWs8" id="4ytfZr48FrT" role="3cqZAp">
         <node concept="3cpWsn" id="4ytfZr48FrW" role="3cpWs9">
           <property role="TrG5h" value="result" />

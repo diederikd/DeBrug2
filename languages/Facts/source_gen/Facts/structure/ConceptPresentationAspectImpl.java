@@ -37,12 +37,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Instance;
   private ConceptPresentation props_IntegerType;
   private ConceptPresentation props_IntegerValue;
+  private ConceptPresentation props_KnownAt;
   private ConceptPresentation props_Role;
   private ConceptPresentation props_RoleReference;
+  private ConceptPresentation props_Specializes;
   private ConceptPresentation props_StringType;
   private ConceptPresentation props_StringValue;
   private ConceptPresentation props_TimeType;
   private ConceptPresentation props_TimeValue;
+  private ConceptPresentation props_ValidityFrom;
+  private ConceptPresentation props_ValidityTo;
   private ConceptPresentation props_Value;
   private ConceptPresentation props_ValueType;
   private ConceptPresentation props_Variable;
@@ -55,7 +59,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Concept:
         if (props_Concept == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Concept");
+          cpb.presentationByName();
           props_Concept = cpb.create();
         }
         return props_Concept;
@@ -247,6 +251,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IntegerValue = cpb.create();
         }
         return props_IntegerValue;
+      case LanguageConceptSwitch.KnownAt:
+        if (props_KnownAt == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_KnownAt = cpb.create();
+        }
+        return props_KnownAt;
       case LanguageConceptSwitch.Role:
         if (props_Role == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -260,6 +271,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RoleReference = cpb.create();
         }
         return props_RoleReference;
+      case LanguageConceptSwitch.Specializes:
+        if (props_Specializes == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Specializes");
+          props_Specializes = cpb.create();
+        }
+        return props_Specializes;
       case LanguageConceptSwitch.StringType:
         if (props_StringType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -288,6 +306,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TimeValue = cpb.create();
         }
         return props_TimeValue;
+      case LanguageConceptSwitch.ValidityFrom:
+        if (props_ValidityFrom == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ValidityFrom = cpb.create();
+        }
+        return props_ValidityFrom;
+      case LanguageConceptSwitch.ValidityTo:
+        if (props_ValidityTo == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ValidityTo = cpb.create();
+        }
+        return props_ValidityTo;
       case LanguageConceptSwitch.Value:
         if (props_Value == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
