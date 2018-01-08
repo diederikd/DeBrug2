@@ -1114,13 +1114,64 @@
   </root>
   <root nodeRef="r:0c9da324-6503-4efe-bde7-efa21705c63b(Facts.behavior)/4837839804591220534">
     <file name="helper.java">
-      <node id="6770027970884103211" at="7,51,8,40" concept="7" />
-      <node id="6770027970884114052" at="7,0,10,0" concept="10" trace="ReplaceSpace#(Ljava/lang/String;)Ljava/lang/String;" />
-      <scope id="6770027970884103060" at="7,51,8,40" />
-      <scope id="6770027970884114052" at="7,0,10,0">
+      <node id="6770027970884103211" at="16,51,17,40" concept="7" />
+      <node id="3829032966752732176" at="19,64,20,133" concept="6" />
+      <node id="3829032966752732202" at="23,27,24,214" concept="2" />
+      <node id="3829032966752732211" at="26,13,27,50" concept="6" />
+      <node id="3829032966752732214" at="28,197,29,440" concept="6" />
+      <node id="3829032966752732225" at="29,440,30,196" concept="6" />
+      <node id="3829032966752732231" at="30,196,31,198" concept="6" />
+      <node id="3829032966752732237" at="31,198,32,194" concept="2" />
+      <node id="3829032966752732246" at="32,194,33,203" concept="2" />
+      <node id="3829032966752732253" at="33,203,34,237" concept="2" />
+      <node id="3829032966752732260" at="34,237,35,238" concept="2" />
+      <node id="3829032966752732269" at="38,13,39,50" concept="6" />
+      <node id="3829032966752732272" at="40,197,41,196" concept="6" />
+      <node id="3829032966752732278" at="41,196,42,331" concept="2" />
+      <node id="3829032966752732287" at="42,331,43,237" concept="2" />
+      <node id="6770027970884114052" at="16,0,19,0" concept="10" trace="ReplaceSpace#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="3829032966752732269" at="39,50,44,15" concept="4" />
+      <node id="3829032966752732269" at="37,13,45,13" concept="0" />
+      <node id="3829032966752732211" at="27,50,36,15" concept="4" />
+      <node id="3829032966752732211" at="25,393,37,13" concept="0" />
+      <node id="3829032966752732208" at="24,214,46,11" concept="3" />
+      <node id="3829032966752732198" at="23,0,48,0" concept="5" trace="run#()V" />
+      <node id="3829032966752732190" at="21,40,48,9" concept="2" />
+      <node id="3829032966752732188" at="20,133,49,5" concept="4" />
+      <node id="3829032966752732173" at="19,0,51,0" concept="10" trace="BuildFactWording#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6770027970884103060" at="16,51,17,40" />
+      <scope id="6770027970884114052" at="16,0,19,0">
         <var name="input" id="6770027970884103087" />
       </scope>
-      <unit id="4837839804591220534" at="6,0,11,0" name="Facts.behavior.helper" />
+      <scope id="3829032966752732271" at="40,197,43,237">
+        <var name="factWordVerb" id="3829032966752732273" />
+      </scope>
+      <scope id="3829032966752732269" at="38,13,44,15">
+        <var name="factTypeWordVerb" id="3829032966752732269" />
+      </scope>
+      <scope id="3829032966752732213" at="28,197,35,238">
+        <var name="factWordRole" id="3829032966752732226" />
+        <var name="factWordValue" id="3829032966752732232" />
+        <var name="value" id="3829032966752732215" />
+      </scope>
+      <scope id="3829032966752732211" at="26,13,36,15">
+        <var name="factTypeWordRole" id="3829032966752732211" />
+      </scope>
+      <scope id="3829032966752732210" at="25,393,45,13" />
+      <scope id="3829032966752732208" at="24,214,46,11">
+        <var name="word" id="3829032966752732209" />
+      </scope>
+      <scope id="3829032966752732201" at="23,27,46,11" />
+      <scope id="3829032966752732198" at="23,0,48,0" />
+      <scope id="3829032966752732189" at="21,40,48,9" />
+      <scope id="3829032966752732175" at="19,64,49,5">
+        <var name="projectModelAccess" id="3829032966752732177" />
+      </scope>
+      <scope id="3829032966752732173" at="19,0,51,0">
+        <var name="factWording" id="3829032966752732305" />
+      </scope>
+      <unit id="3829032966752732196" at="22,44,48,7" name="Facts.behavior.helper$1" />
+      <unit id="4837839804591220534" at="15,0,52,0" name="Facts.behavior.helper" />
     </file>
   </root>
   <root nodeRef="r:0c9da324-6503-4efe-bde7-efa21705c63b(Facts.behavior)/6415842129958216416">

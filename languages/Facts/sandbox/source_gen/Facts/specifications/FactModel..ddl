@@ -1,85 +1,276 @@
 SET FOREIGN_KEY_CHECKS=0;
 USE test;
-DROP TABLE IF EXISTS Entity_Rechtssubjecttype;
-DROP TABLE IF EXISTS Entity_Rechtsfeittype;
-DROP TABLE IF EXISTS Entity_Rechtsfeittype_met_actief_rechtssubject;
-DROP TABLE IF EXISTS Entity_Tijdsverloop_met_rechtsgevolg;
-DROP TABLE IF EXISTS Entity_Gebeurtenis_met_rechtsgevolg;
-DROP TABLE IF EXISTS Entity_Feitelijke_handeling_met_rechtsgevolg;
-DROP TABLE IF EXISTS Entity_Rechtshandeling;
-DROP TABLE IF EXISTS Entity_Rechtsfeittype_zonder_actief_rechtssubject;
-DROP TABLE IF EXISTS Entity_OnderwerpType;
-DROP TABLE IF EXISTS Entity_RechtsbetrekkingType;
-DROP TABLE IF EXISTS Fact_Rechtsbetrekking;
-DROP TABLE IF EXISTS Fact_Rechtsgevolg;
+DROP TABLE IF EXISTS Entity_Werknemer;
+DROP TABLE IF EXISTS Entity_Werkgever;
+DROP TABLE IF EXISTS Entity_Arbeidsovereenkomst;
+DROP TABLE IF EXISTS Entity_Verzoek_aanpassing_arbeidsduur;
+DROP TABLE IF EXISTS Entity_Postcodegebied;
+DROP TABLE IF EXISTS Entity_Arbeidsduur;
+DROP TABLE IF EXISTS Entity_Spreiding;
+DROP TABLE IF EXISTS Entity_Werkperiode;
+DROP TABLE IF EXISTS Fact_WerknemerNummer;
+DROP TABLE IF EXISTS Fact_WerknemerBSN;
+DROP TABLE IF EXISTS Fact_WerknemerNamen;
+DROP TABLE IF EXISTS Fact_WerkgeverNummer;
+DROP TABLE IF EXISTS Fact_Arbeidsovereenkomst;
+DROP TABLE IF EXISTS Fact_Aanpassing_van_de_arbeidsduur;
+DROP TABLE IF EXISTS Fact_Arbeidsduurperiode_van_arbeidsovereenkomst;
+DROP TABLE IF EXISTS Fact_Postgebied_heeft_postcode;
+DROP TABLE IF EXISTS Fact_Spreiding;
+DROP TABLE IF EXISTS Fact_Werkperiode;
 
-CREATE TABLE IF NOT EXISTS test.Entity_Rechtssubjecttype
+CREATE TABLE IF NOT EXISTS test.Entity_Werknemer
 (Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Rechtsfeittype
+CREATE TABLE IF NOT EXISTS test.Entity_Werkgever
 (Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Rechtsfeittype_met_actief_rechtssubject
+CREATE TABLE IF NOT EXISTS test.Entity_Arbeidsovereenkomst
 (Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Tijdsverloop_met_rechtsgevolg
+CREATE TABLE IF NOT EXISTS test.Entity_Verzoek_aanpassing_arbeidsduur
 (Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Gebeurtenis_met_rechtsgevolg
+CREATE TABLE IF NOT EXISTS test.Entity_Postcodegebied
 (Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Feitelijke_handeling_met_rechtsgevolg
+CREATE TABLE IF NOT EXISTS test.Entity_Arbeidsduur
 (Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Rechtshandeling
+CREATE TABLE IF NOT EXISTS test.Entity_Spreiding
 (Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Rechtsfeittype_zonder_actief_rechtssubject
+CREATE TABLE IF NOT EXISTS test.Entity_Werkperiode
 (Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_OnderwerpType
-(Id MEDIUMINT
-, PRIMARY KEY (Id));
-
-CREATE TABLE IF NOT EXISTS test.Entity_RechtsbetrekkingType
-(Id MEDIUMINT
-, PRIMARY KEY (Id));
-
-CREATE TABLE IF NOT EXISTS test.Fact_Rechtsbetrekking
+CREATE TABLE IF NOT EXISTS test.Fact_WerknemerNummer
 (Id MEDIUMINT,
-rechtsbetrekking MEDIUMINT NOT NULL ,
-INDEX (rechtsbetrekking), 
-FOREIGN KEY (rechtsbetrekking) REFERENCES Entity_RechtsbetrekkingType(Id),
-soort_rechtsbetrekking ENUM('Krachtige aanspraak - fatale verplichting', 'Aanspraak na ingebrekestelling-verplichting na ingebrekestelling', 'Zwakke aanspraak-zwakke verplichting', 'Optionele bevoegdheid-gehoudenheid', 'Verplichte bevoegdheid-gehoudenheid', 'Immuniteit-GeenBevoegdheid'),
-soort_subject_met_recht MEDIUMINT NOT NULL ,
-INDEX (soort_subject_met_recht), 
-FOREIGN KEY (soort_subject_met_recht) REFERENCES Entity_Rechtssubjecttype(Id),
-soort_subject_met_plicht MEDIUMINT NOT NULL ,
-INDEX (soort_subject_met_plicht), 
-FOREIGN KEY (soort_subject_met_plicht) REFERENCES Entity_Rechtssubjecttype(Id),
-rechtsfeit MEDIUMINT NOT NULL ,
-INDEX (rechtsfeit), 
-FOREIGN KEY (rechtsfeit) REFERENCES Entity_Rechtsfeittype(Id),
-onderwerp MEDIUMINT NOT NULL ,
-INDEX (onderwerp), 
-FOREIGN KEY (onderwerp) REFERENCES Entity_OnderwerpType(Id)
+werknemer MEDIUMINT NOT NULL ,
+INDEX (werknemer), 
+FOREIGN KEY (werknemer) REFERENCES Entity_Werknemer(Id),
+werknemernummer INT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Fact_Rechtsgevolg
+CREATE TABLE IF NOT EXISTS test.Fact_WerknemerBSN
 (Id MEDIUMINT,
-rechtsfeit MEDIUMINT NOT NULL ,
-INDEX (rechtsfeit), 
-FOREIGN KEY (rechtsfeit) REFERENCES Entity_Rechtsfeittype(Id),
-aanpassing ENUM('creatie', 'wijziging', 'beeindiging'),
-rechtsbetrekking MEDIUMINT NOT NULL ,
-INDEX (rechtsbetrekking), 
-FOREIGN KEY (rechtsbetrekking) REFERENCES Entity_RechtsbetrekkingType(Id)
+werknemer MEDIUMINT NOT NULL ,
+INDEX (werknemer), 
+FOREIGN KEY (werknemer) REFERENCES Entity_Werknemer(Id),
+burgerservicenummer VARCHAR (255),
+geldig_van DATE,
+geldig_tot DATE,
+known_at DATETIME
 , PRIMARY KEY (Id));
+
+CREATE TABLE IF NOT EXISTS test.Fact_WerknemerNamen
+(Id MEDIUMINT,
+werknemer MEDIUMINT NOT NULL ,
+INDEX (werknemer), 
+FOREIGN KEY (werknemer) REFERENCES Entity_Werknemer(Id),
+voornaam VARCHAR (255),
+achternaam VARCHAR (255)
+, PRIMARY KEY (Id));
+
+CREATE TABLE IF NOT EXISTS test.Fact_WerkgeverNummer
+(Id MEDIUMINT,
+werkgever MEDIUMINT NOT NULL ,
+INDEX (werkgever), 
+FOREIGN KEY (werkgever) REFERENCES Entity_Werkgever(Id),
+werkgevernummer INT
+, PRIMARY KEY (Id));
+
+CREATE TABLE IF NOT EXISTS test.Fact_Arbeidsovereenkomst
+(Id MEDIUMINT,
+werkgever MEDIUMINT NOT NULL ,
+INDEX (werkgever), 
+FOREIGN KEY (werkgever) REFERENCES Entity_Werkgever(Id),
+werknemer MEDIUMINT NOT NULL ,
+INDEX (werknemer), 
+FOREIGN KEY (werknemer) REFERENCES Entity_Werknemer(Id),
+arbeidsovereenkomst MEDIUMINT NOT NULL ,
+INDEX (arbeidsovereenkomst), 
+FOREIGN KEY (arbeidsovereenkomst) REFERENCES Entity_Arbeidsovereenkomst(Id),
+datum_in_dienst DATE,
+datum_van_tekenen_arbeidscontract DATE
+, PRIMARY KEY (Id));
+
+CREATE TABLE IF NOT EXISTS test.Fact_Aanpassing_van_de_arbeidsduur
+(Id MEDIUMINT,
+werknemer MEDIUMINT NOT NULL ,
+INDEX (werknemer), 
+FOREIGN KEY (werknemer) REFERENCES Entity_Werknemer(Id),
+werkgever MEDIUMINT NOT NULL ,
+INDEX (werkgever), 
+FOREIGN KEY (werkgever) REFERENCES Entity_Werkgever(Id),
+verzoek_aanpassing_arbeidsduur MEDIUMINT NOT NULL ,
+INDEX (verzoek_aanpassing_arbeidsduur), 
+FOREIGN KEY (verzoek_aanpassing_arbeidsduur) REFERENCES Entity_Verzoek_aanpassing_arbeidsduur(Id),
+arbeidsovereenkomst MEDIUMINT NOT NULL ,
+INDEX (arbeidsovereenkomst), 
+FOREIGN KEY (arbeidsovereenkomst) REFERENCES Entity_Arbeidsovereenkomst(Id),
+datum_indienen_verzoek DATE
+, PRIMARY KEY (Id));
+
+CREATE TABLE IF NOT EXISTS test.Fact_Arbeidsduurperiode_van_arbeidsovereenkomst
+(Id MEDIUMINT,
+arbeidsduur INT,
+datum_geldig_van DATE,
+datum_geldig_tot DATE,
+spreiding MEDIUMINT NOT NULL ,
+INDEX (spreiding), 
+FOREIGN KEY (spreiding) REFERENCES Entity_Spreiding(Id)
+, PRIMARY KEY (Id));
+
+CREATE TABLE IF NOT EXISTS test.Fact_Postgebied_heeft_postcode
+(Id MEDIUMINT,
+postcodegebied MEDIUMINT NOT NULL ,
+INDEX (postcodegebied), 
+FOREIGN KEY (postcodegebied) REFERENCES Entity_Postcodegebied(Id),
+postcodeNummer VARCHAR (255),
+postcodeLetters VARCHAR (255)
+, PRIMARY KEY (Id));
+
+CREATE TABLE IF NOT EXISTS test.Fact_Spreiding
+(Id MEDIUMINT,
+spreiding MEDIUMINT NOT NULL ,
+INDEX (spreiding), 
+FOREIGN KEY (spreiding) REFERENCES Entity_Spreiding(Id),
+werkperiode MEDIUMINT NOT NULL ,
+INDEX (werkperiode), 
+FOREIGN KEY (werkperiode) REFERENCES Entity_Werkperiode(Id)
+, PRIMARY KEY (Id));
+
+CREATE TABLE IF NOT EXISTS test.Fact_Werkperiode
+(Id MEDIUMINT,
+werkperiode MEDIUMINT NOT NULL ,
+INDEX (werkperiode), 
+FOREIGN KEY (werkperiode) REFERENCES Entity_Werkperiode(Id),
+dag ENUM('Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag', 'Zondag'),
+begintijd TIME,
+eindtijd TIME
+, PRIMARY KEY (Id));
+DROP PROCEDURE IF EXISTS insert_4367477655964664204_1028895148592071771;
+DROP PROCEDURE IF EXISTS insert_4367477655964664204_3711255831308565286;
+DROP PROCEDURE IF EXISTS insert_4367477655964664217_1028895148592080288;
+DROP PROCEDURE IF EXISTS insert_4837839804573891381_1028895148592080305;
+DROP PROCEDURE IF EXISTS insert_4837839804573892525_4837839804573891320;
+DROP PROCEDURE IF EXISTS insert_4837839804573892904_4837839804573892785;
+DROP PROCEDURE IF EXISTS insert_4837839804575372032_4837839804573892700;
+DROP PROCEDURE IF EXISTS insert_4837839804575372048_4837839804575679376;
+DROP PROCEDURE IF EXISTS insert_4837839804575679311_4837839804574779207;
+
+DELIMITER //
+CREATE PROCEDURE insert_4367477655964664204_1028895148592071771 ()
+
+COMMENT 'insert_Werknemer_WerknemerNummer'
+
+BEGIN
+INSERT INTO Entity_Werknemer (Id) VALUES (NULL);
+INSERT INTO Fact_WerknemerNummer (Id) VALUES (NULL);
+END //
+DELIMITER ;
+
+
+DELIMITER //
+CREATE PROCEDURE insert_4367477655964664204_3711255831308565286 ()
+
+COMMENT 'insert_Werknemer_WerknemerBSN'
+
+BEGIN
+INSERT INTO Entity_Werknemer (Id) VALUES (NULL);
+INSERT INTO Fact_WerknemerBSN (Id) VALUES (NULL);
+END //
+DELIMITER ;
+
+
+DELIMITER //
+CREATE PROCEDURE insert_4367477655964664217_1028895148592080288 ()
+
+COMMENT 'insert_Werkgever_WerkgeverNummer'
+
+BEGIN
+INSERT INTO Entity_Werkgever (Id) VALUES (NULL);
+INSERT INTO Fact_WerkgeverNummer (Id) VALUES (NULL);
+END //
+DELIMITER ;
+
+
+DELIMITER //
+CREATE PROCEDURE insert_4837839804573891381_1028895148592080305 ()
+
+COMMENT 'insert_Arbeidsovereenkomst_Arbeidsovereenkomst'
+
+BEGIN
+INSERT INTO Entity_Arbeidsovereenkomst (Id) VALUES (NULL);
+INSERT INTO Fact_Arbeidsovereenkomst (Id) VALUES (NULL);
+END //
+DELIMITER ;
+
+
+DELIMITER //
+CREATE PROCEDURE insert_4837839804573892525_4837839804573891320 ()
+
+COMMENT 'insert_Verzoek_aanpassing_arbeidsduur_Aanpassing_van_de_arbeidsduur'
+
+BEGIN
+INSERT INTO Entity_Verzoek_aanpassing_arbeidsduur (Id) VALUES (NULL);
+INSERT INTO Fact_Aanpassing_van_de_arbeidsduur (Id) VALUES (NULL);
+END //
+DELIMITER ;
+
+
+DELIMITER //
+CREATE PROCEDURE insert_4837839804573892904_4837839804573892785 ()
+
+COMMENT 'insert_Postcodegebied_Postgebied_heeft_postcode'
+
+BEGIN
+INSERT INTO Entity_Postcodegebied (Id) VALUES (NULL);
+INSERT INTO Fact_Postgebied_heeft_postcode (Id) VALUES (NULL);
+END //
+DELIMITER ;
+
+
+DELIMITER //
+CREATE PROCEDURE insert_4837839804575372032_4837839804573892700 ()
+
+COMMENT 'insert_Arbeidsduur_Arbeidsduurperiode_van_arbeidsovereenkomst'
+
+BEGIN
+INSERT INTO Entity_Arbeidsduur (Id) VALUES (NULL);
+INSERT INTO Fact_Arbeidsduurperiode_van_arbeidsovereenkomst (Id) VALUES (NULL);
+END //
+DELIMITER ;
+
+
+DELIMITER //
+CREATE PROCEDURE insert_4837839804575372048_4837839804575679376 ()
+
+COMMENT 'insert_Spreiding_Spreiding'
+
+BEGIN
+INSERT INTO Entity_Spreiding (Id) VALUES (NULL);
+INSERT INTO Fact_Spreiding (Id) VALUES (NULL);
+END //
+DELIMITER ;
+
+
+DELIMITER //
+CREATE PROCEDURE insert_4837839804575679311_4837839804574779207 ()
+
+COMMENT 'insert_Werkperiode_Werkperiode'
+
+BEGIN
+INSERT INTO Entity_Werkperiode (Id) VALUES (NULL);
+INSERT INTO Fact_Werkperiode (Id) VALUES (NULL);
+END //
+DELIMITER ;
+

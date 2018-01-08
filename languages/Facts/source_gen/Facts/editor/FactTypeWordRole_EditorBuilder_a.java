@@ -29,6 +29,7 @@ import jetbrains.mps.editor.runtime.impl.CellUtil;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import Facts.editor.Styles_StyleSheet.WordingRoleStyleClass;
+import Facts.editor.Styles_StyleSheet.WordingValueStyleClass;
 
 /*package*/ class FactTypeWordRole_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -56,6 +57,7 @@ import Facts.editor.Styles_StyleSheet.WordingRoleStyleClass;
     editorCell.setCellContext(getCellFactory().getCellContext());
     editorCell.addEditorCell(createReadOnlyModelAccessor_pgz5pf_a0());
     editorCell.addEditorCell(createRefCell_pgz5pf_b0());
+    editorCell.addEditorCell(createReadOnlyModelAccessor_pgz5pf_c0());
     return editorCell;
   }
   private EditorCell createReadOnlyModelAccessor_pgz5pf_a0() {
@@ -160,5 +162,68 @@ import Facts.editor.Styles_StyleSheet.WordingRoleStyleClass;
       } else
       return editorCell;
     }
+  }
+  private EditorCell createReadOnlyModelAccessor_pgz5pf_c0() {
+    EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
+      public String getText() {
+        String typeOfRole = "";
+        {
+          final SNode dateType = SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord"));
+          if (SNodeOperations.isInstanceOf(dateType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f45688L, "Facts.structure.DateType"))) {
+            typeOfRole = "Datum";
+          }
+        }
+        {
+          final SNode timeType = SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord"));
+          if (SNodeOperations.isInstanceOf(timeType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97f1465cL, "Facts.structure.TimeType"))) {
+            typeOfRole = "Tijd";
+          }
+        }
+        {
+          final SNode datetimeType = SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord"));
+          if (SNodeOperations.isInstanceOf(datetimeType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab98050cb7L, "Facts.structure.DatetimeType"))) {
+            typeOfRole = "Datumtijd";
+          }
+        }
+        {
+          final SNode stringType = SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord"));
+          if (SNodeOperations.isInstanceOf(stringType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f365L, "Facts.structure.StringType"))) {
+            typeOfRole = "Waarde";
+          }
+        }
+        {
+          final SNode integerType = SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord"));
+          if (SNodeOperations.isInstanceOf(integerType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f366L, "Facts.structure.IntegerType"))) {
+            typeOfRole = "Getal";
+          }
+        }
+        {
+          final SNode entityTypeInRole = SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord"));
+          if (SNodeOperations.isInstanceOf(entityTypeInRole, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f362L, "Facts.structure.EntityTypeInRole"))) {
+            typeOfRole = SPropertyOperations.getString(SLinkOperations.getTarget(entityTypeInRole, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f362L, 0xe475eafb2f3f363L, "entityType")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+          }
+        }
+        {
+          final SNode enumerationType = SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord"));
+          if (SNodeOperations.isInstanceOf(enumerationType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df41d9L, "Facts.structure.EnumerationType"))) {
+            typeOfRole = SPropertyOperations.getString(SLinkOperations.getTarget(enumerationType, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df41d9L, 0x432375ab97df41daL, "enumeration")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+          }
+        }
+        return typeOfRole;
+      }
+      public void setText(String s) {
+      }
+      public boolean isValidText(String s) {
+        return EqualUtil.equals(s, getText());
+      }
+    }, myNode);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_pgz5pf_c0");
+    Style style = new StyleImpl();
+    new WordingValueStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, false);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
   }
 }

@@ -10,6 +10,8 @@ import jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor;
 import java.util.HashMap;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
+import org.jetbrains.mps.openapi.model.SNode;
+import Facts.behavior.helper;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
@@ -20,7 +22,6 @@ import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import jetbrains.mps.scope.ListScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
@@ -36,6 +37,18 @@ public class FactWording_Constraints extends BaseConstraintsDescriptor {
     Map<SReferenceLink, ReferenceConstraintsDescriptor> references = new HashMap<SReferenceLink, ReferenceConstraintsDescriptor>();
     references.put(MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f82657e7L, 0x33810783f82657eaL, "fact"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f82657e7L, 0x33810783f82657eaL), this) {
       @Override
+      public boolean hasOwnOnReferenceSetHandler() {
+        return true;
+      }
+      @Override
+      public boolean validate(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
+        return true;
+      }
+      @Override
+      public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
+        helper.BuildFactWording(referenceNode);
+      }
+      @Override
       public boolean hasOwnScopeProvider() {
         return true;
       }
@@ -45,7 +58,7 @@ public class FactWording_Constraints extends BaseConstraintsDescriptor {
         return new BaseScopeProvider() {
           @Override
           public SNodeReference getSearchScopeValidatorNode() {
-            return breakingNode_z3yogx_a0a0a0a0a1a0b0a1a2;
+            return breakingNode_z3yogx_a0a0a0a0a4a0b0a1a2;
           }
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
@@ -56,6 +69,18 @@ public class FactWording_Constraints extends BaseConstraintsDescriptor {
     });
     references.put(MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f82657e7L, 0x33810783f82657e8L, "factTypeWording"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f82657e7L, 0x33810783f82657e8L), this) {
       @Override
+      public boolean hasOwnOnReferenceSetHandler() {
+        return true;
+      }
+      @Override
+      public boolean validate(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
+        return true;
+      }
+      @Override
+      public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
+        helper.BuildFactWording(referenceNode);
+      }
+      @Override
       public boolean hasOwnScopeProvider() {
         return true;
       }
@@ -65,7 +90,7 @@ public class FactWording_Constraints extends BaseConstraintsDescriptor {
         return new BaseScopeProvider() {
           @Override
           public SNodeReference getSearchScopeValidatorNode() {
-            return breakingNode_z3yogx_a0a0a0a0a1a0b0a2a2;
+            return breakingNode_z3yogx_a0a0a0a0a4a0b0a2a2;
           }
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
@@ -83,6 +108,6 @@ public class FactWording_Constraints extends BaseConstraintsDescriptor {
     });
     return references;
   }
-  private static SNodePointer breakingNode_z3yogx_a0a0a0a0a1a0b0a1a2 = new SNodePointer("r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)", "3711255831316224397");
-  private static SNodePointer breakingNode_z3yogx_a0a0a0a0a1a0b0a2a2 = new SNodePointer("r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)", "3711255831317841643");
+  private static SNodePointer breakingNode_z3yogx_a0a0a0a0a4a0b0a1a2 = new SNodePointer("r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)", "3711255831316224397");
+  private static SNodePointer breakingNode_z3yogx_a0a0a0a0a4a0b0a2a2 = new SNodePointer("r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)", "3711255831317841643");
 }

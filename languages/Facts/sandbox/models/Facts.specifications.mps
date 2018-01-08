@@ -23,9 +23,14 @@
         <reference id="771453498291786625" name="entitytype" index="24RHdv" />
         <child id="771453498291786627" name="entities" index="24RHdt" />
       </concept>
-      <concept id="503348701156726176" name="Facts.structure.EntityType" flags="ng" index="kpplq">
-        <child id="3829032966743021132" name="specialisaties" index="2QidY" />
+      <concept id="3829032966747723778" name="Facts.structure.FactWordRole" flags="ng" index="domOK">
+        <reference id="3829032966747932322" name="role" index="dpzeg" />
       </concept>
+      <concept id="3829032966747723779" name="Facts.structure.FactWordValue" flags="ng" index="domOL">
+        <reference id="3829032966753962125" name="value" index="dwzQZ" />
+      </concept>
+      <concept id="3829032966747723780" name="Facts.structure.FactWordVerb" flags="ng" index="domOQ" />
+      <concept id="503348701156726176" name="Facts.structure.EntityType" flags="ng" index="kpplq" />
       <concept id="1028895148592232595" name="Facts.structure.FactTable" flags="ng" index="2WGioW">
         <reference id="1028895148592232596" name="facttype" index="2WGioV" />
         <child id="1028895148592232598" name="facts" index="2WGioT" />
@@ -77,10 +82,6 @@
         <property id="1028895148593747441" name="value" index="2XiGHu" />
       </concept>
       <concept id="6962889702535956964" name="Facts.structure.KnownAt" flags="ng" index="11gaUJ" />
-      <concept id="6962889702538204650" name="Facts.structure.Specializes" flags="ng" index="12CJax">
-        <reference id="6962889702538204651" name="concept" index="12CJaw" />
-        <reference id="6962889702538204657" name="subConcept" index="12CJaU" />
-      </concept>
       <concept id="3711255831311043974" name="Facts.structure.RoleReference" flags="ng" index="34pkC5">
         <reference id="3711255831311043975" name="role" index="34pkC4" />
       </concept>
@@ -94,6 +95,7 @@
       <concept id="3711255831315372007" name="Facts.structure.FactWording" flags="ng" index="3bDP1$">
         <reference id="3711255831315372010" name="fact" index="3bDP1D" />
         <reference id="3711255831315372008" name="factTypeWording" index="3bDP1F" />
+        <child id="3829032966747724417" name="words" index="domYN" />
       </concept>
       <concept id="4837839804575073884" name="Facts.structure.TimeType" flags="ng" index="3kOzfR" />
       <concept id="4837839804575977994" name="Facts.structure.EnumerationValue" flags="ng" index="3kR6ux">
@@ -580,13 +582,13 @@
           <ref role="34qYQT" node="4cztqInYCdL" resolve="werkperiode" />
         </node>
         <node concept="34tZwR" id="4cztqInYCe7" role="34rq46">
-          <property role="TrG5h" value="op" />
+          <property role="TrG5h" value="betreft" />
         </node>
         <node concept="34qYQU" id="4cztqInXtaP" role="34rq46">
           <ref role="34qYQT" node="4cztqInVcu_" resolve="dag" />
         </node>
         <node concept="34tZwR" id="4cztqInXtaX" role="34rq46">
-          <property role="TrG5h" value="loopt van" />
+          <property role="TrG5h" value="en loopt van" />
         </node>
         <node concept="34qYQU" id="4cztqInXtb7" role="34rq46">
           <ref role="34qYQT" node="4cztqInXtau" resolve="begintijd" />
@@ -605,7 +607,7 @@
       </node>
       <node concept="3kZ3hM" id="4cztqInVcu_" role="2WHaR8">
         <property role="TrG5h" value="dag" />
-        <property role="34uzBG" value="geen" />
+        <property role="34uzBG" value="de" />
         <property role="34caxH" value="true" />
         <ref role="3kZ3hL" node="4cztqInU3Mx" resolve="dag" />
       </node>
@@ -789,171 +791,140 @@
         <ref role="24RH9u" node="4cztqInYCdf" resolve="Werkperiode" />
       </node>
     </node>
-    <node concept="2WGioW" id="rWgfCiE_e6" role="2WGWMT">
+    <node concept="24RHdu" id="1RXUY7Cbh8t" role="24RH9p">
+      <ref role="24RHdv" node="4cztqInRNGP" resolve="Arbeidsovereenkomst" />
+      <node concept="24RHax" id="1RXUY7Cbh8O" role="24RHdt">
+        <property role="TrG5h" value="Arbeidsovereenkomst tussen Henk en ASML" />
+        <ref role="24RH9u" node="4cztqInRNGP" resolve="Arbeidsovereenkomst" />
+      </node>
+    </node>
+    <node concept="2WGioW" id="1RXUY7Cbh4j" role="2WGWMT">
       <ref role="2WGioV" node="T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
-      <node concept="3bDP1$" id="3e11SfSaiUL" role="3bDTgF">
-        <ref role="3bDP1D" node="3e11SfRObGp" resolve="[ ASML, Henk, 01-04-2000, 01-01-2017, null]" />
+      <node concept="3bDP1$" id="1RXUY7Cbh8Q" role="3bDTgF">
         <ref role="3bDP1F" node="4cztqInFIft" resolve="[werknemer, heeft met, werkgever, arbeidsovereenkomst, getekend op, datum van tekenen arbeidscontract, voor het in dienst komen op, datum in dienst]" />
+        <ref role="3bDP1D" node="1RXUY7Cbh83" resolve="[ ASML, Henk, Arbeidsovereenkomst tussen Henk en ASML, 01-10-2017, 01-09-2017]" />
+        <node concept="domOK" id="1RXUY7Cbh9j" role="domYN">
+          <ref role="dpzeg" node="4cztqInFIfF" />
+        </node>
+        <node concept="domOL" id="1RXUY7Cbh9k" role="domYN">
+          <ref role="dwzQZ" node="1RXUY7Cbh87" />
+        </node>
+        <node concept="domOQ" id="1RXUY7Cbh9l" role="domYN">
+          <property role="TrG5h" value="heeft met" />
+        </node>
+        <node concept="domOK" id="1RXUY7Cbh9n" role="domYN">
+          <ref role="dpzeg" node="4cztqInL_Fi" />
+        </node>
+        <node concept="domOL" id="1RXUY7Cbh9o" role="domYN">
+          <ref role="dwzQZ" node="1RXUY7Cbh85" />
+        </node>
+        <node concept="domOK" id="1RXUY7Cbh9q" role="domYN">
+          <ref role="dpzeg" node="4cztqInRNKU" />
+        </node>
+        <node concept="domOL" id="1RXUY7Cbh9r" role="domYN">
+          <ref role="dwzQZ" node="1RXUY7Cbh8r" />
+        </node>
+        <node concept="domOQ" id="1RXUY7Cbh9s" role="domYN">
+          <property role="TrG5h" value="getekend op" />
+        </node>
+        <node concept="domOK" id="1RXUY7Cbh9u" role="domYN">
+          <ref role="dpzeg" node="4cztqInFIg4" />
+        </node>
+        <node concept="domOL" id="1RXUY7Cbh9v" role="domYN">
+          <ref role="dwzQZ" node="1RXUY7Cbh8d" resolve="01-09-2017" />
+        </node>
+        <node concept="domOQ" id="1RXUY7Cbh9w" role="domYN">
+          <property role="TrG5h" value="voor het in dienst komen op" />
+        </node>
+        <node concept="domOK" id="1RXUY7Cbh9y" role="domYN">
+          <ref role="dpzeg" node="4cztqInRNWS" />
+        </node>
+        <node concept="domOL" id="1RXUY7Cbh9z" role="domYN">
+          <ref role="dwzQZ" node="1RXUY7Cbh8a" resolve="01-10-2017" />
+        </node>
       </node>
-      <node concept="3bDP1$" id="3e11SfSjQ9f" role="3bDTgF">
-        <ref role="3bDP1D" node="rWgfCiE_hh" resolve="[ Essent, Diederik, 01-02-2000, 01-01-2017, null]" />
-        <ref role="3bDP1F" node="4cztqInFIft" resolve="[werknemer, heeft met, werkgever, arbeidsovereenkomst, getekend op, datum van tekenen arbeidscontract, voor het in dienst komen op, datum in dienst]" />
-      </node>
-      <node concept="2WGM88" id="rWgfCiE_hh" role="2WGioT">
+      <node concept="2WGM88" id="1RXUY7Cbh83" role="2WGioT">
         <ref role="2WGM87" node="T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
-        <node concept="2WGM83" id="rWgfCiE_hi" role="2WGM80">
+        <node concept="2WGM83" id="1RXUY7Cbh84" role="2WGM80">
           <ref role="2WGM82" node="T7nEYMX2mT" resolve="werkgever" />
-          <node concept="24RH9q" id="3e11SfR_123" role="2XiGH2">
-            <ref role="24RH9r" node="3MspsB8f1cD" resolve="Essent" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="rWgfCiE_hj" role="2WGM80">
-          <ref role="2WGM82" node="T7nEYMX2mY" resolve="werknemer" />
-          <node concept="24RH9q" id="3e11SfR$fUD" role="2XiGH2">
-            <ref role="24RH9r" node="3MspsB8f1dt" resolve="Diederik" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="rWgfCiE_hk" role="2WGM80">
-          <ref role="2WGM82" node="T7nEYMX6_A" resolve="datum in dienst" />
-          <node concept="2XigOj" id="3e11SfRCKzg" role="2XiGH2">
-            <node concept="2B78Lw" id="3e11SfRCKzh" role="2Xi5h3">
-              <property role="2B78LB" value="1" />
-              <property role="2B78L_" value="2" />
-              <property role="2B78LE" value="2000" />
-            </node>
-          </node>
-        </node>
-        <node concept="2WGM83" id="4cztqInRLzg" role="2WGM80">
-          <ref role="2WGM82" node="4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
-          <node concept="2XigOj" id="4cztqInRLzh" role="2XiGH2">
-            <node concept="2B78Lw" id="4cztqInRLzi" role="2Xi5h3">
-              <property role="2B78LB" value="1" />
-              <property role="2B78L_" value="1" />
-              <property role="2B78LE" value="2017" />
-            </node>
-          </node>
-        </node>
-        <node concept="2WGM83" id="4cztqInU3PV" role="2WGM80">
-          <ref role="2WGM82" node="4cztqInRNH5" resolve="arbeidsovereenkomst" />
-        </node>
-      </node>
-      <node concept="2WGM88" id="3e11SfRObGp" role="2WGioT">
-        <ref role="2WGM87" node="T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
-        <node concept="2WGM83" id="3e11SfRObGq" role="2WGM80">
-          <ref role="2WGM82" node="T7nEYMX2mT" resolve="werkgever" />
-          <node concept="24RH9q" id="3e11SfRObHh" role="2XiGH2">
+          <node concept="24RH9q" id="1RXUY7Cbh85" role="2XiGH2">
             <ref role="24RH9r" node="3MspsB8f1cF" resolve="ASML" />
           </node>
         </node>
-        <node concept="2WGM83" id="3e11SfRObGs" role="2WGM80">
+        <node concept="2WGM83" id="1RXUY7Cbh86" role="2WGM80">
           <ref role="2WGM82" node="T7nEYMX2mY" resolve="werknemer" />
-          <node concept="24RH9q" id="3e11SfRObHm" role="2XiGH2">
+          <node concept="24RH9q" id="1RXUY7Cbh87" role="2XiGH2">
             <ref role="24RH9r" node="3MspsB8f1dw" resolve="Henk" />
           </node>
         </node>
-        <node concept="2WGM83" id="3e11SfRObGu" role="2WGM80">
-          <ref role="2WGM82" node="T7nEYMX6_A" resolve="datum in dienst" />
-          <node concept="2XigOj" id="3e11SfRObGv" role="2XiGH2">
-            <node concept="2B78Lw" id="3e11SfRObGw" role="2Xi5h3">
-              <property role="2B78LB" value="1" />
-              <property role="2B78L_" value="4" />
-              <property role="2B78LE" value="2000" />
-            </node>
-          </node>
-        </node>
-        <node concept="2WGM83" id="4cztqInRLzq" role="2WGM80">
-          <ref role="2WGM82" node="4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
-          <node concept="2XigOj" id="4cztqInRLzr" role="2XiGH2">
-            <node concept="2B78Lw" id="4cztqInRL_E" role="2Xi5h3">
-              <property role="2B78LB" value="1" />
-              <property role="2B78L_" value="1" />
-              <property role="2B78LE" value="2017" />
-            </node>
-          </node>
-        </node>
-        <node concept="2WGM83" id="4cztqInU3Q6" role="2WGM80">
+        <node concept="2WGM83" id="1RXUY7Cbh88" role="2WGM80">
           <ref role="2WGM82" node="4cztqInRNH5" resolve="arbeidsovereenkomst" />
-        </node>
-      </node>
-      <node concept="2WGM88" id="U3O8mN60VE" role="2WGioT">
-        <ref role="2WGM87" node="T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
-        <node concept="2WGM83" id="U3O8mN60VF" role="2WGM80">
-          <ref role="2WGM82" node="T7nEYMX2mT" resolve="werkgever" />
-          <node concept="24RH9q" id="U3O8mN60VG" role="2XiGH2">
-            <ref role="24RH9r" node="U3O8mN4uzW" resolve="Economica" />
+          <node concept="24RH9q" id="1RXUY7Cbh8r" role="2XiGH2">
+            <ref role="24RH9r" node="1RXUY7Cbh8O" resolve="Arbeidsovereenkomst tussen Henk en ASML" />
           </node>
         </node>
-        <node concept="2WGM83" id="U3O8mN60VH" role="2WGM80">
-          <ref role="2WGM82" node="T7nEYMX2mY" resolve="werknemer" />
-          <node concept="24RH9q" id="U3O8mN60VI" role="2XiGH2">
-            <ref role="24RH9r" node="3MspsB8f1dw" resolve="Henk" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="U3O8mN60VJ" role="2WGM80">
+        <node concept="2WGM83" id="1RXUY7Cbh89" role="2WGM80">
           <ref role="2WGM82" node="T7nEYMX6_A" resolve="datum in dienst" />
-          <node concept="2XigOj" id="U3O8mN60VK" role="2XiGH2">
-            <node concept="2B78Lw" id="U3O8mN60VL" role="2Xi5h3">
-              <property role="2B78LB" value="1" />
-              <property role="2B78L_" value="5" />
-              <property role="2B78LE" value="2009" />
-            </node>
-          </node>
-        </node>
-        <node concept="2WGM83" id="4cztqInRLz$" role="2WGM80">
-          <ref role="2WGM82" node="4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
-          <node concept="2XigOj" id="4cztqInRLz_" role="2XiGH2">
-            <node concept="2B78Lw" id="4cztqInRL_G" role="2Xi5h3">
-              <property role="2B78LB" value="1" />
-              <property role="2B78L_" value="1" />
-              <property role="2B78LE" value="2017" />
-            </node>
-          </node>
-        </node>
-        <node concept="2WGM83" id="4cztqInU3Qh" role="2WGM80">
-          <ref role="2WGM82" node="4cztqInRNH5" resolve="arbeidsovereenkomst" />
-        </node>
-      </node>
-      <node concept="2WGM88" id="U3O8mN7xYV" role="2WGioT">
-        <ref role="2WGM87" node="T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
-        <node concept="2WGM83" id="U3O8mN7xYW" role="2WGM80">
-          <ref role="2WGM82" node="T7nEYMX2mT" resolve="werkgever" />
-          <node concept="24RH9q" id="U3O8mN7xYX" role="2XiGH2">
-            <ref role="24RH9r" node="3MspsB8f1cF" resolve="ASML" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="U3O8mN7xYY" role="2WGM80">
-          <ref role="2WGM82" node="T7nEYMX2mY" resolve="werknemer" />
-          <node concept="24RH9q" id="U3O8mN7xYZ" role="2XiGH2">
-            <ref role="24RH9r" node="3MspsB8f1dt" resolve="Diederik" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="U3O8mN7xZ0" role="2WGM80">
-          <ref role="2WGM82" node="T7nEYMX6_A" resolve="datum in dienst" />
-          <node concept="2XigOj" id="U3O8mN7xZ1" role="2XiGH2">
-            <node concept="2B78Lw" id="U3O8mN7xZ2" role="2Xi5h3">
+          <node concept="2XigOj" id="1RXUY7Cbh8a" role="2XiGH2">
+            <node concept="2B78Lw" id="1RXUY7Cbh8b" role="2Xi5h3">
               <property role="2B78LB" value="1" />
               <property role="2B78L_" value="10" />
-              <property role="2B78LE" value="2000" />
-            </node>
-          </node>
-        </node>
-        <node concept="2WGM83" id="4cztqInRLzI" role="2WGM80">
-          <ref role="2WGM82" node="4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
-          <node concept="2XigOj" id="4cztqInRLzJ" role="2XiGH2">
-            <node concept="2B78Lw" id="4cztqInRL_I" role="2Xi5h3">
-              <property role="2B78LB" value="1" />
-              <property role="2B78L_" value="1" />
               <property role="2B78LE" value="2017" />
             </node>
           </node>
         </node>
-        <node concept="2WGM83" id="4cztqInU3Qs" role="2WGM80">
-          <ref role="2WGM82" node="4cztqInRNH5" resolve="arbeidsovereenkomst" />
+        <node concept="2WGM83" id="1RXUY7Cbh8c" role="2WGM80">
+          <ref role="2WGM82" node="4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
+          <node concept="2XigOj" id="1RXUY7Cbh8d" role="2XiGH2">
+            <node concept="2B78Lw" id="1RXUY7Cbh8e" role="2Xi5h3">
+              <property role="2B78LB" value="1" />
+              <property role="2B78L_" value="9" />
+              <property role="2B78LE" value="2017" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
     <node concept="2WGioW" id="62x9OGxYp2H" role="2WGWMT">
       <ref role="2WGioV" node="3e11SfRJBGA" resolve="WerknemerBSN" />
+      <node concept="3bDP1$" id="1RXUY7Cbh9L" role="3bDTgF">
+        <ref role="3bDP1F" node="3e11SfRYbHD" resolve="[werknemer, heeft, burgerservicenummer]" />
+        <ref role="3bDP1D" node="62x9OGxYp5F" resolve="[ Diederik, 123456789, 01-10-2017, null, 2018-01-01T00:00]" />
+        <node concept="domOK" id="1RXUY7Cbha6" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbHH" />
+        </node>
+        <node concept="domOL" id="1RXUY7Cbha7" role="domYN">
+          <ref role="dwzQZ" node="62x9OGxYp5H" />
+        </node>
+        <node concept="domOQ" id="1RXUY7Cbha8" role="domYN">
+          <property role="TrG5h" value="heeft" />
+        </node>
+        <node concept="domOK" id="1RXUY7Cbhaa" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbHV" />
+        </node>
+        <node concept="domOL" id="1RXUY7Cbhab" role="domYN">
+          <ref role="dwzQZ" node="62x9OGxYp5J" />
+        </node>
+      </node>
+      <node concept="3bDP1$" id="1RXUY7Cbhal" role="3bDTgF">
+        <ref role="3bDP1F" node="3e11SfRYbHD" resolve="[werknemer, heeft, burgerservicenummer]" />
+        <ref role="3bDP1D" node="62x9OGxZFuO" resolve="[ Henk, 111111111, 01-01-2017, null, 2018-01-05T18:42:54]" />
+        <node concept="domOK" id="1RXUY7CbhaK" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbHH" />
+        </node>
+        <node concept="domOL" id="1RXUY7CbhaL" role="domYN">
+          <ref role="dwzQZ" node="62x9OGxZFuQ" />
+        </node>
+        <node concept="domOQ" id="1RXUY7CbhaM" role="domYN">
+          <property role="TrG5h" value="heeft" />
+        </node>
+        <node concept="domOK" id="1RXUY7CbhaO" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbHV" />
+        </node>
+        <node concept="domOL" id="1RXUY7CbhaP" role="domYN">
+          <ref role="dwzQZ" node="62x9OGxZFuS" />
+        </node>
+      </node>
       <node concept="2WGM88" id="62x9OGxYp5F" role="2WGioT">
         <ref role="2WGM87" node="3e11SfRJBGA" resolve="WerknemerBSN" />
         <node concept="2WGM83" id="62x9OGxYp5G" role="2WGM80">
@@ -1049,22 +1020,94 @@
       <ref role="2WGioV" node="3e11SfRJBFn" resolve="WerknemerNamen" />
       <node concept="3bDP1$" id="3MspsB8136p" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRYbI0" resolve="[werknemer, heeft, voornaam, en, achternaam]" />
-        <ref role="3bDP1D" node="3e11SfRLPSI" resolve="[ Henk, Diederik, Dulfer]" />
+        <ref role="3bDP1D" node="3e11SfRLPSI" resolve="[ Diederik, Diederik, Dulfer]" />
+        <node concept="domOK" id="3kztj8SEqZM" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbI4" />
+        </node>
+        <node concept="domOL" id="3kztj8SEqZN" role="domYN">
+          <ref role="dwzQZ" node="3e11SfRLPT6" />
+        </node>
+        <node concept="domOQ" id="3kztj8SEqZO" role="domYN">
+          <property role="TrG5h" value="heeft" />
+        </node>
+        <node concept="domOK" id="3kztj8SEqZQ" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbIi" />
+        </node>
+        <node concept="domOL" id="3kztj8SEqZR" role="domYN">
+          <ref role="dwzQZ" node="3MspsB8228L" />
+        </node>
+        <node concept="domOQ" id="3kztj8SEqZS" role="domYN">
+          <property role="TrG5h" value="en" />
+        </node>
+        <node concept="domOK" id="3kztj8SEqZU" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbIC" />
+        </node>
+        <node concept="domOL" id="3kztj8SEqZV" role="domYN">
+          <ref role="dwzQZ" node="3e11SfRLPSN" />
+        </node>
       </node>
       <node concept="3bDP1$" id="3MspsB88etk" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRYbI0" resolve="[werknemer, heeft, voornaam, en, achternaam]" />
-        <ref role="3bDP1D" node="3MspsB8c$NR" resolve="[ Wim, Henk, Straver]" />
+        <ref role="3bDP1D" node="3MspsB8c$NR" resolve="[ Henk, Henk, Straver]" />
+        <node concept="domOK" id="3kztj8SEr05" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbI4" />
+        </node>
+        <node concept="domOL" id="3kztj8SEr06" role="domYN">
+          <ref role="dwzQZ" node="3MspsB8c$NT" />
+        </node>
+        <node concept="domOQ" id="3kztj8SEr07" role="domYN">
+          <property role="TrG5h" value="heeft" />
+        </node>
+        <node concept="domOK" id="3kztj8SEr09" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbIi" />
+        </node>
+        <node concept="domOL" id="3kztj8SEr0a" role="domYN">
+          <ref role="dwzQZ" node="3MspsB8c$PK" />
+        </node>
+        <node concept="domOQ" id="3kztj8SEr0b" role="domYN">
+          <property role="TrG5h" value="en" />
+        </node>
+        <node concept="domOK" id="3kztj8SEr0d" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbIC" />
+        </node>
+        <node concept="domOL" id="3kztj8SEr0e" role="domYN">
+          <ref role="dwzQZ" node="3MspsB8c$O_" />
+        </node>
       </node>
       <node concept="3bDP1$" id="3MspsB8c$No" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRYbI0" resolve="[werknemer, heeft, voornaam, en, achternaam]" />
-        <ref role="3bDP1D" node="3MspsB8c$OU" resolve="[ Diederik, Wim, Zomers]" />
+        <ref role="3bDP1D" node="3MspsB8c$OU" resolve="[ Wim, Wim, Zomers]" />
+        <node concept="domOK" id="3kztj8SEr0o" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbI4" />
+        </node>
+        <node concept="domOL" id="3kztj8SEr0p" role="domYN">
+          <ref role="dwzQZ" node="3MspsB8c$OW" />
+        </node>
+        <node concept="domOQ" id="3kztj8SEr0q" role="domYN">
+          <property role="TrG5h" value="heeft" />
+        </node>
+        <node concept="domOK" id="3kztj8SEr0s" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbIi" />
+        </node>
+        <node concept="domOL" id="3kztj8SEr0t" role="domYN">
+          <ref role="dwzQZ" node="3MspsB8c$PI" />
+        </node>
+        <node concept="domOQ" id="3kztj8SEr0u" role="domYN">
+          <property role="TrG5h" value="en" />
+        </node>
+        <node concept="domOK" id="3kztj8SEr0w" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbIC" />
+        </node>
+        <node concept="domOL" id="3kztj8SEr0x" role="domYN">
+          <ref role="dwzQZ" node="3MspsB8c$OZ" />
+        </node>
       </node>
       <node concept="2WGM88" id="3e11SfRLPSI" role="2WGioT">
         <ref role="2WGM87" node="3e11SfRJBFn" resolve="WerknemerNamen" />
         <node concept="2WGM83" id="3e11SfRLPSJ" role="2WGM80">
           <ref role="2WGM82" node="3e11SfRJBFX" resolve="werknemer" />
           <node concept="24RH9q" id="3e11SfRLPT6" role="2XiGH2">
-            <ref role="24RH9r" node="3MspsB8f1dw" resolve="Henk" />
+            <ref role="24RH9r" node="3MspsB8f1dt" resolve="Diederik" />
           </node>
         </node>
         <node concept="2WGM83" id="3e11SfRLPSL" role="2WGM80">
@@ -1085,7 +1128,7 @@
         <node concept="2WGM83" id="3MspsB8c$NS" role="2WGM80">
           <ref role="2WGM82" node="3e11SfRJBFX" resolve="werknemer" />
           <node concept="24RH9q" id="3MspsB8c$NT" role="2XiGH2">
-            <ref role="24RH9r" node="3MspsB8f1dr" resolve="Wim" />
+            <ref role="24RH9r" node="3MspsB8f1dw" resolve="Henk" />
           </node>
         </node>
         <node concept="2WGM83" id="3MspsB8c$NU" role="2WGM80">
@@ -1106,7 +1149,7 @@
         <node concept="2WGM83" id="3MspsB8c$OV" role="2WGM80">
           <ref role="2WGM82" node="3e11SfRJBFX" resolve="werknemer" />
           <node concept="24RH9q" id="3MspsB8c$OW" role="2XiGH2">
-            <ref role="24RH9r" node="3MspsB8f1dt" resolve="Diederik" />
+            <ref role="24RH9r" node="3MspsB8f1dr" resolve="Wim" />
           </node>
         </node>
         <node concept="2WGM83" id="3MspsB8c$OX" role="2WGM80">
@@ -1158,6 +1201,21 @@
       <node concept="3bDP1$" id="4cztqInAJbL" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfS0lK3" resolve="[werkgever, heeft, werkgevernummer]" />
         <ref role="3bDP1D" node="14SuKMpiFV8" resolve="[ ASML, 1]" />
+        <node concept="domOK" id="3kztj8SEr0F" role="domYN">
+          <ref role="dpzeg" node="3e11SfS0lK7" />
+        </node>
+        <node concept="domOL" id="3kztj8SEr0G" role="domYN">
+          <ref role="dwzQZ" node="14SuKMpiFVa" />
+        </node>
+        <node concept="domOQ" id="3kztj8SEr0H" role="domYN">
+          <property role="TrG5h" value="heeft" />
+        </node>
+        <node concept="domOK" id="3kztj8SEr0J" role="domYN">
+          <ref role="dpzeg" node="3e11SfS0lKl" />
+        </node>
+        <node concept="domOL" id="3kztj8SEr0K" role="domYN">
+          <ref role="dwzQZ" node="14SuKMpiFVc" />
+        </node>
       </node>
     </node>
     <node concept="2WGioW" id="rWgfCiCunl" role="2WGWMT">
@@ -1165,6 +1223,40 @@
       <node concept="3bDP1$" id="4cztqInAJc6" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRWlyH" resolve="[werknemer, heeft, werknemernummer]" />
         <ref role="3bDP1D" node="3e11SfS3H0F" resolve="[ Diederik, 8]" />
+        <node concept="domOK" id="1RXUY7CbhbZ" role="domYN">
+          <ref role="dpzeg" node="3e11SfRXJYJ" />
+        </node>
+        <node concept="domOL" id="1RXUY7Cbhc0" role="domYN">
+          <ref role="dwzQZ" node="3e11SfS3H0H" />
+        </node>
+        <node concept="domOQ" id="1RXUY7Cbhc1" role="domYN">
+          <property role="TrG5h" value="heeft" />
+        </node>
+        <node concept="domOK" id="1RXUY7Cbhc3" role="domYN">
+          <ref role="dpzeg" node="3e11SfRWyIf" />
+        </node>
+        <node concept="domOL" id="1RXUY7Cbhc4" role="domYN">
+          <ref role="dwzQZ" node="3e11SfS3H0J" />
+        </node>
+      </node>
+      <node concept="3bDP1$" id="1RXUY7CbhaZ" role="3bDTgF">
+        <ref role="3bDP1F" node="3e11SfRWlyH" resolve="[werknemer, heeft, werknemernummer]" />
+        <ref role="3bDP1D" node="3e11SfRROZW" resolve="[ Henk, 3]" />
+        <node concept="domOK" id="1RXUY7Cbhcb" role="domYN">
+          <ref role="dpzeg" node="3e11SfRXJYJ" />
+        </node>
+        <node concept="domOL" id="1RXUY7Cbhcc" role="domYN">
+          <ref role="dwzQZ" node="14SuKMpDAR3" />
+        </node>
+        <node concept="domOQ" id="1RXUY7Cbhcd" role="domYN">
+          <property role="TrG5h" value="heeft" />
+        </node>
+        <node concept="domOK" id="1RXUY7Cbhcf" role="domYN">
+          <ref role="dpzeg" node="3e11SfRWyIf" />
+        </node>
+        <node concept="domOL" id="1RXUY7Cbhcg" role="domYN">
+          <ref role="dwzQZ" node="3e11SfRRP00" />
+        </node>
       </node>
       <node concept="2WGM88" id="3e11SfRROZW" role="2WGioT">
         <ref role="2WGM87" node="T7nEYMX0hr" resolve="WerknemerNummer" />
@@ -1217,6 +1309,39 @@
       <node concept="3bDP1$" id="4cztqIodNh4" role="3bDTgF">
         <ref role="3bDP1F" node="4cztqIocBIO" resolve="[arbeidsduur, heeft van, datum geldig van, tot, datum geldig tot, spreiding]" />
         <ref role="3bDP1D" node="4cztqIodNgI" resolve="[ 40, 01-02-2017, 01-01-0001, Maandag t/m vrijdag 5x8]" />
+        <node concept="domOK" id="3kztj8SErQH" role="domYN">
+          <ref role="dpzeg" node="4cztqIocBIS" />
+        </node>
+        <node concept="domOL" id="3kztj8SErQI" role="domYN">
+          <ref role="dwzQZ" node="4cztqIodNh2" />
+        </node>
+        <node concept="domOQ" id="3kztj8SErQJ" role="domYN">
+          <property role="TrG5h" value="heeft van" />
+        </node>
+        <node concept="domOK" id="3kztj8SErQL" role="domYN">
+          <ref role="dpzeg" node="4cztqIocBJ6" />
+        </node>
+        <node concept="domOL" id="3kztj8SErQM" role="domYN">
+          <ref role="dwzQZ" node="4cztqIodNgL" resolve="01-02-2017" />
+        </node>
+        <node concept="domOQ" id="3kztj8SErQN" role="domYN">
+          <property role="TrG5h" value="tot" />
+        </node>
+        <node concept="domOK" id="3kztj8SErQP" role="domYN">
+          <ref role="dpzeg" node="4cztqIocBJs" />
+        </node>
+        <node concept="domOL" id="3kztj8SErQQ" role="domYN">
+          <ref role="dwzQZ" node="4cztqIodNgW" resolve="01-01-0001" />
+        </node>
+        <node concept="domOQ" id="3kztj8SErQR" role="domYN">
+          <property role="TrG5h" value="met" />
+        </node>
+        <node concept="domOK" id="3kztj8SErQT" role="domYN">
+          <ref role="dpzeg" node="4cztqIocBJE" />
+        </node>
+        <node concept="domOL" id="3kztj8SErQU" role="domYN">
+          <ref role="dwzQZ" node="4cztqIodNh0" />
+        </node>
       </node>
       <node concept="2WGM88" id="4cztqIodNgI" role="2WGioT">
         <ref role="2WGM87" node="4cztqInRO1s" resolve="Arbeidsduurperiode van arbeidsovereenkomst" />
@@ -1259,10 +1384,40 @@
       <node concept="3bDP1$" id="4cztqIocBEh" role="3bDTgF">
         <ref role="3bDP1F" node="4cztqIocBAu" resolve="[spreiding, heeft, werkperiode]" />
         <ref role="3bDP1D" node="4cztqIocBzP" resolve="[ Maandag t/m vrijdag 5x8, Dinsdag 13.00 - 17.00]" />
+        <node concept="domOK" id="1RXUY7C891t" role="domYN">
+          <ref role="dpzeg" node="4cztqIocBAy" />
+        </node>
+        <node concept="domOL" id="1RXUY7C891u" role="domYN">
+          <ref role="dwzQZ" node="4cztqIocBzR" />
+        </node>
+        <node concept="domOQ" id="1RXUY7C891v" role="domYN">
+          <property role="TrG5h" value="heeft" />
+        </node>
+        <node concept="domOK" id="1RXUY7C891x" role="domYN">
+          <ref role="dpzeg" node="4cztqIocBAK" />
+        </node>
+        <node concept="domOL" id="1RXUY7C891y" role="domYN">
+          <ref role="dwzQZ" node="4cztqIocBzT" />
+        </node>
       </node>
       <node concept="3bDP1$" id="4cztqIocBB_" role="3bDTgF">
         <ref role="3bDP1F" node="4cztqIocBAu" resolve="[spreiding, heeft, werkperiode]" />
         <ref role="3bDP1D" node="4cztqIocByp" resolve="[ Maandag t/m vrijdag 5x8, Dinsdag 08.00 - 12.00]" />
+        <node concept="domOK" id="1RXUY7C891D" role="domYN">
+          <ref role="dpzeg" node="4cztqIocBAy" />
+        </node>
+        <node concept="domOL" id="1RXUY7C891E" role="domYN">
+          <ref role="dwzQZ" node="4cztqIocByr" />
+        </node>
+        <node concept="domOQ" id="1RXUY7C891F" role="domYN">
+          <property role="TrG5h" value="heeft" />
+        </node>
+        <node concept="domOK" id="1RXUY7C891H" role="domYN">
+          <ref role="dpzeg" node="4cztqIocBAK" />
+        </node>
+        <node concept="domOL" id="1RXUY7C891I" role="domYN">
+          <ref role="dwzQZ" node="4cztqIocByt" />
+        </node>
       </node>
       <node concept="2WGM88" id="4cztqIo81zI" role="2WGioT">
         <ref role="2WGM87" node="4cztqInYCeg" resolve="Spreiding" />
@@ -1399,11 +1554,77 @@
       </node>
       <node concept="3bDP1$" id="4cztqIo4tj$" role="3bDTgF">
         <ref role="3bDP1D" node="4cztqIo2rbJ" resolve="[ Maandag 08.00 - 12.00, Maandag, 08:00, 12:00]" />
-        <ref role="3bDP1F" node="4cztqInXtaF" resolve="[werkperiode, op, dag, loopt van, begintijd, tot, eindtijd]" />
+        <ref role="3bDP1F" node="4cztqInXtaF" resolve="[werkperiode, betreft, dag, en loopt van, begintijd, tot, eindtijd]" />
+        <node concept="domOK" id="1RXUY7C891P" role="domYN">
+          <ref role="dpzeg" node="4cztqInYCdR" />
+        </node>
+        <node concept="domOL" id="1RXUY7C891Q" role="domYN">
+          <ref role="dwzQZ" node="4cztqIo2rbL" />
+        </node>
+        <node concept="domOQ" id="1RXUY7C891R" role="domYN">
+          <property role="TrG5h" value="op" />
+        </node>
+        <node concept="domOK" id="1RXUY7C891T" role="domYN">
+          <ref role="dpzeg" node="4cztqInXtaP" />
+        </node>
+        <node concept="domOL" id="1RXUY7C891U" role="domYN">
+          <ref role="dwzQZ" node="4cztqIo2rc5" />
+        </node>
+        <node concept="domOQ" id="1RXUY7C891V" role="domYN">
+          <property role="TrG5h" value="loopt van" />
+        </node>
+        <node concept="domOK" id="1RXUY7C891X" role="domYN">
+          <ref role="dpzeg" node="4cztqInXtb7" />
+        </node>
+        <node concept="domOL" id="1RXUY7C891Y" role="domYN">
+          <ref role="dwzQZ" node="4cztqIo2rbP" />
+        </node>
+        <node concept="domOQ" id="1RXUY7C891Z" role="domYN">
+          <property role="TrG5h" value="tot" />
+        </node>
+        <node concept="domOK" id="1RXUY7C8921" role="domYN">
+          <ref role="dpzeg" node="4cztqInXtbx" />
+        </node>
+        <node concept="domOL" id="1RXUY7C8922" role="domYN">
+          <ref role="dwzQZ" node="4cztqIo2rbS" />
+        </node>
       </node>
       <node concept="3bDP1$" id="4cztqIo81iZ" role="3bDTgF">
-        <ref role="3bDP1F" node="4cztqInXtaF" resolve="[werkperiode, op, dag, loopt van, begintijd, tot, eindtijd]" />
+        <ref role="3bDP1F" node="4cztqInXtaF" resolve="[werkperiode, betreft, dag, en loopt van, begintijd, tot, eindtijd]" />
         <ref role="3bDP1D" node="4cztqIo2rc8" resolve="[ Maandag 13.00 - 17.00, Maandag, 13:00, 17:00]" />
+        <node concept="domOK" id="1RXUY7C892f" role="domYN">
+          <ref role="dpzeg" node="4cztqInYCdR" />
+        </node>
+        <node concept="domOL" id="1RXUY7C892g" role="domYN">
+          <ref role="dwzQZ" node="4cztqIo2rca" />
+        </node>
+        <node concept="domOQ" id="1RXUY7C892h" role="domYN">
+          <property role="TrG5h" value="op" />
+        </node>
+        <node concept="domOK" id="1RXUY7C892j" role="domYN">
+          <ref role="dpzeg" node="4cztqInXtaP" />
+        </node>
+        <node concept="domOL" id="1RXUY7C892k" role="domYN">
+          <ref role="dwzQZ" node="4cztqIo2rcG" />
+        </node>
+        <node concept="domOQ" id="1RXUY7C892l" role="domYN">
+          <property role="TrG5h" value="loopt van" />
+        </node>
+        <node concept="domOK" id="1RXUY7C892n" role="domYN">
+          <ref role="dpzeg" node="4cztqInXtb7" />
+        </node>
+        <node concept="domOL" id="1RXUY7C892o" role="domYN">
+          <ref role="dwzQZ" node="4cztqIo2rce" />
+        </node>
+        <node concept="domOQ" id="1RXUY7C892p" role="domYN">
+          <property role="TrG5h" value="tot" />
+        </node>
+        <node concept="domOK" id="1RXUY7C892r" role="domYN">
+          <ref role="dpzeg" node="4cztqInXtbx" />
+        </node>
+        <node concept="domOL" id="1RXUY7C892s" role="domYN">
+          <ref role="dwzQZ" node="4cztqIo2rch" />
+        </node>
       </node>
       <node concept="2WGM88" id="4cztqIo81jY" role="2WGioT">
         <ref role="2WGM87" node="4cztqInVct7" resolve="Werkperiode" />
@@ -1474,624 +1695,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2WHal_" id="1JuR_5T14a_">
-    <property role="TrG5h" value="Subjectiefrecht" />
-    <node concept="2WHaQ2" id="1JuR_5T1ojc" role="2WHal$">
-      <property role="TrG5h" value="Rechtsfeit voltrokken" />
-      <property role="3khMER" value="true" />
-      <node concept="21QOSU" id="1JuR_5T1H3E" role="21QOUd">
-        <node concept="34pkC5" id="1JuR_5T1H3K" role="21Rr83">
-          <ref role="34pkC4" node="1JuR_5T1oji" resolve="actor" />
-        </node>
-        <node concept="34pkC5" id="1JuR_5T1H3T" role="21Rr83">
-          <ref role="34pkC4" node="1JuR_5T1ojA" resolve="rechtsfeittype" />
-        </node>
-        <node concept="34pkC5" id="1JuR_5T1H46" role="21Rr83">
-          <property role="TrG5h" value="Onstaan rechtsfeit.onderwerp." />
-          <ref role="34pkC4" node="1JuR_5T1ojN" resolve="onderwerp" />
-        </node>
-        <node concept="34pkC5" id="3kztj8S2c7x" role="21Rr83">
-          <ref role="34pkC4" node="3kztj8S2c7d" resolve="datum uitgevoerd" />
-        </node>
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1H93" role="2WHaR8">
-        <property role="TrG5h" value="rechtsfeit" />
-        <property role="34uzBG" value="het" />
-        <ref role="2WHaRc" node="1JuR_5T1H8L" resolve="Rechtsfeit" />
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1oji" role="2WHaR8">
-        <property role="TrG5h" value="actor" />
-        <ref role="2WHaRc" node="1JuR_5T1oiX" resolve="Subject" />
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1ojA" role="2WHaR8">
-        <property role="TrG5h" value="rechtsfeittype" />
-        <property role="34uzBG" value="het" />
-        <ref role="2WHaRc" node="1JuR_5T1H2i" resolve="Rechtsfeittype" />
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1ojN" role="2WHaR8">
-        <property role="TrG5h" value="onderwerp" />
-        <ref role="2WHaRc" node="1JuR_5T1H1G" resolve="Onderwerp" />
-      </node>
-      <node concept="34qYQO" id="1JuR_5T1GXh" role="34qYOv">
-        <node concept="34qYQU" id="1JuR_5T1GXn" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1oji" resolve="actor" />
-        </node>
-        <node concept="34tZwR" id="1JuR_5T1GXw" role="34rq46">
-          <property role="TrG5h" value="heeft" />
-        </node>
-        <node concept="34qYQU" id="1JuR_5T1H9s" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1H93" resolve="rechtsfeit" />
-        </node>
-        <node concept="34qYQU" id="1JuR_5T1GXH" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1ojA" resolve="rechtsfeittype" />
-        </node>
-        <node concept="34tZwR" id="1JuR_5T1GXY" role="34rq46">
-          <property role="TrG5h" value="uitgevoerd op" />
-        </node>
-        <node concept="34qYQU" id="1JuR_5T1GYj" role="34rq46">
-          <ref role="34qYQT" node="3kztj8S2c7d" resolve="datum uitgevoerd" />
-        </node>
-      </node>
-      <node concept="11gaUJ" id="3kztj8S2c7d" role="2WHaR8">
-        <property role="TrG5h" value="datum uitgevoerd" />
-        <property role="34caxH" value="true" />
-      </node>
-      <node concept="2WHaRd" id="3kztj8S4A9f" role="2WHaR8">
-        <property role="TrG5h" value="uitgevoerd binnen scope" />
-        <ref role="2WHaRc" node="1JuR_5T1H2l" resolve="RechtsbetrekkingType" />
-      </node>
-    </node>
-    <node concept="2WHaQ2" id="1JuR_5T1GYv" role="2WHal$">
-      <property role="TrG5h" value="Rechtsbetrekking" />
-      <property role="3kd5zP" value="true" />
-      <property role="3khMER" value="true" />
-      <node concept="34qYQO" id="3kztj8S2c7Z" role="34qYOv">
-        <node concept="34qYQU" id="3kztj8S2c83" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1GZ1" resolve="subject met recht" />
-        </node>
-        <node concept="34tZwR" id="3kztj8S2c89" role="34rq46">
-          <property role="TrG5h" value="heeft" />
-        </node>
-        <node concept="34qYQU" id="3kztj8S2c8h" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1GZm" resolve="rechtsbetrekking" />
-        </node>
-        <node concept="34qYQU" id="3kztj8S2c9n" role="34rq46">
-          <ref role="34qYQT" node="3kztj8S2c7B" resolve="geldig van" />
-        </node>
-        <node concept="34qYQU" id="3kztj8S2c9F" role="34rq46">
-          <ref role="34qYQT" node="3kztj8S2c7C" resolve="geldig tot" />
-        </node>
-        <node concept="34tZwR" id="3kztj8S2c8r" role="34rq46">
-          <property role="TrG5h" value="met" />
-        </node>
-        <node concept="34qYQU" id="3kztj8S2c8B" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1GZ9" resolve="subject met plicht" />
-        </node>
-        <node concept="34tZwR" id="3kztj8S2c8P" role="34rq46">
-          <property role="TrG5h" value="over" />
-        </node>
-        <node concept="34qYQU" id="3kztj8S2c95" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1H88" resolve="onderwerp" />
-        </node>
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1GZ1" role="2WHaR8">
-        <property role="TrG5h" value="subject met recht" />
-        <property role="34uzBG" value="het" />
-        <ref role="2WHaRc" node="1JuR_5T1oiX" resolve="Subject" />
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1GZ9" role="2WHaR8">
-        <property role="TrG5h" value="subject met plicht" />
-        <property role="34uzBG" value="het" />
-        <ref role="2WHaRc" node="1JuR_5T1oiX" resolve="Subject" />
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1GZm" role="2WHaR8">
-        <property role="TrG5h" value="rechtsbetrekking" />
-        <ref role="2WHaRc" node="1JuR_5T1H2l" resolve="RechtsbetrekkingType" />
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1H88" role="2WHaR8">
-        <property role="TrG5h" value="onderwerp" />
-        <ref role="2WHaRc" node="1JuR_5T1H1G" resolve="Onderwerp" />
-      </node>
-      <node concept="1yPtZP" id="3kztj8S2c7B" role="2WHaR8">
-        <property role="TrG5h" value="geldig van" />
-        <property role="34caxH" value="true" />
-        <property role="34uzBG" value="geen" />
-      </node>
-      <node concept="1yPtZT" id="3kztj8S2c7C" role="2WHaR8">
-        <property role="TrG5h" value="geldig tot" />
-      </node>
-      <node concept="11gaUJ" id="3kztj8S2c7R" role="2WHaR8">
-        <property role="TrG5h" value="geregistreerd op" />
-        <property role="34caxH" value="true" />
-      </node>
-    </node>
-    <node concept="kpplq" id="1JuR_5T1oiX" role="kobCs">
-      <property role="TrG5h" value="Subject" />
-    </node>
-    <node concept="kpplq" id="1JuR_5T1H8L" role="kobCs">
-      <property role="TrG5h" value="Rechtsfeit" />
-    </node>
-    <node concept="kpplq" id="1JuR_5T1H1G" role="kobCs">
-      <property role="TrG5h" value="Onderwerp" />
-    </node>
-  </node>
-  <node concept="2WHal_" id="1JuR_5T1H1T">
-    <property role="TrG5h" value="Objectiefrecht" />
-    <node concept="3kZ3jp" id="1JuR_5T1H4Q" role="3kZ3hR">
-      <property role="TrG5h" value="soort rechtsbetrekking" />
-      <node concept="3kZ3j8" id="1JuR_5T1H4R" role="3kZ3jo">
-        <property role="TrG5h" value="Krachtige aanspraak - fatale verplichting" />
-      </node>
-      <node concept="3kZ3j8" id="1JuR_5T1H4W" role="3kZ3jo">
-        <property role="TrG5h" value="Aanspraak na ingebrekestelling-verplichting na ingebrekestelling" />
-      </node>
-      <node concept="3kZ3j8" id="1JuR_5T1H5c" role="3kZ3jo">
-        <property role="TrG5h" value="Zwakke aanspraak-zwakke verplichting" />
-      </node>
-      <node concept="3kZ3j8" id="1JuR_5T1H5O" role="3kZ3jo">
-        <property role="TrG5h" value="Optionele bevoegdheid-gehoudenheid" />
-      </node>
-      <node concept="3kZ3j8" id="1JuR_5T1H5j" role="3kZ3jo">
-        <property role="TrG5h" value="Verplichte bevoegdheid-gehoudenheid" />
-      </node>
-      <node concept="3kZ3j8" id="1JuR_5T1H5s" role="3kZ3jo">
-        <property role="TrG5h" value="Immuniteit-GeenBevoegdheid" />
-      </node>
-    </node>
-    <node concept="3kZ3jp" id="1JuR_5T1H78" role="3kZ3hR">
-      <property role="TrG5h" value="soort aanpassing" />
-      <node concept="3kZ3j8" id="1JuR_5T1H79" role="3kZ3jo">
-        <property role="TrG5h" value="creatie" />
-      </node>
-      <node concept="3kZ3j8" id="1JuR_5T1H7s" role="3kZ3jo">
-        <property role="TrG5h" value="wijziging" />
-      </node>
-      <node concept="3kZ3j8" id="1JuR_5T1H7x" role="3kZ3jo">
-        <property role="TrG5h" value="beeindiging" />
-      </node>
-    </node>
-    <node concept="2WHaQ2" id="1JuR_5T1H1U" role="2WHal$">
-      <property role="TrG5h" value="Rechtsbetrekking" />
-      <node concept="34qYQO" id="1JuR_5T2JTT" role="34qYOv">
-        <node concept="34qYQU" id="1JuR_5T2JTZ" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T2JQ9" resolve="rechtsbetrekking" />
-        </node>
-        <node concept="34tZwR" id="1JuR_5T2JU8" role="34rq46">
-          <property role="TrG5h" value="is een" />
-        </node>
-        <node concept="34qYQU" id="1JuR_5T2JUl" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1H6u" resolve="soort rechtsbetrekking" />
-        </node>
-        <node concept="34tZwR" id="1JuR_5T2JUA" role="34rq46">
-          <property role="TrG5h" value="tussen" />
-        </node>
-        <node concept="34qYQU" id="1JuR_5T2JUV" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1H1W" resolve="soort subject met recht" />
-        </node>
-        <node concept="34tZwR" id="1JuR_5T2JVk" role="34rq46">
-          <property role="TrG5h" value="en" />
-        </node>
-        <node concept="34qYQU" id="1JuR_5T2JVL" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1H1X" resolve="soort subject met plicht" />
-        </node>
-        <node concept="34tZwR" id="1JuR_5T2JWi" role="34rq46">
-          <property role="TrG5h" value="voor" />
-        </node>
-        <node concept="34qYQU" id="1JuR_5T2JWR" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1H1Y" resolve="rechtsfeit" />
-        </node>
-        <node concept="34tZwR" id="1JuR_5T2JYd" role="34rq46">
-          <property role="TrG5h" value="ten aanzien van" />
-        </node>
-        <node concept="34qYQU" id="1JuR_5T2JXw" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T2JdI" resolve="onderwerp" />
-        </node>
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T2JQ9" role="2WHaR8">
-        <property role="TrG5h" value="rechtsbetrekking" />
-        <ref role="2WHaRc" node="1JuR_5T1H2l" resolve="RechtsbetrekkingType" />
-      </node>
-      <node concept="21QOSU" id="1JuR_5T2Jfm" role="21QOUd">
-        <node concept="34pkC5" id="1JuR_5T2Jfs" role="21Rr83">
-          <ref role="34pkC4" node="1JuR_5T1H1X" resolve="soort subject met plicht" />
-        </node>
-        <node concept="34pkC5" id="1JuR_5T2JfJ" role="21Rr83">
-          <ref role="34pkC4" node="1JuR_5T1H1W" resolve="soort subject met recht" />
-        </node>
-        <node concept="34pkC5" id="1JuR_5T2JfW" role="21Rr83">
-          <ref role="34pkC4" node="1JuR_5T2JdI" resolve="onderwerp" />
-        </node>
-        <node concept="34pkC5" id="1JuR_5T2Jgd" role="21Rr83">
-          <ref role="34pkC4" node="1JuR_5T1H1Y" resolve="rechtsfeit" />
-        </node>
-        <node concept="34pkC5" id="1JuR_5T2Jgy" role="21Rr83">
-          <ref role="34pkC4" node="1JuR_5T1H6u" resolve="soort rechtsbetrekking" />
-        </node>
-      </node>
-      <node concept="3kZ3hM" id="1JuR_5T1H6u" role="2WHaR8">
-        <property role="TrG5h" value="soort rechtsbetrekking" />
-        <property role="34uzBG" value="geen" />
-        <ref role="3kZ3hL" node="1JuR_5T1H4Q" resolve="soort rechtsbetrekking" />
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1H1W" role="2WHaR8">
-        <property role="TrG5h" value="soort subject met recht" />
-        <ref role="2WHaRc" node="1JuR_5T1H2g" resolve="Rechtssubjecttype" />
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1H1X" role="2WHaR8">
-        <property role="TrG5h" value="soort subject met plicht" />
-        <ref role="2WHaRc" node="1JuR_5T1H2g" resolve="Rechtssubjecttype" />
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1H1Y" role="2WHaR8">
-        <property role="TrG5h" value="rechtsfeit" />
-        <property role="34uzBG" value="een" />
-        <ref role="2WHaRc" node="1JuR_5T1H2i" resolve="Rechtsfeittype" />
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T2JdI" role="2WHaR8">
-        <property role="TrG5h" value="onderwerp" />
-        <property role="34uzBG" value="het" />
-        <ref role="2WHaRc" node="1JuR_5T1H2k" resolve="OnderwerpType" />
-      </node>
-    </node>
-    <node concept="2WHaQ2" id="1JuR_5T1H4x" role="2WHal$">
-      <property role="TrG5h" value="Rechtsgevolg" />
-      <node concept="34qYQO" id="1JuR_5T2JY_" role="34qYOv">
-        <node concept="34qYQU" id="1JuR_5T2JYF" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1H4I" resolve="rechtsfeit" />
-        </node>
-        <node concept="34tZwR" id="1JuR_5T2JYO" role="34rq46">
-          <property role="TrG5h" value="heeft als gevolg" />
-        </node>
-        <node concept="34qYQU" id="1JuR_5T2JZ1" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1H7N" resolve="aanpassing" />
-        </node>
-        <node concept="34tZwR" id="1JuR_5T2JZi" role="34rq46">
-          <property role="TrG5h" value="van" />
-        </node>
-        <node concept="34qYQU" id="1JuR_5T2JZB" role="34rq46">
-          <ref role="34qYQT" node="1JuR_5T1H70" resolve="rechtsbetrekking" />
-        </node>
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1H4I" role="2WHaR8">
-        <property role="TrG5h" value="rechtsfeit" />
-        <property role="34uzBG" value="het" />
-        <ref role="2WHaRc" node="1JuR_5T1H2i" resolve="Rechtsfeittype" />
-      </node>
-      <node concept="3kZ3hM" id="1JuR_5T1H7N" role="2WHaR8">
-        <property role="TrG5h" value="aanpassing" />
-        <ref role="3kZ3hL" node="1JuR_5T1H78" resolve="soort aanpassing" />
-      </node>
-      <node concept="2WHaRd" id="1JuR_5T1H70" role="2WHaR8">
-        <property role="TrG5h" value="rechtsbetrekking" />
-        <ref role="2WHaRc" node="1JuR_5T1H2l" resolve="RechtsbetrekkingType" />
-      </node>
-      <node concept="21QOSU" id="1JuR_5T1H9E" role="21QOUd">
-        <node concept="34pkC5" id="1JuR_5T1H9K" role="21Rr83">
-          <ref role="34pkC4" node="1JuR_5T1H4I" resolve="rechtsfeit" />
-        </node>
-        <node concept="34pkC5" id="1JuR_5T1H9T" role="21Rr83">
-          <ref role="34pkC4" node="1JuR_5T1H7N" resolve="aanpassing" />
-        </node>
-        <node concept="34pkC5" id="3kztj8SexYx" role="21Rr83">
-          <ref role="34pkC4" node="1JuR_5T1H70" resolve="rechtsbetrekking" />
-        </node>
-      </node>
-    </node>
-    <node concept="kpplq" id="1JuR_5T1H2g" role="kobCs">
-      <property role="TrG5h" value="Rechtssubjecttype" />
-    </node>
-    <node concept="kpplq" id="1JuR_5T1H2i" role="kobCs">
-      <property role="TrG5h" value="Rechtsfeittype" />
-      <node concept="12CJax" id="3kztj8S2bSQ" role="2QidY">
-        <ref role="12CJaw" node="1JuR_5T1H2i" resolve="Rechtsfeittype" />
-        <ref role="12CJaU" node="3kztj8S2bSC" resolve="Rechtsfeittype met actief rechtssubject" />
-      </node>
-      <node concept="12CJax" id="3kztj8S2bSS" role="2QidY">
-        <ref role="12CJaw" node="1JuR_5T1H2i" resolve="Rechtsfeittype" />
-        <ref role="12CJaU" node="3kztj8S2bSt" resolve="Rechtsfeittype zonder actief rechtssubject" />
-      </node>
-    </node>
-    <node concept="kpplq" id="3kztj8S2bSC" role="kobCs">
-      <property role="TrG5h" value="Rechtsfeittype met actief rechtssubject" />
-      <node concept="12CJax" id="3kztj8S2bVu" role="2QidY">
-        <ref role="12CJaw" node="3kztj8S2bSC" resolve="Rechtsfeittype met actief rechtssubject" />
-        <ref role="12CJaU" node="3kztj8S2bSV" resolve="Rechtshandeling" />
-      </node>
-      <node concept="12CJax" id="3kztj8S2bVw" role="2QidY">
-        <ref role="12CJaw" node="3kztj8S2bSC" resolve="Rechtsfeittype met actief rechtssubject" />
-        <ref role="12CJaU" node="3kztj8S2bTh" resolve="Feitelijke handeling met rechtsgevolg" />
-      </node>
-    </node>
-    <node concept="kpplq" id="3kztj8S2bTC" role="kobCs">
-      <property role="TrG5h" value="Tijdsverloop met rechtsgevolg" />
-    </node>
-    <node concept="kpplq" id="3kztj8S2bTs" role="kobCs">
-      <property role="TrG5h" value="Gebeurtenis met rechtsgevolg" />
-    </node>
-    <node concept="kpplq" id="3kztj8S2bTh" role="kobCs">
-      <property role="TrG5h" value="Feitelijke handeling met rechtsgevolg" />
-    </node>
-    <node concept="kpplq" id="3kztj8S2bSV" role="kobCs">
-      <property role="TrG5h" value="Rechtshandeling" />
-    </node>
-    <node concept="kpplq" id="3kztj8S2bSt" role="kobCs">
-      <property role="TrG5h" value="Rechtsfeittype zonder actief rechtssubject" />
-      <node concept="12CJax" id="3kztj8S2bVz" role="2QidY">
-        <ref role="12CJaw" node="3kztj8S2bSt" resolve="Rechtsfeittype zonder actief rechtssubject" />
-        <ref role="12CJaU" node="3kztj8S2bTs" resolve="Gebeurtenis met rechtsgevolg" />
-      </node>
-      <node concept="12CJax" id="3kztj8S2bV_" role="2QidY">
-        <ref role="12CJaw" node="3kztj8S2bSt" resolve="Rechtsfeittype zonder actief rechtssubject" />
-        <ref role="12CJaU" node="3kztj8S2bTC" resolve="Tijdsverloop met rechtsgevolg" />
-      </node>
-    </node>
-    <node concept="kpplq" id="1JuR_5T1H2k" role="kobCs">
-      <property role="TrG5h" value="OnderwerpType" />
-    </node>
-    <node concept="kpplq" id="1JuR_5T1H2l" role="kobCs">
-      <property role="TrG5h" value="RechtsbetrekkingType" />
-    </node>
-  </node>
-  <node concept="2WGWMU" id="1JuR_5T1H9Z">
-    <property role="TrG5h" value="Feiten objectief- en subjectiefrecht" />
-    <node concept="24RHdu" id="1JuR_5T1Ha0" role="24RH9p">
-      <ref role="24RHdv" node="1JuR_5T1H2g" resolve="Rechtssubjecttype" />
-      <node concept="24RHax" id="1JuR_5T1Ha4" role="24RHdt">
-        <property role="TrG5h" value="Werkgever" />
-        <ref role="24RH9u" node="1JuR_5T1H2g" resolve="Rechtssubjecttype" />
-      </node>
-      <node concept="24RHax" id="1JuR_5T1Ha7" role="24RHdt">
-        <property role="TrG5h" value="Werknemer" />
-        <ref role="24RH9u" node="1JuR_5T1H2g" resolve="Rechtssubjecttype" />
-      </node>
-    </node>
-    <node concept="24RHdu" id="1JuR_5T2IXi" role="24RH9p">
-      <ref role="24RHdv" node="1JuR_5T1H2k" resolve="OnderwerpType" />
-      <node concept="24RHax" id="1JuR_5T2IXr" role="24RHdt">
-        <property role="TrG5h" value="Aanpassing arbeidsduur" />
-        <ref role="24RH9u" node="1JuR_5T1H2k" resolve="OnderwerpType" />
-      </node>
-    </node>
-    <node concept="24RHdu" id="1JuR_5T2J3P" role="24RH9p">
-      <ref role="24RHdv" node="1JuR_5T1H2i" resolve="Rechtsfeittype" />
-      <node concept="24RHax" id="1JuR_5T2J42" role="24RHdt">
-        <property role="TrG5h" value="Indienen verzoek aanpassing arbeidsduur" />
-        <ref role="24RH9u" node="1JuR_5T1H2i" resolve="Rechtsfeittype" />
-      </node>
-      <node concept="24RHax" id="1JuR_5T2J45" role="24RHdt">
-        <property role="TrG5h" value="Afwijzen verzoek" />
-        <ref role="24RH9u" node="1JuR_5T1H2i" resolve="Rechtsfeittype" />
-      </node>
-      <node concept="24RHax" id="1JuR_5T2Jf9" role="24RHdt">
-        <property role="TrG5h" value="Overleg plegen" />
-        <ref role="24RH9u" node="1JuR_5T1H2i" resolve="Rechtsfeittype" />
-      </node>
-      <node concept="24RHax" id="3kztj8S7_oK" role="24RHdt">
-        <property role="TrG5h" value="Accepteren van het verzoek" />
-        <ref role="24RH9u" node="1JuR_5T1H2i" resolve="Rechtsfeittype" />
-      </node>
-      <node concept="24RHax" id="3kztj8S7_rD" role="24RHdt">
-        <property role="TrG5h" value="Niet accepteren van het verzoek" />
-        <ref role="24RH9u" node="1JuR_5T1H2i" resolve="Rechtsfeittype" />
-      </node>
-    </node>
-    <node concept="24RHdu" id="1JuR_5T2JP$" role="24RH9p">
-      <ref role="24RHdv" node="1JuR_5T1H2l" resolve="RechtsbetrekkingType" />
-      <node concept="24RHax" id="1JuR_5T2JPT" role="24RHdt">
-        <property role="TrG5h" value="recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen" />
-        <ref role="24RH9u" node="1JuR_5T1H2l" resolve="RechtsbetrekkingType" />
-      </node>
-      <node concept="24RHax" id="1JuR_5T2JTO" role="24RHdt">
-        <property role="TrG5h" value="verplichting tot overleg plegen" />
-        <ref role="24RH9u" node="1JuR_5T1H2l" resolve="RechtsbetrekkingType" />
-      </node>
-      <node concept="24RHax" id="3kztj8S9RKH" role="24RHdt">
-        <property role="TrG5h" value="Accepteren van het verzoek" />
-        <ref role="24RH9u" node="1JuR_5T1H2l" resolve="RechtsbetrekkingType" />
-      </node>
-      <node concept="24RHax" id="3kztj8S9RKL" role="24RHdt">
-        <property role="TrG5h" value="Niet accepteren van het verzoek" />
-        <ref role="24RH9u" node="1JuR_5T1H2l" resolve="RechtsbetrekkingType" />
-      </node>
-    </node>
-    <node concept="24RHdu" id="1JuR_5T2K44" role="24RH9p">
-      <ref role="24RHdv" node="1JuR_5T1H1G" resolve="Onderwerp" />
-      <node concept="24RHax" id="1JuR_5T2K45" role="24RHdt">
-        <property role="TrG5h" value="Verzoek 1" />
-        <ref role="24RH9u" node="1JuR_5T1H1G" resolve="Onderwerp" />
-      </node>
-    </node>
-    <node concept="24RHdu" id="1JuR_5T2K46" role="24RH9p">
-      <ref role="24RHdv" node="1JuR_5T1oiX" resolve="Subject" />
-      <node concept="24RHax" id="1JuR_5T2K47" role="24RHdt">
-        <property role="TrG5h" value="ASML" />
-        <ref role="24RH9u" node="1JuR_5T1oiX" resolve="Subject" />
-      </node>
-      <node concept="24RHax" id="1JuR_5T2K48" role="24RHdt">
-        <property role="TrG5h" value="Jan" />
-        <ref role="24RH9u" node="1JuR_5T1oiX" resolve="Subject" />
-      </node>
-    </node>
-    <node concept="24RHdu" id="1JuR_5T2K49" role="24RH9p">
-      <ref role="24RHdv" node="1JuR_5T1H8L" resolve="Rechtsfeit" />
-      <node concept="24RHax" id="1JuR_5T2K4a" role="24RHdt">
-        <property role="TrG5h" value="Jan heeft een verzoek ingediend op 01-01-2017" />
-        <ref role="24RH9u" node="1JuR_5T1H8L" resolve="Rechtsfeit" />
-      </node>
-    </node>
-    <node concept="2WGioW" id="1JuR_5T2JSQ" role="2WGWMT">
-      <ref role="2WGioV" node="1JuR_5T1H1U" resolve="Rechtsbetrekking" />
-      <node concept="3bDP1$" id="62x9OGy0Xnm" role="3bDTgF">
-        <ref role="3bDP1F" node="1JuR_5T2JTT" resolve="[rechtsbetrekking, is een, soort rechtsbetrekking, tussen, soort subject met recht, en, soort subject met plicht, voor, rechtsfeit, ten aanzien van, onderwerp]" />
-        <ref role="3bDP1D" node="1JuR_5T2JT9" resolve="[ recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen, Optionele bevoegdheid-gehoudenheid, Werknemer, Werkgever, Indienen verzoek aanpassing arbeidsduur, Aanpassing arbeidsduur]" />
-      </node>
-      <node concept="2WGM88" id="1JuR_5T2JT9" role="2WGioT">
-        <ref role="2WGM87" node="1JuR_5T1H1U" resolve="Rechtsbetrekking" />
-        <node concept="2WGM83" id="1JuR_5T2JTa" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T2JQ9" resolve="rechtsbetrekking" />
-          <node concept="24RH9q" id="1JuR_5T2JTu" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T2JPT" resolve="recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="1JuR_5T2JTb" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H6u" resolve="soort rechtsbetrekking" />
-          <node concept="3kR6ux" id="1JuR_5T2JT$" role="2XiGH2">
-            <ref role="3kR6uw" node="1JuR_5T1H5O" resolve="Optionele bevoegdheid-gehoudenheid" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="1JuR_5T2JTc" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H1W" resolve="soort subject met recht" />
-          <node concept="24RH9q" id="1JuR_5T2JTC" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T1Ha7" resolve="Werknemer" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="1JuR_5T2JTd" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H1X" resolve="soort subject met plicht" />
-          <node concept="24RH9q" id="1JuR_5T2JTF" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T1Ha4" resolve="Werkgever" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="1JuR_5T2JTe" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H1Y" resolve="rechtsfeit" />
-          <node concept="24RH9q" id="1JuR_5T2JTI" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T2J42" resolve="Indienen verzoek aanpassing arbeidsduur" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="1JuR_5T2JTf" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T2JdI" resolve="onderwerp" />
-          <node concept="24RH9q" id="1JuR_5T2JTL" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T2IXr" resolve="Aanpassing arbeidsduur" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2WGioW" id="1JuR_5T2JMr" role="2WGWMT">
-      <ref role="2WGioV" node="1JuR_5T1H4x" resolve="Rechtsgevolg" />
-      <node concept="3bDP1$" id="1JuR_5T2JZN" role="3bDTgF">
-        <ref role="3bDP1F" node="1JuR_5T2JY_" resolve="[rechtsfeit, heeft als gevolg, aanpassing, van, rechtsbetrekking]" />
-        <ref role="3bDP1D" node="1JuR_5T2JNc" resolve="[ Indienen verzoek aanpassing arbeidsduur, creatie, verplichting tot overleg plegen]" />
-      </node>
-      <node concept="2WGM88" id="1JuR_5T2JNc" role="2WGioT">
-        <ref role="2WGM87" node="1JuR_5T1H4x" resolve="Rechtsgevolg" />
-        <node concept="2WGM83" id="1JuR_5T2JNd" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H4I" resolve="rechtsfeit" />
-          <node concept="24RH9q" id="1JuR_5T2JNo" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T2J42" resolve="Indienen verzoek aanpassing arbeidsduur" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="1JuR_5T2JNe" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H7N" resolve="aanpassing" />
-          <node concept="3kR6ux" id="1JuR_5T2JNu" role="2XiGH2">
-            <ref role="3kR6uw" node="1JuR_5T1H79" resolve="creatie" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="1JuR_5T2JNf" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H70" resolve="rechtsbetrekking" />
-          <node concept="24RH9q" id="1JuR_5T2JNy" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T2JTO" resolve="verplichting tot overleg plegen" />
-          </node>
-        </node>
-      </node>
-      <node concept="2WGM88" id="3kztj8S9RJs" role="2WGioT">
-        <ref role="2WGM87" node="1JuR_5T1H4x" resolve="Rechtsgevolg" />
-        <node concept="2WGM83" id="3kztj8S9RJt" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H4I" resolve="rechtsfeit" />
-          <node concept="24RH9q" id="3kztj8S9RJW" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T2J42" resolve="Indienen verzoek aanpassing arbeidsduur" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="3kztj8S9RJu" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H7N" resolve="aanpassing" />
-          <node concept="3kR6ux" id="3kztj8S9RKo" role="2XiGH2">
-            <ref role="3kR6uw" node="1JuR_5T1H79" resolve="creatie" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="3kztj8S9RJv" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H70" resolve="rechtsbetrekking" />
-          <node concept="24RH9q" id="3kztj8S9RKz" role="2XiGH2">
-            <ref role="24RH9r" node="3kztj8S9RKH" resolve="Accepteren van het verzoek" />
-          </node>
-        </node>
-      </node>
-      <node concept="2WGM88" id="3kztj8S9RKY" role="2WGioT">
-        <ref role="2WGM87" node="1JuR_5T1H4x" resolve="Rechtsgevolg" />
-        <node concept="2WGM83" id="3kztj8S9RKZ" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H4I" resolve="rechtsfeit" />
-          <node concept="24RH9q" id="3kztj8S9RLP" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T2J42" resolve="Indienen verzoek aanpassing arbeidsduur" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="3kztj8S9RL0" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H7N" resolve="aanpassing" />
-          <node concept="3kR6ux" id="3kztj8S9RN1" role="2XiGH2">
-            <ref role="3kR6uw" node="1JuR_5T1H79" resolve="creatie" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="3kztj8S9RL1" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H70" resolve="rechtsbetrekking" />
-          <node concept="24RH9q" id="3kztj8S9RNs" role="2XiGH2">
-            <ref role="24RH9r" node="3kztj8S9RKL" resolve="Niet accepteren van het verzoek" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2WGioW" id="1JuR_5T2K4L" role="2WGWMT">
-      <ref role="2WGioV" node="1JuR_5T1ojc" resolve="Rechtsfeit voltrokken" />
-      <node concept="2WGM88" id="1JuR_5T2K5y" role="2WGioT">
-        <ref role="2WGM87" node="1JuR_5T1ojc" resolve="Rechtsfeit voltrokken" />
-        <node concept="2WGM83" id="1JuR_5T2K5z" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1H93" resolve="rechtsfeit" />
-          <node concept="24RH9q" id="1JuR_5T2K5O" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T2K4a" resolve="Jan heeft een verzoek ingediend op 01-01-2017" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="1JuR_5T2K5$" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1oji" resolve="actor" />
-          <node concept="24RH9q" id="1JuR_5T2K5R" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T2K48" resolve="Jan" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="1JuR_5T2K5_" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1ojA" resolve="rechtsfeittype" />
-          <node concept="24RH9q" id="1JuR_5T2K5U" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T2J42" resolve="Indienen verzoek aanpassing arbeidsduur" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="1JuR_5T2K5A" role="2WGM80">
-          <ref role="2WGM82" node="1JuR_5T1ojN" resolve="onderwerp" />
-          <node concept="24RH9q" id="1JuR_5T2K5X" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T2K45" resolve="Verzoek 1" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="3kztj8S3577" role="2WGM80">
-          <ref role="2WGM82" node="3kztj8S2c7d" resolve="datum uitgevoerd" />
-          <node concept="3r9TEt" id="3kztj8S3578" role="2XiGH2">
-            <node concept="LeFwQ" id="3kztj8S3579" role="3r9TEs">
-              <node concept="2B78Lw" id="3kztj8S357a" role="LeFwF">
-                <property role="2B78LE" value="2018" />
-                <property role="2B78L_" value="1" />
-                <property role="2B78LB" value="7" />
-              </node>
-              <node concept="LeFwc" id="3kztj8S357b" role="LeFwH">
-                <property role="LeFwf" value="12" />
-                <property role="LeFwL" value="36" />
-                <property role="LeFwM" value="52" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2WGM83" id="3kztj8S4A9w" role="2WGM80">
-          <ref role="2WGM82" node="3kztj8S4A9f" resolve="uitgevoerd binnen scope" />
-          <node concept="24RH9q" id="3kztj8S4A9J" role="2XiGH2">
-            <ref role="24RH9r" node="1JuR_5T2JPT" resolve="recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen" />
-          </node>
-        </node>
-      </node>
-      <node concept="3bDP1$" id="3kztj8S4A9L" role="3bDTgF">
-        <ref role="3bDP1F" node="1JuR_5T1GXh" resolve="[actor, heeft, rechtsfeit, rechtsfeittype, uitgevoerd op, datum uitgevoerd]" />
-        <ref role="3bDP1D" node="1JuR_5T2K5y" resolve="[ Jan heeft een verzoek ingediend op 01-01-2017, Jan, Indienen verzoek aanpassing arbeidsduur, Verzoek 1, 2018-01-07T12:36:52, recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen]" />
       </node>
     </node>
   </node>

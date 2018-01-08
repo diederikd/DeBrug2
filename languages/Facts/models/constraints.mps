@@ -17,8 +17,8 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="k0ub" ref="r:0c9da324-6503-4efe-bde7-efa21705c63b(Facts.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="k0ub" ref="r:0c9da324-6503-4efe-bde7-efa21705c63b(Facts.behavior)" implicit="true" />
     <import index="thx9" ref="r:a4e8cbe4-7611-4e77-90f4-adc17bffa9af(DateTime.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -734,6 +734,17 @@
           </node>
         </node>
       </node>
+      <node concept="3k9gUc" id="3kztj8SzlWH" role="3kmjI7">
+        <node concept="3clFbS" id="3kztj8SzlWI" role="2VODD2">
+          <node concept="3clFbF" id="3kztj8Sz$Vg" role="3cqZAp">
+            <node concept="2YIFZM" id="3kztj8SzFrm" role="3clFbG">
+              <ref role="37wK5l" to="k0ub:3kztj8SzCgd" resolve="BuildFactWording" />
+              <ref role="1Pybhc" to="k0ub:4cztqIoTUsQ" resolve="helper" />
+              <node concept="3kakTB" id="3kztj8SzFrF" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1N5Pfh" id="3e11SfSj0rr" role="1Mr941">
       <ref role="1N5Vy1" to="gq3g:3e11SfS9_vC" resolve="factTypeWording" />
@@ -802,6 +813,17 @@
                   <ref role="13MTZf" to="gq3g:3e11SfRUIEs" resolve="wordings" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3k9gUc" id="3kztj8SzFuE" role="3kmjI7">
+        <node concept="3clFbS" id="3kztj8SzFuF" role="2VODD2">
+          <node concept="3clFbF" id="3kztj8SzFv8" role="3cqZAp">
+            <node concept="2YIFZM" id="3kztj8SzFv9" role="3clFbG">
+              <ref role="1Pybhc" to="k0ub:4cztqIoTUsQ" resolve="helper" />
+              <ref role="37wK5l" to="k0ub:3kztj8SzCgd" resolve="BuildFactWording" />
+              <node concept="3kakTB" id="3kztj8SzFva" role="37wK5m" />
             </node>
           </node>
         </node>

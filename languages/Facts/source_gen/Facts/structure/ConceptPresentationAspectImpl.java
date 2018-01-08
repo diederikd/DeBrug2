@@ -32,6 +32,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FactTypeWordRole;
   private ConceptPresentation props_FactTypeWordVerb;
   private ConceptPresentation props_FactTypeWording;
+  private ConceptPresentation props_FactWord;
+  private ConceptPresentation props_FactWordRole;
+  private ConceptPresentation props_FactWordValue;
+  private ConceptPresentation props_FactWordVerb;
   private ConceptPresentation props_FactWording;
   private ConceptPresentation props_Identifier;
   private ConceptPresentation props_Instance;
@@ -216,6 +220,33 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FactTypeWording = cpb.create();
         }
         return props_FactTypeWording;
+      case LanguageConceptSwitch.FactWord:
+        if (props_FactWord == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_FactWord = cpb.create();
+        }
+        return props_FactWord;
+      case LanguageConceptSwitch.FactWordRole:
+        if (props_FactWordRole == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421802L, 0x35237532384546a2L, "role", "", "");
+          props_FactWordRole = cpb.create();
+        }
+        return props_FactWordRole;
+      case LanguageConceptSwitch.FactWordValue:
+        if (props_FactWordValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421803L, 0x3523753238a1488dL, "value", "", "");
+          props_FactWordValue = cpb.create();
+        }
+        return props_FactWordValue;
+      case LanguageConceptSwitch.FactWordVerb:
+        if (props_FactWordVerb == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_FactWordVerb = cpb.create();
+        }
+        return props_FactWordVerb;
       case LanguageConceptSwitch.FactWording:
         if (props_FactWording == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -58,10 +58,10 @@ public class Styles_StyleSheet {
    * @deprecated Since MPS 3.5 use generated StyleClass
    */
   @Deprecated
-  public static void apply_WordingVariable(Style style, EditorCell editorCell) {
+  public static void apply_WordingValue(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Styles_StyleSheet.WordingVariableStyleClass(editorContext, node).apply(style, editorCell);
+    new Styles_StyleSheet.WordingValueStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -118,8 +118,8 @@ public class Styles_StyleSheet {
     }
 
   }
-  public static class WordingVariableStyleClass extends AbstractStyleClass {
-    public WordingVariableStyleClass(EditorContext editorContext, SNode node) {
+  public static class WordingValueStyleClass extends AbstractStyleClass {
+    public WordingValueStyleClass(EditorContext editorContext, SNode node) {
       super(editorContext, node);
     }
 

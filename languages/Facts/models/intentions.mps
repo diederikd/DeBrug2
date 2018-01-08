@@ -6,8 +6,8 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="k0ub" ref="r:0c9da324-6503-4efe-bde7-efa21705c63b(Facts.behavior)" />
     <import index="gq3g" ref="r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)" implicit="true" />
-    <import index="k0ub" ref="r:0c9da324-6503-4efe-bde7-efa21705c63b(Facts.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -34,6 +34,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -548,6 +551,30 @@
                 <ref role="3cqZAo" node="4cztqIo81Wz" resolve="entity" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3kztj8SDHo$">
+    <property role="TrG5h" value="RefreshFactWording" />
+    <ref role="2ZfgGC" to="gq3g:3e11SfS9_vB" resolve="FactWording" />
+    <node concept="2S6ZIM" id="3kztj8SDHo_" role="2ZfVej">
+      <node concept="3clFbS" id="3kztj8SDHoA" role="2VODD2">
+        <node concept="3cpWs6" id="3kztj8SDHxI" role="3cqZAp">
+          <node concept="Xl_RD" id="3kztj8SDHEg" role="3cqZAk">
+            <property role="Xl_RC" value="Ververs Feitverwoording" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3kztj8SDHoB" role="2ZfgGD">
+      <node concept="3clFbS" id="3kztj8SDHoC" role="2VODD2">
+        <node concept="3clFbF" id="3kztj8SDJLQ" role="3cqZAp">
+          <node concept="2YIFZM" id="3kztj8SDJML" role="3clFbG">
+            <ref role="37wK5l" to="k0ub:3kztj8SzCgd" resolve="BuildFactWording" />
+            <ref role="1Pybhc" to="k0ub:4cztqIoTUsQ" resolve="helper" />
+            <node concept="2Sf5sV" id="3kztj8SDJNf" role="37wK5m" />
           </node>
         </node>
       </node>
