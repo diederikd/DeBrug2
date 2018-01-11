@@ -11,7 +11,6 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import org.jetbrains.mps.openapi.model.SNode;
-import Facts.behavior.helper;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
@@ -46,7 +45,6 @@ public class FactWording_Constraints extends BaseConstraintsDescriptor {
       }
       @Override
       public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
-        helper.BuildFactWording(referenceNode);
       }
       @Override
       public boolean hasOwnScopeProvider() {
@@ -78,7 +76,6 @@ public class FactWording_Constraints extends BaseConstraintsDescriptor {
       }
       @Override
       public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
-        helper.BuildFactWording(referenceNode);
       }
       @Override
       public boolean hasOwnScopeProvider() {

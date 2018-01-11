@@ -18,6 +18,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EntityTable;
   private ConceptPresentation props_EntityType;
   private ConceptPresentation props_EntityTypeInRole;
+  private ConceptPresentation props_EntityTypeReference;
   private ConceptPresentation props_EntityValue;
   private ConceptPresentation props_Enumeration;
   private ConceptPresentation props_EnumerationType;
@@ -123,6 +124,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EntityTypeInRole = cpb.create();
         }
         return props_EntityTypeInRole;
+      case LanguageConceptSwitch.EntityTypeReference:
+        if (props_EntityTypeReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x1dfdebe1e84f27e5L, 0x1dfdebe1e84f27e6L, "entityType", "", "");
+          props_EntityTypeReference = cpb.create();
+        }
+        return props_EntityTypeReference;
       case LanguageConceptSwitch.EntityValue:
         if (props_EntityValue == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

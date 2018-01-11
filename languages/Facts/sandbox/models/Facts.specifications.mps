@@ -29,7 +29,9 @@
       <concept id="3829032966747723779" name="Facts.structure.FactWordValue" flags="ng" index="domOL">
         <reference id="3829032966753962125" name="value" index="dwzQZ" />
       </concept>
-      <concept id="3829032966747723780" name="Facts.structure.FactWordVerb" flags="ng" index="domOQ" />
+      <concept id="3829032966747723780" name="Facts.structure.FactWordVerb" flags="ng" index="domOQ">
+        <reference id="2161142751703828886" name="verb" index="3PMA9R" />
+      </concept>
       <concept id="503348701156726176" name="Facts.structure.EntityType" flags="ng" index="kpplq" />
       <concept id="1028895148592232595" name="Facts.structure.FactTable" flags="ng" index="2WGioW">
         <reference id="1028895148592232596" name="facttype" index="2WGioV" />
@@ -248,7 +250,7 @@
       <node concept="2WHaRa" id="3e11SfRJBHv" role="2WHaR8">
         <property role="TrG5h" value="burgerservicenummer" />
         <property role="34caxH" value="true" />
-        <property role="34uzBG" value="een" />
+        <property role="34uzBG" value="geen" />
       </node>
       <node concept="21QOSU" id="1JuR_5SJrKX" role="21QOUd">
         <node concept="34pkC5" id="1JuR_5SJrL1" role="21Rr83">
@@ -803,43 +805,43 @@
       <node concept="3bDP1$" id="1RXUY7Cbh8Q" role="3bDTgF">
         <ref role="3bDP1F" node="4cztqInFIft" resolve="[werknemer, heeft met, werkgever, arbeidsovereenkomst, getekend op, datum van tekenen arbeidscontract, voor het in dienst komen op, datum in dienst]" />
         <ref role="3bDP1D" node="1RXUY7Cbh83" resolve="[ ASML, Henk, Arbeidsovereenkomst tussen Henk en ASML, 01-10-2017, 01-09-2017]" />
-        <node concept="domOK" id="1RXUY7Cbh9j" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHpO" role="domYN">
           <ref role="dpzeg" node="4cztqInFIfF" />
         </node>
-        <node concept="domOL" id="1RXUY7Cbh9k" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHpP" role="domYN">
           <ref role="dwzQZ" node="1RXUY7Cbh87" />
         </node>
-        <node concept="domOQ" id="1RXUY7Cbh9l" role="domYN">
-          <property role="TrG5h" value="heeft met" />
+        <node concept="domOQ" id="1RXUY7CjHpQ" role="domYN">
+          <ref role="3PMA9R" node="4cztqInFIfL" resolve="heeft met" />
         </node>
-        <node concept="domOK" id="1RXUY7Cbh9n" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHpS" role="domYN">
           <ref role="dpzeg" node="4cztqInL_Fi" />
         </node>
-        <node concept="domOL" id="1RXUY7Cbh9o" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHpT" role="domYN">
           <ref role="dwzQZ" node="1RXUY7Cbh85" />
         </node>
-        <node concept="domOK" id="1RXUY7Cbh9q" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHpV" role="domYN">
           <ref role="dpzeg" node="4cztqInRNKU" />
         </node>
-        <node concept="domOL" id="1RXUY7Cbh9r" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHpW" role="domYN">
           <ref role="dwzQZ" node="1RXUY7Cbh8r" />
         </node>
-        <node concept="domOQ" id="1RXUY7Cbh9s" role="domYN">
-          <property role="TrG5h" value="getekend op" />
+        <node concept="domOQ" id="1RXUY7CjHpX" role="domYN">
+          <ref role="3PMA9R" node="4cztqInL_Fu" resolve="getekend op" />
         </node>
-        <node concept="domOK" id="1RXUY7Cbh9u" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHpZ" role="domYN">
           <ref role="dpzeg" node="4cztqInFIg4" />
         </node>
-        <node concept="domOL" id="1RXUY7Cbh9v" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHq0" role="domYN">
           <ref role="dwzQZ" node="1RXUY7Cbh8d" resolve="01-09-2017" />
         </node>
-        <node concept="domOQ" id="1RXUY7Cbh9w" role="domYN">
-          <property role="TrG5h" value="voor het in dienst komen op" />
+        <node concept="domOQ" id="1RXUY7CjHq1" role="domYN">
+          <ref role="3PMA9R" node="4cztqInRNLI" resolve="voor het in dienst komen op" />
         </node>
-        <node concept="domOK" id="1RXUY7Cbh9y" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHq3" role="domYN">
           <ref role="dpzeg" node="4cztqInRNWS" />
         </node>
-        <node concept="domOL" id="1RXUY7Cbh9z" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHq4" role="domYN">
           <ref role="dwzQZ" node="1RXUY7Cbh8a" resolve="01-10-2017" />
         </node>
       </node>
@@ -890,39 +892,77 @@
       <node concept="3bDP1$" id="1RXUY7Cbh9L" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRYbHD" resolve="[werknemer, heeft, burgerservicenummer]" />
         <ref role="3bDP1D" node="62x9OGxYp5F" resolve="[ Diederik, 123456789, 01-10-2017, null, 2018-01-01T00:00]" />
-        <node concept="domOK" id="1RXUY7Cbha6" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNi4" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbHH" />
         </node>
-        <node concept="domOL" id="1RXUY7Cbha7" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNi5" role="domYN">
           <ref role="dwzQZ" node="62x9OGxYp5H" />
         </node>
-        <node concept="domOQ" id="1RXUY7Cbha8" role="domYN">
-          <property role="TrG5h" value="heeft" />
+        <node concept="domOQ" id="1RXUY7CfNi6" role="domYN">
+          <ref role="3PMA9R" node="3e11SfRYbHN" resolve="heeft" />
         </node>
-        <node concept="domOK" id="1RXUY7Cbhaa" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNi8" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbHV" />
         </node>
-        <node concept="domOL" id="1RXUY7Cbhab" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNi9" role="domYN">
           <ref role="dwzQZ" node="62x9OGxYp5J" />
         </node>
       </node>
       <node concept="3bDP1$" id="1RXUY7Cbhal" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRYbHD" resolve="[werknemer, heeft, burgerservicenummer]" />
         <ref role="3bDP1D" node="62x9OGxZFuO" resolve="[ Henk, 111111111, 01-01-2017, null, 2018-01-05T18:42:54]" />
-        <node concept="domOK" id="1RXUY7CbhaK" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNig" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbHH" />
         </node>
-        <node concept="domOL" id="1RXUY7CbhaL" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNih" role="domYN">
           <ref role="dwzQZ" node="62x9OGxZFuQ" />
         </node>
-        <node concept="domOQ" id="1RXUY7CbhaM" role="domYN">
-          <property role="TrG5h" value="heeft" />
+        <node concept="domOQ" id="1RXUY7CfNii" role="domYN">
+          <ref role="3PMA9R" node="3e11SfRYbHN" resolve="heeft" />
         </node>
-        <node concept="domOK" id="1RXUY7CbhaO" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNik" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbHV" />
         </node>
-        <node concept="domOL" id="1RXUY7CbhaP" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNil" role="domYN">
           <ref role="dwzQZ" node="62x9OGxZFuS" />
+        </node>
+      </node>
+      <node concept="3bDP1$" id="1RXUY7CdPhH" role="3bDTgF">
+        <ref role="3bDP1F" node="3e11SfRYbHD" resolve="[werknemer, heeft, burgerservicenummer]" />
+        <ref role="3bDP1D" node="62x9OGxZFuO" resolve="[ Henk, 111111111, 01-01-2017, null, 2018-01-05T18:42:54]" />
+        <node concept="domOK" id="1RXUY7CjHps" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbHH" />
+        </node>
+        <node concept="domOL" id="1RXUY7CjHpt" role="domYN">
+          <ref role="dwzQZ" node="62x9OGxZFuQ" />
+        </node>
+        <node concept="domOQ" id="1RXUY7CjHpu" role="domYN">
+          <ref role="3PMA9R" node="3e11SfRYbHN" resolve="heeft" />
+        </node>
+        <node concept="domOK" id="1RXUY7CjHpw" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbHV" />
+        </node>
+        <node concept="domOL" id="1RXUY7CjHpx" role="domYN">
+          <ref role="dwzQZ" node="62x9OGxZFuS" />
+        </node>
+      </node>
+      <node concept="3bDP1$" id="1RXUY7CdSz0" role="3bDTgF">
+        <ref role="3bDP1F" node="3e11SfRYbHD" resolve="[werknemer, heeft, burgerservicenummer]" />
+        <ref role="3bDP1D" node="62x9OGxYp5F" resolve="[ Diederik, 123456789, 01-10-2017, null, 2018-01-01T00:00]" />
+        <node concept="domOK" id="1RXUY7CjHpC" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbHH" />
+        </node>
+        <node concept="domOL" id="1RXUY7CjHpD" role="domYN">
+          <ref role="dwzQZ" node="62x9OGxYp5H" />
+        </node>
+        <node concept="domOQ" id="1RXUY7CjHpE" role="domYN">
+          <ref role="3PMA9R" node="3e11SfRYbHN" resolve="heeft" />
+        </node>
+        <node concept="domOK" id="1RXUY7CjHpG" role="domYN">
+          <ref role="dpzeg" node="3e11SfRYbHV" />
+        </node>
+        <node concept="domOL" id="1RXUY7CjHpH" role="domYN">
+          <ref role="dwzQZ" node="62x9OGxYp5J" />
         </node>
       </node>
       <node concept="2WGM88" id="62x9OGxYp5F" role="2WGioT">
@@ -1021,84 +1061,84 @@
       <node concept="3bDP1$" id="3MspsB8136p" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRYbI0" resolve="[werknemer, heeft, voornaam, en, achternaam]" />
         <ref role="3bDP1D" node="3e11SfRLPSI" resolve="[ Diederik, Diederik, Dulfer]" />
-        <node concept="domOK" id="3kztj8SEqZM" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNhb" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbI4" />
         </node>
-        <node concept="domOL" id="3kztj8SEqZN" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNhc" role="domYN">
           <ref role="dwzQZ" node="3e11SfRLPT6" />
         </node>
-        <node concept="domOQ" id="3kztj8SEqZO" role="domYN">
-          <property role="TrG5h" value="heeft" />
+        <node concept="domOQ" id="1RXUY7CfNhd" role="domYN">
+          <ref role="3PMA9R" node="3e11SfRYbIa" resolve="heeft" />
         </node>
-        <node concept="domOK" id="3kztj8SEqZQ" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNhf" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbIi" />
         </node>
-        <node concept="domOL" id="3kztj8SEqZR" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNhg" role="domYN">
           <ref role="dwzQZ" node="3MspsB8228L" />
         </node>
-        <node concept="domOQ" id="3kztj8SEqZS" role="domYN">
-          <property role="TrG5h" value="en" />
+        <node concept="domOQ" id="1RXUY7CfNhh" role="domYN">
+          <ref role="3PMA9R" node="3e11SfRYbIs" resolve="en" />
         </node>
-        <node concept="domOK" id="3kztj8SEqZU" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNhj" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbIC" />
         </node>
-        <node concept="domOL" id="3kztj8SEqZV" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNhk" role="domYN">
           <ref role="dwzQZ" node="3e11SfRLPSN" />
         </node>
       </node>
       <node concept="3bDP1$" id="3MspsB88etk" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRYbI0" resolve="[werknemer, heeft, voornaam, en, achternaam]" />
         <ref role="3bDP1D" node="3MspsB8c$NR" resolve="[ Henk, Henk, Straver]" />
-        <node concept="domOK" id="3kztj8SEr05" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNhu" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbI4" />
         </node>
-        <node concept="domOL" id="3kztj8SEr06" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNhv" role="domYN">
           <ref role="dwzQZ" node="3MspsB8c$NT" />
         </node>
-        <node concept="domOQ" id="3kztj8SEr07" role="domYN">
-          <property role="TrG5h" value="heeft" />
+        <node concept="domOQ" id="1RXUY7CfNhw" role="domYN">
+          <ref role="3PMA9R" node="3e11SfRYbIa" resolve="heeft" />
         </node>
-        <node concept="domOK" id="3kztj8SEr09" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNhy" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbIi" />
         </node>
-        <node concept="domOL" id="3kztj8SEr0a" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNhz" role="domYN">
           <ref role="dwzQZ" node="3MspsB8c$PK" />
         </node>
-        <node concept="domOQ" id="3kztj8SEr0b" role="domYN">
-          <property role="TrG5h" value="en" />
+        <node concept="domOQ" id="1RXUY7CfNh$" role="domYN">
+          <ref role="3PMA9R" node="3e11SfRYbIs" resolve="en" />
         </node>
-        <node concept="domOK" id="3kztj8SEr0d" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNhA" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbIC" />
         </node>
-        <node concept="domOL" id="3kztj8SEr0e" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNhB" role="domYN">
           <ref role="dwzQZ" node="3MspsB8c$O_" />
         </node>
       </node>
       <node concept="3bDP1$" id="3MspsB8c$No" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRYbI0" resolve="[werknemer, heeft, voornaam, en, achternaam]" />
         <ref role="3bDP1D" node="3MspsB8c$OU" resolve="[ Wim, Wim, Zomers]" />
-        <node concept="domOK" id="3kztj8SEr0o" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNhL" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbI4" />
         </node>
-        <node concept="domOL" id="3kztj8SEr0p" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNhM" role="domYN">
           <ref role="dwzQZ" node="3MspsB8c$OW" />
         </node>
-        <node concept="domOQ" id="3kztj8SEr0q" role="domYN">
-          <property role="TrG5h" value="heeft" />
+        <node concept="domOQ" id="1RXUY7CfNhN" role="domYN">
+          <ref role="3PMA9R" node="3e11SfRYbIa" resolve="heeft" />
         </node>
-        <node concept="domOK" id="3kztj8SEr0s" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNhP" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbIi" />
         </node>
-        <node concept="domOL" id="3kztj8SEr0t" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNhQ" role="domYN">
           <ref role="dwzQZ" node="3MspsB8c$PI" />
         </node>
-        <node concept="domOQ" id="3kztj8SEr0u" role="domYN">
-          <property role="TrG5h" value="en" />
+        <node concept="domOQ" id="1RXUY7CfNhR" role="domYN">
+          <ref role="3PMA9R" node="3e11SfRYbIs" resolve="en" />
         </node>
-        <node concept="domOK" id="3kztj8SEr0w" role="domYN">
+        <node concept="domOK" id="1RXUY7CfNhT" role="domYN">
           <ref role="dpzeg" node="3e11SfRYbIC" />
         </node>
-        <node concept="domOL" id="3kztj8SEr0x" role="domYN">
+        <node concept="domOL" id="1RXUY7CfNhU" role="domYN">
           <ref role="dwzQZ" node="3MspsB8c$OZ" />
         </node>
       </node>
@@ -1223,38 +1263,38 @@
       <node concept="3bDP1$" id="4cztqInAJc6" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRWlyH" resolve="[werknemer, heeft, werknemernummer]" />
         <ref role="3bDP1D" node="3e11SfS3H0F" resolve="[ Diederik, 8]" />
-        <node concept="domOK" id="1RXUY7CbhbZ" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHp4" role="domYN">
           <ref role="dpzeg" node="3e11SfRXJYJ" />
         </node>
-        <node concept="domOL" id="1RXUY7Cbhc0" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHp5" role="domYN">
           <ref role="dwzQZ" node="3e11SfS3H0H" />
         </node>
-        <node concept="domOQ" id="1RXUY7Cbhc1" role="domYN">
-          <property role="TrG5h" value="heeft" />
+        <node concept="domOQ" id="1RXUY7CjHp6" role="domYN">
+          <ref role="3PMA9R" node="3e11SfRYbH$" resolve="heeft" />
         </node>
-        <node concept="domOK" id="1RXUY7Cbhc3" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHp8" role="domYN">
           <ref role="dpzeg" node="3e11SfRWyIf" />
         </node>
-        <node concept="domOL" id="1RXUY7Cbhc4" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHp9" role="domYN">
           <ref role="dwzQZ" node="3e11SfS3H0J" />
         </node>
       </node>
       <node concept="3bDP1$" id="1RXUY7CbhaZ" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfRWlyH" resolve="[werknemer, heeft, werknemernummer]" />
         <ref role="3bDP1D" node="3e11SfRROZW" resolve="[ Henk, 3]" />
-        <node concept="domOK" id="1RXUY7Cbhcb" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHpg" role="domYN">
           <ref role="dpzeg" node="3e11SfRXJYJ" />
         </node>
-        <node concept="domOL" id="1RXUY7Cbhcc" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHph" role="domYN">
           <ref role="dwzQZ" node="14SuKMpDAR3" />
         </node>
-        <node concept="domOQ" id="1RXUY7Cbhcd" role="domYN">
-          <property role="TrG5h" value="heeft" />
+        <node concept="domOQ" id="1RXUY7CjHpi" role="domYN">
+          <ref role="3PMA9R" node="3e11SfRYbH$" resolve="heeft" />
         </node>
-        <node concept="domOK" id="1RXUY7Cbhcf" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHpk" role="domYN">
           <ref role="dpzeg" node="3e11SfRWyIf" />
         </node>
-        <node concept="domOL" id="1RXUY7Cbhcg" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHpl" role="domYN">
           <ref role="dwzQZ" node="3e11SfRRP00" />
         </node>
       </node>
@@ -1309,37 +1349,34 @@
       <node concept="3bDP1$" id="4cztqIodNh4" role="3bDTgF">
         <ref role="3bDP1F" node="4cztqIocBIO" resolve="[arbeidsduur, heeft van, datum geldig van, tot, datum geldig tot, spreiding]" />
         <ref role="3bDP1D" node="4cztqIodNgI" resolve="[ 40, 01-02-2017, 01-01-0001, Maandag t/m vrijdag 5x8]" />
-        <node concept="domOK" id="3kztj8SErQH" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHoG" role="domYN">
           <ref role="dpzeg" node="4cztqIocBIS" />
         </node>
-        <node concept="domOL" id="3kztj8SErQI" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHoH" role="domYN">
           <ref role="dwzQZ" node="4cztqIodNh2" />
         </node>
-        <node concept="domOQ" id="3kztj8SErQJ" role="domYN">
-          <property role="TrG5h" value="heeft van" />
+        <node concept="domOQ" id="1RXUY7CjHoI" role="domYN">
+          <ref role="3PMA9R" node="4cztqIocBIY" resolve="heeft van" />
         </node>
-        <node concept="domOK" id="3kztj8SErQL" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHoK" role="domYN">
           <ref role="dpzeg" node="4cztqIocBJ6" />
         </node>
-        <node concept="domOL" id="3kztj8SErQM" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHoL" role="domYN">
           <ref role="dwzQZ" node="4cztqIodNgL" resolve="01-02-2017" />
         </node>
-        <node concept="domOQ" id="3kztj8SErQN" role="domYN">
-          <property role="TrG5h" value="tot" />
+        <node concept="domOQ" id="1RXUY7CjHoM" role="domYN">
+          <ref role="3PMA9R" node="4cztqIocBJg" resolve="tot" />
         </node>
-        <node concept="domOK" id="3kztj8SErQP" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHoO" role="domYN">
           <ref role="dpzeg" node="4cztqIocBJs" />
         </node>
-        <node concept="domOL" id="3kztj8SErQQ" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHoP" role="domYN">
           <ref role="dwzQZ" node="4cztqIodNgW" resolve="01-01-0001" />
         </node>
-        <node concept="domOQ" id="3kztj8SErQR" role="domYN">
-          <property role="TrG5h" value="met" />
-        </node>
-        <node concept="domOK" id="3kztj8SErQT" role="domYN">
+        <node concept="domOK" id="1RXUY7CjHoR" role="domYN">
           <ref role="dpzeg" node="4cztqIocBJE" />
         </node>
-        <node concept="domOL" id="3kztj8SErQU" role="domYN">
+        <node concept="domOL" id="1RXUY7CjHoS" role="domYN">
           <ref role="dwzQZ" node="4cztqIodNh0" />
         </node>
       </node>
@@ -1384,38 +1421,38 @@
       <node concept="3bDP1$" id="4cztqIocBEh" role="3bDTgF">
         <ref role="3bDP1F" node="4cztqIocBAu" resolve="[spreiding, heeft, werkperiode]" />
         <ref role="3bDP1D" node="4cztqIocBzP" resolve="[ Maandag t/m vrijdag 5x8, Dinsdag 13.00 - 17.00]" />
-        <node concept="domOK" id="1RXUY7C891t" role="domYN">
+        <node concept="domOK" id="1RXUY7CiaqU" role="domYN">
           <ref role="dpzeg" node="4cztqIocBAy" />
         </node>
-        <node concept="domOL" id="1RXUY7C891u" role="domYN">
+        <node concept="domOL" id="1RXUY7CiaqV" role="domYN">
           <ref role="dwzQZ" node="4cztqIocBzR" />
         </node>
-        <node concept="domOQ" id="1RXUY7C891v" role="domYN">
-          <property role="TrG5h" value="heeft" />
+        <node concept="domOQ" id="1RXUY7CiaqW" role="domYN">
+          <ref role="3PMA9R" node="4cztqIocBAC" resolve="heeft" />
         </node>
-        <node concept="domOK" id="1RXUY7C891x" role="domYN">
+        <node concept="domOK" id="1RXUY7CiaqY" role="domYN">
           <ref role="dpzeg" node="4cztqIocBAK" />
         </node>
-        <node concept="domOL" id="1RXUY7C891y" role="domYN">
+        <node concept="domOL" id="1RXUY7CiaqZ" role="domYN">
           <ref role="dwzQZ" node="4cztqIocBzT" />
         </node>
       </node>
       <node concept="3bDP1$" id="4cztqIocBB_" role="3bDTgF">
         <ref role="3bDP1F" node="4cztqIocBAu" resolve="[spreiding, heeft, werkperiode]" />
         <ref role="3bDP1D" node="4cztqIocByp" resolve="[ Maandag t/m vrijdag 5x8, Dinsdag 08.00 - 12.00]" />
-        <node concept="domOK" id="1RXUY7C891D" role="domYN">
+        <node concept="domOK" id="1RXUY7CjGqP" role="domYN">
           <ref role="dpzeg" node="4cztqIocBAy" />
         </node>
-        <node concept="domOL" id="1RXUY7C891E" role="domYN">
+        <node concept="domOL" id="1RXUY7CjGqQ" role="domYN">
           <ref role="dwzQZ" node="4cztqIocByr" />
         </node>
-        <node concept="domOQ" id="1RXUY7C891F" role="domYN">
-          <property role="TrG5h" value="heeft" />
+        <node concept="domOQ" id="1RXUY7CjGqR" role="domYN">
+          <ref role="3PMA9R" node="4cztqIocBAC" resolve="heeft" />
         </node>
-        <node concept="domOK" id="1RXUY7C891H" role="domYN">
+        <node concept="domOK" id="1RXUY7CjGqT" role="domYN">
           <ref role="dpzeg" node="4cztqIocBAK" />
         </node>
-        <node concept="domOL" id="1RXUY7C891I" role="domYN">
+        <node concept="domOL" id="1RXUY7CjGqU" role="domYN">
           <ref role="dwzQZ" node="4cztqIocByt" />
         </node>
       </node>
@@ -1555,74 +1592,74 @@
       <node concept="3bDP1$" id="4cztqIo4tj$" role="3bDTgF">
         <ref role="3bDP1D" node="4cztqIo2rbJ" resolve="[ Maandag 08.00 - 12.00, Maandag, 08:00, 12:00]" />
         <ref role="3bDP1F" node="4cztqInXtaF" resolve="[werkperiode, betreft, dag, en loopt van, begintijd, tot, eindtijd]" />
-        <node concept="domOK" id="1RXUY7C891P" role="domYN">
+        <node concept="domOK" id="1RXUY7CidJZ" role="domYN">
           <ref role="dpzeg" node="4cztqInYCdR" />
         </node>
-        <node concept="domOL" id="1RXUY7C891Q" role="domYN">
+        <node concept="domOL" id="1RXUY7CidK0" role="domYN">
           <ref role="dwzQZ" node="4cztqIo2rbL" />
         </node>
-        <node concept="domOQ" id="1RXUY7C891R" role="domYN">
-          <property role="TrG5h" value="op" />
+        <node concept="domOQ" id="1RXUY7CidK1" role="domYN">
+          <ref role="3PMA9R" node="4cztqInYCe7" resolve="betreft" />
         </node>
-        <node concept="domOK" id="1RXUY7C891T" role="domYN">
+        <node concept="domOK" id="1RXUY7CidK3" role="domYN">
           <ref role="dpzeg" node="4cztqInXtaP" />
         </node>
-        <node concept="domOL" id="1RXUY7C891U" role="domYN">
+        <node concept="domOL" id="1RXUY7CidK4" role="domYN">
           <ref role="dwzQZ" node="4cztqIo2rc5" />
         </node>
-        <node concept="domOQ" id="1RXUY7C891V" role="domYN">
-          <property role="TrG5h" value="loopt van" />
+        <node concept="domOQ" id="1RXUY7CidK5" role="domYN">
+          <ref role="3PMA9R" node="4cztqInXtaX" resolve="en loopt van" />
         </node>
-        <node concept="domOK" id="1RXUY7C891X" role="domYN">
+        <node concept="domOK" id="1RXUY7CidK7" role="domYN">
           <ref role="dpzeg" node="4cztqInXtb7" />
         </node>
-        <node concept="domOL" id="1RXUY7C891Y" role="domYN">
+        <node concept="domOL" id="1RXUY7CidK8" role="domYN">
           <ref role="dwzQZ" node="4cztqIo2rbP" />
         </node>
-        <node concept="domOQ" id="1RXUY7C891Z" role="domYN">
-          <property role="TrG5h" value="tot" />
+        <node concept="domOQ" id="1RXUY7CidK9" role="domYN">
+          <ref role="3PMA9R" node="4cztqInXtbj" resolve="tot" />
         </node>
-        <node concept="domOK" id="1RXUY7C8921" role="domYN">
+        <node concept="domOK" id="1RXUY7CidKb" role="domYN">
           <ref role="dpzeg" node="4cztqInXtbx" />
         </node>
-        <node concept="domOL" id="1RXUY7C8922" role="domYN">
+        <node concept="domOL" id="1RXUY7CidKc" role="domYN">
           <ref role="dwzQZ" node="4cztqIo2rbS" />
         </node>
       </node>
       <node concept="3bDP1$" id="4cztqIo81iZ" role="3bDTgF">
         <ref role="3bDP1F" node="4cztqInXtaF" resolve="[werkperiode, betreft, dag, en loopt van, begintijd, tot, eindtijd]" />
         <ref role="3bDP1D" node="4cztqIo2rc8" resolve="[ Maandag 13.00 - 17.00, Maandag, 13:00, 17:00]" />
-        <node concept="domOK" id="1RXUY7C892f" role="domYN">
+        <node concept="domOK" id="1RXUY7CidJ_" role="domYN">
           <ref role="dpzeg" node="4cztqInYCdR" />
         </node>
-        <node concept="domOL" id="1RXUY7C892g" role="domYN">
+        <node concept="domOL" id="1RXUY7CidJA" role="domYN">
           <ref role="dwzQZ" node="4cztqIo2rca" />
         </node>
-        <node concept="domOQ" id="1RXUY7C892h" role="domYN">
-          <property role="TrG5h" value="op" />
+        <node concept="domOQ" id="1RXUY7CidJB" role="domYN">
+          <ref role="3PMA9R" node="4cztqInYCe7" resolve="betreft" />
         </node>
-        <node concept="domOK" id="1RXUY7C892j" role="domYN">
+        <node concept="domOK" id="1RXUY7CidJD" role="domYN">
           <ref role="dpzeg" node="4cztqInXtaP" />
         </node>
-        <node concept="domOL" id="1RXUY7C892k" role="domYN">
+        <node concept="domOL" id="1RXUY7CidJE" role="domYN">
           <ref role="dwzQZ" node="4cztqIo2rcG" />
         </node>
-        <node concept="domOQ" id="1RXUY7C892l" role="domYN">
-          <property role="TrG5h" value="loopt van" />
+        <node concept="domOQ" id="1RXUY7CidJF" role="domYN">
+          <ref role="3PMA9R" node="4cztqInXtaX" resolve="en loopt van" />
         </node>
-        <node concept="domOK" id="1RXUY7C892n" role="domYN">
+        <node concept="domOK" id="1RXUY7CidJH" role="domYN">
           <ref role="dpzeg" node="4cztqInXtb7" />
         </node>
-        <node concept="domOL" id="1RXUY7C892o" role="domYN">
+        <node concept="domOL" id="1RXUY7CidJI" role="domYN">
           <ref role="dwzQZ" node="4cztqIo2rce" />
         </node>
-        <node concept="domOQ" id="1RXUY7C892p" role="domYN">
-          <property role="TrG5h" value="tot" />
+        <node concept="domOQ" id="1RXUY7CidJJ" role="domYN">
+          <ref role="3PMA9R" node="4cztqInXtbj" resolve="tot" />
         </node>
-        <node concept="domOK" id="1RXUY7C892r" role="domYN">
+        <node concept="domOK" id="1RXUY7CidJL" role="domYN">
           <ref role="dpzeg" node="4cztqInXtbx" />
         </node>
-        <node concept="domOL" id="1RXUY7C892s" role="domYN">
+        <node concept="domOL" id="1RXUY7CidJM" role="domYN">
           <ref role="dwzQZ" node="4cztqIo2rch" />
         </node>
       </node>

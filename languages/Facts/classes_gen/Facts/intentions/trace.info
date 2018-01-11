@@ -18,7 +18,7 @@
   <root nodeRef="r:953367a7-ddee-4d54-9aba-da6cd438a7be(Facts.intentions)/3829032966754326052">
     <file name="RefreshFactWording_Intention.java">
       <node id="3829032966754326052" at="19,0,20,0" concept="2" trace="myCachedExecutable" />
-      <node id="3829032966754326052" at="20,41,21,131" concept="9" />
+      <node id="3829032966754326052" at="20,41,21,130" concept="9" />
       <node id="3829032966754326052" at="24,35,25,32" concept="7" />
       <node id="3829032966754326052" at="28,84,29,16" concept="7" />
       <node id="3829032966754326052" at="32,35,33,17" concept="7" />
@@ -38,7 +38,7 @@
       <node id="3829032966754326052" at="52,0,56,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
       <node id="3829032966754326052" at="35,0,41,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
       <scope id="3829032966754326052" at="42,38,42,38" />
-      <scope id="3829032966754326052" at="20,41,21,131" />
+      <scope id="3829032966754326052" at="20,41,21,130" />
       <scope id="3829032966754326052" at="24,35,25,32" />
       <scope id="3829032966754326052" at="28,84,29,16" />
       <scope id="3829032966754326052" at="32,35,33,17" />

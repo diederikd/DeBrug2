@@ -4024,11 +4024,17 @@
     <property role="3GE5qa" value="factwording" />
     <ref role="1XX52x" to="gq3g:3kztj8Sgxw4" resolve="FactWordVerb" />
     <node concept="3EZMnI" id="3kztj8S_34Q" role="2wV5jI">
-      <node concept="3F0A7n" id="3kztj8S_34X" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <ref role="1k5W1q" node="3e11SfRYbIR" resolve="WordingVerb" />
-      </node>
       <node concept="l2Vlx" id="3kztj8S_34T" role="2iSdaV" />
+      <node concept="1iCGBv" id="1RXUY7CdWWf" role="3EZMnx">
+        <ref role="1NtTu8" to="gq3g:1RXUY7CdSAm" resolve="verb" />
+        <node concept="1sVBvm" id="1RXUY7CdWWg" role="1sWHZn">
+          <node concept="3F0A7n" id="1RXUY7CfpFa" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" node="3e11SfRYbIR" resolve="WordingVerb" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="1RXUY7C9PpP">
@@ -4101,6 +4107,19 @@
         <property role="3F0ifm" value="" />
       </node>
       <node concept="l2Vlx" id="1RXUY7C9Pqh" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1RXUY7CjMvB">
+    <property role="3GE5qa" value="entitytypes" />
+    <ref role="1XX52x" to="gq3g:1RXUY7CjMv_" resolve="EntityTypeReference" />
+    <node concept="1iCGBv" id="1RXUY7CjMvC" role="2wV5jI">
+      <ref role="1NtTu8" to="gq3g:1RXUY7CjMvA" resolve="entityType" />
+      <node concept="1sVBvm" id="1RXUY7CjMvD" role="1sWHZn">
+        <node concept="3F0A7n" id="1RXUY7CjMvE" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

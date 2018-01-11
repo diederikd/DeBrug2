@@ -558,6 +558,7 @@
   </node>
   <node concept="2S6QgY" id="3kztj8SDHo$">
     <property role="TrG5h" value="RefreshFactWording" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="gq3g:3e11SfS9_vB" resolve="FactWording" />
     <node concept="2S6ZIM" id="3kztj8SDHo_" role="2ZfVej">
       <node concept="3clFbS" id="3kztj8SDHoA" role="2VODD2">
