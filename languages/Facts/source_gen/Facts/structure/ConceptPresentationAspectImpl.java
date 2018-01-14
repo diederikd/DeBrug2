@@ -15,6 +15,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_DatetimeType;
   private ConceptPresentation props_DatetimeValue;
   private ConceptPresentation props_Entity;
+  private ConceptPresentation props_EntitySelection;
   private ConceptPresentation props_EntityTable;
   private ConceptPresentation props_EntityType;
   private ConceptPresentation props_EntityTypeInRole;
@@ -103,6 +104,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Entity = cpb.create();
         }
         return props_Entity;
+      case LanguageConceptSwitch.EntitySelection:
+        if (props_EntitySelection == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("EntitySelection");
+          props_EntitySelection = cpb.create();
+        }
+        return props_EntitySelection;
       case LanguageConceptSwitch.EntityTable:
         if (props_EntityTable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -45,14 +45,14 @@
     <node concept="1TJgyj" id="1RXUY7CjMvz" role="1TKVEi">
       <property role="IQ2ns" value="2161142751705376739" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="entities" />
+      <property role="20kJfa" value="entitySelection" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" to="gq3g:1RXUY7CjMv_" resolve="EntityTypeReference" />
+      <ref role="20lvS9" node="1RXUY7CL1zB" resolve="EntitySelection" />
     </node>
     <node concept="1TJgyj" id="1RXUY7CjMvF" role="1TKVEi">
       <property role="IQ2ns" value="2161142751705376747" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="roles" />
+      <property role="20kJfa" value="roleSelection" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" to="gq3g:3e11SfRT4Q6" resolve="RoleReference" />
     </node>
@@ -60,11 +60,27 @@
       <property role="IQ2ns" value="2161142751705778159" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="resultTable" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="gq3g:T7nEYMXByj" resolve="FactTable" />
     </node>
     <node concept="PrWs8" id="1RXUY7Cljc4" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="1RXUY7C$36W" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="1RXUY7CL6N8" role="1TKVEi">
+      <property role="IQ2ns" value="2161142751713062088" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="factbase" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="gq3g:T7nEYMX98l" resolve="FactBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1RXUY7CL1zB">
+    <property role="EcuMT" value="2161142751713040615" />
+    <property role="TrG5h" value="EntitySelection" />
+    <ref role="1TJDcQ" to="gq3g:1RXUY7CL1zB" resolve="EntitySelection" />
   </node>
 </model>
 

@@ -230,6 +230,7 @@
     <classNode dependClassName="Facts.editor.FactModel_Editor" />
     <classNode dependClassName="Facts.editor.FactTable_Editor" />
     <classNode dependClassName="Facts.editor.FactTable_SubstituteMenu" />
+    <classNode dependClassName="Facts.editor.FactTable_factsOnly_Editor" />
     <classNode dependClassName="Facts.editor.FactTable_table_Editor" />
     <classNode dependClassName="Facts.editor.FactTypeReference_Editor" />
     <classNode dependClassName="Facts.editor.FactTypeReference_SubstituteMenu" />
@@ -257,6 +258,7 @@
     <classNode dependClassName="Facts.editor.RoleInspector" />
     <classNode dependClassName="Facts.editor.RoleReference_Editor" />
     <classNode dependClassName="Facts.editor.RoleReference_SubstituteMenu" />
+    <classNode dependClassName="Facts.editor.RoleReference_nameOnly_Editor" />
     <classNode dependClassName="Facts.editor.Specializes_Editor" />
     <classNode dependClassName="Facts.editor.StringType_Editor" />
     <classNode dependClassName="Facts.editor.StringType_nameOnly_Editor" />
@@ -1071,6 +1073,72 @@
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
+  <dependency className="Facts.editor.FactTable_factsOnly_Editor" file="FactTable_factsOnly_Editor.java">
+    <classNode dependClassName="Facts.editor.FactTable_factsOnly_EditorBuilder_a" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="Facts.editor.FactTable_factsOnly_EditorBuilder_a" file="FactTable_factsOnly_EditorBuilder_a.java">
+    <classNode dependClassName="Facts.editor.KeyMap_FactTable" />
+    <classNode dependClassName="de.slisson.mps.hacks.editor.EditorCacheHacks" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.cells.ChildsTracker" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.cells.PartialTableExtractor" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.cells.TableEditor" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.cells.TableUtils" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.Grid" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.GridAdapter" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.GridElementFactory" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.HeaderGrid" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.HeaderGridFactory" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.IGridElement" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeDeleteAction" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeInsertAction" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.StringHeaderReference" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.style.ITableStyleFactory" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.substitute.CellQuerySubstituteInfo" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Math" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime.Wrappers" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.cells.AbstractCellAction" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.impl.CellUtil" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Error" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellAction" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.util.Computable" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
   <dependency className="Facts.editor.FactTable_table_Editor" file="FactTable_table_Editor.java">
     <classNode dependClassName="Facts.editor.FactTable_table_EditorBuilder_a" />
     <classNode dependClassName="java.lang.Override" />
@@ -1858,13 +1926,29 @@
   </dependency>
   <dependency className="Facts.editor.RoleReference_EditorBuilder_a" file="RoleReference_EditorBuilder_a.java">
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.cells.EmptyCellAction" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.impl.CellUtil" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Property" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.ModelAccessor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.util.Computable" />
+    <classNode dependClassName="jetbrains.mps.util.EqualUtil" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
@@ -1883,6 +1967,37 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
+  </dependency>
+  <dependency className="Facts.editor.RoleReference_nameOnly_Editor" file="RoleReference_nameOnly_Editor.java">
+    <classNode dependClassName="Facts.editor.RoleReference_nameOnly_EditorBuilder_a" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="Facts.editor.RoleReference_nameOnly_EditorBuilder_a" file="RoleReference_nameOnly_EditorBuilder_a.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.impl.CellUtil" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.util.Computable" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
   <dependency className="Facts.editor.Specializes_Editor" file="Specializes_Editor.java">
     <classNode dependClassName="Facts.editor.Specializes_EditorBuilder_a" />

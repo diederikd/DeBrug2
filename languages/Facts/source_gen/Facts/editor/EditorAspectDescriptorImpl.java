@@ -19,7 +19,7 @@ import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
-  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("indexOnly", "", true, "Facts.editor.Hints.indexOnly"), new ConceptEditorHintImpl("nameOnly", "", true, "Facts.editor.Hints.nameOnly"), new ConceptEditorHintImpl("table", "", true, "Facts.editor.Hints.table"));
+  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("indexOnly", "", true, "Facts.editor.Hints.indexOnly"), new ConceptEditorHintImpl("nameOnly", "", true, "Facts.editor.Hints.nameOnly"), new ConceptEditorHintImpl("table", "", true, "Facts.editor.Hints.table"), new ConceptEditorHintImpl("factsOnly", "", true, "Facts.editor.Hints.factsOnly"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     SAbstractConcept cncpt_a0b = ((SAbstractConcept) concept);
@@ -57,7 +57,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       case 15:
         return Collections.<ConceptEditor>singletonList(new FactModel_Editor());
       case 16:
-        return Arrays.asList(new ConceptEditor[]{new FactTable_Editor(), new FactTable_table_Editor()});
+        return Arrays.asList(new ConceptEditor[]{new FactTable_Editor(), new FactTable_factsOnly_Editor(), new FactTable_table_Editor()});
       case 17:
         return Collections.<ConceptEditor>singletonList(new FactType_Editor());
       case 18:
@@ -87,7 +87,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       case 30:
         return Collections.<ConceptEditor>singletonList(new KnownAt_Editor());
       case 31:
-        return Collections.<ConceptEditor>singletonList(new RoleReference_Editor());
+        return Arrays.asList(new ConceptEditor[]{new RoleReference_Editor(), new RoleReference_nameOnly_Editor()});
       case 32:
         return Collections.<ConceptEditor>singletonList(new Specializes_Editor());
       case 33:

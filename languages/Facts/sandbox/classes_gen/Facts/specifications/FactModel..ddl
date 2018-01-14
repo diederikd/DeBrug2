@@ -12,6 +12,7 @@ DROP TABLE IF EXISTS Fact_WerknemerNummer;
 DROP TABLE IF EXISTS Fact_WerknemerBSN;
 DROP TABLE IF EXISTS Fact_WerknemerNamen;
 DROP TABLE IF EXISTS Fact_WerkgeverNummer;
+DROP TABLE IF EXISTS Fact_WerkgeverInformatie;
 DROP TABLE IF EXISTS Fact_Arbeidsovereenkomst;
 DROP TABLE IF EXISTS Fact_Aanpassing_van_de_arbeidsduur;
 DROP TABLE IF EXISTS Fact_Arbeidsduurperiode_van_arbeidsovereenkomst;
@@ -85,6 +86,19 @@ werkgever MEDIUMINT NOT NULL ,
 INDEX (werkgever), 
 FOREIGN KEY (werkgever) REFERENCES Entity_Werkgever(Id),
 werkgevernummer INT
+, PRIMARY KEY (Id));
+
+CREATE TABLE IF NOT EXISTS test.Fact_WerkgeverInformatie
+(Id MEDIUMINT,
+werkgever MEDIUMINT NOT NULL ,
+INDEX (werkgever), 
+FOREIGN KEY (werkgever) REFERENCES Entity_Werkgever(Id),
+Naam VARCHAR (255),
+adres VARCHAR (255),
+huisnummer VARCHAR (255),
+postcode MEDIUMINT NOT NULL ,
+INDEX (postcode), 
+FOREIGN KEY (postcode) REFERENCES Entity_Postcodegebied(Id)
 , PRIMARY KEY (Id));
 
 CREATE TABLE IF NOT EXISTS test.Fact_Arbeidsovereenkomst

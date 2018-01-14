@@ -343,6 +343,62 @@
         <property role="34uzBG" value="geen" />
       </node>
     </node>
+    <node concept="2WHaQ2" id="1RXUY7CNLFn" role="2WHal$">
+      <property role="TrG5h" value="WerkgeverInformatie" />
+      <node concept="21QOSU" id="1RXUY7CNMnT" role="21QOUd">
+        <node concept="34pkC5" id="1RXUY7CNMnZ" role="21Rr83">
+          <ref role="34pkC4" node="1RXUY7CNMk6" resolve="werkgever" />
+        </node>
+      </node>
+      <node concept="2WHaRd" id="1RXUY7CNMk6" role="2WHaR8">
+        <property role="TrG5h" value="werkgever" />
+        <ref role="2WHaRc" node="3MspsB8eG6p" resolve="Werkgever" />
+      </node>
+      <node concept="2WHaRa" id="1RXUY7CNLHy" role="2WHaR8">
+        <property role="TrG5h" value="Naam" />
+      </node>
+      <node concept="2WHaRa" id="1RXUY7CNMil" role="2WHaR8">
+        <property role="TrG5h" value="adres" />
+        <property role="34uzBG" value="het" />
+      </node>
+      <node concept="2WHaRa" id="1RXUY7CNMiy" role="2WHaR8">
+        <property role="TrG5h" value="huisnummer" />
+        <property role="34uzBG" value="het" />
+      </node>
+      <node concept="2WHaRd" id="1RXUY7CNMjc" role="2WHaR8">
+        <property role="TrG5h" value="postcode" />
+        <ref role="2WHaRc" node="4cztqInRO4C" resolve="Postcodegebied" />
+      </node>
+      <node concept="34qYQO" id="1RXUY7CNMjP" role="34qYOv">
+        <node concept="34qYQU" id="1RXUY7CNMki" role="34rq46">
+          <ref role="34qYQT" node="1RXUY7CNMk6" resolve="werkgever" />
+        </node>
+        <node concept="34tZwR" id="1RXUY7CNMkr" role="34rq46">
+          <property role="TrG5h" value="heeft" />
+        </node>
+        <node concept="34qYQU" id="1RXUY7CNMkC" role="34rq46">
+          <ref role="34qYQT" node="1RXUY7CNLHy" resolve="Naam" />
+        </node>
+        <node concept="34tZwR" id="1RXUY7CNMkT" role="34rq46">
+          <property role="TrG5h" value="en heeft" />
+        </node>
+        <node concept="34qYQU" id="1RXUY7CNMle" role="34rq46">
+          <ref role="34qYQT" node="1RXUY7CNMil" resolve="adres" />
+        </node>
+        <node concept="34tZwR" id="1RXUY7CNMm2" role="34rq46">
+          <property role="TrG5h" value="met" />
+        </node>
+        <node concept="34qYQU" id="1RXUY7CNMmv" role="34rq46">
+          <ref role="34qYQT" node="1RXUY7CNMiy" resolve="huisnummer" />
+        </node>
+        <node concept="34tZwR" id="1RXUY7CNMn0" role="34rq46">
+          <property role="TrG5h" value="en" />
+        </node>
+        <node concept="34qYQU" id="1RXUY7CNMn_" role="34rq46">
+          <ref role="34qYQT" node="1RXUY7CNMjc" resolve="postcode" />
+        </node>
+      </node>
+    </node>
     <node concept="2WHaQ2" id="T7nEYMX2mL" role="2WHal$">
       <property role="TrG5h" value="Arbeidsovereenkomst" />
       <node concept="34qYQO" id="4cztqInFIft" role="34qYOv">
