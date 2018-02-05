@@ -311,6 +311,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "FactBase", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592108053");
     b.aggregate("entityTables", 0xab4c0de8e6a1287L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1380L).optional(true).ordered(true).multiple(true).origin("771453498291786375").done();
     b.aggregate("factTables", 0xe475eafb2f49216L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f67893L).optional(true).ordered(true).multiple(true).origin("1028895148592108054").done();

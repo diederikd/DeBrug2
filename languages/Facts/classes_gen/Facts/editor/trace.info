@@ -4914,9 +4914,10 @@
       <node id="2161142751716759274" at="421,93,422,47" concept="2" />
       <node id="2161142751716759274" at="422,47,423,34" concept="8" />
       <node id="2161142751716759274" at="423,34,424,63" concept="2" />
-      <node id="2161142751716759274" at="424,63,425,40" concept="2" />
-      <node id="2161142751716759274" at="425,40,426,34" concept="2" />
-      <node id="2161142751716759274" at="426,34,427,22" concept="9" />
+      <node id="2161142751716759274" at="424,63,425,60" concept="2" />
+      <node id="2161142751716759274" at="425,60,426,40" concept="2" />
+      <node id="2161142751716759274" at="426,40,427,34" concept="2" />
+      <node id="2161142751716759274" at="427,34,428,22" concept="9" />
       <node id="2161142751716759094" at="52,0,54,0" concept="3" trace="myNode" />
       <node id="2161142751716759100" at="137,0,139,0" concept="3" trace="myNode" />
       <node id="2161142751716759237" at="254,0,256,0" concept="7" trace="insertNew#(I)V" />
@@ -4972,8 +4973,8 @@
       <node id="2161142751716759108" at="387,0,395,0" concept="7" trace="queryCellsSafely#(Lorg/jetbrains/mps/openapi/model/SNode;II)Ljava/lang/Object;" />
       <node id="2161142751716759102" at="173,0,182,0" concept="7" trace="createConstant_ywgm9n_d0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2161142751716759108" at="396,0,405,0" concept="7" trace="queryCells#(Lorg/jetbrains/mps/openapi/model/SNode;II)Ljava/lang/Object;" />
-      <node id="2161142751716759274" at="420,0,429,0" concept="7" trace="createConstant_ywgm9n_g0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2161142751716759104" at="182,0,192,0" concept="7" trace="createConstant_ywgm9n_e0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="2161142751716759274" at="420,0,430,0" concept="7" trace="createConstant_ywgm9n_g0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2161142751716759108" at="355,19,366,17" concept="6" />
       <node id="2161142751716759094" at="107,0,119,0" concept="7" trace="createRefCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2161142751716759094" at="75,49,89,5" concept="15" />
@@ -5143,10 +5144,6 @@
         <var name="style" id="2161142751716759102" />
       </scope>
       <scope id="2161142751716759108" at="396,96,403,22" />
-      <scope id="2161142751716759274" at="420,49,427,22">
-        <var name="editorCell" id="2161142751716759274" />
-        <var name="style" id="2161142751716759274" />
-      </scope>
       <scope id="2161142751716759104" at="182,49,190,22">
         <var name="editorCell" id="2161142751716759104" />
         <var name="style" id="2161142751716759104" />
@@ -5155,6 +5152,10 @@
         <var name="columnIndex" id="2161142751716759108" />
         <var name="node" id="2161142751716759108" />
         <var name="rowIndex" id="2161142751716759108" />
+      </scope>
+      <scope id="2161142751716759274" at="420,49,428,22">
+        <var name="editorCell" id="2161142751716759274" />
+        <var name="style" id="2161142751716759274" />
       </scope>
       <scope id="2161142751716759094" at="108,104,117,20">
         <var name="cell" id="2161142751716759094" />
@@ -5168,9 +5169,9 @@
         <var name="node" id="2161142751716759108" />
         <var name="rowIndex" id="2161142751716759108" />
       </scope>
-      <scope id="2161142751716759274" at="420,0,429,0" />
       <scope id="2161142751716759094" at="76,9,86,39" />
       <scope id="2161142751716759104" at="182,0,192,0" />
+      <scope id="2161142751716759274" at="420,0,430,0" />
       <scope id="2161142751716759094" at="107,0,119,0">
         <var name="context" id="2161142751716759094" />
         <var name="effectiveNode" id="2161142751716759094" />
@@ -5290,7 +5291,7 @@
       <unit id="2161142751716759094" at="197,54,235,9" name="Facts.editor.FactTable_factsOnly_EditorBuilder_a$2$1" />
       <unit id="2161142751716759094" at="195,45,237,5" name="Facts.editor.FactTable_factsOnly_EditorBuilder_a$2" />
       <unit id="2161142751716759108" at="295,10,411,7" name="Facts.editor.FactTable_factsOnly_EditorBuilder_a$9" />
-      <unit id="2161142751716759094" at="51,0,430,0" name="Facts.editor.FactTable_factsOnly_EditorBuilder_a" />
+      <unit id="2161142751716759094" at="51,0,431,0" name="Facts.editor.FactTable_factsOnly_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:2fe66231-4b51-4ed7-9caa-94288cacbada(Facts.editor)/2308386540746700588">

@@ -29,6 +29,7 @@ import jetbrains.mps.lang.scopes.runtime.ScopeUtils;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.scope.ListScope;
+import jetbrains.mps.lang.core.behavior.ScopeProvider__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -94,7 +95,7 @@ public final class Variable__BehaviorDescriptor extends BaseBHDescriptor {
     if (LOG.isInfoEnabled()) {
       LoggingRuntime.legacyLog(Level.INFO, kind + " " + child, Variable__BehaviorDescriptor.class, null);
     }
-    if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a127fL, "Facts.structure.Entity")) && ScopeUtils.comeFrom(MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), __thisNode__, child)) {
+    if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a127fL, "Facts.structure.Entity")) && ScopeUtils.comeFrom(MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), __thisNode__, child) && (SNodeOperations.getNodeAncestor(__thisNode__, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, "Facts.structure.FactBase"), false, false) != null)) {
       if (LOG.isInfoEnabled()) {
         LoggingRuntime.legacyLog(Level.INFO, "kind is subconcept of entity ", Variable__BehaviorDescriptor.class, null);
       }
@@ -111,7 +112,7 @@ public final class Variable__BehaviorDescriptor extends BaseBHDescriptor {
         }
       }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1380L, 0xab4c0de8e6a1383L, "entities")));
     }
-    return ScopeUtils.lazyParentScope(__thisNode__, kind);
+    return ((Scope) ScopeProvider__BehaviorDescriptor.getScope_id52_Geb4QDV$.invoke0(__thisNode__, MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L, "jetbrains.mps.lang.core.structure.ScopeProvider"), kind, child));
   }
 
   /*package*/ Variable__BehaviorDescriptor() {

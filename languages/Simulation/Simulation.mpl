@@ -51,6 +51,9 @@
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">f2b5f4c3-283f-45e7-932a-2eee84091ad4(Simulation)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+    <dependency reexport="false">0add5042-bc48-4352-832a-07af4f0e5913(DateTime)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">2aacdfbf-487f-43ac-a431-19468403f2c5(Facts)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:2aacdfbf-487f-43ac-a431-19468403f2c5:Facts" version="0" />
@@ -90,6 +93,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+    <module reference="0add5042-bc48-4352-832a-07af4f0e5913(DateTime)" version="0" />
     <module reference="2aacdfbf-487f-43ac-a431-19468403f2c5(Facts)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
