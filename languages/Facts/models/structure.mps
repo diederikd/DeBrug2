@@ -433,14 +433,18 @@
   </node>
   <node concept="1TIwiD" id="74LG_7KV01k">
     <property role="EcuMT" value="8156496465148772436" />
-    <property role="TrG5h" value="FactTypeReference" />
-    <property role="3GE5qa" value="facttypes" />
+    <property role="TrG5h" value="FactTypeInRole" />
+    <property role="3GE5qa" value="valuetypes" />
+    <ref role="1TJDcQ" node="T7nEYMWZcI" resolve="Role" />
     <node concept="1TJgyj" id="74LG_7KV01l" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8156496465148772437" />
       <property role="20kJfa" value="facttype" />
       <ref role="20lvS9" node="T7nEYMWZcH" resolve="FactType" />
+    </node>
+    <node concept="PrWs8" id="6Nhjz6DrtIf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="3e11SfRT4Q6">
@@ -767,6 +771,19 @@
       <property role="20kJfa" value="entity" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="EOKdUeqx9Z" resolve="Entity" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6QhksddmimG">
+    <property role="EcuMT" value="7895181521015350700" />
+    <property role="3GE5qa" value="values" />
+    <property role="TrG5h" value="FactValue" />
+    <ref role="1TJDcQ" node="T7nEYN3k5q" resolve="Value" />
+    <node concept="1TJgyj" id="6QhksddmimH" role="1TKVEi">
+      <property role="IQ2ns" value="7895181521015350701" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="T7nEYMX7MB" resolve="Fact" />
     </node>
   </node>
 </model>

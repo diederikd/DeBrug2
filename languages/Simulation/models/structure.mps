@@ -47,7 +47,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="entitySelection" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="1RXUY7CL1zB" resolve="EntitySelection" />
+      <ref role="20lvS9" node="1RXUY7CL1zB" resolve="SelectedEntity" />
     </node>
     <node concept="1TJgyj" id="1RXUY7CjMvF" role="1TKVEi">
       <property role="IQ2ns" value="2161142751705376747" />
@@ -62,6 +62,13 @@
       <property role="20kJfa" value="resultTable" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="gq3g:T7nEYMXByj" resolve="FactTable" />
+    </node>
+    <node concept="1TJgyj" id="6Qhksddxoce" role="1TKVEi">
+      <property role="IQ2ns" value="7895181521018258190" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="resultVariables" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="gq3g:T7nEYMX7MG" resolve="Variable" />
     </node>
     <node concept="PrWs8" id="1RXUY7Cljc4" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -79,8 +86,21 @@
   </node>
   <node concept="1TIwiD" id="1RXUY7CL1zB">
     <property role="EcuMT" value="2161142751713040615" />
-    <property role="TrG5h" value="EntitySelection" />
-    <ref role="1TJDcQ" to="gq3g:1RXUY7CL1zB" resolve="EntitySelection" />
+    <property role="TrG5h" value="SelectedEntity" />
+    <node concept="1TJgyj" id="6Qhksdd$9Hj" role="1TKVEi">
+      <property role="IQ2ns" value="7895181521018985299" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="entityType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="gq3g:rWgfCiAtmw" resolve="EntityType" />
+    </node>
+    <node concept="1TJgyj" id="6QhksddslG4" role="1TKVEi">
+      <property role="IQ2ns" value="7895181521016937220" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="entity" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="gq3g:EOKdUeqx9Z" resolve="Entity" />
+    </node>
   </node>
 </model>
 

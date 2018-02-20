@@ -42,6 +42,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     editorCell.setCellId("Collection_pfjbyg_a");
     editorCell.setBig(true);
     editorCell.setCellContext(getCellFactory().getCellContext());
+    editorCell.addKeyMap(new KeyMap_Variable());
     editorCell.addEditorCell(createRefNode_pfjbyg_a0());
     return editorCell;
   }

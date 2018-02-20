@@ -19,6 +19,10 @@ public class ActionAspectDescriptorImpl extends BaseActionAspectDescriptor imple
       switch (Arrays.binarySearch(stringSwitchCases_tpto26_a0a0a0c, concept.getName())) {
         case 0:
           return Collections.<NodeFactory>singletonList(new CreateFirstFactWording.NodeFactory_2161142751704331420());
+        case 1:
+          return Collections.<NodeFactory>singletonList(new CreateSpecialisation.NodeFactory_6710749360028001080());
+        case 2:
+          return Collections.<NodeFactory>singletonList(new CreateDefaultValue.NodeFactory_7895181521015327227());
         default:
       }
     }
@@ -29,5 +33,5 @@ public class ActionAspectDescriptorImpl extends BaseActionAspectDescriptor imple
   public boolean hasBuilders() {
     return false;
   }
-  private static String[] stringSwitchCases_tpto26_a0a0a0c = new String[]{"FactWording"};
+  private static String[] stringSwitchCases_tpto26_a0a0a0c = new String[]{"FactWording", "Specializes", "Variable"};
 }

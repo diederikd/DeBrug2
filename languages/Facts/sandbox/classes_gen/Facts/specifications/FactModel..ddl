@@ -1,5 +1,6 @@
 SET FOREIGN_KEY_CHECKS=0;
 USE test;
+DROP TABLE IF EXISTS Entity_Persoon;
 DROP TABLE IF EXISTS Entity_Werknemer;
 DROP TABLE IF EXISTS Entity_Werkgever;
 DROP TABLE IF EXISTS Entity_Arbeidsovereenkomst;
@@ -19,6 +20,10 @@ DROP TABLE IF EXISTS Fact_Arbeidsduurperiode_van_arbeidsovereenkomst;
 DROP TABLE IF EXISTS Fact_Postgebied_heeft_postcode;
 DROP TABLE IF EXISTS Fact_Spreiding;
 DROP TABLE IF EXISTS Fact_Werkperiode;
+
+CREATE TABLE IF NOT EXISTS test.Entity_Persoon
+(Id MEDIUMINT
+, PRIMARY KEY (Id));
 
 CREATE TABLE IF NOT EXISTS test.Entity_Werknemer
 (Id MEDIUMINT

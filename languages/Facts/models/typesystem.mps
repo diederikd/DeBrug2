@@ -59,6 +59,7 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -627,6 +628,71 @@
     <node concept="1YaCAy" id="4ytfZr48wec" role="1YuTPh">
       <property role="TrG5h" value="fact" />
       <ref role="1YaFvo" to="gq3g:T7nEYMX7MB" resolve="Fact" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5OxnJN_abJm">
+    <property role="TrG5h" value="typeof_Specializes" />
+    <property role="3GE5qa" value="entitytypes" />
+    <node concept="3clFbS" id="5OxnJN_abJn" role="18ibNy">
+      <node concept="3clFbJ" id="5OxnJN_abJt" role="3cqZAp">
+        <node concept="3y3z36" id="5OxnJN_adDL" role="3clFbw">
+          <node concept="2OqwBi" id="5OxnJN_adTq" role="3uHU7w">
+            <node concept="1YBJjd" id="5OxnJN_adGy" role="2Oq$k0">
+              <ref role="1YBMHb" node="5OxnJN_abJp" resolve="specializes" />
+            </node>
+            <node concept="3TrEf2" id="5OxnJN_ae24" role="2OqNvi">
+              <ref role="3Tt5mk" to="gq3g:62x9OGy0XnF" resolve="concept" />
+            </node>
+          </node>
+          <node concept="1eOMI4" id="5OxnJN_ad2k" role="3uHU7B">
+            <node concept="10QFUN" id="5OxnJN_acmp" role="1eOMHV">
+              <node concept="3Tqbb2" id="5OxnJN_aco$" role="10QFUM">
+                <ref role="ehGHo" to="gq3g:rWgfCiAtmw" resolve="EntityType" />
+              </node>
+              <node concept="2OqwBi" id="5OxnJN_abU$" role="10QFUP">
+                <node concept="1YBJjd" id="5OxnJN_abJD" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5OxnJN_abJp" resolve="specializes" />
+                </node>
+                <node concept="1mfA1w" id="5OxnJN_ack$" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="5OxnJN_abJv" role="3clFbx">
+          <node concept="2MkqsV" id="5OxnJN_aeiT" role="3cqZAp">
+            <node concept="1YBJjd" id="5OxnJN_afvV" role="2OEOjV">
+              <ref role="1YBMHb" node="5OxnJN_abJp" resolve="specializes" />
+            </node>
+            <node concept="3cpWs3" id="5OxnJN_aeRd" role="2MkJ7o">
+              <node concept="Xl_RD" id="5OxnJN_aeiV" role="3uHU7B">
+                <property role="Xl_RC" value="Should be subconcept of " />
+              </node>
+              <node concept="2OqwBi" id="5OxnJN_af7C" role="3uHU7w">
+                <node concept="1eOMI4" id="5OxnJN_aeRN" role="2Oq$k0">
+                  <node concept="10QFUN" id="5OxnJN_aeRO" role="1eOMHV">
+                    <node concept="3Tqbb2" id="5OxnJN_aeRP" role="10QFUM">
+                      <ref role="ehGHo" to="gq3g:rWgfCiAtmw" resolve="EntityType" />
+                    </node>
+                    <node concept="2OqwBi" id="5OxnJN_aeRQ" role="10QFUP">
+                      <node concept="1YBJjd" id="5OxnJN_aeRR" role="2Oq$k0">
+                        <ref role="1YBMHb" node="5OxnJN_abJp" resolve="specializes" />
+                      </node>
+                      <node concept="1mfA1w" id="5OxnJN_aeRS" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="5OxnJN_afmO" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5OxnJN_abJp" role="1YuTPh">
+      <property role="TrG5h" value="specializes" />
+      <ref role="1YaFvo" to="gq3g:62x9OGy0XnE" resolve="Specializes" />
     </node>
   </node>
 </model>

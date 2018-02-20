@@ -29,11 +29,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FactModel;
   private ConceptPresentation props_FactTable;
   private ConceptPresentation props_FactType;
-  private ConceptPresentation props_FactTypeReference;
+  private ConceptPresentation props_FactTypeInRole;
   private ConceptPresentation props_FactTypeWord;
   private ConceptPresentation props_FactTypeWordRole;
   private ConceptPresentation props_FactTypeWordVerb;
   private ConceptPresentation props_FactTypeWording;
+  private ConceptPresentation props_FactValue;
   private ConceptPresentation props_FactWord;
   private ConceptPresentation props_FactWordRole;
   private ConceptPresentation props_FactWordValue;
@@ -202,13 +203,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FactType = cpb.create();
         }
         return props_FactType;
-      case LanguageConceptSwitch.FactTypeReference:
-        if (props_FactTypeReference == null) {
+      case LanguageConceptSwitch.FactTypeInRole:
+        if (props_FactTypeInRole == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0ec0054L, 0x7131b251f0ec0055L, "facttype", "", "");
-          props_FactTypeReference = cpb.create();
+          cpb.presentationByName();
+          props_FactTypeInRole = cpb.create();
         }
-        return props_FactTypeReference;
+        return props_FactTypeInRole;
       case LanguageConceptSwitch.FactTypeWord:
         if (props_FactTypeWord == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -236,6 +237,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FactTypeWording = cpb.create();
         }
         return props_FactTypeWording;
+      case LanguageConceptSwitch.FactValue:
+        if (props_FactValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6d9151c34d5925acL, 0x6d9151c34d5925adL, "value", "", "");
+          props_FactValue = cpb.create();
+        }
+        return props_FactValue;
       case LanguageConceptSwitch.FactWord:
         if (props_FactWord == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

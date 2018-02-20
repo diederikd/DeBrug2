@@ -32,7 +32,9 @@
       <concept id="3829032966747723780" name="Facts.structure.FactWordVerb" flags="ng" index="domOQ">
         <reference id="2161142751703828886" name="verb" index="3PMA9R" />
       </concept>
-      <concept id="503348701156726176" name="Facts.structure.EntityType" flags="ng" index="kpplq" />
+      <concept id="503348701156726176" name="Facts.structure.EntityType" flags="ng" index="kpplq">
+        <child id="3829032966743021132" name="specialisaties" index="2QidY" />
+      </concept>
       <concept id="1028895148592232595" name="Facts.structure.FactTable" flags="ng" index="2WGioW">
         <reference id="1028895148592232596" name="facttype" index="2WGioV" />
         <child id="1028895148592232598" name="facts" index="2WGioT" />
@@ -84,6 +86,10 @@
         <property id="1028895148593747441" name="value" index="2XiGHu" />
       </concept>
       <concept id="6962889702535956964" name="Facts.structure.KnownAt" flags="ng" index="11gaUJ" />
+      <concept id="6962889702538204650" name="Facts.structure.Specializes" flags="ng" index="12CJax">
+        <reference id="6962889702538204651" name="concept" index="12CJaw" />
+        <reference id="6962889702538204657" name="subConcept" index="12CJaU" />
+      </concept>
       <concept id="3711255831311043974" name="Facts.structure.RoleReference" flags="ng" index="34pkC5">
         <reference id="3711255831311043975" name="role" index="34pkC4" />
       </concept>
@@ -694,6 +700,17 @@
         </node>
       </node>
     </node>
+    <node concept="kpplq" id="5OxnJN_9pL8" role="kobCs">
+      <property role="TrG5h" value="Persoon" />
+      <node concept="12CJax" id="5OxnJN_9pLH" role="2QidY">
+        <ref role="12CJaw" node="5OxnJN_9pL8" resolve="Persoon" />
+        <ref role="12CJaU" node="3MspsB8eG6c" resolve="Werknemer" />
+      </node>
+      <node concept="12CJax" id="5OxnJN_9pLJ" role="2QidY">
+        <ref role="12CJaw" node="5OxnJN_9pL8" resolve="Persoon" />
+        <ref role="12CJaU" node="3MspsB8eG6p" resolve="Werkgever" />
+      </node>
+    </node>
     <node concept="kpplq" id="3MspsB8eG6c" role="kobCs">
       <property role="TrG5h" value="Werknemer" />
       <node concept="21QOSU" id="3MspsB8eG6e" role="21QOUd">
@@ -855,6 +872,10 @@
         <property role="TrG5h" value="Arbeidsovereenkomst tussen Henk en ASML" />
         <ref role="24RH9u" node="4cztqInRNGP" resolve="Arbeidsovereenkomst" />
       </node>
+      <node concept="24RHax" id="4PXC9kpn2bX" role="24RHdt">
+        <property role="TrG5h" value="Arbeidsovereenkomst tussen Henk en Economica" />
+        <ref role="24RH9u" node="4cztqInRNGP" resolve="Arbeidsovereenkomst" />
+      </node>
     </node>
     <node concept="2WGioW" id="1RXUY7Cbh4j" role="2WGWMT">
       <ref role="2WGioV" node="T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
@@ -938,6 +959,47 @@
               <property role="2B78LB" value="1" />
               <property role="2B78L_" value="9" />
               <property role="2B78LE" value="2017" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="4PXC9kpn2aA" role="2WGioT">
+        <ref role="2WGM87" node="T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
+        <node concept="2WGM83" id="4PXC9kpn2aB" role="2WGM80">
+          <ref role="2WGM82" node="T7nEYMX2mT" resolve="werkgever" />
+          <node concept="24RH9q" id="4PXC9kpn2aC" role="2XiGH2">
+            <ref role="24RH9r" node="U3O8mN4uzW" resolve="Economica" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="4PXC9kpn2aD" role="2WGM80">
+          <ref role="2WGM82" node="T7nEYMX2mY" resolve="werknemer" />
+          <node concept="24RH9q" id="4PXC9kpn2aE" role="2XiGH2">
+            <ref role="24RH9r" node="3MspsB8f1dw" resolve="Henk" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="4PXC9kpn2aF" role="2WGM80">
+          <ref role="2WGM82" node="4cztqInRNH5" resolve="arbeidsovereenkomst" />
+          <node concept="24RH9q" id="4PXC9kpn2bJ" role="2XiGH2">
+            <ref role="24RH9r" node="4PXC9kpn2bX" resolve="Arbeidsovereenkomst tussen Henk en Economica" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="4PXC9kpn2aG" role="2WGM80">
+          <ref role="2WGM82" node="T7nEYMX6_A" resolve="datum in dienst" />
+          <node concept="2XigOj" id="4PXC9kpn2aH" role="2XiGH2">
+            <node concept="2B78Lw" id="4PXC9kpn2aI" role="2Xi5h3">
+              <property role="2B78LB" value="1" />
+              <property role="2B78L_" value="10" />
+              <property role="2B78LE" value="2015" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="4PXC9kpn2aJ" role="2WGM80">
+          <ref role="2WGM82" node="4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
+          <node concept="2XigOj" id="4PXC9kpn2aK" role="2XiGH2">
+            <node concept="2B78Lw" id="4PXC9kpn2aL" role="2Xi5h3">
+              <property role="2B78LB" value="1" />
+              <property role="2B78L_" value="9" />
+              <property role="2B78LE" value="2015" />
             </node>
           </node>
         </node>
@@ -1297,19 +1359,19 @@
       <node concept="3bDP1$" id="4cztqInAJbL" role="3bDTgF">
         <ref role="3bDP1F" node="3e11SfS0lK3" resolve="[werkgever, heeft, werkgevernummer]" />
         <ref role="3bDP1D" node="14SuKMpiFV8" resolve="[ ASML, 1]" />
-        <node concept="domOK" id="3kztj8SEr0F" role="domYN">
+        <node concept="domOK" id="5OxnJN_9o6Q" role="domYN">
           <ref role="dpzeg" node="3e11SfS0lK7" />
         </node>
-        <node concept="domOL" id="3kztj8SEr0G" role="domYN">
+        <node concept="domOL" id="5OxnJN_9o6R" role="domYN">
           <ref role="dwzQZ" node="14SuKMpiFVa" />
         </node>
-        <node concept="domOQ" id="3kztj8SEr0H" role="domYN">
-          <property role="TrG5h" value="heeft" />
+        <node concept="domOQ" id="5OxnJN_9o6S" role="domYN">
+          <ref role="3PMA9R" node="3e11SfS0lKd" resolve="heeft" />
         </node>
-        <node concept="domOK" id="3kztj8SEr0J" role="domYN">
+        <node concept="domOK" id="5OxnJN_9o6U" role="domYN">
           <ref role="dpzeg" node="3e11SfS0lKl" />
         </node>
-        <node concept="domOL" id="3kztj8SEr0K" role="domYN">
+        <node concept="domOL" id="5OxnJN_9o6V" role="domYN">
           <ref role="dwzQZ" node="14SuKMpiFVc" />
         </node>
       </node>

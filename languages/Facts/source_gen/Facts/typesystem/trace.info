@@ -12,7 +12,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,28,0" name="Facts.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,32,0" name="Facts.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:b10ef954-55f4-4774-8fb6-82453f7c9940(Facts.typesystem)/3711255831308779947">
@@ -159,6 +159,44 @@
         <var name="typeCheckingContext" id="5232408671159441875" />
       </scope>
       <unit id="5232408671159441875" at="20,0,53,0" name="Facts.typesystem.typeof_FactHasUniquePrimairyIdentifier_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:b10ef954-55f4-4774-8fb6-82453f7c9940(Facts.typesystem)/6710749360028171222">
+    <file name="typeof_Specializes_InferenceRule.java">
+      <node id="6710749360028181689" at="24,7,25,60" concept="6" />
+      <node id="6710749360028181689" at="25,60,26,421" concept="6" />
+      <node id="6710749360028171222" at="30,50,31,135" concept="7" />
+      <node id="6710749360028171222" at="33,68,34,102" concept="7" />
+      <node id="6710749360028171222" at="36,30,37,17" concept="7" />
+      <node id="6710749360028171222" at="20,0,22,0" concept="1" trace="typeof_Specializes_InferenceRule#()V" />
+      <node id="6710749360028171222" at="30,0,33,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6710749360028171222" at="33,0,36,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6710749360028171222" at="36,0,39,0" concept="5" trace="overrides#()Z" />
+      <node id="6710749360028181689" at="23,233,27,7" concept="0" />
+      <node id="6710749360028171229" at="22,124,28,5" concept="4" />
+      <node id="6710749360028171222" at="22,0,30,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6710749360028171222" at="20,45,20,45" />
+      <scope id="6710749360028171222" at="30,50,31,135" />
+      <scope id="6710749360028171222" at="33,68,34,102" />
+      <scope id="6710749360028171222" at="36,30,37,17" />
+      <scope id="6710749360028171222" at="20,0,22,0" />
+      <scope id="6710749360028181689" at="24,7,26,421">
+        <var name="_reporter_2309309498" id="6710749360028181689" />
+        <var name="errorTarget" id="6710749360028181689" />
+      </scope>
+      <scope id="6710749360028171222" at="30,0,33,0" />
+      <scope id="6710749360028171222" at="33,0,36,0">
+        <var name="argument" id="6710749360028171222" />
+      </scope>
+      <scope id="6710749360028171222" at="36,0,39,0" />
+      <scope id="6710749360028171231" at="23,233,27,7" />
+      <scope id="6710749360028171223" at="22,124,28,5" />
+      <scope id="6710749360028171222" at="22,0,30,0">
+        <var name="specializes" id="6710749360028171222" />
+        <var name="status" id="6710749360028171222" />
+        <var name="typeCheckingContext" id="6710749360028171222" />
+      </scope>
+      <unit id="6710749360028171222" at="19,0,40,0" name="Facts.typesystem.typeof_Specializes_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:b10ef954-55f4-4774-8fb6-82453f7c9940(Facts.typesystem)/771453498292219030">
