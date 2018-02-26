@@ -786,5 +786,14 @@
       <ref role="20lvS9" node="T7nEYMX7MB" resolve="Fact" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4PXC9kpBQvw">
+    <property role="EcuMT" value="5583795675249731552" />
+    <property role="3GE5qa" value="factwording" />
+    <property role="TrG5h" value="FactWordText" />
+    <ref role="1TJDcQ" node="3kztj8Sgxw5" resolve="FactWord" />
+    <node concept="PrWs8" id="4PXC9kpBQvx" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 

@@ -506,7 +506,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="3MspsB8o2fS" role="3EZMnx">
-          <property role="3F0ifm" value="geidentificeerd door" />
+          <property role="3F0ifm" value="uniciteitsregel" />
         </node>
         <node concept="3F0ifn" id="3MspsB8o2fT" role="3EZMnx">
           <property role="3F0ifm" value=":" />
@@ -3225,6 +3225,9 @@
           <ref role="1NtTu8" to="gq3g:3kztj8SgxE1" resolve="words" />
           <node concept="l2Vlx" id="3kztj8SrMSO" role="2czzBx" />
         </node>
+        <node concept="3F0ifn" id="4PXC9kp_MnV" role="3EZMnx">
+          <property role="3F0ifm" value="." />
+        </node>
         <node concept="l2Vlx" id="3kztj8SDUi_" role="2iSdaV" />
         <node concept="pkWqt" id="3kztj8SDXpR" role="pqm2j">
           <node concept="3clFbS" id="3kztj8SDXpS" role="2VODD2">
@@ -3690,6 +3693,9 @@
       <node concept="3F0A7n" id="62x9OGxPZhQ" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
+      <node concept="PMmxH" id="4PXC9kpseHl" role="3EZMnx">
+        <ref role="PMmxG" node="3e11SfRJ8OK" resolve="Mandatory" />
+      </node>
       <node concept="3F0ifn" id="62x9OGxPZhY" role="3EZMnx">
         <property role="3F0ifm" value=":" />
       </node>
@@ -3707,6 +3713,9 @@
     <node concept="3EZMnI" id="1JuR_5T2K7q" role="2wV5jI">
       <node concept="3F0A7n" id="62x9OGxPZhA" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="PMmxH" id="4PXC9kpseHg" role="3EZMnx">
+        <ref role="PMmxG" node="3e11SfRJ8OK" resolve="Mandatory" />
       </node>
       <node concept="3F0ifn" id="62x9OGxPZhI" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -4707,6 +4716,17 @@
         <node concept="l2Vlx" id="6QhksddnXFC" role="2iSdaV" />
       </node>
       <node concept="l2Vlx" id="6QhksddnXFD" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4PXC9kpBQvF">
+    <property role="3GE5qa" value="factwording" />
+    <ref role="1XX52x" to="gq3g:4PXC9kpBQvw" resolve="FactWordText" />
+    <node concept="3EZMnI" id="4PXC9kpBQvH" role="2wV5jI">
+      <node concept="3F0A7n" id="4PXC9kpBQvO" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" node="5vursKQMYro" resolve="WordingValue" />
+      </node>
+      <node concept="l2Vlx" id="4PXC9kpBQvK" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -40,6 +40,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptFactValue = createDescriptorForFactValue();
   /*package*/ final ConceptDescriptor myConceptFactWord = createDescriptorForFactWord();
   /*package*/ final ConceptDescriptor myConceptFactWordRole = createDescriptorForFactWordRole();
+  /*package*/ final ConceptDescriptor myConceptFactWordText = createDescriptorForFactWordText();
   /*package*/ final ConceptDescriptor myConceptFactWordValue = createDescriptorForFactWordValue();
   /*package*/ final ConceptDescriptor myConceptFactWordVerb = createDescriptorForFactWordVerb();
   /*package*/ final ConceptDescriptor myConceptFactWording = createDescriptorForFactWording();
@@ -68,7 +69,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptConcept, myConceptDateType, myConceptDateValue, myConceptDatetimeType, myConceptDatetimeValue, myConceptEntity, myConceptEntitySelection, myConceptEntityTable, myConceptEntityType, myConceptEntityTypeInRole, myConceptEntityTypeReference, myConceptEntityValue, myConceptEnumeration, myConceptEnumerationType, myConceptEnumerationValue, myConceptFact, myConceptFactBase, myConceptFactModel, myConceptFactTable, myConceptFactType, myConceptFactTypeInRole, myConceptFactTypeWord, myConceptFactTypeWordRole, myConceptFactTypeWordVerb, myConceptFactTypeWording, myConceptFactValue, myConceptFactWord, myConceptFactWordRole, myConceptFactWordValue, myConceptFactWordVerb, myConceptFactWording, myConceptIdentifier, myConceptInstance, myConceptIntegerType, myConceptIntegerValue, myConceptKnownAt, myConceptRole, myConceptRoleReference, myConceptSpecializes, myConceptStringType, myConceptStringValue, myConceptTimeType, myConceptTimeValue, myConceptValidityFrom, myConceptValidityTo, myConceptValue, myConceptValueType, myConceptVariable);
+    return Arrays.asList(myConceptConcept, myConceptDateType, myConceptDateValue, myConceptDatetimeType, myConceptDatetimeValue, myConceptEntity, myConceptEntitySelection, myConceptEntityTable, myConceptEntityType, myConceptEntityTypeInRole, myConceptEntityTypeReference, myConceptEntityValue, myConceptEnumeration, myConceptEnumerationType, myConceptEnumerationValue, myConceptFact, myConceptFactBase, myConceptFactModel, myConceptFactTable, myConceptFactType, myConceptFactTypeInRole, myConceptFactTypeWord, myConceptFactTypeWordRole, myConceptFactTypeWordVerb, myConceptFactTypeWording, myConceptFactValue, myConceptFactWord, myConceptFactWordRole, myConceptFactWordText, myConceptFactWordValue, myConceptFactWordVerb, myConceptFactWording, myConceptIdentifier, myConceptInstance, myConceptIntegerType, myConceptIntegerValue, myConceptKnownAt, myConceptRole, myConceptRoleReference, myConceptSpecializes, myConceptStringType, myConceptStringValue, myConceptTimeType, myConceptTimeValue, myConceptValidityFrom, myConceptValidityTo, myConceptValue, myConceptValueType, myConceptVariable);
   }
 
   @Override
@@ -131,6 +132,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFactWord;
       case LanguageConceptSwitch.FactWordRole:
         return myConceptFactWordRole;
+      case LanguageConceptSwitch.FactWordText:
+        return myConceptFactWordText;
       case LanguageConceptSwitch.FactWordValue:
         return myConceptFactWordValue;
       case LanguageConceptSwitch.FactWordVerb:
@@ -411,6 +414,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Facts.structure.FactWord", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421805L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/3829032966747723778");
     b.associate("role", 0x35237532384546a2L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L).optional(false).origin("3829032966747932322").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForFactWordText() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "FactWordText", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x4d7da095199f67e0L);
+    b.class_(false, false, false);
+    b.super_("Facts.structure.FactWord", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421805L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/5583795675249731552");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFactWordValue() {

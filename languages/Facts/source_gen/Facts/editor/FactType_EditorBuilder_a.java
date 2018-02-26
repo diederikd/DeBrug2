@@ -280,7 +280,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createConstant_5mto8z_a5a() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "geidentificeerd door");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "uniciteitsregel");
     editorCell.setCellId("Constant_5mto8z_a5a");
     editorCell.setDefaultText("");
     return editorCell;

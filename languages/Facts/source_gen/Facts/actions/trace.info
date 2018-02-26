@@ -15,64 +15,74 @@
     </file>
   </root>
   <root nodeRef="r:53764341-1bfc-44c7-a0e5-2b2f12e71e7d(Facts.actions)/2161142751704331419">
-    <file name="CreateFirstFactWording.java">
-      <node id="2161142751704361999" at="18,7,19,46" concept="5" />
-      <node id="2161142751704340616" at="20,176,21,195" concept="5" />
-      <node id="2161142751704336062" at="21,195,22,389" concept="1" />
-      <node id="2161142751704365694" at="22,389,23,375" concept="1" />
-      <node id="3829032966752732211" at="25,13,26,50" concept="5" />
-      <node id="3829032966752732214" at="27,197,28,436" concept="5" />
-      <node id="3829032966752732225" at="28,436,29,196" concept="5" />
-      <node id="3829032966752732231" at="29,196,30,198" concept="5" />
-      <node id="3829032966752732237" at="30,198,31,194" concept="1" />
-      <node id="3829032966752732246" at="31,194,32,203" concept="1" />
-      <node id="3829032966752732253" at="32,203,33,233" concept="1" />
-      <node id="3829032966752732260" at="33,233,34,234" concept="1" />
-      <node id="3829032966752732269" at="37,13,38,50" concept="5" />
-      <node id="3829032966752732272" at="39,197,40,196" concept="5" />
-      <node id="2161142751703841149" at="40,196,41,203" concept="1" />
-      <node id="3829032966752732287" at="41,203,42,233" concept="1" />
-      <node id="3829032966752732269" at="38,50,43,15" concept="3" />
-      <node id="3829032966752732269" at="36,13,44,13" concept="0" />
-      <node id="3829032966752732211" at="26,50,35,15" concept="3" />
-      <node id="3829032966752732211" at="24,389,36,13" concept="0" />
-      <node id="3829032966752732208" at="23,375,45,11" concept="2" />
-      <node id="2161142751704361999" at="19,46,46,9" concept="3" />
-      <node id="2161142751704361999" at="17,91,47,7" concept="0" />
-      <node id="2161142751704331420" at="17,0,49,0" concept="4" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
-      <scope id="3829032966752732271" at="39,197,42,233">
+    <file name="CreateFactWording.java">
+      <node id="2161142751704361999" at="19,7,20,46" concept="5" />
+      <node id="2161142751704340616" at="21,176,22,195" concept="5" />
+      <node id="2161142751704336062" at="22,195,23,389" concept="1" />
+      <node id="2161142751704365694" at="23,389,24,375" concept="1" />
+      <node id="3829032966752732211" at="26,13,27,50" concept="5" />
+      <node id="3829032966752732225" at="28,197,29,196" concept="5" />
+      <node id="3829032966752732246" at="29,196,30,203" concept="1" />
+      <node id="3829032966752732253" at="30,203,31,233" concept="1" />
+      <node id="3829032966752732214" at="31,233,32,436" concept="5" />
+      <node id="5583795675249731577" at="33,38,34,198" concept="5" />
+      <node id="5583795675249731675" at="34,198,35,181" concept="1" />
+      <node id="5583795675249750846" at="35,181,36,235" concept="1" />
+      <node id="3829032966752732231" at="38,38,39,200" concept="5" />
+      <node id="3829032966752732237" at="39,200,40,196" concept="1" />
+      <node id="3829032966752732260" at="40,196,41,236" concept="1" />
+      <node id="3829032966752732269" at="45,13,46,50" concept="5" />
+      <node id="3829032966752732272" at="47,197,48,196" concept="5" />
+      <node id="2161142751703841149" at="48,196,49,203" concept="1" />
+      <node id="3829032966752732287" at="49,203,50,233" concept="1" />
+      <node id="5583795675247147883" at="32,436,37,17" concept="3" />
+      <node id="5583795675249769175" at="37,17,42,17" concept="3" />
+      <node id="3829032966752732269" at="46,50,51,15" concept="3" />
+      <node id="3829032966752732269" at="44,13,52,13" concept="0" />
+      <node id="3829032966752732211" at="27,50,43,15" concept="3" />
+      <node id="3829032966752732211" at="25,389,44,13" concept="0" />
+      <node id="3829032966752732208" at="24,375,53,11" concept="2" />
+      <node id="2161142751704361999" at="20,46,54,9" concept="3" />
+      <node id="2161142751704361999" at="18,91,55,7" concept="0" />
+      <node id="2161142751704331420" at="18,0,57,0" concept="4" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="5583795675247147885" at="33,38,36,235">
+        <var name="factWordText" id="5583795675249731580" />
+      </scope>
+      <scope id="5583795675249769177" at="38,38,41,236">
+        <var name="factWordValue" id="3829032966752732232" />
+      </scope>
+      <scope id="3829032966752732271" at="47,197,50,233">
         <var name="factWordVerb" id="3829032966752732273" />
       </scope>
-      <scope id="3829032966752732269" at="37,13,43,15">
+      <scope id="3829032966752732269" at="45,13,51,15">
         <var name="factTypeWordVerb" id="3829032966752732269" />
       </scope>
-      <scope id="3829032966752732213" at="27,197,34,234">
+      <scope id="3829032966752732213" at="28,197,42,17">
         <var name="factWordRole" id="3829032966752732226" />
-        <var name="factWordValue" id="3829032966752732232" />
         <var name="value" id="3829032966752732215" />
       </scope>
-      <scope id="3829032966752732211" at="25,13,35,15">
+      <scope id="3829032966752732211" at="26,13,43,15">
         <var name="factTypeWordRole" id="3829032966752732211" />
       </scope>
-      <scope id="3829032966752732210" at="24,389,44,13" />
-      <scope id="3829032966752732208" at="23,375,45,11">
+      <scope id="3829032966752732210" at="25,389,52,13" />
+      <scope id="3829032966752732208" at="24,375,53,11">
         <var name="word" id="3829032966752732209" />
       </scope>
-      <scope id="2161142751704362003" at="20,176,45,11">
+      <scope id="2161142751704362003" at="21,176,53,11">
         <var name="factType" id="2161142751704340619" />
       </scope>
-      <scope id="2161142751704361999" at="18,7,46,9">
+      <scope id="2161142751704361999" at="19,7,54,9">
         <var name="factTable" id="2161142751704361999" />
       </scope>
-      <scope id="2161142751704331420" at="17,91,47,7" />
-      <scope id="2161142751704331420" at="17,0,49,0">
+      <scope id="2161142751704331420" at="18,91,55,7" />
+      <scope id="2161142751704331420" at="18,0,57,0">
         <var name="enclosingNode" id="2161142751704331420" />
         <var name="model" id="2161142751704331420" />
         <var name="newNode" id="2161142751704331420" />
         <var name="sampleNode" id="2161142751704331420" />
       </scope>
-      <unit id="2161142751704331420" at="16,0,50,0" name="Facts.actions.CreateFirstFactWording$NodeFactory_2161142751704331420" />
-      <unit id="2161142751704331419" at="15,0,51,0" name="Facts.actions.CreateFirstFactWording" />
+      <unit id="2161142751704331420" at="17,0,58,0" name="Facts.actions.CreateFactWording$NodeFactory_2161142751704331420" />
+      <unit id="2161142751704331419" at="16,0,59,0" name="Facts.actions.CreateFactWording" />
     </file>
   </root>
   <root nodeRef="r:53764341-1bfc-44c7-a0e5-2b2f12e71e7d(Facts.actions)/6710749360027997787">

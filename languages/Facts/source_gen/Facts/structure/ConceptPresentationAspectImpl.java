@@ -37,6 +37,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FactValue;
   private ConceptPresentation props_FactWord;
   private ConceptPresentation props_FactWordRole;
+  private ConceptPresentation props_FactWordText;
   private ConceptPresentation props_FactWordValue;
   private ConceptPresentation props_FactWordVerb;
   private ConceptPresentation props_FactWording;
@@ -257,6 +258,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FactWordRole = cpb.create();
         }
         return props_FactWordRole;
+      case LanguageConceptSwitch.FactWordText:
+        if (props_FactWordText == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_FactWordText = cpb.create();
+        }
+        return props_FactWordText;
       case LanguageConceptSwitch.FactWordValue:
         if (props_FactWordValue == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

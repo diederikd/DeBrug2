@@ -37,6 +37,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 /*package*/ class FactWording_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -304,6 +305,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createReadOnlyModelAccessor_tsdpi8_a2a());
     editorCell.addEditorCell(createRefNodeList_tsdpi8_b2a());
+    editorCell.addEditorCell(createConstant_tsdpi8_c2a());
     return editorCell;
   }
   private EditorCell createReadOnlyModelAccessor_tsdpi8_a2a() {
@@ -381,5 +383,11 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
         }
       }
     }
+  }
+  private EditorCell createConstant_tsdpi8_c2a() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ".");
+    editorCell.setCellId("Constant_tsdpi8_c2a");
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 }
