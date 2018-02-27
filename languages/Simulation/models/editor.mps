@@ -395,7 +395,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6QhksddF9dW" role="3EZMnx">
-        <property role="3F0ifm" value="has value" />
+        <property role="3F0ifm" value="has value " />
       </node>
       <node concept="3F1sOY" id="6QhksddF9e8" role="3EZMnx">
         <ref role="1NtTu8" to="gq3g:T7nEYN3pnH" resolve="value" />

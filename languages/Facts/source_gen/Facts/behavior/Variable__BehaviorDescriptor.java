@@ -22,10 +22,10 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
-import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
-import org.apache.log4j.Level;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.scopes.runtime.ScopeUtils;
+import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
+import org.apache.log4j.Level;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.scope.ListScope;
@@ -98,7 +98,6 @@ public final class Variable__BehaviorDescriptor extends BaseBHDescriptor {
     }
   }
   /*package*/ static Scope getScope_id52_Geb4QDV$(@NotNull final SNode __thisNode__, SAbstractConcept kind, SNode child) {
-    LoggingRuntime.logMsgView(Level.INFO, kind + " ", Variable__BehaviorDescriptor.class, null, null);
     if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a127fL, "Facts.structure.Entity")) && ScopeUtils.comeFrom(MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), __thisNode__, child) && (SNodeOperations.getNodeAncestor(__thisNode__, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, "Facts.structure.FactBase"), false, false) != null)) {
       LoggingRuntime.logMsgView(Level.INFO, "kind is subconcept of entity ", Variable__BehaviorDescriptor.class, null, null);
       LoggingRuntime.logMsgView(Level.INFO, "" + SLinkOperations.getChildren(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(__thisNode__, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, "Facts.structure.FactBase"), false, false), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L, 0xab4c0de8e6a1287L, "entityTables"))).where(new IWhereFilter<SNode>() {

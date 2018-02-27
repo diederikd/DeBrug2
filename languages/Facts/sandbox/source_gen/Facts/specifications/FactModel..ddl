@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS Entity_Werkgever;
 DROP TABLE IF EXISTS Entity_Arbeidsovereenkomst;
 DROP TABLE IF EXISTS Entity_Verzoek_aanpassing_arbeidsduur;
 DROP TABLE IF EXISTS Entity_Postcodegebied;
-DROP TABLE IF EXISTS Entity_Arbeidsduur;
+DROP TABLE IF EXISTS Entity_Arbeidsduurperiode_van_de_arbeidsovereenkomst;
 DROP TABLE IF EXISTS Entity_Spreiding;
 DROP TABLE IF EXISTS Entity_Werkperiode;
 DROP TABLE IF EXISTS Fact_WerknemerNummer;
@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS test.Entity_Postcodegebied
 (Id MEDIUMINT
 , PRIMARY KEY (Id));
 
-CREATE TABLE IF NOT EXISTS test.Entity_Arbeidsduur
+CREATE TABLE IF NOT EXISTS test.Entity_Arbeidsduurperiode_van_de_arbeidsovereenkomst
 (Id MEDIUMINT
 , PRIMARY KEY (Id));
 
@@ -118,7 +118,10 @@ arbeidsovereenkomst MEDIUMINT NOT NULL ,
 INDEX (arbeidsovereenkomst), 
 FOREIGN KEY (arbeidsovereenkomst) REFERENCES Entity_Arbeidsovereenkomst(Id),
 datum_in_dienst DATE,
-datum_van_tekenen_arbeidscontract DATE
+datum_van_tekenen_arbeidscontract DATE,
+arbeidsduurperiode MEDIUMINT NOT NULL ,
+INDEX (arbeidsduurperiode), 
+FOREIGN KEY (arbeidsduurperiode) REFERENCES Entity_Arbeidsduurperiode_van_de_arbeidsovereenkomst(Id)
 , PRIMARY KEY (Id));
 
 CREATE TABLE IF NOT EXISTS test.Fact_Aanpassing_van_de_arbeidsduur
@@ -140,12 +143,15 @@ datum_indienen_verzoek DATE
 
 CREATE TABLE IF NOT EXISTS test.Fact_Arbeidsduurperiode_van_arbeidsovereenkomst
 (Id MEDIUMINT,
+arbeidsduurperiode MEDIUMINT NOT NULL ,
+INDEX (arbeidsduurperiode), 
+FOREIGN KEY (arbeidsduurperiode) REFERENCES Entity_Arbeidsduurperiode_van_de_arbeidsovereenkomst(Id),
 arbeidsduur INT,
-datum_geldig_van DATE,
-datum_geldig_tot DATE,
 spreiding MEDIUMINT NOT NULL ,
 INDEX (spreiding), 
-FOREIGN KEY (spreiding) REFERENCES Entity_Spreiding(Id)
+FOREIGN KEY (spreiding) REFERENCES Entity_Spreiding(Id),
+datum_geldig_van DATE,
+datum_geldig_tot DATE
 , PRIMARY KEY (Id));
 
 CREATE TABLE IF NOT EXISTS test.Fact_Postgebied_heeft_postcode
@@ -261,10 +267,10 @@ DELIMITER ;
 DELIMITER //
 CREATE PROCEDURE insert_4837839804575372032_4837839804573892700 ()
 
-COMMENT 'insert_Arbeidsduur_Arbeidsduurperiode_van_arbeidsovereenkomst'
+COMMENT 'insert_Arbeidsduurperiode_van_de_arbeidsovereenkomst_Arbeidsduurperiode_van_arbeidsovereenkomst'
 
 BEGIN
-INSERT INTO Entity_Arbeidsduur (Id) VALUES (NULL);
+INSERT INTO Entity_Arbeidsduurperiode_van_de_arbeidsovereenkomst (Id) VALUES (NULL);
 INSERT INTO Fact_Arbeidsduurperiode_van_arbeidsovereenkomst (Id) VALUES (NULL);
 END //
 DELIMITER ;
