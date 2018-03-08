@@ -10,6 +10,8 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
+import jetbrains.mps.smodel.runtime.ConceptKind;
+import jetbrains.mps.smodel.runtime.StaticScope;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptConcept = createDescriptorForConcept();
@@ -51,6 +53,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptKnownAt = createDescriptorForKnownAt();
   /*package*/ final ConceptDescriptor myConceptRole = createDescriptorForRole();
   /*package*/ final ConceptDescriptor myConceptRoleReference = createDescriptorForRoleReference();
+  /*package*/ final ConceptDescriptor myConceptRoleReferenceEntityTypeExpression = createDescriptorForRoleReferenceEntityTypeExpression();
+  /*package*/ final ConceptDescriptor myConceptRoleReferenceEntityTypeOperation = createDescriptorForRoleReferenceEntityTypeOperation();
+  /*package*/ final ConceptDescriptor myConceptRoleReferenceExpression = createDescriptorForRoleReferenceExpression();
+  /*package*/ final ConceptDescriptor myConceptRoleReferenceOperation = createDescriptorForRoleReferenceOperation();
+  /*package*/ final ConceptDescriptor myConceptRoleReferenceValueTypeExpression = createDescriptorForRoleReferenceValueTypeExpression();
+  /*package*/ final ConceptDescriptor myConceptRoleReferenceValueTypeOperation = createDescriptorForRoleReferenceValueTypeOperation();
+  /*package*/ final ConceptDescriptor myConceptRoleType = createDescriptorForRoleType();
+  /*package*/ final ConceptDescriptor myConceptRoleTypeEntityType = createDescriptorForRoleTypeEntityType();
+  /*package*/ final ConceptDescriptor myConceptRoleTypeValueType = createDescriptorForRoleTypeValueType();
   /*package*/ final ConceptDescriptor myConceptSpecializes = createDescriptorForSpecializes();
   /*package*/ final ConceptDescriptor myConceptStringType = createDescriptorForStringType();
   /*package*/ final ConceptDescriptor myConceptStringValue = createDescriptorForStringValue();
@@ -69,7 +80,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptConcept, myConceptDateType, myConceptDateValue, myConceptDatetimeType, myConceptDatetimeValue, myConceptEntity, myConceptEntitySelection, myConceptEntityTable, myConceptEntityType, myConceptEntityTypeInRole, myConceptEntityTypeReference, myConceptEntityValue, myConceptEnumeration, myConceptEnumerationType, myConceptEnumerationValue, myConceptFact, myConceptFactBase, myConceptFactModel, myConceptFactTable, myConceptFactType, myConceptFactTypeInRole, myConceptFactTypeWord, myConceptFactTypeWordRole, myConceptFactTypeWordVerb, myConceptFactTypeWording, myConceptFactValue, myConceptFactWord, myConceptFactWordRole, myConceptFactWordText, myConceptFactWordValue, myConceptFactWordVerb, myConceptFactWording, myConceptIdentifier, myConceptInstance, myConceptIntegerType, myConceptIntegerValue, myConceptKnownAt, myConceptRole, myConceptRoleReference, myConceptSpecializes, myConceptStringType, myConceptStringValue, myConceptTimeType, myConceptTimeValue, myConceptValidityFrom, myConceptValidityTo, myConceptValue, myConceptValueType, myConceptVariable);
+    return Arrays.asList(myConceptConcept, myConceptDateType, myConceptDateValue, myConceptDatetimeType, myConceptDatetimeValue, myConceptEntity, myConceptEntitySelection, myConceptEntityTable, myConceptEntityType, myConceptEntityTypeInRole, myConceptEntityTypeReference, myConceptEntityValue, myConceptEnumeration, myConceptEnumerationType, myConceptEnumerationValue, myConceptFact, myConceptFactBase, myConceptFactModel, myConceptFactTable, myConceptFactType, myConceptFactTypeInRole, myConceptFactTypeWord, myConceptFactTypeWordRole, myConceptFactTypeWordVerb, myConceptFactTypeWording, myConceptFactValue, myConceptFactWord, myConceptFactWordRole, myConceptFactWordText, myConceptFactWordValue, myConceptFactWordVerb, myConceptFactWording, myConceptIdentifier, myConceptInstance, myConceptIntegerType, myConceptIntegerValue, myConceptKnownAt, myConceptRole, myConceptRoleReference, myConceptRoleReferenceEntityTypeExpression, myConceptRoleReferenceEntityTypeOperation, myConceptRoleReferenceExpression, myConceptRoleReferenceOperation, myConceptRoleReferenceValueTypeExpression, myConceptRoleReferenceValueTypeOperation, myConceptRoleType, myConceptRoleTypeEntityType, myConceptRoleTypeValueType, myConceptSpecializes, myConceptStringType, myConceptStringValue, myConceptTimeType, myConceptTimeValue, myConceptValidityFrom, myConceptValidityTo, myConceptValue, myConceptValueType, myConceptVariable);
   }
 
   @Override
@@ -154,6 +165,24 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptRole;
       case LanguageConceptSwitch.RoleReference:
         return myConceptRoleReference;
+      case LanguageConceptSwitch.RoleReferenceEntityTypeExpression:
+        return myConceptRoleReferenceEntityTypeExpression;
+      case LanguageConceptSwitch.RoleReferenceEntityTypeOperation:
+        return myConceptRoleReferenceEntityTypeOperation;
+      case LanguageConceptSwitch.RoleReferenceExpression:
+        return myConceptRoleReferenceExpression;
+      case LanguageConceptSwitch.RoleReferenceOperation:
+        return myConceptRoleReferenceOperation;
+      case LanguageConceptSwitch.RoleReferenceValueTypeExpression:
+        return myConceptRoleReferenceValueTypeExpression;
+      case LanguageConceptSwitch.RoleReferenceValueTypeOperation:
+        return myConceptRoleReferenceValueTypeOperation;
+      case LanguageConceptSwitch.RoleType:
+        return myConceptRoleType;
+      case LanguageConceptSwitch.RoleTypeEntityType:
+        return myConceptRoleTypeEntityType;
+      case LanguageConceptSwitch.RoleTypeValueType:
+        return myConceptRoleTypeValueType;
       case LanguageConceptSwitch.Specializes:
         return myConceptSpecializes;
       case LanguageConceptSwitch.StringType:
@@ -504,6 +533,74 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x62763dc803b97bd8L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/3711255831311043974");
     b.associate("role", 0x33810783f7e44d87L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL).optional(false).origin("3711255831311043975").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRoleReferenceEntityTypeExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "RoleReferenceEntityTypeExpression", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db54c6fe7L);
+    b.class_(false, false, false);
+    b.super_("Facts.structure.RoleReferenceExpression", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db4f50593L);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/4150602027905085415");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRoleReferenceEntityTypeOperation() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "RoleReferenceEntityTypeOperation", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db5329459L);
+    b.class_(false, false, false);
+    b.super_("Facts.structure.RoleReferenceOperation", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db532981bL);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/4150602027903390809");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRoleReferenceExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "RoleReferenceExpression", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db4f50593L);
+    b.class_(false, false, false);
+    b.super_("jetbrains.mps.baseLanguage.structure.Expression", 0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/4150602027899356563");
+    b.associate("role", 0x3999e68db4f50594L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL).optional(false).origin("4150602027899356564").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRoleReferenceOperation() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "RoleReferenceOperation", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db532981bL);
+    b.class_(false, false, false);
+    b.parent(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x116b46ac030L);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/4150602027903391771");
+    b.associate("role", 0x3999e68db532981dL).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL).optional(false).origin("4150602027903391773").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRoleReferenceValueTypeExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "RoleReferenceValueTypeExpression", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db54c6fe9L);
+    b.class_(false, false, false);
+    b.super_("Facts.structure.RoleReferenceExpression", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db4f50593L);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/4150602027905085417");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRoleReferenceValueTypeOperation() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "RoleReferenceValueTypeOperation", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db520403eL);
+    b.class_(false, false, false);
+    b.super_("Facts.structure.RoleReferenceOperation", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db532981bL);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/4150602027902189630");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRoleType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "RoleType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x74b74a6520ce61eL);
+    b.class_(false, true, false);
+    b.super_("jetbrains.mps.baseLanguage.structure.Type", 0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/525642039208764958");
+    b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRoleTypeEntityType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "RoleTypeEntityType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db5296fe4L);
+    b.class_(false, false, false);
+    b.super_("Facts.structure.RoleType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x74b74a6520ce61eL);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/4150602027902791652");
+    b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRoleTypeValueType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "RoleTypeValueType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db5296fe5L);
+    b.class_(false, false, false);
+    b.super_("Facts.structure.RoleType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x74b74a6520ce61eL);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/4150602027902791653");
+    b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSpecializes() {

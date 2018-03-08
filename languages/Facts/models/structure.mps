@@ -3,12 +3,14 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="dljm" ref="r:cd2775e8-7314-4ba5-a646-a6601486577f(DateTime.structure)" />
     <import index="fanb" ref="r:72630daf-7316-45e2-b7fa-7dd7a1247a3d(com.mbeddr.mpsutil.varscope.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -794,6 +796,83 @@
     <node concept="PrWs8" id="4PXC9kpBQvx" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="tbtapi3eou">
+    <property role="EcuMT" value="525642039208764958" />
+    <property role="TrG5h" value="RoleType" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="3ApTCQOXgmj">
+    <property role="EcuMT" value="4150602027899356563" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
+    <property role="TrG5h" value="RoleReferenceExpression" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="3ApTCQOXgmk" role="1TKVEi">
+      <property role="IQ2ns" value="4150602027899356564" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="role" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="T7nEYMWZcI" resolve="Role" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ApTCQP840Y">
+    <property role="EcuMT" value="4150602027902189630" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
+    <property role="TrG5h" value="RoleReferenceValueTypeOperation" />
+    <ref role="1TJDcQ" node="3ApTCQPcDwr" resolve="RoleReferenceOperation" />
+  </node>
+  <node concept="1TIwiD" id="3ApTCQPamZ$">
+    <property role="EcuMT" value="4150602027902791652" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
+    <property role="TrG5h" value="RoleTypeEntityType" />
+    <ref role="1TJDcQ" node="tbtapi3eou" resolve="RoleType" />
+  </node>
+  <node concept="1TIwiD" id="3ApTCQPamZ_">
+    <property role="EcuMT" value="4150602027902791653" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
+    <property role="TrG5h" value="RoleTypeValueType" />
+    <ref role="1TJDcQ" node="tbtapi3eou" resolve="RoleType" />
+  </node>
+  <node concept="1TIwiD" id="3ApTCQPcDhp">
+    <property role="EcuMT" value="4150602027903390809" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
+    <property role="TrG5h" value="RoleReferenceEntityTypeOperation" />
+    <ref role="1TJDcQ" node="3ApTCQPcDwr" resolve="RoleReferenceOperation" />
+  </node>
+  <node concept="1TIwiD" id="3ApTCQPcDwr">
+    <property role="EcuMT" value="4150602027903391771" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
+    <property role="TrG5h" value="RoleReferenceOperation" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3ApTCQPcDws" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+    <node concept="1TJgyj" id="3ApTCQPcDwt" role="1TKVEi">
+      <property role="IQ2ns" value="4150602027903391773" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="role" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="T7nEYMWZcI" resolve="Role" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ApTCQPj6ZB">
+    <property role="EcuMT" value="4150602027905085415" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
+    <property role="TrG5h" value="RoleReferenceEntityTypeExpression" />
+    <ref role="1TJDcQ" node="3ApTCQOXgmj" resolve="RoleReferenceExpression" />
+  </node>
+  <node concept="1TIwiD" id="3ApTCQPj6ZD">
+    <property role="EcuMT" value="4150602027905085417" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
+    <property role="TrG5h" value="RoleReferenceValueTypeExpression" />
+    <ref role="1TJDcQ" node="3ApTCQOXgmj" resolve="RoleReferenceExpression" />
   </node>
 </model>
 

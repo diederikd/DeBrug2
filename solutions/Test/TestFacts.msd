@@ -15,6 +15,7 @@
   <languageVersions>
     <language slang="l:0add5042-bc48-4352-832a-07af4f0e5913:DateTime" version="0" />
     <language slang="l:2aacdfbf-487f-43ac-a431-19468403f2c5:Facts" version="0" />
+    <language slang="l:f2b5f4c3-283f-45e7-932a-2eee84091ad4:Simulation" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -33,6 +34,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="f2b5f4c3-283f-45e7-932a-2eee84091ad4(Simulation)" version="1" />
     <module reference="41b6969e-0132-4ebb-b697-907bb93577bb(Test)" version="0" />
     <module reference="95cc9aeb-5bde-4a91-b5c6-c3d58688deaf(Tests)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />

@@ -325,6 +325,12 @@
           <property role="1413C4" value="body-brace" />
         </node>
       </node>
+      <node concept="3F1sOY" id="2z0yl7qmE3T" role="3EZMnx">
+        <ref role="1NtTu8" to="b26o:2z0yl7qmE2z" resolve="path" />
+        <node concept="pVoyu" id="2z0yl7qmE6f" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1RXUY7CL1zP">

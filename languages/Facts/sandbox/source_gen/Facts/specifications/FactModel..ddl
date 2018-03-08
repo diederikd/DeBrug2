@@ -82,7 +82,7 @@ werknemer MEDIUMINT NOT NULL ,
 INDEX (werknemer), 
 FOREIGN KEY (werknemer) REFERENCES Entity_Werknemer(Id),
 voornaam VARCHAR (255),
-achternaam VARCHAR (255)
+achternaamr VARCHAR (255)
 , PRIMARY KEY (Id));
 
 CREATE TABLE IF NOT EXISTS test.Fact_WerkgeverNummer
@@ -147,9 +147,9 @@ arbeidsduurperiode MEDIUMINT NOT NULL ,
 INDEX (arbeidsduurperiode), 
 FOREIGN KEY (arbeidsduurperiode) REFERENCES Entity_Arbeidsduurperiode_van_de_arbeidsovereenkomst(Id),
 arbeidsduur INT,
-spreiding MEDIUMINT NOT NULL ,
-INDEX (spreiding), 
-FOREIGN KEY (spreiding) REFERENCES Entity_Spreiding(Id),
+spreiding_van_de_arbeidsduurperiode MEDIUMINT NOT NULL ,
+INDEX (spreiding_van_de_arbeidsduurperiode), 
+FOREIGN KEY (spreiding_van_de_arbeidsduurperiode) REFERENCES Entity_Spreiding(Id),
 datum_geldig_van DATE,
 datum_geldig_tot DATE
 , PRIMARY KEY (Id));

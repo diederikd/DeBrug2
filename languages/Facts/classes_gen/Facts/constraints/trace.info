@@ -9,15 +9,16 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,57,0" name="Facts.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,65,0" name="Facts.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/1028895148592114442">
     <file name="FactBase_Constraints.java">
-      <node id="1028895148592114442" at="9,33,10,131" concept="9" />
+      <node id="1028895148592114442" at="9,33,10,131" concept="10" />
       <node id="1028895148592114442" at="9,0,12,0" concept="1" trace="FactBase_Constraints#()V" />
       <scope id="1028895148592114442" at="9,33,10,131" />
       <scope id="1028895148592114442" at="9,0,12,0" />
@@ -26,7 +27,7 @@
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/1028895148592120811">
     <file name="Fact_Constraints.java">
-      <node id="1028895148592120811" at="25,29,26,127" concept="9" />
+      <node id="1028895148592120811" at="25,29,26,127" concept="10" />
       <node id="1028895148592120811" at="30,84,31,119" concept="5" />
       <node id="1028895148592120811" at="34,37,35,20" concept="6" />
       <node id="1028895148592120811" at="38,42,39,37" concept="5" />
@@ -93,7 +94,7 @@
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/1028895148593941888">
     <file name="FactTable_Constraints.java">
-      <node id="1028895148593941888" at="22,34,23,132" concept="9" />
+      <node id="1028895148593941888" at="22,34,23,132" concept="10" />
       <node id="1028895148593941888" at="27,90,28,131" concept="5" />
       <node id="1028895148593941888" at="31,52,32,20" concept="6" />
       <node id="1028895148593941888" at="35,116,36,20" concept="6" />
@@ -142,7 +143,7 @@
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/2161142751710114390">
     <file name="Role_Constraints.java">
-      <node id="2161142751710114390" at="13,29,14,127" concept="9" />
+      <node id="2161142751710114390" at="13,29,14,127" concept="10" />
       <node id="2161142751710114390" at="18,84,19,119" concept="5" />
       <node id="2161142751710114390" at="19,119,20,22" concept="6" />
       <node id="2161142751710114390" at="13,0,16,0" concept="1" trace="Role_Constraints#()V" />
@@ -158,7 +159,7 @@
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/3711255831305702791">
     <file name="Variable_Constraints.java">
-      <node id="3711255831305702791" at="9,33,10,131" concept="9" />
+      <node id="3711255831305702791" at="9,33,10,131" concept="10" />
       <node id="3711255831305702791" at="9,0,12,0" concept="1" trace="Variable_Constraints#()V" />
       <scope id="3711255831305702791" at="9,33,10,131" />
       <scope id="3711255831305702791" at="9,0,12,0" />
@@ -167,7 +168,7 @@
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/3711255831311154220">
     <file name="RoleReference_Constraints.java">
-      <node id="3711255831311154220" at="30,38,31,137" concept="9" />
+      <node id="3711255831311154220" at="30,38,31,137" concept="10" />
       <node id="3711255831311154220" at="35,84,36,119" concept="5" />
       <node id="3711255831311154220" at="39,37,40,20" concept="6" />
       <node id="3711255831311154220" at="43,42,44,37" concept="5" />
@@ -236,7 +237,7 @@
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/3711255831312241356">
     <file name="FactTypeWordRole_Constraints.java">
-      <node id="3711255831312241356" at="26,41,27,140" concept="9" />
+      <node id="3711255831312241356" at="26,41,27,140" concept="10" />
       <node id="3711255831312241356" at="31,90,32,131" concept="5" />
       <node id="3711255831312241356" at="35,44,36,20" concept="6" />
       <node id="3711255831312241356" at="43,63,44,58" concept="6" />
@@ -276,7 +277,7 @@
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/3711255831316198010">
     <file name="FactWording_Constraints.java">
       <node id="3711255831316198010" at="35,0,36,0" concept="8" trace="LOG" />
-      <node id="3711255831316198010" at="36,36,37,135" concept="9" />
+      <node id="3711255831316198010" at="36,36,37,135" concept="10" />
       <node id="3711255831316198010" at="41,90,42,131" concept="5" />
       <node id="3711255831316198010" at="45,52,46,20" concept="6" />
       <node id="3711255831316198010" at="49,116,50,20" concept="6" />
@@ -392,7 +393,7 @@
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/3711255831316698035">
     <file name="DateValue_Constraints.java">
-      <node id="3711255831316698035" at="18,34,19,132" concept="9" />
+      <node id="3711255831316698035" at="18,34,19,132" concept="10" />
       <node id="3711255831316698035" at="23,84,24,119" concept="5" />
       <node id="3711255831316698035" at="27,37,28,20" concept="6" />
       <node id="3711255831316698035" at="31,42,32,37" concept="5" />
@@ -423,7 +424,7 @@
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/3711255831316992953">
     <file name="FactTypeWording_Constraints.java">
-      <node id="3711255831316992953" at="18,40,19,139" concept="9" />
+      <node id="3711255831316992953" at="18,40,19,139" concept="10" />
       <node id="3711255831316992953" at="23,84,24,119" concept="5" />
       <node id="3711255831316992953" at="27,37,28,20" concept="6" />
       <node id="3711255831316992953" at="31,42,32,37" concept="5" />
@@ -454,7 +455,7 @@
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/3829032966745980192">
     <file name="EnumerationValue_Constraints.java">
-      <node id="3829032966745980192" at="29,41,30,140" concept="9" />
+      <node id="3829032966745980192" at="29,41,30,140" concept="10" />
       <node id="3829032966745980192" at="34,90,35,131" concept="5" />
       <node id="3829032966745980192" at="38,44,39,20" concept="6" />
       <node id="3829032966745980192" at="46,63,47,58" concept="6" />
@@ -505,9 +506,112 @@
       <unit id="3829032966745980192" at="28,0,68,0" name="Facts.constraints.EnumerationValue_Constraints" />
     </file>
   </root>
+  <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/4150602027904257663">
+    <file name="RoleReferenceOperation_Constraints.java">
+      <node id="4150602027904257663" at="9,47,10,146" concept="10" />
+      <node id="4150602027904257663" at="9,0,12,0" concept="1" trace="RoleReferenceOperation_Constraints#()V" />
+      <scope id="4150602027904257663" at="9,47,10,146" />
+      <scope id="4150602027904257663" at="9,0,12,0" />
+      <unit id="4150602027904257663" at="8,0,14,0" name="Facts.constraints.RoleReferenceOperation_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/4150602027906195712">
+    <file name="RoleReferenceEntityTypeOperation_Constraints.java">
+      <node id="4150602027906195712" at="9,57,10,156" concept="10" />
+      <node id="4150602027906195712" at="9,0,12,0" concept="1" trace="RoleReferenceEntityTypeOperation_Constraints#()V" />
+      <scope id="4150602027906195712" at="9,57,10,156" />
+      <scope id="4150602027906195712" at="9,0,12,0" />
+      <unit id="4150602027906195712" at="8,0,14,0" name="Facts.constraints.RoleReferenceEntityTypeOperation_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/4150602027907339403">
+    <file name="RoleReferenceValueTypeOperation_Constraints.java">
+      <node id="4150602027907339403" at="22,56,23,155" concept="10" />
+      <node id="4150602027907339403" at="30,127,31,128" concept="5" />
+      <node id="4150602027907339403" at="31,128,32,0" concept="7" />
+      <node id="4150602027907339403" at="33,55,34,71" concept="2" />
+      <node id="4150602027907339403" at="35,9,36,0" concept="7" />
+      <node id="4150602027907339403" at="36,0,37,22" concept="6" />
+      <node id="1227128029536582566" at="41,128,42,800" concept="6" />
+      <node id="4150602027907339403" at="44,0,45,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="4150602027907339403" at="22,0,25,0" concept="1" trace="RoleReferenceValueTypeOperation_Constraints#()V" />
+      <node id="4150602027907339403" at="32,0,35,9" concept="3" />
+      <node id="4150602027907339403" at="41,0,44,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="4150602027907339403" at="29,0,39,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="4150602027907339403" at="27,103,39,6" concept="6" />
+      <node id="4150602027907339403" at="26,0,41,0" concept="4" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="4150602027907339403" at="22,56,23,155" />
+      <scope id="4150602027907339403" at="33,55,34,71" />
+      <scope id="4150602027907339405" at="41,128,42,800" />
+      <scope id="4150602027907339403" at="22,0,25,0" />
+      <scope id="4150602027907339403" at="41,0,44,0">
+        <var name="childConcept" id="4150602027907339403" />
+        <var name="link" id="4150602027907339403" />
+        <var name="node" id="4150602027907339403" />
+        <var name="parentNode" id="4150602027907339403" />
+      </scope>
+      <scope id="4150602027907339403" at="30,127,37,22">
+        <var name="result" id="4150602027907339403" />
+      </scope>
+      <scope id="4150602027907339403" at="29,0,39,0">
+        <var name="checkingNodeContext" id="4150602027907339403" />
+        <var name="context" id="4150602027907339403" />
+      </scope>
+      <scope id="4150602027907339403" at="27,103,39,6" />
+      <scope id="4150602027907339403" at="26,0,41,0" />
+      <unit id="4150602027907339403" at="28,15,39,5" name="Facts.constraints.RoleReferenceValueTypeOperation_Constraints$1" />
+      <unit id="4150602027907339403" at="21,0,46,0" name="Facts.constraints.RoleReferenceValueTypeOperation_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/4150602027908435187">
+    <file name="RoleReferenceEntityTypeExpression_Constraints.java">
+      <node id="4150602027908435187" at="29,58,30,157" concept="10" />
+      <node id="4150602027908435187" at="34,90,35,131" concept="5" />
+      <node id="4150602027908435187" at="38,44,39,20" concept="6" />
+      <node id="4150602027908435187" at="46,63,47,58" concept="6" />
+      <node id="4150602027908493655" at="52,47,53,43" concept="6" />
+      <node id="4150602027908435187" at="59,7,60,22" concept="6" />
+      <node id="4150602027908435187" at="62,0,63,0" concept="8" trace="breakingNode_s1jlts_a0a0a0a0a1a0b0a1a2" />
+      <node id="4150602027908435187" at="29,0,32,0" concept="1" trace="RoleReferenceEntityTypeExpression_Constraints#()V" />
+      <node id="4150602027908493007" at="52,0,55,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="4150602027908435187" at="37,0,41,0" concept="4" trace="hasOwnScopeProvider#()Z" />
+      <node id="4150602027908435187" at="45,0,49,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4150602027908435379" at="50,122,55,16" concept="6" />
+      <node id="4150602027908435187" at="49,0,57,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="4150602027908435187" at="43,56,57,10" concept="6" />
+      <node id="4150602027908435187" at="41,0,59,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="4150602027908435187" at="35,131,59,7" concept="2" />
+      <node id="4150602027908435187" at="33,0,62,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="4150602027908435187" at="29,58,30,157" />
+      <scope id="4150602027908435187" at="38,44,39,20" />
+      <scope id="4150602027908435187" at="46,63,47,58" />
+      <scope id="4150602027908493008" at="52,47,53,43" />
+      <scope id="4150602027908435187" at="29,0,32,0" />
+      <scope id="4150602027908493007" at="52,0,55,0">
+        <var name="it" id="4150602027908493007" />
+      </scope>
+      <scope id="4150602027908435187" at="37,0,41,0" />
+      <scope id="4150602027908435187" at="45,0,49,0" />
+      <scope id="4150602027908435187" at="50,122,55,16" />
+      <scope id="4150602027908435187" at="49,0,57,0">
+        <var name="_context" id="4150602027908435187" />
+        <var name="operationContext" id="4150602027908435187" />
+      </scope>
+      <scope id="4150602027908435187" at="43,56,57,10" />
+      <scope id="4150602027908435187" at="41,0,59,0" />
+      <scope id="4150602027908435187" at="34,90,60,22">
+        <var name="references" id="4150602027908435187" />
+      </scope>
+      <scope id="4150602027908435187" at="33,0,62,0" />
+      <unit id="4150602027908493007" at="51,596,55,13" name="Facts.constraints.RoleReferenceEntityTypeExpression_Constraints$1$1$1" />
+      <unit id="4150602027908435187" at="44,19,57,9" name="Facts.constraints.RoleReferenceEntityTypeExpression_Constraints$1$1" />
+      <unit id="4150602027908435187" at="36,152,59,5" name="Facts.constraints.RoleReferenceEntityTypeExpression_Constraints$1" />
+      <unit id="4150602027908435187" at="28,0,64,0" name="Facts.constraints.RoleReferenceEntityTypeExpression_Constraints" />
+    </file>
+  </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/4367477655964970004">
     <file name="Identifier_Constraints.java">
-      <node id="4367477655964970004" at="13,35,14,134" concept="9" />
+      <node id="4367477655964970004" at="13,35,14,134" concept="10" />
       <node id="4367477655964970004" at="18,84,19,119" concept="5" />
       <node id="4367477655964970004" at="19,119,20,22" concept="6" />
       <node id="4367477655964970004" at="13,0,16,0" concept="1" trace="Identifier_Constraints#()V" />
@@ -523,7 +627,7 @@
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/4837839804560780641">
     <file name="FactType_Constraints.java">
-      <node id="4837839804560780641" at="24,33,25,131" concept="9" />
+      <node id="4837839804560780641" at="24,33,25,131" concept="10" />
       <node id="4837839804560780641" at="29,84,30,119" concept="5" />
       <node id="4837839804560780641" at="33,40,34,20" concept="6" />
       <node id="4837839804560780641" at="37,70,38,38" concept="5" />
@@ -731,7 +835,7 @@
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/7895181521016379866">
     <file name="FactValue_Constraints.java">
-      <node id="7895181521016379866" at="24,34,25,133" concept="9" />
+      <node id="7895181521016379866" at="24,34,25,133" concept="10" />
       <node id="7895181521016379866" at="29,90,30,131" concept="5" />
       <node id="7895181521016379866" at="33,44,34,20" concept="6" />
       <node id="7895181521016379866" at="41,63,42,58" concept="6" />
@@ -775,7 +879,7 @@
   </root>
   <root nodeRef="r:e63d45cc-6c32-4017-a267-3562beabb5b9(Facts.constraints)/8156496465149723090">
     <file name="EntityValue_Constraints.java">
-      <node id="8156496465149723090" at="24,36,25,134" concept="9" />
+      <node id="8156496465149723090" at="24,36,25,134" concept="10" />
       <node id="8156496465149723090" at="29,90,30,131" concept="5" />
       <node id="8156496465149723090" at="33,44,34,20" concept="6" />
       <node id="8156496465149723090" at="41,63,42,58" concept="6" />
