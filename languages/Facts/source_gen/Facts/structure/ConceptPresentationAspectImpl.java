@@ -48,12 +48,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_KnownAt;
   private ConceptPresentation props_Role;
   private ConceptPresentation props_RoleReference;
-  private ConceptPresentation props_RoleReferenceEntityTypeExpression;
-  private ConceptPresentation props_RoleReferenceEntityTypeOperation;
   private ConceptPresentation props_RoleReferenceExpression;
   private ConceptPresentation props_RoleReferenceOperation;
-  private ConceptPresentation props_RoleReferenceValueTypeExpression;
-  private ConceptPresentation props_RoleReferenceValueTypeOperation;
   private ConceptPresentation props_RoleType;
   private ConceptPresentation props_RoleTypeEntityType;
   private ConceptPresentation props_RoleTypeValueType;
@@ -343,20 +339,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RoleReference = cpb.create();
         }
         return props_RoleReference;
-      case LanguageConceptSwitch.RoleReferenceEntityTypeExpression:
-        if (props_RoleReferenceEntityTypeExpression == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db4f50593L, 0x3999e68db4f50594L, "role", "", "");
-          props_RoleReferenceEntityTypeExpression = cpb.create();
-        }
-        return props_RoleReferenceEntityTypeExpression;
-      case LanguageConceptSwitch.RoleReferenceEntityTypeOperation:
-        if (props_RoleReferenceEntityTypeOperation == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db532981bL, 0x3999e68db532981dL, "role", "", "");
-          props_RoleReferenceEntityTypeOperation = cpb.create();
-        }
-        return props_RoleReferenceEntityTypeOperation;
       case LanguageConceptSwitch.RoleReferenceExpression:
         if (props_RoleReferenceExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -371,20 +353,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RoleReferenceOperation = cpb.create();
         }
         return props_RoleReferenceOperation;
-      case LanguageConceptSwitch.RoleReferenceValueTypeExpression:
-        if (props_RoleReferenceValueTypeExpression == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db4f50593L, 0x3999e68db4f50594L, "role", "", "");
-          props_RoleReferenceValueTypeExpression = cpb.create();
-        }
-        return props_RoleReferenceValueTypeExpression;
-      case LanguageConceptSwitch.RoleReferenceValueTypeOperation:
-        if (props_RoleReferenceValueTypeOperation == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db532981bL, 0x3999e68db532981dL, "role", "", "");
-          props_RoleReferenceValueTypeOperation = cpb.create();
-        }
-        return props_RoleReferenceValueTypeOperation;
       case LanguageConceptSwitch.RoleType:
         if (props_RoleType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

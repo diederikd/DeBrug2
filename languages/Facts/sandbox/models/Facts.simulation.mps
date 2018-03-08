@@ -315,12 +315,22 @@
         <ref role="24RH9r" to="omzz:4PXC9kptVwX" resolve="Arbeidsduurperiode van arbeidsovereenkomst 2" />
       </node>
     </node>
-    <node concept="2OqwBi" id="3ApTCQPFqx3" role="3MAyBM">
-      <node concept="2drecu" id="3ApTCQPFqwL" role="2Oq$k0">
-        <ref role="2drecp" to="omzz:rWgfCiCh$n" resolve="werkgever" />
+    <node concept="2OqwBi" id="3ApTCQPPgyX" role="3MAyBM">
+      <node concept="2OqwBi" id="3ApTCQPPgxt" role="2Oq$k0">
+        <node concept="2OqwBi" id="3ApTCQPPgv$" role="2Oq$k0">
+          <node concept="2drecu" id="3ApTCQPPgvi" role="2Oq$k0">
+            <ref role="2drecp" to="omzz:rWgfCiCh$n" resolve="werkgever" />
+          </node>
+          <node concept="2cERUm" id="3ApTCQPPgwQ" role="2OqNvi">
+            <ref role="2cERUg" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
+          </node>
+        </node>
+        <node concept="2cERUm" id="3ApTCQPPgyi" role="2OqNvi">
+          <ref role="2cERUg" to="omzz:4PXC9kpselP" resolve="arbeidsduurperiode" />
+        </node>
       </node>
-      <node concept="2cERUm" id="3ApTCQPFqxD" role="2OqNvi">
-        <ref role="2cERUg" to="omzz:1RXUY7CNLHy" resolve="Naam" />
+      <node concept="2cERUm" id="3ApTCQPPgzZ" role="2OqNvi">
+        <ref role="2cERUg" to="omzz:4cztqInRO2E" resolve="arbeidsduur" />
       </node>
     </node>
   </node>

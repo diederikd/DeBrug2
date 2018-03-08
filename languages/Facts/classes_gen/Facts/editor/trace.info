@@ -18,7 +18,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1153952380246:jetbrains.mps.baseLanguage.structure.TryStatement" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="21,0,210,0" name="Facts.editor.EditorAspectDescriptorImpl" />
+      <unit at="21,0,202,0" name="Facts.editor.EditorAspectDescriptorImpl" />
     </file>
     <file name="EntityTable_SubstituteMenu.java">
       <unit at="40,0,58,0" name="Facts.editor.EntityTable_SubstituteMenu$SMP_ReferenceScope_zejlti_a" />
@@ -76,14 +76,6 @@
       <unit at="40,0,58,0" name="Facts.editor.Fact_SubstituteMenu$SMP_ReferenceScope_315sbq_a" />
       <unit at="18,0,59,0" name="Facts.editor.Fact_SubstituteMenu" />
     </file>
-    <file name="RoleReferenceEntityTypeExpression_SubstituteMenu.java">
-      <unit at="40,0,58,0" name="Facts.editor.RoleReferenceEntityTypeExpression_SubstituteMenu$SMP_ReferenceScope_8z9to7_a" />
-      <unit at="18,0,59,0" name="Facts.editor.RoleReferenceEntityTypeExpression_SubstituteMenu" />
-    </file>
-    <file name="RoleReferenceEntityTypeOperation_SubstituteMenu.java">
-      <unit at="40,0,58,0" name="Facts.editor.RoleReferenceEntityTypeOperation_SubstituteMenu$SMP_ReferenceScope_wd0l5d_a" />
-      <unit at="18,0,59,0" name="Facts.editor.RoleReferenceEntityTypeOperation_SubstituteMenu" />
-    </file>
     <file name="RoleReferenceExpression_SubstituteMenu.java">
       <unit at="40,0,58,0" name="Facts.editor.RoleReferenceExpression_SubstituteMenu$SMP_ReferenceScope_1j5x4l_a" />
       <unit at="18,0,59,0" name="Facts.editor.RoleReferenceExpression_SubstituteMenu" />
@@ -91,14 +83,6 @@
     <file name="RoleReferenceOperation_SubstituteMenu.java">
       <unit at="40,0,58,0" name="Facts.editor.RoleReferenceOperation_SubstituteMenu$SMP_ReferenceScope_3h9uwz_a" />
       <unit at="18,0,59,0" name="Facts.editor.RoleReferenceOperation_SubstituteMenu" />
-    </file>
-    <file name="RoleReferenceValueTypeExpression_SubstituteMenu.java">
-      <unit at="40,0,58,0" name="Facts.editor.RoleReferenceValueTypeExpression_SubstituteMenu$SMP_ReferenceScope_ibwyr9_a" />
-      <unit at="18,0,59,0" name="Facts.editor.RoleReferenceValueTypeExpression_SubstituteMenu" />
-    </file>
-    <file name="RoleReferenceValueTypeOperation_SubstituteMenu.java">
-      <unit at="40,0,58,0" name="Facts.editor.RoleReferenceValueTypeOperation_SubstituteMenu$SMP_ReferenceScope_nhxbrn_a" />
-      <unit at="18,0,59,0" name="Facts.editor.RoleReferenceValueTypeOperation_SubstituteMenu" />
     </file>
     <file name="RoleReference_SubstituteMenu.java">
       <unit at="40,0,58,0" name="Facts.editor.RoleReference_SubstituteMenu$SMP_ReferenceScope_dq8mgh_a" />
