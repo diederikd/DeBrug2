@@ -56,12 +56,17 @@
       </concept>
     </language>
     <language id="f2b5f4c3-283f-45e7-932a-2eee84091ad4" name="Simulation">
+      <concept id="6276367725461781534" name="Simulation.structure.Selection" flags="ng" index="4YxWJ">
+        <reference id="4972797234076796870" name="left" index="20cUHU" />
+        <child id="4972797234076796857" name="right" index="20cUG5" />
+      </concept>
       <concept id="2161142751713040615" name="Simulation.structure.SelectedEntity" flags="ng" index="3Pevc6">
         <reference id="7895181521018985299" name="entityType" index="w0sEg" />
         <reference id="7895181521016937220" name="entity" index="wS0F7" />
       </concept>
       <concept id="2161142751705376204" name="Simulation.structure.Query" flags="ng" index="3PGGSH">
         <reference id="2161142751713062088" name="factbase" index="3PeosD" />
+        <child id="4972797234076796996" name="selection" index="20cUjS" />
         <child id="7895181521018258190" name="resultVariables" index="w5dbd" />
         <child id="2936497941694292131" name="path" index="3MAyBM" />
         <child id="2161142751705778159" name="resultTable" index="3PEaKe" />
@@ -315,22 +320,34 @@
         <ref role="24RH9r" to="omzz:4PXC9kptVwX" resolve="Arbeidsduurperiode van arbeidsovereenkomst 2" />
       </node>
     </node>
-    <node concept="2OqwBi" id="3ApTCQPPgyX" role="3MAyBM">
-      <node concept="2OqwBi" id="3ApTCQPPgxt" role="2Oq$k0">
-        <node concept="2OqwBi" id="3ApTCQPPgv$" role="2Oq$k0">
-          <node concept="2drecu" id="3ApTCQPPgvi" role="2Oq$k0">
+    <node concept="2OqwBi" id="5sq8N5jS3IX" role="3MAyBM">
+      <node concept="2OqwBi" id="5sq8N5jRoyE" role="2Oq$k0">
+        <node concept="2OqwBi" id="5sq8N5jRotf" role="2Oq$k0">
+          <node concept="2drecu" id="5sq8N5jRosW" role="2Oq$k0">
             <ref role="2drecp" to="omzz:rWgfCiCh$n" resolve="werkgever" />
           </node>
-          <node concept="2cERUm" id="3ApTCQPPgwQ" role="2OqNvi">
+          <node concept="2cERUm" id="5sq8N5jRoy2" role="2OqNvi">
             <ref role="2cERUg" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
           </node>
         </node>
-        <node concept="2cERUm" id="3ApTCQPPgyi" role="2OqNvi">
+        <node concept="2cERUm" id="5sq8N5jRoIm" role="2OqNvi">
           <ref role="2cERUg" to="omzz:4PXC9kpselP" resolve="arbeidsduurperiode" />
         </node>
       </node>
-      <node concept="2cERUm" id="3ApTCQPPgzZ" role="2OqNvi">
+      <node concept="2cERUm" id="4k2VbN5jP2x" role="2OqNvi">
         <ref role="2cERUg" to="omzz:4cztqInRO2E" resolve="arbeidsduur" />
+      </node>
+    </node>
+    <node concept="4YxWJ" id="4k2VbN5EWPE" role="20cUjS">
+      <ref role="20cUHU" to="omzz:rWgfCiCh$n" resolve="werkgever" />
+      <node concept="4YxWJ" id="4k2VbN5EWPN" role="20cUG5">
+        <ref role="20cUHU" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
+        <node concept="4YxWJ" id="4k2VbN5EWPP" role="20cUG5">
+          <ref role="20cUHU" to="omzz:4PXC9kpselP" resolve="arbeidsduurperiode" />
+          <node concept="4YxWJ" id="4k2VbN5HrzV" role="20cUG5">
+            <ref role="20cUHU" to="omzz:4cztqInRO2E" resolve="arbeidsduur" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

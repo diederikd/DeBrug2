@@ -116,12 +116,15 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="facttypes" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="PrWs8" id="T7nEYMWZfj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="1RXUY7C_Rpl" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
+    <node concept="PrWs8" id="3ApTCQQjmX3" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
     </node>
     <node concept="1TJgyi" id="3e11SfRGqZI" role="1TKVEl">
       <property role="IQ2nx" value="3711255831307726830" />
@@ -141,6 +144,9 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="valuetypes" />
     <ref role="1TJDcQ" node="T7nEYMWZcI" resolve="Role" />
+    <node concept="PrWs8" id="3ApTCQQj$9W" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="T7nEYMWZdy">
     <property role="EcuMT" value="1028895148592067426" />

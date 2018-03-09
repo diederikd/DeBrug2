@@ -40,7 +40,7 @@
         <child id="1028895148592232598" name="facts" index="2WGioT" />
         <child id="3711255831315387304" name="wordings" index="3bDTgF" />
       </concept>
-      <concept id="1028895148592092808" name="Facts.structure.DateType" flags="ng" index="2WGKwB" />
+      <concept id="1028895148592092808" name="Facts.structure.DateType" flags="ig" index="2WGKwB" />
       <concept id="1028895148592102572" name="Facts.structure.Variable" flags="ng" index="2WGM83">
         <reference id="1028895148592102573" name="role" index="2WGM82" />
         <child id="1028895148593747437" name="value" index="2XiGH2" />
@@ -58,7 +58,7 @@
         <child id="1028895148592069579" name="facttypes" index="2WHal$" />
         <child id="4837839804573893084" name="enumerations" index="3kZ3hR" />
       </concept>
-      <concept id="1028895148592067374" name="Facts.structure.Role" flags="ng" index="2WHaQ1">
+      <concept id="1028895148592067374" name="Facts.structure.Role" flags="ig" index="2WHaQ1">
         <property id="3711255831307726830" name="mandatory" index="34caxH" />
         <property id="3711255831312547439" name="article" index="34uzBG" />
       </concept>
@@ -71,9 +71,9 @@
       <concept id="1028895148592067372" name="Facts.structure.Concept" flags="ng" index="2WHaQ3">
         <child id="8156496465148706012" name="identifiedBy" index="21QOUd" />
       </concept>
-      <concept id="1028895148592067430" name="Facts.structure.IntegerType" flags="ng" index="2WHaR9" />
-      <concept id="1028895148592067429" name="Facts.structure.StringType" flags="ng" index="2WHaRa" />
-      <concept id="1028895148592067426" name="Facts.structure.EntityTypeInRole" flags="ng" index="2WHaRd">
+      <concept id="1028895148592067430" name="Facts.structure.IntegerType" flags="ig" index="2WHaR9" />
+      <concept id="1028895148592067429" name="Facts.structure.StringType" flags="ig" index="2WHaRa" />
+      <concept id="1028895148592067426" name="Facts.structure.EntityTypeInRole" flags="ig" index="2WHaRd">
         <reference id="1028895148592067427" name="entityType" index="2WHaRc" />
       </concept>
       <concept id="1028895148593796028" name="Facts.structure.DateValue" flags="ng" index="2XigOj">
@@ -85,7 +85,7 @@
       <concept id="1028895148593747440" name="Facts.structure.StringValue" flags="ng" index="2XiGHv">
         <property id="1028895148593747441" name="value" index="2XiGHu" />
       </concept>
-      <concept id="6962889702535956964" name="Facts.structure.KnownAt" flags="ng" index="11gaUJ" />
+      <concept id="6962889702535956964" name="Facts.structure.KnownAt" flags="ig" index="11gaUJ" />
       <concept id="6962889702538204650" name="Facts.structure.Specializes" flags="ng" index="12CJax">
         <reference id="6962889702538204651" name="concept" index="12CJaw" />
         <reference id="6962889702538204657" name="subConcept" index="12CJaU" />
@@ -105,12 +105,12 @@
         <reference id="3711255831315372008" name="factTypeWording" index="3bDP1F" />
         <child id="3829032966747724417" name="words" index="domYN" />
       </concept>
-      <concept id="4837839804575073884" name="Facts.structure.TimeType" flags="ng" index="3kOzfR" />
+      <concept id="4837839804575073884" name="Facts.structure.TimeType" flags="ig" index="3kOzfR" />
       <concept id="4837839804575977994" name="Facts.structure.EnumerationValue" flags="ng" index="3kR6ux">
         <reference id="4837839804575977995" name="value" index="3kR6uw" />
       </concept>
       <concept id="5583795675249731552" name="Facts.structure.FactWordText" flags="ng" index="1kSGtP" />
-      <concept id="4837839804573893081" name="Facts.structure.EnumerationType" flags="ng" index="3kZ3hM">
+      <concept id="4837839804573893081" name="Facts.structure.EnumerationType" flags="ig" index="3kZ3hM">
         <reference id="4837839804573893082" name="enumeration" index="3kZ3hL" />
       </concept>
       <concept id="4837839804573892963" name="Facts.structure.Instance" flags="ng" index="3kZ3j8" />
@@ -123,8 +123,8 @@
       <concept id="4837839804576362271" name="Facts.structure.TimeValue" flags="ng" index="3r9TEO">
         <child id="4837839804576362272" name="value" index="3r9TEb" />
       </concept>
-      <concept id="2008286925358301604" name="Facts.structure.ValidityFrom" flags="ng" index="1yPtZP" />
-      <concept id="2008286925358301608" name="Facts.structure.ValidityTo" flags="ng" index="1yPtZT" />
+      <concept id="2008286925358301604" name="Facts.structure.ValidityFrom" flags="ig" index="1yPtZP" />
+      <concept id="2008286925358301608" name="Facts.structure.ValidityTo" flags="ig" index="1yPtZT" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
