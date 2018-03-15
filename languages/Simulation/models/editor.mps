@@ -389,12 +389,6 @@
           <property role="1413C4" value="body-brace" />
         </node>
       </node>
-      <node concept="3F1sOY" id="2z0yl7qmE3T" role="3EZMnx">
-        <ref role="1NtTu8" to="b26o:2z0yl7qmE2z" resolve="path" />
-        <node concept="pVoyu" id="2z0yl7qmE6f" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F1sOY" id="4k2VbN5cPGa" role="3EZMnx">
         <ref role="1NtTu8" to="b26o:4k2VbN5ckx4" resolve="selection" />
         <node concept="pVoyu" id="4k2VbN5cPIG" role="3F10Kt">

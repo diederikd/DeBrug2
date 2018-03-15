@@ -1,62 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,16,0" name="Simulation.typesystem.TypesystemDescriptor" />
-    </file>
-  </root>
-  <root nodeRef="r:468214b2-0c91-4a69-a5ce-20b96a6f3213(Simulation.typesystem)/4150602027898724958">
-    <file name="typeof_Query_InferenceRule.java">
-      <node id="4150602027909050618" at="20,5,21,47" concept="5" />
-      <node id="4150602027909050618" at="21,47,22,187" concept="5" />
-      <node id="4150602027909050618" at="22,187,23,513" concept="2" />
-      <node id="4150602027898727463" at="26,7,27,49" concept="5" />
-      <node id="4150602027898727463" at="27,49,28,189" concept="5" />
-      <node id="4150602027898727463" at="28,189,29,399" concept="2" />
-      <node id="4150602027898724958" at="33,50,34,134" concept="6" />
-      <node id="4150602027898724958" at="36,68,37,102" concept="6" />
-      <node id="4150602027898724958" at="39,30,40,17" concept="6" />
-      <node id="4150602027898724958" at="17,0,19,0" concept="1" trace="typeof_Query_InferenceRule#()V" />
-      <node id="4150602027898724958" at="33,0,36,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="4150602027898724958" at="36,0,39,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="4150602027898724958" at="39,0,42,0" concept="4" trace="overrides#()Z" />
-      <node id="4150602027909050618" at="19,118,24,5" concept="0" />
-      <node id="4150602027898727463" at="25,59,30,7" concept="0" />
-      <node id="4150602027898727463" at="24,5,31,5" concept="3" />
-      <node id="4150602027898724958" at="19,0,33,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="4150602027898724958" at="17,39,17,39" />
-      <scope id="4150602027898724958" at="33,50,34,134" />
-      <scope id="4150602027898724958" at="36,68,37,102" />
-      <scope id="4150602027898724958" at="39,30,40,17" />
-      <scope id="4150602027898724958" at="17,0,19,0" />
-      <scope id="4150602027909050618" at="20,5,23,513">
-        <var name="_info_12389875345" id="4150602027909050618" />
-        <var name="_nodeToCheck_1029348928467" id="4150602027909050618" />
-      </scope>
-      <scope id="4150602027898727463" at="26,7,29,399">
-        <var name="_info_12389875345" id="4150602027898727463" />
-        <var name="_nodeToCheck_1029348928467" id="4150602027898727463" />
-      </scope>
-      <scope id="4150602027898724958" at="33,0,36,0" />
-      <scope id="4150602027898724958" at="36,0,39,0">
-        <var name="argument" id="4150602027898724958" />
-      </scope>
-      <scope id="4150602027898724958" at="39,0,42,0" />
-      <scope id="4150602027898727463" at="25,59,30,7" />
-      <scope id="4150602027898724959" at="19,118,31,5" />
-      <scope id="4150602027898724958" at="19,0,33,0">
-        <var name="query" id="4150602027898724958" />
-        <var name="status" id="4150602027898724958" />
-        <var name="typeCheckingContext" id="4150602027898724958" />
-      </scope>
-      <unit id="4150602027898724958" at="16,0,43,0" name="Simulation.typesystem.typeof_Query_InferenceRule" />
+      <unit at="7,0,11,0" name="Simulation.typesystem.TypesystemDescriptor" />
     </file>
   </root>
 </debug-info>
