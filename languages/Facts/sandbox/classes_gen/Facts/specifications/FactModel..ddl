@@ -82,7 +82,7 @@ werknemer MEDIUMINT NOT NULL ,
 INDEX (werknemer), 
 FOREIGN KEY (werknemer) REFERENCES Entity_Werknemer(Id),
 voornaam VARCHAR (255),
-achternaamr VARCHAR (255)
+achternaam VARCHAR (255)
 , PRIMARY KEY (Id));
 
 CREATE TABLE IF NOT EXISTS test.Fact_WerkgeverNummer

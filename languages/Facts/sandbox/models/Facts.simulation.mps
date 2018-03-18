@@ -44,12 +44,19 @@
       </concept>
     </language>
     <language id="f2b5f4c3-283f-45e7-932a-2eee84091ad4" name="Simulation">
+      <concept id="6276367725461781534" name="Simulation.structure.Selection" flags="ng" index="4YxWJ">
+        <child id="1184002751553600234" name="ValueTypeSelection" index="2F0prg" />
+      </concept>
+      <concept id="1184002751547544300" name="Simulation.structure.ValueTypeSelection" flags="ng" index="2FvvVm">
+        <reference id="1184002751547544301" name="role" index="2FvvVn" />
+      </concept>
       <concept id="2161142751713040615" name="Simulation.structure.SelectedEntity" flags="ng" index="3Pevc6">
         <reference id="7895181521018985299" name="entityType" index="w0sEg" />
         <reference id="7895181521016937220" name="entity" index="wS0F7" />
       </concept>
       <concept id="2161142751705376204" name="Simulation.structure.Query" flags="ng" index="3PGGSH">
         <reference id="2161142751713062088" name="factbase" index="3PeosD" />
+        <child id="1184002751554406008" name="Selection" index="2F4yD2" />
         <child id="2161142751705778159" name="resultTable" index="3PEaKe" />
         <child id="2161142751705376739" name="entitySelection" index="3PGGK2" />
         <child id="2161142751705376747" name="roleSelection" index="3PGGKa" />
@@ -159,7 +166,7 @@
           </node>
         </node>
         <node concept="2WGM83" id="4k2VbN5IJdm" role="2WGM80">
-          <ref role="2WGM82" to="omzz:3e11SfRJBGr" resolve="achternaamr" />
+          <ref role="2WGM82" to="omzz:3e11SfRJBGr" resolve="achternaam" />
           <node concept="2XiGHv" id="4k2VbN5IJdn" role="2XiGH2">
             <property role="2XiGHu" value="Dulfer" />
           </node>
@@ -200,6 +207,11 @@
             <property role="2XiGH4" value="8" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="4YxWJ" id="11Ir3EVwBqH" role="2F4yD2">
+      <node concept="2FvvVm" id="11Ir3EVwBqJ" role="2F0prg">
+        <ref role="2FvvVn" to="omzz:1RXUY7CNLHy" resolve="Naam" />
       </node>
     </node>
   </node>
