@@ -2767,7 +2767,7 @@
                 <node concept="liA8E" id="f2" role="2OqNvi">
                   <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.multiple(boolean):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="multiple" />
                   <node concept="3clFbT" id="fi" role="37wK5m">
-                    <property role="3clFbU" value="false" />
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>

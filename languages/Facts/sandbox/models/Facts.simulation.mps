@@ -46,6 +46,10 @@
     <language id="f2b5f4c3-283f-45e7-932a-2eee84091ad4" name="Simulation">
       <concept id="6276367725461781534" name="Simulation.structure.Selection" flags="ng" index="4YxWJ">
         <child id="1184002751553600234" name="ValueTypeSelection" index="2F0prg" />
+        <child id="1184002751547544305" name="EntityTypeSelection" index="2FvvVb" />
+      </concept>
+      <concept id="1184002751547544303" name="Simulation.structure.EntityTypeSelection" flags="ng" index="2FvvVl">
+        <reference id="1184002751547544304" name="role" index="2FvvVa" />
       </concept>
       <concept id="1184002751547544300" name="Simulation.structure.ValueTypeSelection" flags="ng" index="2FvvVm">
         <reference id="1184002751547544301" name="role" index="2FvvVn" />
@@ -209,9 +213,21 @@
         </node>
       </node>
     </node>
-    <node concept="4YxWJ" id="11Ir3EVwBqH" role="2F4yD2">
-      <node concept="2FvvVm" id="11Ir3EVwBqJ" role="2F0prg">
-        <ref role="2FvvVn" to="omzz:1RXUY7CNLHy" resolve="Naam" />
+    <node concept="4YxWJ" id="11Ir3EVRzmj" role="2F4yD2">
+      <node concept="2FvvVm" id="11Ir3EVRzIW" role="2F0prg">
+        <ref role="2FvvVn" to="omzz:4cztqInXtau" resolve="begintijd" />
+      </node>
+      <node concept="2FvvVl" id="11Ir3EVRzJ1" role="2FvvVb">
+        <ref role="2FvvVa" to="omzz:4cztqInYCdL" resolve="werkperiode" />
+      </node>
+      <node concept="2FvvVl" id="11Ir3EVRzJc" role="2FvvVb">
+        <ref role="2FvvVa" to="omzz:4cztqInYCfZ" resolve="spreiding" />
+      </node>
+      <node concept="2FvvVl" id="11Ir3EVRzJq" role="2FvvVb">
+        <ref role="2FvvVa" to="omzz:11Ir3EVBo1R" resolve="arbeidsovereenkomst" />
+      </node>
+      <node concept="2FvvVl" id="11Ir3EVRzJE" role="2FvvVb">
+        <ref role="2FvvVa" to="omzz:T7nEYMX2mY" resolve="werknemer" />
       </node>
     </node>
   </node>

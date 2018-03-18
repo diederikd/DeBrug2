@@ -109,7 +109,6 @@
       <concept id="4837839804575977994" name="Facts.structure.EnumerationValue" flags="ng" index="3kR6ux">
         <reference id="4837839804575977995" name="value" index="3kR6uw" />
       </concept>
-      <concept id="5583795675249731552" name="Facts.structure.FactWordText" flags="ng" index="1kSGtP" />
       <concept id="4837839804573893081" name="Facts.structure.EnumerationType" flags="ig" index="3kZ3hM">
         <reference id="4837839804573893082" name="enumeration" index="3kZ3hL" />
       </concept>
@@ -408,6 +407,11 @@
     </node>
     <node concept="2WHaQ2" id="T7nEYMX2mL" role="2WHal$">
       <property role="TrG5h" value="Arbeidsovereenkomst" />
+      <node concept="21QOSU" id="11Ir3EVRzl_" role="21QOUd">
+        <node concept="34pkC5" id="11Ir3EVRzlH" role="21Rr83">
+          <ref role="34pkC4" node="4cztqInRNH5" resolve="arbeidsovereenkomst" />
+        </node>
+      </node>
       <node concept="34qYQO" id="4cztqInFIft" role="34qYOv">
         <node concept="34qYQU" id="4cztqInFIfF" role="34rq46">
           <ref role="34qYQT" node="T7nEYMX2mY" resolve="werknemer" />
@@ -458,10 +462,6 @@
         <property role="34caxH" value="true" />
         <property role="34uzBG" value="geen" />
       </node>
-      <node concept="2WHaRd" id="4PXC9kpselP" role="2WHaR8">
-        <property role="TrG5h" value="arbeidsduurperiode" />
-        <ref role="2WHaRc" node="4cztqInXtc0" resolve="Arbeidsduurperiode van de arbeidsovereenkomst" />
-      </node>
       <node concept="21QOSU" id="3MspsB8oH4B" role="21QOUd">
         <node concept="34pkC5" id="14SuKMpmjOP" role="21Rr83">
           <ref role="34pkC4" node="T7nEYMX2mT" resolve="werkgever" />
@@ -476,6 +476,11 @@
     </node>
     <node concept="2WHaQ2" id="4cztqInRNFS" role="2WHal$">
       <property role="TrG5h" value="Aanpassing van de arbeidsduur" />
+      <node concept="21QOSU" id="11Ir3EVRzlK" role="21QOUd">
+        <node concept="34pkC5" id="11Ir3EVRzlR" role="21Rr83">
+          <ref role="34pkC4" node="4cztqInRNYY" resolve="verzoek aanpassing arbeidsduur" />
+        </node>
+      </node>
       <node concept="2WHaRd" id="4cztqInRNYp" role="2WHaR8">
         <property role="TrG5h" value="werknemer" />
         <ref role="2WHaRc" node="3MspsB8eG6c" resolve="Werknemer" />
@@ -537,20 +542,32 @@
     <node concept="2WHaQ2" id="4cztqInRO1s" role="2WHal$">
       <property role="TrG5h" value="Arbeidsduurperiode van arbeidsovereenkomst" />
       <property role="3kd5zP" value="true" />
-      <node concept="21QOSU" id="4PXC9kpsejp" role="21QOUd">
-        <node concept="34pkC5" id="4PXC9kpselu" role="21Rr83">
+      <node concept="21QOSU" id="11Ir3EVAgsX" role="21QOUd">
+        <node concept="34pkC5" id="11Ir3EVBo1Y" role="21Rr83">
+          <ref role="34pkC4" node="11Ir3EVBo1R" resolve="arbeidsovereenkomst" />
+        </node>
+        <node concept="34pkC5" id="11Ir3EVBX4j" role="21Rr83">
           <ref role="34pkC4" node="4PXC9kpselg" resolve="datum geldig van" />
         </node>
-        <node concept="34pkC5" id="4PXC9kpsely" role="21Rr83">
+        <node concept="34pkC5" id="11Ir3EVBX4r" role="21Rr83">
           <ref role="34pkC4" node="4PXC9kpselh" resolve="datum geldig tot" />
         </node>
       </node>
       <node concept="34qYQO" id="4cztqIocBIO" role="34qYOv">
         <node concept="34qYQU" id="4PXC9kpseka" role="34rq46">
-          <ref role="34qYQT" node="4PXC9kpsejV" resolve="arbeidsduurperiode" />
+          <ref role="34qYQT" node="11Ir3EVBo1R" resolve="arbeidsovereenkomst" />
         </node>
         <node concept="34tZwR" id="4PXC9kpseks" role="34rq46">
-          <property role="TrG5h" value="heeft" />
+          <property role="TrG5h" value="heeft van" />
+        </node>
+        <node concept="34qYQU" id="11Ir3EVBXfY" role="34rq46">
+          <ref role="34qYQT" node="4PXC9kpselg" resolve="datum geldig van" />
+        </node>
+        <node concept="34tZwR" id="11Ir3EVBXgm" role="34rq46">
+          <property role="TrG5h" value="tot" />
+        </node>
+        <node concept="34qYQU" id="11Ir3EVBXgK" role="34rq46">
+          <ref role="34qYQT" node="4PXC9kpselh" resolve="datum geldig tot" />
         </node>
         <node concept="34qYQU" id="4cztqIocBIS" role="34rq46">
           <ref role="34qYQT" node="4cztqInRO2E" resolve="arbeidsduur" />
@@ -559,30 +576,18 @@
           <property role="TrG5h" value="met" />
         </node>
         <node concept="34qYQU" id="4cztqIocBJE" role="34rq46">
-          <ref role="34qYQT" node="4cztqInZL3_" resolve="spreiding van de arbeidsduurperiode" />
-        </node>
-        <node concept="34tZwR" id="4cztqIocBIY" role="34rq46">
-          <property role="TrG5h" value="is geldig van" />
-        </node>
-        <node concept="34qYQU" id="4cztqIocBJ6" role="34rq46">
-          <ref role="34qYQT" node="4PXC9kpselg" resolve="datum geldig van" />
-        </node>
-        <node concept="34tZwR" id="4cztqIocBJg" role="34rq46">
-          <property role="TrG5h" value="tot" />
-        </node>
-        <node concept="34qYQU" id="4cztqIocBJs" role="34rq46">
-          <ref role="34qYQT" node="4PXC9kpselh" resolve="datum geldig tot" />
+          <ref role="34qYQT" node="4cztqInZL3_" resolve="spreiding van de arbeidsduur" />
         </node>
       </node>
-      <node concept="2WHaRd" id="4PXC9kpsejV" role="2WHaR8">
-        <property role="TrG5h" value="arbeidsduurperiode" />
-        <ref role="2WHaRc" node="4cztqInXtc0" resolve="Arbeidsduurperiode van de arbeidsovereenkomst" />
+      <node concept="2WHaRd" id="11Ir3EVBo1R" role="2WHaR8">
+        <property role="TrG5h" value="arbeidsovereenkomst" />
+        <ref role="2WHaRc" node="4cztqInRNGP" resolve="Arbeidsovereenkomst" />
       </node>
       <node concept="2WHaR9" id="4cztqInRO2E" role="2WHaR8">
         <property role="TrG5h" value="arbeidsduur" />
       </node>
       <node concept="2WHaRd" id="4cztqInZL3_" role="2WHaR8">
-        <property role="TrG5h" value="spreiding van de arbeidsduurperiode" />
+        <property role="TrG5h" value="spreiding van de arbeidsduur" />
         <property role="34uzBG" value="een" />
         <ref role="2WHaRc" node="4cztqInXtcg" resolve="Spreiding" />
       </node>
@@ -979,7 +984,7 @@
       <ref role="2WGioV" node="T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
       <node concept="3bDP1$" id="1RXUY7Cbh8Q" role="3bDTgF">
         <ref role="3bDP1F" node="4cztqInFIft" resolve="[werknemer, heeft met, werkgever, arbeidsovereenkomst, getekend op, datum van tekenen arbeidscontract, voor het in dienst komen op, datum in dienst]" />
-        <ref role="3bDP1D" node="1RXUY7Cbh83" resolve="[ ASML, Henk, Arbeidsovereenkomst tussen Henk en ASML, 01-10-2017, 01-09-2017, Arbeidsduurperiode van arbeidsovereenkomst 1]" />
+        <ref role="3bDP1D" node="1RXUY7Cbh83" resolve="[ ASML, Henk, Arbeidsovereenkomst tussen Henk en ASML, 01-10-2017, 01-09-2017]" />
         <node concept="domOK" id="1RXUY7CjHpO" role="domYN">
           <ref role="dpzeg" node="4cztqInFIfF" />
         </node>
@@ -1060,12 +1065,6 @@
             </node>
           </node>
         </node>
-        <node concept="2WGM83" id="4PXC9kptVuJ" role="2WGM80">
-          <ref role="2WGM82" node="4PXC9kpselP" resolve="arbeidsduurperiode" />
-          <node concept="24RH9q" id="4PXC9kptVvy" role="2XiGH2">
-            <ref role="24RH9r" node="4PXC9kptVwV" resolve="Arbeidsduurperiode van arbeidsovereenkomst 1" />
-          </node>
-        </node>
       </node>
       <node concept="2WGM88" id="4PXC9kpn2aA" role="2WGioT">
         <ref role="2WGM87" node="T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
@@ -1107,10 +1106,173 @@
             </node>
           </node>
         </node>
-        <node concept="2WGM83" id="4PXC9kptVuV" role="2WGM80">
-          <ref role="2WGM82" node="4PXC9kpselP" resolve="arbeidsduurperiode" />
-          <node concept="24RH9q" id="4PXC9kptVxc" role="2XiGH2">
-            <ref role="24RH9r" node="4PXC9kptVwX" resolve="Arbeidsduurperiode van arbeidsovereenkomst 2" />
+      </node>
+    </node>
+    <node concept="2WGioW" id="11Ir3EVBWT8" role="2WGWMT">
+      <ref role="2WGioV" node="4cztqInRO1s" resolve="Arbeidsduurperiode van arbeidsovereenkomst" />
+      <node concept="3bDP1$" id="11Ir3EVBX4G" role="3bDTgF">
+        <ref role="3bDP1F" node="4cztqIocBIO" resolve="[arbeidsovereenkomst, heeft van, datum geldig van, tot, datum geldig tot, arbeidsduur, met, spreiding van de arbeidsduur]" />
+        <ref role="3bDP1D" node="11Ir3EVBX1t" resolve="[ Arbeidsovereenkomst tussen Henk en ASML, 40, Maandag t/m vrijdag 5x8, 01-01-2017, 01-01-0001]" />
+        <node concept="domOK" id="11Ir3EVQoRx" role="domYN">
+          <ref role="dpzeg" node="4PXC9kpseka" />
+        </node>
+        <node concept="domOL" id="11Ir3EVQoRz" role="domYN">
+          <ref role="dwzQZ" node="11Ir3EVBX1L" />
+        </node>
+        <node concept="domOQ" id="11Ir3EVQoR$" role="domYN">
+          <ref role="3PMA9R" node="4PXC9kpseks" resolve="heeft van" />
+        </node>
+        <node concept="domOK" id="11Ir3EVQoR_" role="domYN">
+          <ref role="dpzeg" node="11Ir3EVBXfY" />
+        </node>
+        <node concept="domOL" id="11Ir3EVQoRB" role="domYN">
+          <ref role="dwzQZ" node="11Ir3EVBX1y" resolve="01-01-2017" />
+        </node>
+        <node concept="domOQ" id="11Ir3EVQoRC" role="domYN">
+          <ref role="3PMA9R" node="11Ir3EVBXgm" resolve="tot" />
+        </node>
+        <node concept="domOK" id="11Ir3EVQoRD" role="domYN">
+          <ref role="dpzeg" node="11Ir3EVBXgK" />
+        </node>
+        <node concept="domOL" id="11Ir3EVQoRF" role="domYN">
+          <ref role="dwzQZ" node="11Ir3EVBX1_" resolve="01-01-0001" />
+        </node>
+        <node concept="domOK" id="11Ir3EVQoRG" role="domYN">
+          <ref role="dpzeg" node="4cztqIocBIS" />
+        </node>
+        <node concept="domOL" id="11Ir3EVQoRI" role="domYN">
+          <ref role="dwzQZ" node="11Ir3EVBX1N" />
+        </node>
+        <node concept="domOQ" id="11Ir3EVQoRJ" role="domYN">
+          <ref role="3PMA9R" node="4PXC9kpsekQ" resolve="met" />
+        </node>
+        <node concept="domOK" id="11Ir3EVQoRK" role="domYN">
+          <ref role="dpzeg" node="4cztqIocBJE" />
+        </node>
+        <node concept="domOL" id="11Ir3EVQoRM" role="domYN">
+          <ref role="dwzQZ" node="11Ir3EVBX46" />
+        </node>
+      </node>
+      <node concept="2WGM88" id="11Ir3EVBX1t" role="2WGioT">
+        <ref role="2WGM87" node="4cztqInRO1s" resolve="Arbeidsduurperiode van arbeidsovereenkomst" />
+        <node concept="2WGM83" id="11Ir3EVBX1u" role="2WGM80">
+          <ref role="2WGM82" node="11Ir3EVBo1R" resolve="arbeidsovereenkomst" />
+          <node concept="24RH9q" id="11Ir3EVBX1L" role="2XiGH2">
+            <ref role="24RH9r" node="1RXUY7Cbh8O" resolve="Arbeidsovereenkomst tussen Henk en ASML" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="11Ir3EVBX1v" role="2WGM80">
+          <ref role="2WGM82" node="4cztqInRO2E" resolve="arbeidsduur" />
+          <node concept="2XiGH5" id="11Ir3EVBX1N" role="2XiGH2">
+            <property role="2XiGH4" value="40" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="11Ir3EVBX1w" role="2WGM80">
+          <ref role="2WGM82" node="4cztqInZL3_" resolve="spreiding van de arbeidsduur" />
+          <node concept="24RH9q" id="11Ir3EVBX46" role="2XiGH2">
+            <ref role="24RH9r" node="4cztqIocBxK" resolve="Maandag t/m vrijdag 5x8" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="11Ir3EVBX1x" role="2WGM80">
+          <ref role="2WGM82" node="4PXC9kpselg" resolve="datum geldig van" />
+          <node concept="2XigOj" id="11Ir3EVBX1y" role="2XiGH2">
+            <node concept="2B78Lw" id="11Ir3EVBX1z" role="2Xi5h3">
+              <property role="2B78LB" value="1" />
+              <property role="2B78L_" value="1" />
+              <property role="2B78LE" value="2017" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="11Ir3EVBX1$" role="2WGM80">
+          <ref role="2WGM82" node="4PXC9kpselh" resolve="datum geldig tot" />
+          <node concept="2XigOj" id="11Ir3EVBX1_" role="2XiGH2">
+            <node concept="2B78Lw" id="11Ir3EVBX1A" role="2Xi5h3">
+              <property role="2B78LB" value="31" />
+              <property role="2B78L_" value="12" />
+              <property role="2B78LE" value="2017" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="11Ir3EVBX1P" role="2WGioT">
+        <ref role="2WGM87" node="4cztqInRO1s" resolve="Arbeidsduurperiode van arbeidsovereenkomst" />
+        <node concept="2WGM83" id="11Ir3EVBX1Q" role="2WGM80">
+          <ref role="2WGM82" node="11Ir3EVBo1R" resolve="arbeidsovereenkomst" />
+          <node concept="24RH9q" id="11Ir3EVBX3G" role="2XiGH2">
+            <ref role="24RH9r" node="1RXUY7Cbh8O" resolve="Arbeidsovereenkomst tussen Henk en ASML" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="11Ir3EVBX1R" role="2WGM80">
+          <ref role="2WGM82" node="4cztqInRO2E" resolve="arbeidsduur" />
+          <node concept="2XiGH5" id="11Ir3EVBX3Q" role="2XiGH2">
+            <property role="2XiGH4" value="36" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="11Ir3EVBX1S" role="2WGM80">
+          <ref role="2WGM82" node="4cztqInZL3_" resolve="spreiding van de arbeidsduur" />
+          <node concept="24RH9q" id="11Ir3EVBX3W" role="2XiGH2">
+            <ref role="24RH9r" node="6$AjNXpuk4P" resolve="Maandag t/m donderdag 4x9" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="11Ir3EVBX1T" role="2WGM80">
+          <ref role="2WGM82" node="4PXC9kpselg" resolve="datum geldig van" />
+          <node concept="2XigOj" id="11Ir3EVBX1U" role="2XiGH2">
+            <node concept="2B78Lw" id="11Ir3EVBX1V" role="2Xi5h3">
+              <property role="2B78LB" value="1" />
+              <property role="2B78L_" value="1" />
+              <property role="2B78LE" value="2018" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="11Ir3EVBX1W" role="2WGM80">
+          <ref role="2WGM82" node="4PXC9kpselh" resolve="datum geldig tot" />
+          <node concept="2XigOj" id="11Ir3EVBX1X" role="2XiGH2">
+            <node concept="2B78Lw" id="11Ir3EVBX1Y" role="2Xi5h3">
+              <property role="2B78LB" value="31" />
+              <property role="2B78L_" value="12" />
+              <property role="2B78LE" value="9999" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="11Ir3EVBX5r" role="2WGioT">
+        <ref role="2WGM87" node="4cztqInRO1s" resolve="Arbeidsduurperiode van arbeidsovereenkomst" />
+        <node concept="2WGM83" id="11Ir3EVBX5s" role="2WGM80">
+          <ref role="2WGM82" node="11Ir3EVBo1R" resolve="arbeidsovereenkomst" />
+          <node concept="24RH9q" id="11Ir3EVBX6H" role="2XiGH2">
+            <ref role="24RH9r" node="4PXC9kpn2bX" resolve="Arbeidsovereenkomst tussen Henk en Economica" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="11Ir3EVBX5t" role="2WGM80">
+          <ref role="2WGM82" node="4cztqInRO2E" resolve="arbeidsduur" />
+          <node concept="2XiGH5" id="11Ir3EVBX7R" role="2XiGH2">
+            <property role="2XiGH4" value="40" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="11Ir3EVBX5u" role="2WGM80">
+          <ref role="2WGM82" node="4cztqInZL3_" resolve="spreiding van de arbeidsduur" />
+          <node concept="24RH9q" id="11Ir3EVBX8t" role="2XiGH2">
+            <ref role="24RH9r" node="4cztqIocBxK" resolve="Maandag t/m vrijdag 5x8" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="11Ir3EVBX5v" role="2WGM80">
+          <ref role="2WGM82" node="4PXC9kpselg" resolve="datum geldig van" />
+          <node concept="2XigOj" id="11Ir3EVBX5w" role="2XiGH2">
+            <node concept="2B78Lw" id="11Ir3EVBX5x" role="2Xi5h3">
+              <property role="2B78LB" value="1" />
+              <property role="2B78L_" value="9" />
+              <property role="2B78LE" value="2015" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="11Ir3EVBX5y" role="2WGM80">
+          <ref role="2WGM82" node="4PXC9kpselh" resolve="datum geldig tot" />
+          <node concept="2XigOj" id="11Ir3EVBX5z" role="2XiGH2">
+            <node concept="2B78Lw" id="11Ir3EVBX5$" role="2Xi5h3">
+              <property role="2B78LB" value="31" />
+              <property role="2B78L_" value="12" />
+              <property role="2B78LE" value="9999" />
+            </node>
           </node>
         </node>
       </node>
@@ -1689,137 +1851,6 @@
           <ref role="2WGM82" node="rWgfCiCh$4" resolve="werknemernummer" />
           <node concept="2XiGH5" id="3e11SfS3H0J" role="2XiGH2">
             <property role="2XiGH4" value="8" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2WGioW" id="4PXC9kptVAj" role="2WGWMT">
-      <ref role="2WGioV" node="4cztqInRO1s" resolve="Arbeidsduurperiode van arbeidsovereenkomst" />
-      <node concept="3bDP1$" id="4PXC9kpDRz8" role="3bDTgF">
-        <ref role="3bDP1F" node="4cztqIocBIO" resolve="[arbeidsduurperiode, heeft, arbeidsduur, met, spreiding van de arbeidsduurperiode, is geldig van, datum geldig van, tot, datum geldig tot]" />
-        <ref role="3bDP1D" node="4PXC9kptVEV" resolve="[ Arbeidsduurperiode van arbeidsovereenkomst 1, 40, Maandag t/m vrijdag 5x8, 01-01-2017, 01-01-0001]" />
-        <node concept="domOK" id="4PXC9kpFNJy" role="domYN">
-          <ref role="dpzeg" node="4PXC9kpseka" />
-        </node>
-        <node concept="domOL" id="4PXC9kpFNJ$" role="domYN">
-          <ref role="dwzQZ" node="4PXC9kptVFb" />
-        </node>
-        <node concept="domOQ" id="4PXC9kpFNJ_" role="domYN">
-          <ref role="3PMA9R" node="4PXC9kpseks" resolve="heeft" />
-        </node>
-        <node concept="domOK" id="4PXC9kpFNJA" role="domYN">
-          <ref role="dpzeg" node="4cztqIocBIS" />
-        </node>
-        <node concept="domOL" id="4PXC9kpFNJC" role="domYN">
-          <ref role="dwzQZ" node="4PXC9kptVFd" />
-        </node>
-        <node concept="domOQ" id="4PXC9kpFNJD" role="domYN">
-          <ref role="3PMA9R" node="4PXC9kpsekQ" resolve="met" />
-        </node>
-        <node concept="domOK" id="4PXC9kpFNJE" role="domYN">
-          <ref role="dpzeg" node="4cztqIocBJE" />
-        </node>
-        <node concept="domOL" id="4PXC9kpFNJG" role="domYN">
-          <ref role="dwzQZ" node="4PXC9kptVFf" />
-        </node>
-        <node concept="domOQ" id="4PXC9kpFNJH" role="domYN">
-          <ref role="3PMA9R" node="4cztqIocBIY" resolve="is geldig van" />
-        </node>
-        <node concept="domOK" id="4PXC9kpFNJI" role="domYN">
-          <ref role="dpzeg" node="4cztqIocBJ6" />
-        </node>
-        <node concept="domOL" id="4PXC9kpFNJK" role="domYN">
-          <ref role="dwzQZ" node="4PXC9kptVF0" resolve="01-01-2017" />
-        </node>
-        <node concept="domOQ" id="4PXC9kpFNJL" role="domYN">
-          <ref role="3PMA9R" node="4cztqIocBJg" resolve="tot" />
-        </node>
-        <node concept="domOK" id="4PXC9kpFNJM" role="domYN">
-          <ref role="dpzeg" node="4cztqIocBJs" />
-        </node>
-        <node concept="1kSGtP" id="4PXC9kpFNJO" role="domYN">
-          <property role="TrG5h" value="Unknown" />
-        </node>
-      </node>
-      <node concept="2WGM88" id="4PXC9kptVEV" role="2WGioT">
-        <ref role="2WGM87" node="4cztqInRO1s" resolve="Arbeidsduurperiode van arbeidsovereenkomst" />
-        <node concept="2WGM83" id="4PXC9kptVEW" role="2WGM80">
-          <ref role="2WGM82" node="4PXC9kpsejV" resolve="arbeidsduurperiode" />
-          <node concept="24RH9q" id="4PXC9kptVFb" role="2XiGH2">
-            <ref role="24RH9r" node="4PXC9kptVwV" resolve="Arbeidsduurperiode van arbeidsovereenkomst 1" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="4PXC9kptVEX" role="2WGM80">
-          <ref role="2WGM82" node="4cztqInRO2E" resolve="arbeidsduur" />
-          <node concept="2XiGH5" id="4PXC9kptVFd" role="2XiGH2">
-            <property role="2XiGH4" value="40" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="4PXC9kptVEY" role="2WGM80">
-          <ref role="2WGM82" node="4cztqInZL3_" resolve="spreiding van de arbeidsduurperiode" />
-          <node concept="24RH9q" id="4PXC9kptVFf" role="2XiGH2">
-            <ref role="24RH9r" node="4cztqIocBxK" resolve="Maandag t/m vrijdag 5x8" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="4PXC9kptVEZ" role="2WGM80">
-          <ref role="2WGM82" node="4PXC9kpselg" resolve="datum geldig van" />
-          <node concept="2XigOj" id="4PXC9kptVF0" role="2XiGH2">
-            <node concept="2B78Lw" id="4PXC9kptVF1" role="2Xi5h3">
-              <property role="2B78LB" value="1" />
-              <property role="2B78L_" value="1" />
-              <property role="2B78LE" value="2017" />
-            </node>
-          </node>
-        </node>
-        <node concept="2WGM83" id="4PXC9kptVF2" role="2WGM80">
-          <ref role="2WGM82" node="4PXC9kpselh" resolve="datum geldig tot" />
-          <node concept="2XigOj" id="4PXC9kqdFRB" role="2XiGH2">
-            <node concept="2B78Lw" id="4PXC9kqdFRC" role="2Xi5h3">
-              <property role="2B78LB" value="31" />
-              <property role="2B78L_" value="12" />
-              <property role="2B78LE" value="9999" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2WGM88" id="4PXC9kqdFP2" role="2WGioT">
-        <ref role="2WGM87" node="4cztqInRO1s" resolve="Arbeidsduurperiode van arbeidsovereenkomst" />
-        <node concept="2WGM83" id="4PXC9kqdFP3" role="2WGM80">
-          <ref role="2WGM82" node="4PXC9kpsejV" resolve="arbeidsduurperiode" />
-          <node concept="24RH9q" id="4PXC9kqdFPD" role="2XiGH2">
-            <ref role="24RH9r" node="4PXC9kptVwX" resolve="Arbeidsduurperiode van arbeidsovereenkomst 2" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="4PXC9kqdFP4" role="2WGM80">
-          <ref role="2WGM82" node="4cztqInRO2E" resolve="arbeidsduur" />
-          <node concept="2XiGH5" id="4PXC9kqdFPV" role="2XiGH2">
-            <property role="2XiGH4" value="40" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="4PXC9kqdFP5" role="2WGM80">
-          <ref role="2WGM82" node="4cztqInZL3_" resolve="spreiding van de arbeidsduurperiode" />
-          <node concept="24RH9q" id="4PXC9kqdFQ5" role="2XiGH2">
-            <ref role="24RH9r" node="4cztqIocBxK" resolve="Maandag t/m vrijdag 5x8" />
-          </node>
-        </node>
-        <node concept="2WGM83" id="4PXC9kqdFP6" role="2WGM80">
-          <ref role="2WGM82" node="4PXC9kpselg" resolve="datum geldig van" />
-          <node concept="2XigOj" id="4PXC9kqdFP7" role="2XiGH2">
-            <node concept="2B78Lw" id="4PXC9kqdFP8" role="2Xi5h3">
-              <property role="2B78LB" value="1" />
-              <property role="2B78L_" value="1" />
-              <property role="2B78LE" value="2018" />
-            </node>
-          </node>
-        </node>
-        <node concept="2WGM83" id="4PXC9kqdFP9" role="2WGM80">
-          <ref role="2WGM82" node="4PXC9kpselh" resolve="datum geldig tot" />
-          <node concept="2XigOj" id="4PXC9kqdFPa" role="2XiGH2">
-            <node concept="2B78Lw" id="4PXC9kqdFPb" role="2Xi5h3">
-              <property role="2B78LB" value="31" />
-              <property role="2B78L_" value="12" />
-              <property role="2B78LE" value="9999" />
-            </node>
           </node>
         </node>
       </node>

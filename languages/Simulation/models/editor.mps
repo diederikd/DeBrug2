@@ -23,6 +23,7 @@
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
@@ -421,13 +422,16 @@
     <ref role="1XX52x" to="b26o:5sq8N5jS3Ku" resolve="Selection" />
     <node concept="3EZMnI" id="11Ir3EVuZbs" role="2wV5jI">
       <node concept="l2Vlx" id="11Ir3EVuZbt" role="2iSdaV" />
-      <node concept="3F1sOY" id="11Ir3EVuZbw" role="3EZMnx">
+      <node concept="3F2HdR" id="11Ir3EVRzJV" role="3EZMnx">
+        <property role="2czwfO" value=" en" />
         <ref role="1NtTu8" to="b26o:11Ir3EVrZFE" resolve="ValueTypeSelection" />
+        <node concept="l2Vlx" id="11Ir3EVRzJX" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="11Ir3EVuZb_" role="3EZMnx">
         <property role="3F0ifm" value="van" />
       </node>
       <node concept="3F2HdR" id="11Ir3EVuZbH" role="3EZMnx">
+        <property role="2czwfO" value=" van" />
         <ref role="1NtTu8" to="b26o:11Ir3EV4TbL" resolve="EntityTypeSelection" />
         <node concept="l2Vlx" id="11Ir3EVuZbJ" role="2czzBx" />
       </node>
