@@ -101,6 +101,7 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414999511" name="jetbrains.mps.lang.editor.structure.UnderlinedStyleClassItem" flags="ln" index="VQ3r3">
         <property id="1214316229833" name="underlined" index="2USNnj" />
+        <child id="1221219051630" name="query" index="1mkY_M" />
       </concept>
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
@@ -117,6 +118,7 @@
       </concept>
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
+      <concept id="1221062700015" name="jetbrains.mps.lang.editor.structure.QueryFunction_Underlined" flags="in" index="1d0yFN" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -603,8 +605,8 @@
     <property role="3GE5qa" value="valuetypes" />
     <ref role="1XX52x" to="gq3g:T7nEYMWZd_" resolve="StringType" />
     <node concept="3EZMnI" id="T7nEYMX0O1" role="2wV5jI">
-      <node concept="3F0A7n" id="T7nEYMX0O8" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="PMmxH" id="11Ir3EW9ns3" role="3EZMnx">
+        <ref role="PMmxG" node="11Ir3EW9mla" resolve="NameWithUnderlining" />
       </node>
       <node concept="PMmxH" id="3e11SfRJ8OM" role="3EZMnx">
         <ref role="PMmxG" node="3e11SfRJ8OK" resolve="Mandatory" />
@@ -625,8 +627,8 @@
     <property role="3GE5qa" value="valuetypes" />
     <ref role="1XX52x" to="gq3g:T7nEYMWZdA" resolve="IntegerType" />
     <node concept="3EZMnI" id="T7nEYMX0OJ" role="2wV5jI">
-      <node concept="3F0A7n" id="T7nEYMX0OQ" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="PMmxH" id="11Ir3EWdoXe" role="3EZMnx">
+        <ref role="PMmxG" node="11Ir3EW9mla" resolve="NameWithUnderlining" />
       </node>
       <node concept="PMmxH" id="3e11SfRJfrX" role="3EZMnx">
         <ref role="PMmxG" node="3e11SfRJ8OK" resolve="Mandatory" />
@@ -790,8 +792,8 @@
     <property role="3GE5qa" value="valuetypes" />
     <ref role="1XX52x" to="gq3g:T7nEYMWZdy" resolve="EntityTypeInRole" />
     <node concept="3EZMnI" id="T7nEYMX2ni" role="2wV5jI">
-      <node concept="3F0A7n" id="T7nEYMX2np" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="PMmxH" id="11Ir3EWblKl" role="3EZMnx">
+        <ref role="PMmxG" node="11Ir3EW9mla" resolve="NameWithUnderlining" />
       </node>
       <node concept="PMmxH" id="3e11SfRJt4A" role="3EZMnx">
         <ref role="PMmxG" node="3e11SfRJ8OK" resolve="Mandatory" />
@@ -864,8 +866,8 @@
     <property role="3GE5qa" value="valuetypes" />
     <ref role="1XX52x" to="gq3g:T7nEYMX5q8" resolve="DateType" />
     <node concept="3EZMnI" id="T7nEYMX5qg" role="2wV5jI">
-      <node concept="3F0A7n" id="T7nEYMX6_I" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="PMmxH" id="11Ir3EW9mlc" role="3EZMnx">
+        <ref role="PMmxG" node="11Ir3EW9mla" resolve="NameWithUnderlining" />
       </node>
       <node concept="PMmxH" id="3e11SfRJepk" role="3EZMnx">
         <ref role="PMmxG" node="3e11SfRJ8OK" resolve="Mandatory" />
@@ -1938,8 +1940,8 @@
     <ref role="1XX52x" to="gq3g:74LG_7KV01k" resolve="FactTypeInRole" />
     <node concept="3EZMnI" id="6Nhjz6DrtIj" role="2wV5jI">
       <node concept="l2Vlx" id="6Nhjz6DrtIk" role="2iSdaV" />
-      <node concept="3F0A7n" id="6Nhjz6DrtIp" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="PMmxH" id="11Ir3EWdp22" role="3EZMnx">
+        <ref role="PMmxG" node="11Ir3EW9mla" resolve="NameWithUnderlining" />
       </node>
       <node concept="3F0ifn" id="6Nhjz6DrtIv" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -3664,8 +3666,8 @@
     <property role="3GE5qa" value="valuetypes" />
     <ref role="1XX52x" to="gq3g:4cztqInRO7p" resolve="EnumerationType" />
     <node concept="3EZMnI" id="4cztqInVcJ5" role="2wV5jI">
-      <node concept="3F0A7n" id="4cztqInVcJc" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="PMmxH" id="11Ir3EWdoWZ" role="3EZMnx">
+        <ref role="PMmxG" node="11Ir3EW9mla" resolve="NameWithUnderlining" />
       </node>
       <node concept="PMmxH" id="4cztqInYCg8" role="3EZMnx">
         <ref role="PMmxG" node="3e11SfRJ8OK" resolve="Mandatory" />
@@ -3693,8 +3695,8 @@
     <property role="3GE5qa" value="valuetypes" />
     <ref role="1XX52x" to="gq3g:4cztqInWkps" resolve="TimeType" />
     <node concept="3EZMnI" id="4cztqInWkpv" role="2wV5jI">
-      <node concept="3F0A7n" id="4cztqInWkpw" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="PMmxH" id="11Ir3EWdoXr" role="3EZMnx">
+        <ref role="PMmxG" node="11Ir3EW9mla" resolve="NameWithUnderlining" />
       </node>
       <node concept="PMmxH" id="4cztqInWkpG" role="3EZMnx">
         <ref role="PMmxG" node="3e11SfRJ8OK" resolve="Mandatory" />
@@ -3851,8 +3853,8 @@
     <property role="3GE5qa" value="valuetypes" />
     <ref role="1XX52x" to="gq3g:4cztqIo1gMR" resolve="DatetimeType" />
     <node concept="3EZMnI" id="1JuR_5T1oko" role="2wV5jI">
-      <node concept="3F0A7n" id="1JuR_5T1okp" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="PMmxH" id="11Ir3EW9nrQ" role="3EZMnx">
+        <ref role="PMmxG" node="11Ir3EW9mla" resolve="NameWithUnderlining" />
       </node>
       <node concept="PMmxH" id="1JuR_5T1okq" role="3EZMnx">
         <ref role="PMmxG" node="3e11SfRJ8OK" resolve="Mandatory" />
@@ -4987,6 +4989,28 @@
         </node>
       </node>
       <node concept="2jZ$wP" id="11Ir3EVBp5J" role="1Qtc8$" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="11Ir3EW9mla">
+    <property role="TrG5h" value="NameWithUnderlining" />
+    <property role="3GE5qa" value="valuetypes" />
+    <ref role="1XX52x" to="gq3g:T7nEYMWZcI" resolve="Role" />
+    <node concept="3F0A7n" id="11Ir3EW9mlb" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="VQ3r3" id="11Ir3EW9mli" role="3F10Kt">
+        <node concept="1d0yFN" id="11Ir3EW9mlk" role="1mkY_M">
+          <node concept="3clFbS" id="11Ir3EW9mll" role="2VODD2">
+            <node concept="3clFbF" id="11Ir3EW9msu" role="3cqZAp">
+              <node concept="2OqwBi" id="11Ir3EW9mGG" role="3clFbG">
+                <node concept="pncrf" id="11Ir3EW9mst" role="2Oq$k0" />
+                <node concept="2qgKlT" id="11Ir3EW9nb_" role="2OqNvi">
+                  <ref role="37wK5l" to="k0ub:11Ir3EW8Xpz" resolve="isUnique" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

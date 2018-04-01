@@ -9,9 +9,6 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
-import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
-import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 /*package*/ class DateType_EditorBuilder_a extends AbstractEditorBuilder {
@@ -38,25 +35,14 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
     editorCell.setCellId("Collection_tzq11e_a");
     editorCell.setBig(true);
     editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createProperty_tzq11e_a0());
+    editorCell.addEditorCell(createComponent_tzq11e_a0());
     editorCell.addEditorCell(createComponent_tzq11e_b0());
     editorCell.addEditorCell(createConstant_tzq11e_c0());
     editorCell.addEditorCell(createConstant_tzq11e_d0());
     return editorCell;
   }
-  private EditorCell createProperty_tzq11e_a0() {
-    CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
-    provider.setRole("name");
-    provider.setNoTargetText("<no name>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(getEditorContext());
-    editorCell.setCellId("property_name");
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
+  private EditorCell createComponent_tzq11e_a0() {
+    EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "Facts.editor.NameWithUnderlining");
     return editorCell;
   }
   private EditorCell createComponent_tzq11e_b0() {

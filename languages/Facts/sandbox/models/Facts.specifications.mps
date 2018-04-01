@@ -263,11 +263,6 @@
           <ref role="34pkC4" node="3e11SfRJBHk" resolve="werknemer" />
         </node>
       </node>
-      <node concept="21QOSU" id="1JuR_5SJrL8" role="21QOUd">
-        <node concept="34pkC5" id="1JuR_5SJrLe" role="21Rr83">
-          <ref role="34pkC4" node="3e11SfRJBHv" resolve="burgerservicenummer" />
-        </node>
-      </node>
       <node concept="1yPtZP" id="62x9OGxSouY" role="2WHaR8">
         <property role="TrG5h" value="geldig van" />
         <property role="34caxH" value="true" />
@@ -476,6 +471,11 @@
     </node>
     <node concept="2WHaQ2" id="4cztqInRNFS" role="2WHal$">
       <property role="TrG5h" value="Aanpassing van de arbeidsduur" />
+      <node concept="2WHaRd" id="4cztqInRNYY" role="2WHaR8">
+        <property role="TrG5h" value="verzoek aanpassing arbeidsduur" />
+        <property role="34uzBG" value="een" />
+        <ref role="2WHaRc" node="4cztqInRNYH" resolve="Verzoek aanpassing arbeidsduur" />
+      </node>
       <node concept="21QOSU" id="11Ir3EVRzlK" role="21QOUd">
         <node concept="34pkC5" id="11Ir3EVRzlR" role="21Rr83">
           <ref role="34pkC4" node="4cztqInRNYY" resolve="verzoek aanpassing arbeidsduur" />
@@ -518,25 +518,12 @@
         <property role="TrG5h" value="werkgever" />
         <ref role="2WHaRc" node="3MspsB8eG6p" resolve="Werkgever" />
       </node>
-      <node concept="2WHaRd" id="4cztqInRNYY" role="2WHaR8">
-        <property role="TrG5h" value="verzoek aanpassing arbeidsduur" />
-        <property role="34uzBG" value="een" />
-        <ref role="2WHaRc" node="4cztqInRNYH" resolve="Verzoek aanpassing arbeidsduur" />
-      </node>
       <node concept="2WHaRd" id="4cztqInRNXY" role="2WHaR8">
         <property role="TrG5h" value="arbeidsovereenkomst" />
         <ref role="2WHaRc" node="4cztqInRNGP" resolve="Arbeidsovereenkomst" />
       </node>
       <node concept="2WGKwB" id="4cztqInRNY3" role="2WHaR8">
         <property role="TrG5h" value="datum indienen verzoek" />
-      </node>
-      <node concept="21QOSU" id="4cztqInRO1e" role="21QOUd">
-        <node concept="34pkC5" id="4cztqInRO1i" role="21Rr83">
-          <ref role="34pkC4" node="4cztqInRNXY" resolve="arbeidsovereenkomst" />
-        </node>
-        <node concept="34pkC5" id="4cztqInRO1o" role="21Rr83">
-          <ref role="34pkC4" node="4cztqInRNY3" resolve="datum indienen verzoek" />
-        </node>
       </node>
     </node>
     <node concept="2WHaQ2" id="4cztqInRO1s" role="2WHal$">
@@ -626,14 +613,6 @@
         </node>
         <node concept="34qYQU" id="4cztqInRO5t" role="34rq46">
           <ref role="34qYQT" node="4cztqInRO4f" resolve="postcodeLetters" />
-        </node>
-      </node>
-      <node concept="21QOSU" id="4cztqInRO4j" role="21QOUd">
-        <node concept="34pkC5" id="4cztqInRO4n" role="21Rr83">
-          <ref role="34pkC4" node="4cztqInRO49" resolve="postcodeNummer" />
-        </node>
-        <node concept="34pkC5" id="4cztqInRO4t" role="21Rr83">
-          <ref role="34pkC4" node="4cztqInRO4f" resolve="postcodeLetters" />
         </node>
       </node>
       <node concept="2WHaRa" id="4cztqInRO49" role="2WHaR8">

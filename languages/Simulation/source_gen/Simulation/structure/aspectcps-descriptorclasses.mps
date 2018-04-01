@@ -2753,7 +2753,7 @@
                     <node concept="liA8E" id="f6" role="2OqNvi">
                       <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.optional(boolean):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="optional" />
                       <node concept="3clFbT" id="fg" role="37wK5m">
-                        <property role="3clFbU" value="true" />
+                        <property role="3clFbU" value="false" />
                       </node>
                     </node>
                   </node>
@@ -2820,7 +2820,7 @@
                     <node concept="liA8E" id="fu" role="2OqNvi">
                       <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.optional(boolean):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="optional" />
                       <node concept="3clFbT" id="fC" role="37wK5m">
-                        <property role="3clFbU" value="true" />
+                        <property role="3clFbU" value="false" />
                       </node>
                     </node>
                   </node>

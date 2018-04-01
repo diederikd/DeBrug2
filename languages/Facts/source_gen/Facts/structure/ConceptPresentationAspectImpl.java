@@ -24,6 +24,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Enumeration;
   private ConceptPresentation props_EnumerationType;
   private ConceptPresentation props_EnumerationValue;
+  private ConceptPresentation props_EventDateTime;
   private ConceptPresentation props_Fact;
   private ConceptPresentation props_FactBase;
   private ConceptPresentation props_FactModel;
@@ -174,6 +175,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EnumerationValue = cpb.create();
         }
         return props_EnumerationValue;
+      case LanguageConceptSwitch.EventDateTime:
+        if (props_EventDateTime == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_EventDateTime = cpb.create();
+        }
+        return props_EventDateTime;
       case LanguageConceptSwitch.Fact:
         if (props_Fact == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

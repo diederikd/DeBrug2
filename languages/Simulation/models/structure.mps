@@ -119,14 +119,14 @@
       <property role="IQ2ns" value="1184002751553600234" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ValueTypeSelection" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="11Ir3EV4TbG" resolve="ValueTypeSelection" />
     </node>
     <node concept="1TJgyj" id="11Ir3EV4TbL" role="1TKVEi">
       <property role="IQ2ns" value="1184002751547544305" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="EntityTypeSelection" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="11Ir3EV4TbJ" resolve="EntityTypeSelection" />
     </node>
     <node concept="PrWs8" id="11Ir3EVxysQ" role="PzmwI">

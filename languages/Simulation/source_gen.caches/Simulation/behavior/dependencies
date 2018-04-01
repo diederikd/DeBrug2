@@ -53,6 +53,7 @@
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="Simulation.behavior.Selection__BehaviorDescriptor" file="Selection__BehaviorDescriptor.java">
+    <classNode dependClassName="Facts.behavior.Role__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Object" />

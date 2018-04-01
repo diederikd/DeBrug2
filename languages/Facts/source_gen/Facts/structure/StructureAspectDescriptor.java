@@ -29,6 +29,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEnumeration = createDescriptorForEnumeration();
   /*package*/ final ConceptDescriptor myConceptEnumerationType = createDescriptorForEnumerationType();
   /*package*/ final ConceptDescriptor myConceptEnumerationValue = createDescriptorForEnumerationValue();
+  /*package*/ final ConceptDescriptor myConceptEventDateTime = createDescriptorForEventDateTime();
   /*package*/ final ConceptDescriptor myConceptFact = createDescriptorForFact();
   /*package*/ final ConceptDescriptor myConceptFactBase = createDescriptorForFactBase();
   /*package*/ final ConceptDescriptor myConceptFactModel = createDescriptorForFactModel();
@@ -76,7 +77,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptConcept, myConceptDateType, myConceptDateValue, myConceptDatetimeType, myConceptDatetimeValue, myConceptEntity, myConceptEntitySelection, myConceptEntityTable, myConceptEntityType, myConceptEntityTypeInRole, myConceptEntityTypeReference, myConceptEntityValue, myConceptEnumeration, myConceptEnumerationType, myConceptEnumerationValue, myConceptFact, myConceptFactBase, myConceptFactModel, myConceptFactTable, myConceptFactType, myConceptFactTypeInRole, myConceptFactTypeWord, myConceptFactTypeWordRole, myConceptFactTypeWordVerb, myConceptFactTypeWording, myConceptFactValue, myConceptFactWord, myConceptFactWordRole, myConceptFactWordText, myConceptFactWordValue, myConceptFactWordVerb, myConceptFactWording, myConceptIdentifier, myConceptInstance, myConceptIntegerType, myConceptIntegerValue, myConceptKnownAt, myConceptRole, myConceptRoleReference, myConceptRoleReferenceExpression, myConceptRoleReferenceOperation, myConceptRoleType, myConceptRoleTypeEntityType, myConceptRoleTypeValueType, myConceptSpecializes, myConceptStringType, myConceptStringValue, myConceptTimeType, myConceptTimeValue, myConceptValidityFrom, myConceptValidityTo, myConceptValue, myConceptValueType, myConceptVariable);
+    return Arrays.asList(myConceptConcept, myConceptDateType, myConceptDateValue, myConceptDatetimeType, myConceptDatetimeValue, myConceptEntity, myConceptEntitySelection, myConceptEntityTable, myConceptEntityType, myConceptEntityTypeInRole, myConceptEntityTypeReference, myConceptEntityValue, myConceptEnumeration, myConceptEnumerationType, myConceptEnumerationValue, myConceptEventDateTime, myConceptFact, myConceptFactBase, myConceptFactModel, myConceptFactTable, myConceptFactType, myConceptFactTypeInRole, myConceptFactTypeWord, myConceptFactTypeWordRole, myConceptFactTypeWordVerb, myConceptFactTypeWording, myConceptFactValue, myConceptFactWord, myConceptFactWordRole, myConceptFactWordText, myConceptFactWordValue, myConceptFactWordVerb, myConceptFactWording, myConceptIdentifier, myConceptInstance, myConceptIntegerType, myConceptIntegerValue, myConceptKnownAt, myConceptRole, myConceptRoleReference, myConceptRoleReferenceExpression, myConceptRoleReferenceOperation, myConceptRoleType, myConceptRoleTypeEntityType, myConceptRoleTypeValueType, myConceptSpecializes, myConceptStringType, myConceptStringValue, myConceptTimeType, myConceptTimeValue, myConceptValidityFrom, myConceptValidityTo, myConceptValue, myConceptValueType, myConceptVariable);
   }
 
   @Override
@@ -113,6 +114,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptEnumerationType;
       case LanguageConceptSwitch.EnumerationValue:
         return myConceptEnumerationValue;
+      case LanguageConceptSwitch.EventDateTime:
+        return myConceptEventDateTime;
       case LanguageConceptSwitch.Fact:
         return myConceptFact;
       case LanguageConceptSwitch.FactBase:
@@ -323,6 +326,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Facts.structure.Value", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d415aL);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/4837839804575977994");
     b.associate("value", 0x432375ab97ff120bL).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df4163L).optional(false).origin("4837839804575977995").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForEventDateTime() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Facts", "EventDateTime", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x337a9c0102b948b5L);
+    b.class_(false, false, false);
+    b.super_("Facts.structure.DatetimeType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab98050cb7L);
+    b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/3709448771247622325");
+    b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFact() {
