@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="Position.Language" file="Language.java">
+    <classNode dependClassName="Position.actions.ActionAspectDescriptorImpl" />
     <classNode dependClassName="Position.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="Position.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="Position.editor.EditorAspectDescriptorImpl" />
@@ -14,6 +15,7 @@
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
