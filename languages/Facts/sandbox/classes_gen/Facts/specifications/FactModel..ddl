@@ -118,23 +118,20 @@ arbeidsovereenkomst MEDIUMINT NOT NULL ,
 INDEX (arbeidsovereenkomst), 
 FOREIGN KEY (arbeidsovereenkomst) REFERENCES Entity_Arbeidsovereenkomst(Id),
 datum_in_dienst DATE,
-datum_van_tekenen_arbeidscontract DATE,
-arbeidsduurperiode MEDIUMINT NOT NULL ,
-INDEX (arbeidsduurperiode), 
-FOREIGN KEY (arbeidsduurperiode) REFERENCES Entity_Arbeidsduurperiode_van_de_arbeidsovereenkomst(Id)
+datum_van_tekenen_arbeidscontract DATE
 , PRIMARY KEY (Id));
 
 CREATE TABLE IF NOT EXISTS test.Fact_Aanpassing_van_de_arbeidsduur
 (Id MEDIUMINT,
+verzoek_aanpassing_arbeidsduur MEDIUMINT NOT NULL ,
+INDEX (verzoek_aanpassing_arbeidsduur), 
+FOREIGN KEY (verzoek_aanpassing_arbeidsduur) REFERENCES Entity_Verzoek_aanpassing_arbeidsduur(Id),
 werknemer MEDIUMINT NOT NULL ,
 INDEX (werknemer), 
 FOREIGN KEY (werknemer) REFERENCES Entity_Werknemer(Id),
 werkgever MEDIUMINT NOT NULL ,
 INDEX (werkgever), 
 FOREIGN KEY (werkgever) REFERENCES Entity_Werkgever(Id),
-verzoek_aanpassing_arbeidsduur MEDIUMINT NOT NULL ,
-INDEX (verzoek_aanpassing_arbeidsduur), 
-FOREIGN KEY (verzoek_aanpassing_arbeidsduur) REFERENCES Entity_Verzoek_aanpassing_arbeidsduur(Id),
 arbeidsovereenkomst MEDIUMINT NOT NULL ,
 INDEX (arbeidsovereenkomst), 
 FOREIGN KEY (arbeidsovereenkomst) REFERENCES Entity_Arbeidsovereenkomst(Id),
@@ -143,13 +140,13 @@ datum_indienen_verzoek DATE
 
 CREATE TABLE IF NOT EXISTS test.Fact_Arbeidsduurperiode_van_arbeidsovereenkomst
 (Id MEDIUMINT,
-arbeidsduurperiode MEDIUMINT NOT NULL ,
-INDEX (arbeidsduurperiode), 
-FOREIGN KEY (arbeidsduurperiode) REFERENCES Entity_Arbeidsduurperiode_van_de_arbeidsovereenkomst(Id),
+arbeidsovereenkomst MEDIUMINT NOT NULL ,
+INDEX (arbeidsovereenkomst), 
+FOREIGN KEY (arbeidsovereenkomst) REFERENCES Entity_Arbeidsovereenkomst(Id),
 arbeidsduur INT,
-spreiding_van_de_arbeidsduurperiode MEDIUMINT NOT NULL ,
-INDEX (spreiding_van_de_arbeidsduurperiode), 
-FOREIGN KEY (spreiding_van_de_arbeidsduurperiode) REFERENCES Entity_Spreiding(Id),
+spreiding_van_de_arbeidsduur MEDIUMINT NOT NULL ,
+INDEX (spreiding_van_de_arbeidsduur), 
+FOREIGN KEY (spreiding_van_de_arbeidsduur) REFERENCES Entity_Spreiding(Id),
 datum_geldig_van DATE,
 datum_geldig_tot DATE
 , PRIMARY KEY (Id));

@@ -10,9 +10,9 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Concept;
+  private ConceptPresentation props_DateTimeType;
   private ConceptPresentation props_DateType;
   private ConceptPresentation props_DateValue;
-  private ConceptPresentation props_DatetimeType;
   private ConceptPresentation props_DatetimeValue;
   private ConceptPresentation props_Entity;
   private ConceptPresentation props_EntitySelection;
@@ -77,6 +77,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Concept = cpb.create();
         }
         return props_Concept;
+      case LanguageConceptSwitch.DateTimeType:
+        if (props_DateTimeType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_DateTimeType = cpb.create();
+        }
+        return props_DateTimeType;
       case LanguageConceptSwitch.DateType:
         if (props_DateType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -91,13 +98,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DateValue = cpb.create();
         }
         return props_DateValue;
-      case LanguageConceptSwitch.DatetimeType:
-        if (props_DatetimeType == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_DatetimeType = cpb.create();
-        }
-        return props_DatetimeType;
       case LanguageConceptSwitch.DatetimeValue:
         if (props_DatetimeValue == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

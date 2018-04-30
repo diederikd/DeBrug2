@@ -10,9 +10,9 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int Concept = 0;
-  public static final int DateType = 1;
-  public static final int DateValue = 2;
-  public static final int DatetimeType = 3;
+  public static final int DateTimeType = 1;
+  public static final int DateType = 2;
+  public static final int DateValue = 3;
   public static final int DatetimeValue = 4;
   public static final int Entity = 5;
   public static final int EntitySelection = 6;
@@ -68,9 +68,9 @@ public final class LanguageConceptSwitch {
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x2aacdfbf487f43acL, 0xa43119468403f2c5L);
     builder.put(0xe475eafb2f3f32cL, Concept);
+    builder.put(0x432375ab98050cb7L, DateTimeType);
     builder.put(0xe475eafb2f45688L, DateType);
     builder.put(0xe475eafb30e53bcL, DateValue);
-    builder.put(0x432375ab98050cb7L, DatetimeType);
     builder.put(0x432375ab9804ef36L, DatetimeValue);
     builder.put(0xab4c0de8e6a127fL, Entity);
     builder.put(0x1dfdebe1e8c418e7L, EntitySelection);

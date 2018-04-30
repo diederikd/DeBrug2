@@ -576,29 +576,8 @@
         </node>
       </node>
     </node>
-    <node concept="3EZMnI" id="4cztqIn9YS3" role="6VMZX">
-      <node concept="l2Vlx" id="4cztqIn9YS4" role="2iSdaV" />
-      <node concept="3F0ifn" id="4cztqIn9YS9" role="3EZMnx">
-        <property role="3F0ifm" value="validity dates" />
-      </node>
-      <node concept="3F0ifn" id="4cztqIn9YSh" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-      </node>
-      <node concept="3F0A7n" id="4cztqIn9YSu" role="3EZMnx">
-        <ref role="1NtTu8" to="gq3g:4cztqIn5MPu" resolve="validity" />
-        <node concept="ljvvj" id="62x9OGxIGqH" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="4cztqInp5Vr" role="3EZMnx">
-        <property role="3F0ifm" value="date known" />
-      </node>
-      <node concept="3F0ifn" id="4cztqInp5W3" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-      </node>
-      <node concept="3F0A7n" id="4cztqInp5W$" role="3EZMnx">
-        <ref role="1NtTu8" to="gq3g:4cztqInp5Ws" resolve="known" />
-      </node>
+    <node concept="PMmxH" id="6fBfPkfaD6A" role="6VMZX">
+      <ref role="PMmxG" node="6fBfPkfaD6s" resolve="FactInspector" />
     </node>
   </node>
   <node concept="24kQdi" id="T7nEYMX0NZ">
@@ -824,6 +803,10 @@
       <node concept="Vb9p2" id="T7nEYMX3bn" role="3F10Kt">
         <property role="Vbekb" value="BOLD" />
       </node>
+    </node>
+    <node concept="14StLt" id="2NfjlCvcGYo" role="V601i">
+      <property role="TrG5h" value="Plain" />
+      <node concept="Vb9p2" id="2NfjlCvcJjU" role="3F10Kt" />
     </node>
     <node concept="14StLt" id="3e11SfRH5x9" role="V601i">
       <property role="TrG5h" value="Underlined" />
@@ -2678,7 +2661,7 @@
                 </node>
               </node>
               <node concept="Jncv_" id="1RXUY7C8l1F" role="3cqZAp">
-                <ref role="JncvD" to="gq3g:4cztqIo1gMR" resolve="DatetimeType" />
+                <ref role="JncvD" to="gq3g:4cztqIo1gMR" resolve="DateTimeType" />
                 <node concept="2OqwBi" id="1RXUY7C8l1G" role="JncvB">
                   <node concept="pncrf" id="1RXUY7C8l1H" role="2Oq$k0" />
                   <node concept="3TrEf2" id="1RXUY7C8l1I" role="2OqNvi">
@@ -3851,7 +3834,7 @@
   </node>
   <node concept="24kQdi" id="1JuR_5T1okm">
     <property role="3GE5qa" value="valuetypes" />
-    <ref role="1XX52x" to="gq3g:4cztqIo1gMR" resolve="DatetimeType" />
+    <ref role="1XX52x" to="gq3g:4cztqIo1gMR" resolve="DateTimeType" />
     <node concept="3EZMnI" id="1JuR_5T1oko" role="2wV5jI">
       <node concept="PMmxH" id="11Ir3EW9nrQ" role="3EZMnx">
         <ref role="PMmxG" node="11Ir3EW9mla" resolve="NameWithUnderlining" />
@@ -3873,7 +3856,7 @@
   </node>
   <node concept="24kQdi" id="1JuR_5T1okH">
     <property role="3GE5qa" value="valuetypes" />
-    <ref role="1XX52x" to="gq3g:4cztqIo1gMR" resolve="DatetimeType" />
+    <ref role="1XX52x" to="gq3g:4cztqIo1gMR" resolve="DateTimeType" />
     <node concept="3EZMnI" id="1JuR_5T1okI" role="2wV5jI">
       <node concept="3F0A7n" id="1JuR_5T1okJ" role="3EZMnx">
         <ref role="1k5W1q" node="T7nEYMX2nS" resolve="Bold" />
@@ -3901,7 +3884,7 @@
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0ifn" id="1JuR_5T2K7c" role="3EZMnx">
-        <property role="3F0ifm" value="valid from" />
+        <property role="3F0ifm" value="valid from datetime" />
       </node>
       <node concept="l2Vlx" id="1JuR_5T2K75" role="2iSdaV" />
     </node>
@@ -3922,7 +3905,7 @@
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0ifn" id="1JuR_5T2K7$" role="3EZMnx">
-        <property role="3F0ifm" value="valid to" />
+        <property role="3F0ifm" value="valid to datetime" />
       </node>
       <node concept="l2Vlx" id="1JuR_5T2K7t" role="2iSdaV" />
     </node>
@@ -3940,7 +3923,7 @@
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0ifn" id="62x9OGxSoCc" role="3EZMnx">
-        <property role="3F0ifm" value="known at" />
+        <property role="3F0ifm" value="known at datetime" />
       </node>
       <node concept="l2Vlx" id="62x9OGxSoBM" role="2iSdaV" />
     </node>
@@ -5010,6 +4993,35 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="6fBfPkfaD6s">
+    <property role="TrG5h" value="FactInspector" />
+    <property role="3GE5qa" value="facttypes" />
+    <ref role="1XX52x" to="gq3g:T7nEYMWZcH" resolve="FactType" />
+    <node concept="3EZMnI" id="6fBfPkfaD6t" role="2wV5jI">
+      <node concept="l2Vlx" id="6fBfPkfaD6u" role="2iSdaV" />
+      <node concept="3F0ifn" id="6fBfPkfaD6v" role="3EZMnx">
+        <property role="3F0ifm" value="validity dates" />
+      </node>
+      <node concept="3F0ifn" id="6fBfPkfaD6w" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="6fBfPkfaD6x" role="3EZMnx">
+        <ref role="1NtTu8" to="gq3g:4cztqIn5MPu" resolve="validity" />
+        <node concept="ljvvj" id="6fBfPkfaD6y" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6fBfPkfaD6z" role="3EZMnx">
+        <property role="3F0ifm" value="date known" />
+      </node>
+      <node concept="3F0ifn" id="6fBfPkfaD6$" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="6fBfPkfaD6_" role="3EZMnx">
+        <ref role="1NtTu8" to="gq3g:4cztqInp5Ws" resolve="known" />
       </node>
     </node>
   </node>

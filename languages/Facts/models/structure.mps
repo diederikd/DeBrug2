@@ -661,24 +661,24 @@
   </node>
   <node concept="1TIwiD" id="4cztqIo1gMR">
     <property role="EcuMT" value="4837839804576369847" />
-    <property role="TrG5h" value="DatetimeType" />
+    <property role="TrG5h" value="DateTimeType" />
     <property role="3GE5qa" value="valuetypes" />
     <ref role="1TJDcQ" node="T7nEYMWZcJ" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="1JuR_5T2K6$">
     <property role="EcuMT" value="2008286925358301604" />
     <property role="TrG5h" value="ValidityFrom" />
-    <ref role="1TJDcQ" node="T7nEYMX5q8" resolve="DateType" />
+    <ref role="1TJDcQ" node="4cztqIo1gMR" resolve="DateTimeType" />
   </node>
   <node concept="1TIwiD" id="1JuR_5T2K6C">
     <property role="EcuMT" value="2008286925358301608" />
     <property role="TrG5h" value="ValidityTo" />
-    <ref role="1TJDcQ" node="T7nEYMX5q8" resolve="DateType" />
+    <ref role="1TJDcQ" node="4cztqIo1gMR" resolve="DateTimeType" />
   </node>
   <node concept="1TIwiD" id="62x9OGxSoB$">
     <property role="EcuMT" value="6962889702535956964" />
     <property role="TrG5h" value="KnownAt" />
-    <ref role="1TJDcQ" node="4cztqIo1gMR" resolve="DatetimeType" />
+    <ref role="1TJDcQ" node="4cztqIo1gMR" resolve="DateTimeType" />
   </node>
   <node concept="1TIwiD" id="62x9OGy0XnE">
     <property role="EcuMT" value="6962889702538204650" />
@@ -859,7 +859,7 @@
   <node concept="1TIwiD" id="3dUB042IkyP">
     <property role="EcuMT" value="3709448771247622325" />
     <property role="TrG5h" value="EventDateTime" />
-    <ref role="1TJDcQ" node="4cztqIo1gMR" resolve="DatetimeType" />
+    <ref role="1TJDcQ" node="4cztqIo1gMR" resolve="DateTimeType" />
   </node>
 </model>
 

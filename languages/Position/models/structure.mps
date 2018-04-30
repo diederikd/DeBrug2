@@ -65,6 +65,12 @@
     <node concept="PrWs8" id="3ezCu94$Jkc" role="PzmwI">
       <ref role="PrY4T" node="3ezCu94$Jkb" resolve="ISpecificationElement" />
     </node>
+    <node concept="1TJgyj" id="2NfjlCv3okF" role="1TKVEi">
+      <property role="IQ2ns" value="3228884507311310123" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="if" />
+      <ref role="20lvS9" node="2NfjlCv3okC" resolve="If" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3dUB042Hpzi">
     <property role="EcuMT" value="3709448771247380690" />
@@ -165,6 +171,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7y3pR7CNVYd" resolve="Transition" />
     </node>
+    <node concept="1TJgyj" id="2NfjlCv33mm" role="1TKVEi">
+      <property role="IQ2ns" value="3228884507311224214" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="if" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2NfjlCv3okC" resolve="If" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3ezCu94$nIJ">
     <property role="EcuMT" value="3720995710323227567" />
@@ -227,6 +240,73 @@
       <property role="2fHolG" value="B" />
       <property role="1uS6qv" value="B" />
       <property role="1uS6qo" value="beeindigt" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="34ZKWOcRMLO">
+    <property role="EcuMT" value="3548770316842904692" />
+    <property role="TrG5h" value="PowerType" />
+    <ref role="1TJDcQ" node="3dUB042H3VL" resolve="StateType" />
+    <node concept="1TJgyj" id="34ZKWOcSd3w" role="1TKVEi">
+      <property role="IQ2ns" value="3548770316843012320" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="action" />
+      <ref role="20lvS9" node="3ezCu94$Jkb" resolve="ISpecificationElement" />
+    </node>
+    <node concept="1TJgyj" id="2NfjlCvjJ_A" role="1TKVEi">
+      <property role="IQ2ns" value="3228884507315599718" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="immunity" />
+      <ref role="20lvS9" node="2NfjlCvjJ__" resolve="ImmunityType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="34ZKWOcVFUP">
+    <property role="EcuMT" value="3548770316843925173" />
+    <property role="TrG5h" value="ActionType" />
+    <ref role="1TJDcQ" node="3dUB042Ik6c" resolve="EventType" />
+    <node concept="PrWs8" id="34ZKWOcVFUQ" role="PzmwI">
+      <ref role="PrY4T" node="3ezCu94$Jkb" resolve="ISpecificationElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2NfjlCv2IsI">
+    <property role="EcuMT" value="3228884507311138606" />
+    <property role="TrG5h" value="Condition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2NfjlCv2IsJ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2NfjlCv3okC">
+    <property role="EcuMT" value="3228884507311310120" />
+    <property role="TrG5h" value="If" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2NfjlCv3okD" role="1TKVEi">
+      <property role="IQ2ns" value="3228884507311310121" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conditions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2NfjlCv2IsI" resolve="Condition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2NfjlCvfw7m">
+    <property role="EcuMT" value="3228884507314487766" />
+    <property role="TrG5h" value="ObligationType" />
+    <ref role="1TJDcQ" node="3dUB042H3VL" resolve="StateType" />
+    <node concept="1TJgyj" id="2NfjlCvg3JJ" role="1TKVEi">
+      <property role="IQ2ns" value="3228884507314633711" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="action" />
+      <ref role="20lvS9" node="3ezCu94$Jkb" resolve="ISpecificationElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2NfjlCvjJ__">
+    <property role="EcuMT" value="3228884507315599717" />
+    <property role="TrG5h" value="ImmunityType" />
+    <ref role="1TJDcQ" node="3dUB042H3VL" resolve="StateType" />
+    <node concept="1TJgyj" id="2NfjlCvjMub" role="1TKVEi">
+      <property role="IQ2ns" value="3228884507315611531" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="action" />
+      <ref role="20lvS9" node="3ezCu94$Jkb" resolve="ISpecificationElement" />
     </node>
   </node>
 </model>

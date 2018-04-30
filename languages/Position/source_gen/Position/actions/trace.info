@@ -1,19 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <root>
     <file name="ActionAspectDescriptorImpl.java">
-      <unit at="13,0,34,0" name="Position.actions.ActionAspectDescriptorImpl" />
+      <unit at="13,0,38,0" name="Position.actions.ActionAspectDescriptorImpl" />
     </file>
     <file name="QueriesGenerated.java">
       <unit at="6,0,8,0" name="Position.actions.QueriesGenerated" />
     </file>
   </root>
+  <root nodeRef="r:fdf7c547-6b35-46ab-8059-7acd92352bf7(Position.actions)/3228884507315884432">
+    <file name="CreateImmunity.java">
+      <node id="3228884507315912257" at="15,256,16,323" concept="0" />
+      <node id="3228884507315885510" at="16,323,17,321" concept="0" />
+      <node id="3228884507315885501" at="14,91,18,7" concept="1" />
+      <node id="3228884507315884433" at="14,0,20,0" concept="2" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="3228884507315885509" at="15,256,17,321" />
+      <scope id="3228884507315884433" at="14,91,18,7" />
+      <scope id="3228884507315884433" at="14,0,20,0">
+        <var name="enclosingNode" id="3228884507315884433" />
+        <var name="model" id="3228884507315884433" />
+        <var name="newNode" id="3228884507315884433" />
+        <var name="sampleNode" id="3228884507315884433" />
+      </scope>
+      <unit id="3228884507315884433" at="13,0,21,0" name="Position.actions.CreateImmunity$NodeFactory_3228884507315884433" />
+      <unit id="3228884507315884432" at="12,0,22,0" name="Position.actions.CreateImmunity" />
+    </file>
+  </root>
+  <root nodeRef="r:fdf7c547-6b35-46ab-8059-7acd92352bf7(Position.actions)/3548770316844625834">
+    <file name="CreateActionType.java">
+      <node id="3228884507315471729" at="22,258,23,318" concept="0" />
+      <node id="3548770316844643268" at="27,258,28,318" concept="0" />
+      <node id="3228884507315202123" at="32,257,33,317" concept="0" />
+      <node id="3228884507314914332" at="37,257,38,317" concept="0" />
+      <node id="3228884507315208943" at="42,257,43,317" concept="0" />
+      <node id="3228884507316527768" at="47,258,48,318" concept="0" />
+      <node id="3228884507316524321" at="50,7,51,0" concept="4" />
+      <node id="3228884507314914350" at="53,41,54,161" concept="3" />
+      <node id="3228884507314914360" at="56,21,57,296" concept="0" />
+      <node id="3228884507311857567" at="58,7,59,97" concept="0" />
+      <node id="3228884507315471720" at="21,344,24,9" concept="1" />
+      <node id="3548770316844635514" at="26,344,29,9" concept="1" />
+      <node id="3228884507315202114" at="31,344,34,9" concept="1" />
+      <node id="3228884507314914323" at="36,344,39,9" concept="1" />
+      <node id="3228884507315208934" at="41,344,44,9" concept="1" />
+      <node id="3228884507316527759" at="46,344,49,9" concept="1" />
+      <node id="3228884507314914348" at="53,0,56,0" concept="2" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3228884507315471710" at="20,91,25,7" concept="1" />
+      <node id="3548770316844625849" at="25,7,30,7" concept="1" />
+      <node id="3228884507315202104" at="30,7,35,7" concept="1" />
+      <node id="3228884507314914313" at="35,7,40,7" concept="1" />
+      <node id="3228884507315208924" at="40,7,45,7" concept="1" />
+      <node id="3228884507316527749" at="45,7,50,7" concept="1" />
+      <node id="3228884507314914341" at="51,0,58,7" concept="1" />
+      <node id="3548770316844625835" at="20,0,61,0" concept="2" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="3228884507315471728" at="22,258,23,318" />
+      <scope id="3548770316844635516" at="27,258,28,318" />
+      <scope id="3228884507315202122" at="32,257,33,317" />
+      <scope id="3228884507314914331" at="37,257,38,317" />
+      <scope id="3228884507315208942" at="42,257,43,317" />
+      <scope id="3228884507316527767" at="47,258,48,318" />
+      <scope id="3228884507314914349" at="53,41,54,161" />
+      <scope id="3228884507314914359" at="56,21,57,296" />
+      <scope id="3228884507315471719" at="21,344,24,9" />
+      <scope id="3548770316844625851" at="26,344,29,9" />
+      <scope id="3228884507315202113" at="31,344,34,9" />
+      <scope id="3228884507314914322" at="36,344,39,9" />
+      <scope id="3228884507315208933" at="41,344,44,9" />
+      <scope id="3228884507316527758" at="46,344,49,9" />
+      <scope id="3228884507314914348" at="53,0,56,0">
+        <var name="it" id="3228884507314914348" />
+      </scope>
+      <scope id="3548770316844625835" at="20,91,59,97" />
+      <scope id="3548770316844625835" at="20,0,61,0">
+        <var name="enclosingNode" id="3548770316844625835" />
+        <var name="model" id="3548770316844625835" />
+        <var name="newNode" id="3548770316844625835" />
+        <var name="sampleNode" id="3548770316844625835" />
+      </scope>
+      <unit id="3228884507314914348" at="52,210,56,7" name="Position.actions.CreateActionType$NodeFactory_3548770316844625835$1" />
+      <unit id="3548770316844625835" at="19,0,62,0" name="Position.actions.CreateActionType$NodeFactory_3548770316844625835" />
+      <unit id="3548770316844625834" at="18,0,63,0" name="Position.actions.CreateActionType" />
+    </file>
+  </root>
   <root nodeRef="r:fdf7c547-6b35-46ab-8059-7acd92352bf7(Position.actions)/453318985612516171">
     <file name="CreateTransition.java">
       <node id="453318985612516244" at="14,91,15,338" concept="0" />
-      <node id="453318985612516229" at="14,0,17,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="453318985612516229" at="14,0,17,0" concept="2" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
       <scope id="453318985612516229" at="14,91,15,338" />
       <scope id="453318985612516229" at="14,0,17,0">
         <var name="enclosingNode" id="453318985612516229" />
