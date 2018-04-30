@@ -139,8 +139,6 @@
         <child id="4837839804584272911" name="columns" index="3rnH6$" />
       </concept>
       <concept id="4837839804584250889" name="SQL.structure.COLUMNDEFINITION" flags="ng" index="3rnzIy">
-        <property id="4837839804592862497" name="notnull" index="3q8W2a" />
-        <property id="4837839804592862494" name="autoincrement" index="3q8W2P" />
         <child id="2008286925354192031" name="type" index="1z4Dbe" />
       </concept>
       <concept id="4837839804584250888" name="SQL.structure.INT" flags="ng" index="3rnzIz" />
@@ -256,9 +254,8 @@
       <property role="3rnzxn" value="test" />
       <node concept="3rnzIJ" id="4cztqIp1EGJ" role="3rnH6$">
         <property role="TrG5h" value="Id" />
-        <node concept="3q8W2S" id="4cztqIp1EGK" role="3rnyoh">
-          <property role="3q8W2P" value="true" />
-          <property role="3q8W2a" value="true" />
+        <node concept="3rnzIy" id="4t3va1VMpcj" role="3rnyoh">
+          <node concept="3q8W2S" id="4t3va1VMpcn" role="1z4Dbe" />
         </node>
       </node>
       <node concept="3rnzIJ" id="4cztqIoMvGu" role="3rnH6$">
@@ -391,7 +388,7 @@
     </node>
     <node concept="3aamgX" id="4cztqIoWZQ_" role="3aUrZf">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="gq3g:4cztqIo1gMR" resolve="DatetimeType" />
+      <ref role="30HIoZ" to="gq3g:4cztqIo1gMR" resolve="DateTimeType" />
       <node concept="j$656" id="4cztqIoWZQR" role="1lVwrX">
         <ref role="v9R2y" node="4cztqIoVYWG" resolve="reduce_DateTimeType" />
       </node>
@@ -1049,7 +1046,7 @@
   </node>
   <node concept="13MO4I" id="4cztqIoVYWG">
     <property role="TrG5h" value="reduce_DateTimeType" />
-    <ref role="3gUMe" to="gq3g:4cztqIo1gMR" resolve="DatetimeType" />
+    <ref role="3gUMe" to="gq3g:4cztqIo1gMR" resolve="DateTimeType" />
     <node concept="3rNaa3" id="4cztqIoVYWM" role="13RCb5">
       <node concept="raruj" id="4cztqIoVYWP" role="lGtFl" />
     </node>
@@ -1076,9 +1073,8 @@
       <property role="3rnzxn" value="test" />
       <node concept="3rnzIJ" id="4cztqIp0ft$" role="3rnH6$">
         <property role="TrG5h" value="Id" />
-        <node concept="3q8W2S" id="4cztqIp0ftM" role="3rnyoh">
-          <property role="3q8W2P" value="true" />
-          <property role="3q8W2a" value="true" />
+        <node concept="3rnzIy" id="4t3va1VMp_q" role="3rnyoh">
+          <node concept="3q8W2S" id="4t3va1VMp_u" role="1z4Dbe" />
         </node>
       </node>
       <node concept="3rnzIJ" id="4cztqIoZ7Wy" role="3rnH6$">

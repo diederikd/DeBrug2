@@ -5,9 +5,7 @@
     <use id="2aacdfbf-487f-43ac-a431-19468403f2c5" name="Facts" version="0" />
     <use id="0add5042-bc48-4352-832a-07af4f0e5913" name="DateTime" version="0" />
   </languages>
-  <imports>
-    <import index="omzz" ref="r:cc22989b-26c6-4ed6-8772-eb1e1adbac3c(Facts.specifications)" />
-  </imports>
+  <imports />
   <registry>
     <language id="2aacdfbf-487f-43ac-a431-19468403f2c5" name="Facts">
       <concept id="8156496465148705899" name="Facts.structure.Identifier" flags="ng" index="21QOSU">

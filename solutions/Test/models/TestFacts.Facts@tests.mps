@@ -6,7 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="2aacdfbf-487f-43ac-a431-19468403f2c5" name="Facts" version="0" />
     <use id="0add5042-bc48-4352-832a-07af4f0e5913" name="DateTime" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
   </languages>
   <imports>
@@ -84,6 +84,15 @@
         <reference id="771453498291786625" name="entitytype" index="24RHdv" />
         <child id="771453498291786627" name="entities" index="24RHdt" />
       </concept>
+      <concept id="3829032966747723778" name="Facts.structure.FactWordRole" flags="ng" index="domOK">
+        <reference id="3829032966747932322" name="role" index="dpzeg" />
+      </concept>
+      <concept id="3829032966747723779" name="Facts.structure.FactWordValue" flags="ng" index="domOL">
+        <reference id="3829032966753962125" name="value" index="dwzQZ" />
+      </concept>
+      <concept id="3829032966747723780" name="Facts.structure.FactWordVerb" flags="ng" index="domOQ">
+        <reference id="2161142751703828886" name="verb" index="3PMA9R" />
+      </concept>
       <concept id="1028895148592232595" name="Facts.structure.FactTable" flags="ng" index="2WGioW">
         <reference id="1028895148592232596" name="facttype" index="2WGioV" />
         <child id="1028895148592232598" name="facts" index="2WGioT" />
@@ -107,7 +116,9 @@
       <concept id="3711255831315372007" name="Facts.structure.FactWording" flags="ng" index="3bDP1$">
         <reference id="3711255831315372010" name="fact" index="3bDP1D" />
         <reference id="3711255831315372008" name="factTypeWording" index="3bDP1F" />
+        <child id="3829032966747724417" name="words" index="domYN" />
       </concept>
+      <concept id="5583795675249731552" name="Facts.structure.FactWordText" flags="ng" index="1kSGtP" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -174,125 +185,89 @@
         <node concept="2WGioW" id="rWgfCiE_e6" role="2WGWMT">
           <ref role="2WGioV" to="omzz:T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
           <node concept="3bDP1$" id="3e11SfSaiUL" role="3bDTgF">
-            <ref role="3bDP1D" node="3e11SfRObGp" resolve="[ ASML, Henk, 01-04-2000, null, 01-01-2017]" />
             <ref role="3bDP1F" to="omzz:4cztqInFIft" resolve="[werknemer, heeft met, werkgever, arbeidsovereenkomst, getekend op, datum van tekenen arbeidscontract, voor het in dienst komen op, datum in dienst]" />
+            <ref role="3bDP1D" node="U3O8mN7xYV" resolve="[ ASML, Diederik, 01-10-2000, null, 01-01-2017]" />
+            <node concept="domOK" id="4t3va1VOdXC" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInFIfF" />
+            </node>
+            <node concept="domOL" id="4t3va1VOdXE" role="domYN">
+              <ref role="dwzQZ" node="U3O8mN7xYZ" />
+            </node>
+            <node concept="domOQ" id="4t3va1VOdXF" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInFIfL" resolve="heeft met" />
+            </node>
+            <node concept="domOK" id="4t3va1VOdXG" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInL_Fi" />
+            </node>
+            <node concept="domOL" id="4t3va1VOdXI" role="domYN">
+              <ref role="dwzQZ" node="U3O8mN7xYX" />
+            </node>
+            <node concept="domOK" id="4t3va1VOdXJ" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInRNKU" />
+            </node>
+            <node concept="1kSGtP" id="4t3va1VOdXL" role="domYN">
+              <property role="TrG5h" value="Unknown" />
+            </node>
+            <node concept="domOQ" id="4t3va1VOdXM" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInL_Fu" resolve="getekend op" />
+            </node>
+            <node concept="domOK" id="4t3va1VOdXN" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInFIg4" />
+            </node>
+            <node concept="domOL" id="4t3va1VOdXP" role="domYN">
+              <ref role="dwzQZ" node="4cztqIo4tes" resolve="01-01-2017" />
+            </node>
+            <node concept="domOQ" id="4t3va1VOdXQ" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInRNLI" resolve="voor het in dienst komen op" />
+            </node>
+            <node concept="domOK" id="4t3va1VOdXR" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInRNWS" />
+            </node>
+            <node concept="domOL" id="4t3va1VOdXT" role="domYN">
+              <ref role="dwzQZ" node="U3O8mN7xZ1" resolve="01-10-2000" />
+            </node>
           </node>
           <node concept="3bDP1$" id="3e11SfSjQ9f" role="3bDTgF">
-            <ref role="3bDP1D" node="rWgfCiE_hh" resolve="[ Essent, Diederik, 01-02-2000, null, 01-01-2017]" />
             <ref role="3bDP1F" to="omzz:4cztqInFIft" resolve="[werknemer, heeft met, werkgever, arbeidsovereenkomst, getekend op, datum van tekenen arbeidscontract, voor het in dienst komen op, datum in dienst]" />
-          </node>
-          <node concept="2WGM88" id="rWgfCiE_hh" role="2WGioT">
-            <ref role="2WGM87" to="omzz:T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
-            <node concept="2WGM83" id="rWgfCiE_hi" role="2WGM80">
-              <ref role="2WGM82" to="omzz:T7nEYMX2mT" resolve="werkgever" />
-              <node concept="24RH9q" id="3e11SfR_123" role="2XiGH2">
-                <ref role="24RH9r" node="1Yhy$QcwDrE" resolve="Essent" />
-              </node>
+            <ref role="3bDP1D" node="U3O8mN7xYV" resolve="[ ASML, Diederik, 01-10-2000, null, 01-01-2017]" />
+            <node concept="domOK" id="4t3va1VOdY7" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInFIfF" />
             </node>
-            <node concept="2WGM83" id="rWgfCiE_hj" role="2WGM80">
-              <ref role="2WGM82" to="omzz:T7nEYMX2mY" resolve="werknemer" />
-              <node concept="24RH9q" id="3e11SfR$fUD" role="2XiGH2">
-                <ref role="24RH9r" node="1Yhy$QcwDzI" resolve="Diederik" />
-              </node>
+            <node concept="domOL" id="4t3va1VOdY9" role="domYN">
+              <ref role="dwzQZ" node="U3O8mN7xYZ" />
             </node>
-            <node concept="2WGM83" id="rWgfCiE_hk" role="2WGM80">
-              <ref role="2WGM82" to="omzz:T7nEYMX6_A" resolve="datum in dienst" />
-              <node concept="2XigOj" id="3e11SfRCKzg" role="2XiGH2">
-                <node concept="2B78Lw" id="3e11SfRCKzh" role="2Xi5h3">
-                  <property role="2B78LB" value="1" />
-                  <property role="2B78L_" value="2" />
-                  <property role="2B78LE" value="2000" />
-                </node>
-              </node>
+            <node concept="domOQ" id="4t3va1VOdYa" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInFIfL" resolve="heeft met" />
             </node>
-            <node concept="2WGM83" id="4cztqIo4tdQ" role="2WGM80">
-              <ref role="2WGM82" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
+            <node concept="domOK" id="4t3va1VOdYb" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInL_Fi" />
             </node>
-            <node concept="2WGM83" id="4cztqIo4tdU" role="2WGM80">
-              <ref role="2WGM82" to="omzz:4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
-              <node concept="2XigOj" id="4cztqIo4tdV" role="2XiGH2">
-                <node concept="2B78Lw" id="4cztqIo4tdW" role="2Xi5h3">
-                  <property role="2B78LB" value="1" />
-                  <property role="2B78L_" value="1" />
-                  <property role="2B78LE" value="2017" />
-                </node>
-              </node>
+            <node concept="domOL" id="4t3va1VOdYd" role="domYN">
+              <ref role="dwzQZ" node="U3O8mN7xYX" />
             </node>
-          </node>
-          <node concept="2WGM88" id="3e11SfRObGp" role="2WGioT">
-            <ref role="2WGM87" to="omzz:T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
-            <node concept="2WGM83" id="3e11SfRObGq" role="2WGM80">
-              <ref role="2WGM82" to="omzz:T7nEYMX2mT" resolve="werkgever" />
-              <node concept="24RH9q" id="3e11SfRObHh" role="2XiGH2">
-                <ref role="24RH9r" node="1Yhy$QcwDrT" resolve="ASML" />
-              </node>
+            <node concept="domOK" id="4t3va1VOdYe" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInRNKU" />
             </node>
-            <node concept="2WGM83" id="3e11SfRObGs" role="2WGM80">
-              <ref role="2WGM82" to="omzz:T7nEYMX2mY" resolve="werknemer" />
-              <node concept="24RH9q" id="3e11SfRObHm" role="2XiGH2">
-                <ref role="24RH9r" node="1Yhy$QcwTo6" resolve="Henk" />
-              </node>
+            <node concept="1kSGtP" id="4t3va1VOdYg" role="domYN">
+              <property role="TrG5h" value="Unknown" />
             </node>
-            <node concept="2WGM83" id="3e11SfRObGu" role="2WGM80">
-              <ref role="2WGM82" to="omzz:T7nEYMX6_A" resolve="datum in dienst" />
-              <node concept="2XigOj" id="3e11SfRObGv" role="2XiGH2">
-                <node concept="2B78Lw" id="3e11SfRObGw" role="2Xi5h3">
-                  <property role="2B78LB" value="1" />
-                  <property role="2B78L_" value="4" />
-                  <property role="2B78LE" value="2000" />
-                </node>
-              </node>
+            <node concept="domOQ" id="4t3va1VOdYh" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInL_Fu" resolve="getekend op" />
             </node>
-            <node concept="2WGM83" id="4cztqIo4te1" role="2WGM80">
-              <ref role="2WGM82" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
+            <node concept="domOK" id="4t3va1VOdYi" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInFIg4" />
             </node>
-            <node concept="2WGM83" id="4cztqIo4te5" role="2WGM80">
-              <ref role="2WGM82" to="omzz:4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
-              <node concept="2XigOj" id="4cztqIo4te6" role="2XiGH2">
-                <node concept="2B78Lw" id="4cztqIo4te7" role="2Xi5h3">
-                  <property role="2B78LB" value="1" />
-                  <property role="2B78L_" value="1" />
-                  <property role="2B78LE" value="2017" />
-                </node>
-              </node>
+            <node concept="domOL" id="4t3va1VOdYk" role="domYN">
+              <ref role="dwzQZ" node="4cztqIo4tes" resolve="01-01-2017" />
             </node>
-          </node>
-          <node concept="2WGM88" id="U3O8mN60VE" role="2WGioT">
-            <ref role="2WGM87" to="omzz:T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
-            <node concept="2WGM83" id="U3O8mN60VF" role="2WGM80">
-              <ref role="2WGM82" to="omzz:T7nEYMX2mT" resolve="werkgever" />
-              <node concept="24RH9q" id="U3O8mN60VG" role="2XiGH2">
-                <ref role="24RH9r" node="1Yhy$QcwDs1" resolve="Economica" />
-              </node>
+            <node concept="domOQ" id="4t3va1VOdYl" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInRNLI" resolve="voor het in dienst komen op" />
             </node>
-            <node concept="2WGM83" id="U3O8mN60VH" role="2WGM80">
-              <ref role="2WGM82" to="omzz:T7nEYMX2mY" resolve="werknemer" />
-              <node concept="24RH9q" id="U3O8mN60VI" role="2XiGH2">
-                <ref role="24RH9r" node="1Yhy$QcwTo6" resolve="Henk" />
-              </node>
+            <node concept="domOK" id="4t3va1VOdYm" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInRNWS" />
             </node>
-            <node concept="2WGM83" id="U3O8mN60VJ" role="2WGM80">
-              <ref role="2WGM82" to="omzz:T7nEYMX6_A" resolve="datum in dienst" />
-              <node concept="2XigOj" id="U3O8mN60VK" role="2XiGH2">
-                <node concept="2B78Lw" id="U3O8mN60VL" role="2Xi5h3">
-                  <property role="2B78LB" value="1" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LE" value="2009" />
-                </node>
-              </node>
-            </node>
-            <node concept="2WGM83" id="4cztqIo4tec" role="2WGM80">
-              <ref role="2WGM82" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
-            </node>
-            <node concept="2WGM83" id="4cztqIo4teg" role="2WGM80">
-              <ref role="2WGM82" to="omzz:4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
-              <node concept="2XigOj" id="4cztqIo4teh" role="2XiGH2">
-                <node concept="2B78Lw" id="4cztqIo4tei" role="2Xi5h3">
-                  <property role="2B78LB" value="1" />
-                  <property role="2B78L_" value="1" />
-                  <property role="2B78LE" value="2017" />
-                </node>
-              </node>
+            <node concept="domOL" id="4t3va1VOdYo" role="domYN">
+              <ref role="dwzQZ" node="U3O8mN7xZ1" resolve="01-10-2000" />
             </node>
           </node>
           <node concept="2WGM88" id="U3O8mN7xYV" role="2WGioT">
@@ -377,12 +352,90 @@
         <node concept="2WGioW" id="1Yhy$QcxVI0" role="2WGWMT">
           <ref role="2WGioV" to="omzz:T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
           <node concept="3bDP1$" id="1Yhy$QcxVI1" role="3bDTgF">
-            <ref role="3bDP1D" node="1Yhy$QcxVIb" resolve="[ ASML, Henk, 01-04-2000]" />
-            <ref role="3bDP1F" to="omzz:3e11SfS0lKq" resolve="[werknemer, is sinds, datum in dienst, in dienst bij, werkgever]" />
+            <ref role="3bDP1D" node="1Yhy$QcxVIb" resolve="[ ASML, Henk, 01-04-2000, null, 01-10-2000]" />
+            <ref role="3bDP1F" to="omzz:4cztqInFIft" resolve="[werknemer, heeft met, werkgever, arbeidsovereenkomst, getekend op, datum van tekenen arbeidscontract, voor het in dienst komen op, datum in dienst]" />
+            <node concept="domOK" id="4t3va1VMoLN" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInFIfF" />
+            </node>
+            <node concept="domOL" id="4t3va1VMoLP" role="domYN">
+              <ref role="dwzQZ" node="1Yhy$QcxVIf" />
+            </node>
+            <node concept="domOQ" id="4t3va1VMoLQ" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInFIfL" resolve="heeft met" />
+            </node>
+            <node concept="domOK" id="4t3va1VMoLR" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInL_Fi" />
+            </node>
+            <node concept="domOL" id="4t3va1VMoLT" role="domYN">
+              <ref role="dwzQZ" node="1Yhy$QcxVId" />
+            </node>
+            <node concept="domOK" id="4t3va1VMoLU" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInRNKU" />
+            </node>
+            <node concept="1kSGtP" id="4t3va1VMoLW" role="domYN">
+              <property role="TrG5h" value="Unknown" />
+            </node>
+            <node concept="domOQ" id="4t3va1VMoLX" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInL_Fu" resolve="getekend op" />
+            </node>
+            <node concept="domOK" id="4t3va1VMoLY" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInFIg4" />
+            </node>
+            <node concept="1kSGtP" id="4t3va1VMoM0" role="domYN">
+              <property role="TrG5h" value="Unknown" />
+            </node>
+            <node concept="domOQ" id="4t3va1VMoM1" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInRNLI" resolve="voor het in dienst komen op" />
+            </node>
+            <node concept="domOK" id="4t3va1VMoM2" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInRNWS" />
+            </node>
+            <node concept="domOL" id="4t3va1VMoM4" role="domYN">
+              <ref role="dwzQZ" node="1Yhy$QcxVIh" resolve="01-04-2000" />
+            </node>
           </node>
           <node concept="3bDP1$" id="1Yhy$QcxVI2" role="3bDTgF">
-            <ref role="3bDP1D" node="1Yhy$QcxVI3" resolve="[ Essent, Diederik, 01-02-2000]" />
-            <ref role="3bDP1F" to="omzz:3e11SfSjPDT" resolve="[werknemer, is in dienst bij, werkgever]" />
+            <ref role="3bDP1D" node="1Yhy$QcxVI3" resolve="[ Essent, Diederik, 01-02-2000, null, 01-10-2000]" />
+            <ref role="3bDP1F" to="omzz:4cztqInFIft" resolve="[werknemer, heeft met, werkgever, arbeidsovereenkomst, getekend op, datum van tekenen arbeidscontract, voor het in dienst komen op, datum in dienst]" />
+            <node concept="domOK" id="4t3va1VMoUG" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInFIfF" />
+            </node>
+            <node concept="domOL" id="4t3va1VMoUI" role="domYN">
+              <ref role="dwzQZ" node="1Yhy$QcxVI7" />
+            </node>
+            <node concept="domOQ" id="4t3va1VMoUJ" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInFIfL" resolve="heeft met" />
+            </node>
+            <node concept="domOK" id="4t3va1VMoUK" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInL_Fi" />
+            </node>
+            <node concept="domOL" id="4t3va1VMoUM" role="domYN">
+              <ref role="dwzQZ" node="1Yhy$QcxVI5" />
+            </node>
+            <node concept="domOK" id="4t3va1VMoUN" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInRNKU" />
+            </node>
+            <node concept="1kSGtP" id="4t3va1VMoUP" role="domYN">
+              <property role="TrG5h" value="Unknown" />
+            </node>
+            <node concept="domOQ" id="4t3va1VMoUQ" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInL_Fu" resolve="getekend op" />
+            </node>
+            <node concept="domOK" id="4t3va1VMoUR" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInFIg4" />
+            </node>
+            <node concept="1kSGtP" id="4t3va1VMoUT" role="domYN">
+              <property role="TrG5h" value="Unknown" />
+            </node>
+            <node concept="domOQ" id="4t3va1VMoUU" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInRNLI" resolve="voor het in dienst komen op" />
+            </node>
+            <node concept="domOK" id="4t3va1VMoUV" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInRNWS" />
+            </node>
+            <node concept="domOL" id="4t3va1VMoUX" role="domYN">
+              <ref role="dwzQZ" node="1Yhy$QcxVI9" resolve="01-02-2000" />
+            </node>
           </node>
           <node concept="2WGM88" id="1Yhy$QcxVI3" role="2WGioT">
             <ref role="2WGM87" to="omzz:T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
@@ -404,6 +457,19 @@
                 <node concept="2B78Lw" id="1Yhy$QcxVIa" role="2Xi5h3">
                   <property role="2B78LB" value="1" />
                   <property role="2B78L_" value="2" />
+                  <property role="2B78LE" value="2000" />
+                </node>
+              </node>
+            </node>
+            <node concept="2WGM83" id="4t3va1VMpd2" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
+            </node>
+            <node concept="2WGM83" id="4t3va1VMpd6" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
+              <node concept="2XigOj" id="4t3va1VMpd7" role="2XiGH2">
+                <node concept="2B78Lw" id="4t3va1VMpd8" role="2Xi5h3">
+                  <property role="2B78LB" value="1" />
+                  <property role="2B78L_" value="10" />
                   <property role="2B78LE" value="2000" />
                 </node>
               </node>
@@ -433,6 +499,19 @@
                 </node>
               </node>
             </node>
+            <node concept="2WGM83" id="4t3va1VMpdd" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
+            </node>
+            <node concept="2WGM83" id="4t3va1VMpdh" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
+              <node concept="2XigOj" id="4t3va1VMpdi" role="2XiGH2">
+                <node concept="2B78Lw" id="4t3va1VMpdj" role="2Xi5h3">
+                  <property role="2B78LB" value="1" />
+                  <property role="2B78L_" value="10" />
+                  <property role="2B78LE" value="2000" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="2WGM88" id="1Yhy$QcxVIj" role="2WGioT">
             <ref role="2WGM87" to="omzz:T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
@@ -455,6 +534,19 @@
                   <property role="2B78LB" value="1" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LE" value="2009" />
+                </node>
+              </node>
+            </node>
+            <node concept="2WGM83" id="4t3va1VMpdo" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
+            </node>
+            <node concept="2WGM83" id="4t3va1VMpds" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
+              <node concept="2XigOj" id="4t3va1VMpdt" role="2XiGH2">
+                <node concept="2B78Lw" id="4t3va1VMpdu" role="2Xi5h3">
+                  <property role="2B78LB" value="1" />
+                  <property role="2B78L_" value="10" />
+                  <property role="2B78LE" value="2000" />
                 </node>
               </node>
             </node>
@@ -511,6 +603,19 @@
               <property role="p6zMs" value="0" />
               <property role="LIFWd" value="ReadOnlyModelAccessor_zhpsf5_a0" />
             </node>
+            <node concept="2WGM83" id="4t3va1VMpdz" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
+            </node>
+            <node concept="2WGM83" id="4t3va1VMpdB" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
+              <node concept="2XigOj" id="4t3va1VMpdC" role="2XiGH2">
+                <node concept="2B78Lw" id="4t3va1VMpdD" role="2Xi5h3">
+                  <property role="2B78LB" value="1" />
+                  <property role="2B78L_" value="1" />
+                  <property role="2B78LE" value="2000" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="24RHdu" id="1Yhy$QcxVI$" role="24RH9p">
@@ -562,12 +667,90 @@
         <node concept="2WGioW" id="4cztqIn56IP" role="2WGWMT">
           <ref role="2WGioV" to="omzz:T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
           <node concept="3bDP1$" id="4cztqIn56IQ" role="3bDTgF">
-            <ref role="3bDP1D" node="4cztqIn56J0" resolve="[ ASML, Henk, 01-04-2000]" />
-            <ref role="3bDP1F" to="omzz:3e11SfS0lKq" resolve="[werknemer, is sinds, datum in dienst, in dienst bij, werkgever]" />
+            <ref role="3bDP1D" node="4cztqIn56J0" resolve="[ ASML, Henk, 01-04-2000, null, 10-10-2000]" />
+            <ref role="3bDP1F" to="omzz:4cztqInFIft" resolve="[werknemer, heeft met, werkgever, arbeidsovereenkomst, getekend op, datum van tekenen arbeidscontract, voor het in dienst komen op, datum in dienst]" />
+            <node concept="domOK" id="4t3va1VMpg$" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInFIfF" />
+            </node>
+            <node concept="domOL" id="4t3va1VMpgA" role="domYN">
+              <ref role="dwzQZ" node="4cztqIn56J4" />
+            </node>
+            <node concept="domOQ" id="4t3va1VMpgB" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInFIfL" resolve="heeft met" />
+            </node>
+            <node concept="domOK" id="4t3va1VMpgC" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInL_Fi" />
+            </node>
+            <node concept="domOL" id="4t3va1VMpgE" role="domYN">
+              <ref role="dwzQZ" node="4cztqIn56J2" />
+            </node>
+            <node concept="domOK" id="4t3va1VMpgF" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInRNKU" />
+            </node>
+            <node concept="1kSGtP" id="4t3va1VMpgH" role="domYN">
+              <property role="TrG5h" value="Unknown" />
+            </node>
+            <node concept="domOQ" id="4t3va1VMpgI" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInL_Fu" resolve="getekend op" />
+            </node>
+            <node concept="domOK" id="4t3va1VMpgJ" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInFIg4" />
+            </node>
+            <node concept="1kSGtP" id="4t3va1VMpgL" role="domYN">
+              <property role="TrG5h" value="Unknown" />
+            </node>
+            <node concept="domOQ" id="4t3va1VMpgM" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInRNLI" resolve="voor het in dienst komen op" />
+            </node>
+            <node concept="domOK" id="4t3va1VMpgN" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInRNWS" />
+            </node>
+            <node concept="domOL" id="4t3va1VMpgP" role="domYN">
+              <ref role="dwzQZ" node="4cztqIn56J6" resolve="01-04-2000" />
+            </node>
           </node>
           <node concept="3bDP1$" id="4cztqIn56IR" role="3bDTgF">
-            <ref role="3bDP1D" node="4cztqIn56IS" resolve="[ Essent, Diederik, 01-02-2000]" />
-            <ref role="3bDP1F" to="omzz:3e11SfSjPDT" resolve="[werknemer, is in dienst bij, werkgever]" />
+            <ref role="3bDP1D" node="4cztqIn56IS" resolve="[ Essent, Diederik, 01-02-2000, null, 10-10-2000]" />
+            <ref role="3bDP1F" to="omzz:4cztqInFIft" resolve="[werknemer, heeft met, werkgever, arbeidsovereenkomst, getekend op, datum van tekenen arbeidscontract, voor het in dienst komen op, datum in dienst]" />
+            <node concept="domOK" id="4t3va1VMphr" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInFIfF" />
+            </node>
+            <node concept="domOL" id="4t3va1VMpht" role="domYN">
+              <ref role="dwzQZ" node="4cztqIn56IW" />
+            </node>
+            <node concept="domOQ" id="4t3va1VMphu" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInFIfL" resolve="heeft met" />
+            </node>
+            <node concept="domOK" id="4t3va1VMphv" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInL_Fi" />
+            </node>
+            <node concept="domOL" id="4t3va1VMphx" role="domYN">
+              <ref role="dwzQZ" node="4cztqIn56IU" />
+            </node>
+            <node concept="domOK" id="4t3va1VMphy" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInRNKU" />
+            </node>
+            <node concept="1kSGtP" id="4t3va1VMph$" role="domYN">
+              <property role="TrG5h" value="Unknown" />
+            </node>
+            <node concept="domOQ" id="4t3va1VMph_" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInL_Fu" resolve="getekend op" />
+            </node>
+            <node concept="domOK" id="4t3va1VMphA" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInFIg4" />
+            </node>
+            <node concept="1kSGtP" id="4t3va1VMphC" role="domYN">
+              <property role="TrG5h" value="Unknown" />
+            </node>
+            <node concept="domOQ" id="4t3va1VMphD" role="domYN">
+              <ref role="3PMA9R" to="omzz:4cztqInRNLI" resolve="voor het in dienst komen op" />
+            </node>
+            <node concept="domOK" id="4t3va1VMphE" role="domYN">
+              <ref role="dpzeg" to="omzz:4cztqInRNWS" />
+            </node>
+            <node concept="domOL" id="4t3va1VMphG" role="domYN">
+              <ref role="dwzQZ" node="4cztqIn56IY" resolve="01-02-2000" />
+            </node>
           </node>
           <node concept="2WGM88" id="4cztqIn56IS" role="2WGioT">
             <ref role="2WGM87" to="omzz:T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
@@ -589,6 +772,19 @@
                 <node concept="2B78Lw" id="4cztqIn56IZ" role="2Xi5h3">
                   <property role="2B78LB" value="1" />
                   <property role="2B78L_" value="2" />
+                  <property role="2B78LE" value="2000" />
+                </node>
+              </node>
+            </node>
+            <node concept="2WGM83" id="4t3va1VMpiU" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
+            </node>
+            <node concept="2WGM83" id="4t3va1VMpiY" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
+              <node concept="2XigOj" id="4t3va1VMpiZ" role="2XiGH2">
+                <node concept="2B78Lw" id="4t3va1VMpj0" role="2Xi5h3">
+                  <property role="2B78LB" value="10" />
+                  <property role="2B78L_" value="10" />
                   <property role="2B78LE" value="2000" />
                 </node>
               </node>
@@ -618,6 +814,19 @@
                 </node>
               </node>
             </node>
+            <node concept="2WGM83" id="4t3va1VMpj5" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
+            </node>
+            <node concept="2WGM83" id="4t3va1VMpj9" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
+              <node concept="2XigOj" id="4t3va1VMpja" role="2XiGH2">
+                <node concept="2B78Lw" id="4t3va1VMpjb" role="2Xi5h3">
+                  <property role="2B78LB" value="10" />
+                  <property role="2B78L_" value="10" />
+                  <property role="2B78LE" value="2000" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="2WGM88" id="4cztqIn56J8" role="2WGioT">
             <ref role="2WGM87" to="omzz:T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
@@ -643,6 +852,19 @@
                 </node>
               </node>
             </node>
+            <node concept="2WGM83" id="4t3va1VMpjg" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
+            </node>
+            <node concept="2WGM83" id="4t3va1VMpjk" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
+              <node concept="2XigOj" id="4t3va1VMpjl" role="2XiGH2">
+                <node concept="2B78Lw" id="4t3va1VMpjm" role="2Xi5h3">
+                  <property role="2B78LB" value="10" />
+                  <property role="2B78L_" value="10" />
+                  <property role="2B78LE" value="2000" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="2WGM88" id="4cztqIn56Jg" role="2WGioT">
             <ref role="2WGM87" to="omzz:T7nEYMX2mL" resolve="Arbeidsovereenkomst" />
@@ -663,6 +885,19 @@
               <node concept="2XigOj" id="4cztqIn56Jm" role="2XiGH2">
                 <node concept="2B78Lw" id="4cztqIn56Jn" role="2Xi5h3">
                   <property role="2B78LB" value="1" />
+                  <property role="2B78L_" value="10" />
+                  <property role="2B78LE" value="2000" />
+                </node>
+              </node>
+            </node>
+            <node concept="2WGM83" id="4t3va1VMpjr" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInRNH5" resolve="arbeidsovereenkomst" />
+            </node>
+            <node concept="2WGM83" id="4t3va1VMpjv" role="2WGM80">
+              <ref role="2WGM82" to="omzz:4cztqInFIfY" resolve="datum van tekenen arbeidscontract" />
+              <node concept="2XigOj" id="4t3va1VMpjw" role="2XiGH2">
+                <node concept="2B78Lw" id="4t3va1VMpjx" role="2Xi5h3">
+                  <property role="2B78LB" value="10" />
                   <property role="2B78L_" value="10" />
                   <property role="2B78LE" value="2000" />
                 </node>

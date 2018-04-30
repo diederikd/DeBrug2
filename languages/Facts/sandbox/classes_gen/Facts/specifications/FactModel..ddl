@@ -23,39 +23,39 @@ DROP TABLE IF EXISTS Fact_Werkperiode;
 
 CREATE TABLE IF NOT EXISTS test.Entity_Persoon
 (Id MEDIUMINT
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Entity_Werknemer
 (Id MEDIUMINT
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Entity_Werkgever
 (Id MEDIUMINT
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Entity_Arbeidsovereenkomst
 (Id MEDIUMINT
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Entity_Verzoek_aanpassing_arbeidsduur
 (Id MEDIUMINT
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Entity_Postcodegebied
 (Id MEDIUMINT
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Entity_Arbeidsduurperiode_van_de_arbeidsovereenkomst
 (Id MEDIUMINT
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Entity_Spreiding
 (Id MEDIUMINT
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Entity_Werkperiode
 (Id MEDIUMINT
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Fact_WerknemerNummer
 (Id MEDIUMINT,
@@ -63,7 +63,7 @@ werknemer MEDIUMINT NOT NULL ,
 INDEX (werknemer), 
 FOREIGN KEY (werknemer) REFERENCES Entity_Werknemer(Id),
 werknemernummer INT
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Fact_WerknemerBSN
 (Id MEDIUMINT,
@@ -71,10 +71,10 @@ werknemer MEDIUMINT NOT NULL ,
 INDEX (werknemer), 
 FOREIGN KEY (werknemer) REFERENCES Entity_Werknemer(Id),
 burgerservicenummer VARCHAR (255),
-geldig_van DATE,
-geldig_tot DATE,
+geldig_van DATETIME,
+geldig_tot DATETIME,
 known_at DATETIME
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Fact_WerknemerNamen
 (Id MEDIUMINT,
@@ -83,7 +83,7 @@ INDEX (werknemer),
 FOREIGN KEY (werknemer) REFERENCES Entity_Werknemer(Id),
 voornaam VARCHAR (255),
 achternaam VARCHAR (255)
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Fact_WerkgeverNummer
 (Id MEDIUMINT,
@@ -91,7 +91,7 @@ werkgever MEDIUMINT NOT NULL ,
 INDEX (werkgever), 
 FOREIGN KEY (werkgever) REFERENCES Entity_Werkgever(Id),
 werkgevernummer INT
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Fact_WerkgeverInformatie
 (Id MEDIUMINT,
@@ -104,7 +104,7 @@ huisnummer VARCHAR (255),
 postcode MEDIUMINT NOT NULL ,
 INDEX (postcode), 
 FOREIGN KEY (postcode) REFERENCES Entity_Postcodegebied(Id)
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Fact_Arbeidsovereenkomst
 (Id MEDIUMINT,
@@ -119,7 +119,7 @@ INDEX (arbeidsovereenkomst),
 FOREIGN KEY (arbeidsovereenkomst) REFERENCES Entity_Arbeidsovereenkomst(Id),
 datum_in_dienst DATE,
 datum_van_tekenen_arbeidscontract DATE
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Fact_Aanpassing_van_de_arbeidsduur
 (Id MEDIUMINT,
@@ -136,7 +136,7 @@ arbeidsovereenkomst MEDIUMINT NOT NULL ,
 INDEX (arbeidsovereenkomst), 
 FOREIGN KEY (arbeidsovereenkomst) REFERENCES Entity_Arbeidsovereenkomst(Id),
 datum_indienen_verzoek DATE
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Fact_Arbeidsduurperiode_van_arbeidsovereenkomst
 (Id MEDIUMINT,
@@ -147,9 +147,9 @@ arbeidsduur INT,
 spreiding_van_de_arbeidsduur MEDIUMINT NOT NULL ,
 INDEX (spreiding_van_de_arbeidsduur), 
 FOREIGN KEY (spreiding_van_de_arbeidsduur) REFERENCES Entity_Spreiding(Id),
-datum_geldig_van DATE,
-datum_geldig_tot DATE
-, PRIMARY KEY (Id));
+datum_geldig_van DATETIME,
+datum_geldig_tot DATETIME
+);
 
 CREATE TABLE IF NOT EXISTS test.Fact_Postgebied_heeft_postcode
 (Id MEDIUMINT,
@@ -158,7 +158,7 @@ INDEX (postcodegebied),
 FOREIGN KEY (postcodegebied) REFERENCES Entity_Postcodegebied(Id),
 postcodeNummer VARCHAR (255),
 postcodeLetters VARCHAR (255)
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Fact_Spreiding
 (Id MEDIUMINT,
@@ -168,7 +168,7 @@ FOREIGN KEY (spreiding) REFERENCES Entity_Spreiding(Id),
 werkperiode MEDIUMINT NOT NULL ,
 INDEX (werkperiode), 
 FOREIGN KEY (werkperiode) REFERENCES Entity_Werkperiode(Id)
-, PRIMARY KEY (Id));
+);
 
 CREATE TABLE IF NOT EXISTS test.Fact_Werkperiode
 (Id MEDIUMINT,
@@ -178,7 +178,7 @@ FOREIGN KEY (werkperiode) REFERENCES Entity_Werkperiode(Id),
 dag ENUM('Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag', 'Zondag'),
 begintijd TIME,
 eindtijd TIME
-, PRIMARY KEY (Id));
+);
 DROP PROCEDURE IF EXISTS insert_4367477655964664204_1028895148592071771;
 DROP PROCEDURE IF EXISTS insert_4367477655964664204_3711255831308565286;
 DROP PROCEDURE IF EXISTS insert_4367477655964664217_1028895148592080288;
