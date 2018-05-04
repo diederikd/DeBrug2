@@ -567,7 +567,7 @@
               <node concept="2qgKlT" id="2NfjlCvaHzH" role="2OqNvi">
                 <ref role="37wK5l" to="k0ub:2NfjlCv5lD_" resolve="setNameOfKnown" />
                 <node concept="Xl_RD" id="2NfjlCvaHD3" role="37wK5m">
-                  <property role="Xl_RC" value="Uitgevoerd op" />
+                  <property role="Xl_RC" value="uitgevoerd op" />
                 </node>
               </node>
             </node>
