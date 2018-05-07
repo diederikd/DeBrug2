@@ -17,14 +17,14 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SConceptId" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
   </dependency>
-  <dependency className="Position.structure.LegalRelationType" file="LegalRelationType.java">
+  <dependency className="Position.structure.RelationType" file="RelationType.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.LinkedList" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
   </dependency>
-  <dependency className="Position.structure.LegalRelationType_PropertySupport" file="LegalRelationType_PropertySupport.java">
-    <classNode dependClassName="Position.structure.LegalRelationType" />
+  <dependency className="Position.structure.RelationType_PropertySupport" file="RelationType_PropertySupport.java">
+    <classNode dependClassName="Position.structure.RelationType" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Iterator" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />

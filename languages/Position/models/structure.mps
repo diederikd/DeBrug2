@@ -23,6 +23,8 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -56,11 +58,13 @@
   <node concept="1TIwiD" id="3dUB042H3VL">
     <property role="EcuMT" value="3709448771247292145" />
     <property role="TrG5h" value="StateType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="gq3g:T7nEYMWZcH" resolve="FactType" />
     <node concept="1TJgyi" id="3dUB042Id$w" role="1TKVEl">
       <property role="IQ2nx" value="3709448771247593760" />
       <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="3dUB042IdzH" resolve="LegalRelationType" />
+      <ref role="AX2Wp" node="3dUB042IdzH" resolve="RelationType" />
     </node>
     <node concept="PrWs8" id="3ezCu94$Jkc" role="PzmwI">
       <ref role="PrY4T" node="3ezCu94$Jkb" resolve="ISpecificationElement" />
@@ -68,7 +72,7 @@
     <node concept="1TJgyj" id="2NfjlCv3okF" role="1TKVEi">
       <property role="IQ2ns" value="3228884507311310123" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="if" />
+      <property role="20kJfa" value="validIf" />
       <ref role="20lvS9" node="2NfjlCv3okC" resolve="If" />
     </node>
   </node>
@@ -96,7 +100,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="statesAndEvents" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3ezCu94$Jkb" resolve="ISpecificationElement" />
+      <ref role="20lvS9" node="3dUB042H3VL" resolve="StateType" />
     </node>
     <node concept="PrWs8" id="3dUB042Ispt" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -113,7 +117,7 @@
     <ref role="1TJDcQ" to="gq3g:rWgfCiAtmw" resolve="EntityType" />
   </node>
   <node concept="AxPO7" id="3dUB042IdzH">
-    <property role="TrG5h" value="LegalRelationType" />
+    <property role="TrG5h" value="RelationType" />
     <property role="3lZH7k" value="custom" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="3dUB042IdzM" role="M5hS2">
@@ -174,7 +178,7 @@
     <node concept="1TJgyj" id="2NfjlCv33mm" role="1TKVEi">
       <property role="IQ2ns" value="3228884507311224214" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="if" />
+      <property role="20kJfa" value="validIf" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="2NfjlCv3okC" resolve="If" />
     </node>

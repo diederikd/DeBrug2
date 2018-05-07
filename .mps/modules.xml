@@ -9,6 +9,7 @@
       <modulePath path="$PROJECT_DIR$/languages/SQL/SQL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Simulation/Simulation.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/MenuPlugin/MenuPlugin.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Middeling/Middeling.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Position.sandbox/Position.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Position.sandbox2/Position.sandbox2.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Test/TestFacts.msd" folder="" />
