@@ -7,6 +7,7 @@
   </models>
   <sourcePath />
   <languageVersions>
+    <language slang="l:5517ea53-210f-4efd-b575-2cc53b802339:Expressions" version="0" />
     <language slang="l:2aacdfbf-487f-43ac-a431-19468403f2c5:Facts" version="0" />
     <language slang="l:1172cef3-0f89-4114-ad0e-f59cef2bbaa3:Position" version="-1" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />

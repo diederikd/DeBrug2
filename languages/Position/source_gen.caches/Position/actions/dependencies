@@ -3,6 +3,7 @@
   <dependency className="Position.actions.ActionAspectDescriptorImpl" file="ActionAspectDescriptorImpl.java">
     <classNode dependClassName="Position.actions.CreateActionType" />
     <classNode dependClassName="Position.actions.CreateImmunity" />
+    <classNode dependClassName="Position.actions.CreateMethod" />
     <classNode dependClassName="Position.actions.CreateTransition" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -16,7 +17,7 @@
   </dependency>
   <dependency className="Position.actions.CreateActionType" file="CreateActionType.java">
     <classNode dependClassName="Facts.behavior.FactType__BehaviorDescriptor" />
-    <classNode dependClassName="Position.behavior.EventType__BehaviorDescriptor" />
+    <classNode dependClassName="Position.behavior.ActionType__BehaviorDescriptor" />
     <classNode dependClassName="Position.behavior.StateType__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
@@ -30,6 +31,14 @@
   </dependency>
   <dependency className="Position.actions.CreateImmunity" file="CreateImmunity.java">
     <classNode dependClassName="Position.behavior.StateType__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.NodeFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="Position.actions.CreateMethod" file="CreateMethod.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.NodeFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />

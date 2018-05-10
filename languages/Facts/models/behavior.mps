@@ -364,6 +364,7 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
+      <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
   </registry>
   <node concept="13h7C7" id="EOKdUeu$ei">
@@ -2428,13 +2429,16 @@
           <node concept="2YIFZM" id="14SuKMpl$CV" role="3cqZAk">
             <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
             <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
-            <node concept="2OqwBi" id="14SuKMpl$VG" role="37wK5m">
-              <node concept="37vLTw" id="14SuKMpl$Ha" role="2Oq$k0">
-                <ref role="3cqZAo" node="14SuKMplzqf" resolve="factType" />
+            <node concept="2OqwBi" id="kqDFhLaxxb" role="37wK5m">
+              <node concept="2OqwBi" id="14SuKMpl$VG" role="2Oq$k0">
+                <node concept="37vLTw" id="14SuKMpl$Ha" role="2Oq$k0">
+                  <ref role="3cqZAo" node="14SuKMplzqf" resolve="factType" />
+                </node>
+                <node concept="3Tsc0h" id="14SuKMpl_8C" role="2OqNvi">
+                  <ref role="3TtcxE" to="gq3g:T7nEYMWZdB" resolve="roles" />
+                </node>
               </node>
-              <node concept="3Tsc0h" id="14SuKMpl_8C" role="2OqNvi">
-                <ref role="3TtcxE" to="gq3g:T7nEYMWZdB" resolve="roles" />
-              </node>
+              <node concept="1VAtEI" id="kqDFhLaBQH" role="2OqNvi" />
             </node>
           </node>
         </node>

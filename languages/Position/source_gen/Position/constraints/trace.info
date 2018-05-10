@@ -11,7 +11,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,43,0" name="Position.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,45,0" name="Position.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:959e6703-3f58-4d3e-b558-c47324f09f23(Position.constraints)/3228884507314626705">
@@ -254,7 +254,7 @@
       <node id="3720995710323352436" at="31,90,32,131" concept="4" />
       <node id="3720995710323352436" at="35,44,36,20" concept="5" />
       <node id="3720995710323352436" at="43,63,44,58" concept="5" />
-      <node id="3720995710323725551" at="48,54,49,576" concept="5" />
+      <node id="3720995710323725551" at="48,54,49,584" concept="5" />
       <node id="3720995710323352773" at="50,13,51,24" concept="5" />
       <node id="3720995710323352436" at="55,7,56,22" concept="5" />
       <node id="3720995710323352436" at="58,0,59,0" concept="6" trace="breakingNode_v9mdna_a0a0a0a0a1a0b0a1a2" />
@@ -270,7 +270,7 @@
       <scope id="3720995710323352436" at="26,36,27,138" />
       <scope id="3720995710323352436" at="35,44,36,20" />
       <scope id="3720995710323352436" at="43,63,44,58" />
-      <scope id="3720995710323725550" at="48,54,49,576" />
+      <scope id="3720995710323725550" at="48,54,49,584" />
       <scope id="3720995710323352436" at="26,0,29,0" />
       <scope id="3720995710323352436" at="34,0,38,0" />
       <scope id="3720995710323352436" at="42,0,46,0" />
@@ -290,56 +290,65 @@
       <unit id="3720995710323352436" at="25,0,60,0" name="Position.constraints.EventInRole_Constraints" />
     </file>
   </root>
-  <root nodeRef="r:959e6703-3f58-4d3e-b558-c47324f09f23(Position.constraints)/8683898245434164936">
-    <file name="EventType_Constraints.java">
-      <node id="8683898245434164936" at="18,34,19,136" concept="8" />
-      <node id="8683898245434164936" at="23,84,24,119" concept="4" />
-      <node id="8683898245434164936" at="27,37,28,20" concept="5" />
-      <node id="8683898245434164936" at="31,42,32,37" concept="4" />
-      <node id="8683898245435161055" at="33,276,34,647" concept="5" />
-      <node id="8683898245434165476" at="36,276,37,177" concept="5" />
-      <node id="8683898245435173105" at="39,273,40,479" concept="5" />
+  <root nodeRef="r:959e6703-3f58-4d3e-b558-c47324f09f23(Position.constraints)/6642019552193558137">
+    <file name="ActionType_Constraints.java">
+      <node id="6642019552193558137" at="18,35,19,137" concept="8" />
+      <node id="6642019552193558137" at="23,84,24,119" concept="4" />
+      <node id="6642019552193558137" at="27,37,28,20" concept="5" />
+      <node id="6642019552193558137" at="31,42,32,37" concept="4" />
+      <node id="8683898245435161055" at="33,277,34,649" concept="5" />
+      <node id="8683898245434165476" at="36,277,37,177" concept="5" />
+      <node id="8683898245435173105" at="39,274,40,481" concept="5" />
       <node id="8683898245435041583" at="41,9,42,41" concept="5" />
-      <node id="8683898245434164936" at="44,7,45,22" concept="5" />
+      <node id="6642019552193558137" at="44,7,45,22" concept="5" />
       <node id="8683898245435178920" at="47,55,48,43" concept="5" />
       <node id="8683898245435173130" at="50,52,51,44" concept="5" />
-      <node id="8683898245434164936" at="18,0,21,0" concept="0" trace="EventType_Constraints#()V" />
+      <node id="6642019552193558137" at="18,0,21,0" concept="0" trace="ActionType_Constraints#()V" />
       <node id="8683898245435161053" at="32,37,35,9" concept="2" />
       <node id="8683898245434979061" at="35,9,38,9" concept="2" />
       <node id="8683898245435173103" at="38,9,41,9" concept="2" />
       <node id="8683898245435178920" at="47,0,50,0" concept="7" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
       <node id="8683898245435173130" at="50,0,53,0" concept="7" trace="isEmptyString#(Ljava/lang/String;)Z" />
-      <node id="8683898245434164936" at="26,0,30,0" concept="3" trace="hasOwnGetter#()Z" />
-      <node id="8683898245434164936" at="30,0,44,0" concept="3" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
-      <node id="8683898245434164936" at="24,119,44,7" concept="1" />
-      <node id="8683898245434164936" at="22,0,47,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
-      <scope id="8683898245434164936" at="18,34,19,136" />
-      <scope id="8683898245434164936" at="27,37,28,20" />
-      <scope id="8683898245435161054" at="33,276,34,647" />
-      <scope id="8683898245434979063" at="36,276,37,177" />
-      <scope id="8683898245435173104" at="39,273,40,479" />
+      <node id="6642019552193558137" at="26,0,30,0" concept="3" trace="hasOwnGetter#()Z" />
+      <node id="6642019552193558137" at="30,0,44,0" concept="3" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="6642019552193558137" at="24,119,44,7" concept="1" />
+      <node id="6642019552193558137" at="22,0,47,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="6642019552193558137" at="18,35,19,137" />
+      <scope id="6642019552193558137" at="27,37,28,20" />
+      <scope id="8683898245435161054" at="33,277,34,649" />
+      <scope id="8683898245434979063" at="36,277,37,177" />
+      <scope id="8683898245435173104" at="39,274,40,481" />
       <scope id="8683898245435178920" at="47,55,48,43" />
       <scope id="8683898245435173130" at="50,52,51,44" />
-      <scope id="8683898245434164936" at="18,0,21,0" />
+      <scope id="6642019552193558137" at="18,0,21,0" />
       <scope id="8683898245435178920" at="47,0,50,0">
         <var name="str" id="8683898245435178920" />
       </scope>
       <scope id="8683898245435173130" at="50,0,53,0">
         <var name="str" id="8683898245435173130" />
       </scope>
-      <scope id="8683898245434164936" at="26,0,30,0" />
-      <scope id="8683898245434164936" at="31,42,42,41">
-        <var name="propertyName" id="8683898245434164936" />
+      <scope id="6642019552193558137" at="26,0,30,0" />
+      <scope id="6642019552193558137" at="31,42,42,41">
+        <var name="propertyName" id="6642019552193558137" />
       </scope>
-      <scope id="8683898245434164936" at="30,0,44,0">
-        <var name="node" id="8683898245434164936" />
+      <scope id="6642019552193558137" at="30,0,44,0">
+        <var name="node" id="6642019552193558137" />
       </scope>
-      <scope id="8683898245434164936" at="23,84,45,22">
-        <var name="properties" id="8683898245434164936" />
+      <scope id="6642019552193558137" at="23,84,45,22">
+        <var name="properties" id="6642019552193558137" />
       </scope>
-      <scope id="8683898245434164936" at="22,0,47,0" />
-      <unit id="8683898245434164936" at="25,137,44,5" name="Position.constraints.EventType_Constraints$1" />
-      <unit id="8683898245434164936" at="17,0,54,0" name="Position.constraints.EventType_Constraints" />
+      <scope id="6642019552193558137" at="22,0,47,0" />
+      <unit id="6642019552193558137" at="25,137,44,5" name="Position.constraints.ActionType_Constraints$1" />
+      <unit id="6642019552193558137" at="17,0,54,0" name="Position.constraints.ActionType_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:959e6703-3f58-4d3e-b558-c47324f09f23(Position.constraints)/8683898245434164936">
+    <file name="AbstractEventType_Constraints.java">
+      <node id="8683898245434164936" at="9,42,10,144" concept="8" />
+      <node id="8683898245434164936" at="9,0,12,0" concept="0" trace="AbstractEventType_Constraints#()V" />
+      <scope id="8683898245434164936" at="9,42,10,144" />
+      <scope id="8683898245434164936" at="9,0,12,0" />
+      <unit id="8683898245434164936" at="8,0,14,0" name="Position.constraints.AbstractEventType_Constraints" />
     </file>
   </root>
 </debug-info>
