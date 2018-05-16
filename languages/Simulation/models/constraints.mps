@@ -108,6 +108,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -130,6 +131,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="1RXUY7CL1$L">
+    <property role="3GE5qa" value="query" />
     <ref role="1M2myG" to="b26o:1RXUY7CL1zB" resolve="SelectedEntity" />
     <node concept="1X3_iC" id="6QhksddzLjL" role="lGtFl">
       <property role="3V$3am" value="referent" />
@@ -230,9 +232,11 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4k2VbN5fEap">
+    <property role="3GE5qa" value="query" />
     <ref role="1M2myG" to="b26o:5sq8N5jS3Ku" resolve="Selection" />
   </node>
   <node concept="1M2fIO" id="11Ir3EVgGN7">
+    <property role="3GE5qa" value="query" />
     <ref role="1M2myG" to="b26o:11Ir3EV4TbJ" resolve="EntityTypeSelection" />
     <node concept="1N5Pfh" id="11Ir3EVzhOG" role="1Mr941">
       <ref role="1N5Vy1" to="b26o:11Ir3EV4TbK" resolve="role" />
@@ -242,6 +246,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="11Ir3EVkyYw">
+    <property role="3GE5qa" value="query" />
     <ref role="1M2myG" to="b26o:11Ir3EV4TbG" resolve="ValueTypeSelection" />
     <node concept="1N5Pfh" id="11Ir3EVVsiU" role="1Mr941">
       <ref role="1N5Vy1" to="b26o:11Ir3EV4TbH" resolve="role" />

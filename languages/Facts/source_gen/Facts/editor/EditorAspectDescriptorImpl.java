@@ -112,7 +112,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       case 42:
         return Collections.<ConceptEditor>singletonList(new ValidityTo_Editor());
       case 43:
-        return Collections.<ConceptEditor>singletonList(new Variable_Editor());
+        return Arrays.asList(new ConceptEditor[]{new Variable_Editor(), new Variable_nameOnly_Editor()});
       default:
     }
     return Collections.<ConceptEditor>emptyList();

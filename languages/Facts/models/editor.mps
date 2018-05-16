@@ -991,14 +991,24 @@
   <node concept="24kQdi" id="T7nEYMX$rP">
     <property role="3GE5qa" value="facts" />
     <ref role="1XX52x" to="gq3g:T7nEYMX7MG" resolve="Variable" />
-    <node concept="3EZMnI" id="T7nEYMX$rR" role="2wV5jI">
-      <ref role="34QXea" node="3e11SfRRBAF" resolve="KeyMap_Variable" />
-      <node concept="l2Vlx" id="T7nEYMX$rU" role="2iSdaV" />
-      <node concept="3F1sOY" id="T7nEYN3pnN" role="3EZMnx">
-        <property role="1$x2rV" value="&lt;niet verplichte variabele&gt;" />
+    <node concept="3EZMnI" id="7UcEwUxvxEX" role="2wV5jI">
+      <node concept="l2Vlx" id="7UcEwUxvxEY" role="2iSdaV" />
+      <node concept="3F0ifn" id="7UcEwUxvxEZ" role="3EZMnx">
+        <property role="3F0ifm" value="variable" />
+      </node>
+      <node concept="1iCGBv" id="7UcEwUxvxF1" role="3EZMnx">
+        <ref role="1NtTu8" to="gq3g:T7nEYMX7MH" resolve="role" />
+        <node concept="1sVBvm" id="7UcEwUxvxF4" role="1sWHZn">
+          <node concept="3F0A7n" id="7UcEwUxvxF6" role="2wV5jI">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7UcEwUxvxG4" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="7UcEwUxvxFe" role="3EZMnx">
         <ref role="1NtTu8" to="gq3g:T7nEYN3pnH" resolve="value" />
-        <ref role="1ERwB7" node="3e11SfRLQ4r" resolve="ActionMap_Variable" />
-        <ref role="34QXea" node="3e11SfRRBAF" resolve="KeyMap_Variable" />
       </node>
     </node>
   </node>
@@ -5023,6 +5033,23 @@
       <node concept="3F0A7n" id="6fBfPkfaD6_" role="3EZMnx">
         <ref role="1NtTu8" to="gq3g:4cztqInp5Ws" resolve="known" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7UcEwUxvvkO">
+    <property role="3GE5qa" value="facts" />
+    <ref role="1XX52x" to="gq3g:T7nEYMX7MG" resolve="Variable" />
+    <node concept="3EZMnI" id="7UcEwUxvvkP" role="2wV5jI">
+      <ref role="34QXea" node="3e11SfRRBAF" resolve="KeyMap_Variable" />
+      <node concept="l2Vlx" id="7UcEwUxvvkQ" role="2iSdaV" />
+      <node concept="3F1sOY" id="7UcEwUxvvkR" role="3EZMnx">
+        <property role="1$x2rV" value="&lt;niet verplichte variabele&gt;" />
+        <ref role="1ERwB7" node="3e11SfRLQ4r" resolve="ActionMap_Variable" />
+        <ref role="34QXea" node="3e11SfRRBAF" resolve="KeyMap_Variable" />
+        <ref role="1NtTu8" to="gq3g:T7nEYN3pnH" resolve="value" />
+      </node>
+    </node>
+    <node concept="2aJ2om" id="7UcEwUxy1pU" role="CpUAK">
+      <ref role="2$4xQ3" node="74LG_7KW551" resolve="nameOnly" />
     </node>
   </node>
 </model>

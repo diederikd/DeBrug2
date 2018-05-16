@@ -196,6 +196,11 @@
       <property role="TrG5h" value="verb" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="5wmE0O1zYdW" role="1TKVEl">
+      <property role="IQ2nx" value="6347445498639541116" />
+      <property role="TrG5h" value="pastParticle" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="7y3pR7CNVZN" role="1TKVEi">
       <property role="IQ2ns" value="8683898245435342835" />
       <property role="20lmBu" value="aggregation" />
@@ -220,7 +225,7 @@
   </node>
   <node concept="1TIwiD" id="3ezCu94$nIJ">
     <property role="EcuMT" value="3720995710323227567" />
-    <property role="TrG5h" value="SubjectInRole" />
+    <property role="TrG5h" value="SubjectTypeInRole" />
     <ref role="1TJDcQ" to="gq3g:T7nEYMWZdy" resolve="EntityTypeInRole" />
   </node>
   <node concept="PlHQZ" id="3ezCu94$Jkb">
@@ -229,7 +234,7 @@
   </node>
   <node concept="1TIwiD" id="3ezCu94$PC8">
     <property role="EcuMT" value="3720995710323350024" />
-    <property role="TrG5h" value="ObjectInRole" />
+    <property role="TrG5h" value="ObjectTypeInRole" />
     <ref role="1TJDcQ" to="gq3g:T7nEYMWZdy" resolve="EntityTypeInRole" />
   </node>
   <node concept="1TIwiD" id="3ezCu94$QdN">
@@ -431,6 +436,36 @@
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" node="7y3pR7CNVZl" resolve="ChangeType" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7UcEwUxolsd">
+    <property role="EcuMT" value="9118850325332186893" />
+    <property role="TrG5h" value="State" />
+    <ref role="1TJDcQ" to="gq3g:T7nEYMX7MB" resolve="Fact" />
+    <node concept="1TJgyi" id="7UcEwUxA20N" role="1TKVEl">
+      <property role="IQ2nx" value="9118850325335777331" />
+      <property role="TrG5h" value="hidevariables" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wmE0O1Hwn$">
+    <property role="EcuMT" value="6347445498642040292" />
+    <property role="TrG5h" value="Action" />
+    <ref role="1TJDcQ" to="gq3g:T7nEYMX7MB" resolve="Fact" />
+    <node concept="1TJgyi" id="5wmE0O1Hwn_" role="1TKVEl">
+      <property role="IQ2nx" value="6347445498642040293" />
+      <property role="TrG5h" value="hidevariables" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="36gwYuexTR1">
+    <property role="EcuMT" value="3571499535056739777" />
+    <property role="TrG5h" value="ObjectValue" />
+    <ref role="1TJDcQ" to="gq3g:EOKdUeqxa4" resolve="EntityValue" />
+  </node>
+  <node concept="1TIwiD" id="36gwYuexTR2">
+    <property role="EcuMT" value="3571499535056739778" />
+    <property role="TrG5h" value="SubjectValue" />
+    <ref role="1TJDcQ" to="gq3g:EOKdUeqxa4" resolve="EntityValue" />
   </node>
 </model>
 

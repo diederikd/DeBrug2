@@ -207,7 +207,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="l" role="2OqNvi">
-                  <ref role="37wK5l" to="thx9:5vursKRvZal" resolve="geefDatumTijdString" />
+                  <ref role="37wK5l" to="thx9:5vursKRvZal" resolve="getDateTimeString" />
                 </node>
               </node>
             </node>

@@ -17,7 +17,6 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 /*package*/ class DateTime_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -44,8 +43,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
     editorCell.setBig(true);
     editorCell.setCellContext(getCellFactory().getCellContext());
     editorCell.addEditorCell(createRefNode_tsrqko_a0());
-    editorCell.addEditorCell(createConstant_tsrqko_b0());
-    editorCell.addEditorCell(createRefNode_tsrqko_c0());
+    editorCell.addEditorCell(createRefNode_tsrqko_b0());
     return editorCell;
   }
   private EditorCell createRefNode_tsrqko_a0() {
@@ -103,21 +101,15 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
       return "<no Datum>";
     }
   }
-  private EditorCell createConstant_tsrqko_b0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " ");
-    editorCell.setCellId("Constant_tsrqko_b0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefNode_tsrqko_c0() {
-    SingleRoleCellProvider provider = new DateTime_EditorBuilder_a.TijdSingleRoleHandler_tsrqko_c0(myNode, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd"), getEditorContext());
+  private EditorCell createRefNode_tsrqko_b0() {
+    SingleRoleCellProvider provider = new DateTime_EditorBuilder_a.TijdSingleRoleHandler_tsrqko_b0(myNode, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd"), getEditorContext());
     return provider.createCell();
   }
-  private static class TijdSingleRoleHandler_tsrqko_c0 extends SingleRoleCellProvider {
+  private static class TijdSingleRoleHandler_tsrqko_b0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public TijdSingleRoleHandler_tsrqko_c0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public TijdSingleRoleHandler_tsrqko_b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }

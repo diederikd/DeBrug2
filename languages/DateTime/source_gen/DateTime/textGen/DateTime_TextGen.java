@@ -11,6 +11,6 @@ public class DateTime_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append(DateTime__BehaviorDescriptor.geefDatumTijdString_id5vursKRvZal.invoke(ctx.getPrimaryInput()));
+    tgs.append(DateTime__BehaviorDescriptor.getDateTimeString_id5vursKRvZal.invoke(ctx.getPrimaryInput()));
   }
 }

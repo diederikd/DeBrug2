@@ -5,6 +5,11 @@
     <use id="1172cef3-0f89-4114-ad0e-f59cef2bbaa3" name="Position" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
+    <use id="2aacdfbf-487f-43ac-a431-19468403f2c5" name="Facts" version="0" />
+    <use id="f2b5f4c3-283f-45e7-932a-2eee84091ad4" name="Simulation" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="0add5042-bc48-4352-832a-07af4f0e5913" name="DateTime" version="0" />
   </languages>
   <imports>
     <import index="sriy" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#8ca79d43-eb45-4791-bdd4-0d6130ff895b(jetbrains.mps.lang.project.modules/module.de.itemis.mps.editor.diagram.layout@project_stub)" />
@@ -17,8 +22,26 @@
       <concept id="8156496465148772436" name="Facts.structure.FactTypeInRole" flags="ig" index="21Rr85">
         <reference id="8156496465148772437" name="facttype" index="21Rr84" />
       </concept>
+      <concept id="771453498291786372" name="Facts.structure.EntityValue" flags="ng" index="24RH9q">
+        <reference id="771453498291786373" name="value" index="24RH9r" />
+      </concept>
+      <concept id="771453498291786367" name="Facts.structure.Entity" flags="ng" index="24RHax">
+        <reference id="771453498291786368" name="entitytype" index="24RH9u" />
+      </concept>
+      <concept id="771453498291786624" name="Facts.structure.EntityTable" flags="ng" index="24RHdu">
+        <reference id="771453498291786625" name="entitytype" index="24RHdv" />
+        <child id="771453498291786627" name="entities" index="24RHdt" />
+      </concept>
       <concept id="503348701156726176" name="Facts.structure.EntityType" flags="ng" index="kpplq">
         <property id="3711255831312432612" name="article" index="34u7DB" />
+      </concept>
+      <concept id="1028895148592102572" name="Facts.structure.Variable" flags="ng" index="2WGM83">
+        <reference id="1028895148592102573" name="role" index="2WGM82" />
+        <child id="1028895148593747437" name="value" index="2XiGH2" />
+      </concept>
+      <concept id="1028895148592102567" name="Facts.structure.Fact" flags="ng" index="2WGM88">
+        <reference id="1028895148592102568" name="facttype" index="2WGM87" />
+        <child id="1028895148592102575" name="variabeles" index="2WGM80" />
       </concept>
       <concept id="1028895148592067374" name="Facts.structure.Role" flags="ig" index="2WHaQ1">
         <property id="3711255831307726830" name="mandatory" index="34caxH" />
@@ -48,8 +71,31 @@
       </concept>
       <concept id="3711255831312269236" name="Facts.structure.FactTypeWordVerb" flags="ng" index="34tZwR" />
       <concept id="4837839804576369847" name="Facts.structure.DateTimeType" flags="ig" index="3r9B$s" />
+      <concept id="4837839804576362294" name="Facts.structure.DatetimeValue" flags="ng" index="3r9TEt">
+        <child id="4837839804576362295" name="value" index="3r9TEs" />
+      </concept>
       <concept id="2008286925358301604" name="Facts.structure.ValidityFrom" flags="ig" index="1yPtZP" />
       <concept id="2008286925358301608" name="Facts.structure.ValidityTo" flags="ig" index="1yPtZT" />
+    </language>
+    <language id="f2b5f4c3-283f-45e7-932a-2eee84091ad4" name="Simulation">
+      <concept id="3571499535060529969" name="Simulation.structure.TestState" flags="ng" index="2Zkv3m">
+        <child id="3571499535060530565" name="state" index="2Zkvpy" />
+      </concept>
+      <concept id="3571499535060530592" name="Simulation.structure.TestAction" flags="ng" index="2Zkvp7">
+        <child id="3571499535060530593" name="action" index="2Zkvp6" />
+      </concept>
+      <concept id="3571499535062831195" name="Simulation.structure.Itestresult" flags="ng" index="2Zt1eW">
+        <property id="7231564582495550989" name="testmessage" index="TEHex" />
+      </concept>
+      <concept id="9118850325322699219" name="Simulation.structure.Testcase" flags="ng" index="3un3Jt">
+        <child id="9118850325322699227" name="endState" index="3un3Jl" />
+        <child id="9118850325322699224" name="actions" index="3un3Jm" />
+        <child id="9118850325322699222" name="beginState" index="3un3Jo" />
+      </concept>
+      <concept id="9118850325322689750" name="Simulation.structure.Testcases" flags="ng" index="3uncro">
+        <child id="3571499535069142456" name="subjects" index="2YP5Tv" />
+        <child id="9118850325322699414" name="tests" index="3un3yo" />
+      </concept>
     </language>
     <language id="1172cef3-0f89-4114-ad0e-f59cef2bbaa3" name="Position">
       <concept id="8683898245435342733" name="Position.structure.Transition" flags="ng" index="2gjdzW">
@@ -71,6 +117,7 @@
       </concept>
       <concept id="3709448771247620492" name="Position.structure.AbstractEventType" flags="ng" index="LKXQd">
         <property id="8683898245434203004" name="verb" index="2gfjKd" />
+        <property id="6347445498639541116" name="pastParticle" index="1pAkHL" />
         <child id="8683898245435342835" name="transitions" index="2gjdy2" />
         <child id="6642019552193834628" name="methods" index="zAPWj" />
       </concept>
@@ -97,8 +144,16 @@
         <child id="3228884507315599718" name="immunity" index="NwrgW" />
         <child id="3548770316843012320" name="action" index="XRLcH" />
       </concept>
-      <concept id="3720995710323350024" name="Position.structure.ObjectInRole" flags="ig" index="1RcfJE" />
-      <concept id="3720995710323227567" name="Position.structure.SubjectInRole" flags="ig" index="1RcHDd" />
+      <concept id="3571499535056739778" name="Position.structure.SubjectValue" flags="ng" index="2Z5LS_" />
+      <concept id="3571499535056739777" name="Position.structure.ObjectValue" flags="ng" index="2Z5LSA" />
+      <concept id="6347445498642040292" name="Position.structure.Action" flags="ng" index="1pCaRD">
+        <property id="6347445498642040293" name="hidevariables" index="1pCaRC" />
+      </concept>
+      <concept id="9118850325332186893" name="Position.structure.State" flags="ng" index="3vVvO3">
+        <property id="9118850325335777331" name="hidevariables" index="3v58CX" />
+      </concept>
+      <concept id="3720995710323350024" name="Position.structure.ObjectTypeInRole" flags="ig" index="1RcfJE" />
+      <concept id="3720995710323227567" name="Position.structure.SubjectTypeInRole" flags="ig" index="1RcHDd" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -138,6 +193,22 @@
       <concept id="3253043142928125505" name="de.itemis.mps.editor.diagram.layout.structure.RelativePosition" flags="ng" index="3wpmZ1">
         <child id="3253043142928125557" name="referencePoint" index="3wpmZP" />
         <child id="3253043142928125559" name="offset" index="3wpmZR" />
+      </concept>
+    </language>
+    <language id="0add5042-bc48-4352-832a-07af4f0e5913" name="DateTime">
+      <concept id="7136310554705381571" name="DateTime.structure.Date" flags="ng" index="2B78Lw">
+        <property id="7136310554705381574" name="maand" index="2B78L_" />
+        <property id="7136310554705381572" name="dag" index="2B78LB" />
+        <property id="7136310554705381577" name="jaar" index="2B78LE" />
+      </concept>
+      <concept id="6256145404860625685" name="DateTime.structure.Time" flags="ng" index="LeFwc">
+        <property id="6256145404860625686" name="Uren" index="LeFwf" />
+        <property id="6256145404860625704" name="Minuten" index="LeFwL" />
+        <property id="6256145404860625707" name="Seconden" index="LeFwM" />
+      </concept>
+      <concept id="6256145404860625711" name="DateTime.structure.DateTime" flags="ng" index="LeFwQ">
+        <child id="6256145404860625714" name="Datum" index="LeFwF" />
+        <child id="6256145404860625716" name="Tijd" index="LeFwH" />
       </concept>
     </language>
     <language id="5517ea53-210f-4efd-b575-2cc53b802339" name="Expressions">
@@ -318,6 +389,7 @@
       <property role="3kd5zP" value="true" />
       <property role="3khMER" value="true" />
       <property role="LK$kx" value="OBOG" />
+      <property role="TrG5h" value="de verzoeker mi«ddelingsteruggaaf heeft het recht het verzoek middelingsteruggaaf indienen" />
       <node concept="1RcHDd" id="5KHcptZB0Rx" role="2WHaR8">
         <property role="TrG5h" value="subject met recht" />
         <ref role="2WHaRc" node="5KHcptZfA0t" resolve="verzoeker middelingsteruggaaf" />
@@ -340,25 +412,26 @@
       </node>
       <node concept="XOnPS" id="5KHcptZB0Sh" role="XRLcH">
         <property role="3khMER" value="true" />
-        <property role="2gfjKd" value="indienen" />
+        <property role="2gfjKd" value="in te dienen" />
+        <property role="1pAkHL" value="ingediend" />
         <node concept="zAPZE" id="22TpVqOzVJO" role="zAPWj">
-          <ref role="zAPZD" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf indienen" />
+          <ref role="zAPZD" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf in te dienen" />
           <ref role="zAPZC" node="5KHcptZB0_5" resolve="verzoek" />
         </node>
         <node concept="zAPZE" id="kqDFhL9iKo" role="zAPWj">
-          <ref role="zAPZD" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf indienen" />
+          <ref role="zAPZD" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf in te dienen" />
           <ref role="zAPZC" node="5KHcptZB0Qk" resolve="middelingstijdvak" />
         </node>
         <node concept="2gjdzW" id="5KHcptZHAoi" role="2gjdy2">
-          <ref role="2gjdzZ" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf indienen" />
+          <ref role="2gjdzZ" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf in te dienen" />
           <ref role="2gjdz_" node="5KHcptZEktk" resolve="de verzoeker middelingsteruggaaf heeft het recht de verzoek intrekking middelingsteruggaaf in te dienen" />
         </node>
         <node concept="2gjdzW" id="5KHcptZHAof" role="2gjdy2">
-          <ref role="2gjdzZ" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf indienen" />
+          <ref role="2gjdzZ" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf in te dienen" />
           <ref role="2gjdz_" node="5KHcptZEjHa" resolve="de inspecteur heeft de plicht een ontvangstbevestiging te versturen" />
         </node>
         <node concept="2gjdzW" id="5KHcptZHAo5" role="2gjdy2">
-          <ref role="2gjdzZ" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf indienen" />
+          <ref role="2gjdzZ" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf in te dienen" />
           <ref role="2gjdz_" node="5KHcptZEjIS" resolve="de inspecteur heeft de plicht het verzoek middelingsteruggaaf te accepteren" />
         </node>
         <node concept="1RcHDd" id="5KHcptZB0Si" role="2WHaR8">
@@ -402,6 +475,7 @@
       <node concept="XOnPS" id="5KHcptZEjIF" role="XRLcH">
         <property role="3khMER" value="true" />
         <property role="2gfjKd" value="te versturen" />
+        <property role="1pAkHL" value="verstuurd" />
         <node concept="zAPZE" id="22TpVqOzYsv" role="zAPWj">
           <ref role="zAPZD" node="5KHcptZEjIF" resolve="een ontvangstbevestiging te versturen" />
           <ref role="zAPZC" node="22TpVqOB0$T" resolve="ontvangstbevestiging" />
@@ -434,7 +508,7 @@
         <ref role="2WHaRc" node="5KHcptZB0RG" resolve="inspecteur" />
       </node>
       <node concept="1RcHDd" id="5KHcptZEjIU" role="2WHaR8">
-        <property role="TrG5h" value="subject met plicht" />
+        <property role="TrG5h" value="subject «met plicht" />
         <ref role="2WHaRc" node="5KHcptZfA0t" resolve="verzoeker middelingsteruggaaf" />
       </node>
       <node concept="1yPtZP" id="5KHcptZEjIV" role="2WHaR8">
@@ -452,6 +526,7 @@
       <node concept="XOnPS" id="5KHcptZEjJq" role="XRLcH">
         <property role="3khMER" value="true" />
         <property role="2gfjKd" value="te accepteren" />
+        <property role="1pAkHL" value="geaccepteerd" />
         <node concept="1RcHDd" id="5KHcptZEjJr" role="2WHaR8">
           <property role="TrG5h" value="actor" />
           <ref role="2WHaRc" node="5KHcptZB0RG" resolve="inspecteur" />
@@ -501,6 +576,7 @@
         <node concept="XOnPS" id="5KHcptZEjJL" role="Nw6Fh">
           <property role="3khMER" value="true" />
           <property role="2gfjKd" value="afwijzen" />
+          <property role="1pAkHL" value="afgewezen" />
           <node concept="1RcHDd" id="5KHcptZEjJM" role="2WHaR8">
             <property role="TrG5h" value="actor" />
             <ref role="2WHaRc" node="5KHcptZB0RG" resolve="inspecteur" />
@@ -568,6 +644,7 @@
       <node concept="XOnPS" id="5KHcptZEksM" role="XRLcH">
         <property role="3khMER" value="true" />
         <property role="2gfjKd" value="vast te stellen" />
+        <property role="1pAkHL" value="vastgesteld" />
         <node concept="zAPZE" id="22TpVqOzYsC" role="zAPWj">
           <ref role="zAPZD" node="5KHcptZEksM" resolve="de voor bezwaar vatbare beschikking vast te stellen" />
           <ref role="zAPZC" node="22TpVqOB0_b" resolve="voor bezwaar vatbare beschikking " />
@@ -621,6 +698,7 @@
       <node concept="XOnPS" id="5KHcptZEkui" role="XRLcH">
         <property role="3khMER" value="true" />
         <property role="2gfjKd" value="in te dienen" />
+        <property role="1pAkHL" value="ingediend" />
         <node concept="zAPZE" id="22TpVqOzYsM" role="zAPWj">
           <ref role="zAPZD" node="5KHcptZEkui" resolve="de verzoek intrekking middelingsteruggaaf in te dienen" />
           <ref role="zAPZC" node="22TpVqOB0_u" resolve="verzoek intrekking middelingsteruggaaf" />
@@ -670,6 +748,7 @@
       <node concept="XOnPS" id="5KHcptZEkC8" role="XRLcH">
         <property role="3khMER" value="true" />
         <property role="2gfjKd" value="te herzien" />
+        <property role="1pAkHL" value="herzien" />
         <node concept="2gjdzW" id="5KHcptZHArB" role="2gjdy2">
           <ref role="2gjdz_" node="5KHcptZEkuq" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking mede te delen" />
           <ref role="2gjdzZ" node="5KHcptZEksM" resolve="de voor bezwaar vatbare beschikking vast te stellen" />
@@ -1356,6 +1435,774 @@
               <node concept="2VclrF" id="5KHcptZHAum" role="3wpmZP">
                 <property role="2Vclpx" value="1392.0" />
                 <property role="2Vclpz" value="505.7867965644036" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3uncro" id="7UcEwUwPktj">
+    <property role="TrG5h" value="Middeling tests" />
+    <node concept="24RHdu" id="36gwYufijhZ" role="2YP5Tv">
+      <ref role="24RHdv" node="5KHcptZfA0t" resolve="verzoeker middelingsteruggaaf" />
+      <node concept="24RHax" id="36gwYufiji0" role="24RHdt">
+        <property role="TrG5h" value="Rinus" />
+        <ref role="24RH9u" node="5KHcptZfA0t" resolve="verzoeker middelingsteruggaaf" />
+      </node>
+    </node>
+    <node concept="24RHdu" id="36gwYufiji1" role="2YP5Tv">
+      <ref role="24RHdv" node="5KHcptZB0RG" resolve="inspecteur" />
+      <node concept="24RHax" id="36gwYufiji2" role="24RHdt">
+        <property role="TrG5h" value="Jan Belast" />
+        <ref role="24RH9u" node="5KHcptZB0RG" resolve="inspecteur" />
+      </node>
+    </node>
+    <node concept="24RHdu" id="36gwYufiji3" role="2YP5Tv">
+      <ref role="24RHdv" node="7kyIz29MLNe" resolve="verzoek middelingsteruggaaf" />
+      <node concept="24RHax" id="36gwYufiji4" role="24RHdt">
+        <property role="TrG5h" value="verzoek A" />
+        <ref role="24RH9u" node="7kyIz29MLNe" resolve="verzoek middelingsteruggaaf" />
+      </node>
+    </node>
+    <node concept="3un3Jt" id="36gwYufbTP4" role="3un3yo">
+      <property role="TrG5h" value="test enkele handeling uitvoeren met bestaande en geldige rechtsbetrekking" />
+      <node concept="2Zkvp7" id="36gwYufbTP5" role="3un3Jm">
+        <property role="TEHex" value="" />
+        <node concept="1pCaRD" id="36gwYufbTP6" role="2Zkvp6">
+          <property role="1pCaRC" value="true" />
+          <ref role="2WGM87" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf in te dienen" />
+          <node concept="2WGM83" id="36gwYufbTP7" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Si" resolve="actor" />
+            <node concept="2Z5LS_" id="36gwYufbTP8" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji0" resolve="Rinus" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYufbTP9" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Sj" resolve="onderwerp" />
+            <node concept="2Z5LSA" id="36gwYufbTPa" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji4" resolve="verzoek A" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYufbTPb" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Sk" resolve="uitgevoerd op" />
+            <node concept="3r9TEt" id="36gwYufbTPc" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYufbTPd" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYufbTPe" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="36gwYufbTPf" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="14" />
+                  <property role="LeFwM" value="28" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Zkv3m" id="36gwYufbTPg" role="3un3Jo">
+        <node concept="3vVvO3" id="36gwYufbTPh" role="2Zkvpy">
+          <property role="3v58CX" value="true" />
+          <ref role="2WGM87" node="5KHcptZB0Rw" resolve="de verzoeker middelingsteruggaaf heeft het recht het verzoek middelingsteruggaaf in te dienen" />
+          <node concept="2WGM83" id="36gwYufbTPi" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Rx" resolve="subject met recht" />
+            <node concept="2Z5LS_" id="36gwYufbTPj" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji0" resolve="Rinus" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYufbTPk" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Ry" resolve="subject met plicht" />
+            <node concept="2Z5LS_" id="36gwYufbTPl" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji2" resolve="Jan Belast" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYufbTPm" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Rz" resolve="geldig van" />
+            <node concept="3r9TEt" id="36gwYufbTPn" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYufbTPo" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYufbTPp" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="12" />
+                </node>
+                <node concept="LeFwc" id="36gwYufbTPq" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="13" />
+                  <property role="LeFwM" value="34" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYufbTPr" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0R$" resolve="geldig tot" />
+            <node concept="3r9TEt" id="36gwYufbTPs" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYufbTPt" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYufbTPu" role="LeFwF">
+                  <property role="2B78LE" value="999999999" />
+                  <property role="2B78L_" value="12" />
+                  <property role="2B78LB" value="31" />
+                </node>
+                <node concept="LeFwc" id="36gwYufbTPv" role="LeFwH">
+                  <property role="LeFwf" value="23" />
+                  <property role="LeFwL" value="59" />
+                  <property role="LeFwM" value="59" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYufbTPw" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0R_" resolve="bekend op" />
+            <node concept="3r9TEt" id="36gwYufbTPx" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYufbTPy" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYufbTPz" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="36gwYufbTP$" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="13" />
+                  <property role="LeFwM" value="16" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Zkv3m" id="36gwYufbTPF" role="3un3Jl">
+        <node concept="3vVvO3" id="36gwYufbTPG" role="2Zkvpy">
+          <property role="3v58CX" value="true" />
+          <ref role="2WGM87" node="5KHcptZEjIS" resolve="de inspecteur heeft de plicht het verzoek middelingsteruggaaf te accepteren" />
+          <node concept="2WGM83" id="36gwYufbTPH" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIT" resolve="subject met recht" />
+            <node concept="2Z5LS_" id="36gwYufbTPI" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji2" resolve="Jan Belast" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYufbTPJ" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIU" resolve="subject «met plicht" />
+            <node concept="2Z5LS_" id="36gwYufbTPK" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji0" resolve="Rinus" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYufbTPL" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIV" resolve="geldig van" />
+            <node concept="3r9TEt" id="36gwYufbTPM" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYufbTPN" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYufbTPO" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="36gwYufbTPP" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="7" />
+                  <property role="LeFwM" value="14" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYufbTPQ" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIW" resolve="geldig tot" />
+            <node concept="3r9TEt" id="36gwYufbTPR" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYufbTPS" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYufbTPT" role="LeFwF">
+                  <property role="2B78LE" value="999999999" />
+                  <property role="2B78L_" value="12" />
+                  <property role="2B78LB" value="31" />
+                </node>
+                <node concept="LeFwc" id="36gwYufbTPU" role="LeFwH">
+                  <property role="LeFwf" value="23" />
+                  <property role="LeFwL" value="59" />
+                  <property role="LeFwM" value="59" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYufbTPV" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIX" resolve="bekend op" />
+            <node concept="3r9TEt" id="36gwYufbTPW" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYufbTPX" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYufbTPY" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="36gwYufbTPZ" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="6" />
+                  <property role="LeFwM" value="56" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3un3Jt" id="7UcEwUwTpdv" role="3un3yo">
+      <property role="TrG5h" value="test handeling uitvoeren waarvoor geen rechtsbetrekkig bestaat." />
+      <node concept="2Zkvp7" id="36gwYueR6Kb" role="3un3Jm">
+        <property role="TEHex" value="Voor de uitgevoerde handeling bestaat geen rechtsbetrekking" />
+        <node concept="1pCaRD" id="36gwYueR6Kc" role="2Zkvp6">
+          <property role="1pCaRC" value="true" />
+          <ref role="2WGM87" node="5KHcptZEkC8" resolve="de verleende middelingsteruggaaf te herzien" />
+          <node concept="2WGM83" id="36gwYufbTVC" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEkC9" resolve="actor" />
+            <node concept="2Z5LS_" id="36gwYufbTVJ" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji0" resolve="Rinus" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYufbTVD" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEkCa" resolve="onderwerp" />
+            <node concept="2Z5LSA" id="36gwYufbTVK" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji4" resolve="verzoek A" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYufbTVE" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEkCb" resolve="uitgevoerd op" />
+            <node concept="3r9TEt" id="36gwYufbTVF" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYufbTVG" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYufbTVH" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="15" />
+                </node>
+                <node concept="LeFwc" id="36gwYufbTVI" role="LeFwH">
+                  <property role="LeFwf" value="21" />
+                  <property role="LeFwL" value="27" />
+                  <property role="LeFwM" value="57" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Zkv3m" id="36gwYueQ46n" role="3un3Jo">
+        <node concept="3vVvO3" id="36gwYueQ46o" role="2Zkvpy">
+          <property role="3v58CX" value="true" />
+          <ref role="2WGM87" node="5KHcptZB0Rw" resolve="de verzoeker middelingsteruggaaf heeft het recht het verzoek middelingsteruggaaf in te dienen" />
+          <node concept="2WGM83" id="36gwYueQ46t" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Rx" resolve="subject met recht" />
+            <node concept="2Z5LS_" id="36gwYueQ46I" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji0" resolve="Rinus" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYueQ46u" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Ry" resolve="subject met plicht" />
+            <node concept="2Z5LS_" id="36gwYueQ46J" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji2" resolve="Jan Belast" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYueQ46v" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Rz" resolve="geldig van" />
+            <node concept="3r9TEt" id="36gwYueQ46w" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYueQ46x" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYueQ46y" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="11" />
+                </node>
+                <node concept="LeFwc" id="36gwYueQ46z" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="13" />
+                  <property role="LeFwM" value="34" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYueQ46$" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0R$" resolve="geldig tot" />
+            <node concept="3r9TEt" id="36gwYueQ46_" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYueQ46A" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYueQ46B" role="LeFwF">
+                  <property role="2B78LE" value="999999999" />
+                  <property role="2B78L_" value="12" />
+                  <property role="2B78LB" value="31" />
+                </node>
+                <node concept="LeFwc" id="36gwYueQ46C" role="LeFwH">
+                  <property role="LeFwf" value="23" />
+                  <property role="LeFwL" value="59" />
+                  <property role="LeFwM" value="59" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYueQ46D" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0R_" resolve="bekend op" />
+            <node concept="3r9TEt" id="36gwYueQ46E" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYueQ46F" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYueQ46G" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="36gwYueQ46H" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="13" />
+                  <property role="LeFwM" value="16" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Zkv3m" id="36gwYueMRpn" role="3un3Jl">
+        <node concept="3vVvO3" id="36gwYueMRpo" role="2Zkvpy">
+          <property role="3v58CX" value="true" />
+          <ref role="2WGM87" node="5KHcptZEjIS" resolve="de inspecteur heeft de plicht het verzoek middelingsteruggaaf te accepteren" />
+          <node concept="2WGM83" id="36gwYueMRpt" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIT" resolve="subject met recht" />
+            <node concept="2Z5LS_" id="36gwYueMRpI" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji2" resolve="Jan Belast" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYueMRpu" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIU" resolve="subject «met plicht" />
+            <node concept="2Z5LS_" id="36gwYueMRpJ" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji0" resolve="Rinus" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYueMRpv" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIV" resolve="geldig van" />
+            <node concept="3r9TEt" id="36gwYueMRpw" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYueMRpx" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYueMRpy" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="36gwYueMRpz" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="7" />
+                  <property role="LeFwM" value="14" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYueMRp$" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIW" resolve="geldig tot" />
+            <node concept="3r9TEt" id="36gwYueMRp_" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYueMRpA" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYueMRpB" role="LeFwF">
+                  <property role="2B78LE" value="999999999" />
+                  <property role="2B78L_" value="12" />
+                  <property role="2B78LB" value="31" />
+                </node>
+                <node concept="LeFwc" id="36gwYueMRpC" role="LeFwH">
+                  <property role="LeFwf" value="23" />
+                  <property role="LeFwL" value="59" />
+                  <property role="LeFwM" value="59" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="36gwYueMRpD" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIX" resolve="bekend op" />
+            <node concept="3r9TEt" id="36gwYueMRpE" role="2XiGH2">
+              <node concept="LeFwQ" id="36gwYueMRpF" role="3r9TEs">
+                <node concept="2B78Lw" id="36gwYueMRpG" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="36gwYueMRpH" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="6" />
+                  <property role="LeFwM" value="56" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3un3Jt" id="6hrFqLtOlZ6" role="3un3yo">
+      <property role="TrG5h" value="test eerder handeling uitvoeren dan de rechtsbetrekking bestaat" />
+      <node concept="2Zkvp7" id="6hrFqLtOlZ7" role="3un3Jm">
+        <property role="TEHex" value="Uitgevoerde handeling is uitgevoerd voordat de rechtsbetrekking bestond." />
+        <node concept="1pCaRD" id="6hrFqLtOlZ8" role="2Zkvp6">
+          <property role="1pCaRC" value="true" />
+          <ref role="2WGM87" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf in te dienen" />
+          <node concept="2WGM83" id="6hrFqLtOlZ9" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Si" resolve="actor" />
+            <node concept="2Z5LS_" id="6hrFqLtOlZa" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji0" resolve="Rinus" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtOlZb" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Sj" resolve="onderwerp" />
+            <node concept="2Z5LSA" id="6hrFqLtOlZc" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji4" resolve="verzoek A" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtOlZd" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Sk" resolve="uitgevoerd op" />
+            <node concept="3r9TEt" id="6hrFqLtOlZe" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtOlZf" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtOlZg" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="11" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtOlZh" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="14" />
+                  <property role="LeFwM" value="28" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Zkv3m" id="6hrFqLtOlZi" role="3un3Jo">
+        <node concept="3vVvO3" id="6hrFqLtOlZj" role="2Zkvpy">
+          <property role="3v58CX" value="true" />
+          <ref role="2WGM87" node="5KHcptZB0Rw" resolve="de verzoeker middelingsteruggaaf heeft het recht het verzoek middelingsteruggaaf in te dienen" />
+          <node concept="2WGM83" id="6hrFqLtOlZk" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Rx" resolve="subject met recht" />
+            <node concept="2Z5LS_" id="6hrFqLtOlZl" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji0" resolve="Rinus" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtOlZm" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Ry" resolve="subject met plicht" />
+            <node concept="2Z5LS_" id="6hrFqLtOlZn" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji2" resolve="Jan Belast" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtOlZo" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Rz" resolve="geldig van" />
+            <node concept="3r9TEt" id="6hrFqLtOlZp" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtOlZq" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtOlZr" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="12" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtOlZs" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="13" />
+                  <property role="LeFwM" value="34" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtOlZt" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0R$" resolve="geldig tot" />
+            <node concept="3r9TEt" id="6hrFqLtOlZu" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtOlZv" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtOlZw" role="LeFwF">
+                  <property role="2B78LE" value="999999999" />
+                  <property role="2B78L_" value="12" />
+                  <property role="2B78LB" value="31" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtOlZx" role="LeFwH">
+                  <property role="LeFwf" value="23" />
+                  <property role="LeFwL" value="59" />
+                  <property role="LeFwM" value="59" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtOlZy" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0R_" resolve="bekend op" />
+            <node concept="3r9TEt" id="6hrFqLtOlZz" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtOlZ$" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtOlZ_" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtOlZA" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="13" />
+                  <property role="LeFwM" value="16" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Zkv3m" id="6hrFqLtOlZB" role="3un3Jl">
+        <node concept="3vVvO3" id="6hrFqLtOlZC" role="2Zkvpy">
+          <property role="3v58CX" value="true" />
+          <ref role="2WGM87" node="5KHcptZEjIS" resolve="de inspecteur heeft de plicht het verzoek middelingsteruggaaf te accepteren" />
+          <node concept="2WGM83" id="6hrFqLtOlZD" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIT" resolve="subject met recht" />
+            <node concept="2Z5LS_" id="6hrFqLtOlZE" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji2" resolve="Jan Belast" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtOlZF" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIU" resolve="subject «met plicht" />
+            <node concept="2Z5LS_" id="6hrFqLtOlZG" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji0" resolve="Rinus" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtOlZH" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIV" resolve="geldig van" />
+            <node concept="3r9TEt" id="6hrFqLtOlZI" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtOlZJ" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtOlZK" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtOlZL" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="7" />
+                  <property role="LeFwM" value="14" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtOlZM" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIW" resolve="geldig tot" />
+            <node concept="3r9TEt" id="6hrFqLtOlZN" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtOlZO" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtOlZP" role="LeFwF">
+                  <property role="2B78LE" value="999999999" />
+                  <property role="2B78L_" value="12" />
+                  <property role="2B78LB" value="31" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtOlZQ" role="LeFwH">
+                  <property role="LeFwf" value="23" />
+                  <property role="LeFwL" value="59" />
+                  <property role="LeFwM" value="59" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtOlZR" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIX" resolve="bekend op" />
+            <node concept="3r9TEt" id="6hrFqLtOlZS" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtOlZT" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtOlZU" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtOlZV" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="6" />
+                  <property role="LeFwM" value="56" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3un3Jt" id="6hrFqLtUiNT" role="3un3yo">
+      <property role="TrG5h" value="test twee handelingen uitvoeren met bestaande en geldige rechtsbetrekking" />
+      <node concept="2Zkvp7" id="6hrFqLtUiNU" role="3un3Jm">
+        <property role="TEHex" value="" />
+        <node concept="1pCaRD" id="6hrFqLtUiNV" role="2Zkvp6">
+          <property role="1pCaRC" value="true" />
+          <ref role="2WGM87" node="5KHcptZB0Sh" resolve="het verzoek middelingsteruggaaf in te dienen" />
+          <node concept="2WGM83" id="6hrFqLtUiNW" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Si" resolve="actor" />
+            <node concept="2Z5LS_" id="6hrFqLtUiNX" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji0" resolve="Rinus" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtUiNY" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Sj" resolve="onderwerp" />
+            <node concept="2Z5LSA" id="6hrFqLtUiNZ" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji4" resolve="verzoek A" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtUiO0" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Sk" resolve="uitgevoerd op" />
+            <node concept="3r9TEt" id="6hrFqLtUiO1" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtUiO2" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtUiO3" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtUiO4" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="14" />
+                  <property role="LeFwM" value="28" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Zkvp7" id="6hrFqLtUiVv" role="3un3Jm">
+        <property role="TEHex" value="Voor de uitgevoerde handeling bestaat geen rechtsbetrekking" />
+        <node concept="1pCaRD" id="6hrFqLtUiVw" role="2Zkvp6">
+          <property role="1pCaRC" value="true" />
+          <ref role="2WGM87" node="5KHcptZEjJq" resolve="het verzoek middelingsteruggaaf te accepteren" />
+          <node concept="2WGM83" id="6hrFqLtUiVV" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjJr" resolve="actor" />
+            <node concept="2Z5LS_" id="6hrFqLtUiW2" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji2" resolve="Jan Belast" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtUiVW" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjJs" resolve="onderwerp" />
+            <node concept="2Z5LSA" id="6hrFqLtUiW3" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji4" resolve="verzoek A" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtUiVX" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjJu" resolve="uitgevoerd op" />
+            <node concept="3r9TEt" id="6hrFqLtUiVY" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtUiVZ" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtUiW0" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="16" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtUiW1" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="32" />
+                  <property role="LeFwM" value="37" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Zkv3m" id="6hrFqLtUiO5" role="3un3Jo">
+        <node concept="3vVvO3" id="6hrFqLtUiO6" role="2Zkvpy">
+          <property role="3v58CX" value="true" />
+          <ref role="2WGM87" node="5KHcptZB0Rw" resolve="de verzoeker middelingsteruggaaf heeft het recht het verzoek middelingsteruggaaf in te dienen" />
+          <node concept="2WGM83" id="6hrFqLtUiO7" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Rx" resolve="subject met recht" />
+            <node concept="2Z5LS_" id="6hrFqLtUiO8" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji0" resolve="Rinus" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtUiO9" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Ry" resolve="subject met plicht" />
+            <node concept="2Z5LS_" id="6hrFqLtUiOa" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji2" resolve="Jan Belast" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtUiOb" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0Rz" resolve="geldig van" />
+            <node concept="3r9TEt" id="6hrFqLtUiOc" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtUiOd" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtUiOe" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="12" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtUiOf" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="13" />
+                  <property role="LeFwM" value="34" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtUiOg" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0R$" resolve="geldig tot" />
+            <node concept="3r9TEt" id="6hrFqLtUiOh" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtUiOi" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtUiOj" role="LeFwF">
+                  <property role="2B78LE" value="999999999" />
+                  <property role="2B78L_" value="12" />
+                  <property role="2B78LB" value="31" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtUiOk" role="LeFwH">
+                  <property role="LeFwf" value="23" />
+                  <property role="LeFwL" value="59" />
+                  <property role="LeFwM" value="59" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtUiOl" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZB0R_" resolve="bekend op" />
+            <node concept="3r9TEt" id="6hrFqLtUiOm" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtUiOn" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtUiOo" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtUiOp" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="13" />
+                  <property role="LeFwM" value="16" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Zkv3m" id="6hrFqLtUiOq" role="3un3Jl">
+        <node concept="3vVvO3" id="6hrFqLtUiOr" role="2Zkvpy">
+          <property role="3v58CX" value="true" />
+          <ref role="2WGM87" node="5KHcptZEjIS" resolve="de inspecteur heeft de plicht het verzoek middelingsteruggaaf te accepteren" />
+          <node concept="2WGM83" id="6hrFqLtUiOs" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIT" resolve="subject met recht" />
+            <node concept="2Z5LS_" id="6hrFqLtUiOt" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji2" resolve="Jan Belast" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtUiOu" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIU" resolve="subject «met plicht" />
+            <node concept="2Z5LS_" id="6hrFqLtUiOv" role="2XiGH2">
+              <ref role="24RH9r" node="36gwYufiji0" resolve="Rinus" />
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtUiOw" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIV" resolve="geldig van" />
+            <node concept="3r9TEt" id="6hrFqLtUiOx" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtUiOy" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtUiOz" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtUiO$" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="7" />
+                  <property role="LeFwM" value="14" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtUiO_" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIW" resolve="geldig tot" />
+            <node concept="3r9TEt" id="6hrFqLtUiOA" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtUiOB" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtUiOC" role="LeFwF">
+                  <property role="2B78LE" value="999999999" />
+                  <property role="2B78L_" value="12" />
+                  <property role="2B78LB" value="31" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtUiOD" role="LeFwH">
+                  <property role="LeFwf" value="23" />
+                  <property role="LeFwL" value="59" />
+                  <property role="LeFwM" value="59" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2WGM83" id="6hrFqLtUiOE" role="2WGM80">
+            <ref role="2WGM82" node="5KHcptZEjIX" resolve="bekend op" />
+            <node concept="3r9TEt" id="6hrFqLtUiOF" role="2XiGH2">
+              <node concept="LeFwQ" id="6hrFqLtUiOG" role="3r9TEs">
+                <node concept="2B78Lw" id="6hrFqLtUiOH" role="LeFwF">
+                  <property role="2B78LE" value="2018" />
+                  <property role="2B78L_" value="5" />
+                  <property role="2B78LB" value="14" />
+                </node>
+                <node concept="LeFwc" id="6hrFqLtUiOI" role="LeFwH">
+                  <property role="LeFwf" value="19" />
+                  <property role="LeFwL" value="6" />
+                  <property role="LeFwM" value="56" />
+                </node>
               </node>
             </node>
           </node>

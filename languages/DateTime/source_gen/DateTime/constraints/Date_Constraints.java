@@ -120,7 +120,7 @@ public class Date_Constraints extends BaseConstraintsDescriptor {
         if ((SPropertyOperations.getInteger(propertyValue)) == 0) {
           return false;
         }
-        if ((SPropertyOperations.getInteger(propertyValue)) > 9999) {
+        if ((SPropertyOperations.getInteger(propertyValue)) > 999999999) {
           return false;
         }
         return true;

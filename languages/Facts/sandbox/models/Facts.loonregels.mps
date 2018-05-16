@@ -14,7 +14,7 @@
       <concept id="8156496465148705899" name="Facts.structure.Identifier" flags="ng" index="21QOSU">
         <child id="8156496465148772434" name="identifiers" index="21Rr83" />
       </concept>
-      <concept id="8156496465148772436" name="Facts.structure.FactTypeInRole" flags="ng" index="21Rr85">
+      <concept id="8156496465148772436" name="Facts.structure.FactTypeInRole" flags="ig" index="21Rr85">
         <reference id="8156496465148772437" name="facttype" index="21Rr84" />
       </concept>
       <concept id="771453498291786372" name="Facts.structure.EntityValue" flags="ng" index="24RH9q">
@@ -61,7 +61,7 @@
         <child id="503348701156932326" name="entitytypes" index="kobCs" />
         <child id="1028895148592069579" name="facttypes" index="2WHal$" />
       </concept>
-      <concept id="1028895148592067374" name="Facts.structure.Role" flags="ng" index="2WHaQ1">
+      <concept id="1028895148592067374" name="Facts.structure.Role" flags="ig" index="2WHaQ1">
         <property id="3711255831312547439" name="article" index="34uzBG" />
       </concept>
       <concept id="1028895148592067373" name="Facts.structure.FactType" flags="ng" index="2WHaQ2">
@@ -71,9 +71,9 @@
       <concept id="1028895148592067372" name="Facts.structure.Concept" flags="ng" index="2WHaQ3">
         <child id="8156496465148706012" name="identifiedBy" index="21QOUd" />
       </concept>
-      <concept id="1028895148592067430" name="Facts.structure.IntegerType" flags="ng" index="2WHaR9" />
-      <concept id="1028895148592067429" name="Facts.structure.StringType" flags="ng" index="2WHaRa" />
-      <concept id="1028895148592067426" name="Facts.structure.EntityTypeInRole" flags="ng" index="2WHaRd">
+      <concept id="1028895148592067430" name="Facts.structure.IntegerType" flags="ig" index="2WHaR9" />
+      <concept id="1028895148592067429" name="Facts.structure.StringType" flags="ig" index="2WHaRa" />
+      <concept id="1028895148592067426" name="Facts.structure.EntityTypeInRole" flags="ig" index="2WHaRd">
         <reference id="1028895148592067427" name="entityType" index="2WHaRc" />
       </concept>
       <concept id="1028895148593747434" name="Facts.structure.IntegerValue" flags="ng" index="2XiGH5">

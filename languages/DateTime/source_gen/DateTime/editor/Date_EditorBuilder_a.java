@@ -77,7 +77,12 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
     if (nodeCondition_dwy1sf_a8a()) {
       editorCell.addEditorCell(createCollection_dwy1sf_i0());
     }
-    editorCell.addEditorCell(createProperty_dwy1sf_j0());
+    if (nodeCondition_dwy1sf_a9a()) {
+      editorCell.addEditorCell(createProperty_dwy1sf_j0());
+    }
+    if (nodeCondition_dwy1sf_a01a()) {
+      editorCell.addEditorCell(createCollection_dwy1sf_k0());
+    }
     return editorCell;
   }
   private boolean nodeCondition_dwy1sf_a0a() {
@@ -94,6 +99,12 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
   }
   private boolean nodeCondition_dwy1sf_a8a() {
     return SPropertyOperations.getInteger(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) < 1000 && SPropertyOperations.getInteger(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) > 99 && SPropertyOperations.getInteger(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) != 0;
+  }
+  private boolean nodeCondition_dwy1sf_a9a() {
+    return SPropertyOperations.getInteger(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) <= 9999;
+  }
+  private boolean nodeCondition_dwy1sf_a01a() {
+    return SPropertyOperations.getInteger(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) > 9999;
   }
   private EditorCell createCollection_dwy1sf_a0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -300,5 +311,23 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
     } finally {
       getCellFactory().popCellContext();
     }
+  }
+  private EditorCell createCollection_dwy1sf_k0() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
+    editorCell.setCellId("Collection_dwy1sf_k0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(createConstant_dwy1sf_a01a());
+    return editorCell;
+  }
+  private EditorCell createConstant_dwy1sf_a01a() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "9999");
+    editorCell.setCellId("Constant_dwy1sf_a01a");
+    Style style = new StyleImpl();
+    new RegularStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 }
