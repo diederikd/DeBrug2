@@ -664,7 +664,7 @@
             <node concept="1YBJjd" id="5OxnJN_adGy" role="2Oq$k0">
               <ref role="1YBMHb" node="5OxnJN_abJp" resolve="specializes" />
             </node>
-            <node concept="3TrEf2" id="5OxnJN_ae24" role="2OqNvi">
+            <node concept="3TrEf2" id="ws$rq2QgKR" role="2OqNvi">
               <ref role="3Tt5mk" to="gq3g:62x9OGy0XnF" resolve="concept" />
             </node>
           </node>
@@ -709,6 +709,36 @@
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="ws$rq2Fca6" role="3cqZAp">
+        <node concept="3clFbC" id="ws$rq2FcJd" role="3clFbw">
+          <node concept="2OqwBi" id="ws$rq2FcpO" role="3uHU7B">
+            <node concept="1YBJjd" id="ws$rq2FcpP" role="2Oq$k0">
+              <ref role="1YBMHb" node="5OxnJN_abJp" resolve="specializes" />
+            </node>
+            <node concept="3TrEf2" id="ws$rq2FcHa" role="2OqNvi">
+              <ref role="3Tt5mk" to="gq3g:62x9OGy0XnL" resolve="subConcept" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="ws$rq2Fca8" role="3uHU7w">
+            <node concept="1YBJjd" id="ws$rq2Fca9" role="2Oq$k0">
+              <ref role="1YBMHb" node="5OxnJN_abJp" resolve="specializes" />
+            </node>
+            <node concept="3TrEf2" id="ws$rq2Fcaa" role="2OqNvi">
+              <ref role="3Tt5mk" to="gq3g:62x9OGy0XnF" resolve="concept" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="ws$rq2Fcah" role="3clFbx">
+          <node concept="2MkqsV" id="ws$rq2Fcai" role="3cqZAp">
+            <node concept="1YBJjd" id="ws$rq2Fcaj" role="2OEOjV">
+              <ref role="1YBMHb" node="5OxnJN_abJp" resolve="specializes" />
+            </node>
+            <node concept="Xl_RD" id="ws$rq2Fcal" role="2MkJ7o">
+              <property role="Xl_RC" value="Concept cannot be subconcept of itself" />
             </node>
           </node>
         </node>

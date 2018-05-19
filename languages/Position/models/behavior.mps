@@ -165,6 +165,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -192,6 +195,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="3dUB042H4h0">
+    <property role="3GE5qa" value="type" />
     <ref role="13h7C2" to="rl66:3dUB042H3VL" resolve="StateType" />
     <node concept="13i0hz" id="2NfjlCvkSzh" role="13h7CS">
       <property role="TrG5h" value="setSubjectWithRight" />
@@ -655,12 +659,14 @@
     </node>
   </node>
   <node concept="13h7C7" id="3dUB042HAuQ">
+    <property role="3GE5qa" value="type" />
     <ref role="13h7C2" to="rl66:3dUB042HAuP" resolve="SubjectType" />
     <node concept="13hLZK" id="3dUB042HAuR" role="13h7CW">
       <node concept="3clFbS" id="3dUB042HAuS" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="3dUB042Ik6d">
+    <property role="3GE5qa" value="type" />
     <ref role="13h7C2" to="rl66:3dUB042Ik6c" resolve="AbstractEventType" />
     <node concept="13hLZK" id="3dUB042Ik6e" role="13h7CW">
       <node concept="3clFbS" id="3dUB042Ik6f" role="2VODD2">
@@ -683,6 +689,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="34ZKWOcROfJ">
+    <property role="3GE5qa" value="type" />
     <ref role="13h7C2" to="rl66:34ZKWOcRMLO" resolve="PowerType" />
     <node concept="13hLZK" id="34ZKWOcROfK" role="13h7CW">
       <node concept="3clFbS" id="34ZKWOcROfL" role="2VODD2">
@@ -742,6 +749,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2NfjlCvfyhP">
+    <property role="3GE5qa" value="type" />
     <ref role="13h7C2" to="rl66:2NfjlCvfw7m" resolve="ObligationType" />
     <node concept="13hLZK" id="2NfjlCvfyhQ" role="13h7CW">
       <node concept="3clFbS" id="2NfjlCvfyhR" role="2VODD2">
@@ -801,6 +809,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2NfjlCvjKSA">
+    <property role="3GE5qa" value="type" />
     <ref role="13h7C2" to="rl66:2NfjlCvjJ__" resolve="ImmunityType" />
     <node concept="13hLZK" id="2NfjlCvjKSB" role="13h7CW">
       <node concept="3clFbS" id="2NfjlCvjKSC" role="2VODD2">
@@ -1089,6 +1098,7 @@
     <node concept="3Tm1VV" id="4t3va1VWoyP" role="1B3o_S" />
   </node>
   <node concept="13h7C7" id="5KHcptZGhxL">
+    <property role="3GE5qa" value="type" />
     <ref role="13h7C2" to="rl66:34ZKWOcVFUP" resolve="ActionType" />
     <node concept="13i0hz" id="34ZKWOcYrKn" role="13h7CS">
       <property role="TrG5h" value="getObjectType" />
@@ -1391,6 +1401,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7UcEwUxAcJa">
+    <property role="3GE5qa" value="instances" />
     <ref role="13h7C2" to="rl66:7UcEwUxolsd" resolve="State" />
     <node concept="13i0hz" id="36gwYueDiM2" role="13h7CS">
       <property role="TrG5h" value="AddDefaultValues" />
@@ -1540,6 +1551,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5wmE0O1HAV1">
+    <property role="3GE5qa" value="instances" />
     <ref role="13h7C2" to="rl66:5wmE0O1Hwn$" resolve="Action" />
     <node concept="13i0hz" id="5wmE0O1HDr7" role="13h7CS">
       <property role="TrG5h" value="getActorString" />

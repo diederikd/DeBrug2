@@ -65,6 +65,7 @@
     <property role="TrG5h" value="StateType" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" to="gq3g:T7nEYMWZcH" resolve="FactType" />
     <node concept="1TJgyi" id="3dUB042Id$w" role="1TKVEl">
       <property role="IQ2nx" value="3709448771247593760" />
@@ -121,6 +122,7 @@
   <node concept="1TIwiD" id="3dUB042HAuP">
     <property role="EcuMT" value="3709448771247433653" />
     <property role="TrG5h" value="SubjectType" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" to="gq3g:rWgfCiAtmw" resolve="EntityType" />
     <node concept="1TJgyj" id="5KHcptZe2Id" role="1TKVEi">
       <property role="IQ2ns" value="6642019552185559949" />
@@ -133,6 +135,7 @@
   <node concept="1TIwiD" id="3dUB042HJAa">
     <property role="EcuMT" value="3709448771247470986" />
     <property role="TrG5h" value="ObjectType" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" to="gq3g:rWgfCiAtmw" resolve="EntityType" />
     <node concept="1TJgyj" id="22TpVqOzYt1" role="1TKVEi">
       <property role="IQ2ns" value="2358029914316203841" />
@@ -145,6 +148,7 @@
   <node concept="AxPO7" id="3dUB042IdzH">
     <property role="TrG5h" value="RelationType" />
     <property role="3lZH7k" value="custom" />
+    <property role="3GE5qa" value="type" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="3dUB042IdzM" role="M5hS2">
       <property role="1uS6qo" value="Krachtige aanspraak - fatale verplichting" />
@@ -187,6 +191,7 @@
     <property role="TrG5h" value="AbstractEventType" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" to="gq3g:T7nEYMWZcH" resolve="FactType" />
     <node concept="PrWs8" id="3ezCu94$Jke" role="PzmwI">
       <ref role="PrY4T" node="3ezCu94$Jkb" resolve="ISpecificationElement" />
@@ -269,6 +274,7 @@
   <node concept="AxPO7" id="7y3pR7CNVZl">
     <property role="3lZH7k" value="custom" />
     <property role="TrG5h" value="ChangeType" />
+    <property role="3GE5qa" value="type" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="7y3pR7CNVZm" role="M5hS2">
       <property role="2fHolG" value="C" />
@@ -289,6 +295,7 @@
   <node concept="1TIwiD" id="34ZKWOcRMLO">
     <property role="EcuMT" value="3548770316842904692" />
     <property role="TrG5h" value="PowerType" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" node="3dUB042H3VL" resolve="StateType" />
     <node concept="1TJgyj" id="34ZKWOcSd3w" role="1TKVEi">
       <property role="IQ2ns" value="3548770316843012320" />
@@ -306,6 +313,7 @@
   <node concept="1TIwiD" id="34ZKWOcVFUP">
     <property role="EcuMT" value="3548770316843925173" />
     <property role="TrG5h" value="ActionType" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" node="3dUB042Ik6c" resolve="AbstractEventType" />
     <node concept="PrWs8" id="34ZKWOcVFUQ" role="PzmwI">
       <ref role="PrY4T" node="3ezCu94$Jkb" resolve="ISpecificationElement" />
@@ -334,6 +342,7 @@
   <node concept="1TIwiD" id="2NfjlCvfw7m">
     <property role="EcuMT" value="3228884507314487766" />
     <property role="TrG5h" value="ObligationType" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" node="3dUB042H3VL" resolve="StateType" />
     <node concept="1TJgyj" id="2NfjlCvg3JJ" role="1TKVEi">
       <property role="IQ2ns" value="3228884507314633711" />
@@ -345,6 +354,7 @@
   <node concept="1TIwiD" id="2NfjlCvjJ__">
     <property role="EcuMT" value="3228884507315599717" />
     <property role="TrG5h" value="ImmunityType" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" node="3dUB042H3VL" resolve="StateType" />
     <node concept="1TJgyj" id="2NfjlCvjMub" role="1TKVEi">
       <property role="IQ2ns" value="3228884507315611531" />
@@ -406,11 +416,13 @@
   <node concept="1TIwiD" id="5KHcptZGjXe">
     <property role="EcuMT" value="6642019552193494862" />
     <property role="TrG5h" value="TimeElapseType" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" node="3dUB042Ik6c" resolve="AbstractEventType" />
   </node>
   <node concept="1TIwiD" id="5KHcptZGl0q">
     <property role="EcuMT" value="6642019552193499162" />
     <property role="TrG5h" value="EventType" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" node="3dUB042Ik6c" resolve="AbstractEventType" />
   </node>
   <node concept="1TIwiD" id="5KHcptZHATX">
@@ -440,6 +452,7 @@
   <node concept="1TIwiD" id="7UcEwUxolsd">
     <property role="EcuMT" value="9118850325332186893" />
     <property role="TrG5h" value="State" />
+    <property role="3GE5qa" value="instances" />
     <ref role="1TJDcQ" to="gq3g:T7nEYMX7MB" resolve="Fact" />
     <node concept="1TJgyi" id="7UcEwUxA20N" role="1TKVEl">
       <property role="IQ2nx" value="9118850325335777331" />
@@ -450,6 +463,7 @@
   <node concept="1TIwiD" id="5wmE0O1Hwn$">
     <property role="EcuMT" value="6347445498642040292" />
     <property role="TrG5h" value="Action" />
+    <property role="3GE5qa" value="instances" />
     <ref role="1TJDcQ" to="gq3g:T7nEYMX7MB" resolve="Fact" />
     <node concept="1TJgyi" id="5wmE0O1Hwn_" role="1TKVEl">
       <property role="IQ2nx" value="6347445498642040293" />
@@ -460,12 +474,26 @@
   <node concept="1TIwiD" id="36gwYuexTR1">
     <property role="EcuMT" value="3571499535056739777" />
     <property role="TrG5h" value="ObjectValue" />
+    <property role="3GE5qa" value="value" />
     <ref role="1TJDcQ" to="gq3g:EOKdUeqxa4" resolve="EntityValue" />
   </node>
   <node concept="1TIwiD" id="36gwYuexTR2">
     <property role="EcuMT" value="3571499535056739778" />
     <property role="TrG5h" value="SubjectValue" />
+    <property role="3GE5qa" value="value" />
     <ref role="1TJDcQ" to="gq3g:EOKdUeqxa4" resolve="EntityValue" />
+  </node>
+  <node concept="1TIwiD" id="ws$rq2SVe1">
+    <property role="EcuMT" value="584502264717357953" />
+    <property role="3GE5qa" value="instances" />
+    <property role="TrG5h" value="Subject" />
+    <ref role="1TJDcQ" to="gq3g:EOKdUeqx9Z" resolve="Entity" />
+  </node>
+  <node concept="1TIwiD" id="ws$rq2SVe2">
+    <property role="EcuMT" value="584502264717357954" />
+    <property role="3GE5qa" value="instances" />
+    <property role="TrG5h" value="Objet" />
+    <ref role="1TJDcQ" to="gq3g:EOKdUeqx9Z" resolve="Entity" />
   </node>
 </model>
 

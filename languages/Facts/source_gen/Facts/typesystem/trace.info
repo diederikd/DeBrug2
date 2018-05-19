@@ -283,38 +283,47 @@
     <file name="typeof_Specializes_InferenceRule.java">
       <node id="6710749360028181689" at="24,7,25,60" concept="6" />
       <node id="6710749360028181689" at="25,60,26,421" concept="6" />
-      <node id="6710749360028171222" at="30,50,31,135" concept="7" />
-      <node id="6710749360028171222" at="33,68,34,102" concept="7" />
-      <node id="6710749360028171222" at="36,30,37,17" concept="7" />
+      <node id="584502264713757330" at="30,7,31,60" concept="6" />
+      <node id="584502264713757330" at="31,60,32,238" concept="6" />
+      <node id="6710749360028171222" at="36,50,37,135" concept="7" />
+      <node id="6710749360028171222" at="39,68,40,102" concept="7" />
+      <node id="6710749360028171222" at="42,30,43,17" concept="7" />
       <node id="6710749360028171222" at="20,0,22,0" concept="1" trace="typeof_Specializes_InferenceRule#()V" />
-      <node id="6710749360028171222" at="30,0,33,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="6710749360028171222" at="33,0,36,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="6710749360028171222" at="36,0,39,0" concept="5" trace="overrides#()Z" />
+      <node id="6710749360028171222" at="36,0,39,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6710749360028171222" at="39,0,42,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6710749360028171222" at="42,0,45,0" concept="5" trace="overrides#()Z" />
       <node id="6710749360028181689" at="23,233,27,7" concept="0" />
+      <node id="584502264713757330" at="29,358,33,7" concept="0" />
       <node id="6710749360028171229" at="22,124,28,5" concept="4" />
-      <node id="6710749360028171222" at="22,0,30,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <node id="584502264713757318" at="28,5,34,5" concept="4" />
+      <node id="6710749360028171222" at="22,0,36,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="6710749360028171222" at="20,45,20,45" />
-      <scope id="6710749360028171222" at="30,50,31,135" />
-      <scope id="6710749360028171222" at="33,68,34,102" />
-      <scope id="6710749360028171222" at="36,30,37,17" />
+      <scope id="6710749360028171222" at="36,50,37,135" />
+      <scope id="6710749360028171222" at="39,68,40,102" />
+      <scope id="6710749360028171222" at="42,30,43,17" />
       <scope id="6710749360028171222" at="20,0,22,0" />
       <scope id="6710749360028181689" at="24,7,26,421">
         <var name="_reporter_2309309498" id="6710749360028181689" />
         <var name="errorTarget" id="6710749360028181689" />
       </scope>
-      <scope id="6710749360028171222" at="30,0,33,0" />
-      <scope id="6710749360028171222" at="33,0,36,0">
-        <var name="argument" id="6710749360028171222" />
+      <scope id="584502264713757330" at="30,7,32,238">
+        <var name="_reporter_2309309498" id="584502264713757330" />
+        <var name="errorTarget" id="584502264713757330" />
       </scope>
       <scope id="6710749360028171222" at="36,0,39,0" />
+      <scope id="6710749360028171222" at="39,0,42,0">
+        <var name="argument" id="6710749360028171222" />
+      </scope>
+      <scope id="6710749360028171222" at="42,0,45,0" />
       <scope id="6710749360028171231" at="23,233,27,7" />
-      <scope id="6710749360028171223" at="22,124,28,5" />
-      <scope id="6710749360028171222" at="22,0,30,0">
+      <scope id="584502264713757329" at="29,358,33,7" />
+      <scope id="6710749360028171223" at="22,124,34,5" />
+      <scope id="6710749360028171222" at="22,0,36,0">
         <var name="specializes" id="6710749360028171222" />
         <var name="status" id="6710749360028171222" />
         <var name="typeCheckingContext" id="6710749360028171222" />
       </scope>
-      <unit id="6710749360028171222" at="19,0,40,0" name="Facts.typesystem.typeof_Specializes_InferenceRule" />
+      <unit id="6710749360028171222" at="19,0,46,0" name="Facts.typesystem.typeof_Specializes_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:b10ef954-55f4-4774-8fb6-82453f7c9940(Facts.typesystem)/771453498292219030">

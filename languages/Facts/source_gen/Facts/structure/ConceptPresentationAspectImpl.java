@@ -9,6 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_AmountType;
   private ConceptPresentation props_Concept;
   private ConceptPresentation props_DateTimeType;
   private ConceptPresentation props_DateType;
@@ -47,6 +48,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IntegerType;
   private ConceptPresentation props_IntegerValue;
   private ConceptPresentation props_KnownAt;
+  private ConceptPresentation props_RealType;
   private ConceptPresentation props_Role;
   private ConceptPresentation props_RoleReference;
   private ConceptPresentation props_RoleReferenceExpression;
@@ -70,6 +72,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.AmountType:
+        if (props_AmountType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_AmountType = cpb.create();
+        }
+        return props_AmountType;
       case LanguageConceptSwitch.Concept:
         if (props_Concept == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -334,6 +343,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_KnownAt = cpb.create();
         }
         return props_KnownAt;
+      case LanguageConceptSwitch.RealType:
+        if (props_RealType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_RealType = cpb.create();
+        }
+        return props_RealType;
       case LanguageConceptSwitch.Role:
         if (props_Role == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

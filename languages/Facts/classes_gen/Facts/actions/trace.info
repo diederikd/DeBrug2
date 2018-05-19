@@ -87,20 +87,21 @@
   </root>
   <root nodeRef="r:53764341-1bfc-44c7-a0e5-2b2f12e71e7d(Facts.actions)/6710749360027997787">
     <file name="CreateSpecialisation.java">
-      <node id="6710749360028017774" at="13,91,14,47" concept="5" />
-      <node id="6710749360028021264" at="14,47,15,133" concept="1" />
-      <node id="6710749360028001080" at="13,0,17,0" concept="4" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
-      <scope id="6710749360028001080" at="13,91,15,133">
-        <var name="entityType" id="6710749360028017777" />
+      <node id="2161142751702767233" at="15,91,16,184" concept="5" />
+      <node id="2161142751702767239" at="16,184,17,355" concept="1" />
+      <node id="6710749360028021264" at="17,355,18,63" concept="1" />
+      <node id="6710749360028001080" at="15,0,20,0" concept="4" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="6710749360028001080" at="15,91,18,63">
+        <var name="specializes" id="2161142751702767234" />
       </scope>
-      <scope id="6710749360028001080" at="13,0,17,0">
+      <scope id="6710749360028001080" at="15,0,20,0">
         <var name="enclosingNode" id="6710749360028001080" />
         <var name="model" id="6710749360028001080" />
         <var name="newNode" id="6710749360028001080" />
         <var name="sampleNode" id="6710749360028001080" />
       </scope>
-      <unit id="6710749360028001080" at="12,0,18,0" name="Facts.actions.CreateSpecialisation$NodeFactory_6710749360028001080" />
-      <unit id="6710749360027997787" at="11,0,19,0" name="Facts.actions.CreateSpecialisation" />
+      <unit id="6710749360028001080" at="14,0,21,0" name="Facts.actions.CreateSpecialisation$NodeFactory_6710749360028001080" />
+      <unit id="6710749360027997787" at="13,0,22,0" name="Facts.actions.CreateSpecialisation" />
     </file>
   </root>
   <root nodeRef="r:53764341-1bfc-44c7-a0e5-2b2f12e71e7d(Facts.actions)/7895181521015327226">

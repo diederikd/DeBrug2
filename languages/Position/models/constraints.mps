@@ -115,8 +115,14 @@
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="3dUB042HYDV">
+    <property role="3GE5qa" value="type" />
     <ref role="1M2myG" to="rl66:3dUB042H3VL" resolve="StateType" />
   </node>
   <node concept="1M2fIO" id="3ezCu94$nIK">
@@ -253,9 +259,11 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7y3pR7CJsr8">
+    <property role="3GE5qa" value="type" />
     <ref role="1M2myG" to="rl66:3dUB042Ik6c" resolve="AbstractEventType" />
   </node>
   <node concept="1M2fIO" id="34ZKWOcSY9B">
+    <property role="3GE5qa" value="type" />
     <ref role="1M2myG" to="rl66:34ZKWOcRMLO" resolve="PowerType" />
     <node concept="EnEH3" id="34ZKWOcSY9C" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
@@ -525,6 +533,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2NfjlCvg22h">
+    <property role="3GE5qa" value="type" />
     <ref role="1M2myG" to="rl66:2NfjlCvfw7m" resolve="ObligationType" />
     <node concept="EnEH3" id="2NfjlCvg22i" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
@@ -922,6 +931,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2NfjlCvlgK1">
+    <property role="3GE5qa" value="type" />
     <ref role="1M2myG" to="rl66:2NfjlCvjJ__" resolve="ImmunityType" />
     <node concept="EnEH3" id="2NfjlCvlgK4" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
@@ -1097,6 +1107,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5KHcptZGzpT">
+    <property role="3GE5qa" value="type" />
     <ref role="1M2myG" to="rl66:34ZKWOcVFUP" resolve="ActionType" />
     <node concept="EnEH3" id="5KHcptZGzpW" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
@@ -1267,6 +1278,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="36gwYuezio4">
+    <property role="3GE5qa" value="instances" />
     <ref role="1M2myG" to="rl66:5wmE0O1Hwn$" resolve="Action" />
     <node concept="1N5Pfh" id="36gwYuezio5" role="1Mr941">
       <ref role="1N5Vy1" to="gq3g:T7nEYMX7MC" resolve="facttype" />
@@ -1285,6 +1297,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="36gwYueDmQd">
+    <property role="3GE5qa" value="instances" />
     <ref role="1M2myG" to="rl66:7UcEwUxolsd" resolve="State" />
     <node concept="1N5Pfh" id="36gwYueDmQe" role="1Mr941">
       <ref role="1N5Vy1" to="gq3g:T7nEYMX7MC" resolve="facttype" />

@@ -9,17 +9,20 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="gq3g" ref="r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)" implicit="true" />
+    <import index="dljm" ref="r:cd2775e8-7314-4ba5-a646-a6601486577f(DateTime.structure)" implicit="true" />
     <import index="rl66" ref="r:6aedc85c-1e66-46cb-aa08-290684ae007f(Position.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -205,6 +208,13 @@
     <property role="TrG5h" value="Testcases" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6hrFqLudIck" role="1TKVEi">
+      <property role="IQ2ns" value="7231564582500098836" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lastExecution" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dljm:5riiL_BUfcJ" resolve="DateTime" />
+    </node>
     <node concept="1TJgyj" id="36gwYufhdQS" role="1TKVEi">
       <property role="IQ2ns" value="3571499535069142456" />
       <property role="20lmBu" value="aggregation" />
@@ -299,16 +309,24 @@
   </node>
   <node concept="AxPO7" id="36gwYueT91v">
     <property role="TrG5h" value="Testresult" />
-    <property role="PDuV0" value="true" />
+    <property role="PDuV0" value="false" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="6hrFqLu$tUx" role="M5hS2">
+      <property role="1uS6qv" value="nottested" />
+      <property role="1uS6qo" value="not tested" />
+    </node>
     <node concept="M4N5e" id="36gwYueT91w" role="M5hS2">
       <property role="1uS6qo" value="failed" />
+      <property role="1uS6qv" value="failed" />
     </node>
     <node concept="M4N5e" id="36gwYueT91A" role="M5hS2">
       <property role="1uS6qo" value="inconsistent" />
+      <property role="1uS6qv" value="inconsistent" />
     </node>
     <node concept="M4N5e" id="36gwYueT91x" role="M5hS2">
       <property role="1uS6qo" value="success" />
+      <property role="1uS6qv" value="success" />
     </node>
   </node>
 </model>

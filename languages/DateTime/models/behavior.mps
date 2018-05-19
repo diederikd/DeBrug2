@@ -60,6 +60,7 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -131,6 +132,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -716,6 +720,41 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6hrFqLuBsXl" role="13h7CS">
+      <property role="TrG5h" value="isBefore" />
+      <property role="2Ki8OM" value="false" />
+      <node concept="3Tm1VV" id="6hrFqLuBsXm" role="1B3o_S" />
+      <node concept="10P_77" id="6hrFqLuBvia" role="3clF45" />
+      <node concept="3clFbS" id="6hrFqLuBsXo" role="3clF47">
+        <node concept="3clFbF" id="6hrFqLuBvjM" role="3cqZAp">
+          <node concept="2OqwBi" id="6hrFqLuBwfD" role="3clFbG">
+            <node concept="2OqwBi" id="6hrFqLuBvsG" role="2Oq$k0">
+              <node concept="13iPFW" id="6hrFqLuBFJq" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6hrFqLuBG6h" role="2OqNvi">
+                <ref role="37wK5l" node="5riiL_BUVyA" resolve="getDateTime" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6hrFqLuBxNS" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~LocalDateTime.isBefore(java.time.chrono.ChronoLocalDateTime):boolean" resolve="isBefore" />
+              <node concept="2OqwBi" id="6hrFqLuBy9F" role="37wK5m">
+                <node concept="37vLTw" id="6hrFqLuBxUm" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6hrFqLuBviR" resolve="dateTime" />
+                </node>
+                <node concept="2qgKlT" id="6hrFqLuBytN" role="2OqNvi">
+                  <ref role="37wK5l" node="5riiL_BUVyA" resolve="getDateTime" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6hrFqLuBviR" role="3clF46">
+        <property role="TrG5h" value="dateTime" />
+        <node concept="3Tqbb2" id="6hrFqLuBvjg" role="1tU5fm">
+          <ref role="ehGHo" to="dljm:5riiL_BUfcJ" resolve="DateTime" />
         </node>
       </node>
     </node>

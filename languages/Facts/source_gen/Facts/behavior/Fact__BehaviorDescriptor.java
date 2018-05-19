@@ -43,8 +43,11 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getValueOfKnownAt_id36gwYufl4AW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValueOfKnownAt").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("36gwYufl4AW").registry(REGISTRY).build();
   public static final SMethod<SNode> getValueOfValidFrom_id36gwYufl4Bp = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValueOfValidFrom").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("36gwYufl4Bp").registry(REGISTRY).build();
   public static final SMethod<SNode> getValueOfValidTo_id36gwYufl4BQ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValueOfValidTo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("36gwYufl4BQ").registry(REGISTRY).build();
+  public static final SMethod<Void> setValueOfKnownAt_id6hrFqLu1tJZ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setValueOfKnownAt").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6hrFqLu1tJZ").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> setValueOfValidFrom_id6hrFqLu1H2b = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setValueOfValidFrom").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6hrFqLu1H2b").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> setValueOfValidTo_id6hrFqLu1H2A = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setValueOfValidTo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6hrFqLu1H2A").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AddAndRemoveRoles_idEOKdUeu$et, getValueOfRole_id3e11SfSaCpP, getFactAsString_id3MspsB88iYi, getPrimaryIdentifier_id14SuKMppbvK, isTheSameAs_idU3O8mMZq$b, getValueStringOfKnownAt_id5wmE0O1IN9w, getValueStringOfValidFrom_id7UcEwUxoHyG, getValueStringOfValidTo_id7UcEwUxon_S, getValueOfKnownAt_id36gwYufl4AW, getValueOfValidFrom_id36gwYufl4Bp, getValueOfValidTo_id36gwYufl4BQ);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AddAndRemoveRoles_idEOKdUeu$et, getValueOfRole_id3e11SfSaCpP, getFactAsString_id3MspsB88iYi, getPrimaryIdentifier_id14SuKMppbvK, isTheSameAs_idU3O8mMZq$b, getValueStringOfKnownAt_id5wmE0O1IN9w, getValueStringOfValidFrom_id7UcEwUxoHyG, getValueStringOfValidTo_id7UcEwUxon_S, getValueOfKnownAt_id36gwYufl4AW, getValueOfValidFrom_id36gwYufl4Bp, getValueOfValidTo_id36gwYufl4BQ, setValueOfKnownAt_id6hrFqLu1tJZ, setValueOfValidFrom_id6hrFqLu1H2b, setValueOfValidTo_id6hrFqLu1H2A);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -162,6 +165,27 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
       }
     }), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"))).first(), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, "Facts.structure.DatetimeValue"));
   }
+  /*package*/ static void setValueOfKnownAt_id6hrFqLu1tJZ(@NotNull SNode __thisNode__, SNode datetimeValue) {
+    SLinkOperations.setTarget(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles"))).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x60a1274b21e189e4L, "Facts.structure.KnownAt"));
+      }
+    }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), datetimeValue);
+  }
+  /*package*/ static void setValueOfValidFrom_id6hrFqLu1H2b(@NotNull SNode __thisNode__, SNode datetimeValue) {
+    SLinkOperations.setTarget(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles"))).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x1bdede51790b01a4L, "Facts.structure.ValidityFrom"));
+      }
+    }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), datetimeValue);
+  }
+  /*package*/ static void setValueOfValidTo_id6hrFqLu1H2A(@NotNull SNode __thisNode__, SNode datetimeValue) {
+    SLinkOperations.setTarget(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles"))).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x1bdede51790b01a8L, "Facts.structure.ValidityTo"));
+      }
+    }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), datetimeValue);
+  }
 
   /*package*/ Fact__BehaviorDescriptor() {
     super(REGISTRY);
@@ -202,6 +226,15 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((SNode) getValueOfValidFrom_id36gwYufl4Bp(node));
       case 10:
         return (T) ((SNode) getValueOfValidTo_id36gwYufl4BQ(node));
+      case 11:
+        setValueOfKnownAt_id6hrFqLu1tJZ(node, (SNode) parameters[0]);
+        return null;
+      case 12:
+        setValueOfValidFrom_id6hrFqLu1H2b(node, (SNode) parameters[0]);
+        return null;
+      case 13:
+        setValueOfValidTo_id6hrFqLu1H2A(node, (SNode) parameters[0]);
+        return null;
       default:
         throw new BHMethodNotFoundException(this, method);
     }

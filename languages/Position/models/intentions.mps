@@ -128,6 +128,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -425,6 +428,7 @@
   </node>
   <node concept="2S6QgY" id="5KHcptZw15V">
     <property role="TrG5h" value="AddDefinitionSubjectType" />
+    <property role="3GE5qa" value="type" />
     <ref role="2ZfgGC" to="rl66:3dUB042HAuP" resolve="SubjectType" />
     <node concept="2S6ZIM" id="5KHcptZw15W" role="2ZfVej">
       <node concept="3clFbS" id="5KHcptZw15X" role="2VODD2">
@@ -564,6 +568,7 @@
   </node>
   <node concept="2S6QgY" id="22TpVqO$0Xp">
     <property role="TrG5h" value="AddDefinitionObjectType" />
+    <property role="3GE5qa" value="type" />
     <ref role="2ZfgGC" to="rl66:3dUB042HJAa" resolve="ObjectType" />
     <node concept="2S6ZIM" id="22TpVqO$0Xq" role="2ZfVej">
       <node concept="3clFbS" id="22TpVqO$0Xr" role="2VODD2">
@@ -608,6 +613,7 @@
   <node concept="2S6QgY" id="7UcEwUxB_Ec">
     <property role="TrG5h" value="ShowVariablesState" />
     <property role="2ZfUl0" value="true" />
+    <property role="3GE5qa" value="instances" />
     <ref role="2ZfgGC" to="rl66:7UcEwUxolsd" resolve="State" />
     <node concept="2S6ZIM" id="7UcEwUxB_Ed" role="2ZfVej">
       <node concept="3clFbS" id="7UcEwUxB_Ee" role="2VODD2">
@@ -658,6 +664,7 @@
   <node concept="2S6QgY" id="7UcEwUxBDbd">
     <property role="TrG5h" value="HideVariablesState" />
     <property role="2ZfUl0" value="true" />
+    <property role="3GE5qa" value="instances" />
     <ref role="2ZfgGC" to="rl66:7UcEwUxolsd" resolve="State" />
     <node concept="2S6ZIM" id="7UcEwUxBDbe" role="2ZfVej">
       <node concept="3clFbS" id="7UcEwUxBDbf" role="2VODD2">
@@ -708,6 +715,7 @@
   <node concept="2S6QgY" id="5wmE0O1HGZX">
     <property role="TrG5h" value="HideVariablesAction" />
     <property role="2ZfUl0" value="true" />
+    <property role="3GE5qa" value="instances" />
     <ref role="2ZfgGC" to="rl66:5wmE0O1Hwn$" resolve="Action" />
     <node concept="2S6ZIM" id="5wmE0O1HGZY" role="2ZfVej">
       <node concept="3clFbS" id="5wmE0O1HGZZ" role="2VODD2">
@@ -758,6 +766,7 @@
   <node concept="2S6QgY" id="5wmE0O1HH0j">
     <property role="TrG5h" value="ShowVariablesAction" />
     <property role="2ZfUl0" value="true" />
+    <property role="3GE5qa" value="instances" />
     <ref role="2ZfgGC" to="rl66:5wmE0O1Hwn$" resolve="Action" />
     <node concept="2S6ZIM" id="5wmE0O1HH0k" role="2ZfVej">
       <node concept="3clFbS" id="5wmE0O1HH0l" role="2VODD2">

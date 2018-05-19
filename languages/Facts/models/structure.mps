@@ -861,5 +861,19 @@
     <property role="TrG5h" value="EventDateTime" />
     <ref role="1TJDcQ" node="4cztqIo1gMR" resolve="DateTimeType" />
   </node>
+  <node concept="1TIwiD" id="5dnWsyrj8LF">
+    <property role="EcuMT" value="6005534472023084139" />
+    <property role="3GE5qa" value="valuetypes" />
+    <property role="TrG5h" value="RealType" />
+    <property role="34LRSv" value="reëel getal" />
+    <ref role="1TJDcQ" node="T7nEYMX5q8" resolve="DateType" />
+  </node>
+  <node concept="1TIwiD" id="5dnWsyroNBR">
+    <property role="EcuMT" value="6005534472024570359" />
+    <property role="3GE5qa" value="valuetypes" />
+    <property role="TrG5h" value="AmountType" />
+    <property role="34LRSv" value="bedrag" />
+    <ref role="1TJDcQ" node="5dnWsyrj8LF" resolve="RealType" />
+  </node>
 </model>
 

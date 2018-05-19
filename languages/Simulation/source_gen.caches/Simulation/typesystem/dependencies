@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Simulation.typesystem.TestIfActionExists_NonTypesystemRule" file="TestIfActionExists_NonTypesystemRule.java">
-    <classNode dependClassName="Simulation.behavior.Simulation" />
+  <dependency className="Simulation.typesystem.MessageForTestResult_NonTypesystemRule" file="MessageForTestResult_NonTypesystemRule.java">
+    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.NodeMessageTarget" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
@@ -16,14 +14,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="Simulation.typesystem.TestIfHasValidStartDate_NonTypesystemRule" file="TestIfHasValidStartDate_NonTypesystemRule.java">
-    <classNode dependClassName="Simulation.behavior.Simulation" />
-    <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
-    <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
-    <classNode dependClassName="jetbrains.mps.errors.messageTargets.NodeMessageTarget" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+  <dependency className="Simulation.typesystem.TestActionSequence_NonTypesystemRule" file="TestActionSequence_NonTypesystemRule.java">
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
@@ -33,8 +24,8 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
   <dependency className="Simulation.typesystem.TypesystemDescriptor" file="TypesystemDescriptor.java">
-    <classNode dependClassName="Simulation.typesystem.TestIfActionExists_NonTypesystemRule" />
-    <classNode dependClassName="Simulation.typesystem.TestIfHasValidStartDate_NonTypesystemRule" />
+    <classNode dependClassName="Simulation.typesystem.MessageForTestResult_NonTypesystemRule" />
+    <classNode dependClassName="Simulation.typesystem.TestActionSequence_NonTypesystemRule" />
     <classNode dependClassName="Simulation.typesystem.typeof_EntityTypeSelection_InferenceRule" />
     <classNode dependClassName="Simulation.typesystem.typeof_Query_InferenceRule" />
     <classNode dependClassName="Simulation.typesystem.typeof_ValueTypeSelection_InferenceRule" />

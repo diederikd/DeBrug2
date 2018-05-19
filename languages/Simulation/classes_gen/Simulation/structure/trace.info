@@ -17,66 +17,70 @@
       <unit at="10,0,52,0" name="Simulation.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="16,0,193,0" name="Simulation.structure.StructureAspectDescriptor" />
+      <unit at="16,0,194,0" name="Simulation.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:b8187849-4cdc-4a57-bb29-6cccc913d802(Simulation.structure)/3571499535062831199">
     <file name="Testresult.java">
-      <node id="3571499535062831199" at="14,0,15,0" concept="2" trace="myName" />
-      <node id="3571499535062831199" at="15,27,16,18" concept="6" />
-      <node id="3571499535062831199" at="18,0,19,0" concept="2" trace="myValue" />
-      <node id="3571499535062831199" at="19,49,20,18" concept="1" />
-      <node id="3571499535062831199" at="20,18,21,20" concept="1" />
-      <node id="3571499535062831199" at="23,28,24,19" concept="6" />
-      <node id="3571499535062831199" at="26,36,27,19" concept="6" />
-      <node id="3571499535062831199" at="29,49,30,80" concept="5" />
-      <node id="3571499535062831199" at="30,80,31,62" concept="1" />
-      <node id="3571499535062831199" at="31,62,32,68" concept="1" />
-      <node id="3571499535062831199" at="32,68,33,63" concept="1" />
-      <node id="3571499535062831199" at="33,63,34,16" concept="6" />
-      <node id="3571499535062831199" at="36,41,37,16" concept="6" />
-      <node id="3571499535062831199" at="40,24,41,37" concept="6" />
-      <node id="3571499535062831199" at="43,61,44,31" concept="6" />
-      <node id="3571499535062831199" at="46,67,47,37" concept="6" />
-      <node id="3571499535062831199" at="49,62,50,32" concept="6" />
-      <node id="3571499535062831199" at="51,5,52,35" concept="6" />
-      <node id="3571499535062831199" at="15,0,18,0" concept="4" trace="getName#()Ljava/lang/String;" />
-      <node id="3571499535062831199" at="23,0,26,0" concept="4" trace="getValue#()Ljava/lang/String;" />
-      <node id="3571499535062831199" at="26,0,29,0" concept="4" trace="getValueAsString#()Ljava/lang/String;" />
-      <node id="3571499535062831199" at="36,0,39,0" concept="7" trace="getDefault#()LSimulation/structure/Testresult;" />
-      <node id="3571499535062831199" at="39,53,42,5" concept="3" />
-      <node id="3571499535062831199" at="42,5,45,5" concept="3" />
-      <node id="3571499535062831199" at="45,5,48,5" concept="3" />
-      <node id="3571499535062831199" at="48,5,51,5" concept="3" />
-      <node id="3571499535062831199" at="19,0,23,0" concept="0" trace="Testresult#(Ljava/lang/String;Ljava/lang/String;)V" />
-      <node id="3571499535062831199" at="29,0,36,0" concept="7" trace="getConstants#()Ljava/util/List;" />
-      <node id="3571499535062831199" at="39,0,54,0" concept="7" trace="parseValue#(Ljava/lang/String;)LSimulation/structure/Testresult;" />
-      <scope id="3571499535062831199" at="15,27,16,18" />
-      <scope id="3571499535062831199" at="23,28,24,19" />
-      <scope id="3571499535062831199" at="26,36,27,19" />
-      <scope id="3571499535062831199" at="36,41,37,16" />
-      <scope id="3571499535062831199" at="40,24,41,37" />
-      <scope id="3571499535062831199" at="43,61,44,31" />
-      <scope id="3571499535062831199" at="46,67,47,37" />
-      <scope id="3571499535062831199" at="49,62,50,32" />
-      <scope id="3571499535062831199" at="19,49,21,20" />
-      <scope id="3571499535062831199" at="15,0,18,0" />
-      <scope id="3571499535062831199" at="23,0,26,0" />
-      <scope id="3571499535062831199" at="26,0,29,0" />
-      <scope id="3571499535062831199" at="36,0,39,0" />
-      <scope id="3571499535062831199" at="19,0,23,0">
+      <node id="3571499535062831199" at="15,0,16,0" concept="2" trace="myName" />
+      <node id="3571499535062831199" at="16,27,17,18" concept="6" />
+      <node id="3571499535062831199" at="19,0,20,0" concept="2" trace="myValue" />
+      <node id="3571499535062831199" at="20,49,21,18" concept="1" />
+      <node id="3571499535062831199" at="21,18,22,20" concept="1" />
+      <node id="3571499535062831199" at="24,28,25,19" concept="6" />
+      <node id="3571499535062831199" at="27,36,28,19" concept="6" />
+      <node id="3571499535062831199" at="30,49,31,80" concept="5" />
+      <node id="3571499535062831199" at="31,80,32,65" concept="1" />
+      <node id="3571499535062831199" at="32,65,33,62" concept="1" />
+      <node id="3571499535062831199" at="33,62,34,68" concept="1" />
+      <node id="3571499535062831199" at="34,68,35,63" concept="1" />
+      <node id="3571499535062831199" at="35,63,36,16" concept="6" />
+      <node id="3571499535062831199" at="38,41,39,32" concept="6" />
+      <node id="3571499535062831199" at="42,24,43,37" concept="6" />
+      <node id="3571499535062831199" at="45,64,46,34" concept="6" />
+      <node id="3571499535062831199" at="48,61,49,31" concept="6" />
+      <node id="3571499535062831199" at="51,67,52,37" concept="6" />
+      <node id="3571499535062831199" at="54,62,55,32" concept="6" />
+      <node id="3571499535062831199" at="56,5,57,35" concept="6" />
+      <node id="3571499535062831199" at="16,0,19,0" concept="4" trace="getName#()Ljava/lang/String;" />
+      <node id="3571499535062831199" at="24,0,27,0" concept="4" trace="getValue#()Ljava/lang/String;" />
+      <node id="3571499535062831199" at="27,0,30,0" concept="4" trace="getValueAsString#()Ljava/lang/String;" />
+      <node id="3571499535062831199" at="38,0,41,0" concept="7" trace="getDefault#()LSimulation/structure/Testresult;" />
+      <node id="3571499535062831199" at="41,53,44,5" concept="3" />
+      <node id="3571499535062831199" at="44,5,47,5" concept="3" />
+      <node id="3571499535062831199" at="47,5,50,5" concept="3" />
+      <node id="3571499535062831199" at="50,5,53,5" concept="3" />
+      <node id="3571499535062831199" at="53,5,56,5" concept="3" />
+      <node id="3571499535062831199" at="20,0,24,0" concept="0" trace="Testresult#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="3571499535062831199" at="30,0,38,0" concept="7" trace="getConstants#()Ljava/util/List;" />
+      <node id="3571499535062831199" at="41,0,59,0" concept="7" trace="parseValue#(Ljava/lang/String;)LSimulation/structure/Testresult;" />
+      <scope id="3571499535062831199" at="16,27,17,18" />
+      <scope id="3571499535062831199" at="24,28,25,19" />
+      <scope id="3571499535062831199" at="27,36,28,19" />
+      <scope id="3571499535062831199" at="38,41,39,32" />
+      <scope id="3571499535062831199" at="42,24,43,37" />
+      <scope id="3571499535062831199" at="45,64,46,34" />
+      <scope id="3571499535062831199" at="48,61,49,31" />
+      <scope id="3571499535062831199" at="51,67,52,37" />
+      <scope id="3571499535062831199" at="54,62,55,32" />
+      <scope id="3571499535062831199" at="20,49,22,20" />
+      <scope id="3571499535062831199" at="16,0,19,0" />
+      <scope id="3571499535062831199" at="24,0,27,0" />
+      <scope id="3571499535062831199" at="27,0,30,0" />
+      <scope id="3571499535062831199" at="38,0,41,0" />
+      <scope id="3571499535062831199" at="20,0,24,0">
         <var name="name" id="3571499535062831199" />
         <var name="value" id="3571499535062831199" />
       </scope>
-      <scope id="3571499535062831199" at="29,49,34,16">
+      <scope id="3571499535062831199" at="30,49,36,16">
         <var name="list" id="3571499535062831199" />
       </scope>
-      <scope id="3571499535062831199" at="29,0,36,0" />
-      <scope id="3571499535062831199" at="39,53,52,35" />
-      <scope id="3571499535062831199" at="39,0,54,0">
+      <scope id="3571499535062831199" at="30,0,38,0" />
+      <scope id="3571499535062831199" at="41,53,57,35" />
+      <scope id="3571499535062831199" at="41,0,59,0">
         <var name="value" id="3571499535062831199" />
       </scope>
-      <unit id="3571499535062831199" at="9,0,55,0" name="Simulation.structure.Testresult" />
+      <unit id="3571499535062831199" at="9,0,60,0" name="Simulation.structure.Testresult" />
     </file>
     <file name="Testresult_PropertySupport.java">
       <node id="3571499535062831199" at="11,24,12,18" concept="6" />
