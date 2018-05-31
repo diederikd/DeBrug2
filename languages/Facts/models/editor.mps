@@ -1951,6 +1951,7 @@
           <node concept="3F0A7n" id="6Nhjz6DrtIM" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" node="T7nEYMX2nS" resolve="Bold" />
           </node>
         </node>
       </node>

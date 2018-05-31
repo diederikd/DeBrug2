@@ -215,12 +215,19 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="dljm:5riiL_BUfcJ" resolve="DateTime" />
     </node>
-    <node concept="1TJgyj" id="36gwYufhdQS" role="1TKVEi">
-      <property role="IQ2ns" value="3571499535069142456" />
+    <node concept="1TJgyj" id="ws$rq2W8wa" role="1TKVEi">
+      <property role="IQ2ns" value="584502264718198794" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="subjects" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="gq3g:EOKdUeqxe0" resolve="EntityTable" />
+      <ref role="20lvS9" to="rl66:ws$rq2SVe1" resolve="Subject" />
+    </node>
+    <node concept="1TJgyj" id="ws$rq2W8wf" role="1TKVEi">
+      <property role="IQ2ns" value="584502264718198799" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="objects" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="rl66:ws$rq2SVe2" resolve="Object" />
     </node>
     <node concept="PrWs8" id="7UcEwUwO97g" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -240,24 +247,34 @@
     <node concept="PrWs8" id="7UcEwUwO97k" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="16mnka5QBwZ" role="PzmwI">
+      <ref role="PrY4T" node="36gwYueT91r" resolve="Itestresult" />
+    </node>
     <node concept="1TJgyj" id="7UcEwUwO97m" role="1TKVEi">
       <property role="IQ2ns" value="9118850325322699222" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="beginState" />
+      <property role="20kJfa" value="beginTestState" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="36gwYueKncL" resolve="TestState" />
     </node>
     <node concept="1TJgyj" id="7UcEwUwO97o" role="1TKVEi">
       <property role="IQ2ns" value="9118850325322699224" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="actions" />
+      <property role="20kJfa" value="testActions" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="36gwYueKnmw" resolve="TestAction" />
     </node>
     <node concept="1TJgyj" id="7UcEwUwO97r" role="1TKVEi">
       <property role="IQ2ns" value="9118850325322699227" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="endState" />
+      <property role="20kJfa" value="expectedEndTestState" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="36gwYueKncL" resolve="TestState" />
+    </node>
+    <node concept="1TJgyj" id="ws$rq3icDZ" role="1TKVEi">
+      <property role="IQ2ns" value="584502264723982975" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="simulatedEndState" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="36gwYueKncL" resolve="TestState" />
     </node>

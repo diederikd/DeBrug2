@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -30,12 +32,17 @@ public final class DateTime__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isBefore_id6hrFqLuBsXl = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isBefore").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6hrFqLuBsXl").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> setDateTime_id4cztqIn5fVA = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setDateTime").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("4cztqIn5fVA").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(LocalDateTime.class, ""));
   public static final SMethod<Void> setMaxDateTime_id7UcEwUwYAq7 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setMaxDateTime").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("7UcEwUwYAq7").registry(REGISTRY).build();
+  public static final SMethod<SNode> maxDate_id16mnka5QahA = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("maxDate").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("16mnka5QahA").registry(REGISTRY).build();
+  public static final SMethod<SNode> maxTime_id16mnka5Qb4O = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("maxTime").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("16mnka5Qb4O").registry(REGISTRY).build();
+  public static final SMethod<Boolean> isEqualToMaxDateTime_id16mnka5GxER = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEqualToMaxDateTime").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("16mnka5GxER").registry(REGISTRY).build();
   public static final SMethod<Void> setDateTimeNow_id4cztqIn5h$s = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setDateTimeNow").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("4cztqIn5h$s").registry(REGISTRY).build();
   public static final SMethod<String> getDateTimeString_id5vursKRvZal = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDateTimeString").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5vursKRvZal").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDateTime_id5riiL_BUVyA, isBefore_id6hrFqLuBsXl, setDateTime_id4cztqIn5fVA, setMaxDateTime_id7UcEwUwYAq7, setDateTimeNow_id4cztqIn5h$s, getDateTimeString_id5vursKRvZal);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDateTime_id5riiL_BUVyA, isBefore_id6hrFqLuBsXl, setDateTime_id4cztqIn5fVA, setMaxDateTime_id7UcEwUwYAq7, maxDate_id16mnka5QahA, maxTime_id16mnka5Qb4O, isEqualToMaxDateTime_id16mnka5GxER, setDateTimeNow_id4cztqIn5h$s, getDateTimeString_id5vursKRvZal);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
+    SLinkOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum"), MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, "DateTime.structure.Date"));
+    SLinkOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd"), MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, "DateTime.structure.Time"));
   }
 
   /*package*/ static LocalDateTime getDateTime_id5riiL_BUVyA(@NotNull SNode __thisNode__) {
@@ -49,9 +56,30 @@ public final class DateTime__BehaviorDescriptor extends BaseBHDescriptor {
     Time__BehaviorDescriptor.setTime_id5riiL_BUAB9.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd")), ldt.toLocalTime());
   }
   /*package*/ static void setMaxDateTime_id7UcEwUwYAq7(@NotNull SNode __thisNode__) {
-    LocalDateTime ldt = LocalDateTime.MAX;
-    Date__BehaviorDescriptor.setDate_id5riiL_BUmpQ.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum")), ldt.toLocalDate());
-    Time__BehaviorDescriptor.setTime_id5riiL_BUAB9.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd")), ldt.toLocalTime());
+    SLinkOperations.setTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum"), DateTime__BehaviorDescriptor.maxDate_id16mnka5QahA.invoke(__thisNode__));
+    SLinkOperations.setTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd"), DateTime__BehaviorDescriptor.maxTime_id16mnka5Qb4O.invoke(__thisNode__));
+  }
+  /*package*/ static SNode maxDate_id16mnka5QahA(@NotNull SNode __thisNode__) {
+    SNode date = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, "DateTime.structure.Date"));
+    SPropertyOperations.set(date, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag"), "" + (31));
+    SPropertyOperations.set(date, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand"), "" + (12));
+    SPropertyOperations.set(date, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar"), "" + (9999));
+    return date;
+  }
+  /*package*/ static SNode maxTime_id16mnka5Qb4O(@NotNull SNode __thisNode__) {
+    SNode time = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, "DateTime.structure.Time"));
+    SPropertyOperations.set(time, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), "" + (23));
+    SPropertyOperations.set(time, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), "" + (59));
+    SPropertyOperations.set(time, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), "" + (59));
+    return time;
+  }
+  /*package*/ static boolean isEqualToMaxDateTime_id16mnka5GxER(@NotNull SNode __thisNode__) {
+    if (Date__BehaviorDescriptor.getDate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum"))).isEqual(Date__BehaviorDescriptor.getDate_id5riiL_BUg0c.invoke(DateTime__BehaviorDescriptor.maxDate_id16mnka5QahA.invoke(__thisNode__)))) {
+      if (Time__BehaviorDescriptor.getTime_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd"))).equals(Time__BehaviorDescriptor.getTime_id5riiL_BUHOa.invoke(DateTime__BehaviorDescriptor.maxTime_id16mnka5Qb4O.invoke(__thisNode__)))) {
+        return true;
+      }
+    }
+    return false;
   }
   /*package*/ static void setDateTimeNow_id4cztqIn5h$s(@NotNull SNode __thisNode__) {
     DateTime__BehaviorDescriptor.setDateTime_id4cztqIn5fVA.invoke(__thisNode__, LocalDateTime.now());
@@ -91,9 +119,15 @@ public final class DateTime__BehaviorDescriptor extends BaseBHDescriptor {
         setMaxDateTime_id7UcEwUwYAq7(node);
         return null;
       case 4:
+        return (T) ((SNode) maxDate_id16mnka5QahA(node));
+      case 5:
+        return (T) ((SNode) maxTime_id16mnka5Qb4O(node));
+      case 6:
+        return (T) ((Boolean) isEqualToMaxDateTime_id16mnka5GxER(node));
+      case 7:
         setDateTimeNow_id4cztqIn5h$s(node);
         return null;
-      case 5:
+      case 8:
         return (T) ((String) getDateTimeString_id5vursKRvZal(node));
       default:
         throw new BHMethodNotFoundException(this, method);

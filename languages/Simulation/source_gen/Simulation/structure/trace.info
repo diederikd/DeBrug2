@@ -17,7 +17,7 @@
       <unit at="10,0,52,0" name="Simulation.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="16,0,194,0" name="Simulation.structure.StructureAspectDescriptor" />
+      <unit at="16,0,197,0" name="Simulation.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:b8187849-4cdc-4a57-bb29-6cccc913d802(Simulation.structure)/3571499535062831199">

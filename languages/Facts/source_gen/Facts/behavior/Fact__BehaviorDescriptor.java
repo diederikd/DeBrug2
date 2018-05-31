@@ -45,9 +45,14 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getValueOfValidTo_id36gwYufl4BQ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValueOfValidTo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("36gwYufl4BQ").registry(REGISTRY).build();
   public static final SMethod<Void> setValueOfKnownAt_id6hrFqLu1tJZ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setValueOfKnownAt").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6hrFqLu1tJZ").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> setValueOfValidFrom_id6hrFqLu1H2b = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setValueOfValidFrom").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6hrFqLu1H2b").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> setValueOfValidFrom_id16mnka5Ans1 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setValueOfValidFrom").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("16mnka5Ans1").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> setValueOfValidTo_id16mnka5y9eK = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setValueOfValidTo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("16mnka5y9eK").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> setValueOfValidTo_id6hrFqLu1H2A = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setValueOfValidTo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6hrFqLu1H2A").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> setValueOfValidFromToNow_id16mnka5k69J = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setValueOfValidFromToNow").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("16mnka5k69J").registry(REGISTRY).build();
+  public static final SMethod<Void> setValueOfValidToToNow_id16mnka5kc_x = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setValueOfValidToToNow").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("16mnka5kc_x").registry(REGISTRY).build();
+  public static final SMethod<Void> setValueOfValidToToMax_id16mnka59X7s = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setValueOfValidToToMax").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("16mnka59X7s").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AddAndRemoveRoles_idEOKdUeu$et, getValueOfRole_id3e11SfSaCpP, getFactAsString_id3MspsB88iYi, getPrimaryIdentifier_id14SuKMppbvK, isTheSameAs_idU3O8mMZq$b, getValueStringOfKnownAt_id5wmE0O1IN9w, getValueStringOfValidFrom_id7UcEwUxoHyG, getValueStringOfValidTo_id7UcEwUxon_S, getValueOfKnownAt_id36gwYufl4AW, getValueOfValidFrom_id36gwYufl4Bp, getValueOfValidTo_id36gwYufl4BQ, setValueOfKnownAt_id6hrFqLu1tJZ, setValueOfValidFrom_id6hrFqLu1H2b, setValueOfValidTo_id6hrFqLu1H2A);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AddAndRemoveRoles_idEOKdUeu$et, getValueOfRole_id3e11SfSaCpP, getFactAsString_id3MspsB88iYi, getPrimaryIdentifier_id14SuKMppbvK, isTheSameAs_idU3O8mMZq$b, getValueStringOfKnownAt_id5wmE0O1IN9w, getValueStringOfValidFrom_id7UcEwUxoHyG, getValueStringOfValidTo_id7UcEwUxon_S, getValueOfKnownAt_id36gwYufl4AW, getValueOfValidFrom_id36gwYufl4Bp, getValueOfValidTo_id36gwYufl4BQ, setValueOfKnownAt_id6hrFqLu1tJZ, setValueOfValidFrom_id6hrFqLu1H2b, setValueOfValidFrom_id16mnka5Ans1, setValueOfValidTo_id16mnka5y9eK, setValueOfValidTo_id6hrFqLu1H2A, setValueOfValidFromToNow_id16mnka5k69J, setValueOfValidToToNow_id16mnka5kc_x, setValueOfValidToToMax_id16mnka59X7s);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -179,12 +184,51 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
       }
     }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), datetimeValue);
   }
-  /*package*/ static void setValueOfValidTo_id6hrFqLu1H2A(@NotNull SNode __thisNode__, SNode datetimeValue) {
+  /*package*/ static void setValueOfValidFrom_id16mnka5Ans1(@NotNull SNode __thisNode__, SNode dateTime) {
+    SNode datetimeValue = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, "Facts.structure.DatetimeValue"));
+    SLinkOperations.setTarget(datetimeValue, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, 0x432375ab9804ef37L, "value"), dateTime);
+    SLinkOperations.setTarget(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles"))).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x1bdede51790b01a4L, "Facts.structure.ValidityFrom"));
+      }
+    }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), datetimeValue);
+  }
+  /*package*/ static void setValueOfValidTo_id16mnka5y9eK(@NotNull SNode __thisNode__, SNode datetimeValue) {
     SLinkOperations.setTarget(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles"))).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x1bdede51790b01a8L, "Facts.structure.ValidityTo"));
       }
     }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), datetimeValue);
+  }
+  /*package*/ static void setValueOfValidTo_id6hrFqLu1H2A(@NotNull SNode __thisNode__, SNode dateTime) {
+    SNode datetimeValue = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, "Facts.structure.DatetimeValue"));
+    SLinkOperations.setTarget(datetimeValue, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, 0x432375ab9804ef37L, "value"), dateTime);
+    SLinkOperations.setTarget(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles"))).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x1bdede51790b01a8L, "Facts.structure.ValidityTo"));
+      }
+    }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), datetimeValue);
+  }
+  /*package*/ static void setValueOfValidFromToNow_id16mnka5k69J(@NotNull SNode __thisNode__) {
+    SNode datetimeTo = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, "DateTime.structure.DateTime"));
+    DateTime__BehaviorDescriptor.setDateTimeNow_id4cztqIn5h$s.invoke(datetimeTo);
+    SNode datetimeValueTo = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, "Facts.structure.DatetimeValue"));
+    SLinkOperations.setTarget(datetimeValueTo, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, 0x432375ab9804ef37L, "value"), datetimeTo);
+    Fact__BehaviorDescriptor.setValueOfValidFrom_id6hrFqLu1H2b.invoke(__thisNode__, datetimeValueTo);
+  }
+  /*package*/ static void setValueOfValidToToNow_id16mnka5kc_x(@NotNull SNode __thisNode__) {
+    SNode datetimeTo = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, "DateTime.structure.DateTime"));
+    DateTime__BehaviorDescriptor.setDateTimeNow_id4cztqIn5h$s.invoke(datetimeTo);
+    SNode datetimeValueTo = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, "Facts.structure.DatetimeValue"));
+    SLinkOperations.setTarget(datetimeValueTo, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, 0x432375ab9804ef37L, "value"), datetimeTo);
+    Fact__BehaviorDescriptor.setValueOfValidTo_id16mnka5y9eK.invoke(__thisNode__, datetimeValueTo);
+  }
+  /*package*/ static void setValueOfValidToToMax_id16mnka59X7s(@NotNull SNode __thisNode__) {
+    SNode datetimeTo = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, "DateTime.structure.DateTime"));
+    DateTime__BehaviorDescriptor.setMaxDateTime_id7UcEwUwYAq7.invoke(datetimeTo);
+    SNode datetimeValueTo = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, "Facts.structure.DatetimeValue"));
+    SLinkOperations.setTarget(datetimeValueTo, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, 0x432375ab9804ef37L, "value"), datetimeTo);
+    Fact__BehaviorDescriptor.setValueOfValidTo_id16mnka5y9eK.invoke(__thisNode__, datetimeValueTo);
   }
 
   /*package*/ Fact__BehaviorDescriptor() {
@@ -233,7 +277,22 @@ public final class Fact__BehaviorDescriptor extends BaseBHDescriptor {
         setValueOfValidFrom_id6hrFqLu1H2b(node, (SNode) parameters[0]);
         return null;
       case 13:
+        setValueOfValidFrom_id16mnka5Ans1(node, (SNode) parameters[0]);
+        return null;
+      case 14:
+        setValueOfValidTo_id16mnka5y9eK(node, (SNode) parameters[0]);
+        return null;
+      case 15:
         setValueOfValidTo_id6hrFqLu1H2A(node, (SNode) parameters[0]);
+        return null;
+      case 16:
+        setValueOfValidFromToNow_id16mnka5k69J(node);
+        return null;
+      case 17:
+        setValueOfValidToToNow_id16mnka5kc_x(node);
+        return null;
+      case 18:
+        setValueOfValidToToMax_id16mnka59X7s(node);
         return null;
       default:
         throw new BHMethodNotFoundException(this, method);

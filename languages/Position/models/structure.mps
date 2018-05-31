@@ -492,7 +492,7 @@
   <node concept="1TIwiD" id="ws$rq2SVe2">
     <property role="EcuMT" value="584502264717357954" />
     <property role="3GE5qa" value="instances" />
-    <property role="TrG5h" value="Objet" />
+    <property role="TrG5h" value="Object" />
     <ref role="1TJDcQ" to="gq3g:EOKdUeqx9Z" resolve="Entity" />
   </node>
 </model>
