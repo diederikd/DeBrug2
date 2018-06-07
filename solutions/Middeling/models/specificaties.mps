@@ -11,9 +11,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="0add5042-bc48-4352-832a-07af4f0e5913" name="DateTime" version="0" />
   </languages>
-  <imports>
-    <import index="sriy" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#8ca79d43-eb45-4791-bdd4-0d6130ff895b(jetbrains.mps.lang.project.modules/module.de.itemis.mps.editor.diagram.layout@project_stub)" />
-  </imports>
+  <imports />
   <registry>
     <language id="2aacdfbf-487f-43ac-a431-19468403f2c5" name="Facts">
       <concept id="8156496465148705899" name="Facts.structure.Identifier" flags="ng" index="21QOSU">
@@ -2196,32 +2194,32 @@
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U2f" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U0x" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tskb" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tsit" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZB0Rw" resolve="de verzoeker middelingsteruggaaf heeft het recht het verzoek middelingsteruggaaf in te dienen" />
-          <node concept="2WGM83" id="4k$IsJF0U0y" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsiu" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Rx" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U0z" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsiv" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U0$" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsiw" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Ry" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U0_" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsix" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U0A" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsiy" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Rz" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U0B" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U0C" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U0D" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsiz" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsi$" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsi_" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="10" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U0E" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsiA" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="13" />
                   <property role="LeFwM" value="34" />
@@ -2229,16 +2227,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U0F" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsiB" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0R$" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U0G" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U0H" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U0I" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsiC" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsiD" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsiE" role="LeFwF">
                   <property role="2B78LE" value="999999999" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LB" value="31" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U0J" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsiF" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -2246,16 +2244,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U0K" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsiG" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0R_" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U0L" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U0M" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U0N" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsiH" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsiI" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsiJ" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U0O" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsiK" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="13" />
                   <property role="LeFwM" value="16" />
@@ -2265,32 +2263,32 @@
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U2g" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U0P" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tskc" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6TsiL" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEktk" resolve="de verzoeker middelingsteruggaaf heeft het recht de verzoek intrekking middelingsteruggaaf in te dienen" />
-          <node concept="2WGM83" id="4k$IsJF0U0Q" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsiM" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktl" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U17" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsj3" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U0R" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsiN" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktm" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U18" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsj4" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U0S" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsiO" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktn" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U19" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U1a" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U1b" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsj5" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsj6" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsj7" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U1c" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsj8" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -2298,16 +2296,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U0X" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsiT" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEkto" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U1i" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U1d" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U1g" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsje" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsj9" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsjc" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U1h" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsjd" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -2315,51 +2313,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U12" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsiY" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktp" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U13" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U14" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U15" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsiZ" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsj0" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsj1" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U16" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6Tsj2" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U2h" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U1j" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tskd" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tsjf" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjHa" resolve="de inspecteur heeft de plicht een ontvangstbevestiging te versturen" />
-          <node concept="2WGM83" id="4k$IsJF0U1k" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsjg" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHb" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U1_" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsjx" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U1l" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsjh" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHc" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U1A" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsjy" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U1m" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsji" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHd" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U1B" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U1C" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U1D" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsjz" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsj$" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsj_" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U1E" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsjA" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -2367,16 +2365,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U1r" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsjn" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHe" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U1K" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U1F" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U1I" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsjG" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsjB" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsjE" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U1J" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsjF" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -2384,51 +2382,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U1w" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsjs" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHf" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U1x" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U1y" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U1z" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsjt" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsju" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsjv" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U1$" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6Tsjw" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U2i" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U1L" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tske" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6TsjH" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjIS" resolve="de inspecteur heeft de plicht het verzoek middelingsteruggaaf te accepteren" />
-          <node concept="2WGM83" id="4k$IsJF0U1M" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsjI" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIT" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U23" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TsjZ" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U1N" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsjJ" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIU" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U24" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsk0" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U1O" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsjK" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIV" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U25" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U26" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U27" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsk1" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsk2" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsk3" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U28" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsk4" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -2436,16 +2434,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U1T" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsjP" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIW" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U2e" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U29" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U2c" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tska" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsk5" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsk8" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U2d" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsk9" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -2453,19 +2451,19 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U1Y" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsjU" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIX" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U1Z" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U20" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U21" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsjV" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsjW" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsjX" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U22" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6TsjY" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
@@ -2654,32 +2652,32 @@
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U2B" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U2j" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tskz" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tskf" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZB0Rw" resolve="de verzoeker middelingsteruggaaf heeft het recht het verzoek middelingsteruggaaf in te dienen" />
-          <node concept="2WGM83" id="4k$IsJF0U2k" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tskg" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Rx" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U2l" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tskh" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U2m" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tski" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Ry" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U2n" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tskj" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U2o" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tskk" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Rz" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U2p" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U2q" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U2r" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tskl" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tskm" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tskn" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="11" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U2s" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsko" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="13" />
                   <property role="LeFwM" value="34" />
@@ -2687,16 +2685,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U2t" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tskp" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0R$" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U2u" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U2v" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U2w" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tskq" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tskr" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsks" role="LeFwF">
                   <property role="2B78LE" value="999999999" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LB" value="31" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U2x" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tskt" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -2704,16 +2702,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U2y" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsku" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0R_" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U2z" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U2$" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U2_" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tskv" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tskw" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tskx" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U2A" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsky" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="13" />
                   <property role="LeFwM" value="16" />
@@ -2905,32 +2903,32 @@
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U4m" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U2C" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tsmi" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tsk$" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZB0Rw" resolve="de verzoeker middelingsteruggaaf heeft het recht het verzoek middelingsteruggaaf in te dienen" />
-          <node concept="2WGM83" id="4k$IsJF0U2D" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsk_" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Rx" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U2E" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TskA" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U2F" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TskB" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Ry" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U2G" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TskC" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U2H" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TskD" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Rz" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U2I" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U2J" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U2K" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TskE" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TskF" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TskG" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="15" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U2L" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TskH" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="13" />
                   <property role="LeFwM" value="34" />
@@ -2938,16 +2936,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U2M" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TskI" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0R$" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U2N" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U2O" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U2P" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TskJ" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TskK" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TskL" role="LeFwF">
                   <property role="2B78LE" value="999999999" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LB" value="31" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U2Q" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TskM" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -2955,16 +2953,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U2R" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TskN" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0R_" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U2S" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U2T" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U2U" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TskO" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TskP" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TskQ" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U2V" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TskR" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="13" />
                   <property role="LeFwM" value="16" />
@@ -2974,32 +2972,32 @@
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U4n" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U2W" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tsmj" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6TskS" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEktk" resolve="de verzoeker middelingsteruggaaf heeft het recht de verzoek intrekking middelingsteruggaaf in te dienen" />
-          <node concept="2WGM83" id="4k$IsJF0U2X" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TskT" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktl" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U3e" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsla" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U2Y" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TskU" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktm" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U3f" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tslb" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U2Z" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TskV" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktn" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U3g" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U3h" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U3i" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tslc" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsld" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsle" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="11" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U3j" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tslf" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -3007,16 +3005,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U34" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsl0" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEkto" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U3p" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U3k" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U3n" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsll" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tslg" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tslj" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U3o" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tslk" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -3024,51 +3022,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U39" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsl5" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktp" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U3a" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U3b" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U3c" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsl6" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsl7" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsl8" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U3d" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6Tsl9" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U4o" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U3q" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tsmk" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tslm" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjHa" resolve="de inspecteur heeft de plicht een ontvangstbevestiging te versturen" />
-          <node concept="2WGM83" id="4k$IsJF0U3r" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsln" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHb" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U3G" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TslC" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U3s" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tslo" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHc" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U3H" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TslD" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U3t" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tslp" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHd" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U3I" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U3J" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U3K" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TslE" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TslF" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TslG" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="11" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U3L" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TslH" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -3076,16 +3074,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U3y" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tslu" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHe" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U3R" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U3M" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U3P" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TslN" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TslI" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TslL" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U3Q" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TslM" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -3093,51 +3091,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U3B" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tslz" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHf" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U3C" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U3D" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U3E" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsl$" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsl_" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TslA" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U3F" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6TslB" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U4p" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U3S" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tsml" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6TslO" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjIS" resolve="de inspecteur heeft de plicht het verzoek middelingsteruggaaf te accepteren" />
-          <node concept="2WGM83" id="4k$IsJF0U3T" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TslP" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIT" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U4a" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsm6" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U3U" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TslQ" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIU" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U4b" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsm7" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U3V" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TslR" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIV" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U4c" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U4d" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U4e" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsm8" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsm9" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsma" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="11" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U4f" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsmb" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -3145,16 +3143,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U40" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TslW" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIW" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U4l" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U4g" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U4j" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsmh" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsmc" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsmf" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U4k" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsmg" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -3162,19 +3160,19 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U45" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsm1" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIX" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U46" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U47" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U48" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsm2" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsm3" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsm4" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U49" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6Tsm5" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
@@ -3400,32 +3398,32 @@
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U6E" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U4q" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6TsoA" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tsmm" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZB0Rw" resolve="de verzoeker middelingsteruggaaf heeft het recht het verzoek middelingsteruggaaf in te dienen" />
-          <node concept="2WGM83" id="4k$IsJF0U4r" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsmn" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Rx" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U4s" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsmo" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U4t" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsmp" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Ry" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U4u" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsmq" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U4v" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsmr" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Rz" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U4w" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U4x" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U4y" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsms" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsmt" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsmu" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="12" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U4z" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsmv" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="13" />
                   <property role="LeFwM" value="34" />
@@ -3433,16 +3431,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U4$" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsmw" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0R$" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U4_" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U4A" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U4B" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsmx" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsmy" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsmz" role="LeFwF">
                   <property role="2B78LE" value="999999999" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LB" value="31" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U4C" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsm$" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -3450,16 +3448,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U4D" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsm_" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0R_" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U4E" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U4F" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U4G" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsmA" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsmB" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsmC" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U4H" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsmD" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="13" />
                   <property role="LeFwM" value="16" />
@@ -3469,32 +3467,32 @@
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U6F" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U4I" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6TsoB" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6TsmE" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEktk" resolve="de verzoeker middelingsteruggaaf heeft het recht de verzoek intrekking middelingsteruggaaf in te dienen" />
-          <node concept="2WGM83" id="4k$IsJF0U4J" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsmF" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktl" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U50" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TsmW" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U4K" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsmG" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktm" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U51" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TsmX" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U4L" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsmH" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktn" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U52" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U53" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U54" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsmY" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsmZ" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsn0" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U55" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsn1" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -3502,16 +3500,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U4Q" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsmM" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEkto" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U5b" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U56" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U59" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsn7" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsn2" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsn5" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U5a" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsn6" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -3519,51 +3517,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U4V" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsmR" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktp" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U4W" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U4X" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U4Y" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsmS" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsmT" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsmU" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U4Z" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6TsmV" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U6G" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U5c" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6TsoC" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tsn8" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjHa" resolve="de inspecteur heeft de plicht een ontvangstbevestiging te versturen" />
-          <node concept="2WGM83" id="4k$IsJF0U5d" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsn9" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHb" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U5u" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsnq" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U5e" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsna" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHc" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U5v" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsnr" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U5f" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsnb" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHd" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U5w" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U5x" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U5y" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsns" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsnt" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsnu" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U5z" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsnv" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -3571,16 +3569,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U5k" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsng" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHe" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U5D" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U5$" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U5B" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsn_" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsnw" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsnz" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U5C" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsn$" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -3588,51 +3586,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U5p" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsnl" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHf" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U5q" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U5r" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U5s" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsnm" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsnn" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsno" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U5t" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6Tsnp" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U6H" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U5E" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6TsoD" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6TsnA" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjIS" resolve="de inspecteur heeft de plicht het verzoek middelingsteruggaaf te accepteren" />
-          <node concept="2WGM83" id="4k$IsJF0U5F" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsnB" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIT" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U5W" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TsnS" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U5G" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsnC" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIU" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U5X" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TsnT" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U5H" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsnD" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIV" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U5Y" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U5Z" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U60" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsnU" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsnV" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsnW" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U61" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsnX" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -3640,16 +3638,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U5M" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsnI" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIW" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U6A" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U6B" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U6C" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsoy" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsoz" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tso$" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="16" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U6D" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tso_" role="LeFwH">
                   <property role="LeFwf" value="15" />
                   <property role="LeFwL" value="32" />
                   <property role="LeFwM" value="37" />
@@ -3657,51 +3655,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U5R" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsnN" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIX" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U5S" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U5T" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U5U" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsnO" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsnP" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsnQ" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U5V" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6TsnR" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U6I" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U68" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6TsoE" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tso4" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking vast te stellen" />
-          <node concept="2WGM83" id="4k$IsJF0U69" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tso5" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLs" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U6q" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsom" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U6a" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tso6" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLt" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U6r" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tson" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U6b" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tso7" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLu" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U6s" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U6t" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U6u" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsoo" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsop" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsoq" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="16" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U6v" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsor" role="LeFwH">
                   <property role="LeFwf" value="15" />
                   <property role="LeFwL" value="32" />
                   <property role="LeFwM" value="37" />
@@ -3709,16 +3707,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U6g" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsoc" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLv" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U6_" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U6w" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U6z" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsox" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsos" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsov" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U6$" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsow" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -3726,19 +3724,19 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U6l" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsoh" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLw" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U6m" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U6n" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U6o" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsoi" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsoj" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsok" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U6p" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6Tsol" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
@@ -4001,32 +3999,32 @@
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U93" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U6J" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6TsqZ" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6TsoF" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZB0Rw" resolve="de verzoeker middelingsteruggaaf heeft het recht het verzoek middelingsteruggaaf in te dienen" />
-          <node concept="2WGM83" id="4k$IsJF0U6K" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsoG" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Rx" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U6L" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TsoH" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U6M" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsoI" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Ry" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U6N" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TsoJ" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U6O" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsoK" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Rz" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U6P" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U6Q" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U6R" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsoL" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsoM" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsoN" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="12" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U6S" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsoO" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="13" />
                   <property role="LeFwM" value="34" />
@@ -4034,16 +4032,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U6T" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsoP" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0R$" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U6U" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U6V" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U6W" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsoQ" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsoR" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsoS" role="LeFwF">
                   <property role="2B78LE" value="999999999" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LB" value="31" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U6X" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsoT" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -4051,16 +4049,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U6Y" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsoU" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0R_" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U6Z" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U70" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U71" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsoV" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsoW" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsoX" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U72" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsoY" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="13" />
                   <property role="LeFwM" value="16" />
@@ -4070,32 +4068,32 @@
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U94" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U73" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tsr0" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6TsoZ" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEktk" resolve="de verzoeker middelingsteruggaaf heeft het recht de verzoek intrekking middelingsteruggaaf in te dienen" />
-          <node concept="2WGM83" id="4k$IsJF0U74" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsp0" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktl" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U7l" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsph" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U75" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsp1" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktm" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U7m" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tspi" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U76" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsp2" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktn" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U7n" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U7o" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U7p" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tspj" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tspk" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tspl" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U7q" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tspm" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -4103,16 +4101,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U7b" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsp7" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEkto" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U7w" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U7r" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U7u" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsps" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tspn" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tspq" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U7v" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tspr" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -4120,51 +4118,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U7g" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tspc" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktp" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U7h" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U7i" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U7j" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tspd" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tspe" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tspf" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U7k" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6Tspg" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U95" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U7x" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tsr1" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tspt" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjHa" resolve="de inspecteur heeft de plicht een ontvangstbevestiging te versturen" />
-          <node concept="2WGM83" id="4k$IsJF0U7y" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tspu" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHb" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U7N" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TspJ" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U7z" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tspv" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHc" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U7O" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TspK" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U7$" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tspw" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHd" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U7P" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U7Q" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U7R" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TspL" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TspM" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TspN" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U7S" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TspO" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -4172,16 +4170,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U7D" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsp_" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHe" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U8Z" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U90" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U91" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsqV" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsqW" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsqX" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="16" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U92" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsqY" role="LeFwH">
                   <property role="LeFwf" value="20" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="48" />
@@ -4189,51 +4187,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U7I" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TspE" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHf" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U7J" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U7K" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U7L" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TspF" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TspG" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TspH" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U7M" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6TspI" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U96" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U7Z" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tsr2" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6TspV" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjIS" resolve="de inspecteur heeft de plicht het verzoek middelingsteruggaaf te accepteren" />
-          <node concept="2WGM83" id="4k$IsJF0U80" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TspW" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIT" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U8h" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsqd" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U81" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TspX" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIU" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U8i" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsqe" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U82" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TspY" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIV" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U8j" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U8k" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U8l" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsqf" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsqg" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsqh" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U8m" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsqi" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -4241,16 +4239,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U87" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsq3" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIW" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U8V" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U8W" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U8X" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsqR" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsqS" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsqT" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="16" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U8Y" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsqU" role="LeFwH">
                   <property role="LeFwf" value="15" />
                   <property role="LeFwL" value="32" />
                   <property role="LeFwM" value="37" />
@@ -4258,51 +4256,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U8c" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsq8" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIX" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U8d" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U8e" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U8f" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsq9" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsqa" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsqb" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U8g" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6Tsqc" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0U97" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U8t" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tsr3" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tsqp" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking vast te stellen" />
-          <node concept="2WGM83" id="4k$IsJF0U8u" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsqq" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLs" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U8J" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TsqF" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U8v" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsqr" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLt" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U8K" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TsqG" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U8w" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsqs" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLu" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U8L" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U8M" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U8N" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsqH" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsqI" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsqJ" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="16" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U8O" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsqK" role="LeFwH">
                   <property role="LeFwf" value="15" />
                   <property role="LeFwL" value="32" />
                   <property role="LeFwM" value="37" />
@@ -4310,16 +4308,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U8_" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsqx" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLv" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U8U" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U8P" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U8S" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsqQ" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsqL" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsqO" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U8T" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsqP" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -4327,19 +4325,19 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U8E" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsqA" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLw" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U8F" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U8G" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U8H" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsqB" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsqC" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsqD" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U8I" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6TsqE" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
@@ -4602,32 +4600,32 @@
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0Ubs" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U98" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tsto" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tsr4" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZB0Rw" resolve="de verzoeker middelingsteruggaaf heeft het recht het verzoek middelingsteruggaaf in te dienen" />
-          <node concept="2WGM83" id="4k$IsJF0U99" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsr5" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Rx" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U9a" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsr6" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U9b" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsr7" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Ry" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U9c" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tsr8" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U9d" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsr9" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0Rz" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U9e" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U9f" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U9g" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsra" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsrb" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsrc" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="12" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U9h" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsrd" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="13" />
                   <property role="LeFwM" value="34" />
@@ -4635,16 +4633,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U9i" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsre" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0R$" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U9j" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U9k" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U9l" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsrf" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsrg" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsrh" role="LeFwF">
                   <property role="2B78LE" value="999999999" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LB" value="31" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U9m" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsri" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -4652,16 +4650,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U9n" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsrj" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZB0R_" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U9o" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U9p" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U9q" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tsrk" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsrl" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsrm" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="14" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U9r" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tsrn" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="13" />
                   <property role="LeFwM" value="16" />
@@ -4671,32 +4669,32 @@
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0Ubt" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U9s" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tstp" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tsro" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEktk" resolve="de verzoeker middelingsteruggaaf heeft het recht de verzoek intrekking middelingsteruggaaf in te dienen" />
-          <node concept="2WGM83" id="4k$IsJF0U9t" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsrp" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktl" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U9I" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TsrE" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U9u" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsrq" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktm" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0U9J" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TsrF" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U9v" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsrr" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktn" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0U9K" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U9L" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U9M" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsrG" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsrH" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsrI" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="18" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U9N" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsrJ" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -4704,16 +4702,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U9$" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsrw" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEkto" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0U9T" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U9O" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U9R" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsrP" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsrK" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsrN" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U9S" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TsrO" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -4721,51 +4719,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U9D" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsr_" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEktp" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0U9E" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0U9F" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0U9G" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TsrA" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TsrB" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TsrC" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0U9H" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6TsrD" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0Ubu" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0U9U" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tstq" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6TsrQ" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjHa" resolve="de inspecteur heeft de plicht een ontvangstbevestiging te versturen" />
-          <node concept="2WGM83" id="4k$IsJF0U9V" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsrR" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHb" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0Uac" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tss8" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U9W" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsrS" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHc" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0Uad" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tss9" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0U9X" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsrT" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHd" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0Uae" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0Uaf" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0Uag" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tssa" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tssb" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tssc" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="18" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0Uah" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tssd" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -4773,16 +4771,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0Ua2" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TsrY" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHe" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0Ubo" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0Ubp" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0Ubq" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tstk" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tstl" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tstm" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="16" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0Ubr" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tstn" role="LeFwH">
                   <property role="LeFwf" value="20" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="48" />
@@ -4790,51 +4788,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0Ua7" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tss3" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjHf" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0Ua8" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0Ua9" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0Uaa" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tss4" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tss5" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tss6" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0Uab" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6Tss7" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0Ubv" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0Uao" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tstr" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6Tssk" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjIS" resolve="de inspecteur heeft de plicht het verzoek middelingsteruggaaf te accepteren" />
-          <node concept="2WGM83" id="4k$IsJF0Uap" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tssl" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIT" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0UaE" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TssA" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0Uaq" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tssm" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIU" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0UaF" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6TssB" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0Uar" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tssn" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIV" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0UaG" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0UaH" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0UaI" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6TssC" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6TssD" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6TssE" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="18" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0UaJ" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6TssF" role="LeFwH">
                   <property role="LeFwf" value="19" />
                   <property role="LeFwL" value="14" />
                   <property role="LeFwM" value="28" />
@@ -4842,16 +4840,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0Uaw" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tsss" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIW" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0Ubk" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0Ubl" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0Ubm" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tstg" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsth" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tsti" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="16" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0Ubn" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tstj" role="LeFwH">
                   <property role="LeFwf" value="15" />
                   <property role="LeFwL" value="32" />
                   <property role="LeFwM" value="37" />
@@ -4859,51 +4857,51 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0Ua_" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6Tssx" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjIX" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0UaA" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0UaB" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0UaC" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tssy" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tssz" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tss$" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0UaD" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6Tss_" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="2Zkv3m" id="4k$IsJF0Ubw" role="2bl5J9">
-        <node concept="3vVvO3" id="4k$IsJF0UaQ" role="2Zkvpy">
+      <node concept="2Zkv3m" id="sHNKs6Tsts" role="2bl5J9">
+        <node concept="3vVvO3" id="sHNKs6TssM" role="2Zkvpy">
           <property role="3v58CX" value="true" />
           <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking vast te stellen" />
-          <node concept="2WGM83" id="4k$IsJF0UaR" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TssN" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLs" resolve="subject met recht" />
-            <node concept="2Z5LS_" id="4k$IsJF0Ub8" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tst4" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2Xvgx" resolve="Inspecteur Jan" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0UaS" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TssO" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLt" resolve="subject met plicht" />
-            <node concept="2Z5LS_" id="4k$IsJF0Ub9" role="2XiGH2">
+            <node concept="2Z5LS_" id="sHNKs6Tst5" role="2XiGH2">
               <ref role="24RH9r" node="ws$rq2XvgB" resolve="Pieter" />
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0UaT" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TssP" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLu" resolve="geldig van" />
-            <node concept="3r9TEt" id="4k$IsJF0Uba" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0Ubb" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0Ubc" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tst6" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tst7" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tst8" role="LeFwF">
                   <property role="2B78LE" value="2018" />
                   <property role="2B78L_" value="5" />
                   <property role="2B78LB" value="16" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0Ubd" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tst9" role="LeFwH">
                   <property role="LeFwf" value="15" />
                   <property role="LeFwL" value="32" />
                   <property role="LeFwM" value="37" />
@@ -4911,16 +4909,16 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0UaY" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TssU" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLv" resolve="geldig tot" />
-            <node concept="3r9TEt" id="4k$IsJF0Ubj" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0Ube" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0Ubh" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tstf" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tsta" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tstd" role="LeFwF">
                   <property role="2B78LB" value="31" />
                   <property role="2B78L_" value="12" />
                   <property role="2B78LE" value="9999" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0Ubi" role="LeFwH">
+                <node concept="LeFwc" id="sHNKs6Tste" role="LeFwH">
                   <property role="LeFwf" value="23" />
                   <property role="LeFwL" value="59" />
                   <property role="LeFwM" value="59" />
@@ -4928,19 +4926,19 @@
               </node>
             </node>
           </node>
-          <node concept="2WGM83" id="4k$IsJF0Ub3" role="2WGM80">
+          <node concept="2WGM83" id="sHNKs6TssZ" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLw" resolve="bekend op" />
-            <node concept="3r9TEt" id="4k$IsJF0Ub4" role="2XiGH2">
-              <node concept="LeFwQ" id="4k$IsJF0Ub5" role="3r9TEs">
-                <node concept="2B78Lw" id="4k$IsJF0Ub6" role="LeFwF">
+            <node concept="3r9TEt" id="sHNKs6Tst0" role="2XiGH2">
+              <node concept="LeFwQ" id="sHNKs6Tst1" role="3r9TEs">
+                <node concept="2B78Lw" id="sHNKs6Tst2" role="LeFwF">
                   <property role="2B78LE" value="2018" />
-                  <property role="2B78L_" value="5" />
-                  <property role="2B78LB" value="21" />
+                  <property role="2B78L_" value="6" />
+                  <property role="2B78LB" value="7" />
                 </node>
-                <node concept="LeFwc" id="4k$IsJF0Ub7" role="LeFwH">
-                  <property role="LeFwf" value="11" />
-                  <property role="LeFwL" value="16" />
-                  <property role="LeFwM" value="38" />
+                <node concept="LeFwc" id="sHNKs6Tst3" role="LeFwH">
+                  <property role="LeFwf" value="15" />
+                  <property role="LeFwL" value="36" />
+                  <property role="LeFwM" value="57" />
                 </node>
               </node>
             </node>
@@ -4951,13 +4949,13 @@
     <node concept="LeFwQ" id="6hrFqLueYta" role="UrkUS">
       <node concept="2B78Lw" id="6hrFqLueYtb" role="LeFwF">
         <property role="2B78LE" value="2018" />
-        <property role="2B78L_" value="5" />
-        <property role="2B78LB" value="21" />
+        <property role="2B78L_" value="6" />
+        <property role="2B78LB" value="7" />
       </node>
       <node concept="LeFwc" id="6hrFqLueYtc" role="LeFwH">
-        <property role="LeFwf" value="11" />
-        <property role="LeFwL" value="16" />
-        <property role="LeFwM" value="38" />
+        <property role="LeFwf" value="15" />
+        <property role="LeFwL" value="36" />
+        <property role="LeFwM" value="57" />
       </node>
     </node>
     <node concept="2aZM8O" id="ws$rq32XmU" role="2aV1AT">

@@ -6,9 +6,6 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
-  </dependencies>
   <languageVersions>
     <language slang="l:0add5042-bc48-4352-832a-07af4f0e5913:DateTime" version="0" />
     <language slang="l:5517ea53-210f-4efd-b575-2cc53b802339:Expressions" version="0" />
@@ -23,7 +20,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="ff303ec5-e504-4e66-8606-c085d3279e2b(Middeling)" version="0" />
-    <module reference="642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)" version="0" />
   </dependencyVersions>
 </solution>
 
