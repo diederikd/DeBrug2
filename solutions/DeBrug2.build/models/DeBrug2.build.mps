@@ -394,12 +394,6 @@
         <ref role="398BVh" node="sHNKs6S2sW" resolve="mbeddr_home" />
       </node>
     </node>
-    <node concept="2sgV4H" id="sHNKs6S4$0" role="1l3spa">
-      <ref role="1l3spb" to="kbow:6itJwArjGTO" resolve="ProjectBrowserPlugin" />
-      <node concept="398BVA" id="sHNKs6S4_p" role="2JcizS">
-        <ref role="398BVh" node="sHNKs6S3XR" resolve="url_home" />
-      </node>
-    </node>
     <node concept="2sgV4H" id="sHNKs6SfCN" role="1l3spa">
       <ref role="1l3spb" to="ffeo:ymnOULAEsd" resolve="mpsTesting" />
       <node concept="398BVA" id="sHNKs6SfEe" role="2JcizS">
@@ -760,7 +754,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="sHNKs6FDR_" role="2G$12L">
-        <property role="BnDLt" value="false" />
+        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="Facts" />
         <property role="3LESm3" value="2aacdfbf-487f-43ac-a431-19468403f2c5" />
         <property role="2GAjPV" value="false" />
@@ -937,7 +931,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="sHNKs6FDRR" role="2G$12L">
-        <property role="BnDLt" value="false" />
+        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="Simulation" />
         <property role="3LESm3" value="f2b5f4c3-283f-45e7-932a-2eee84091ad4" />
         <property role="2GAjPV" value="false" />

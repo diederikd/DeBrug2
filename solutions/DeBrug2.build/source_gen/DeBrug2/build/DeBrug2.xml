@@ -16,7 +16,6 @@
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
   <property name="artifacts.com.mbeddr.platform" location="${mbeddr_home}" />
-  <property name="artifacts.ProjectBrowserPlugin" location="${url_home}" />
   <property name="artifacts.mpsTesting" location="${mps_home}/plugins" />
   <property name="artifacts.mpsContextActionsTool" location="${mps_home}/plugins" />
   <property name="artifacts.jetpad" location="${mps_home}/plugins" />
@@ -844,10 +843,7 @@
   
   <target name="buildDependents" />
   
-  <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip" />
-    <unzip src="${artifacts.ProjectBrowserPlugin}/ProjectBrowserPlugin.zip" dest="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip" />
-  </target>
+  <target name="fetchDependencies" />
   
   <target name="build" depends="assemble" />
   
@@ -896,7 +892,6 @@
       <library file="${artifacts.com.mbeddr.platform}/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
       <library file="${artifacts.com.mbeddr.platform}/mps-tables/languages/mps-tables/de.slisson.mps.tables.jar" />
       <library file="${artifacts.com.mbeddr.platform}/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
-      <library file="${artifacts.jetpad}/jetpad/languages/jetpad/jetbrains.jetpad.jar" />
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.jar" />
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.jar" />
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.pluginSolution.jar" />
@@ -986,9 +981,6 @@
       <library file="${artifacts.mpsTesting}/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
       <library file="${artifacts.mpsTesting}/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
       <library file="${artifacts.mpsTesting}/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
-      <library file="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip/ProjectBrowserPlugin/languages/ProjectBrowserPlugin/JavaFxBrowser.jar" />
-      <library file="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip/ProjectBrowserPlugin/languages/ProjectBrowserPlugin/MPSBrowserPlugin.jar" />
-      <library file="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip/ProjectBrowserPlugin/languages/ProjectBrowserPlugin/URL.jar" />
       <chunk>
         <module file="${basedir}/languages/DateTime/DateTime.mpl" />
         <module file="${basedir}/languages/Expressions/Expressions.mpl" />
