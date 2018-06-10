@@ -1785,5 +1785,53 @@
     <property role="3GE5qa" value="facttypes.roleexpression" />
     <ref role="1M2myG" to="gq3g:3ApTCQOXgmj" resolve="RoleReferenceExpression" />
   </node>
+  <node concept="1M2fIO" id="gP9OJJ09zV">
+    <property role="3GE5qa" value="values" />
+    <ref role="1M2myG" to="gq3g:gP9OJIOBt6" resolve="PercentageValue" />
+    <node concept="EnEH3" id="gP9OJJ09zW" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="gP9OJJ09zX" role="EtsB7">
+        <node concept="3clFbS" id="gP9OJJ09zY" role="2VODD2">
+          <node concept="3clFbF" id="gP9OJJ09zZ" role="3cqZAp">
+            <node concept="2OqwBi" id="gP9OJJ5Pjg" role="3clFbG">
+              <node concept="2OqwBi" id="gP9OJJ343a" role="2Oq$k0">
+                <node concept="2OqwBi" id="gP9OJJ09$1" role="2Oq$k0">
+                  <node concept="EsrRn" id="gP9OJJ09$2" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="gP9OJJ33xX" role="2OqNvi">
+                    <ref role="3Tt5mk" to="gq3g:gP9OJIOBt7" resolve="value" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="gP9OJJ34pU" role="2OqNvi">
+                  <ref role="3TsBF5" to="gq3g:gP9OJIOBt3" resolve="value" />
+                </node>
+              </node>
+              <node concept="liA8E" id="gP9OJJ5PRC" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.toString():java.lang.String" resolve="toString" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="gP9OJJ0bLC">
+    <property role="3GE5qa" value="values" />
+    <ref role="1M2myG" to="gq3g:gP9OJIJRTc" resolve="AmountValue" />
+    <node concept="EnEH3" id="gP9OJJ0bLD" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="gP9OJJ0bLE" role="EtsB7">
+        <node concept="3clFbS" id="gP9OJJ0bLF" role="2VODD2">
+          <node concept="3clFbF" id="gP9OJJ0bLG" role="3cqZAp">
+            <node concept="2OqwBi" id="gP9OJJ0bLH" role="3clFbG">
+              <node concept="EsrRn" id="gP9OJJ0bLI" role="2Oq$k0" />
+              <node concept="2qgKlT" id="gP9OJJ0bLJ" role="2OqNvi">
+                <ref role="37wK5l" to="k0ub:3MspsB814vW" resolve="getValueString" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

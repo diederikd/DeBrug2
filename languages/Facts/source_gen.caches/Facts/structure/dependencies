@@ -30,6 +30,10 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SConceptId" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
   </dependency>
+  <dependency className="Facts.structure.Real_PropertySupport" file="Real_PropertySupport.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
+  </dependency>
   <dependency className="Facts.structure.StructureAspectDescriptor" file="StructureAspectDescriptor.java">
     <classNode dependClassName="Facts.structure.LanguageConceptSwitch" />
     <classNode dependClassName="java.lang.Override" />

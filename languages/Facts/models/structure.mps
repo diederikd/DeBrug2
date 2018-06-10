@@ -18,6 +18,9 @@
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1192116978809" name="javaIdentifier" index="2fHolG" />
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
@@ -873,6 +876,61 @@
     <property role="TrG5h" value="AmountType" />
     <property role="34LRSv" value="bedrag" />
     <ref role="1TJDcQ" node="5dnWsyrj8LF" resolve="RealType" />
+  </node>
+  <node concept="1TIwiD" id="gP9OJIHa0s">
+    <property role="EcuMT" value="303191756998221852" />
+    <property role="3GE5qa" value="valuetypes" />
+    <property role="TrG5h" value="PercentageType" />
+    <property role="34LRSv" value="percentage" />
+    <ref role="1TJDcQ" node="5dnWsyrj8LF" resolve="RealType" />
+  </node>
+  <node concept="1TIwiD" id="gP9OJIJRTc">
+    <property role="EcuMT" value="303191756998934092" />
+    <property role="3GE5qa" value="values" />
+    <property role="TrG5h" value="AmountValue" />
+    <ref role="1TJDcQ" node="T7nEYN3k5q" resolve="Value" />
+    <node concept="1TJgyj" id="gP9OJIJRTd" role="1TKVEi">
+      <property role="IQ2ns" value="303191756998934093" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="gP9OJIOBt2" resolve="RealValue" />
+    </node>
+    <node concept="PrWs8" id="gP9OJJ0g_p" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="1YFKb5tAQ8U">
+    <property role="3GE5qa" value="values" />
+    <property role="FLfZY" value="-?[0-9]+((\\.|,)[0-9]+)?" />
+    <property role="TrG5h" value="Real" />
+  </node>
+  <node concept="1TIwiD" id="gP9OJIOBt2">
+    <property role="EcuMT" value="303191757000177474" />
+    <property role="3GE5qa" value="values" />
+    <property role="TrG5h" value="RealValue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="gP9OJIOBt3" role="1TKVEl">
+      <property role="IQ2nx" value="303191757000177475" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="1YFKb5tAQ8U" resolve="Real" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="gP9OJIOBt6">
+    <property role="EcuMT" value="303191757000177478" />
+    <property role="3GE5qa" value="values" />
+    <property role="TrG5h" value="PercentageValue" />
+    <ref role="1TJDcQ" node="T7nEYN3k5q" resolve="Value" />
+    <node concept="1TJgyj" id="gP9OJIOBt7" role="1TKVEi">
+      <property role="IQ2ns" value="303191757000177479" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="gP9OJIOBt2" resolve="RealValue" />
+    </node>
+    <node concept="PrWs8" id="gP9OJJ0a1i" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

@@ -12,6 +12,8 @@ import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
+  private final BHDescriptor myAmountValue__BehaviorDescriptor = new AmountValue__BehaviorDescriptor();
+  private final BHDescriptor myPercentageValue__BehaviorDescriptor = new PercentageValue__BehaviorDescriptor();
   private final BHDescriptor myEntityType__BehaviorDescriptor = new EntityType__BehaviorDescriptor();
   private final BHDescriptor myEntityValue__BehaviorDescriptor = new EntityValue__BehaviorDescriptor();
   private final BHDescriptor myConcept__BehaviorDescriptor = new Concept__BehaviorDescriptor();
@@ -44,63 +46,67 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
 
   @Nullable
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
-    SAbstractConcept cncpt_a0db = concept;
-    switch (index_846f5o_a0db.index(cncpt_a0db)) {
+    SAbstractConcept cncpt_a0fb = concept;
+    switch (index_846f5o_a0fb.index(cncpt_a0fb)) {
       case 0:
-        return myConcept__BehaviorDescriptor;
+        return myAmountValue__BehaviorDescriptor;
       case 1:
-        return myDateValue__BehaviorDescriptor;
+        return myConcept__BehaviorDescriptor;
       case 2:
-        return myDatetimeValue__BehaviorDescriptor;
+        return myDateValue__BehaviorDescriptor;
       case 3:
-        return myEntityType__BehaviorDescriptor;
+        return myDatetimeValue__BehaviorDescriptor;
       case 4:
-        return myEntityValue__BehaviorDescriptor;
+        return myEntityType__BehaviorDescriptor;
       case 5:
-        return myEnumerationValue__BehaviorDescriptor;
+        return myEntityValue__BehaviorDescriptor;
       case 6:
-        return myEventDateTime__BehaviorDescriptor;
+        return myEnumerationValue__BehaviorDescriptor;
       case 7:
-        return myFact__BehaviorDescriptor;
+        return myEventDateTime__BehaviorDescriptor;
       case 8:
-        return myFactBase__BehaviorDescriptor;
+        return myFact__BehaviorDescriptor;
       case 9:
-        return myFactModel__BehaviorDescriptor;
+        return myFactBase__BehaviorDescriptor;
       case 10:
-        return myFactTable__BehaviorDescriptor;
+        return myFactModel__BehaviorDescriptor;
       case 11:
-        return myFactType__BehaviorDescriptor;
+        return myFactTable__BehaviorDescriptor;
       case 12:
-        return myFactTypeWording__BehaviorDescriptor;
+        return myFactType__BehaviorDescriptor;
       case 13:
-        return myFactValue__BehaviorDescriptor;
+        return myFactTypeWording__BehaviorDescriptor;
       case 14:
-        return myIdentifier__BehaviorDescriptor;
+        return myFactValue__BehaviorDescriptor;
       case 15:
-        return myInstance__BehaviorDescriptor;
+        return myIdentifier__BehaviorDescriptor;
       case 16:
-        return myIntegerValue__BehaviorDescriptor;
+        return myInstance__BehaviorDescriptor;
       case 17:
-        return myKnownAt__BehaviorDescriptor;
+        return myIntegerValue__BehaviorDescriptor;
       case 18:
-        return myRole__BehaviorDescriptor;
+        return myKnownAt__BehaviorDescriptor;
       case 19:
-        return myRoleReference__BehaviorDescriptor;
+        return myPercentageValue__BehaviorDescriptor;
       case 20:
-        return myStringValue__BehaviorDescriptor;
+        return myRole__BehaviorDescriptor;
       case 21:
-        return myTimeValue__BehaviorDescriptor;
+        return myRoleReference__BehaviorDescriptor;
       case 22:
-        return myValidityFrom__BehaviorDescriptor;
+        return myStringValue__BehaviorDescriptor;
       case 23:
-        return myValidityTo__BehaviorDescriptor;
+        return myTimeValue__BehaviorDescriptor;
       case 24:
-        return myValue__BehaviorDescriptor;
+        return myValidityFrom__BehaviorDescriptor;
       case 25:
+        return myValidityTo__BehaviorDescriptor;
+      case 26:
+        return myValue__BehaviorDescriptor;
+      case 27:
         return myVariable__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex index_846f5o_a0db = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32cL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30e53bcL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6fc40fa1299d5a0L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1284L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97ff120aL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x337a9c0102b948b5L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3fbcaL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f67893L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea37L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6d9151c34d5925acL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0eafc6bL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df4163L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d95eaL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x60a1274b21e189e4L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7e44d86L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d95f0L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef1fL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x1bdede51790b01a4L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x1bdede51790b01a8L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d415aL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL)).seal();
+  private static final ConceptSwitchIndex index_846f5o_a0fb = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x435274beebf7e4cL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32cL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30e53bcL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6fc40fa1299d5a0L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1284L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97ff120aL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x337a9c0102b948b5L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f49215L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3fbcaL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f67893L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea37L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6d9151c34d5925acL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0eafc6bL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df4163L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d95eaL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x60a1274b21e189e4L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x435274beed27746L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7e44d86L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d95f0L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef1fL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x1bdede51790b01a4L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x1bdede51790b01a8L), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d415aL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL)).seal();
 }

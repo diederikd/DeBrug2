@@ -10,6 +10,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_AmountType;
+  private ConceptPresentation props_AmountValue;
   private ConceptPresentation props_Concept;
   private ConceptPresentation props_DateTimeType;
   private ConceptPresentation props_DateType;
@@ -48,7 +49,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IntegerType;
   private ConceptPresentation props_IntegerValue;
   private ConceptPresentation props_KnownAt;
+  private ConceptPresentation props_PercentageType;
+  private ConceptPresentation props_PercentageValue;
   private ConceptPresentation props_RealType;
+  private ConceptPresentation props_RealValue;
   private ConceptPresentation props_Role;
   private ConceptPresentation props_RoleReference;
   private ConceptPresentation props_RoleReferenceExpression;
@@ -79,6 +83,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AmountType = cpb.create();
         }
         return props_AmountType;
+      case LanguageConceptSwitch.AmountValue:
+        if (props_AmountValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_AmountValue = cpb.create();
+        }
+        return props_AmountValue;
       case LanguageConceptSwitch.Concept:
         if (props_Concept == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -343,6 +354,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_KnownAt = cpb.create();
         }
         return props_KnownAt;
+      case LanguageConceptSwitch.PercentageType:
+        if (props_PercentageType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_PercentageType = cpb.create();
+        }
+        return props_PercentageType;
+      case LanguageConceptSwitch.PercentageValue:
+        if (props_PercentageValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_PercentageValue = cpb.create();
+        }
+        return props_PercentageValue;
       case LanguageConceptSwitch.RealType:
         if (props_RealType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -350,6 +375,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RealType = cpb.create();
         }
         return props_RealType;
+      case LanguageConceptSwitch.RealValue:
+        if (props_RealValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("RealValue");
+          props_RealValue = cpb.create();
+        }
+        return props_RealValue;
       case LanguageConceptSwitch.Role:
         if (props_Role == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

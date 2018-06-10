@@ -26,9 +26,23 @@
       <concept id="771453498291786367" name="Facts.structure.Entity" flags="ng" index="24RHax">
         <reference id="771453498291786368" name="entitytype" index="24RH9u" />
       </concept>
+      <concept id="3829032966747723778" name="Facts.structure.FactWordRole" flags="ng" index="domOK">
+        <reference id="3829032966747932322" name="role" index="dpzeg" />
+      </concept>
+      <concept id="3829032966747723779" name="Facts.structure.FactWordValue" flags="ng" index="domOL">
+        <reference id="3829032966753962125" name="value" index="dwzQZ" />
+      </concept>
+      <concept id="3829032966747723780" name="Facts.structure.FactWordVerb" flags="ng" index="domOQ">
+        <reference id="2161142751703828886" name="verb" index="3PMA9R" />
+      </concept>
       <concept id="503348701156726176" name="Facts.structure.EntityType" flags="ng" index="kpplq">
         <property id="3711255831312432612" name="article" index="34u7DB" />
         <child id="3829032966743021132" name="specialisaties" index="2QidY" />
+      </concept>
+      <concept id="1028895148592232595" name="Facts.structure.FactTable" flags="ng" index="2WGioW">
+        <reference id="1028895148592232596" name="facttype" index="2WGioV" />
+        <child id="1028895148592232598" name="facts" index="2WGioT" />
+        <child id="3711255831315387304" name="wordings" index="3bDTgF" />
       </concept>
       <concept id="1028895148592102572" name="Facts.structure.Variable" flags="ng" index="2WGM83">
         <reference id="1028895148592102573" name="role" index="2WGM82" />
@@ -37,6 +51,13 @@
       <concept id="1028895148592102567" name="Facts.structure.Fact" flags="ng" index="2WGM88">
         <reference id="1028895148592102568" name="facttype" index="2WGM87" />
         <child id="1028895148592102575" name="variabeles" index="2WGM80" />
+      </concept>
+      <concept id="1028895148592108053" name="Facts.structure.FactBase" flags="ng" index="2WGWMU">
+        <child id="1028895148592108054" name="factTables" index="2WGWMT" />
+      </concept>
+      <concept id="1028895148592069578" name="Facts.structure.FactModel" flags="ng" index="2WHal_">
+        <child id="1028895148592069579" name="facttypes" index="2WHal$" />
+        <child id="4837839804573893084" name="enumerations" index="3kZ3hR" />
       </concept>
       <concept id="1028895148592067374" name="Facts.structure.Role" flags="ig" index="2WHaQ1">
         <property id="3711255831307726830" name="mandatory" index="34caxH" />
@@ -51,8 +72,12 @@
       <concept id="1028895148592067372" name="Facts.structure.Concept" flags="ng" index="2WHaQ3">
         <child id="8156496465148706012" name="identifiedBy" index="21QOUd" />
       </concept>
+      <concept id="1028895148592067430" name="Facts.structure.IntegerType" flags="ig" index="2WHaR9" />
       <concept id="1028895148592067426" name="Facts.structure.EntityTypeInRole" flags="ig" index="2WHaRd">
         <reference id="1028895148592067427" name="entityType" index="2WHaRc" />
+      </concept>
+      <concept id="1028895148593747434" name="Facts.structure.IntegerValue" flags="ng" index="2XiGH5">
+        <property id="1028895148593747435" name="value" index="2XiGH4" />
       </concept>
       <concept id="6962889702535956964" name="Facts.structure.KnownAt" flags="ig" index="11gaUJ" />
       <concept id="6962889702538204650" name="Facts.structure.Specializes" flags="ng" index="12CJax">
@@ -70,12 +95,37 @@
       </concept>
       <concept id="3711255831312269236" name="Facts.structure.FactTypeWordVerb" flags="ng" index="34tZwR" />
       <concept id="6005534472024570359" name="Facts.structure.AmountType" flags="ig" index="38dcwZ" />
+      <concept id="3711255831315372007" name="Facts.structure.FactWording" flags="ng" index="3bDP1$">
+        <reference id="3711255831315372010" name="fact" index="3bDP1D" />
+        <reference id="3711255831315372008" name="factTypeWording" index="3bDP1F" />
+        <child id="3829032966747724417" name="words" index="domYN" />
+      </concept>
+      <concept id="4837839804575977994" name="Facts.structure.EnumerationValue" flags="ng" index="3kR6ux">
+        <reference id="4837839804575977995" name="value" index="3kR6uw" />
+      </concept>
+      <concept id="4837839804573893081" name="Facts.structure.EnumerationType" flags="ig" index="3kZ3hM">
+        <reference id="4837839804573893082" name="enumeration" index="3kZ3hL" />
+      </concept>
+      <concept id="4837839804573892963" name="Facts.structure.Instance" flags="ng" index="3kZ3j8" />
+      <concept id="4837839804573892978" name="Facts.structure.Enumeration" flags="ng" index="3kZ3jp">
+        <child id="4837839804573892979" name="elements" index="3kZ3jo" />
+      </concept>
       <concept id="4837839804576369847" name="Facts.structure.DateTimeType" flags="ig" index="3r9B$s" />
       <concept id="4837839804576362294" name="Facts.structure.DatetimeValue" flags="ng" index="3r9TEt">
         <child id="4837839804576362295" name="value" index="3r9TEs" />
       </concept>
       <concept id="2008286925358301604" name="Facts.structure.ValidityFrom" flags="ig" index="1yPtZP" />
       <concept id="2008286925358301608" name="Facts.structure.ValidityTo" flags="ig" index="1yPtZT" />
+      <concept id="303191756998221852" name="Facts.structure.PercentageType" flags="ig" index="3Ewotn" />
+      <concept id="303191756998934092" name="Facts.structure.AmountValue" flags="ng" index="3Ey_$7">
+        <child id="303191756998934093" name="value" index="3Ey_$6" />
+      </concept>
+      <concept id="303191757000177474" name="Facts.structure.RealValue" flags="ng" index="3ETP09">
+        <property id="303191757000177475" name="value" index="3ETP08" />
+      </concept>
+      <concept id="303191757000177478" name="Facts.structure.PercentageValue" flags="ng" index="3ETP0d">
+        <child id="303191757000177479" name="value" index="3ETP0c" />
+      </concept>
     </language>
     <language id="f2b5f4c3-283f-45e7-932a-2eee84091ad4" name="Simulation">
       <concept id="3571499535060529969" name="Simulation.structure.TestState" flags="ng" index="2Zkv3m">
@@ -6899,6 +6949,625 @@
     <node concept="2aZM8O" id="16mnka5jJ8D" role="2aV1AT">
       <property role="TrG5h" value="ontvangstbevestiging voor verzoek 1" />
       <ref role="24RH9u" node="5KHcptZEjIN" resolve="ontvangstbevestiging" />
+    </node>
+  </node>
+  <node concept="2WHal_" id="gP9OJIHa02">
+    <property role="TrG5h" value="Inkomstenbelasting" />
+    <node concept="2WHaQ2" id="gP9OJIHa03" role="2WHal$">
+      <property role="TrG5h" value="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+      <node concept="2WHaR9" id="gP9OJIHa05" role="2WHaR8">
+        <property role="TrG5h" value="belastingjaar" />
+        <property role="34uzBG" value="het" />
+      </node>
+      <node concept="3kZ3hM" id="gP9OJIJPBR" role="2WHaR8">
+        <property role="TrG5h" value="belastingschijf" />
+        <ref role="3kZ3hL" node="gP9OJIJPBg" resolve="schijf" />
+      </node>
+      <node concept="38dcwZ" id="gP9OJIHa0a" role="2WHaR8">
+        <property role="TrG5h" value="van inkomsten" />
+        <property role="34uzBG" value="het" />
+      </node>
+      <node concept="38dcwZ" id="gP9OJIHa0i" role="2WHaR8">
+        <property role="TrG5h" value="tot en met inkomsten" />
+        <property role="34uzBG" value="het" />
+      </node>
+      <node concept="3Ewotn" id="gP9OJIJPBa" role="2WHaR8">
+        <property role="TrG5h" value="heffingspercentage" />
+        <property role="34uzBG" value="het" />
+      </node>
+      <node concept="21QOSU" id="gP9OJIJPBY" role="21QOUd">
+        <node concept="34pkC5" id="gP9OJIJPC2" role="21Rr83">
+          <ref role="34pkC4" node="gP9OJIHa05" resolve="belastingjaar" />
+        </node>
+        <node concept="34pkC5" id="gP9OJIJPC8" role="21Rr83">
+          <ref role="34pkC4" node="gP9OJIJPBR" resolve="belastingschijf" />
+        </node>
+      </node>
+      <node concept="34qYQO" id="gP9OJIJPCc" role="34qYOv">
+        <node concept="34tZwR" id="gP9OJIJPCg" role="34rq46">
+          <property role="TrG5h" value="In" />
+        </node>
+        <node concept="34qYQU" id="gP9OJIJPCm" role="34rq46">
+          <ref role="34qYQT" node="gP9OJIHa05" resolve="belastingjaar" />
+        </node>
+        <node concept="34tZwR" id="gP9OJIJPCu" role="34rq46">
+          <property role="TrG5h" value="heeft" />
+        </node>
+        <node concept="34qYQU" id="gP9OJIJPCC" role="34rq46">
+          <ref role="34qYQT" node="gP9OJIJPBR" resolve="belastingschijf" />
+        </node>
+        <node concept="34qYQU" id="gP9OJIJPD2" role="34rq46">
+          <ref role="34qYQT" node="gP9OJIJPBa" resolve="heffingspercentage" />
+        </node>
+      </node>
+      <node concept="34qYQO" id="gP9OJIJRR0" role="34qYOv">
+        <node concept="34tZwR" id="gP9OJIJRRa" role="34rq46">
+          <property role="TrG5h" value="In" />
+        </node>
+        <node concept="34qYQU" id="gP9OJIJRRg" role="34rq46">
+          <ref role="34qYQT" node="gP9OJIHa05" resolve="belastingjaar" />
+        </node>
+        <node concept="34tZwR" id="gP9OJIJRRo" role="34rq46">
+          <property role="TrG5h" value="loopt" />
+        </node>
+        <node concept="34qYQU" id="gP9OJIJRRy" role="34rq46">
+          <ref role="34qYQT" node="gP9OJIJPBR" resolve="belastingschijf" />
+        </node>
+        <node concept="34tZwR" id="gP9OJIJRRI" role="34rq46">
+          <property role="TrG5h" value="van" />
+        </node>
+        <node concept="34qYQU" id="gP9OJIJRRW" role="34rq46">
+          <ref role="34qYQT" node="gP9OJIHa0a" resolve="van inkomsten" />
+        </node>
+        <node concept="34tZwR" id="gP9OJIJRSc" role="34rq46">
+          <property role="TrG5h" value="tot en met" />
+        </node>
+        <node concept="34qYQU" id="gP9OJIJRSu" role="34rq46">
+          <ref role="34qYQT" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+        </node>
+      </node>
+    </node>
+    <node concept="3kZ3jp" id="gP9OJIJPBg" role="3kZ3hR">
+      <property role="TrG5h" value="schijf" />
+      <node concept="3kZ3j8" id="gP9OJIJPBk" role="3kZ3jo">
+        <property role="TrG5h" value="schijf 1" />
+      </node>
+      <node concept="3kZ3j8" id="gP9OJIJPBq" role="3kZ3jo">
+        <property role="TrG5h" value="schijf 2" />
+      </node>
+      <node concept="3kZ3j8" id="gP9OJIJPBu" role="3kZ3jo">
+        <property role="TrG5h" value="schijf 3" />
+      </node>
+      <node concept="3kZ3j8" id="gP9OJIJPBy" role="3kZ3jo">
+        <property role="TrG5h" value="schijf 4" />
+      </node>
+    </node>
+  </node>
+  <node concept="2WGWMU" id="gP9OJIJRSF">
+    <property role="TrG5h" value="Parameters inkomenstenbelasting" />
+    <node concept="2WGioW" id="gP9OJIUTY1" role="2WGWMT">
+      <ref role="2WGioV" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+      <node concept="2WGM88" id="gP9OJIUTY2" role="2WGioT">
+        <ref role="2WGM87" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+        <node concept="2WGM83" id="gP9OJIUTY3" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa05" resolve="belastingjaar" />
+          <node concept="2XiGH5" id="gP9OJIYxF2" role="2XiGH2">
+            <property role="2XiGH4" value="2015" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJIUTY4" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBR" resolve="belastingschijf" />
+          <node concept="3kR6ux" id="gP9OJIYxF5" role="2XiGH2">
+            <ref role="3kR6uw" node="gP9OJIJPBk" resolve="schijf 1" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJIUTY5" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0a" resolve="van inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJIVPHy" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJIVPH_" role="3Ey_$6">
+              <property role="3ETP08" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJIUTY6" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJIVPHm" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJIVPHp" role="3Ey_$6">
+              <property role="3ETP08" value="19822" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJIUTY7" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBa" resolve="heffingspercentage" />
+          <node concept="3ETP0d" id="gP9OJIUTYo" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJIUTYr" role="3ETP0c">
+              <property role="3ETP08" value="36,5" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="gP9OJIYxF8" role="2WGioT">
+        <ref role="2WGM87" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+        <node concept="2WGM83" id="gP9OJIYxF9" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa05" resolve="belastingjaar" />
+          <node concept="2XiGH5" id="gP9OJIYxFY" role="2XiGH2">
+            <property role="2XiGH4" value="2015" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJIYxFa" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBR" resolve="belastingschijf" />
+          <node concept="3kR6ux" id="gP9OJIYxGp" role="2XiGH2">
+            <ref role="3kR6uw" node="gP9OJIJPBq" resolve="schijf 2" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJIYxFb" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0a" resolve="van inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8mGp" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8mGs" role="3Ey_$6">
+              <property role="3ETP08" value="19823" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJIYxFc" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8mGX" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8mH0" role="3Ey_$6">
+              <property role="3ETP08" value="33589" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJIYxFd" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBa" resolve="heffingspercentage" />
+          <node concept="3ETP0d" id="gP9OJIYxIt" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJIYxIw" role="3ETP0c">
+              <property role="3ETP08" value="42" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="gP9OJJ2Yf4" role="2WGioT">
+        <ref role="2WGM87" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+        <node concept="2WGM83" id="gP9OJJ2Yf5" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa05" resolve="belastingjaar" />
+          <node concept="2XiGH5" id="gP9OJJ8mHv" role="2XiGH2">
+            <property role="2XiGH4" value="2015" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ2Yf6" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBR" resolve="belastingschijf" />
+          <node concept="3kR6ux" id="gP9OJJ67ub" role="2XiGH2">
+            <ref role="3kR6uw" node="gP9OJIJPBu" resolve="schijf 3" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ2Yf7" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0a" resolve="van inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8mIG" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8mIJ" role="3Ey_$6">
+              <property role="3ETP08" value="33590" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ2Yf8" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8mJg" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8mJj" role="3Ey_$6">
+              <property role="3ETP08" value="57585" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ2Yf9" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBa" resolve="heffingspercentage" />
+          <node concept="3ETP0d" id="gP9OJJ8mJO" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8mJR" role="3ETP0c">
+              <property role="3ETP08" value="42" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3bDP1$" id="gP9OJJ67rw" role="3bDTgF">
+        <ref role="3bDP1F" node="gP9OJIJPCc" resolve="[In, belastingjaar, heeft, belastingschijf, heffingspercentage]" />
+        <ref role="3bDP1D" node="gP9OJIYxF8" resolve="[ 2015, schijf 2, 19823 Euro, 33589 Euro, 42 %]" />
+        <node concept="domOQ" id="gP9OJJ8mF$" role="domYN">
+          <ref role="3PMA9R" node="gP9OJIJPCg" resolve="In" />
+        </node>
+        <node concept="domOK" id="gP9OJJ8mF_" role="domYN">
+          <ref role="dpzeg" node="gP9OJIJPCm" />
+        </node>
+        <node concept="domOL" id="gP9OJJ8mFB" role="domYN">
+          <ref role="dwzQZ" node="gP9OJIYxFY" />
+        </node>
+        <node concept="domOQ" id="gP9OJJ8mFC" role="domYN">
+          <ref role="3PMA9R" node="gP9OJIJPCu" resolve="heeft" />
+        </node>
+        <node concept="domOK" id="gP9OJJ8mFD" role="domYN">
+          <ref role="dpzeg" node="gP9OJIJPCC" />
+        </node>
+        <node concept="domOL" id="gP9OJJ8mFF" role="domYN">
+          <ref role="dwzQZ" node="gP9OJIYxGp" />
+        </node>
+        <node concept="domOK" id="gP9OJJ8mFG" role="domYN">
+          <ref role="dpzeg" node="gP9OJIJPD2" />
+        </node>
+        <node concept="domOL" id="gP9OJJ8mFI" role="domYN">
+          <ref role="dwzQZ" node="gP9OJIYxIt" resolve="42" />
+        </node>
+      </node>
+      <node concept="3bDP1$" id="gP9OJJ8tSU" role="3bDTgF">
+        <ref role="3bDP1F" node="gP9OJIJRR0" resolve="[In, belastingjaar, loopt, belastingschijf, van, van inkomsten, tot en met, tot en met inkomsten]" />
+        <ref role="3bDP1D" node="gP9OJIYxF8" resolve="[ 2015, schijf 2, 19823 Euro, 33589 Euro, 42 %]" />
+        <node concept="domOQ" id="gP9OJJ8uaM" role="domYN">
+          <ref role="3PMA9R" node="gP9OJIJRRa" resolve="In" />
+        </node>
+        <node concept="domOK" id="gP9OJJ8uaN" role="domYN">
+          <ref role="dpzeg" node="gP9OJIJRRg" />
+        </node>
+        <node concept="domOL" id="gP9OJJ8uaP" role="domYN">
+          <ref role="dwzQZ" node="gP9OJIYxFY" />
+        </node>
+        <node concept="domOQ" id="gP9OJJ8uaQ" role="domYN">
+          <ref role="3PMA9R" node="gP9OJIJRRo" resolve="loopt" />
+        </node>
+        <node concept="domOK" id="gP9OJJ8uaR" role="domYN">
+          <ref role="dpzeg" node="gP9OJIJRRy" />
+        </node>
+        <node concept="domOL" id="gP9OJJ8uaT" role="domYN">
+          <ref role="dwzQZ" node="gP9OJIYxGp" />
+        </node>
+        <node concept="domOQ" id="gP9OJJ8uaU" role="domYN">
+          <ref role="3PMA9R" node="gP9OJIJRRI" resolve="van" />
+        </node>
+        <node concept="domOK" id="gP9OJJ8uaV" role="domYN">
+          <ref role="dpzeg" node="gP9OJIJRRW" />
+        </node>
+        <node concept="domOL" id="gP9OJJ8uaX" role="domYN">
+          <ref role="dwzQZ" node="gP9OJJ8mGp" resolve="19823 Euro" />
+        </node>
+        <node concept="domOQ" id="gP9OJJ8uaY" role="domYN">
+          <ref role="3PMA9R" node="gP9OJIJRSc" resolve="tot en met" />
+        </node>
+        <node concept="domOK" id="gP9OJJ8uaZ" role="domYN">
+          <ref role="dpzeg" node="gP9OJIJRSu" />
+        </node>
+        <node concept="domOL" id="gP9OJJ8ub1" role="domYN">
+          <ref role="dwzQZ" node="gP9OJJ8mGX" resolve="33589 Euro" />
+        </node>
+      </node>
+      <node concept="2WGM88" id="gP9OJJ8mKm" role="2WGioT">
+        <ref role="2WGM87" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+        <node concept="2WGM83" id="gP9OJJ8mKn" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa05" resolve="belastingjaar" />
+          <node concept="2XiGH5" id="gP9OJJ8mMG" role="2XiGH2">
+            <property role="2XiGH4" value="2015" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mKo" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBR" resolve="belastingschijf" />
+          <node concept="3kR6ux" id="gP9OJJ8mOf" role="2XiGH2">
+            <ref role="3kR6uw" node="gP9OJIJPBy" resolve="schijf 4" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mKp" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0a" resolve="van inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8mPO" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8mPR" role="3Ey_$6">
+              <property role="3ETP08" value="57586" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mKq" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mKr" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBa" resolve="heffingspercentage" />
+          <node concept="3ETP0d" id="gP9OJJ8mQK" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8mQN" role="3ETP0c">
+              <property role="3ETP08" value="52" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="gP9OJJ8mRE" role="2WGioT">
+        <ref role="2WGM87" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+        <node concept="2WGM83" id="gP9OJJ8mRF" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa05" resolve="belastingjaar" />
+          <node concept="2XiGH5" id="gP9OJJ8n9U" role="2XiGH2">
+            <property role="2XiGH4" value="2016" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mRG" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBR" resolve="belastingschijf" />
+          <node concept="3kR6ux" id="gP9OJJ8nA6" role="2XiGH2">
+            <ref role="3kR6uw" node="gP9OJIJPBk" resolve="schijf 1" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mRH" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0a" resolve="van inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8qIC" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8qIF" role="3Ey_$6">
+              <property role="3ETP08" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mRI" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8qR4" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8qR7" role="3Ey_$6">
+              <property role="3ETP08" value="19922" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mRJ" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBa" resolve="heffingspercentage" />
+          <node concept="3ETP0d" id="gP9OJJ8qZw" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8qZz" role="3ETP0c">
+              <property role="3ETP08" value="36,55" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="gP9OJJ8mUS" role="2WGioT">
+        <ref role="2WGM87" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+        <node concept="2WGM83" id="gP9OJJ8mUT" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa05" resolve="belastingjaar" />
+          <node concept="2XiGH5" id="gP9OJJ8ngX" role="2XiGH2">
+            <property role="2XiGH4" value="2016" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mUU" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBR" resolve="belastingschijf" />
+          <node concept="3kR6ux" id="gP9OJJ8nH9" role="2XiGH2">
+            <ref role="3kR6uw" node="gP9OJIJPBq" resolve="schijf 2" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mUV" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0a" resolve="van inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8r7W" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8r7Z" role="3Ey_$6">
+              <property role="3ETP08" value="19923" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mUW" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8rgo" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8rgr" role="3Ey_$6">
+              <property role="3ETP08" value="33715" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mUX" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBa" resolve="heffingspercentage" />
+          <node concept="3ETP0d" id="gP9OJJ8roO" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8roR" role="3ETP0c">
+              <property role="3ETP08" value="40,40" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="gP9OJJ8mYU" role="2WGioT">
+        <ref role="2WGM87" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+        <node concept="2WGM83" id="gP9OJJ8mYV" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa05" resolve="belastingjaar" />
+          <node concept="2XiGH5" id="gP9OJJ8nrw" role="2XiGH2">
+            <property role="2XiGH4" value="2016" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mYW" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBR" resolve="belastingschijf" />
+          <node concept="3kR6ux" id="gP9OJJ8nOc" role="2XiGH2">
+            <ref role="3kR6uw" node="gP9OJIJPBu" resolve="schijf 3" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mYX" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0a" resolve="van inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8rxg" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8rxj" role="3Ey_$6">
+              <property role="3ETP08" value="33716" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mYY" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8rDG" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8rDJ" role="3Ey_$6">
+              <property role="3ETP08" value="66421" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8mYZ" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBa" resolve="heffingspercentage" />
+          <node concept="3ETP0d" id="gP9OJJ8rM8" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8rMb" role="3ETP0c">
+              <property role="3ETP08" value="40,40" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="gP9OJJ8n3S" role="2WGioT">
+        <ref role="2WGM87" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+        <node concept="2WGM83" id="gP9OJJ8n3T" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa05" resolve="belastingjaar" />
+          <node concept="2XiGH5" id="gP9OJJ8nyz" role="2XiGH2">
+            <property role="2XiGH4" value="2016" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8n3U" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBR" resolve="belastingschijf" />
+          <node concept="3kR6ux" id="gP9OJJ8nVf" role="2XiGH2">
+            <ref role="3kR6uw" node="gP9OJIJPBy" resolve="schijf 4" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8n3V" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0a" resolve="van inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8sbg" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8sbj" role="3Ey_$6">
+              <property role="3ETP08" value="66422" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8n3W" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8n3X" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBa" resolve="heffingspercentage" />
+          <node concept="3ETP0d" id="gP9OJJ8sjG" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8sjJ" role="3ETP0c">
+              <property role="3ETP08" value="52" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="gP9OJJ8o2i" role="2WGioT">
+        <ref role="2WGM87" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+        <node concept="2WGM83" id="gP9OJJ8o2j" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa05" resolve="belastingjaar" />
+          <node concept="2XiGH5" id="gP9OJJ8o9K" role="2XiGH2">
+            <property role="2XiGH4" value="2017" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8o2k" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBR" resolve="belastingschijf" />
+          <node concept="3kR6ux" id="gP9OJJ8oiN" role="2XiGH2">
+            <ref role="3kR6uw" node="gP9OJIJPBk" resolve="schijf 1" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8o2l" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0a" resolve="van inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8ss8" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8ssb" role="3Ey_$6">
+              <property role="3ETP08" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8o2m" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8s$$" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8s$B" role="3Ey_$6">
+              <property role="3ETP08" value="19982" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8o2n" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBa" resolve="heffingspercentage" />
+          <node concept="3ETP0d" id="gP9OJJ8sH0" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8sH3" role="3ETP0c">
+              <property role="3ETP08" value="36,55" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="gP9OJJ8orQ" role="2WGioT">
+        <ref role="2WGM87" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+        <node concept="2WGM83" id="gP9OJJ8orR" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa05" resolve="belastingjaar" />
+          <node concept="2XiGH5" id="gP9OJJ8oUO" role="2XiGH2">
+            <property role="2XiGH4" value="2017" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8orS" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBR" resolve="belastingschijf" />
+          <node concept="3kR6ux" id="gP9OJJ8pWX" role="2XiGH2">
+            <ref role="3kR6uw" node="gP9OJIJPBq" resolve="schijf 2" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8orT" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0a" resolve="van inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8sPs" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8sPv" role="3Ey_$6">
+              <property role="3ETP08" value="19983" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8orU" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8sXS" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8sXV" role="3Ey_$6">
+              <property role="3ETP08" value="33791" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8orV" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBa" resolve="heffingspercentage" />
+          <node concept="3ETP0d" id="gP9OJJ8t6k" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8t6n" role="3ETP0c">
+              <property role="3ETP08" value="40,80" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="gP9OJJ8o$G" role="2WGioT">
+        <ref role="2WGM87" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+        <node concept="2WGM83" id="gP9OJJ8o$H" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa05" resolve="belastingjaar" />
+          <node concept="2XiGH5" id="gP9OJJ8p37" role="2XiGH2">
+            <property role="2XiGH4" value="2017" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8o$I" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBR" resolve="belastingschijf" />
+          <node concept="3kR6ux" id="gP9OJJ8qdw" role="2XiGH2">
+            <ref role="3kR6uw" node="gP9OJIJPBu" resolve="schijf 3" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8o$J" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0a" resolve="van inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8teK" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8teN" role="3Ey_$6">
+              <property role="3ETP08" value="33792" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8o$K" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8tnc" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8tnf" role="3Ey_$6">
+              <property role="3ETP08" value="67072" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8o$L" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBa" resolve="heffingspercentage" />
+          <node concept="3ETP0d" id="gP9OJJ8tvC" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8tvF" role="3ETP0c">
+              <property role="3ETP08" value="40,40" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WGM88" id="gP9OJJ8oIY" role="2WGioT">
+        <ref role="2WGM87" node="gP9OJIHa03" resolve="heffingspercentage inkomsten uit werk en woning voor personen die de AOW-leeftijd nog niet hebben bereikt" />
+        <node concept="2WGM83" id="gP9OJJ8oIZ" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa05" resolve="belastingjaar" />
+          <node concept="2XiGH5" id="gP9OJJ8p$a" role="2XiGH2">
+            <property role="2XiGH4" value="2017" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8oJ0" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBR" resolve="belastingschijf" />
+          <node concept="3kR6ux" id="gP9OJJ8qu3" role="2XiGH2">
+            <ref role="3kR6uw" node="gP9OJIJPBy" resolve="schijf 4" />
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8oJ1" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0a" resolve="van inkomsten" />
+          <node concept="3Ey_$7" id="gP9OJJ8tC4" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8tC7" role="3Ey_$6">
+              <property role="3ETP08" value="68508" />
+            </node>
+          </node>
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8oJ2" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIHa0i" resolve="tot en met inkomsten" />
+        </node>
+        <node concept="2WGM83" id="gP9OJJ8oJ3" role="2WGM80">
+          <ref role="2WGM82" node="gP9OJIJPBa" resolve="heffingspercentage" />
+          <node concept="3ETP0d" id="gP9OJJ8tKw" role="2XiGH2">
+            <node concept="3ETP09" id="gP9OJJ8tKz" role="3ETP0c">
+              <property role="3ETP08" value="51,95" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

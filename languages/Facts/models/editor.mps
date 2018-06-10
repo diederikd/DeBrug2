@@ -619,7 +619,7 @@
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0ifn" id="T7nEYMX0P4" role="3EZMnx">
-        <property role="3F0ifm" value="Getal" />
+        <property role="3F0ifm" value="getal" />
       </node>
       <node concept="l2Vlx" id="T7nEYMX0OM" role="2iSdaV" />
     </node>
@@ -2774,8 +2774,33 @@
                   <node concept="2jxLKc" id="5dnWsyruPxY" role="1tU5fm" />
                 </node>
               </node>
-              <node concept="Jncv_" id="1RXUY7C8lqR" role="3cqZAp">
+              <node concept="Jncv_" id="gP9OJIJPDi" role="3cqZAp">
                 <ref role="JncvD" to="gq3g:5dnWsyroNBR" resolve="AmountType" />
+                <node concept="2OqwBi" id="gP9OJIJPDj" role="JncvB">
+                  <node concept="pncrf" id="gP9OJIJPDk" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="gP9OJIJPDl" role="2OqNvi">
+                    <ref role="3Tt5mk" to="gq3g:3e11SfRUICU" resolve="roleOfWord" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="gP9OJIJPDm" role="Jncv$">
+                  <node concept="3clFbF" id="gP9OJIJPDn" role="3cqZAp">
+                    <node concept="37vLTI" id="gP9OJIJPDo" role="3clFbG">
+                      <node concept="Xl_RD" id="gP9OJIJPDp" role="37vLTx">
+                        <property role="Xl_RC" value="bedrag" />
+                      </node>
+                      <node concept="37vLTw" id="gP9OJIJPDq" role="37vLTJ">
+                        <ref role="3cqZAo" node="1RXUY7C8flK" resolve="typeOfRole" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="JncvC" id="gP9OJIJPDr" role="JncvA">
+                  <property role="TrG5h" value="integerType" />
+                  <node concept="2jxLKc" id="gP9OJIJPDs" role="1tU5fm" />
+                </node>
+              </node>
+              <node concept="Jncv_" id="1RXUY7C8lqR" role="3cqZAp">
+                <ref role="JncvD" to="gq3g:gP9OJIHa0s" resolve="PercentageType" />
                 <node concept="2OqwBi" id="1RXUY7C8lqS" role="JncvB">
                   <node concept="pncrf" id="1RXUY7C8lqT" role="2Oq$k0" />
                   <node concept="3TrEf2" id="1RXUY7C8lqU" role="2OqNvi">
@@ -2786,7 +2811,7 @@
                   <node concept="3clFbF" id="1RXUY7C8lqW" role="3cqZAp">
                     <node concept="37vLTI" id="1RXUY7C8lqX" role="3clFbG">
                       <node concept="Xl_RD" id="1RXUY7C8lqY" role="37vLTx">
-                        <property role="Xl_RC" value="bedrag" />
+                        <property role="Xl_RC" value="percentage" />
                       </node>
                       <node concept="37vLTw" id="1RXUY7C8lqZ" role="37vLTJ">
                         <ref role="3cqZAo" node="1RXUY7C8flK" resolve="typeOfRole" />
@@ -3910,7 +3935,7 @@
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0ifn" id="1JuR_5T1oks" role="3EZMnx">
-        <property role="3F0ifm" value="Datumtijd" />
+        <property role="3F0ifm" value="datumtijd" />
       </node>
       <node concept="l2Vlx" id="1JuR_5T1okt" role="2iSdaV" />
     </node>
@@ -5265,6 +5290,81 @@
     </node>
     <node concept="2aJ2om" id="5dnWsyrrOry" role="CpUAK">
       <ref role="2$4xQ3" node="74LG_7KW551" resolve="nameOnly" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="gP9OJIHa0t">
+    <property role="3GE5qa" value="valuetypes" />
+    <ref role="1XX52x" to="gq3g:gP9OJIHa0s" resolve="PercentageType" />
+    <node concept="3EZMnI" id="gP9OJIHa0u" role="2wV5jI">
+      <node concept="PMmxH" id="gP9OJIHa0v" role="3EZMnx">
+        <ref role="PMmxG" node="11Ir3EW9mla" resolve="NameWithUnderlining" />
+      </node>
+      <node concept="PMmxH" id="gP9OJIHa0w" role="3EZMnx">
+        <ref role="PMmxG" node="3e11SfRJ8OK" resolve="Mandatory" />
+      </node>
+      <node concept="3F0ifn" id="gP9OJIHa0x" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0ifn" id="gP9OJIHa0y" role="3EZMnx">
+        <property role="3F0ifm" value="percentage" />
+      </node>
+      <node concept="l2Vlx" id="gP9OJIHa0z" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="gP9OJIHa0$" role="6VMZX">
+      <ref role="PMmxG" node="3e11SfRGK28" resolve="RoleInspector" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="gP9OJIHa0_">
+    <property role="3GE5qa" value="valuetypes" />
+    <ref role="1XX52x" to="gq3g:gP9OJIHa0s" resolve="PercentageType" />
+    <node concept="3EZMnI" id="gP9OJIHa0A" role="2wV5jI">
+      <node concept="3F0A7n" id="gP9OJIHa0B" role="3EZMnx">
+        <ref role="1k5W1q" node="T7nEYMX2nS" resolve="Bold" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="l2Vlx" id="gP9OJIHa0C" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="gP9OJIHa0D" role="6VMZX">
+      <ref role="PMmxG" node="3e11SfRGK28" resolve="RoleInspector" />
+    </node>
+    <node concept="2aJ2om" id="gP9OJIHa0E" role="CpUAK">
+      <ref role="2$4xQ3" node="74LG_7KW551" resolve="nameOnly" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="gP9OJIJRTf">
+    <property role="3GE5qa" value="values" />
+    <ref role="1XX52x" to="gq3g:gP9OJIJRTc" resolve="AmountValue" />
+    <node concept="3EZMnI" id="gP9OJIJRTg" role="2wV5jI">
+      <node concept="3F1sOY" id="gP9OJIJRTh" role="3EZMnx">
+        <ref role="1NtTu8" to="gq3g:gP9OJIJRTd" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="gP9OJIVPI0" role="3EZMnx">
+        <property role="3F0ifm" value=" Euro" />
+      </node>
+      <node concept="l2Vlx" id="gP9OJIJRTi" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="gP9OJIUTYE">
+    <property role="3GE5qa" value="values" />
+    <ref role="1XX52x" to="gq3g:gP9OJIOBt2" resolve="RealValue" />
+    <node concept="3EZMnI" id="gP9OJIUTYG" role="2wV5jI">
+      <node concept="3F0A7n" id="gP9OJIUTYQ" role="3EZMnx">
+        <ref role="1NtTu8" to="gq3g:gP9OJIOBt3" resolve="value" />
+      </node>
+      <node concept="l2Vlx" id="gP9OJIUTYJ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="gP9OJIVPHG">
+    <property role="3GE5qa" value="values" />
+    <ref role="1XX52x" to="gq3g:gP9OJIOBt6" resolve="PercentageValue" />
+    <node concept="3EZMnI" id="gP9OJIVPHH" role="2wV5jI">
+      <node concept="3F1sOY" id="gP9OJIVPHI" role="3EZMnx">
+        <ref role="1NtTu8" to="gq3g:gP9OJIOBt7" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="gP9OJIVPHP" role="3EZMnx">
+        <property role="3F0ifm" value=" %" />
+      </node>
+      <node concept="l2Vlx" id="gP9OJIVPHJ" role="2iSdaV" />
     </node>
   </node>
 </model>

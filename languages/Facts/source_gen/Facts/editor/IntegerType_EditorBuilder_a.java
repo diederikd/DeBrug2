@@ -56,7 +56,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
     return editorCell;
   }
   private EditorCell createConstant_26eqe2_d0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Getal");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "getal");
     editorCell.setCellId("Constant_26eqe2_d0");
     editorCell.setDefaultText("");
     return editorCell;
