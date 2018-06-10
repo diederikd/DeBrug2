@@ -495,10 +495,6 @@
         <property role="TrG5h" value="belastingplichtige" />
         <ref role="2WHaRc" node="5KHcptZyXQi" resolve="diegene die belastingplichtig is geweest" />
       </node>
-      <node concept="2WHaRd" id="5dnWsyr_1Bd" role="2WHaR8">
-        <property role="TrG5h" value="middelingsteruggaaf" />
-        <ref role="2WHaRc" node="5dnWsyrgQdW" resolve="middelingsteruggaaf" />
-      </node>
       <node concept="2WHaRd" id="5KHcptZB0R9" role="2WHaR8">
         <property role="TrG5h" value="middelingstijdvak" />
         <ref role="2WHaRc" node="5KHcptZB0OX" resolve="middelingstijdvak" />
@@ -530,372 +526,28 @@
     <node concept="2WHaQ2" id="5dnWsyrgQee" role="zHm7I">
       <property role="TrG5h" value="middelingsteruggaaf" />
       <node concept="34qYQO" id="5dnWsyrrOqF" role="34qYOv">
+        <node concept="34qYQU" id="gP9OJJbXn3" role="34rq46">
+          <ref role="34qYQT" node="4k$IsJEQO4A" resolve="verzoek" />
+        </node>
+        <node concept="34tZwR" id="gP9OJJbXnk" role="34rq46">
+          <property role="TrG5h" value="heeft geleid tot" />
+        </node>
         <node concept="34qYQU" id="5dnWsyrrOqL" role="34rq46">
-          <ref role="34qYQT" node="5dnWsyrrOq_" resolve="bedrag" />
-        </node>
-        <node concept="34tZwR" id="5dnWsyrrOqU" role="34rq46">
-          <property role="TrG5h" value="van" />
-        </node>
-        <node concept="34qYQU" id="5dnWsyrrOr7" role="34rq46">
-          <ref role="34qYQT" node="5dnWsyriW_h" resolve="middelingsteruggaaf" />
+          <ref role="34qYQT" node="5dnWsyrrOq_" resolve="middelingsteruggaaf" />
         </node>
       </node>
       <node concept="2WHaRd" id="4k$IsJEQO4A" role="2WHaR8">
         <property role="TrG5h" value="verzoek" />
+        <property role="34uzBG" value="het" />
         <ref role="2WHaRc" node="7kyIz29MLNe" resolve="verzoek middelingsteruggaaf" />
-      </node>
-      <node concept="2WHaRd" id="5dnWsyriW_h" role="2WHaR8">
-        <property role="TrG5h" value="middelingsteruggaaf" />
-        <ref role="2WHaRc" node="5dnWsyrgQdW" resolve="middelingsteruggaaf" />
       </node>
       <node concept="38dcwZ" id="5dnWsyrrOq_" role="2WHaR8">
-        <property role="TrG5h" value="bedrag" />
-        <property role="34uzBG" value="het" />
+        <property role="TrG5h" value="middelingsteruggaaf" />
+        <property role="34uzBG" value="de" />
       </node>
       <node concept="21QOSU" id="5dnWsyr_1AO" role="21QOUd">
-        <node concept="34pkC5" id="5dnWsyr_1AU" role="21Rr83">
-          <ref role="34pkC4" node="5dnWsyriW_h" resolve="middelingsteruggaaf" />
-        </node>
-      </node>
-    </node>
-    <node concept="2WHaQ2" id="5dnWsyr_2H1" role="zHm7I">
-      <property role="TrG5h" value="middelingsteruggaaf verleend" />
-      <property role="3khMER" value="true" />
-      <node concept="34qYQO" id="5dnWsyrTMjT" role="34qYOv">
-        <node concept="34qYQU" id="5dnWsyrTMjX" role="34rq46">
-          <ref role="34qYQT" node="5dnWsyrTMjK" resolve="middelingsteruggaaf" />
-        </node>
-        <node concept="34tZwR" id="5dnWsyrTMk3" role="34rq46">
-          <property role="TrG5h" value="is" />
-        </node>
-        <node concept="34qYQU" id="5dnWsyrTMkb" role="34rq46">
-          <ref role="34qYQT" node="5dnWsyrTMkv" resolve="verleend op" />
-        </node>
-      </node>
-      <node concept="2WHaRd" id="4k$IsJEQO4F" role="2WHaR8">
-        <property role="TrG5h" value="verzoek" />
-        <ref role="2WHaRc" node="7kyIz29MLNe" resolve="verzoek middelingsteruggaaf" />
-      </node>
-      <node concept="2WHaRd" id="5dnWsyrTMjK" role="2WHaR8">
-        <property role="TrG5h" value="middelingsteruggaaf" />
-        <ref role="2WHaRc" node="5dnWsyrgQdW" resolve="middelingsteruggaaf" />
-      </node>
-      <node concept="21QOSU" id="5dnWsyrTMkg" role="21QOUd">
-        <node concept="34pkC5" id="5dnWsyrTMkk" role="21Rr83">
-          <ref role="34pkC4" node="5dnWsyrTMjK" resolve="middelingsteruggaaf" />
-        </node>
-      </node>
-      <node concept="11gaUJ" id="5dnWsyrTMkv" role="2WHaR8">
-        <property role="TrG5h" value="verleend op" />
-        <property role="34caxH" value="true" />
-        <property role="34uzBG" value="geen" />
-      </node>
-    </node>
-    <node concept="3DQ70j" id="5dnWsyr_1BT" role="lGtFl">
-      <property role="3V$3am" value="facttypes" />
-      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/6642019552191860857" />
-      <node concept="1Pa9Pv" id="5dnWsyr_1D4" role="3DQ709">
-        <node concept="1PaTwC" id="5dnWsyr_1D5" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1Da" role="1PaTwD">
-            <property role="3oM_SC" value="Afleidingeregels" />
-            <property role="1X82S1" value="true" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2gC" role="1PaTwD">
-            <property role="3oM_SC" value="op" />
-            <property role="1X82S1" value="true" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2gH" role="1PaTwD">
-            <property role="3oM_SC" value="basis" />
-            <property role="1X82S1" value="true" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2gO" role="1PaTwD">
-            <property role="3oM_SC" value="van" />
-            <property role="1X82S1" value="true" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2gX" role="1PaTwD">
-            <property role="3oM_SC" value="artikel" />
-            <property role="1X82S1" value="true" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2h8" role="1PaTwD">
-            <property role="3oM_SC" value="3" />
-            <property role="1X82S1" value="true" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_2dH" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_2dG" role="1PaTwD">
-            <property role="3oM_SC" value="het verschil" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1Qy" role="1PaTwD">
-            <property role="3oM_SC" value="in" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1QB" role="1PaTwD">
-            <property role="3oM_SC" value="belasting" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1R2" role="1PaTwD">
-            <property role="3oM_SC" value="wordt" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1Rz" role="1PaTwD">
-            <property role="3oM_SC" value="gesteld op" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1IX" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1IW" role="1PaTwD">
-            <property role="3oM_SC" value="A" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1JM" role="1PaTwD">
-            <property role="3oM_SC" value="-" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1JR" role="1PaTwD">
-            <property role="3oM_SC" value="B" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1JZ" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1JY" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1KX" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1M3" role="1PaTwD">
-            <property role="3oM_SC" value="waarbij:" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1M7" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1M6" role="1PaTwD">
-            <property role="3oM_SC" value="-" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1Nc" role="1PaTwD">
-            <property role="3oM_SC" value="A" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1Nh" role="1PaTwD">
-            <property role="3oM_SC" value="voorstelt:" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1No" role="1PaTwD">
-            <property role="3oM_SC" value="belasting op het belastbare inkomen uit werk en woning die over de jaren van het middelingstijdvak is geheven" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1Ht" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1Hs" role="1PaTwD">
-            <property role="3oM_SC" value="-" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1Nx" role="1PaTwD">
-            <property role="3oM_SC" value="B" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1OS" role="1PaTwD">
-            <property role="3oM_SC" value="voorstelt:" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1OZ" role="1PaTwD">
-            <property role="3oM_SC" value="de belasting op het belastbare inkomen uit werk en woning die verschuldigd zou zijn indien het belastbare inkomen uit werk en woning in elk van die jaren een derde gedeelte zou bedragen van het totaal van de – ten minste op nihil te stellen – belastbare inkomens uit werk en woning in die jaren (herrekende belasting)" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1NB" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1NA" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1S4" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1TN" role="1PaTwD">
-            <property role="3oM_SC" value="het bedrag van de middelingsteruggaaf wordt" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1TG" role="1PaTwD">
-            <property role="3oM_SC" value="gesteld op" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1VA" role="1PaTwD">
-            <property role="3oM_SC" value="het" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1VH" role="1PaTwD">
-            <property role="3oM_SC" value="verschil" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1VQ" role="1PaTwD">
-            <property role="3oM_SC" value="in" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1Wj" role="1PaTwD">
-            <property role="3oM_SC" value="belasting" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1Yk" role="1PaTwD">
-            <property role="3oM_SC" value="Indien" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1We" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1TT" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1TS" role="1PaTwD">
-            <property role="3oM_SC" value="het" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_22t" role="1PaTwD">
-            <property role="3oM_SC" value="verschil" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_22y" role="1PaTwD">
-            <property role="3oM_SC" value="in" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_22D" role="1PaTwD">
-            <property role="3oM_SC" value="belasting" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_22M" role="1PaTwD">
-            <property role="3oM_SC" value="groter" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_22X" role="1PaTwD">
-            <property role="3oM_SC" value="is" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_23a" role="1PaTwD">
-            <property role="3oM_SC" value="dan" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_23p" role="1PaTwD">
-            <property role="3oM_SC" value="545" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_23E" role="1PaTwD">
-            <property role="3oM_SC" value="Euro" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_20A" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_20_" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_23Y" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_2bO" role="1PaTwD">
-            <property role="3oM_SC" value="het bedrag van de middelingsteruggaaf wordt" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_28q" role="1PaTwD">
-            <property role="3oM_SC" value="gesteld op" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_28r" role="1PaTwD">
-            <property role="3oM_SC" value="het" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_28s" role="1PaTwD">
-            <property role="3oM_SC" value="verschil" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_28t" role="1PaTwD">
-            <property role="3oM_SC" value="in" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_28u" role="1PaTwD">
-            <property role="3oM_SC" value="belasting" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_28v" role="1PaTwD">
-            <property role="3oM_SC" value="Indien" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_28w" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_28O" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_2c5" role="1PaTwD">
-            <property role="3oM_SC" value="het" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2bo" role="1PaTwD">
-            <property role="3oM_SC" value="verschil" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2bp" role="1PaTwD">
-            <property role="3oM_SC" value="in" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2bq" role="1PaTwD">
-            <property role="3oM_SC" value="belasting" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2cH" role="1PaTwD">
-            <property role="3oM_SC" value="kleiner" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2d0" role="1PaTwD">
-            <property role="3oM_SC" value="of" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2dl" role="1PaTwD">
-            <property role="3oM_SC" value="gelijk" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2bs" role="1PaTwD">
-            <property role="3oM_SC" value="is" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2bt" role="1PaTwD">
-            <property role="3oM_SC" value="aan" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2bu" role="1PaTwD">
-            <property role="3oM_SC" value="545" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2bv" role="1PaTwD">
-            <property role="3oM_SC" value="Euro" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_26a" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_269" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1Ex" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_2lq" role="1PaTwD">
-            <property role="3oM_SC" value="Afleidingeregels" />
-            <property role="1X82S1" value="true" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2l7" role="1PaTwD">
-            <property role="3oM_SC" value="op" />
-            <property role="1X82S1" value="true" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2l8" role="1PaTwD">
-            <property role="3oM_SC" value="basis" />
-            <property role="1X82S1" value="true" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2l9" role="1PaTwD">
-            <property role="3oM_SC" value="van" />
-            <property role="1X82S1" value="true" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2la" role="1PaTwD">
-            <property role="3oM_SC" value="artikel" />
-            <property role="1X82S1" value="true" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_2lb" role="1PaTwD">
-            <property role="3oM_SC" value="6" />
-            <property role="1X82S1" value="true" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_2hX" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_2hW" role="1PaTwD">
-            <property role="3oM_SC" value="het bedrag van de middelingsteruggaaf wordt" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1Y_" role="1PaTwD">
-            <property role="3oM_SC" value="gesteld op" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_20s" role="1PaTwD">
-            <property role="3oM_SC" value="A x C/B" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1GH" role="1PaTwD">
-            <property role="3oM_SC" value="Indien" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1GN" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1GM" role="1PaTwD">
-            <property role="3oM_SC" value="over een jaar van het middelingstijdvak een regeling ter voorkoming van dubbele belasting is toegepast" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1EF" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1EE" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1ET" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1ES" role="1PaTwD">
-            <property role="3oM_SC" value="waarbij:" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1Fb" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1Fa" role="1PaTwD">
-            <property role="3oM_SC" value="-" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1Fw" role="1PaTwD">
-            <property role="3oM_SC" value="A voorstelt: het bedrag van de middelingsteruggaaf dat zou zijn berekend indien geen regeling ter voorkoming van dubbele belasting zou zijn toegepast;" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1FA" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1F_" role="1PaTwD">
-            <property role="3oM_SC" value="-" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1G1" role="1PaTwD">
-            <property role="3oM_SC" value="B voorstelt: de belasting, bedoeld in het vierde lid die zou zijn geheven indien geen regeling ter voorkoming van dubbele belasting zou zijn toegepast;" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="5dnWsyr_1G7" role="1PaQFQ">
-          <node concept="3oM_SD" id="5dnWsyr_1G6" role="1PaTwD">
-            <property role="3oM_SC" value="-" />
-          </node>
-          <node concept="3oM_SD" id="5dnWsyr_1GC" role="1PaTwD">
-            <property role="3oM_SC" value="C voorstelt: de belasting, bedoeld in het vierde lid na toepassing van de regelingen ter voorkoming van dubbele belasting.\r" />
-          </node>
+        <node concept="34pkC5" id="gP9OJJbXmS" role="21Rr83">
+          <ref role="34pkC4" node="4k$IsJEQO4A" resolve="verzoek" />
         </node>
       </node>
     </node>
@@ -962,13 +614,377 @@
       </node>
     </node>
     <node concept="2WHaQ2" id="4k$IsJF0UY5" role="zHm7I">
-      <property role="TrG5h" value="Grondslagen voor de belasting" />
+      <property role="TrG5h" value="Grondslag voor de teruggaaf" />
       <node concept="2WHaRd" id="4k$IsJF0V0P" role="2WHaR8">
         <property role="TrG5h" value="belastingplichtige" />
         <ref role="2WHaRc" node="ws$rq2Fa$i" resolve="belastingplichtige" />
       </node>
+      <node concept="2WHaR9" id="gP9OJJbZmk" role="2WHaR8">
+        <property role="TrG5h" value="belastingjaar" />
+      </node>
       <node concept="38dcwZ" id="4k$IsJF0V0U" role="2WHaR8">
         <property role="TrG5h" value="belastbaar inkomen uit werk en woning " />
+      </node>
+      <node concept="21QOSU" id="gP9OJJbZms" role="21QOUd">
+        <node concept="34pkC5" id="gP9OJJbZmB" role="21Rr83">
+          <ref role="34pkC4" node="4k$IsJF0V0P" resolve="belastingplichtige" />
+        </node>
+        <node concept="34pkC5" id="gP9OJJbZmH" role="21Rr83">
+          <ref role="34pkC4" node="gP9OJJbZmk" resolve="belastingjaar" />
+        </node>
+      </node>
+    </node>
+    <node concept="3DQ70j" id="gP9OJJbZQ2" role="lGtFl">
+      <property role="3V$3am" value="facttypes" />
+      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/6642019552191860857" />
+      <node concept="1Pa9Pv" id="gP9OJJbZUf" role="3DQ709">
+        <node concept="1PaTwC" id="gP9OJJbZUg" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJbZUl" role="1PaTwD">
+            <property role="3oM_SC" value="afleidingsregels:" />
+            <property role="1X82S1" value="true" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0c$" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0cz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0bE" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0bD" role="1PaTwD">
+            <property role="3oM_SC" value="totaal" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZUo" role="1PaTwD">
+            <property role="3oM_SC" value="belastbaar" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZUt" role="1PaTwD">
+            <property role="3oM_SC" value="inkomen" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZU$" role="1PaTwD">
+            <property role="3oM_SC" value="=" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZUH" role="1PaTwD">
+            <property role="3oM_SC" value="som" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZUS" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZV5" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZVk" role="1PaTwD">
+            <property role="3oM_SC" value="belastbare" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZV_" role="1PaTwD">
+            <property role="3oM_SC" value="inkomens" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZVS" role="1PaTwD">
+            <property role="3oM_SC" value="uit" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZWd" role="1PaTwD">
+            <property role="3oM_SC" value="werk" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZW$" role="1PaTwD">
+            <property role="3oM_SC" value="en" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZWX" role="1PaTwD">
+            <property role="3oM_SC" value="woning" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZXo" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc02t" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc04$" role="1PaTwD">
+            <property role="3oM_SC" value="belastingjaren" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc05h" role="1PaTwD">
+            <property role="3oM_SC" value="die" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc060" role="1PaTwD">
+            <property role="3oM_SC" value="voorkomen" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc06L" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc07$" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0a5" role="1PaTwD">
+            <property role="3oM_SC" value="jaren" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZZo" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJbZZX" role="1PaTwD">
+            <property role="3oM_SC" value="het" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0aS" role="1PaTwD">
+            <property role="3oM_SC" value="midddelingstijdvak." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0dw" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0dv" role="1PaTwD">
+            <property role="3oM_SC" value="herrekend" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0ev" role="1PaTwD">
+            <property role="3oM_SC" value="belastbaar" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0e$" role="1PaTwD">
+            <property role="3oM_SC" value="inkomen" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0eZ" role="1PaTwD">
+            <property role="3oM_SC" value="=" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0f8" role="1PaTwD">
+            <property role="3oM_SC" value="totaal" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0fj" role="1PaTwD">
+            <property role="3oM_SC" value="belastbaar" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0fw" role="1PaTwD">
+            <property role="3oM_SC" value="inkomen" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0fJ" role="1PaTwD">
+            <property role="3oM_SC" value="/" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0g0" role="1PaTwD">
+            <property role="3oM_SC" value="3." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0gk" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0gj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0vO" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0vN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0xb" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0xc" role="1PaTwD">
+            <property role="3oM_SC" value="Afleidingeregels" />
+            <property role="1X82S1" value="true" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0xd" role="1PaTwD">
+            <property role="3oM_SC" value="op" />
+            <property role="1X82S1" value="true" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0xe" role="1PaTwD">
+            <property role="3oM_SC" value="basis" />
+            <property role="1X82S1" value="true" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0xf" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+            <property role="1X82S1" value="true" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0xg" role="1PaTwD">
+            <property role="3oM_SC" value="lid" />
+            <property role="1X82S1" value="true" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0xh" role="1PaTwD">
+            <property role="3oM_SC" value="3" />
+            <property role="1X82S1" value="true" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0xi" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0xj" role="1PaTwD">
+            <property role="3oM_SC" value="het verschil" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0xk" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0xl" role="1PaTwD">
+            <property role="3oM_SC" value="belasting" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0xm" role="1PaTwD">
+            <property role="3oM_SC" value="wordt" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0xn" role="1PaTwD">
+            <property role="3oM_SC" value="gesteld op" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0zl" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0xp" role="1PaTwD">
+            <property role="3oM_SC" value="A" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0xq" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0G2" role="1PaTwD">
+            <property role="3oM_SC" value="B" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0_j" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0_i" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0Dq" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0Dr" role="1PaTwD">
+            <property role="3oM_SC" value="waarbij:" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0Ds" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0Dt" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0Du" role="1PaTwD">
+            <property role="3oM_SC" value="A" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0Dv" role="1PaTwD">
+            <property role="3oM_SC" value="voorstelt:" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0Dw" role="1PaTwD">
+            <property role="3oM_SC" value="belasting op het belastbare inkomen uit werk en woning die over de jaren van het middelingstijdvak is geheven" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0Dx" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0Dy" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0Dz" role="1PaTwD">
+            <property role="3oM_SC" value="B" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0D$" role="1PaTwD">
+            <property role="3oM_SC" value="voorstelt:" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0D_" role="1PaTwD">
+            <property role="3oM_SC" value="de belasting op het belastbare inkomen uit werk en woning die verschuldigd zou zijn indien het belastbare inkomen uit werk en woning in elk van die jaren een derde gedeelte zou bedragen van het totaal van de – ten minste op nihil te stellen – belastbare inkomens uit werk en woning in die jaren (herrekende belasting)" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0Bl" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0Bk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0Iy" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0Ix" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0KZ" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0L0" role="1PaTwD">
+            <property role="3oM_SC" value="Afleidingeregels" />
+            <property role="1X82S1" value="true" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0L1" role="1PaTwD">
+            <property role="3oM_SC" value="op" />
+            <property role="1X82S1" value="true" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0L2" role="1PaTwD">
+            <property role="3oM_SC" value="basis" />
+            <property role="1X82S1" value="true" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0L3" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+            <property role="1X82S1" value="true" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0L4" role="1PaTwD">
+            <property role="3oM_SC" value="lid" />
+            <property role="1X82S1" value="true" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0L5" role="1PaTwD">
+            <property role="3oM_SC" value="6" />
+            <property role="1X82S1" value="true" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0L6" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc13G" role="1PaTwD">
+            <property role="3oM_SC" value="het verschil" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc13H" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc13I" role="1PaTwD">
+            <property role="3oM_SC" value="belasting" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc13J" role="1PaTwD">
+            <property role="3oM_SC" value="wordt" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc13K" role="1PaTwD">
+            <property role="3oM_SC" value="gesteld op" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0L9" role="1PaTwD">
+            <property role="3oM_SC" value="A x C/B" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0La" role="1PaTwD">
+            <property role="3oM_SC" value="Indien" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0Lb" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0Lc" role="1PaTwD">
+            <property role="3oM_SC" value="over een jaar van het middelingstijdvak een regeling ter voorkoming van dubbele belasting is toegepast" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0O6" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0O5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0R4" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0R3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0U5" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0U6" role="1PaTwD">
+            <property role="3oM_SC" value="waarbij:" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0U7" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0U8" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0U9" role="1PaTwD">
+            <property role="3oM_SC" value="A voorstelt: het bedrag van de middelingsteruggaaf dat zou zijn berekend indien geen regeling ter voorkoming van dubbele belasting zou zijn toegepast;" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0Ua" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0Ub" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0Uc" role="1PaTwD">
+            <property role="3oM_SC" value="B voorstelt: de belasting, bedoeld in het vierde lid die zou zijn geheven indien geen regeling ter voorkoming van dubbele belasting zou zijn toegepast;" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0Ud" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0Ue" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0Uf" role="1PaTwD">
+            <property role="3oM_SC" value="C voorstelt: de belasting, bedoeld in het vierde lid na toepassing van de regelingen ter voorkoming van dubbele belasting." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0Ug" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0Uh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="gP9OJJc0Ui" role="1PaQFQ">
+          <node concept="3oM_SD" id="gP9OJJc0Uj" role="1PaTwD">
+            <property role="3oM_SC" value="middelingsteruggaaf" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0Uk" role="1PaTwD">
+            <property role="3oM_SC" value="=" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0Ul" role="1PaTwD">
+            <property role="3oM_SC" value="verschil" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0Um" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0Un" role="1PaTwD">
+            <property role="3oM_SC" value="belasting" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0Uo" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="gP9OJJc0Up" role="1PaTwD">
+            <property role="3oM_SC" value="545" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="XSeYT" id="5KHcptZB0Rw" role="LNKji">
@@ -1455,10 +1471,6 @@
       <node concept="XOnPS" id="5KHcptZEkvy" role="XRLcH">
         <property role="3khMER" value="true" />
         <property role="2gfjKd" value="mede te delen" />
-        <node concept="zAPZE" id="5dnWsyrTMkn" role="zAPWj">
-          <ref role="zAPZD" node="5KHcptZEkvy" resolve="de voor bezwaar vatbare beschikking mede te delen" />
-          <ref role="zAPZC" node="5dnWsyr_2H1" resolve="middelingsteruggaaf verleend" />
-        </node>
         <node concept="2gjdzW" id="5KHcptZHAr_" role="2gjdy2">
           <property role="2gjdyJ" value="B" />
           <ref role="2gjdzZ" node="5KHcptZEkvy" resolve="de voor bezwaar vatbare beschikking mede te delen" />

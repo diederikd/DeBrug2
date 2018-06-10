@@ -8,7 +8,6 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
-    <import index="kbow" ref="r:f448efb6-271a-4b32-b780-14004cb45bb4(ProjectBrowserPlugin.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -388,6 +387,12 @@
         </node>
       </node>
     </node>
+    <node concept="2sgV4H" id="gP9OJJcg3a" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
+      <node concept="398BVA" id="gP9OJJcg4X" role="2JcizS">
+        <ref role="398BVh" node="sHNKs6FDQd" resolve="mps_home" />
+      </node>
+    </node>
     <node concept="2sgV4H" id="sHNKs6S3MF" role="1l3spa">
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="sHNKs6S3O2" role="2JcizS">
@@ -565,7 +570,7 @@
       <node concept="m$_yC" id="sHNKs6FDS5" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
-      <node concept="m$_yC" id="sHNKs6FFl8" role="m$_yJ">
+      <node concept="m$_yC" id="gP9OJJc17R" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:6EN03E8oSte" resolve="jetbrains.mps.ide.make" />
       </node>
       <node concept="m$_yC" id="sHNKs6FFoX" role="m$_yJ">

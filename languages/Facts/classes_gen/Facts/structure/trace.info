@@ -18,7 +18,7 @@
       <unit at="10,0,148,0" name="Facts.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="16,0,739,0" name="Facts.structure.StructureAspectDescriptor" />
+      <unit at="16,0,744,0" name="Facts.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/2282129504205496890">

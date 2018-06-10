@@ -15,23 +15,25 @@
   <property name="mbeddr.github.core.home" location="${mps_home}/plugins" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
+  <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.com.mbeddr.platform" location="${mbeddr_home}" />
   <property name="artifacts.mpsTesting" location="${mps_home}/plugins" />
   <property name="artifacts.mpsContextActionsTool" location="${mps_home}/plugins" />
   <property name="artifacts.jetpad" location="${mps_home}/plugins" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
+  <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.platform}/build.properties" prefix="import.com.mbeddr.platform" />
   <property name="mpsBootstrapCore.version" value="${import.mpsStandalone.mpsBootstrapCore.version}" />
+  <property name="mps.build.number" value="${import.mps.mps.build.number}" />
+  <property name="mps.date" value="${import.mps.mps.date}" />
+  <property name="mps.build.vcs.number" value="${import.mps.mps.build.vcs.number}" />
+  <property name="mps.teamcity.buildConfName" value="${import.mps.mps.teamcity.buildConfName}" />
+  <property name="mps.idea.platform.build.number" value="${import.mps.mps.idea.platform.build.number}" />
+  <property name="mps.mps.build.counter" value="${import.mps.mps.mps.build.counter}" />
   <property name="com.mbeddr.platform.major.version" value="${import.com.mbeddr.platform.com.mbeddr.platform.major.version}" />
   <property name="com.mbeddr.platform.minor.version" value="${import.com.mbeddr.platform.com.mbeddr.platform.minor.version}" />
   <property name="com.mbeddr.platform.build" value="${import.com.mbeddr.platform.com.mbeddr.platform.build}" />
   <property name="com.mbeddr.platform.mbeddr.version" value="${import.com.mbeddr.platform.com.mbeddr.platform.mbeddr.version}" />
-  <property name="mps.build.number" value="${import.com.mbeddr.platform.mps.build.number}" />
-  <property name="mps.date" value="${import.com.mbeddr.platform.mps.date}" />
-  <property name="mps.build.vcs.number" value="${import.com.mbeddr.platform.mps.build.vcs.number}" />
-  <property name="mps.teamcity.buildConfName" value="${import.com.mbeddr.platform.mps.teamcity.buildConfName}" />
-  <property name="mps.idea.platform.build.number" value="${import.com.mbeddr.platform.mps.idea.platform.build.number}" />
-  <property name="mps.mps.build.counter" value="${import.com.mbeddr.platform.mps.mps.build.counter}" />
   <property name="de.itemis.mps.extensions.versionNumber" value="${import.com.mbeddr.platform.de.itemis.mps.extensions.versionNumber}" />
   <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
@@ -108,11 +110,11 @@
     </copy>
     <mkdir dir="${build.layout}/plugins/svn4idea" />
     <copy todir="${build.layout}/plugins/svn4idea">
-      <fileset dir="${build.layout}/plugins/svn4idea" />
+      <fileset dir="${artifacts.mps}/plugins/svn4idea" />
     </copy>
     <mkdir dir="${build.layout}/plugins/git4idea" />
     <copy todir="${build.layout}/plugins/git4idea">
-      <fileset dir="${build.layout}/plugins/git4idea" />
+      <fileset dir="${artifacts.mps}/plugins/git4idea" />
     </copy>
     <mkdir dir="${build.layout}/plugins/mps-core" />
     <copy todir="${build.layout}/plugins/mps-core">
@@ -838,7 +840,7 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-Test-models" prefix="module/models" />
     </jar>
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
-    <echo file="${build.layout}/build.properties">DeBrug2.date=${date}${line.separator}DeBrug2.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}</echo>
+    <echo file="${build.layout}/build.properties">DeBrug2.date=${date}${line.separator}DeBrug2.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -867,7 +869,7 @@
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true">
       <plugin path="${artifacts.mpsMakePlugin}/mps-make" />
       <plugin path="${artifacts.mpsStandalone}/plugins/mps-core/META-INF/plugin.xml/../.." />
-      <plugin path="${artifacts.mpsTesting}/mps-testing" />
+      <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.grammarcells/languages/group.grammarcells/com.mbeddr.mpsutil.grammarcells.jar" />
@@ -892,9 +894,6 @@
       <library file="${artifacts.com.mbeddr.platform}/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
       <library file="${artifacts.com.mbeddr.platform}/mps-tables/languages/mps-tables/de.slisson.mps.tables.jar" />
       <library file="${artifacts.com.mbeddr.platform}/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
-      <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.jar" />
-      <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.jar" />
-      <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.pluginSolution.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -976,11 +975,14 @@
       <library file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
       <library file="${artifacts.mpsStandalone}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.jar" />
       <library file="${artifacts.mpsStandalone}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
-      <library file="${artifacts.mpsTesting}/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
-      <library file="${artifacts.mpsTesting}/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
-      <library file="${artifacts.mpsTesting}/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
-      <library file="${artifacts.mpsTesting}/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
-      <library file="${artifacts.mpsTesting}/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
+      <library file="${artifacts.mps}/plugins/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.jar" />
+      <library file="${artifacts.mps}/plugins/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.jar" />
+      <library file="${artifacts.mps}/plugins/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.pluginSolution.jar" />
+      <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
+      <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
+      <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
+      <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+      <library file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
       <chunk>
         <module file="${basedir}/languages/DateTime/DateTime.mpl" />
         <module file="${basedir}/languages/Expressions/Expressions.mpl" />
@@ -1235,7 +1237,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
         <pathelement path="${build.tmp}/java/out/Facts" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
@@ -1294,7 +1296,7 @@
         <pathelement path="${build.tmp}/java/out/DateTime" />
         <pathelement path="${build.tmp}/java/out/SQL" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ant/lib/ant.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/junit-4.12.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
@@ -1313,16 +1315,16 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
-        <fileset file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.jar" />
-        <fileset file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.pluginSolution.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
+        <fileset file="${artifacts.mps}/plugins/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.jar" />
+        <fileset file="${artifacts.mps}/plugins/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.pluginSolution.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
@@ -1354,7 +1356,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
         <pathelement path="${build.tmp}/java/out/Facts" />
         <pathelement path="${build.tmp}/java/out/SQL" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
@@ -1399,7 +1401,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <pathelement path="${build.tmp}/java/out/Expressions" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
         <pathelement path="${build.tmp}/java/out/Facts" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
@@ -1462,7 +1464,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <pathelement path="${build.tmp}/java/out/Expressions" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
         <pathelement path="${build.tmp}/java/out/Facts" />
         <pathelement path="${build.tmp}/java/out/Position" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
@@ -1584,7 +1586,7 @@
         <pathelement path="${build.tmp}/java/out/DateTime" />
         <pathelement path="${build.tmp}/java/out/Expressions" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
         <pathelement path="${build.tmp}/java/out/Facts" />
         <pathelement path="${build.tmp}/java/out/Position" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
@@ -1634,7 +1636,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
         <pathelement path="${build.tmp}/java/out/Facts" />
         <pathelement path="${build.tmp}/java/out/Simulation" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
@@ -1678,7 +1680,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
         <pathelement path="${build.tmp}/java/out/Facts" />
         <pathelement path="${build.tmp}/java/out/Facts.sandbox" />
         <fileset file="${artifacts.mpsStandalone}/lib/ant/lib/ant.jar" />
@@ -1692,11 +1694,11 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
-        <fileset file="${artifacts.mpsTesting}/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>

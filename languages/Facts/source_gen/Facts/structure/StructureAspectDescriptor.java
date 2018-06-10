@@ -253,6 +253,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Facts.structure.ValueType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32fL);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/4837839804576369847");
     b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
+    b.alias("datum/tijd");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDateType() {
@@ -261,6 +262,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Facts.structure.ValueType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32fL);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592092808");
     b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
+    b.alias("datum");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDateValue() {
@@ -540,6 +542,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Facts.structure.ValueType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32fL);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592067430");
     b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
+    b.alias("getal");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIntegerValue() {
@@ -668,6 +671,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Facts.structure.ValueType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32fL);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592067429");
     b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
+    b.alias("reeks van karakters");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForStringValue() {
@@ -684,6 +688,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Facts.structure.ValueType", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32fL);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/4837839804575073884");
     b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
+    b.alias("tijd");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTimeValue() {

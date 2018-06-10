@@ -167,12 +167,14 @@
     <property role="EcuMT" value="1028895148592067429" />
     <property role="TrG5h" value="StringType" />
     <property role="3GE5qa" value="valuetypes" />
+    <property role="34LRSv" value="reeks van karakters" />
     <ref role="1TJDcQ" node="T7nEYMWZcJ" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="T7nEYMWZdA">
     <property role="EcuMT" value="1028895148592067430" />
     <property role="TrG5h" value="IntegerType" />
     <property role="3GE5qa" value="valuetypes" />
+    <property role="34LRSv" value="getal" />
     <ref role="1TJDcQ" node="T7nEYMWZcJ" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="T7nEYMWZJa">
@@ -209,6 +211,7 @@
     <property role="EcuMT" value="1028895148592092808" />
     <property role="TrG5h" value="DateType" />
     <property role="3GE5qa" value="valuetypes" />
+    <property role="34LRSv" value="datum" />
     <ref role="1TJDcQ" node="T7nEYMWZcJ" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="T7nEYMX7MB">
@@ -614,6 +617,7 @@
     <property role="EcuMT" value="4837839804575073884" />
     <property role="TrG5h" value="TimeType" />
     <property role="3GE5qa" value="valuetypes" />
+    <property role="34LRSv" value="tijd" />
     <ref role="1TJDcQ" node="T7nEYMWZcJ" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="4cztqInZL8a">
@@ -665,6 +669,7 @@
     <property role="EcuMT" value="4837839804576369847" />
     <property role="TrG5h" value="DateTimeType" />
     <property role="3GE5qa" value="valuetypes" />
+    <property role="34LRSv" value="datum/tijd" />
     <ref role="1TJDcQ" node="T7nEYMWZcJ" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="1JuR_5T2K6$">
