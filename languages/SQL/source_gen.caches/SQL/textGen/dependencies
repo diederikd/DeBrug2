@@ -79,6 +79,12 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="SQL.textGen.DML_TextGen" file="DML_TextGen.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="SQL.textGen.DROPPROCEDURE_TextGen" file="DROPPROCEDURE_TextGen.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
@@ -177,6 +183,7 @@
     <classNode dependClassName="SQL.textGen.DATETIME_TextGen" />
     <classNode dependClassName="SQL.textGen.DATE_TextGen" />
     <classNode dependClassName="SQL.textGen.DDL_TextGen" />
+    <classNode dependClassName="SQL.textGen.DML_TextGen" />
     <classNode dependClassName="SQL.textGen.DROPPROCEDURE_TextGen" />
     <classNode dependClassName="SQL.textGen.DROPTABLE_TextGen" />
     <classNode dependClassName="SQL.textGen.ENUMERATIONVALUE_TextGen" />
@@ -192,6 +199,7 @@
     <classNode dependClassName="SQL.textGen.VARCHAR255_TextGen" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenDescriptor" />
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenModelOutline" />
