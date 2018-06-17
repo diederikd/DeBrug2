@@ -244,15 +244,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="Simulation.editor.SelectionActionMap" file="SelectionActionMap.java">
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-  </dependency>
-  <dependency className="Simulation.editor.SelectionKeyMap" file="SelectionKeyMap.java">
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.KeyMapAction" />
-    <classNode extendsClassName="jetbrains.mps.editor.runtime.cells.KeyMapImpl" />
-  </dependency>
   <dependency className="Simulation.editor.Selection_Editor" file="Selection_Editor.java">
     <classNode dependClassName="Simulation.editor.Selection_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />

@@ -83,9 +83,6 @@
       <concept id="1214406466686" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorSelectedStyleClassItem" flags="ln" index="30h1P$" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
-      <concept id="1081293058843" name="jetbrains.mps.lang.editor.structure.CellKeyMapDeclaration" flags="ig" index="325Ffw">
-        <reference id="1139445935125" name="applicableConcept" index="1chiOs" />
-      </concept>
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -597,16 +594,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1h_SRR" id="4k2VbN5B972">
-    <property role="TrG5h" value="SelectionActionMap" />
-    <property role="3GE5qa" value="query" />
-    <ref role="1h_SK9" to="b26o:5sq8N5jS3Ku" resolve="Selection" />
-  </node>
-  <node concept="325Ffw" id="4k2VbN5EZlz">
-    <property role="TrG5h" value="SelectionKeyMap" />
-    <property role="3GE5qa" value="query" />
-    <ref role="1chiOs" to="b26o:5sq8N5jS3Ku" resolve="Selection" />
   </node>
   <node concept="24kQdi" id="11Ir3EV6TYe">
     <property role="3GE5qa" value="query" />

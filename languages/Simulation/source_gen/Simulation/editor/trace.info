@@ -2295,30 +2295,6 @@
       <unit id="4972797234076796883" at="26,0,204,0" name="Simulation.editor.Selection_EditorBuilder_a" />
     </file>
   </root>
-  <root nodeRef="r:709773c2-7c4f-4e8e-a7fd-3ea3c20211ef(Simulation.editor)/4972797234083828162">
-    <file name="SelectionActionMap.java">
-      <node id="4972797234083828162" at="10,0,12,0" concept="8" trace="setCellActions#(Ljetbrains/mps/openapi/editor/cells/EditorCell;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-      <scope id="4972797234083828162" at="10,95,10,95" />
-      <scope id="4972797234083828162" at="10,0,12,0">
-        <var name="context" id="4972797234083828162" />
-        <var name="editorCell" id="4972797234083828162" />
-        <var name="node" id="4972797234083828162" />
-      </scope>
-      <unit id="4972797234083828162" at="9,0,13,0" name="Simulation.editor.SelectionActionMap" />
-    </file>
-  </root>
-  <root nodeRef="r:709773c2-7c4f-4e8e-a7fd-3ea3c20211ef(Simulation.editor)/4972797234084836707">
-    <file name="SelectionKeyMap.java">
-      <node id="4972797234084836707" at="9,28,10,42" concept="1" />
-      <node id="4972797234084836707" at="10,42,11,24" concept="5" />
-      <node id="4972797234084836707" at="9,0,13,0" concept="0" trace="SelectionKeyMap#()V" />
-      <scope id="4972797234084836707" at="9,28,11,24">
-        <var name="action" id="4972797234084836707" />
-      </scope>
-      <scope id="4972797234084836707" at="9,0,13,0" />
-      <unit id="4972797234084836707" at="8,0,14,0" name="Simulation.editor.SelectionKeyMap" />
-    </file>
-  </root>
   <root nodeRef="r:709773c2-7c4f-4e8e-a7fd-3ea3c20211ef(Simulation.editor)/7231564582495546118">
     <file name="ExecuteTests.java">
       <node id="7231564582495546118" at="13,95,14,90" concept="1" />

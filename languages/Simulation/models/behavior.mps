@@ -191,10 +191,6 @@
         <property id="6332851714983843871" name="severity" index="2xdLsb" />
         <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
@@ -1919,20 +1915,6 @@
                 </node>
               </node>
             </node>
-            <node concept="34ab3g" id="11Ir3EVI_F2" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="11Ir3EVIFux" role="34bqiv">
-                <node concept="2OqwBi" id="11Ir3EVIFK3" role="3uHU7w">
-                  <node concept="13iPFW" id="11Ir3EVIFzk" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="11Ir3EVKmYw" role="2OqNvi">
-                    <ref role="37wK5l" node="11Ir3EVK61B" resolve="allEntityTypeInSelection" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="11Ir3EVI_F4" role="3uHU7B">
-                  <property role="Xl_RC" value="All entitytypes in selection" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="11Ir3EVJiWl" role="3cqZAp">
               <node concept="2OqwBi" id="11Ir3EVJp3V" role="3clFbG">
                 <node concept="37vLTw" id="11Ir3EVJiWj" role="2Oq$k0">
@@ -2154,9 +2136,6 @@
           <node concept="3cpWsn" id="36gwYufkWs1" role="3cpWs9">
             <property role="TrG5h" value="valid" />
             <node concept="10P_77" id="36gwYufkWrX" role="1tU5fm" />
-            <node concept="3clFbT" id="6hrFqLtKS9z" role="33vP2m">
-              <property role="3clFbU" value="false" />
-            </node>
           </node>
         </node>
         <node concept="3clFbF" id="36gwYufkWGM" role="3cqZAp">

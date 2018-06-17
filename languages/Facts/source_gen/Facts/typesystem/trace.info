@@ -62,47 +62,31 @@
   </root>
   <root nodeRef="r:b10ef954-55f4-4774-8fb6-82453f7c9940(Facts.typesystem)/3711255831309050234">
     <file name="typeof_EntityTable_InferenceRule.java">
-      <node id="3711255831309050254" at="25,39,26,378" concept="7" />
-      <node id="3711255831309074907" at="29,7,30,60" concept="6" />
-      <node id="3711255831309074907" at="30,60,31,241" concept="6" />
-      <node id="3711255831309050234" at="35,50,36,134" concept="7" />
-      <node id="3711255831309050234" at="38,68,39,102" concept="7" />
-      <node id="3711255831309050234" at="41,30,42,17" concept="7" />
-      <node id="3711255831309050234" at="21,0,23,0" concept="1" trace="typeof_EntityTable_InferenceRule#()V" />
-      <node id="3711255831309050252" at="25,0,28,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="3711255831309050234" at="35,0,38,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="3711255831309050234" at="38,0,41,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="3711255831309050234" at="41,0,44,0" concept="5" trace="overrides#()Z" />
-      <node id="3711255831309074907" at="28,22,32,7" concept="0" />
-      <node id="3711255831309050236" at="23,124,33,5" concept="4" />
-      <node id="3711255831309050234" at="23,0,35,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="3711255831309050234" at="21,45,21,45" />
-      <scope id="3711255831309050253" at="25,39,26,378" />
-      <scope id="3711255831309050234" at="35,50,36,134" />
-      <scope id="3711255831309050234" at="38,68,39,102" />
-      <scope id="3711255831309050234" at="41,30,42,17" />
-      <scope id="3711255831309050234" at="21,0,23,0" />
-      <scope id="3711255831309074907" at="29,7,31,241">
-        <var name="_reporter_2309309498" id="3711255831309074907" />
-        <var name="errorTarget" id="3711255831309074907" />
-      </scope>
-      <scope id="3711255831309050252" at="25,0,28,0">
-        <var name="it" id="3711255831309050252" />
-      </scope>
-      <scope id="3711255831309050234" at="35,0,38,0" />
-      <scope id="3711255831309050234" at="38,0,41,0">
-        <var name="argument" id="3711255831309050234" />
-      </scope>
-      <scope id="3711255831309050234" at="41,0,44,0" />
-      <scope id="3711255831309050237" at="28,22,32,7" />
-      <scope id="3711255831309050235" at="23,124,33,5" />
-      <scope id="3711255831309050234" at="23,0,35,0">
+      <node id="3711255831309050234" at="18,50,19,134" concept="7" />
+      <node id="3711255831309050234" at="21,68,22,102" concept="7" />
+      <node id="3711255831309050234" at="24,30,25,17" concept="7" />
+      <node id="3711255831309050234" at="14,0,16,0" concept="1" trace="typeof_EntityTable_InferenceRule#()V" />
+      <node id="3711255831309050234" at="16,0,18,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <node id="3711255831309050234" at="18,0,21,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3711255831309050234" at="21,0,24,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3711255831309050234" at="24,0,27,0" concept="5" trace="overrides#()Z" />
+      <scope id="3711255831309050234" at="14,45,14,45" />
+      <scope id="3711255831309050235" at="16,124,16,124" />
+      <scope id="3711255831309050234" at="18,50,19,134" />
+      <scope id="3711255831309050234" at="21,68,22,102" />
+      <scope id="3711255831309050234" at="24,30,25,17" />
+      <scope id="3711255831309050234" at="14,0,16,0" />
+      <scope id="3711255831309050234" at="16,0,18,0">
         <var name="entityTable" id="3711255831309050234" />
         <var name="status" id="3711255831309050234" />
         <var name="typeCheckingContext" id="3711255831309050234" />
       </scope>
-      <unit id="3711255831309050252" at="24,387,28,5" name="Facts.typesystem.typeof_EntityTable_InferenceRule$1" />
-      <unit id="3711255831309050234" at="20,0,45,0" name="Facts.typesystem.typeof_EntityTable_InferenceRule" />
+      <scope id="3711255831309050234" at="18,0,21,0" />
+      <scope id="3711255831309050234" at="21,0,24,0">
+        <var name="argument" id="3711255831309050234" />
+      </scope>
+      <scope id="3711255831309050234" at="24,0,27,0" />
+      <unit id="3711255831309050234" at="13,0,28,0" name="Facts.typesystem.typeof_EntityTable_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:b10ef954-55f4-4774-8fb6-82453f7c9940(Facts.typesystem)/4150602027910146658">

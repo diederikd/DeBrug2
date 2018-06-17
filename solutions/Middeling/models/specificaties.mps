@@ -396,6 +396,112 @@
     <node concept="LNfIO" id="7kyIz29MLNb" role="LNfl$">
       <property role="TrG5h" value="kwalificerend buitenlands belastingplichtige" />
     </node>
+    <node concept="3DQ70j" id="55LA2PbMvxZ" role="lGtFl">
+      <property role="3V$3am" value="subjecttypes" />
+      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/3709448771247434085" />
+    </node>
+    <node concept="3DQ70j" id="55LA2PbMvyz" role="lGtFl">
+      <property role="3V$3am" value="subjecttypes" />
+      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/3709448771247434085" />
+      <node concept="1Pa9Pv" id="55LA2PbMvzI" role="3DQ709">
+        <node concept="1PaTwC" id="55LA2PbMvzJ" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMvzM" role="1PaTwD">
+            <property role="3oM_SC" value="Artikel" />
+          </node>
+          <node concept="3oM_SD" id="55LA2PbMvBE" role="1PaTwD">
+            <property role="3oM_SC" value="7.8" />
+          </node>
+          <node concept="3oM_SD" id="55LA2PbMvBH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="55LA2PbMvBL" role="1PaTwD">
+            <property role="3oM_SC" value="Kwalificerende" />
+          </node>
+          <node concept="3oM_SD" id="55LA2PbMvBM" role="1PaTwD">
+            <property role="3oM_SC" value="buitenlandse" />
+          </node>
+          <node concept="3oM_SD" id="55LA2PbMvBS" role="1PaTwD">
+            <property role="3oM_SC" value="belastingplichtigen" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="55LA2PbMvBb" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMvCH" role="1PaTwD">
+            <property role="3oM_SC" value="lid" />
+          </node>
+          <node concept="3oM_SD" id="55LA2PbMvBZ" role="1PaTwD">
+            <property role="3oM_SC" value="6" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="55LA2PbMvC5" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMvC4" role="1PaTwD">
+            <property role="3oM_SC" value="Een kwalificerende" />
+          </node>
+          <node concept="3oM_SD" id="55LA2PbMvzR" role="1PaTwD">
+            <property role="3oM_SC" value="buitenlandse" />
+          </node>
+          <node concept="3oM_SD" id="55LA2PbMvzO" role="1PaTwD">
+            <property role="3oM_SC" value="belastingplichtige is een persoon die als inwoner van een andere lidstaat van de Europese Unie, " />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="55LA2PbMvzW" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMvzV" role="1PaTwD">
+            <property role="3oM_SC" value="een andere staat die partij is bij de Overeenkomst betreffende de Europese Economische Ruimte, Zwitserland of de BES eilanden " />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="55LA2PbMv$4" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMv$3" role="1PaTwD">
+            <property role="3oM_SC" value="in de belastingheffing van die andere lidstaat of staat of op de BES eilanden wordt betrokken en:" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="55LA2PbMv$e" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMv$d" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="55LA2PbMv$q" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMv$p" role="1PaTwD">
+            <property role="3oM_SC" value="a. van wie het inkomen geheel of nagenoeg geheel in Nederland is onderworpen aan de loonbelasting of inkomstenbelasting, of" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="55LA2PbMv$C" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMv$B" role="1PaTwD">
+            <property role="3oM_SC" value="b. van wie het inkomen tezamen met dat van een belastingplichtige die als zijn partner zou worden aangemerkt indien beide personen " />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="55LA2PbMv$S" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMv$R" role="1PaTwD">
+            <property role="3oM_SC" value="binnenlandse belastingplichtigen" />
+          </node>
+          <node concept="3oM_SD" id="55LA2PbMv_9" role="1PaTwD">
+            <property role="3oM_SC" value="zouden zijn, geheel of nagenoeg geheel in Nederland is onderworpen aan de loonbelasting en inkomstenbelasting," />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="55LA2PbMv_d" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMv_c" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="55LA2PbMv_y" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMv_x" role="1PaTwD">
+            <property role="3oM_SC" value="onder de voorwaarde dat de belastingplichtige een inkomensverklaring van de belastingautoriteit van zijn woonland verstrekt. " />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="55LA2PbMv_T" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMv_S" role="1PaTwD">
+            <property role="3oM_SC" value="Bij algemene maatregel van bestuur kunnen eisen worden gesteld aan de inhoud en de vormgeving van de inkomensverklaring " />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="55LA2PbMvAi" role="1PaQFQ">
+          <node concept="3oM_SD" id="55LA2PbMvAh" role="1PaTwD">
+            <property role="3oM_SC" value="en kunnen regels worden gesteld op grond waarvan om doelmatigheidsredenen de verklaring achterwege kan blijven." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3DQ70j" id="55LA2PbMvz8" role="lGtFl">
+      <property role="3V$3am" value="subjecttypes" />
+      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/3709448771247434085" />
+    </node>
     <node concept="LNfIO" id="5KHcptZfA0z" role="LNfl$">
       <property role="TrG5h" value="nabestaande" />
       <node concept="z5hFx" id="5KHcptZvY5_" role="z5hCq">
