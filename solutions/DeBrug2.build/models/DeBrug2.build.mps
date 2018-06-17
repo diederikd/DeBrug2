@@ -124,9 +124,7 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
-      <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh">
-        <property id="6503355885715353788" name="bootstrap" index="2igJW4" />
-      </concept>
+      <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh" />
       <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
         <reference id="6592112598314586626" name="group" index="m$f5T" />
       </concept>
@@ -192,9 +190,7 @@
   <node concept="1l3spW" id="sHNKs6FDQ4">
     <property role="TrG5h" value="DeBrug2" />
     <property role="2DA0ip" value="../../" />
-    <node concept="2igEWh" id="sHNKs6SgJQ" role="1hWBAP">
-      <property role="2igJW4" value="true" />
-    </node>
+    <node concept="2igEWh" id="sHNKs6SgJQ" role="1hWBAP" />
     <node concept="10PD9b" id="sHNKs6FDQ5" role="10PD9s" />
     <node concept="3b7kt6" id="sHNKs6FDQ6" role="10PD9s" />
     <node concept="1zClus" id="sHNKs6FDQj" role="3989C9">
@@ -640,7 +636,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="sHNKs6FDR_" role="2G$12L">
-        <property role="BnDLt" value="true" />
+        <property role="BnDLt" value="false" />
         <property role="TrG5h" value="Facts" />
         <property role="3LESm3" value="2aacdfbf-487f-43ac-a431-19468403f2c5" />
         <property role="2GAjPV" value="false" />
@@ -725,15 +721,9 @@
             <ref role="3bR37D" node="sHNKs6FDQU" resolve="DateTime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="sHNKs6FE62" role="3bR37C">
-          <node concept="3bR9La" id="sHNKs6FE63" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="sHNKs6FDR_" resolve="Facts" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="sHNKs6FDRF" role="2G$12L">
-        <property role="BnDLt" value="true" />
+        <property role="BnDLt" value="false" />
         <property role="TrG5h" value="Position" />
         <property role="3LESm3" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3" />
         <property role="2GAjPV" value="false" />

@@ -5,6 +5,9 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="generator" />
+  </facets>
   <accessoryModels />
   <generators>
     <generator alias="main" namespace="Position#3709448771247290142" uuid="a9bb0773-dbe8-45d4-a7c1-d895bc32c022">

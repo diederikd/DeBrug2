@@ -9,43 +9,16 @@
   </imports>
   <registry>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
-      <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
-        <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
-      </concept>
-      <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
-        <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
-      </concept>
-      <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
-        <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
-      </concept>
-      <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
-        <reference id="1167514355421" name="template" index="3lhOvi" />
-      </concept>
+      <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="6099516049394485324" name="jetbrains.mps.baseLanguage.collections.structure.CustomContainers" flags="ng" index="2llxRb" />
-    </language>
   </registry>
   <node concept="bUwia" id="3dUB042H3sv">
     <property role="TrG5h" value="main" />
-    <node concept="3lhOvk" id="4hOIAKb8xRs" role="3lj3bC">
-      <ref role="30HIoZ" to="rl66:3dUB042Hpzi" resolve="Specification" />
-      <ref role="3lhOvi" node="4hOIAKb8xSO" resolve="map_Specification" />
-    </node>
-  </node>
-  <node concept="2llxRb" id="4hOIAKb8xSO">
-    <property role="TrG5h" value="map_Specification" />
-    <node concept="n94m4" id="4hOIAKb8xSP" role="lGtFl">
-      <ref role="n9lRv" to="rl66:3dUB042Hpzi" resolve="Specification" />
-    </node>
   </node>
 </model>
 
