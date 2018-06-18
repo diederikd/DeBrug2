@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:c61d9c43-be44-4150-97fc-86105a766fc2(DeBrug2.build)/517297161301302660">
+    <file name="DeBrug2.xml">
+      <unit id="517297161301302660" at="1,0,1334,10" name="DeBrug2.build.DeBrug2" />
+    </file>
+  </root>
+  <root nodeRef="r:c61d9c43-be44-4150-97fc-86105a766fc2(DeBrug2.build)/517297161301302986">
+    <file name="DeBrug2Distribution.xml">
+      <unit id="517297161301302986" at="1,0,150,10" name="DeBrug2.build.DeBrug2Distribution" />
+    </file>
+  </root>
+</debug-info>
+
