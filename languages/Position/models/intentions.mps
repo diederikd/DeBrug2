@@ -814,5 +814,101 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="2n23pw27cCM">
+    <property role="TrG5h" value="ShowTable" />
+    <ref role="2ZfgGC" to="rl66:3dUB042Hpzi" resolve="Specification" />
+    <node concept="2S6ZIM" id="2n23pw27cCN" role="2ZfVej">
+      <node concept="3clFbS" id="2n23pw27cCO" role="2VODD2">
+        <node concept="3clFbF" id="2n23pw27dLb" role="3cqZAp">
+          <node concept="Xl_RD" id="2n23pw27dLa" role="3clFbG">
+            <property role="Xl_RC" value="Laat Tabel Met Veranderingen in Feiten Zien " />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2n23pw27cCP" role="2ZfgGD">
+      <node concept="3clFbS" id="2n23pw27cCQ" role="2VODD2">
+        <node concept="3clFbF" id="2n23pw27jsJ" role="3cqZAp">
+          <node concept="2OqwBi" id="2n23pw27kkc" role="3clFbG">
+            <node concept="2OqwBi" id="2n23pw27jGa" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2n23pw27jsI" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2n23pw27jOO" role="2OqNvi">
+                <ref role="3TsBF5" to="rl66:2n23pw27bnZ" resolve="showTable" />
+              </node>
+            </node>
+            <node concept="tyxLq" id="2n23pw27kvG" role="2OqNvi">
+              <node concept="3clFbT" id="2n23pw27r2Z" role="tz02z">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="2n23pw27hDJ" role="2ZfVeh">
+      <node concept="3clFbS" id="2n23pw27hDK" role="2VODD2">
+        <node concept="3clFbF" id="2n23pw27hLc" role="3cqZAp">
+          <node concept="3clFbC" id="2n23pw27iS5" role="3clFbG">
+            <node concept="3clFbT" id="2n23pw27jce" role="3uHU7w">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="2OqwBi" id="2n23pw27hYq" role="3uHU7B">
+              <node concept="2Sf5sV" id="2n23pw27hLb" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2n23pw27ie8" role="2OqNvi">
+                <ref role="3TsBF5" to="rl66:2n23pw27bnZ" resolve="showTable" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2n23pw27r6O">
+    <property role="TrG5h" value="HideTable" />
+    <ref role="2ZfgGC" to="rl66:3dUB042Hpzi" resolve="Specification" />
+    <node concept="2S6ZIM" id="2n23pw27r6P" role="2ZfVej">
+      <node concept="3clFbS" id="2n23pw27r6Q" role="2VODD2">
+        <node concept="3clFbF" id="2n23pw27r6R" role="3cqZAp">
+          <node concept="Xl_RD" id="2n23pw27r6S" role="3clFbG">
+            <property role="Xl_RC" value="Verberg Tabel Met Veranderingen in Feiten" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2n23pw27r6T" role="2ZfgGD">
+      <node concept="3clFbS" id="2n23pw27r6U" role="2VODD2">
+        <node concept="3clFbF" id="2n23pw27r6V" role="3cqZAp">
+          <node concept="2OqwBi" id="2n23pw27r6W" role="3clFbG">
+            <node concept="2OqwBi" id="2n23pw27r6X" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2n23pw27r6Y" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2n23pw27r6Z" role="2OqNvi">
+                <ref role="3TsBF5" to="rl66:2n23pw27bnZ" resolve="showTable" />
+              </node>
+            </node>
+            <node concept="tyxLq" id="2n23pw27r70" role="2OqNvi">
+              <node concept="3clFbT" id="2n23pw27r71" role="tz02z" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="2n23pw27r72" role="2ZfVeh">
+      <node concept="3clFbS" id="2n23pw27r73" role="2VODD2">
+        <node concept="3clFbF" id="2n23pw27r74" role="3cqZAp">
+          <node concept="3clFbC" id="2n23pw27r75" role="3clFbG">
+            <node concept="3clFbT" id="2n23pw27r76" role="3uHU7w">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="2n23pw27r77" role="3uHU7B">
+              <node concept="2Sf5sV" id="2n23pw27r78" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2n23pw27r79" role="2OqNvi">
+                <ref role="3TsBF5" to="rl66:2n23pw27bnZ" resolve="showTable" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

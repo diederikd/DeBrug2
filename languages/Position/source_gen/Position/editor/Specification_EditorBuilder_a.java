@@ -12,9 +12,10 @@ import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import org.jetbrains.mps.openapi.language.SProperty;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.SPropertyAccessor;
@@ -71,9 +72,14 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.addEditorCell(createConstant_monw38_d0());
     editorCell.addEditorCell(createCollection_monw38_e0());
     editorCell.addEditorCell(createConstant_monw38_f0());
-    editorCell.addEditorCell(createComponent_monw38_g0());
+    if (nodeCondition_monw38_a6a()) {
+      editorCell.addEditorCell(createComponent_monw38_g0());
+    }
     editorCell.addEditorCell(createConstant_monw38_h0());
     return editorCell;
+  }
+  private boolean nodeCondition_monw38_a6a() {
+    return SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b598d2L, 0x25c20d98021cb5ffL, "showTable"));
   }
   private EditorCell createConstant_monw38_a0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "specificaties");

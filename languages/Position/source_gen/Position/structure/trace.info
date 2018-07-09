@@ -17,7 +17,7 @@
       <unit at="10,0,84,0" name="Position.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="16,0,365,0" name="Position.structure.StructureAspectDescriptor" />
+      <unit at="16,0,366,0" name="Position.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:6aedc85c-1e66-46cb-aa08-290684ae007f(Position.structure)/3709448771247593709">

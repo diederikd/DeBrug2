@@ -44,6 +44,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FactWordValue;
   private ConceptPresentation props_FactWordVerb;
   private ConceptPresentation props_FactWording;
+  private ConceptPresentation props_ISource;
   private ConceptPresentation props_Identifier;
   private ConceptPresentation props_Instance;
   private ConceptPresentation props_IntegerType;
@@ -319,6 +320,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FactWording = cpb.create();
         }
         return props_FactWording;
+      case LanguageConceptSwitch.ISource:
+        if (props_ISource == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ISource = cpb.create();
+        }
+        return props_ISource;
       case LanguageConceptSwitch.Identifier:
         if (props_Identifier == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

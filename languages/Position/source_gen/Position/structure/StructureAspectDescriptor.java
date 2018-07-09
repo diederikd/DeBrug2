@@ -283,6 +283,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6aedc85c-1e66-46cb-aa08-290684ae007f(Position.structure)/3709448771247380690");
+    b.prop("showTable", 0x25c20d98021cb5ffL, "2720752071406827007");
     b.aggregate("subjecttypes", 0x337a9c0102b66965L).target(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b667b5L).optional(true).ordered(true).multiple(true).origin("3709448771247434085").done();
     b.aggregate("objecttypes", 0x337a9c0102b6fa17L).target(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b6f98aL).optional(true).ordered(true).multiple(true).origin("3709448771247471127").done();
     b.aggregate("facttypes", 0x5c2d31977f985079L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL).optional(true).ordered(true).multiple(true).origin("6642019552191860857").done();

@@ -49,11 +49,13 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 2:
         if (true) {
           // Concept: Specification 
-          intentions = new IntentionFactory[4];
+          intentions = new IntentionFactory[6];
           intentions[0] = new PushGraphicalHint_Intention();
           intentions[1] = new PushDefaultHint_Intention();
           intentions[2] = new AddPower_Intention();
           intentions[3] = new AddEvent_Intention();
+          intentions[4] = new ShowTable_Intention();
+          intentions[5] = new HideTable_Intention();
         }
         break;
       case 3:
@@ -80,7 +82,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[10];
+    IntentionFactory[] rv = new IntentionFactory[12];
     rv[0] = new PushGraphicalHint_Intention();
     rv[1] = new PushDefaultHint_Intention();
     rv[2] = new AddDefinitionSubjectType_Intention();
@@ -91,6 +93,8 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[7] = new HideVariablesState_Intention();
     rv[8] = new HideVariablesAction_Intention();
     rv[9] = new ShowVariablesAction_Intention();
+    rv[10] = new ShowTable_Intention();
+    rv[11] = new HideTable_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x5816a80d01b605e4L), MetaIdFactory.conceptId(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b6f98aL), MetaIdFactory.conceptId(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b598d2L), MetaIdFactory.conceptId(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x7e8caa0ea161570dL), MetaIdFactory.conceptId(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b667b5L)).seal();

@@ -4,12 +4,14 @@
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="c6a53bd0-9627-4db5-b62a-dbc3d020d641" name="URL" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="dljm" ref="r:cd2775e8-7314-4ba5-a646-a6601486577f(DateTime.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="gwk3" ref="r:febb3af1-bc6f-47d4-96d1-d50d7d238cfb(URL.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -34,6 +36,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -77,6 +80,9 @@
     </node>
     <node concept="PrWs8" id="3kztj8RWQjP" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="2n23pw2bgFw" role="PzmwI">
+      <ref role="PrY4T" node="2n23pw29s3z" resolve="ISource" />
     </node>
   </node>
   <node concept="1TIwiD" id="T7nEYMWZcH">
@@ -935,6 +941,17 @@
     </node>
     <node concept="PrWs8" id="gP9OJJ0a1i" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2n23pw29s3z">
+    <property role="EcuMT" value="2720752071407419619" />
+    <property role="3GE5qa" value="concept" />
+    <property role="TrG5h" value="ISource" />
+    <node concept="1TJgyj" id="7dQvcer30hK" role="1TKVEi">
+      <property role="IQ2ns" value="8319974541175293040" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="source" />
+      <ref role="20lvS9" to="gwk3:3SROZMUwUkX" resolve="URL" />
     </node>
   </node>
 </model>

@@ -10,9 +10,15 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="0add5042-bc48-4352-832a-07af4f0e5913" name="DateTime" version="0" />
+    <use id="c6a53bd0-9627-4db5-b62a-dbc3d020d641" name="URL" version="0" />
   </languages>
   <imports />
   <registry>
+    <language id="c6a53bd0-9627-4db5-b62a-dbc3d020d641" name="URL">
+      <concept id="4483285036485027133" name="URL.structure.URL" flags="ng" index="24H7r1">
+        <property id="533590550522582121" name="url" index="1k0emI" />
+      </concept>
+    </language>
     <language id="2aacdfbf-487f-43ac-a431-19468403f2c5" name="Facts">
       <concept id="8156496465148705899" name="Facts.structure.Identifier" flags="ng" index="21QOSU">
         <child id="8156496465148772434" name="identifiers" index="21Rr83" />
@@ -38,6 +44,9 @@
       <concept id="503348701156726176" name="Facts.structure.EntityType" flags="ng" index="kpplq">
         <property id="3711255831312432612" name="article" index="34u7DB" />
         <child id="3829032966743021132" name="specialisaties" index="2QidY" />
+      </concept>
+      <concept id="2720752071407419619" name="Facts.structure.ISource" flags="ng" index="BTWPV">
+        <child id="8319974541175293040" name="source" index="3CuByN" />
       </concept>
       <concept id="1028895148592232595" name="Facts.structure.FactTable" flags="ng" index="2WGioW">
         <reference id="1028895148592232596" name="facttype" index="2WGioV" />
@@ -188,6 +197,7 @@
         <property id="3709448771247593760" name="type" index="LK$kx" />
       </concept>
       <concept id="3709448771247380690" name="Position.structure.Specification" flags="ng" index="LNKjj">
+        <property id="2720752071406827007" name="showTable" index="BRFxB" />
         <child id="6642019552191860857" name="facttypes" index="zHm7I" />
         <child id="3709448771247471127" name="objecttypes" index="LN6om" />
         <child id="3709448771247434085" name="subjecttypes" index="LNfl$" />
@@ -301,6 +311,7 @@
   </registry>
   <node concept="LNKjj" id="7kyIz29MLN8">
     <property role="TrG5h" value="Middeling" />
+    <property role="BRFxB" value="true" />
     <node concept="LN6mb" id="7kyIz29MLNe" role="LN6om">
       <property role="TrG5h" value="verzoek middelingsteruggaaf" />
       <property role="34u7DB" value="het" />
@@ -319,15 +330,24 @@
     </node>
     <node concept="LN6mb" id="5KHcptZB0OX" role="LN6om">
       <property role="TrG5h" value="middelingstijdvak" />
+      <node concept="24H7r1" id="21hxRKajq5p" role="3CuByN">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011353&amp;hoofdstuk=3&amp;afdeling=3.14&amp;artikel=3.154&amp;z=2018-01-01&amp;g=2018-01-01" />
+      </node>
     </node>
     <node concept="LN6mb" id="5KHcptZEjIN" role="LN6om">
       <property role="TrG5h" value="ontvangstbevestiging" />
       <property role="34u7DB" value="een" />
+      <node concept="24H7r1" id="21hxRKajq5l" role="3CuByN">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0005537&amp;hoofdstuk=4&amp;titeldeel=4.1&amp;afdeling=4.1.1&amp;artikel=4:3a&amp;z=2018-07-01&amp;g=2018-07-01" />
+      </node>
     </node>
     <node concept="LN6mb" id="5dnWsyrgQdW" role="LN6om">
       <property role="TrG5h" value="middelingsteruggaaf" />
       <node concept="z5hFx" id="5dnWsyrgQeb" role="2kdC3R">
         <property role="TrG5h" value="een teruggaaf van belasting op het belastbare inkomen uit werk en woning." />
+      </node>
+      <node concept="24H7r1" id="21hxRKajq4Q" role="3CuByN">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011353&amp;hoofdstuk=3&amp;afdeling=3.14&amp;artikel=3.154&amp;z=2018-01-01&amp;g=2018-01-01" />
       </node>
     </node>
     <node concept="LN6mb" id="5KHcptZEkC1" role="LN6om">
@@ -337,6 +357,9 @@
       <property role="TrG5h" value="voor bezwaar vatbare beschikking" />
       <node concept="z5hFx" id="22TpVqO_X8s" role="2kdC3R">
         <property role="TrG5h" value="een besluit dat niet van algemene strekking is, &#10;met inbegrip van de afwijzing van een aanvraag daarvan." />
+      </node>
+      <node concept="24H7r1" id="21hxRKagUCJ" role="3CuByN">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0005537&amp;hoofdstuk=1&amp;titeldeel=1.1&amp;artikel=1:3&amp;lid=2" />
       </node>
     </node>
     <node concept="LN6mb" id="5KHcptZB0Qf" role="LN6om">
@@ -358,154 +381,23 @@
     </node>
     <node concept="LNfIO" id="7kyIz29MLN9" role="LNfl$">
       <property role="TrG5h" value="binnenlands belastingplichtige" />
-    </node>
-    <node concept="3DQ70j" id="4k$IsJF0UWU" role="lGtFl">
-      <property role="3V$3am" value="subjecttypes" />
-      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/3709448771247434085" />
-    </node>
-    <node concept="3DQ70j" id="4k$IsJF0USM" role="lGtFl">
-      <property role="3V$3am" value="subjecttypes" />
-      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/3709448771247434085" />
-      <node concept="1Pa9Pv" id="4k$IsJF0UTa" role="3DQ709">
-        <node concept="1PaTwC" id="4k$IsJF0UTb" role="1PaQFQ">
-          <node concept="3oM_SD" id="4k$IsJF0UWE" role="1PaTwD">
-            <property role="3oM_SC" value="Artikel 2.1. Belastingplichtigen" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="4k$IsJF0UXW" role="1PaQFQ">
-          <node concept="3oM_SD" id="4k$IsJF0UXV" role="1PaTwD">
-            <property role="3oM_SC" value="Belastingplichtigen voor de inkomstenbelasting zijn de natuurlijke personen die" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="4k$IsJF0UWH" role="1PaQFQ">
-          <node concept="3oM_SD" id="4k$IsJF0UWG" role="1PaTwD">
-            <property role="3oM_SC" value="a. in Nederland wonen (binnenlandse belastingplichtigen) of" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="4k$IsJF0UWN" role="1PaQFQ">
-          <node concept="3oM_SD" id="4k$IsJF0UWM" role="1PaTwD">
-            <property role="3oM_SC" value="b. niet in Nederland wonen maar wel Nederlands inkomen genieten (buitenlandse belastingplichtigen)." />
-          </node>
-        </node>
+      <node concept="24H7r1" id="21hxRKakdXz" role="3CuByN">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011353&amp;hoofdstuk=2&amp;afdeling=2.1&amp;artikel=2.1&amp;z=2018-01-01&amp;g=2018-01-01" />
       </node>
-    </node>
-    <node concept="3DQ70j" id="4k$IsJF0UXq" role="lGtFl">
-      <property role="3V$3am" value="subjecttypes" />
-      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/3709448771247434085" />
     </node>
     <node concept="LNfIO" id="7kyIz29MLNb" role="LNfl$">
       <property role="TrG5h" value="kwalificerend buitenlands belastingplichtige" />
-    </node>
-    <node concept="3DQ70j" id="55LA2PbMvxZ" role="lGtFl">
-      <property role="3V$3am" value="subjecttypes" />
-      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/3709448771247434085" />
-    </node>
-    <node concept="3DQ70j" id="55LA2PbMvyz" role="lGtFl">
-      <property role="3V$3am" value="subjecttypes" />
-      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/3709448771247434085" />
-      <node concept="1Pa9Pv" id="55LA2PbMvzI" role="3DQ709">
-        <node concept="1PaTwC" id="55LA2PbMvzJ" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMvzM" role="1PaTwD">
-            <property role="3oM_SC" value="Artikel" />
-          </node>
-          <node concept="3oM_SD" id="55LA2PbMvBE" role="1PaTwD">
-            <property role="3oM_SC" value="7.8" />
-          </node>
-          <node concept="3oM_SD" id="55LA2PbMvBH" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-          <node concept="3oM_SD" id="55LA2PbMvBL" role="1PaTwD">
-            <property role="3oM_SC" value="Kwalificerende" />
-          </node>
-          <node concept="3oM_SD" id="55LA2PbMvBM" role="1PaTwD">
-            <property role="3oM_SC" value="buitenlandse" />
-          </node>
-          <node concept="3oM_SD" id="55LA2PbMvBS" role="1PaTwD">
-            <property role="3oM_SC" value="belastingplichtigen" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="55LA2PbMvBb" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMvCH" role="1PaTwD">
-            <property role="3oM_SC" value="lid" />
-          </node>
-          <node concept="3oM_SD" id="55LA2PbMvBZ" role="1PaTwD">
-            <property role="3oM_SC" value="6" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="55LA2PbMvC5" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMvC4" role="1PaTwD">
-            <property role="3oM_SC" value="Een kwalificerende" />
-          </node>
-          <node concept="3oM_SD" id="55LA2PbMvzR" role="1PaTwD">
-            <property role="3oM_SC" value="buitenlandse" />
-          </node>
-          <node concept="3oM_SD" id="55LA2PbMvzO" role="1PaTwD">
-            <property role="3oM_SC" value="belastingplichtige is een persoon die als inwoner van een andere lidstaat van de Europese Unie, " />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="55LA2PbMvzW" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMvzV" role="1PaTwD">
-            <property role="3oM_SC" value="een andere staat die partij is bij de Overeenkomst betreffende de Europese Economische Ruimte, Zwitserland of de BES eilanden " />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="55LA2PbMv$4" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMv$3" role="1PaTwD">
-            <property role="3oM_SC" value="in de belastingheffing van die andere lidstaat of staat of op de BES eilanden wordt betrokken en:" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="55LA2PbMv$e" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMv$d" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="55LA2PbMv$q" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMv$p" role="1PaTwD">
-            <property role="3oM_SC" value="a. van wie het inkomen geheel of nagenoeg geheel in Nederland is onderworpen aan de loonbelasting of inkomstenbelasting, of" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="55LA2PbMv$C" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMv$B" role="1PaTwD">
-            <property role="3oM_SC" value="b. van wie het inkomen tezamen met dat van een belastingplichtige die als zijn partner zou worden aangemerkt indien beide personen " />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="55LA2PbMv$S" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMv$R" role="1PaTwD">
-            <property role="3oM_SC" value="binnenlandse belastingplichtigen" />
-          </node>
-          <node concept="3oM_SD" id="55LA2PbMv_9" role="1PaTwD">
-            <property role="3oM_SC" value="zouden zijn, geheel of nagenoeg geheel in Nederland is onderworpen aan de loonbelasting en inkomstenbelasting," />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="55LA2PbMv_d" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMv_c" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="55LA2PbMv_y" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMv_x" role="1PaTwD">
-            <property role="3oM_SC" value="onder de voorwaarde dat de belastingplichtige een inkomensverklaring van de belastingautoriteit van zijn woonland verstrekt. " />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="55LA2PbMv_T" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMv_S" role="1PaTwD">
-            <property role="3oM_SC" value="Bij algemene maatregel van bestuur kunnen eisen worden gesteld aan de inhoud en de vormgeving van de inkomensverklaring " />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="55LA2PbMvAi" role="1PaQFQ">
-          <node concept="3oM_SD" id="55LA2PbMvAh" role="1PaTwD">
-            <property role="3oM_SC" value="en kunnen regels worden gesteld op grond waarvan om doelmatigheidsredenen de verklaring achterwege kan blijven." />
-          </node>
-        </node>
+      <node concept="24H7r1" id="21hxRKakdSF" role="3CuByN">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011353&amp;hoofdstuk=7&amp;afdeling=7.5&amp;artikel=7.8&amp;lid=6" />
       </node>
-    </node>
-    <node concept="3DQ70j" id="55LA2PbMvz8" role="lGtFl">
-      <property role="3V$3am" value="subjecttypes" />
-      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/3709448771247434085" />
     </node>
     <node concept="LNfIO" id="5KHcptZfA0z" role="LNfl$">
       <property role="TrG5h" value="nabestaande" />
       <node concept="z5hFx" id="5KHcptZvY5_" role="z5hCq">
-        <property role="TrG5h" value="de huwelijkspartner of geregistreerde partner van de overledene; &#10;de partner waarmee de overledene samenwoonde &#10;danwel de kinderen van de overledene." />
+        <property role="TrG5h" value="iemand uit het gezin of de naaste familie van een overlevende &#10;die nog in leven is na dat overlijden; overlevend familielid" />
+      </node>
+      <node concept="24H7r1" id="21hxRKakdZW" role="3CuByN">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0035276" />
       </node>
     </node>
     <node concept="LNfIO" id="5KHcptZyXQi" role="LNfl$">
@@ -657,10 +549,6 @@
         </node>
       </node>
     </node>
-    <node concept="3DQ70j" id="5dnWsyr_1Dd" role="lGtFl">
-      <property role="3V$3am" value="facttypes" />
-      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/6642019552191860857" />
-    </node>
     <node concept="2WHaQ2" id="5KHcptZB0Qk" role="zHm7I">
       <property role="TrG5h" value="middelingstijdvak" />
       <node concept="2WHaRd" id="5KHcptZB0Qs" role="2WHaR8">
@@ -725,20 +613,28 @@
         <property role="TrG5h" value="belastingplichtige" />
         <ref role="2WHaRc" node="ws$rq2Fa$i" resolve="belastingplichtige" />
       </node>
-      <node concept="2WHaR9" id="gP9OJJbZmk" role="2WHaR8">
+      <node concept="2WHaRd" id="2n23pw29rFw" role="2WHaR8">
         <property role="TrG5h" value="belastingjaar" />
+        <ref role="2WHaRc" node="5KHcptZB0Qf" resolve="kalenderjaar" />
       </node>
       <node concept="38dcwZ" id="4k$IsJF0V0U" role="2WHaR8">
         <property role="TrG5h" value="belastbaar inkomen uit werk en woning " />
+      </node>
+      <node concept="38dcwZ" id="2n23pw29s1r" role="2WHaR8">
+        <property role="TrG5h" value="premie over inkomen uit werk en woning" />
       </node>
       <node concept="21QOSU" id="gP9OJJbZms" role="21QOUd">
         <node concept="34pkC5" id="gP9OJJbZmB" role="21Rr83">
           <ref role="34pkC4" node="4k$IsJF0V0P" resolve="belastingplichtige" />
         </node>
-        <node concept="34pkC5" id="gP9OJJbZmH" role="21Rr83">
-          <ref role="34pkC4" node="gP9OJJbZmk" resolve="belastingjaar" />
+        <node concept="34pkC5" id="2n23pw29rFD" role="21Rr83">
+          <ref role="34pkC4" node="2n23pw29rFw" resolve="belastingjaar" />
         </node>
       </node>
+    </node>
+    <node concept="3DQ70j" id="21hxRKakdZZ" role="lGtFl">
+      <property role="3V$3am" value="facttypes" />
+      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/6642019552191860857" />
     </node>
     <node concept="3DQ70j" id="gP9OJJbZQ2" role="lGtFl">
       <property role="3V$3am" value="facttypes" />
@@ -1214,6 +1110,9 @@
           <property role="34caxH" value="true" />
         </node>
       </node>
+      <node concept="24H7r1" id="7aZXwlkdPD1" role="3CuByN">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0005537&amp;hoofdstuk=4&amp;titeldeel=4.1&amp;afdeling=4.1.1&amp;artikel=4:3a&amp;z=2018-07-01&amp;g=2018-07-01" />
+      </node>
     </node>
     <node concept="XSeYT" id="5KHcptZEjIS" role="LNKji">
       <property role="3kd5zP" value="true" />
@@ -1262,7 +1161,7 @@
         </node>
         <node concept="2gjdzW" id="5KHcptZHAoo" role="2gjdy2">
           <ref role="2gjdzZ" node="5KHcptZEjJq" resolve="het verzoek middelingsteruggaaf te accepteren" />
-          <ref role="2gjdz_" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking vast te stellen" />
+          <ref role="2gjdz_" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking te geven" />
         </node>
         <node concept="zAPZE" id="22TpVqOzYsx" role="zAPWj">
           <property role="zAPWn" value="W" />
@@ -1310,10 +1209,6 @@
             <property role="TrG5h" value="uitgevoerd op" />
             <property role="34caxH" value="true" />
           </node>
-          <node concept="2gjdzW" id="5KHcptZHAoq" role="2gjdy2">
-            <ref role="2gjdzZ" node="5KHcptZEjJL" resolve="het verzoek middelingsteruggaaf afwijzen" />
-            <ref role="2gjdz_" node="5KHcptZEkuq" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking mede te delen" />
-          </node>
           <node concept="zAPZE" id="22TpVqOzYsz" role="zAPWj">
             <property role="zAPWn" value="W" />
             <ref role="zAPZD" node="5KHcptZEjJL" resolve="het verzoek middelingsteruggaaf afwijzen" />
@@ -1323,6 +1218,9 @@
             <ref role="zAPZD" node="5KHcptZEjJL" resolve="het verzoek middelingsteruggaaf afwijzen" />
             <ref role="zAPZC" node="22TpVqOB0_b" resolve="voor bezwaar vatbare beschikking " />
           </node>
+        </node>
+        <node concept="24H7r1" id="7aZXwlkdPD7" role="3CuByN">
+          <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0005537&amp;hoofdstuk=4&amp;titeldeel=4.1&amp;afdeling=4.1.1&amp;artikel=4:5&amp;z=2018-07-01&amp;g=2018-07-01" />
         </node>
       </node>
       <node concept="37mRI7" id="5KHcptZHArN" role="lGtFl">
@@ -1336,6 +1234,9 @@
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           </node>
         </node>
+      </node>
+      <node concept="24H7r1" id="7aZXwlkdPD4" role="3CuByN">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0005537&amp;hoofdstuk=4&amp;titeldeel=4.1&amp;afdeling=4.1.3&amp;paragraaf=4.1.3.1&amp;artikel=4:13&amp;z=2018-07-01&amp;g=2018-07-01" />
       </node>
     </node>
     <node concept="XSeYT" id="5KHcptZEjLr" role="LNKji">
@@ -1364,22 +1265,18 @@
       </node>
       <node concept="XOnPS" id="5KHcptZEksM" role="XRLcH">
         <property role="3khMER" value="true" />
-        <property role="2gfjKd" value="vast te stellen" />
-        <property role="1pAkHL" value="vastgesteld" />
+        <property role="2gfjKd" value="te geven" />
+        <property role="1pAkHL" value="gegeven" />
         <node concept="zAPZE" id="5dnWsyr_2hl" role="zAPWj">
-          <ref role="zAPZD" node="5KHcptZEksM" resolve="de voor bezwaar vatbare beschikking vast te stellen" />
+          <ref role="zAPZD" node="5KHcptZEksM" resolve="de voor bezwaar vatbare beschikking te geven" />
           <ref role="zAPZC" node="5dnWsyrgQee" resolve="middelingsteruggaaf" />
         </node>
         <node concept="zAPZE" id="22TpVqOzYsC" role="zAPWj">
-          <ref role="zAPZD" node="5KHcptZEksM" resolve="de voor bezwaar vatbare beschikking vast te stellen" />
+          <ref role="zAPZD" node="5KHcptZEksM" resolve="de voor bezwaar vatbare beschikking te geven" />
           <ref role="zAPZC" node="22TpVqOB0_b" resolve="voor bezwaar vatbare beschikking " />
         </node>
-        <node concept="2gjdzW" id="5KHcptZHAos" role="2gjdy2">
-          <ref role="2gjdzZ" node="5KHcptZEksM" resolve="de voor bezwaar vatbare beschikking vast te stellen" />
-          <ref role="2gjdz_" node="5KHcptZEkuq" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking mede te delen" />
-        </node>
         <node concept="2gjdzW" id="5KHcptZHAou" role="2gjdy2">
-          <ref role="2gjdzZ" node="5KHcptZEksM" resolve="de voor bezwaar vatbare beschikking vast te stellen" />
+          <ref role="2gjdzZ" node="5KHcptZEksM" resolve="de voor bezwaar vatbare beschikking te geven" />
           <ref role="2gjdz_" node="5KHcptZFgVd" resolve="de ontvanger heeft de plicht de verleende middelingsteruggaaf te betalen/vorderen" />
         </node>
         <node concept="1RcHDd" id="5KHcptZEksN" role="2WHaR8">
@@ -1394,6 +1291,9 @@
           <property role="TrG5h" value="uitgevoerd op" />
           <property role="34caxH" value="true" />
         </node>
+      </node>
+      <node concept="24H7r1" id="7aZXwlkdPDa" role="3CuByN">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0005537&amp;hoofdstuk=4&amp;titeldeel=4.1&amp;afdeling=4.1.3&amp;paragraaf=4.1.3.1&amp;artikel=4:13&amp;z=2018-07-01&amp;g=2018-07-01" />
       </node>
     </node>
     <node concept="XSeYT" id="5KHcptZEktk" role="LNKji">
@@ -1445,6 +1345,7 @@
           <property role="34caxH" value="true" />
         </node>
       </node>
+      <node concept="24H7r1" id="7aZXwlkdPDd" role="3CuByN" />
     </node>
     <node concept="XSeYT" id="5KHcptZEkvE" role="LNKji">
       <property role="3kd5zP" value="true" />
@@ -1474,12 +1375,8 @@
         <property role="3khMER" value="true" />
         <property role="2gfjKd" value="te herzien" />
         <property role="1pAkHL" value="herzien" />
-        <node concept="2gjdzW" id="5KHcptZHArB" role="2gjdy2">
-          <ref role="2gjdz_" node="5KHcptZEkuq" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking mede te delen" />
-          <ref role="2gjdzZ" node="5KHcptZEksM" resolve="de voor bezwaar vatbare beschikking vast te stellen" />
-        </node>
         <node concept="2gjdzW" id="5KHcptZHArC" role="2gjdy2">
-          <ref role="2gjdzZ" node="5KHcptZEksM" resolve="de voor bezwaar vatbare beschikking vast te stellen" />
+          <ref role="2gjdzZ" node="5KHcptZEksM" resolve="de voor bezwaar vatbare beschikking te geven" />
           <ref role="2gjdz_" node="5KHcptZFgVd" resolve="de ontvanger heeft de plicht de verleende middelingsteruggaaf te betalen/vorderen" />
         </node>
         <node concept="1RcHDd" id="5KHcptZEkC9" role="2WHaR8">
@@ -1498,6 +1395,9 @@
           <ref role="zAPZD" node="5KHcptZEkC8" resolve="de verleende middelingsteruggaaf te herzien" />
           <ref role="zAPZC" node="22TpVqOB0_b" resolve="voor bezwaar vatbare beschikking " />
         </node>
+      </node>
+      <node concept="24H7r1" id="2n23pw2e0sy" role="3CuByN">
+        <property role="1k0emI" value="https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:PHR:2000:AA6923" />
       </node>
     </node>
     <node concept="XSeYT" id="5KHcptZFgVd" role="LNKji">
@@ -1550,51 +1450,17 @@
         </node>
       </node>
     </node>
-    <node concept="XSeYT" id="5KHcptZEkuq" role="LNKji">
-      <property role="3kd5zP" value="true" />
-      <property role="3khMER" value="true" />
-      <property role="LK$kx" value="VBVG" />
-      <node concept="1RcHDd" id="5KHcptZEkur" role="2WHaR8">
-        <property role="TrG5h" value="subject met recht" />
-        <ref role="2WHaRc" node="5KHcptZB0RG" resolve="inspecteur" />
-      </node>
-      <node concept="1RcHDd" id="5KHcptZEkus" role="2WHaR8">
-        <property role="TrG5h" value="subject met plicht" />
-        <ref role="2WHaRc" node="5KHcptZfA0t" resolve="verzoeker middelingsteruggaaf" />
-      </node>
-      <node concept="1yPtZP" id="5KHcptZEkut" role="2WHaR8">
-        <property role="TrG5h" value="geldig van" />
-        <property role="34caxH" value="true" />
-      </node>
-      <node concept="1yPtZT" id="5KHcptZEkuu" role="2WHaR8">
-        <property role="TrG5h" value="geldig tot" />
-        <property role="34caxH" value="true" />
-      </node>
-      <node concept="11gaUJ" id="5KHcptZEkuv" role="2WHaR8">
-        <property role="TrG5h" value="bekend op" />
-        <property role="34caxH" value="true" />
-      </node>
-      <node concept="XOnPS" id="5KHcptZEkvy" role="XRLcH">
-        <property role="3khMER" value="true" />
-        <property role="2gfjKd" value="mede te delen" />
-        <node concept="2gjdzW" id="5KHcptZHAr_" role="2gjdy2">
-          <property role="2gjdyJ" value="B" />
-          <ref role="2gjdzZ" node="5KHcptZEkvy" resolve="de voor bezwaar vatbare beschikking mede te delen" />
-          <ref role="2gjdz_" node="5KHcptZEkuq" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking mede te delen" />
-        </node>
-        <node concept="1RcHDd" id="5KHcptZEkvz" role="2WHaR8">
-          <property role="TrG5h" value="actor" />
-          <ref role="2WHaRc" node="5KHcptZB0RG" resolve="inspecteur" />
-        </node>
-        <node concept="1RcfJE" id="5KHcptZEkv$" role="2WHaR8">
-          <property role="TrG5h" value="onderwerp" />
-          <ref role="2WHaRc" node="5KHcptZEkte" resolve="voor bezwaar vatbare beschikking" />
-        </node>
-        <node concept="11gaUJ" id="5KHcptZEkv_" role="2WHaR8">
-          <property role="TrG5h" value="uitgevoerd op" />
-          <property role="34caxH" value="true" />
-        </node>
-      </node>
+    <node concept="3DQ70j" id="21hxRKakexy" role="lGtFl">
+      <property role="3V$3am" value="statesAndEvents" />
+      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/3709448771247380691" />
+    </node>
+    <node concept="3DQ70j" id="21hxRKakeK3" role="lGtFl">
+      <property role="3V$3am" value="statesAndEvents" />
+      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/3709448771247380691" />
+    </node>
+    <node concept="3DQ70j" id="21hxRKakeCI" role="lGtFl">
+      <property role="3V$3am" value="statesAndEvents" />
+      <property role="3V$3ak" value="1172cef3-0f89-4114-ad0e-f59cef2bbaa3/3709448771247380690/3709448771247380691" />
     </node>
     <node concept="37mRI7" id="5KHcptZHArG" role="lGtFl">
       <node concept="37mRIm" id="5KHcptZHArH" role="37mRID">
@@ -3845,7 +3711,7 @@
       <node concept="2Zkv3m" id="sHNKs6TsoE" role="2bl5J9">
         <node concept="3vVvO3" id="sHNKs6Tso4" role="2Zkvpy">
           <property role="3v58CX" value="true" />
-          <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking vast te stellen" />
+          <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking te geven" />
           <node concept="2WGM83" id="sHNKs6Tso5" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLs" resolve="subject met recht" />
             <node concept="2Z5LS_" id="sHNKs6Tsom" role="2XiGH2">
@@ -4446,7 +4312,7 @@
       <node concept="2Zkv3m" id="sHNKs6Tsr3" role="2bl5J9">
         <node concept="3vVvO3" id="sHNKs6Tsqp" role="2Zkvpy">
           <property role="3v58CX" value="true" />
-          <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking vast te stellen" />
+          <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking te geven" />
           <node concept="2WGM83" id="sHNKs6Tsqq" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLs" resolve="subject met recht" />
             <node concept="2Z5LS_" id="sHNKs6TsqF" role="2XiGH2">
@@ -5047,7 +4913,7 @@
       <node concept="2Zkv3m" id="sHNKs6Tsts" role="2bl5J9">
         <node concept="3vVvO3" id="sHNKs6TssM" role="2Zkvpy">
           <property role="3v58CX" value="true" />
-          <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking vast te stellen" />
+          <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking te geven" />
           <node concept="2WGM83" id="sHNKs6TssN" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLs" resolve="subject met recht" />
             <node concept="2Z5LS_" id="sHNKs6Tst4" role="2XiGH2">
@@ -6100,7 +5966,7 @@
       <node concept="2Zkv3m" id="4k$IsJESRpI" role="2bl5J9">
         <node concept="3vVvO3" id="4k$IsJESRp8" role="2Zkvpy">
           <property role="3v58CX" value="true" />
-          <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking vast te stellen" />
+          <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking te geven" />
           <node concept="2WGM83" id="4k$IsJESRp9" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLs" resolve="subject met recht" />
             <node concept="2Z5LS_" id="4k$IsJESRpq" role="2XiGH2">
@@ -6640,7 +6506,7 @@
         <property role="TEHex" value=" " />
         <node concept="3vVvO3" id="16mnka5QB6T" role="2Zkvpy">
           <property role="3v58CX" value="true" />
-          <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking vast te stellen" />
+          <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking te geven" />
           <node concept="2WGM83" id="16mnka5QB6U" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLs" resolve="subject met recht" />
             <node concept="2Z5LS_" id="16mnka5QB6V" role="2XiGH2">
@@ -6985,7 +6851,7 @@
       <node concept="2Zkv3m" id="4k$IsJESRs7" role="2bl5J9">
         <node concept="3vVvO3" id="4k$IsJESRrt" role="2Zkvpy">
           <property role="3v58CX" value="true" />
-          <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking vast te stellen" />
+          <ref role="2WGM87" node="5KHcptZEjLr" resolve="de inspecteur heeft de plicht de voor bezwaar vatbare beschikking te geven" />
           <node concept="2WGM83" id="4k$IsJESRru" role="2WGM80">
             <ref role="2WGM82" node="5KHcptZEjLs" resolve="subject met recht" />
             <node concept="2Z5LS_" id="4k$IsJESRrJ" role="2XiGH2">

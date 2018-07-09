@@ -1581,6 +1581,15 @@
     </node>
     <node concept="3EZMnI" id="3e11SfRYnRA" role="6VMZX">
       <node concept="l2Vlx" id="3e11SfRYnRB" role="2iSdaV" />
+      <node concept="3F0ifn" id="7dQvcer4Msp" role="3EZMnx">
+        <property role="3F0ifm" value="bron" />
+      </node>
+      <node concept="3F0ifn" id="7dQvcer4Mue" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="7dQvcer4Mw7" role="3EZMnx">
+        <ref role="1NtTu8" to="gq3g:7dQvcer30hK" resolve="source" />
+      </node>
       <node concept="3F0ifn" id="3e11SfRYnRJ" role="3EZMnx">
         <property role="3F0ifm" value="lidwoord" />
         <node concept="pVoyu" id="3e11SfRYnRW" role="3F10Kt">
@@ -1992,6 +2001,15 @@
     <ref role="1XX52x" to="gq3g:T7nEYMWZcI" resolve="Role" />
     <node concept="3EZMnI" id="3e11SfRGK29" role="2wV5jI">
       <node concept="l2Vlx" id="3e11SfRGK2a" role="2iSdaV" />
+      <node concept="3F0ifn" id="7gu00k4ZIMf" role="3EZMnx">
+        <property role="3F0ifm" value="bronnen" />
+      </node>
+      <node concept="3F0ifn" id="7gu00k4ZINv" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="ljvvj" id="7P6LGjvkgUu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="3e11SfRGK2b" role="3EZMnx">
         <property role="3F0ifm" value="verplicht" />
         <node concept="pVoyu" id="3e11SfRGK2c" role="3F10Kt">
