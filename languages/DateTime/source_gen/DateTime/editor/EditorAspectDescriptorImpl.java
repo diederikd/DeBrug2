@@ -15,8 +15,8 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
-    SAbstractConcept cncpt_a0a = ((SAbstractConcept) concept);
-    switch (index_xbvbvu_a0a.index(cncpt_a0a)) {
+    SAbstractConcept cncpt = ((SAbstractConcept) concept);
+    switch (conceptIndex.index(cncpt)) {
       case 0:
         return Collections.<ConceptEditor>singletonList(new Date_Editor());
       case 1:
@@ -42,5 +42,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex index_xbvbvu_a0a = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cda8L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cba1L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cdc8L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cdcbL), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b32322L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b322e6L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cda8L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cba1L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cdc8L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cdcbL), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b32322L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b322e6L)).seal();
 }

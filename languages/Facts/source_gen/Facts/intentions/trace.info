@@ -16,6 +16,10 @@
     </file>
   </root>
   <root nodeRef="r:953367a7-ddee-4d54-9aba-da6cd438a7be(Facts.intentions)/3829032966754326052">
+    <file name="IntentionsDescriptor.java">
+      <node id="3829032966754326052" at="74,47,75,61" concept="1" />
+      <node id="3829032966754326052" at="94,50,95,47" concept="1" />
+    </file>
     <file name="RefreshFactWording_Intention.java">
       <node id="3829032966754326052" at="19,0,20,0" concept="2" trace="myCachedExecutable" />
       <node id="3829032966754326052" at="20,41,21,130" concept="9" />
@@ -73,6 +77,10 @@
     </file>
   </root>
   <root nodeRef="r:953367a7-ddee-4d54-9aba-da6cd438a7be(Facts.intentions)/4837839804565259913">
+    <file name="IntentionsDescriptor.java">
+      <node id="4837839804565259913" at="60,50,61,59" concept="1" />
+      <node id="4837839804565259913" at="91,51,92,45" concept="1" />
+    </file>
     <file name="RefreshRolesFact_Intention.java">
       <node id="4837839804565259913" at="19,0,20,0" concept="2" trace="myCachedExecutable" />
       <node id="4837839804565259913" at="20,39,21,131" concept="9" />
@@ -130,6 +138,10 @@
     </file>
   </root>
   <root nodeRef="r:953367a7-ddee-4d54-9aba-da6cd438a7be(Facts.intentions)/4837839804565521392">
+    <file name="IntentionsDescriptor.java">
+      <node id="4837839804565521392" at="67,47,68,64" concept="1" />
+      <node id="4837839804565521392" at="92,45,93,50" concept="1" />
+    </file>
     <file name="RefreshRolesFactTable_Intention.java">
       <node id="4837839804565521392" at="22,0,23,0" concept="2" trace="myCachedExecutable" />
       <node id="4837839804565521392" at="23,44,24,131" concept="9" />
@@ -192,6 +204,10 @@
     </file>
   </root>
   <root nodeRef="r:953367a7-ddee-4d54-9aba-da6cd438a7be(Facts.intentions)/4837839804578144027">
+    <file name="IntentionsDescriptor.java">
+      <node id="4837839804578144027" at="51,47,52,64" concept="1" />
+      <node id="4837839804578144027" at="93,50,94,50" concept="1" />
+    </file>
     <file name="NewEntityInEntityType_Intention.java">
       <node id="4837839804578144027" at="30,0,31,0" concept="8" trace="LOG" />
       <node id="4837839804578144027" at="31,0,32,0" concept="2" trace="myCachedExecutable" />
@@ -329,6 +345,10 @@
       <unit id="771453498293222656" at="41,0,57,0" name="Facts.intentions.DeleteFact_Intention$IntentionImplementation" />
       <unit id="771453498293222656" at="18,0,58,0" name="Facts.intentions.DeleteFact_Intention" />
     </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="771453498293222656" at="58,47,59,53" concept="1" />
+      <node id="771453498293222656" at="87,52,88,39" concept="1" />
+    </file>
   </root>
   <root nodeRef="r:953367a7-ddee-4d54-9aba-da6cd438a7be(Facts.intentions)/8156496465148673481">
     <file name="DeleteEntity_Intention.java">
@@ -386,8 +406,16 @@
       <unit id="8156496465148673481" at="41,0,57,0" name="Facts.intentions.DeleteEntity_Intention$IntentionImplementation" />
       <unit id="8156496465148673481" at="18,0,58,0" name="Facts.intentions.DeleteEntity_Intention" />
     </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="8156496465148673481" at="37,47,38,55" concept="1" />
+      <node id="8156496465148673481" at="88,39,89,41" concept="1" />
+    </file>
   </root>
   <root nodeRef="r:953367a7-ddee-4d54-9aba-da6cd438a7be(Facts.intentions)/8156496465148673492">
+    <file name="IntentionsDescriptor.java">
+      <node id="8156496465148673492" at="59,53,60,50" concept="1" />
+      <node id="8156496465148673492" at="89,41,90,36" concept="1" />
+    </file>
     <file name="NewFact_Intention.java">
       <node id="8156496465148673492" at="23,0,24,0" concept="2" trace="myCachedExecutable" />
       <node id="8156496465148673492" at="24,30,25,130" concept="9" />
@@ -449,6 +477,10 @@
     </file>
   </root>
   <root nodeRef="r:953367a7-ddee-4d54-9aba-da6cd438a7be(Facts.intentions)/8156496465149464978">
+    <file name="IntentionsDescriptor.java">
+      <node id="8156496465149464978" at="44,47,45,65" concept="1" />
+      <node id="8156496465149464978" at="90,36,91,51" concept="1" />
+    </file>
     <file name="NewEntityInEntityTable_Intention.java">
       <node id="8156496465149464978" at="22,0,23,0" concept="2" trace="myCachedExecutable" />
       <node id="8156496465149464978" at="23,45,24,130" concept="9" />

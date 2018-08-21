@@ -48,29 +48,29 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_dbi1kw_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_dbi1kw_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_dbi1kw_a");
-    editorCell.addEditorCell(createConstant_dbi1kw_a0());
-    editorCell.addEditorCell(createConstant_dbi1kw_b0());
-    editorCell.addEditorCell(createConstant_dbi1kw_c0());
-    editorCell.addEditorCell(createConstant_dbi1kw_d0());
-    editorCell.addEditorCell(createProperty_dbi1kw_e0());
-    editorCell.addEditorCell(createConstant_dbi1kw_f0());
-    editorCell.addEditorCell(createConstant_dbi1kw_g0());
-    editorCell.addEditorCell(createProperty_dbi1kw_h0());
+    editorCell.addEditorCell(createConstant_0());
+    editorCell.addEditorCell(createConstant_1());
+    editorCell.addEditorCell(createConstant_2());
+    editorCell.addEditorCell(createConstant_3());
+    editorCell.addEditorCell(createProperty_0());
+    editorCell.addEditorCell(createConstant_4());
+    editorCell.addEditorCell(createConstant_5());
+    editorCell.addEditorCell(createProperty_1());
     return editorCell;
   }
-  private EditorCell createConstant_dbi1kw_a0() {
+  private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "bronnen");
     editorCell.setCellId("Constant_dbi1kw_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_dbi1kw_b0() {
+  private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
     editorCell.setCellId("Constant_dbi1kw_b0");
     Style style = new StyleImpl();
@@ -79,7 +79,7 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_dbi1kw_c0() {
+  private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "verplicht");
     editorCell.setCellId("Constant_dbi1kw_c0");
     Style style = new StyleImpl();
@@ -88,13 +88,13 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_dbi1kw_d0() {
+  private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
     editorCell.setCellId("Constant_dbi1kw_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_dbi1kw_e0() {
+  private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL, 0x33810783f7b1afeeL, "mandatory");
@@ -121,7 +121,7 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createConstant_dbi1kw_f0() {
+  private EditorCell createConstant_4() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "lidwoord");
     editorCell.setCellId("Constant_dbi1kw_f0");
     Style style = new StyleImpl();
@@ -130,13 +130,13 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_dbi1kw_g0() {
+  private EditorCell createConstant_5() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
     editorCell.setCellId("Constant_dbi1kw_g0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_dbi1kw_h0() {
+  private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL, 0x33810783f7fb3e6fL, "article");

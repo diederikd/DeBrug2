@@ -36,18 +36,18 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_zhpsf5_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_zhpsf5_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_zhpsf5_a");
     editorCell.setBig(true);
-    editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createReadOnlyModelAccessor_zhpsf5_a0());
+    setCellContext(editorCell);
+    editorCell.addEditorCell(createReadOnlyModelAccessor_0());
     return editorCell;
   }
-  private EditorCell createReadOnlyModelAccessor_zhpsf5_a0() {
+  private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
       public String getText() {
         return String.valueOf(SNodeOperations.getIndexInParent(myNode) + 1);

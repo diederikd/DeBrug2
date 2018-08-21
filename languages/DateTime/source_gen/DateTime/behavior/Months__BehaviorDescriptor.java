@@ -49,7 +49,7 @@ public final class Months__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static void ZetDuur_id3CWQViUPQ1p(@NotNull SNode __thisNode__, Duration duration) {
     Long duur = duration.toDays();
     duur = duur / 30;
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cdcbL, 0x46db587183b2cdccL, "months"), duur.toString());
+    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cdcbL, 0x46db587183b2cdccL, "months"), duur.toString());
   }
   /*package*/ static String geefDuurString_id3CWQViUAgtB(@NotNull SNode __thisNode__) {
     return Duration__BehaviorDescriptor.geefDuur_id3JLo1nhiwEa.invoke(__thisNode__).toString();

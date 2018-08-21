@@ -8,6 +8,7 @@
     <classNode dependClassName="Position.intentions.IntentionsDescriptor" />
     <classNode dependClassName="Position.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="Position.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="Position.textGen.TextGenAspectDescriptor" />
     <classNode dependClassName="Position.typesystem.TypesystemDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
@@ -24,6 +25,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
   </dependency>

@@ -53,24 +53,24 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_438lu3_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_438lu3_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_438lu3_a");
     editorCell.setBig(true);
-    editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createRefCell_438lu3_a0());
+    setCellContext(editorCell);
+    editorCell.addEditorCell(createRefCell_0());
     return editorCell;
   }
-  private EditorCell createRefCell_438lu3_a0() {
+  private EditorCell createRefCell_0() {
     final SReferenceLink referenceLink = MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421804L, 0x1dfdebe1e8378996L, "verb");
     SReferenceCellProvider provider = new SReferenceCellProvider(getNode(), referenceLink, getEditorContext()) {
       protected EditorCell createReferenceCell(final SNode targetNode) {
         EditorCell cell = getUpdateSession().updateReferencedNodeCell(new Computable<EditorCell>() {
           public EditorCell compute() {
-            return new FactWordVerb_EditorBuilder_a.Inline_Builder_438lu3_a0a(getEditorContext(), getNode(), targetNode).createCell();
+            return new FactWordVerb_EditorBuilder_a.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
         }, targetNode, "verb");
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
@@ -83,9 +83,9 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
     provider.setNoTargetText("<no verb>");
     EditorCell editorCell = provider.createCell();
 
-    if (editorCell.getRole() == null) {
+    if (editorCell.getSRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("verb");
+      editorCell.setSRole(MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421804L, 0x1dfdebe1e8378996L, "verb"));
     }
     editorCell.setSubstituteInfo(new SReferenceSubstituteInfo(editorCell, referenceLink));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da51L, "jetbrains.mps.lang.core.structure.LinkAttribute"));
@@ -100,19 +100,19 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
     } else
     return editorCell;
   }
-  /*package*/ static class Inline_Builder_438lu3_a0a extends AbstractEditorBuilder {
+  /*package*/ static class Inline_Builder0 extends AbstractEditorBuilder {
     @NotNull
     private SNode myNode;
     private SNode myReferencingNode;
 
-    /*package*/ Inline_Builder_438lu3_a0a(@NotNull EditorContext context, SNode referencingNode, @NotNull SNode node) {
+    /*package*/ Inline_Builder0(@NotNull EditorContext context, SNode referencingNode, @NotNull SNode node) {
       super(context);
       myReferencingNode = referencingNode;
       myNode = node;
     }
 
     /*package*/ EditorCell createCell() {
-      return createProperty_438lu3_a0a0();
+      return createProperty_0();
     }
 
     @NotNull
@@ -121,7 +121,7 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
       return myNode;
     }
 
-    private EditorCell createProperty_438lu3_a0a0() {
+    private EditorCell createProperty_0() {
       getCellFactory().pushCellContext();
       try {
         final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");

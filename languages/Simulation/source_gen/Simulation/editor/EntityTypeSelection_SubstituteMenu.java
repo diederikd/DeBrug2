@@ -44,7 +44,7 @@ public class EntityTypeSelection_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_oi7gys_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_oi7gys_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_oi7gys_a() {
       super(MetaAdapterFactory.getConcept(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x106e6c3abb1392efL, "Simulation.structure.EntityTypeSelection"), MetaAdapterFactory.getReferenceLink(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x106e6c3abb1392efL, 0x106e6c3abb1392f0L, "role"));

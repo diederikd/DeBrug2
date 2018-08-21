@@ -44,7 +44,7 @@ public class EntityValue_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_be70ad_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_be70ad_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_be70ad_a() {
       super(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1284L, "Facts.structure.EntityValue"), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1284L, 0xab4c0de8e6a1285L, "value"));

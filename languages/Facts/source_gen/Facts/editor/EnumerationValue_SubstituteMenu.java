@@ -44,7 +44,7 @@ public class EnumerationValue_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_pjlvt3_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_pjlvt3_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_pjlvt3_a() {
       super(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97ff120aL, "Facts.structure.EnumerationValue"), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97ff120aL, 0x432375ab97ff120bL, "value"));

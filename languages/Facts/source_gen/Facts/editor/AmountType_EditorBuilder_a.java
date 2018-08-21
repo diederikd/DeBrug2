@@ -27,35 +27,35 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_yebyvh_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_yebyvh_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_yebyvh_a");
     editorCell.setBig(true);
-    editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createComponent_yebyvh_a0());
-    editorCell.addEditorCell(createComponent_yebyvh_b0());
-    editorCell.addEditorCell(createConstant_yebyvh_c0());
-    editorCell.addEditorCell(createConstant_yebyvh_d0());
+    setCellContext(editorCell);
+    editorCell.addEditorCell(createComponent_0());
+    editorCell.addEditorCell(createComponent_1());
+    editorCell.addEditorCell(createConstant_0());
+    editorCell.addEditorCell(createConstant_1());
     return editorCell;
   }
-  private EditorCell createComponent_yebyvh_a0() {
+  private EditorCell createComponent_0() {
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "Facts.editor.NameWithUnderlining");
     return editorCell;
   }
-  private EditorCell createComponent_yebyvh_b0() {
+  private EditorCell createComponent_1() {
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "Facts.editor.Mandatory");
     return editorCell;
   }
-  private EditorCell createConstant_yebyvh_c0() {
+  private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
     editorCell.setCellId("Constant_yebyvh_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_yebyvh_d0() {
+  private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "bedrag");
     editorCell.setCellId("Constant_yebyvh_d0");
     editorCell.setDefaultText("");

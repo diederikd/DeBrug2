@@ -28,8 +28,8 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
 
   @Nullable
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
-    SAbstractConcept cncpt_a0n = concept;
-    switch (index_846f5o_a0n.index(cncpt_a0n)) {
+    SAbstractConcept cncpt = concept;
+    switch (conceptIndex.index(cncpt)) {
       case 0:
         return myDate__BehaviorDescriptor;
       case 1:
@@ -54,5 +54,5 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     }
     return null;
   }
-  private static final ConceptSwitchIndex index_846f5o_a0n = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cda8L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cba0L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cba1L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cdc8L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cdcbL), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b32322L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b322e6L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cda8L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cba0L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cba1L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cdc8L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cdcbL), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b32322L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L), MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b322e6L)).seal();
 }

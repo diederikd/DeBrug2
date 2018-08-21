@@ -23,8 +23,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
   private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("QueryResult", "", true, "Simulation.editor.Hints.QueryResult"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
-    SAbstractConcept cncpt_a0b = ((SAbstractConcept) concept);
-    switch (index_xbvbvu_a0b.index(cncpt_a0b)) {
+    SAbstractConcept cncpt = ((SAbstractConcept) concept);
+    switch (conceptIndex.index(cncpt)) {
       case 0:
         return Collections.<ConceptEditor>singletonList(new EntityTypeSelection_Editor());
       case 1:
@@ -52,8 +52,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
 
   @NotNull
   public Collection<ConceptEditorComponent> getDeclaredEditorComponents(SAbstractConcept concept, String editorComponentId) {
-    SAbstractConcept cncpt_a0d = ((SAbstractConcept) concept);
-    switch (index_xbvbvu_a0d.index(cncpt_a0d)) {
+    SAbstractConcept cncpt = ((SAbstractConcept) concept);
+    switch (conceptIndex1.index(cncpt)) {
       case 0:
         if (true) {
           if ("Simulation.editor.TestResultInspector".equals(editorComponentId)) {
@@ -72,8 +72,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
   @NotNull
   @Override
   public Collection<TransformationMenu> getDeclaredDefaultTransformationMenus(SAbstractConcept concept) {
-    SAbstractConcept cncpt_a0g = concept;
-    switch (index_xbvbvu_a0g.index(cncpt_a0g)) {
+    SAbstractConcept cncpt = concept;
+    switch (conceptIndex2.index(cncpt)) {
       case 0:
         return Collections.<TransformationMenu>singletonList(new Selection_TransformationMenu());
       default:
@@ -83,8 +83,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
   @NotNull
   @Override
   public Collection<SubstituteMenu> getDeclaredDefaultSubstituteMenus(SAbstractConcept concept) {
-    SAbstractConcept cncpt_a0h = concept;
-    switch (index_xbvbvu_a0h.index(cncpt_a0h)) {
+    SAbstractConcept cncpt = concept;
+    switch (conceptIndex3.index(cncpt)) {
       case 0:
         return Collections.<SubstituteMenu>singletonList(new EntityTypeSelection_SubstituteMenu());
       case 1:
@@ -98,8 +98,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     return Collections.<SubstituteMenu>emptyList();
   }
 
-  private static final ConceptSwitchIndex index_xbvbvu_a0b = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x106e6c3abb1392efL), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x1dfdebe1e84f25ccL), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x1dfdebe1e8c418e7L), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x571a233153e03c1eL), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec175a0L), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec17331L), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x7e8caa0ea0d091d3L), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x7e8caa0ea0d06cd6L), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x106e6c3abb1392ecL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL)).seal();
-  private static final ConceptSwitchIndex index_xbvbvu_a0d = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ee4905bL)).seal();
-  private static final ConceptSwitchIndex index_xbvbvu_a0g = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x571a233153e03c1eL)).seal();
-  private static final ConceptSwitchIndex index_xbvbvu_a0h = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x106e6c3abb1392efL), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x1dfdebe1e84f25ccL), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x571a233153e03c1eL), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x106e6c3abb1392ecL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x106e6c3abb1392efL), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x1dfdebe1e84f25ccL), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x1dfdebe1e8c418e7L), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x571a233153e03c1eL), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec175a0L), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec17331L), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x7e8caa0ea0d091d3L), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x7e8caa0ea0d06cd6L), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x106e6c3abb1392ecL), MetaIdFactory.conceptId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL)).seal();
+  private static final ConceptSwitchIndex conceptIndex1 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ee4905bL)).seal();
+  private static final ConceptSwitchIndex conceptIndex2 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x571a233153e03c1eL)).seal();
+  private static final ConceptSwitchIndex conceptIndex3 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x106e6c3abb1392efL), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x1dfdebe1e84f25ccL), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x571a233153e03c1eL), MetaIdFactory.conceptId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x106e6c3abb1392ecL)).seal();
 }

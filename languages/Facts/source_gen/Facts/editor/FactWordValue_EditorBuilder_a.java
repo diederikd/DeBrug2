@@ -38,18 +38,18 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_4bn6uw_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_4bn6uw_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_4bn6uw_a");
     editorCell.setBig(true);
-    editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createReadOnlyModelAccessor_4bn6uw_a0());
+    setCellContext(editorCell);
+    editorCell.addEditorCell(createReadOnlyModelAccessor_0());
     return editorCell;
   }
-  private EditorCell createReadOnlyModelAccessor_4bn6uw_a0() {
+  private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
       public String getText() {
         return (String) Value__BehaviorDescriptor.getValueString_id3MspsB814vW.invoke(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421803L, 0x3523753238a1488dL, "value")));

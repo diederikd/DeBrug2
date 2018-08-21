@@ -46,20 +46,20 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_ip5nli_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_ip5nli_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_ip5nli_a");
     editorCell.setBig(true);
-    editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createProperty_ip5nli_a0());
+    setCellContext(editorCell);
+    editorCell.addEditorCell(createProperty_0());
     if (nodeCondition_ip5nli_a1a()) {
-      editorCell.addEditorCell(createConstant_ip5nli_b0());
+      editorCell.addEditorCell(createConstant_0());
     }
     if (nodeCondition_ip5nli_a2a()) {
-      editorCell.addEditorCell(createConstant_ip5nli_c0());
+      editorCell.addEditorCell(createConstant_1());
     }
     return editorCell;
   }
@@ -69,7 +69,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
   private boolean nodeCondition_ip5nli_a2a() {
     return ((double) Seconds__BehaviorDescriptor.AantalSeconden_idbTj1CmnFyp.invoke(myNode) != 1);
   }
-  private EditorCell createProperty_ip5nli_a0() {
+  private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b32322L, 0x46db587183b32323L, "seconden");
@@ -96,13 +96,13 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createConstant_ip5nli_b0() {
+  private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "seconde");
     editorCell.setCellId("Constant_ip5nli_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_ip5nli_c0() {
+  private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "seconden");
     editorCell.setCellId("Constant_ip5nli_c0");
     editorCell.setDefaultText("");

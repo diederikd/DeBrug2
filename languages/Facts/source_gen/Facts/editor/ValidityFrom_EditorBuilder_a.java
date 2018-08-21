@@ -45,21 +45,21 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_oxeky0_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_oxeky0_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_oxeky0_a");
     editorCell.setBig(true);
-    editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createProperty_oxeky0_a0());
-    editorCell.addEditorCell(createComponent_oxeky0_b0());
-    editorCell.addEditorCell(createConstant_oxeky0_c0());
-    editorCell.addEditorCell(createConstant_oxeky0_d0());
+    setCellContext(editorCell);
+    editorCell.addEditorCell(createProperty_0());
+    editorCell.addEditorCell(createComponent_0());
+    editorCell.addEditorCell(createConstant_0());
+    editorCell.addEditorCell(createConstant_1());
     return editorCell;
   }
-  private EditorCell createProperty_oxeky0_a0() {
+  private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
@@ -86,17 +86,17 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createComponent_oxeky0_b0() {
+  private EditorCell createComponent_0() {
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "Facts.editor.Mandatory");
     return editorCell;
   }
-  private EditorCell createConstant_oxeky0_c0() {
+  private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
     editorCell.setCellId("Constant_oxeky0_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_oxeky0_d0() {
+  private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "geldig vanaf datumtijd");
     editorCell.setCellId("Constant_oxeky0_d0");
     editorCell.setDefaultText("");

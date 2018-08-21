@@ -534,7 +534,7 @@
     </node>
   </node>
   <node concept="312cEu" id="1x">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="MessageForTestResult_NonTypesystemRule" />
     <node concept="3clFbW" id="1y" role="jymVt">
       <node concept="3clFbS" id="1E" role="3clF47" />
@@ -828,7 +828,6 @@
     <node concept="3Tm1VV" id="1D" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="3s">
-    <property role="3GE5qa" value="definition.rule" />
     <property role="TrG5h" value="TestActionSequence_NonTypesystemRule" />
     <node concept="3clFbW" id="3t" role="jymVt">
       <node concept="3clFbS" id="3_" role="3clF47" />
@@ -1115,7 +1114,7 @@
     </node>
   </node>
   <node concept="312cEu" id="5r">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="typeof_EntityTypeSelection_InferenceRule" />
     <node concept="3clFbW" id="5s" role="jymVt">
       <node concept="3clFbS" id="5$" role="3clF47" />
@@ -1335,7 +1334,7 @@
     <node concept="3Tm1VV" id="5z" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="6Q">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="typeof_Query_InferenceRule" />
     <node concept="3clFbW" id="6R" role="jymVt">
       <node concept="3clFbS" id="6Z" role="3clF47" />
@@ -1442,7 +1441,7 @@
     <node concept="3Tm1VV" id="6Y" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="7B">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="typeof_ValueTypeSelection_InferenceRule" />
     <node concept="3clFbW" id="7C" role="jymVt">
       <node concept="3clFbS" id="7K" role="3clF47" />

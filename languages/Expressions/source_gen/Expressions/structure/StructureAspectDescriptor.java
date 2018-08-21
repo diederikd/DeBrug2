@@ -15,10 +15,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBinaryExpression = createDescriptorForBinaryExpression();
   /*package*/ final ConceptDescriptor myConceptIExpression = createDescriptorForIExpression();
   /*package*/ final ConceptDescriptor myConceptOrExpression = createDescriptorForOrExpression();
-  private final LanguageConceptSwitch myConceptIndex;
+  private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
-    myConceptIndex = new LanguageConceptSwitch();
+    myIndexSwitch = new LanguageConceptSwitch();
   }
 
   @Override
@@ -29,7 +29,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
-    switch (myConceptIndex.index(id)) {
+    switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.BinaryExpression:
         return myConceptBinaryExpression;
       case LanguageConceptSwitch.IExpression:
@@ -42,7 +42,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
-    return myConceptIndex.index(c);
+    return myIndexSwitch.index(c);
   }
 
   private static ConceptDescriptor createDescriptorForBinaryExpression() {
@@ -50,6 +50,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, true, false);
     b.parent(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L);
     b.origin("r:be67b1c2-ae57-44bd-9694-63f14ed3f2de(Expressions.structure)/6642019552188080491");
+    b.version(2);
     b.aggregate("left", 0x5c2d31977f5ea43bL).target(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L).optional(true).ordered(true).multiple(false).origin("6642019552188081211").done();
     b.aggregate("right", 0x5c2d31977f5ea43cL).target(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L).optional(true).ordered(true).multiple(false).origin("6642019552188081212").done();
     return b.create();
@@ -58,6 +59,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Expressions", "IExpression", 0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L);
     b.interface_();
     b.origin("r:be67b1c2-ae57-44bd-9694-63f14ed3f2de(Expressions.structure)/7363578995839169062");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForOrExpression() {
@@ -65,6 +67,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("Expressions.structure.BinaryExpression", 0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL);
     b.origin("r:be67b1c2-ae57-44bd-9694-63f14ed3f2de(Expressions.structure)/6642019552188081210");
+    b.version(2);
     b.alias("of");
     return b.create();
   }

@@ -47,20 +47,20 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_rshcez_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_rshcez_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_rshcez_a");
     editorCell.setBig(true);
-    editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createProperty_rshcez_a0());
+    setCellContext(editorCell);
+    editorCell.addEditorCell(createProperty_0());
     if (nodeCondition_rshcez_a1a()) {
-      editorCell.addEditorCell(createConstant_rshcez_b0());
+      editorCell.addEditorCell(createConstant_0());
     }
     if (nodeCondition_rshcez_a2a()) {
-      editorCell.addEditorCell(createConstant_rshcez_c0());
+      editorCell.addEditorCell(createConstant_1());
     }
     return editorCell;
   }
@@ -71,7 +71,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
     System.out.println(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b322e6L, 0x46db587183b322eaL, "jaren")));
     return ((double) Years__BehaviorDescriptor.AantalJaren_idbTj1CmnvAs.invoke(myNode) != 1);
   }
-  private EditorCell createProperty_rshcez_a0() {
+  private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b322e6L, 0x46db587183b322eaL, "jaren");
@@ -98,13 +98,13 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createConstant_rshcez_b0() {
+  private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "jaar");
     editorCell.setCellId("Constant_rshcez_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_rshcez_c0() {
+  private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "jaren");
     editorCell.setCellId("Constant_rshcez_c0");
     editorCell.setDefaultText("");

@@ -46,20 +46,20 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_yed8a2_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_yed8a2_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_yed8a2_a");
     editorCell.setBig(true);
-    editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createProperty_yed8a2_a0());
+    setCellContext(editorCell);
+    editorCell.addEditorCell(createProperty_0());
     if (nodeCondition_yed8a2_a1a()) {
-      editorCell.addEditorCell(createConstant_yed8a2_b0());
+      editorCell.addEditorCell(createConstant_0());
     }
     if (nodeCondition_yed8a2_a2a()) {
-      editorCell.addEditorCell(createConstant_yed8a2_c0());
+      editorCell.addEditorCell(createConstant_1());
     }
     return editorCell;
   }
@@ -69,7 +69,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
   private boolean nodeCondition_yed8a2_a2a() {
     return ((double) Days__BehaviorDescriptor.AantalDagen_idbTj1CmnGUz.invoke(myNode) != 1);
   }
-  private EditorCell createProperty_yed8a2_a0() {
+  private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cda8L, 0x46db587183b2cda9L, "days");
@@ -96,13 +96,13 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createConstant_yed8a2_b0() {
+  private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "dag");
     editorCell.setCellId("Constant_yed8a2_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_yed8a2_c0() {
+  private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "dagen");
     editorCell.setCellId("Constant_yed8a2_c0");
     editorCell.setDefaultText("");

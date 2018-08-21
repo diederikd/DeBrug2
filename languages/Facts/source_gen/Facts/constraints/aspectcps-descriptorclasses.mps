@@ -297,7 +297,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="0">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="values" />
     <property role="TrG5h" value="AmountValue_Constraints" />
     <node concept="3Tm1VV" id="1" role="1B3o_S" />
     <node concept="3uibUv" id="2" role="1zkMxy">
@@ -832,7 +832,7 @@
     </node>
   </node>
   <node concept="312cEu" id="3k">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="values" />
     <property role="TrG5h" value="DateValue_Constraints" />
     <node concept="3Tm1VV" id="3l" role="1B3o_S" />
     <node concept="3uibUv" id="3m" role="1zkMxy">
@@ -1038,7 +1038,7 @@
     </node>
   </node>
   <node concept="312cEu" id="4y">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="values" />
     <property role="TrG5h" value="EntityValue_Constraints" />
     <node concept="3Tm1VV" id="4z" role="1B3o_S" />
     <node concept="3uibUv" id="4$" role="1zkMxy">
@@ -1346,7 +1346,7 @@
     </node>
   </node>
   <node concept="312cEu" id="6k">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="values" />
     <property role="TrG5h" value="EnumerationValue_Constraints" />
     <node concept="3Tm1VV" id="6l" role="1B3o_S" />
     <node concept="3uibUv" id="6m" role="1zkMxy">
@@ -1724,7 +1724,6 @@
     </node>
   </node>
   <node concept="312cEu" id="8$">
-    <property role="3GE5qa" value="Constraints" />
     <property role="TrG5h" value="FactBase_Constraints" />
     <node concept="3Tm1VV" id="8_" role="1B3o_S" />
     <node concept="3uibUv" id="8A" role="1zkMxy">
@@ -1758,7 +1757,7 @@
     <node concept="2tJIrI" id="8C" role="jymVt" />
   </node>
   <node concept="312cEu" id="8M">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="facts" />
     <property role="TrG5h" value="FactTable_Constraints" />
     <node concept="3Tm1VV" id="8N" role="1B3o_S" />
     <node concept="3uibUv" id="8O" role="1zkMxy">
@@ -2077,7 +2076,7 @@
     </node>
   </node>
   <node concept="312cEu" id="aH">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="facttypeswording" />
     <property role="TrG5h" value="FactTypeWordRole_Constraints" />
     <node concept="3Tm1VV" id="aI" role="1B3o_S" />
     <node concept="3uibUv" id="aJ" role="1zkMxy">
@@ -2357,7 +2356,7 @@
     </node>
   </node>
   <node concept="312cEu" id="ck">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="facttypeswording" />
     <property role="TrG5h" value="FactTypeWording_Constraints" />
     <node concept="3Tm1VV" id="cl" role="1B3o_S" />
     <node concept="3uibUv" id="cm" role="1zkMxy">
@@ -2566,7 +2565,7 @@
     </node>
   </node>
   <node concept="312cEu" id="d$">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="facttypes" />
     <property role="TrG5h" value="FactType_Constraints" />
     <node concept="3Tm1VV" id="d_" role="1B3o_S" />
     <node concept="3uibUv" id="dA" role="1zkMxy">
@@ -3735,7 +3734,7 @@
     </node>
   </node>
   <node concept="312cEu" id="l8">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="values" />
     <property role="TrG5h" value="FactValue_Constraints" />
     <node concept="3Tm1VV" id="l9" role="1B3o_S" />
     <node concept="3uibUv" id="la" role="1zkMxy">
@@ -4043,7 +4042,7 @@
     </node>
   </node>
   <node concept="312cEu" id="mU">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="factwording" />
     <property role="TrG5h" value="FactWording_Constraints" />
     <node concept="3Tm1VV" id="mV" role="1B3o_S" />
     <node concept="3uibUv" id="mW" role="1zkMxy">
@@ -4748,7 +4747,7 @@
     </node>
   </node>
   <node concept="312cEu" id="r4">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="facts" />
     <property role="TrG5h" value="Fact_Constraints" />
     <node concept="3Tm1VV" id="r5" role="1B3o_S" />
     <node concept="3uibUv" id="r6" role="1zkMxy">
@@ -5191,7 +5190,7 @@
   </node>
   <node concept="39dXUE" id="tF" />
   <node concept="312cEu" id="tG">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="concept" />
     <property role="TrG5h" value="Identifier_Constraints" />
     <node concept="3Tm1VV" id="tH" role="1B3o_S" />
     <node concept="3uibUv" id="tI" role="1zkMxy">
@@ -5276,7 +5275,7 @@
     </node>
   </node>
   <node concept="312cEu" id="uc">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="values" />
     <property role="TrG5h" value="PercentageValue_Constraints" />
     <node concept="3Tm1VV" id="ud" role="1B3o_S" />
     <node concept="3uibUv" id="ue" role="1zkMxy">
@@ -5487,7 +5486,7 @@
     </node>
   </node>
   <node concept="312cEu" id="vs">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
     <property role="TrG5h" value="RoleReferenceExpression_Constraints" />
     <node concept="3Tm1VV" id="vt" role="1B3o_S" />
     <node concept="3uibUv" id="vu" role="1zkMxy">
@@ -5521,7 +5520,7 @@
     <node concept="2tJIrI" id="vw" role="jymVt" />
   </node>
   <node concept="312cEu" id="vE">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
     <property role="TrG5h" value="RoleReferenceOperation_Constraints" />
     <node concept="3Tm1VV" id="vF" role="1B3o_S" />
     <node concept="3uibUv" id="vG" role="1zkMxy">
@@ -5788,7 +5787,7 @@
     </node>
   </node>
   <node concept="312cEu" id="xk">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="facttypes" />
     <property role="TrG5h" value="RoleReference_Constraints" />
     <node concept="3Tm1VV" id="xl" role="1B3o_S" />
     <node concept="3uibUv" id="xm" role="1zkMxy">
@@ -6286,7 +6285,7 @@
     </node>
   </node>
   <node concept="312cEu" id="$f">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="facttypes" />
     <property role="TrG5h" value="Role_Constraints" />
     <node concept="3Tm1VV" id="$g" role="1B3o_S" />
     <node concept="3uibUv" id="$h" role="1zkMxy">
@@ -6371,7 +6370,7 @@
     </node>
   </node>
   <node concept="312cEu" id="$J">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="facts" />
     <property role="TrG5h" value="Variable_Constraints" />
     <node concept="3Tm1VV" id="$K" role="1B3o_S" />
     <node concept="3uibUv" id="$L" role="1zkMxy">

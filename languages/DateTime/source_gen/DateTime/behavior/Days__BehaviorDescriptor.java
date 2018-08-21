@@ -48,7 +48,7 @@ public final class Days__BehaviorDescriptor extends BaseBHDescriptor {
   }
   /*package*/ static void ZetDuur_id3CWQViUPQ1p(@NotNull SNode __thisNode__, Duration duration) {
     Long duur = duration.toDays();
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cda8L, 0x46db587183b2cda9L, "days"), duur.toString());
+    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cda8L, 0x46db587183b2cda9L, "days"), duur.toString());
   }
   /*package*/ static String geefDuurString_id3CWQViUAg36(@NotNull SNode __thisNode__) {
     return Duration__BehaviorDescriptor.geefDuur_id3JLo1nhiwEa.invoke(__thisNode__).toString();

@@ -44,7 +44,7 @@ public class FactTypeWordRole_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_q3t2wp_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_q3t2wp_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_q3t2wp_a() {
       super(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, "Facts.structure.FactTypeWordRole"), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord"));

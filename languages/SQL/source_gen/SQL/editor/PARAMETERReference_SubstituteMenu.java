@@ -44,7 +44,7 @@ public class PARAMETERReference_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_7spj1n_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_7spj1n_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_7spj1n_a() {
       super(MetaAdapterFactory.getConcept(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd9138L, "SQL.structure.PARAMETERReference"), MetaAdapterFactory.getReferenceLink(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd9138L, 0x1bdede5178cd9139L, "parameter"));

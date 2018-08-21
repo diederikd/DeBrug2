@@ -25,15 +25,15 @@ import jetbrains.mps.editor.runtime.cells.BigCellUtil;
   }
 
   /*package*/ EditorCell createCell() {
-    return createComponent_n7kq0r_a();
+    return createComponent_0();
   }
 
-  private EditorCell createComponent_n7kq0r_a() {
+  private EditorCell createComponent_0() {
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "Facts.editor.RoleInspector");
     EditorCell bigCell = BigCellUtil.findBigCell(editorCell, getNode());
     if (bigCell != null) {
       bigCell.setBig(true);
-      bigCell.setCellContext(getCellFactory().getCellContext());
+      setCellContext(bigCell);
     }
     return editorCell;
   }

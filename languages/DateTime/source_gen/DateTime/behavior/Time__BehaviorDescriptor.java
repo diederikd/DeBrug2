@@ -34,15 +34,15 @@ public final class Time__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setTime_id5riiL_BUAB9, setTimeNow_id4cztqIn5k_w, getTime_id5riiL_BUHOa, getTimeString_id5vursKRvTA3);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), "" + (0));
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), "" + (0));
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), "" + (0));
+    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), "" + (0));
+    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), "" + (0));
+    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), "" + (0));
   }
 
   /*package*/ static void setTime_id5riiL_BUAB9(@NotNull SNode __thisNode__, LocalTime lt) {
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), "" + (lt.getHour()));
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), "" + (lt.getMinute()));
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), "" + (lt.getSecond()));
+    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), "" + (lt.getHour()));
+    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), "" + (lt.getMinute()));
+    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), "" + (lt.getSecond()));
   }
   /*package*/ static void setTimeNow_id4cztqIn5k_w(@NotNull SNode __thisNode__) {
     Time__BehaviorDescriptor.setTime_id5riiL_BUAB9.invoke(__thisNode__, LocalTime.now());

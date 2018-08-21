@@ -973,7 +973,7 @@
     </node>
   </node>
   <node concept="312cEu" id="3I">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="entity" />
     <property role="TrG5h" value="typeof_EntityTable_InferenceRule" />
     <node concept="3clFbW" id="3J" role="jymVt">
       <node concept="3clFbS" id="3R" role="3clF47" />
@@ -1082,7 +1082,7 @@
     <node concept="3Tm1VV" id="3Q" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="4w">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="entity" />
     <property role="TrG5h" value="typeof_FactHasUniquePrimairyIdentifier_InferenceRule" />
     <node concept="3clFbW" id="4x" role="jymVt">
       <node concept="3clFbS" id="4D" role="3clF47" />
@@ -1363,7 +1363,7 @@
     <node concept="3Tm1VV" id="4C" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="6n">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="entity" />
     <property role="TrG5h" value="typeof_FactTable_InferenceRule" />
     <node concept="3clFbW" id="6o" role="jymVt">
       <node concept="3clFbS" id="6w" role="3clF47" />
@@ -1597,7 +1597,7 @@
     <node concept="3Tm1VV" id="6v" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="7W">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
     <property role="TrG5h" value="typeof_RoleReferenceExpression_InferenceRule" />
     <node concept="3clFbW" id="7X" role="jymVt">
       <node concept="3clFbS" id="85" role="3clF47" />
@@ -1963,7 +1963,7 @@
     <node concept="3Tm1VV" id="84" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="af">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="facttypes.roleexpression" />
     <property role="TrG5h" value="typeof_RoleReferenceOperation_InferenceRule" />
     <node concept="3clFbW" id="ag" role="jymVt">
       <node concept="3clFbS" id="ao" role="3clF47" />
@@ -2329,7 +2329,7 @@
     <node concept="3Tm1VV" id="an" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="cy">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="entitytypes" />
     <property role="TrG5h" value="typeof_Specializes_InferenceRule" />
     <node concept="3clFbW" id="cz" role="jymVt">
       <node concept="3clFbS" id="cF" role="3clF47" />
@@ -2618,7 +2618,7 @@
     <node concept="3Tm1VV" id="cE" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="er">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="entity" />
     <property role="TrG5h" value="typeof_UniqueEntity_InferenceRule" />
     <node concept="3clFbW" id="es" role="jymVt">
       <node concept="3clFbS" id="e$" role="3clF47" />

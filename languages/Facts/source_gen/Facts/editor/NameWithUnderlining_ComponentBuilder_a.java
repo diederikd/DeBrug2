@@ -46,10 +46,10 @@ import Facts.behavior.Role__BehaviorDescriptor;
   }
 
   /*package*/ EditorCell createCell() {
-    return createProperty_gnbzdo_a();
+    return createProperty_0();
   }
 
-  private EditorCell createProperty_gnbzdo_a() {
+  private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");

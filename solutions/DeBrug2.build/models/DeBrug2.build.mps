@@ -8,6 +8,7 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
+    <import index="kbow" ref="r:f448efb6-271a-4b32-b780-14004cb45bb4(ProjectBrowserPlugin.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -306,7 +307,7 @@
                 <node concept="2Ry0Ak" id="sHNKs6FEG1" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="sHNKs6FEI$" role="2Ry0An">
-                    <property role="2Ry0Am" value="MPS 2018.1.app" />
+                    <property role="2Ry0Am" value="MPS 2018.2.app" />
                     <node concept="2Ry0Ak" id="sHNKs6FEL7" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
@@ -323,15 +324,10 @@
     </node>
     <node concept="398rNT" id="sHNKs6S2sW" role="1l3spd">
       <property role="TrG5h" value="mbeddr_home" />
-      <node concept="55IIr" id="sHNKs6S3vb" role="398pKh">
-        <node concept="2Ry0Ak" id="sHNKs6S3$c" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="sHNKs6S3Cg" role="2Ry0An">
-            <property role="2Ry0Am" value="DeBrugBuild" />
-            <node concept="2Ry0Ak" id="sHNKs6S3EN" role="2Ry0An">
-              <property role="2Ry0Am" value="mbeddr.platform" />
-            </node>
-          </node>
+      <node concept="398BVA" id="3LtfMWXrtmn" role="398pKh">
+        <ref role="398BVh" node="sHNKs6FDQd" resolve="mps_home" />
+        <node concept="2Ry0Ak" id="3LtfMWXrto8" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
         </node>
       </node>
     </node>
@@ -419,6 +415,12 @@
         <node concept="2Ry0Ak" id="sHNKs6Tdph" role="iGT6I">
           <property role="2Ry0Am" value="plugins" />
         </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="3LtfMWXrbbn" role="1l3spa">
+      <ref role="1l3spb" to="kbow:6itJwArjGTO" resolve="ProjectBrowserPlugin" />
+      <node concept="398BVA" id="3LtfMWXrhtu" role="2JcizS">
+        <ref role="398BVh" node="sHNKs6S3XR" resolve="url_home" />
       </node>
     </node>
     <node concept="1l3spV" id="sHNKs6FDS8" role="1l3spN">
@@ -571,6 +573,9 @@
       <node concept="m$_yC" id="sHNKs6FFoX" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
       </node>
+      <node concept="m$_yC" id="3LtfMWXrbmN" role="m$_yJ">
+        <ref role="m$_y1" to="kbow:6itJwArjGUl" resolve="ProjectBrowserPlugin" />
+      </node>
       <node concept="3_J27D" id="sHNKs6FDS6" role="m_cZH">
         <node concept="3Mxwew" id="sHNKs6FDS7" role="3MwsjC">
           <property role="3MwjfP" value="DeBrug2" />
@@ -721,6 +726,12 @@
             <ref role="3bR37D" node="sHNKs6FDQU" resolve="DateTime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3LtfMWXrbjQ" role="3bR37C">
+          <node concept="3bR9La" id="3LtfMWXrbjR" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="kbow:6itJwArjGUd" resolve="URL" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="sHNKs6FDRF" role="2G$12L">
         <property role="BnDLt" value="false" />
@@ -781,6 +792,12 @@
         <node concept="1SiIV0" id="sHNKs6FE6j" role="3bR37C">
           <node concept="1Busua" id="sHNKs6FE6k" role="1SiIV1">
             <ref role="1Busuk" node="sHNKs6FDR_" resolve="Facts" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3LtfMWXrbk1" role="3bR37C">
+          <node concept="3bR9La" id="3LtfMWXrbk2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="kbow:6itJwArjGUd" resolve="URL" />
           </node>
         </node>
       </node>
@@ -1676,7 +1693,7 @@
       <node concept="aVJcg" id="sHNKs6FDVf" role="aVJcv">
         <node concept="NbPM2" id="sHNKs6FDVg" role="aVJcq">
           <node concept="3Mxwew" id="sHNKs6FDVh" role="3MwsjC">
-            <property role="3MwjfP" value="2017.2" />
+            <property role="3MwjfP" value="2018.2" />
           </node>
         </node>
       </node>

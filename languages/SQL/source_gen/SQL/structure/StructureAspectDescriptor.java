@@ -40,10 +40,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptUSE = createDescriptorForUSE();
   /*package*/ final ConceptDescriptor myConceptVALUE = createDescriptorForVALUE();
   /*package*/ final ConceptDescriptor myConceptVARCHAR255 = createDescriptorForVARCHAR255();
-  private final LanguageConceptSwitch myConceptIndex;
+  private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
-    myConceptIndex = new LanguageConceptSwitch();
+    myIndexSwitch = new LanguageConceptSwitch();
   }
 
   @Override
@@ -54,7 +54,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
-    switch (myConceptIndex.index(id)) {
+    switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.BIGINT:
         return myConceptBIGINT;
       case LanguageConceptSwitch.COLUMN:
@@ -117,7 +117,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
-    return myConceptIndex.index(c);
+    return myIndexSwitch.index(c);
   }
 
   private static ConceptDescriptor createDescriptorForBIGINT() {
@@ -125,6 +125,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.DATATYPE", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95489L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804592862478");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForCOLUMN() {
@@ -132,6 +133,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804584250884");
+    b.version(2);
     b.aggregate("definition", 0x432375ab987d53baL).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987d4e09L).optional(false).ordered(true).multiple(false).origin("4837839804584252346").done();
     return b.create();
   }
@@ -139,6 +141,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SQL", "COLUMNDEFINITION", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987d4e09L);
     b.class_(false, false, false);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804584250889");
+    b.version(2);
     b.prop("autoincrement", 0x432375ab9900b51eL, "4837839804592862494");
     b.prop("notnull", 0x432375ab9900b521L, "4837839804592862497");
     b.associate("references", 0x432375ab990ac7a1L).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987d4e04L).optional(true).origin("4837839804593522593").done();
@@ -149,6 +152,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SQL", "COLUMNReference", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd9132L);
     b.class_(false, false, false);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925354275122");
+    b.version(2);
     b.associate("column", 0x1bdede5178cd9133L).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987d4e04L).optional(false).origin("2008286925354275123").done();
     return b.create();
   }
@@ -158,6 +162,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("SQL.structure.DDS", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987dc64eL);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925353997441");
+    b.version(2);
     b.prop("comment", 0x1bdede5178e54244L, "2008286925355827780");
     b.aggregate("parameters", 0x1bdede5178c9a008L).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95486L).optional(true).ordered(true).multiple(true).origin("2008286925354016776").done();
     b.aggregate("statements", 0x1bdede5178c95484L).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95483L).optional(true).ordered(true).multiple(true).origin("2008286925353997444").done();
@@ -168,6 +173,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.DDS", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987dc64eL);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804584250875");
+    b.version(2);
     b.prop("schema", 0x432375ab987d4dfcL, "4837839804584250876");
     b.prop("tablename", 0x432375ab987d4dffL, "4837839804584250879");
     b.aggregate("columns", 0x432375ab987da40fL).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987d4e04L).optional(true).ordered(true).multiple(true).origin("4837839804584272911").done();
@@ -177,6 +183,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SQL", "DATATYPE", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95489L);
     b.class_(false, true, false);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925353997449");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDATE() {
@@ -184,6 +191,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.DATATYPE", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95489L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804591757086");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDATETIME() {
@@ -191,6 +199,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.DATATYPE", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95489L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804591757096");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDDL() {
@@ -198,6 +207,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804584281679");
+    b.version(2);
     b.aggregate("statements", 0x432375ab987dc650L).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987dc64eL).optional(true).ordered(true).multiple(true).origin("4837839804584281680").done();
     return b.create();
   }
@@ -206,6 +216,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, true, false);
     b.super_("SQL.structure.STATEMENT", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95483L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804584281678");
+    b.version(2);
     b.alias("Data Definition Statements");
     return b.create();
   }
@@ -214,6 +225,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/303191757011954380");
+    b.version(2);
     b.aggregate("statements", 0x435274bef86be8aL).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95482L).optional(true).ordered(true).multiple(true).origin("303191757011992202").done();
     return b.create();
   }
@@ -222,6 +234,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, true, false);
     b.super_("SQL.structure.STATEMENT", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95483L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925353997442");
+    b.version(2);
     b.alias("Data Manipulation Statements");
     return b.create();
   }
@@ -231,6 +244,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("SQL.structure.DDS", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987dc64eL);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925355394489");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDROPTABLE() {
@@ -238,6 +252,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.DDS", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987dc64eL);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804584306703");
+    b.version(2);
     b.prop("tablename", 0x432375ab987e2810L, "4837839804584306704");
     return b.create();
   }
@@ -246,6 +261,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.DATATYPE", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95489L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804595820624");
+    b.version(2);
     b.aggregate("values", 0x432375ab992dd858L).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab992dd851L).optional(true).ordered(true).multiple(true).origin("4837839804595820632").done();
     return b.create();
   }
@@ -254,6 +270,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804595820625");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForINSERT() {
@@ -261,6 +278,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.DMS", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95482L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925354275117");
+    b.version(2);
     b.prop("tablename", 0x1bdede5178cd91d3L, "2008286925354275283");
     b.aggregate("columns", 0x1bdede5178cd91ccL).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd9132L).optional(false).ordered(true).multiple(true).origin("2008286925354275276").done();
     b.aggregate("values", 0x1bdede5178cd91ceL).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd912eL).optional(false).ordered(true).multiple(true).origin("2008286925354275278").done();
@@ -271,6 +289,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.DATATYPE", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95489L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804584250888");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMEDIUMINT() {
@@ -278,6 +297,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.DATATYPE", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95489L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804592862483");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForNULL() {
@@ -285,6 +305,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.VALUE", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd912eL);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925354299384");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPARAMETER() {
@@ -292,6 +313,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925353997446");
+    b.version(2);
     b.prop("io", 0x1bdede5178c95495L, "2008286925353997461");
     b.aggregate("type", 0x1bdede5178c9548aL).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95489L).optional(false).ordered(true).multiple(false).origin("2008286925353997450").done();
     return b.create();
@@ -301,6 +323,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.VALUE", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd912eL);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925354275128");
+    b.version(2);
     b.associate("parameter", 0x1bdede5178cd9139L).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95486L).optional(false).origin("2008286925354275129").done();
     return b.create();
   }
@@ -308,6 +331,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SQL", "STATEMENT", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95483L);
     b.class_(false, true, false);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925353997443");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTIME() {
@@ -315,6 +339,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.DATATYPE", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95489L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804591757087");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForUSE() {
@@ -322,6 +347,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.DDS", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987dc64eL);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804584353804");
+    b.version(2);
     b.prop("schemaname", 0x432375ab987ee00dL, "4837839804584353805");
     return b.create();
   }
@@ -329,6 +355,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SQL", "VALUE", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd912eL);
     b.class_(false, true, false);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925354275118");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVARCHAR255() {
@@ -336,6 +363,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SQL.structure.DATATYPE", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95489L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804592296967");
+    b.version(2);
     return b.create();
   }
 }

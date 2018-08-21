@@ -44,7 +44,7 @@ public class EnumerationType_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_w62c2j_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_w62c2j_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_w62c2j_a() {
       super(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df41d9L, "Facts.structure.EnumerationType"), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df41d9L, 0x432375ab97df41daL, "enumeration"));

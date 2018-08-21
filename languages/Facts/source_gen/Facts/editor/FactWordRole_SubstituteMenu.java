@@ -44,7 +44,7 @@ public class FactWordRole_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_elzebq_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_elzebq_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_elzebq_a() {
       super(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421802L, "Facts.structure.FactWordRole"), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421802L, 0x35237532384546a2L, "role"));

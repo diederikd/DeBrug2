@@ -44,7 +44,7 @@ public class RoleReferenceExpression_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_1j5x4l_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_1j5x4l_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_1j5x4l_a() {
       super(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db4f50593L, "Facts.structure.RoleReferenceExpression"), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db4f50593L, 0x3999e68db4f50594L, "role"));

@@ -29,8 +29,8 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     }
 
     IntentionFactory[] intentions = EMPTY_ARRAY;
-    SAbstractConcept cncpt_d0f = concept;
-    switch (index_hphjzv_d0f.index(cncpt_d0f)) {
+    SAbstractConcept cncpt = concept;
+    switch (conceptIndex.index(cncpt)) {
       case 0:
         if (true) {
           // Concept: DateTime 
@@ -53,5 +53,5 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[1] = new FillCurrentDateTime_Intention();
     return Arrays.asList(rv);
   }
-  private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL)).seal();
 }

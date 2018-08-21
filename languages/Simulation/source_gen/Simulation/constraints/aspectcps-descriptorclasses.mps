@@ -286,7 +286,7 @@
     </node>
   </node>
   <node concept="312cEu" id="I">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="EntityTypeSelection_Constraints" />
     <node concept="3Tm1VV" id="J" role="1B3o_S" />
     <node concept="3uibUv" id="K" role="1zkMxy">
@@ -595,7 +595,7 @@
   </node>
   <node concept="39dXUE" id="2w" />
   <node concept="312cEu" id="2x">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="SelectedEntity_Constraints" />
     <node concept="3Tm1VV" id="2y" role="1B3o_S" />
     <node concept="3uibUv" id="2z" role="1zkMxy">
@@ -630,7 +630,7 @@
     <node concept="2VYdi" id="2A" role="lGtFl" />
   </node>
   <node concept="312cEu" id="2K">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="Selection_Constraints" />
     <node concept="3Tm1VV" id="2L" role="1B3o_S" />
     <node concept="3uibUv" id="2M" role="1zkMxy">
@@ -664,7 +664,7 @@
     <node concept="2tJIrI" id="2O" role="jymVt" />
   </node>
   <node concept="312cEu" id="2Y">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="ValueTypeSelection_Constraints" />
     <node concept="3Tm1VV" id="2Z" role="1B3o_S" />
     <node concept="3uibUv" id="30" role="1zkMxy">

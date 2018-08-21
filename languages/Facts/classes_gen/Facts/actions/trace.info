@@ -8,10 +8,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <root>
     <file name="ActionAspectDescriptorImpl.java">
-      <unit at="13,0,38,0" name="Facts.actions.ActionAspectDescriptorImpl" />
-    </file>
-    <file name="QueriesGenerated.java">
-      <unit at="6,0,8,0" name="Facts.actions.QueriesGenerated" />
+      <unit at="13,0,34,0" name="Facts.actions.ActionAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:53764341-1bfc-44c7-a0e5-2b2f12e71e7d(Facts.actions)/2161142751704331419">
@@ -26,8 +23,8 @@
       <node id="3829032966752732253" at="30,203,31,233" concept="1" />
       <node id="3829032966752732214" at="31,233,32,436" concept="5" />
       <node id="5583795675249731577" at="33,38,34,198" concept="5" />
-      <node id="5583795675249731675" at="34,198,35,181" concept="1" />
-      <node id="5583795675249750846" at="35,181,36,235" concept="1" />
+      <node id="5583795675249731675" at="34,198,35,184" concept="1" />
+      <node id="5583795675249750846" at="35,184,36,235" concept="1" />
       <node id="3829032966752732231" at="38,38,39,200" concept="5" />
       <node id="3829032966752732237" at="39,200,40,196" concept="1" />
       <node id="3829032966752732260" at="40,196,41,236" concept="1" />

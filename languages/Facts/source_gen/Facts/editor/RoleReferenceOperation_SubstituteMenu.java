@@ -44,7 +44,7 @@ public class RoleReferenceOperation_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_3h9uwz_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_3h9uwz_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_3h9uwz_a() {
       super(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db532981bL, "Facts.structure.RoleReferenceOperation"), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3999e68db532981bL, 0x3999e68db532981dL, "role"));

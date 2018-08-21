@@ -44,7 +44,7 @@ public class Fact_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_315sbq_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_315sbq_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_315sbq_a() {
       super(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, "Facts.structure.Fact"), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype"));

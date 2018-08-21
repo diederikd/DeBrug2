@@ -44,7 +44,7 @@ public class FactTypeInRole_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_rsh263_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_rsh263_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_rsh263_a() {
       super(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0ec0054L, "Facts.structure.FactTypeInRole"), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0ec0054L, 0x7131b251f0ec0055L, "facttype"));

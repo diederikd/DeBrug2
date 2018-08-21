@@ -32,7 +32,7 @@ public class CreateFactWording {
                 SNode value = Fact__BehaviorDescriptor.getValueOfRole_id3e11SfSaCpP.invoke(SLinkOperations.getTarget(newNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f82657e7L, 0x33810783f82657eaL, "fact")), SLinkOperations.getTarget(factTypeWordRole, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord")));
                 if ((value == null)) {
                   SNode factWordText = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x4d7da095199f67e0L, "Facts.structure.FactWordText"));
-                  SPropertyOperations.set(factWordText, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "Unknown");
+                  SPropertyOperations.assign(factWordText, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "Unknown");
                   ListSequence.fromList(SLinkOperations.getChildren(newNode, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f82657e7L, 0x3523753238421a81L, "words"))).addElement(factWordText);
                 }
                 if ((value != null)) {

@@ -44,18 +44,18 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_1u2oto_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_1u2oto_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_1u2oto_a");
     editorCell.setBig(true);
-    editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createProperty_1u2oto_a0());
+    setCellContext(editorCell);
+    editorCell.addEditorCell(createProperty_0());
     return editorCell;
   }
-  private EditorCell createProperty_1u2oto_a0() {
+  private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d95eaL, 0xe475eafb30d95ebL, "value");
