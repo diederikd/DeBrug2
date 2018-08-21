@@ -57,10 +57,10 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
   }
 
   /*package*/ EditorCell createCell() {
-    return createDiagramNode_gq80y8_a_0();
+    return createDiagramNode_1();
   }
 
-  private EditorCell createDiagramNode_gq80y8_a(final EditorContext editorContext, final SNode node) {
+  private EditorCell createDiagramNode_0(final EditorContext editorContext, final SNode node) {
 
     final Wrappers._T<EditorCell_DiagramElement> editorCell = new Wrappers._T<EditorCell_DiagramElement>(null);
 
@@ -69,7 +69,7 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
         final ContextVariables _variablesContext = ContextVariables.getCurrent();
         final List<Port> ports = new ArrayList<Port>();
 
-        EditorCell contentCell = createCollection_gq80y8_a0();
+        EditorCell contentCell = createCollection_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
 
 
@@ -105,7 +105,7 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
         editorCell.value = new EditorCell_DiagramElement(editorContext, node, accessor);
         editorCell.value.setCellId("DiagramNode_gq80y8_a");
         editorCell.value.setBig(true);
-        editorCell.value.setCellContext(getCellFactory().getCellContext());
+        setCellContext(editorCell.value);
 
         editorCell.value.addEditorCell(contentCell);
       }
@@ -113,16 +113,16 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
 
     return editorCell.value;
   }
-  private EditorCell createDiagramNode_gq80y8_a_0() {
-    return createDiagramNode_gq80y8_a(getEditorContext(), myNode);
+  private EditorCell createDiagramNode_1() {
+    return createDiagramNode_0(getEditorContext(), myNode);
   }
-  private EditorCell createCollection_gq80y8_a0() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_gq80y8_a0");
-    editorCell.addEditorCell(createProperty_gq80y8_a0a());
+    editorCell.addEditorCell(createProperty_0());
     return editorCell;
   }
-  private EditorCell createProperty_gq80y8_a0a() {
+  private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");

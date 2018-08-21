@@ -31,9 +31,5 @@ public class ActionAspectDescriptorImpl extends BaseActionAspectDescriptor imple
     return Collections.<NodeFactory>emptyList();
   }
 
-  @Override
-  public boolean hasBuilders() {
-    return false;
-  }
   private static String[] stringSwitchCases_tpto26_a0a0a0c = new String[]{"ActionType", "ImmunityType", "Method", "Transition"};
 }

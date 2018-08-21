@@ -60,27 +60,27 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_7mt07p_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_7mt07p_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_7mt07p_a");
     try {
       getCellFactory().pushCellContext();
       getCellFactory().addCellContextHints(new String[]{"Position.editor.PositionHints.table"});
-      editorCell.addEditorCell(createConstant_7mt07p_a0());
-      editorCell.addEditorCell(createConstant_7mt07p_b0());
-      editorCell.addEditorCell(createConstant_7mt07p_c0());
-      editorCell.addEditorCell(createConstant_7mt07p_d0());
-      editorCell.addEditorCell(createTable_7mt07p_e0_0());
+      editorCell.addEditorCell(createConstant_0());
+      editorCell.addEditorCell(createConstant_1());
+      editorCell.addEditorCell(createConstant_2());
+      editorCell.addEditorCell(createConstant_3());
+      editorCell.addEditorCell(createTable_1());
       setInnerCellsContext(editorCell);
     } finally {
       getCellFactory().popCellContext();
     }
     return editorCell;
   }
-  private EditorCell createConstant_7mt07p_a0() {
+  private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_7mt07p_a0");
     Style style = new StyleImpl();
@@ -89,13 +89,13 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_7mt07p_b0() {
+  private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "veranderingen in de feiten bij uitvoeren handeling");
     editorCell.setCellId("Constant_7mt07p_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_7mt07p_c0() {
+  private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
     editorCell.setCellId("Constant_7mt07p_c0");
     Style style = new StyleImpl();
@@ -104,7 +104,7 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_7mt07p_d0() {
+  private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_7mt07p_d0");
     Style style = new StyleImpl();
@@ -113,7 +113,7 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createTable_7mt07p_e0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createTable_0(final EditorContext editorContext, final SNode node) {
 
     final Wrappers._T<TableEditor> editorCell = new Wrappers._T<TableEditor>(null);
     _FunctionTypes._void_P0_E0 creator = new _FunctionTypes._void_P0_E0() {
@@ -162,8 +162,8 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
     return editorCell.value;
 
   }
-  private EditorCell createTable_7mt07p_e0_0() {
-    return createTable_7mt07p_e0(getEditorContext(), myNode);
+  private EditorCell createTable_1() {
+    return createTable_0(getEditorContext(), myNode);
   }
   public HeaderGrid createHeadQuery_7mt07p_a4a(final EditorContext editorContext, final SNode node) {
     Object queryResult = new Object() {
@@ -182,6 +182,7 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
     HeaderGrid grid = new HeaderGridFactory(editorContext, node, true).createFromObject(queryResult, new StringHeaderReference("3208761769268260848"), insertAction, deleteAction, 0, new ITableStyleFactory() {
       public Style createStyle(final int columnIndex, final int rowIndex) {
         Style style = new StyleImpl();
+        final EditorCell editorCell = null;
         return style;
       }
     }, "attributen");
@@ -199,6 +200,7 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
     HeaderGrid grid = new HeaderGridFactory(editorContext, node, false).createFromObject(queryResult, new StringHeaderReference("797539131727260372"), insertAction, deleteAction, 0, new ITableStyleFactory() {
       public Style createStyle(final int columnIndex, final int rowIndex) {
         Style style = new StyleImpl();
+        final EditorCell editorCell = null;
         return style;
       }
     }, "objectinstanties");
@@ -210,9 +212,9 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
     final GridAdapter gridAdapter = new GridAdapter(grid, editorContext, node);
 
     try {
-      editorContext.getCellFactory().pushCellContext();
-      editorContext.getCellFactory().addCellContextHints(new String[]{"Position.editor.PositionHints.table"});
-      editorContext.getCellFactory().removeCellContextHints();
+      getCellFactory().pushCellContext();
+      getCellFactory().addCellContextHints(new String[]{"Position.editor.PositionHints.table"});
+      getCellFactory().removeCellContextHints();
       new Object() {
         {
         }
@@ -292,6 +294,7 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
               grid.getElement(x, y).setStyle(new ITableStyleFactory() {
                 public Style createStyle(final int columnIndex, final int rowIndex) {
                   Style style = new StyleImpl();
+                  final EditorCell editorCell = null;
                   return style;
                 }
               }.createStyle(x, y));
@@ -330,7 +333,7 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
       }.loadElements();
 
     } finally {
-      editorContext.getCellFactory().popCellContext();
+      getCellFactory().popCellContext();
     }
 
 

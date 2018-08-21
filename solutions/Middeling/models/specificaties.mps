@@ -311,7 +311,7 @@
   </registry>
   <node concept="LNKjj" id="7kyIz29MLN8">
     <property role="TrG5h" value="Middeling" />
-    <property role="BRFxB" value="true" />
+    <property role="BRFxB" value="false" />
     <node concept="LN6mb" id="7kyIz29MLNe" role="LN6om">
       <property role="TrG5h" value="verzoek middelingsteruggaaf" />
       <property role="34u7DB" value="het" />
@@ -1058,6 +1058,9 @@
             <property role="TrG5h" value="Het verzoek heeft een middelingstijdvak." />
           </node>
         </node>
+      </node>
+      <node concept="24H7r1" id="6Kq_Y5_xaKc" role="3CuByN">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011353&amp;hoofdstuk=3&amp;afdeling=3.14&amp;artikel=3.154&amp;z=2018-01-01&amp;g=2018-01-01" />
       </node>
     </node>
     <node concept="XSeYT" id="5KHcptZEjHa" role="LNKji">

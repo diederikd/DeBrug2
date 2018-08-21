@@ -72,34 +72,34 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_oj8d1m_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_oj8d1m_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_oj8d1m_a");
     editorCell.setBig(true);
-    editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createConstant_oj8d1m_a0());
-    editorCell.addEditorCell(createConstant_oj8d1m_b0());
-    editorCell.addEditorCell(createProperty_oj8d1m_c0());
-    editorCell.addEditorCell(createConstant_oj8d1m_d0());
-    editorCell.addEditorCell(createDiagram_oj8d1m_e0_0());
+    setCellContext(editorCell);
+    editorCell.addEditorCell(createConstant_0());
+    editorCell.addEditorCell(createConstant_1());
+    editorCell.addEditorCell(createProperty_0());
+    editorCell.addEditorCell(createConstant_2());
+    editorCell.addEditorCell(createDiagram_1());
     return editorCell;
   }
-  private EditorCell createConstant_oj8d1m_a0() {
+  private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "specificaties");
     editorCell.setCellId("Constant_oj8d1m_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_oj8d1m_b0() {
+  private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
     editorCell.setCellId("Constant_oj8d1m_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_oj8d1m_c0() {
+  private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
@@ -129,7 +129,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createConstant_oj8d1m_d0() {
+  private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_oj8d1m_d0");
     Style style = new StyleImpl();
@@ -139,7 +139,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createDiagram_oj8d1m_e0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createDiagram_0(final EditorContext editorContext, final SNode node) {
     final Wrappers._T<BaseDiagramECell> editorCell = new Wrappers._T<BaseDiagramECell>(null);
 
     EditorUtil.noCaching(editorContext, new Runnable() {
@@ -202,7 +202,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
 
     return editorCell.value;
   }
-  private EditorCell createDiagram_oj8d1m_e0_0() {
-    return createDiagram_oj8d1m_e0(getEditorContext(), myNode);
+  private EditorCell createDiagram_1() {
+    return createDiagram_0(getEditorContext(), myNode);
   }
 }

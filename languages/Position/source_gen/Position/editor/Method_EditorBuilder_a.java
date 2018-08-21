@@ -56,28 +56,28 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_gfox8l_a();
+    return createCollection_0();
   }
 
-  private EditorCell createCollection_gfox8l_a() {
+  private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_gfox8l_a");
     editorCell.setBig(true);
-    editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createRefCell_gfox8l_a0());
-    editorCell.addEditorCell(createConstant_gfox8l_b0());
-    editorCell.addEditorCell(createProperty_gfox8l_c0());
-    editorCell.addEditorCell(createConstant_gfox8l_d0());
-    editorCell.addEditorCell(createRefCell_gfox8l_e0());
+    setCellContext(editorCell);
+    editorCell.addEditorCell(createRefCell_0());
+    editorCell.addEditorCell(createConstant_0());
+    editorCell.addEditorCell(createProperty_1());
+    editorCell.addEditorCell(createConstant_1());
+    editorCell.addEditorCell(createRefCell_1());
     return editorCell;
   }
-  private EditorCell createRefCell_gfox8l_a0() {
+  private EditorCell createRefCell_0() {
     final SReferenceLink referenceLink = MetaAdapterFactory.getReferenceLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x5c2d31977fb66e7dL, 0x5c2d31977fb66e7eL, "eventtype");
     SReferenceCellProvider provider = new SReferenceCellProvider(getNode(), referenceLink, getEditorContext()) {
       protected EditorCell createReferenceCell(final SNode targetNode) {
         EditorCell cell = getUpdateSession().updateReferencedNodeCell(new Computable<EditorCell>() {
           public EditorCell compute() {
-            return new Method_EditorBuilder_a.Inline_Builder_gfox8l_a0a(getEditorContext(), getNode(), targetNode).createCell();
+            return new Method_EditorBuilder_a.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
         }, targetNode, "eventtype");
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
@@ -90,9 +90,9 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
     provider.setNoTargetText("<no eventtype>");
     EditorCell editorCell = provider.createCell();
 
-    if (editorCell.getRole() == null) {
+    if (editorCell.getSRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("eventtype");
+      editorCell.setSRole(MetaAdapterFactory.getReferenceLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x5c2d31977fb66e7dL, 0x5c2d31977fb66e7eL, "eventtype"));
     }
     editorCell.setSubstituteInfo(new SReferenceSubstituteInfo(editorCell, referenceLink));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da51L, "jetbrains.mps.lang.core.structure.LinkAttribute"));
@@ -107,19 +107,19 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
     } else
     return editorCell;
   }
-  /*package*/ static class Inline_Builder_gfox8l_a0a extends AbstractEditorBuilder {
+  /*package*/ static class Inline_Builder0 extends AbstractEditorBuilder {
     @NotNull
     private SNode myNode;
     private SNode myReferencingNode;
 
-    /*package*/ Inline_Builder_gfox8l_a0a(@NotNull EditorContext context, SNode referencingNode, @NotNull SNode node) {
+    /*package*/ Inline_Builder0(@NotNull EditorContext context, SNode referencingNode, @NotNull SNode node) {
       super(context);
       myReferencingNode = referencingNode;
       myNode = node;
     }
 
     /*package*/ EditorCell createCell() {
-      return createProperty_gfox8l_a0a0();
+      return createProperty_0();
     }
 
     @NotNull
@@ -128,7 +128,7 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
       return myNode;
     }
 
-    private EditorCell createProperty_gfox8l_a0a0() {
+    private EditorCell createProperty_0() {
       getCellFactory().pushCellContext();
       try {
         final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
@@ -156,13 +156,13 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
       }
     }
   }
-  private EditorCell createConstant_gfox8l_b0() {
+  private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "->");
     editorCell.setCellId("Constant_gfox8l_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_gfox8l_c0() {
+  private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x5c2d31977fb66e7dL, 0x5c2d31977fb66e80L, "type");
@@ -192,7 +192,7 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createConstant_gfox8l_d0() {
+  private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "het onderwerp");
     editorCell.setCellId("Constant_gfox8l_d0");
     Style style = new StyleImpl();
@@ -201,13 +201,13 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_gfox8l_e0() {
+  private EditorCell createRefCell_1() {
     final SReferenceLink referenceLink = MetaAdapterFactory.getReferenceLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x5c2d31977fb66e7dL, 0x5c2d31977fb66e7fL, "facttype");
     SReferenceCellProvider provider = new SReferenceCellProvider(getNode(), referenceLink, getEditorContext()) {
       protected EditorCell createReferenceCell(final SNode targetNode) {
         EditorCell cell = getUpdateSession().updateReferencedNodeCell(new Computable<EditorCell>() {
           public EditorCell compute() {
-            return new Method_EditorBuilder_a.Inline_Builder_gfox8l_a4a(getEditorContext(), getNode(), targetNode).createCell();
+            return new Method_EditorBuilder_a.Inline_Builder1(getEditorContext(), getNode(), targetNode).createCell();
           }
         }, targetNode, "facttype");
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
@@ -220,9 +220,9 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
     provider.setNoTargetText("<no facttype>");
     EditorCell editorCell = provider.createCell();
 
-    if (editorCell.getRole() == null) {
+    if (editorCell.getSRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("facttype");
+      editorCell.setSRole(MetaAdapterFactory.getReferenceLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x5c2d31977fb66e7dL, 0x5c2d31977fb66e7fL, "facttype"));
     }
     editorCell.setSubstituteInfo(new SReferenceSubstituteInfo(editorCell, referenceLink));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da51L, "jetbrains.mps.lang.core.structure.LinkAttribute"));
@@ -237,19 +237,19 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
     } else
     return editorCell;
   }
-  /*package*/ static class Inline_Builder_gfox8l_a4a extends AbstractEditorBuilder {
+  /*package*/ static class Inline_Builder1 extends AbstractEditorBuilder {
     @NotNull
     private SNode myNode;
     private SNode myReferencingNode;
 
-    /*package*/ Inline_Builder_gfox8l_a4a(@NotNull EditorContext context, SNode referencingNode, @NotNull SNode node) {
+    /*package*/ Inline_Builder1(@NotNull EditorContext context, SNode referencingNode, @NotNull SNode node) {
       super(context);
       myReferencingNode = referencingNode;
       myNode = node;
     }
 
     /*package*/ EditorCell createCell() {
-      return createProperty_gfox8l_a0e0();
+      return createProperty_2();
     }
 
     @NotNull
@@ -258,7 +258,7 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
       return myNode;
     }
 
-    private EditorCell createProperty_gfox8l_a0e0() {
+    private EditorCell createProperty_2() {
       getCellFactory().pushCellContext();
       try {
         final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
@@ -267,7 +267,7 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
         editorCell.setDefaultText("<no name>");
         editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteEasily(myNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
         editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteEasily(myNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
-        editorCell.setCellId("property_name_1");
+        editorCell.setCellId("property_name1");
         Style style = new StyleImpl();
         new BoldStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
         editorCell.getStyle().putAll(style);

@@ -7,10 +7,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <root>
     <file name="ActionAspectDescriptorImpl.java">
-      <unit at="13,0,40,0" name="Position.actions.ActionAspectDescriptorImpl" />
-    </file>
-    <file name="QueriesGenerated.java">
-      <unit at="6,0,8,0" name="Position.actions.QueriesGenerated" />
+      <unit at="13,0,36,0" name="Position.actions.ActionAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:fdf7c547-6b35-46ab-8059-7acd92352bf7(Position.actions)/3228884507315884432">

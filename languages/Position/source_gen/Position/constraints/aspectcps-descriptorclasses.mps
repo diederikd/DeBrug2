@@ -222,7 +222,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="0">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="AbstractEventType_Constraints" />
     <node concept="3Tm1VV" id="1" role="1B3o_S" />
     <node concept="3uibUv" id="2" role="1zkMxy">
@@ -256,7 +256,7 @@
     <node concept="2tJIrI" id="4" role="jymVt" />
   </node>
   <node concept="312cEu" id="e">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="ActionType_Constraints" />
     <node concept="3Tm1VV" id="f" role="1B3o_S" />
     <node concept="3uibUv" id="g" role="1zkMxy">
@@ -631,7 +631,7 @@
     </node>
   </node>
   <node concept="312cEu" id="2_">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="instances" />
     <property role="TrG5h" value="Action_Constraints" />
     <node concept="3Tm1VV" id="2A" role="1B3o_S" />
     <node concept="3uibUv" id="2B" role="1zkMxy">
@@ -1105,7 +1105,6 @@
     </node>
   </node>
   <node concept="312cEu" id="5v">
-    <property role="3GE5qa" value="Constraints" />
     <property role="TrG5h" value="EventInRole_Constraints" />
     <node concept="3Tm1VV" id="5w" role="1B3o_S" />
     <node concept="3uibUv" id="5x" role="1zkMxy">
@@ -1412,7 +1411,7 @@
   </node>
   <node concept="39dXUE" id="7i" />
   <node concept="312cEu" id="7j">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="ImmunityType_Constraints" />
     <node concept="3Tm1VV" id="7k" role="1B3o_S" />
     <node concept="3uibUv" id="7l" role="1zkMxy">
@@ -1784,7 +1783,6 @@
     </node>
   </node>
   <node concept="312cEu" id="9D">
-    <property role="3GE5qa" value="Constraints" />
     <property role="TrG5h" value="ObjectTypeInRole_Constraints" />
     <node concept="3Tm1VV" id="9E" role="1B3o_S" />
     <node concept="3uibUv" id="9F" role="1zkMxy">
@@ -2083,7 +2081,7 @@
     </node>
   </node>
   <node concept="312cEu" id="bp">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="ObligationType_Constraints" />
     <node concept="3Tm1VV" id="bq" role="1B3o_S" />
     <node concept="3uibUv" id="br" role="1zkMxy">
@@ -2709,7 +2707,7 @@
     </node>
   </node>
   <node concept="312cEu" id="fn">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="PowerType_Constraints" />
     <node concept="3Tm1VV" id="fo" role="1B3o_S" />
     <node concept="3uibUv" id="fp" role="1zkMxy">
@@ -3191,7 +3189,7 @@
     </node>
   </node>
   <node concept="312cEu" id="ip">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="StateType_Constraints" />
     <node concept="3Tm1VV" id="iq" role="1B3o_S" />
     <node concept="3uibUv" id="ir" role="1zkMxy">
@@ -3225,7 +3223,7 @@
     <node concept="2tJIrI" id="it" role="jymVt" />
   </node>
   <node concept="312cEu" id="iB">
-    <property role="3GE5qa" value="Constraints" />
+    <property role="3GE5qa" value="instances" />
     <property role="TrG5h" value="State_Constraints" />
     <node concept="3Tm1VV" id="iC" role="1B3o_S" />
     <node concept="3uibUv" id="iD" role="1zkMxy">
@@ -3485,7 +3483,6 @@
     </node>
   </node>
   <node concept="312cEu" id="k9">
-    <property role="3GE5qa" value="Constraints" />
     <property role="TrG5h" value="SubjectTypeInRole_Constraints" />
     <node concept="3Tm1VV" id="ka" role="1B3o_S" />
     <node concept="3uibUv" id="kb" role="1zkMxy">

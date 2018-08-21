@@ -44,7 +44,7 @@ public class SubjectTypeInRole_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public static class SMP_ReferenceScope_biax2z_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_biax2z_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_biax2z_a() {
       super(MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x33a3a1e244917bafL, "Position.structure.SubjectTypeInRole"), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f362L, 0xe475eafb2f3f363L, "entityType"));

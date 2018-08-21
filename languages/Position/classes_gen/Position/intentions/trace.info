@@ -80,8 +80,16 @@
       <unit id="2358029914316214105" at="48,0,64,0" name="Position.intentions.AddDefinitionObjectType_Intention$IntentionImplementation" />
       <unit id="2358029914316214105" at="19,0,65,0" name="Position.intentions.AddDefinitionObjectType_Intention" />
     </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="2358029914316214105" at="45,47,46,66" concept="1" />
+      <node id="2358029914316214105" at="90,37,91,52" concept="1" />
+    </file>
   </root>
   <root nodeRef="r:84f2de3d-0e46-4fdb-a91f-f5f26d2e8ce8(Position.intentions)/2720752071406832178">
+    <file name="IntentionsDescriptor.java">
+      <node id="2720752071406832178" at="56,51,57,52" concept="1" />
+      <node id="2720752071406832178" at="95,48,96,39" concept="1" />
+    </file>
     <file name="ShowTable_Intention.java">
       <node id="2720752071406832178" at="20,0,21,0" concept="2" trace="myCachedExecutable" />
       <node id="2720752071406832178" at="21,32,22,134" concept="7" />
@@ -214,8 +222,16 @@
       <unit id="2720752071406891444" at="48,0,64,0" name="Position.intentions.HideTable_Intention$IntentionImplementation" />
       <unit id="2720752071406891444" at="19,0,65,0" name="Position.intentions.HideTable_Intention" />
     </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="2720752071406891444" at="57,52,58,52" concept="1" />
+      <node id="2720752071406891444" at="96,39,97,39" concept="1" />
+    </file>
   </root>
   <root nodeRef="r:84f2de3d-0e46-4fdb-a91f-f5f26d2e8ce8(Position.intentions)/4611417329805505560">
+    <file name="IntentionsDescriptor.java">
+      <node id="4611417329805505560" at="52,47,53,60" concept="1" />
+      <node id="4611417329805505560" at="85,53,86,46" concept="1" />
+    </file>
     <file name="PushGraphicalHint_Intention.java">
       <node id="4611417329805505560" at="19,0,20,0" concept="2" trace="myCachedExecutable" />
       <node id="4611417329805505560" at="20,40,21,133" concept="7" />
@@ -299,6 +315,10 @@
     </file>
   </root>
   <root nodeRef="r:84f2de3d-0e46-4fdb-a91f-f5f26d2e8ce8(Position.intentions)/4611417329805806040">
+    <file name="IntentionsDescriptor.java">
+      <node id="4611417329805806040" at="53,60,54,58" concept="1" />
+      <node id="4611417329805806040" at="86,46,87,44" concept="1" />
+    </file>
     <file name="PushDefaultHint_Intention.java">
       <node id="4611417329805806040" at="19,0,20,0" concept="2" trace="myCachedExecutable" />
       <node id="4611417329805806040" at="20,38,21,133" concept="7" />
@@ -447,8 +467,16 @@
       <unit id="6347445498642092029" at="48,0,64,0" name="Position.intentions.HideVariablesAction_Intention$IntentionImplementation" />
       <unit id="6347445498642092029" at="19,0,65,0" name="Position.intentions.HideVariablesAction_Intention" />
     </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="6347445498642092029" at="37,47,38,62" concept="1" />
+      <node id="6347445498642092029" at="93,47,94,48" concept="1" />
+    </file>
   </root>
   <root nodeRef="r:84f2de3d-0e46-4fdb-a91f-f5f26d2e8ce8(Position.intentions)/6347445498642092051">
+    <file name="IntentionsDescriptor.java">
+      <node id="6347445498642092051" at="38,62,39,62" concept="1" />
+      <node id="6347445498642092051" at="94,48,95,48" concept="1" />
+    </file>
     <file name="ShowVariablesAction_Intention.java">
       <node id="6347445498642092051" at="20,0,21,0" concept="2" trace="myCachedExecutable" />
       <node id="6347445498642092051" at="21,42,22,133" concept="7" />
@@ -581,6 +609,10 @@
       <unit id="6642019552190271867" at="48,0,64,0" name="Position.intentions.AddDefinitionSubjectType_Intention$IntentionImplementation" />
       <unit id="6642019552190271867" at="19,0,65,0" name="Position.intentions.AddDefinitionSubjectType_Intention" />
     </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="6642019552190271867" at="72,47,73,67" concept="1" />
+      <node id="6642019552190271867" at="87,44,88,53" concept="1" />
+    </file>
   </root>
   <root nodeRef="r:84f2de3d-0e46-4fdb-a91f-f5f26d2e8ce8(Position.intentions)/6642019552192858533">
     <file name="AddPower_Intention.java">
@@ -640,6 +672,10 @@
       </scope>
       <unit id="6642019552192858533" at="44,0,61,0" name="Position.intentions.AddPower_Intention$IntentionImplementation" />
       <unit id="6642019552192858533" at="21,0,62,0" name="Position.intentions.AddPower_Intention" />
+    </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="6642019552192858533" at="54,58,55,51" concept="1" />
+      <node id="6642019552192858533" at="88,53,89,37" concept="1" />
     </file>
   </root>
   <root nodeRef="r:84f2de3d-0e46-4fdb-a91f-f5f26d2e8ce8(Position.intentions)/6642019552193220401">
@@ -701,8 +737,16 @@
       <unit id="6642019552193220401" at="44,0,61,0" name="Position.intentions.AddEvent_Intention$IntentionImplementation" />
       <unit id="6642019552193220401" at="21,0,62,0" name="Position.intentions.AddEvent_Intention" />
     </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="6642019552193220401" at="55,51,56,51" concept="1" />
+      <node id="6642019552193220401" at="89,37,90,37" concept="1" />
+    </file>
   </root>
   <root nodeRef="r:84f2de3d-0e46-4fdb-a91f-f5f26d2e8ce8(Position.intentions)/9118850325336185484">
+    <file name="IntentionsDescriptor.java">
+      <node id="9118850325336185484" at="64,47,65,61" concept="1" />
+      <node id="9118850325336185484" at="91,52,92,47" concept="1" />
+    </file>
     <file name="ShowVariablesState_Intention.java">
       <node id="9118850325336185484" at="20,0,21,0" concept="2" trace="myCachedExecutable" />
       <node id="9118850325336185484" at="21,41,22,133" concept="7" />
@@ -834,6 +878,10 @@
       </scope>
       <unit id="9118850325336199885" at="48,0,64,0" name="Position.intentions.HideVariablesState_Intention$IntentionImplementation" />
       <unit id="9118850325336199885" at="19,0,65,0" name="Position.intentions.HideVariablesState_Intention" />
+    </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="9118850325336199885" at="65,61,66,61" concept="1" />
+      <node id="9118850325336199885" at="92,47,93,47" concept="1" />
     </file>
   </root>
 </debug-info>
