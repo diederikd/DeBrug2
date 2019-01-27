@@ -65,7 +65,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     return editorCell;
   }
   private Color _StyleParameter_QueryFunction_eha976_a0a() {
-    return Simulation.GetTestresultColor(SPropertyOperations.getString_def(getNode(), MetaAdapterFactory.getProperty(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ee4905bL, 0x319083e78ee4905cL, "testresult"), "nottested").toString());
+    return Simulation.GetTestresultColor(SPropertyOperations.getString(getNode(), MetaAdapterFactory.getProperty(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ee4905bL, 0x319083e78ee4905cL, "testresult")).toString());
   }
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {

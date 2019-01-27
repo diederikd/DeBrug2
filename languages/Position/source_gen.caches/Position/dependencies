@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Position.Language" file="Language.java">
+  <dependency className="Position.Language">
     <classNode dependClassName="Position.actions.ActionAspectDescriptorImpl" />
     <classNode dependClassName="Position.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="Position.constraints.ConstraintsAspectDescriptor" />

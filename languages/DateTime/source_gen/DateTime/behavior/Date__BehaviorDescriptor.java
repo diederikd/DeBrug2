@@ -53,9 +53,9 @@ public final class Date__BehaviorDescriptor extends BaseBHDescriptor {
     return formattedDate;
   }
   /*package*/ static void setDate_id5riiL_BUmpQ(@NotNull SNode __thisNode__, LocalDate ld) {
-    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar"), "" + (ld.getYear()));
-    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand"), "" + (ld.getMonthValue()));
-    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag"), "" + (ld.getDayOfMonth()));
+    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar"), ld.getYear());
+    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand"), ld.getMonthValue());
+    SPropertyOperations.assign(__thisNode__, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag"), ld.getDayOfMonth());
   }
 
   /*package*/ Date__BehaviorDescriptor() {

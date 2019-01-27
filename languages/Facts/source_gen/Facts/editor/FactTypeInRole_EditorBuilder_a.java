@@ -87,7 +87,7 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
           public EditorCell compute() {
             return new FactTypeInRole_EditorBuilder_a.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "facttype");
+        }, targetNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0ec0054L, 0x7131b251f0ec0055L, "facttype"));
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull_smartReference(cell);

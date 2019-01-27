@@ -96,7 +96,7 @@ import jetbrains.mps.nodeEditor.MPSColors;
               SNode child = SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43bL, "left"));
               SAbstractConcept childConcept = SNodeOperations.getConcept(child);
               if (!(GrammarCellsUtil.isExactly(childConcept, MetaAdapterFactory.getInterfaceConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L, "Expressions.structure.IExpression")))) {
-                SNodeFactoryOperations.setNewChild(node, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43bL, "left"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getInterfaceConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L, "Expressions.structure.IExpression")));
+                SNodeFactoryOperations.setNewChild(node, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43bL, "left"), null);
                 return;
               }
             }
@@ -127,7 +127,7 @@ import jetbrains.mps.nodeEditor.MPSColors;
               SNode child = SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43bL, "left"));
               SAbstractConcept childConcept = SNodeOperations.getConcept(child);
               if (!(GrammarCellsUtil.isExactly(childConcept, MetaAdapterFactory.getInterfaceConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L, "Expressions.structure.IExpression")))) {
-                SNodeFactoryOperations.setNewChild(node, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43bL, "left"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getInterfaceConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L, "Expressions.structure.IExpression")));
+                SNodeFactoryOperations.setNewChild(node, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43bL, "left"), null);
                 return;
               }
             }
@@ -356,7 +356,7 @@ import jetbrains.mps.nodeEditor.MPSColors;
               SNode child = SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43cL, "right"));
               SAbstractConcept childConcept = SNodeOperations.getConcept(child);
               if (!(GrammarCellsUtil.isExactly(childConcept, MetaAdapterFactory.getInterfaceConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L, "Expressions.structure.IExpression")))) {
-                SNodeFactoryOperations.setNewChild(node, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43cL, "right"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getInterfaceConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L, "Expressions.structure.IExpression")));
+                SNodeFactoryOperations.setNewChild(node, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43cL, "right"), null);
                 return;
               }
             }
@@ -387,7 +387,7 @@ import jetbrains.mps.nodeEditor.MPSColors;
               SNode child = SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43cL, "right"));
               SAbstractConcept childConcept = SNodeOperations.getConcept(child);
               if (!(GrammarCellsUtil.isExactly(childConcept, MetaAdapterFactory.getInterfaceConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L, "Expressions.structure.IExpression")))) {
-                SNodeFactoryOperations.setNewChild(node, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43cL, "right"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getInterfaceConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L, "Expressions.structure.IExpression")));
+                SNodeFactoryOperations.setNewChild(node, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43cL, "right"), null);
                 return;
               }
             }

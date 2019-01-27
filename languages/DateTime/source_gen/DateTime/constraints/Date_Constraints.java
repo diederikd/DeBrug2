@@ -38,7 +38,7 @@ public class Date_Constraints extends BaseConstraintsDescriptor {
       @Override
       public void setValue(SNode node, String propertyValue) {
         String propertyName = "dag";
-        SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag"), "" + ((SPropertyOperations.getInteger(propertyValue))));
+        SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag"), (SPropertyOperations.getInteger(propertyValue)));
       }
       @Override
       public boolean hasOwnValidator() {
@@ -73,7 +73,7 @@ public class Date_Constraints extends BaseConstraintsDescriptor {
       @Override
       public void setValue(SNode node, String propertyValue) {
         String propertyName = "maand";
-        SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand"), "" + ((SPropertyOperations.getInteger(propertyValue))));
+        SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand"), (SPropertyOperations.getInteger(propertyValue)));
       }
       @Override
       public boolean hasOwnValidator() {
@@ -108,7 +108,7 @@ public class Date_Constraints extends BaseConstraintsDescriptor {
       @Override
       public void setValue(SNode node, String propertyValue) {
         String propertyName = "jaar";
-        SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar"), "" + ((SPropertyOperations.getInteger(propertyValue))));
+        SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar"), (SPropertyOperations.getInteger(propertyValue)));
       }
       @Override
       public boolean hasOwnValidator() {

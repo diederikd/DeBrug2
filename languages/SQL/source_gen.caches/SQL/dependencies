@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="SQL.Language" file="Language.java">
+  <dependency className="SQL.Language">
     <classNode dependClassName="SQL.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="SQL.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="SQL.editor.EditorAspectDescriptorImpl" />

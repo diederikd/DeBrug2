@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Expressions.Language" file="Language.java">
+  <dependency className="Expressions.Language">
     <classNode dependClassName="Expressions.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="Expressions.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="Expressions.editor.EditorAspectDescriptorImpl" />

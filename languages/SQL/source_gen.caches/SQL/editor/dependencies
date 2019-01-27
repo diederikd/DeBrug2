@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="SQL.editor.COLUMNReference_Editor" file="COLUMNReference_Editor.java">
+  <dependency className="SQL.editor.COLUMNReference_Editor">
     <classNode dependClassName="SQL.editor.COLUMNReference_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="SQL.editor.COLUMNReference_EditorBuilder_a" file="COLUMNReference_EditorBuilder_a.java">
+  <dependency className="SQL.editor.COLUMNReference_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -48,7 +48,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="SQL.editor.COLUMNReference_SubstituteMenu" file="COLUMNReference_SubstituteMenu.java">
+  <dependency className="SQL.editor.COLUMNReference_SubstituteMenu">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Collection" />
@@ -69,14 +69,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
-  <dependency className="SQL.editor.DML_Editor" file="DML_Editor.java">
+  <dependency className="SQL.editor.DML_Editor">
     <classNode dependClassName="SQL.editor.DML_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="SQL.editor.DML_EditorBuilder_a" file="DML_EditorBuilder_a.java">
+  <dependency className="SQL.editor.DML_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Objects" />
@@ -109,7 +109,6 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.update.AttributeKind" />
-    <classNode dependClassName="jetbrains.mps.smodel.action.NodeFactoryManager" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -118,7 +117,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="SQL.editor.EditorAspectDescriptorImpl" file="EditorAspectDescriptorImpl.java">
+  <dependency className="SQL.editor.EditorAspectDescriptorImpl">
     <classNode dependClassName="SQL.editor.COLUMNReference_Editor" />
     <classNode dependClassName="SQL.editor.COLUMNReference_SubstituteMenu" />
     <classNode dependClassName="SQL.editor.DML_Editor" />
@@ -136,14 +135,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorAspectDescriptorBase" />
   </dependency>
-  <dependency className="SQL.editor.PARAMETERReference_Editor" file="PARAMETERReference_Editor.java">
+  <dependency className="SQL.editor.PARAMETERReference_Editor">
     <classNode dependClassName="SQL.editor.PARAMETERReference_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="SQL.editor.PARAMETERReference_EditorBuilder_a" file="PARAMETERReference_EditorBuilder_a.java">
+  <dependency className="SQL.editor.PARAMETERReference_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -184,7 +183,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="SQL.editor.PARAMETERReference_SubstituteMenu" file="PARAMETERReference_SubstituteMenu.java">
+  <dependency className="SQL.editor.PARAMETERReference_SubstituteMenu">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Collection" />

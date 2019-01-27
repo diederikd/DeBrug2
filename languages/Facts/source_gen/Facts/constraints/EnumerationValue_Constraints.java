@@ -48,15 +48,13 @@ public class EnumerationValue_Constraints extends BaseConstraintsDescriptor {
           }
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
-            {
-              SNode variable = SNodeOperations.getNodeAncestor(_context.getContextNode(), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, "Facts.structure.Variable"), false, false);
-              final SNode enumerationType = (SNode) SLinkOperations.getTarget(variable, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role"));
-              return ListScope.forNamedElements(SLinkOperations.getChildren(ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.getNodeAncestor(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getContextNode(), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f67893L, "Facts.structure.FactTable"), false, false), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f67893L, 0xe475eafb2f67894L, "facttype")), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3fbcaL, "Facts.structure.FactModel"), false, false)), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3fbcaL, 0x432375ab97df41dcL, "enumerations"))).where(new IWhereFilter<SNode>() {
-                public boolean accept(SNode it) {
-                  return it == SLinkOperations.getTarget(enumerationType, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df41d9L, 0x432375ab97df41daL, "enumeration"));
-                }
-              }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df4172L, 0x432375ab97df4173L, "elements")));
-            }
+            SNode variable = SNodeOperations.getNodeAncestor(_context.getContextNode(), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, "Facts.structure.Variable"), false, false);
+            final SNode enumerationType = (SNode) SLinkOperations.getTarget(variable, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role"));
+            return ListScope.forNamedElements(SLinkOperations.getChildren(ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.getNodeAncestor(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getContextNode(), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f67893L, "Facts.structure.FactTable"), false, false), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f67893L, 0xe475eafb2f67894L, "facttype")), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3fbcaL, "Facts.structure.FactModel"), false, false)), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3fbcaL, 0x432375ab97df41dcL, "enumerations"))).where(new IWhereFilter<SNode>() {
+              public boolean accept(SNode it) {
+                return it == SLinkOperations.getTarget(enumerationType, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df41d9L, 0x432375ab97df41daL, "enumeration"));
+              }
+            }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df4172L, 0x432375ab97df4173L, "elements")));
           }
         };
       }

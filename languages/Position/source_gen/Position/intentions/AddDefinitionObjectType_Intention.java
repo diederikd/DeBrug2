@@ -54,7 +54,7 @@ public final class AddDefinitionObjectType_Intention extends AbstractIntentionDe
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SLinkOperations.setNewChild(node, MetaAdapterFactory.getContainmentLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b6f98aL, 0x20b967b6b48fe741L, "definition"), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x5c2d31977f63d729L, "Position.structure.AbstractDefinition"));
+      SLinkOperations.setNewChild(node, MetaAdapterFactory.getContainmentLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b6f98aL, 0x20b967b6b48fe741L, "definition"), null);
     }
     @Override
     public IntentionDescriptor getDescriptor() {

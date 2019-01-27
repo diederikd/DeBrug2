@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-7uefm4bfrjwh0dtb4ni6mr96r9ikryx" />
+<product version="3" modelHash="-7uefm4bfrjwh0dtb4ni6mr96r9ikryx">
+  <files names="AddDefinitionObjectType_Intention.java:AddDefinitionSubjectType_Intention.java:AddEvent_Intention.java:AddPower_Intention.java:HideTable_Intention.java:HideVariablesAction_Intention.java:HideVariablesState_Intention.java:IntentionsDescriptor.java:PushDefaultHint_Intention.java:PushGraphicalHint_Intention.java:ShowTable_Intention.java:ShowVariablesAction_Intention.java:ShowVariablesState_Intention.java" />
+</product>
 

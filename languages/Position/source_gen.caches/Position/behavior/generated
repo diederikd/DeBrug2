@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-6cgrj6hjntvfg054pj1o1pfz5ol7wv2" />
+<product version="3" modelHash="-1uefajsdf0j3p0otrwwkg47hmx2046u">
+  <files names="AbstractEventType__BehaviorDescriptor.java:ActionType__BehaviorDescriptor.java:Action__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:Helper.java:ImmunityType__BehaviorDescriptor.java:ObligationType__BehaviorDescriptor.java:PowerType__BehaviorDescriptor.java:StateType__BehaviorDescriptor.java:State__BehaviorDescriptor.java:SubjectType__BehaviorDescriptor.java" />
+</product>
 

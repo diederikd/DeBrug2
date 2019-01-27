@@ -92,7 +92,7 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
           public EditorCell compute() {
             return new EnumerationType_EditorBuilder_a.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "enumeration");
+        }, targetNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df41d9L, 0x432375ab97df41daL, "enumeration"));
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull_smartReference(cell);

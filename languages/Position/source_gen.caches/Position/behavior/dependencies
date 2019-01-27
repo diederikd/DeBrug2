@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Position.behavior.AbstractEventType__BehaviorDescriptor" file="AbstractEventType__BehaviorDescriptor.java">
+  <dependency className="Position.behavior.AbstractEventType__BehaviorDescriptor">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />
@@ -18,7 +18,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Position.behavior.ActionType__BehaviorDescriptor" file="ActionType__BehaviorDescriptor.java">
+  <dependency className="Position.behavior.ActionType__BehaviorDescriptor">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -47,7 +47,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Position.behavior.Action__BehaviorDescriptor" file="Action__BehaviorDescriptor.java">
+  <dependency className="Position.behavior.Action__BehaviorDescriptor">
     <classNode dependClassName="Facts.behavior.Fact__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -78,7 +78,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Position.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
+  <dependency className="Position.behavior.BehaviorAspectDescriptor">
     <classNode dependClassName="Position.behavior.AbstractEventType__BehaviorDescriptor" />
     <classNode dependClassName="Position.behavior.ActionType__BehaviorDescriptor" />
     <classNode dependClassName="Position.behavior.Action__BehaviorDescriptor" />
@@ -97,7 +97,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBehaviorAspectDescriptor" />
   </dependency>
-  <dependency className="Position.behavior.Helper" file="Helper.java">
+  <dependency className="Position.behavior.Helper">
     <classNode dependClassName="Facts.behavior.FactType__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
@@ -105,7 +105,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
-  <dependency className="Position.behavior.ImmunityType__BehaviorDescriptor" file="ImmunityType__BehaviorDescriptor.java">
+  <dependency className="Position.behavior.ImmunityType__BehaviorDescriptor">
     <classNode dependClassName="Position.behavior.Helper" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -124,7 +124,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Position.behavior.ObligationType__BehaviorDescriptor" file="ObligationType__BehaviorDescriptor.java">
+  <dependency className="Position.behavior.ObligationType__BehaviorDescriptor">
     <classNode dependClassName="Position.behavior.Helper" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -143,7 +143,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Position.behavior.PowerType__BehaviorDescriptor" file="PowerType__BehaviorDescriptor.java">
+  <dependency className="Position.behavior.PowerType__BehaviorDescriptor">
     <classNode dependClassName="Position.behavior.Helper" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -162,7 +162,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Position.behavior.StateType__BehaviorDescriptor" file="StateType__BehaviorDescriptor.java">
+  <dependency className="Position.behavior.StateType__BehaviorDescriptor">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -191,7 +191,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Position.behavior.State__BehaviorDescriptor" file="State__BehaviorDescriptor.java">
+  <dependency className="Position.behavior.State__BehaviorDescriptor">
     <classNode dependClassName="Facts.behavior.EntityValue__BehaviorDescriptor" />
     <classNode dependClassName="Facts.behavior.Fact__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
@@ -222,7 +222,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Position.behavior.SubjectType__BehaviorDescriptor" file="SubjectType__BehaviorDescriptor.java">
+  <dependency className="Position.behavior.SubjectType__BehaviorDescriptor">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />

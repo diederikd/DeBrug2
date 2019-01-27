@@ -7,9 +7,9 @@
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
   <property name="build.number" value="DeBrug2-181.SNAPSHOT" />
-  <property name="mps_home" location="${basedir}/../../../../Applications/MPS 2018.1.app/Contents" />
+  <property name="mps_home" location="${basedir}/../../../../Applications/MPS 2018.2.app/Contents" />
   <property name="imagespath" location="" />
-  <property name="mbeddr_home" location="${basedir}/../DeBrugBuild/mbeddr.platform" />
+  <property name="mbeddr_home" location="${mps_home}/plugins" />
   <property name="url_home" location="${basedir}/../ProjectBrowserPlugin/build/artifacts/ProjectBrowserPlugin" />
   <property name="project.home" location="" />
   <property name="mbeddr.github.core.home" location="${mps_home}/plugins" />
@@ -20,6 +20,7 @@
   <property name="artifacts.mpsTesting" location="${mps_home}/plugins" />
   <property name="artifacts.mpsContextActionsTool" location="${mps_home}/plugins" />
   <property name="artifacts.jetpad" location="${mps_home}/plugins" />
+  <property name="artifacts.ProjectBrowserPlugin" location="${url_home}" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.platform}/build.properties" prefix="import.com.mbeddr.platform" />
@@ -38,6 +39,7 @@
   <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
   <property name="jdk.home" value="${env.JAVA_HOME}" />
+  <property name="mps.generator.skipUnmodifiedModels" value="false" />
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mpsStandalone}/lib/ant/lib/ant-mps.jar" />
@@ -130,6 +132,7 @@
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.ide.make</depends>
         <depends>jetbrains.mps.testing</depends>
+        <depends>ProjectBrowserPlugin</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -638,7 +641,10 @@
   
   <target name="buildDependents" />
   
-  <target name="fetchDependencies" />
+  <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip" />
+    <unzip src="${artifacts.ProjectBrowserPlugin}/ProjectBrowserPlugin.zip" dest="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip" />
+  </target>
   
   <target name="build" depends="assemble" />
   
@@ -659,10 +665,13 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
       <plugin path="${artifacts.mpsMakePlugin}/mps-make" />
       <plugin path="${artifacts.mpsStandalone}/plugins/mps-core/META-INF/plugin.xml/../.." />
+      <plugin path="${artifacts.mps}/plugins/jetpad" />
+      <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
+      <plugin path="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip/ProjectBrowserPlugin" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.grammarcells/languages/group.grammarcells/com.mbeddr.mpsutil.grammarcells.jar" />
@@ -678,6 +687,7 @@
       <library file="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles.jar" />
       <library file="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" />
       <library file="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.mouselistener.runtime.jar" />
+      <library file="${artifacts.com.mbeddr.platform}/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.jar" />
       <library file="${artifacts.com.mbeddr.platform}/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" />
       <library file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
       <library file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
@@ -768,6 +778,10 @@
       <library file="${artifacts.mps}/plugins/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.jar" />
       <library file="${artifacts.mps}/plugins/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.jar" />
       <library file="${artifacts.mps}/plugins/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.pluginSolution.jar" />
+      <library file="${artifacts.mps}/plugins/jetpad/languages/jetpad/jetbrains.jetpad.jar" />
+      <library file="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip/ProjectBrowserPlugin/languages/ProjectBrowserPlugin/JavaFxBrowser.jar" />
+      <library file="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip/ProjectBrowserPlugin/languages/ProjectBrowserPlugin/MPSBrowserPlugin.jar" />
+      <library file="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip/ProjectBrowserPlugin/languages/ProjectBrowserPlugin/URL.jar" />
       <chunk>
         <module file="${basedir}/languages/DateTime/DateTime.mpl" />
         <module file="${basedir}/languages/Expressions/Expressions.mpl" />
@@ -983,6 +997,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip/ProjectBrowserPlugin/languages/ProjectBrowserPlugin/URL.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
@@ -1078,6 +1093,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/ProjectBrowserPlugin/ProjectBrowserPlugin.zip/ProjectBrowserPlugin/languages/ProjectBrowserPlugin/URL.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" />

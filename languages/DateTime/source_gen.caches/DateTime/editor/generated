@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-1hrccy2t18ltvy3y6o049rviv7w641z" />
+<product version="3" modelHash="5p6793m143zywkyugg3ec83iocd88fy">
+  <files names="DateTime_Editor.java:DateTime_EditorBuilder_a.java:Date_Editor.java:Date_EditorBuilder_a.java:Days_Editor.java:Days_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:GN_StyleSheet.java:Hours_Editor.java:Hours_EditorBuilder_a.java:Minutes_Editor.java:Minutes_EditorBuilder_a.java:Months_Editor.java:Months_EditorBuilder_a.java:Seconds_Editor.java:Seconds_EditorBuilder_a.java:Time_Editor.java:Time_EditorBuilder_a.java:Years_Editor.java:Years_EditorBuilder_a.java" />
+</product>
 

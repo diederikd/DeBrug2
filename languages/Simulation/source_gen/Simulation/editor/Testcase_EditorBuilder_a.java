@@ -42,7 +42,6 @@ import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
@@ -172,7 +171,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private Color _StyleParameter_QueryFunction_2ft3np_a1f0() {
-    return Simulation.GetTestresultColor(SPropertyOperations.getString_def(getNode(), MetaAdapterFactory.getProperty(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ee4905bL, 0x319083e78ee4905cL, "testresult"), "nottested"));
+    return Simulation.GetTestresultColor(SPropertyOperations.getString(getNode(), MetaAdapterFactory.getProperty(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ee4905bL, 0x319083e78ee4905cL, "testresult")));
   }
   private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
@@ -314,9 +313,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     public SAbstractConcept getChildSConcept() {
       return MetaAdapterFactory.getConcept(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec17331L, "Simulation.structure.TestState");
     }
-    public SNode createNodeToInsert(EditorContext editorContext) {
-      return NodeFactoryManager.createNode(MetaAdapterFactory.getConcept(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec17331L, "Simulation.structure.TestState"), null, getNode(), getNode().getModel());
-    }
+
     public EditorCell createNodeCell(SNode elementNode) {
       EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
       installElementCellActions(elementNode, elementCell, false);
@@ -404,9 +401,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     public SAbstractConcept getChildSConcept() {
       return MetaAdapterFactory.getConcept(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec175a0L, "Simulation.structure.TestAction");
     }
-    public SNode createNodeToInsert(EditorContext editorContext) {
-      return NodeFactoryManager.createNode(MetaAdapterFactory.getConcept(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec175a0L, "Simulation.structure.TestAction"), null, getNode(), getNode().getModel());
-    }
+
     public EditorCell createNodeCell(SNode elementNode) {
       EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
       installElementCellActions(elementNode, elementCell, false);
@@ -494,9 +489,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     public SAbstractConcept getChildSConcept() {
       return MetaAdapterFactory.getConcept(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec17331L, "Simulation.structure.TestState");
     }
-    public SNode createNodeToInsert(EditorContext editorContext) {
-      return NodeFactoryManager.createNode(MetaAdapterFactory.getConcept(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec17331L, "Simulation.structure.TestState"), null, getNode(), getNode().getModel());
-    }
+
     public EditorCell createNodeCell(SNode elementNode) {
       EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
       installElementCellActions(elementNode, elementCell, false);
@@ -584,9 +577,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     public SAbstractConcept getChildSConcept() {
       return MetaAdapterFactory.getConcept(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec17331L, "Simulation.structure.TestState");
     }
-    public SNode createNodeToInsert(EditorContext editorContext) {
-      return NodeFactoryManager.createNode(MetaAdapterFactory.getConcept(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec17331L, "Simulation.structure.TestState"), null, getNode(), getNode().getModel());
-    }
+
     public EditorCell createNodeCell(SNode elementNode) {
       EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
       installElementCellActions(elementNode, elementCell, false);

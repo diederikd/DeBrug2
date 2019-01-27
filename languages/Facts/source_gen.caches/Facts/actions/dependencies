@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Facts.actions.ActionAspectDescriptorImpl" file="ActionAspectDescriptorImpl.java">
+  <dependency className="Facts.actions.ActionAspectDescriptorImpl">
     <classNode dependClassName="Facts.actions.CreateDefaultValue" />
     <classNode dependClassName="Facts.actions.CreateFactWording" />
     <classNode dependClassName="Facts.actions.CreateSpecialisation" />
@@ -14,13 +14,13 @@
     <classNode extendsClassName="jetbrains.mps.actions.descriptor.BaseActionAspectDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
   </dependency>
-  <dependency className="Facts.actions.CreateDefaultValue" file="CreateDefaultValue.java">
+  <dependency className="Facts.actions.CreateDefaultValue">
     <classNode dependClassName="Facts.behavior.Variable__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.NodeFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
-  <dependency className="Facts.actions.CreateFactWording" file="CreateFactWording.java">
+  <dependency className="Facts.actions.CreateFactWording">
     <classNode dependClassName="Facts.behavior.Fact__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
@@ -32,7 +32,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
-  <dependency className="Facts.actions.CreateSpecialisation" file="CreateSpecialisation.java">
+  <dependency className="Facts.actions.CreateSpecialisation">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />

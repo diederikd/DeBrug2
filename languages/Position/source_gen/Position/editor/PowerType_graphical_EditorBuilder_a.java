@@ -60,6 +60,7 @@ import de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
+import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteEasily;
@@ -94,6 +95,7 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteEasily;
 
         EditorCell contentCell = createCollection_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
+        contentCells.add(contentCell);
 
 
         IBoxAccessor accessor = new SNodeBoxAccessor(node) {
@@ -271,7 +273,12 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteEasily;
                       editorCell.value = new RootDiagramECell(editorContext, node, model);
                     }
                     editorCell.value.setCellId("Diagram_ro4uos_a1a0");
-
+                    if (editorCell.value.getContextGraph() != null) {
+                      Object defaultParent = editorCell.value.getContextGraph().getDefaultParent();
+                      if (defaultParent instanceof RootDCell) {
+                        ((RootDCell) defaultParent).resetButtonConfig();
+                      }
+                    }
                   }
                 });
               }
@@ -324,7 +331,6 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteEasily;
           return cell;
         }
       };
-      provider.setRole("immunity");
       provider.setNoTargetText("<no immunity>");
       EditorCell editorCell;
       editorCell = provider.createEditorCell(getEditorContext());

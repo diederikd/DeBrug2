@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Expressions.editor.BinaryExpression_Editor" file="BinaryExpression_Editor.java">
+  <dependency className="Expressions.editor.BinaryExpression_Editor">
     <classNode dependClassName="Expressions.editor.BinaryExpression_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="Expressions.editor.BinaryExpression_EditorBuilder_a" file="BinaryExpression_EditorBuilder_a.java">
+  <dependency className="Expressions.editor.BinaryExpression_EditorBuilder_a">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.CellActionWithReadAccess" />
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.ChildToken" />
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.ConstantSubstituteInfo" />
@@ -51,7 +51,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="Expressions.editor.EditorAspectDescriptorImpl" file="EditorAspectDescriptorImpl.java">
+  <dependency className="Expressions.editor.EditorAspectDescriptorImpl">
     <classNode dependClassName="Expressions.editor.BinaryExpression_Editor" />
     <classNode dependClassName="Expressions.editor.GrammarCellsSubstituteMenu_BinaryExpression" />
     <classNode dependClassName="Expressions.editor.GrammarCellsSubstituteMenu_IExpression" />
@@ -70,7 +70,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorAspectDescriptorBase" />
   </dependency>
-  <dependency className="Expressions.editor.GrammarActionsDescriptor" file="GrammarActionsDescriptor.java">
+  <dependency className="Expressions.editor.GrammarActionsDescriptor">
     <classNode dependClassName="Expressions.editor.BinaryExpression_Editor" />
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.AbstractRule" />
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.ChildSymbol" />
@@ -131,7 +131,7 @@
     <classNode extendsClassName="com.mbeddr.mpsutil.grammarcells.runtime.AbstractGrammarActionDescriptor" />
     <classNode extendsClassName="com.mbeddr.mpsutil.grammarcells.runtime.IGrammarActionsDescriptor" />
   </dependency>
-  <dependency className="Expressions.editor.GrammarCellsSubstituteMenu_BinaryExpression" file="GrammarCellsSubstituteMenu_BinaryExpression.java">
+  <dependency className="Expressions.editor.GrammarCellsSubstituteMenu_BinaryExpression">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -148,7 +148,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
-  <dependency className="Expressions.editor.GrammarCellsSubstituteMenu_IExpression" file="GrammarCellsSubstituteMenu_IExpression.java">
+  <dependency className="Expressions.editor.GrammarCellsSubstituteMenu_IExpression">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -165,7 +165,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
-  <dependency className="Expressions.editor.GrammarCellsSubstituteMenu_OrExpression" file="GrammarCellsSubstituteMenu_OrExpression.java">
+  <dependency className="Expressions.editor.GrammarCellsSubstituteMenu_OrExpression">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -182,7 +182,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
-  <dependency className="Expressions.editor.template_GrammarCellsSideTransformationsMenu" file="template_GrammarCellsSideTransformationsMenu.java">
+  <dependency className="Expressions.editor.template_GrammarCellsSideTransformationsMenu">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsTransformationMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />

@@ -44,7 +44,6 @@ import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
@@ -123,7 +122,7 @@ import Position.behavior.Action__BehaviorDescriptor;
           public EditorCell compute() {
             return new Action_EditorBuilder_a.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "facttype");
+        }, targetNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype"));
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull_smartReference(cell);
@@ -275,9 +274,7 @@ import Position.behavior.Action__BehaviorDescriptor;
     public SAbstractConcept getChildSConcept() {
       return MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, "Facts.structure.Variable");
     }
-    public SNode createNodeToInsert(EditorContext editorContext) {
-      return NodeFactoryManager.createNode(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, "Facts.structure.Variable"), null, getNode(), getNode().getModel());
-    }
+
     public EditorCell createNodeCell(SNode elementNode) {
       EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
       installElementCellActions(elementNode, elementCell, false);
@@ -370,7 +367,7 @@ import Position.behavior.Action__BehaviorDescriptor;
   private EditorCell createReadOnlyModelAccessor_1() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
       public String getText() {
-        return SPropertyOperations.getString_def(ActionType__BehaviorDescriptor.getActorType_id7y3pR7CMzFE.invoke(SNodeOperations.cast(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0ceebeb5L, "Position.structure.ActionType"))), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6fc40fa1299d5a0L, 0x33810783f7f97de4L, "article"), "de") + " " + ActionType__BehaviorDescriptor.getActorType_id7y3pR7CMzFE.invoke(SNodeOperations.cast(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0ceebeb5L, "Position.structure.ActionType"))) + " " + Action__BehaviorDescriptor.getActorString_id5wmE0O1HDr7.invoke(myNode);
+        return SPropertyOperations.getString(ActionType__BehaviorDescriptor.getActorType_id7y3pR7CMzFE.invoke(SNodeOperations.cast(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0ceebeb5L, "Position.structure.ActionType"))), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6fc40fa1299d5a0L, 0x33810783f7f97de4L, "article")) + " " + ActionType__BehaviorDescriptor.getActorType_id7y3pR7CMzFE.invoke(SNodeOperations.cast(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0ceebeb5L, "Position.structure.ActionType"))) + " " + Action__BehaviorDescriptor.getActorString_id5wmE0O1HDr7.invoke(myNode);
       }
       public void setText(String s) {
       }
@@ -389,7 +386,7 @@ import Position.behavior.Action__BehaviorDescriptor;
   private EditorCell createReadOnlyModelAccessor_2() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
       public String getText() {
-        return SPropertyOperations.getString_def(ActionType__BehaviorDescriptor.getObjectType_id34ZKWOcYrKn.invoke(SNodeOperations.cast(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0ceebeb5L, "Position.structure.ActionType"))), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6fc40fa1299d5a0L, 0x33810783f7f97de4L, "article"), "de") + " " + ActionType__BehaviorDescriptor.getObjectType_id34ZKWOcYrKn.invoke(SNodeOperations.cast(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0ceebeb5L, "Position.structure.ActionType"))) + " " + Action__BehaviorDescriptor.getObjectString_id5wmE0O1HAVc.invoke(myNode);
+        return SPropertyOperations.getString(ActionType__BehaviorDescriptor.getObjectType_id34ZKWOcYrKn.invoke(SNodeOperations.cast(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0ceebeb5L, "Position.structure.ActionType"))), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6fc40fa1299d5a0L, 0x33810783f7f97de4L, "article")) + " " + ActionType__BehaviorDescriptor.getObjectType_id34ZKWOcYrKn.invoke(SNodeOperations.cast(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0ceebeb5L, "Position.structure.ActionType"))) + " " + Action__BehaviorDescriptor.getObjectString_id5wmE0O1HAVc.invoke(myNode);
       }
       public void setText(String s) {
       }

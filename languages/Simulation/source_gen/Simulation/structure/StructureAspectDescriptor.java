@@ -4,14 +4,18 @@ package Simulation.structure;
 
 import jetbrains.mps.smodel.runtime.BaseStructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
+import jetbrains.mps.smodel.runtime.EnumerationDescriptor;
 import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
+import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.runtime.ConceptKind;
 import jetbrains.mps.smodel.runtime.StaticScope;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
+import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEntityTypeRoleType = createDescriptorForEntityTypeRoleType();
@@ -27,6 +31,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptTestcases = createDescriptorForTestcases();
   /*package*/ final ConceptDescriptor myConceptValueTypeRoleType = createDescriptorForValueTypeRoleType();
   /*package*/ final ConceptDescriptor myConceptValueTypeSelection = createDescriptorForValueTypeSelection();
+  /*package*/ final EnumerationDescriptor myEnumerationTestresult = new EnumerationDescriptor_Testresult();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -73,6 +78,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     }
   }
 
+  @Override
+  public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
+    return Arrays.asList(myEnumerationTestresult);
+  }
+
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
@@ -99,8 +109,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.interface_();
     b.origin("r:b8187849-4cdc-4a57-bb29-6cccc913d802(Simulation.structure)/3571499535062831195");
     b.version(2);
-    b.prop("testresult", 0x319083e78ee4905cL, "3571499535062831196");
-    b.prop("testmessage", 0x645badac5df17e0dL, "7231564582495550989");
+    b.property("testresult", 0x319083e78ee4905cL).type(MetaIdFactory.dataTypeId(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ee4905fL)).origin("3571499535062831196").done();
+    b.property("testmessage", 0x645badac5df17e0dL).type(PrimitiveTypeId.STRING).origin("7231564582495550989").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForQuery() {

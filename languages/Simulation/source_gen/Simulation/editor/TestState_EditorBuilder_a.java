@@ -69,7 +69,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     return editorCell;
   }
   private Color _StyleParameter_QueryFunction_sqvqee_a0a() {
-    return Simulation.GetTestresultColor(SPropertyOperations.getString_def(getNode(), MetaAdapterFactory.getProperty(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ee4905bL, 0x319083e78ee4905cL, "testresult"), "nottested").toString());
+    return Simulation.GetTestresultColor(SPropertyOperations.getString(getNode(), MetaAdapterFactory.getProperty(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ee4905bL, 0x319083e78ee4905cL, "testresult")).toString());
   }
   private Color _StyleParameter_QueryFunction_sqvqee_a1a() {
     if (!((boolean) DateTime__BehaviorDescriptor.isEqualToMaxDateTime_id16mnka5GxER.invoke(SLinkOperations.getTarget(Fact__BehaviorDescriptor.getValueOfValidTo_id36gwYufl4BQ.invoke(SLinkOperations.getTarget(getNode(), MetaAdapterFactory.getContainmentLink(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ec17331L, 0x319083e78ec17585L, "state"))), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, 0x432375ab9804ef37L, "value"))))) {

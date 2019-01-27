@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="SQL.structure.ConceptPresentationAspectImpl" file="ConceptPresentationAspectImpl.java">
+  <dependency className="SQL.structure.ConceptPresentationAspectImpl">
     <classNode dependClassName="SQL.structure.LanguageConceptSwitch" />
     <classNode dependClassName="SQL.structure.StructureAspectDescriptor" />
     <classNode dependClassName="java.lang.Override" />
@@ -11,32 +11,35 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase" />
   </dependency>
-  <dependency className="SQL.structure.LanguageConceptSwitch" file="LanguageConceptSwitch.java">
+  <dependency className="SQL.structure.EnumerationDescriptor_PARAMETERIO">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
+  </dependency>
+  <dependency className="SQL.structure.LanguageConceptSwitch">
     <classNode dependClassName="jetbrains.mps.lang.smodel.LanguageConceptIndex" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.LanguageConceptIndexBuilder" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SConceptId" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
   </dependency>
-  <dependency className="SQL.structure.PARAMETERIO" file="PARAMETERIO.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.LinkedList" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-  </dependency>
-  <dependency className="SQL.structure.PARAMETERIO_PropertySupport" file="PARAMETERIO_PropertySupport.java">
-    <classNode dependClassName="SQL.structure.PARAMETERIO" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.Iterator" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
-  </dependency>
-  <dependency className="SQL.structure.StructureAspectDescriptor" file="StructureAspectDescriptor.java">
+  <dependency className="SQL.structure.StructureAspectDescriptor">
+    <classNode dependClassName="SQL.structure.EnumerationDescriptor_PARAMETERIO" />
     <classNode dependClassName="SQL.structure.LanguageConceptSwitch" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SConceptId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.DataTypeDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />

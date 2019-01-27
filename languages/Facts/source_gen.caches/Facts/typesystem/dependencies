@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Facts.typesystem.TypesystemDescriptor" file="TypesystemDescriptor.java">
+  <dependency className="Facts.typesystem.TypesystemDescriptor">
     <classNode dependClassName="Facts.typesystem.typeof_EntityTable_InferenceRule" />
     <classNode dependClassName="Facts.typesystem.typeof_FactHasUniquePrimairyIdentifier_InferenceRule" />
     <classNode dependClassName="Facts.typesystem.typeof_FactTable_InferenceRule" />
@@ -11,7 +11,7 @@
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.BaseHelginsDescriptor" />
   </dependency>
-  <dependency className="Facts.typesystem.typeof_EntityTable_InferenceRule" file="typeof_EntityTable_InferenceRule.java">
+  <dependency className="Facts.typesystem.typeof_EntityTable_InferenceRule">
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
@@ -20,7 +20,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
-  <dependency className="Facts.typesystem.typeof_FactHasUniquePrimairyIdentifier_InferenceRule" file="typeof_FactHasUniquePrimairyIdentifier_InferenceRule.java">
+  <dependency className="Facts.typesystem.typeof_FactHasUniquePrimairyIdentifier_InferenceRule">
     <classNode dependClassName="Facts.behavior.Fact__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
@@ -36,7 +36,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
-  <dependency className="Facts.typesystem.typeof_FactTable_InferenceRule" file="typeof_FactTable_InferenceRule.java">
+  <dependency className="Facts.typesystem.typeof_FactTable_InferenceRule">
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.NodeMessageTarget" />
@@ -52,7 +52,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
-  <dependency className="Facts.typesystem.typeof_RoleReferenceExpression_InferenceRule" file="typeof_RoleReferenceExpression_InferenceRule.java">
+  <dependency className="Facts.typesystem.typeof_RoleReferenceExpression_InferenceRule">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
@@ -65,7 +65,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
-  <dependency className="Facts.typesystem.typeof_RoleReferenceOperation_InferenceRule" file="typeof_RoleReferenceOperation_InferenceRule.java">
+  <dependency className="Facts.typesystem.typeof_RoleReferenceOperation_InferenceRule">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
@@ -78,7 +78,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
-  <dependency className="Facts.typesystem.typeof_Specializes_InferenceRule" file="typeof_Specializes_InferenceRule.java">
+  <dependency className="Facts.typesystem.typeof_Specializes_InferenceRule">
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.NodeMessageTarget" />
@@ -93,7 +93,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
-  <dependency className="Facts.typesystem.typeof_UniqueEntity_InferenceRule" file="typeof_UniqueEntity_InferenceRule.java">
+  <dependency className="Facts.typesystem.typeof_UniqueEntity_InferenceRule">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />

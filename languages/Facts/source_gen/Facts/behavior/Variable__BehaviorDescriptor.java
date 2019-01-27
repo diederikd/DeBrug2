@@ -46,61 +46,61 @@ public final class Variable__BehaviorDescriptor extends BaseBHDescriptor {
     {
       final SNode dateType = SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role"));
       if (SNodeOperations.isInstanceOf(dateType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f45688L, "Facts.structure.DateType"))) {
-        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30e53bcL, "Facts.structure.DateValue")));
+        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30e53bcL, "Facts.structure.DateValue"));
       }
     }
     {
       final SNode amountType = SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role"));
       if (SNodeOperations.isInstanceOf(amountType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x5357f1c89b6339f7L, "Facts.structure.AmountType"))) {
-        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x435274beebf7e4cL, "Facts.structure.AmountValue")));
+        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x435274beebf7e4cL, "Facts.structure.AmountValue"));
       }
     }
     {
       final SNode percentageType = SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role"));
       if (SNodeOperations.isInstanceOf(percentageType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x435274beeb4a01cL, "Facts.structure.PercentageType"))) {
-        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x435274beed27746L, "Facts.structure.PercentageValue")));
+        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x435274beed27746L, "Facts.structure.PercentageValue"));
       }
     }
     {
       final SNode timeType = SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role"));
       if (SNodeOperations.isInstanceOf(timeType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97f1465cL, "Facts.structure.TimeType"))) {
-        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef1fL, "Facts.structure.TimeValue")));
+        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef1fL, "Facts.structure.TimeValue"));
       }
     }
     {
       final SNode datetimeType = SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role"));
       if (SNodeOperations.isInstanceOf(datetimeType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab98050cb7L, "Facts.structure.DateTimeType"))) {
-        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, "Facts.structure.DatetimeValue")));
+        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab9804ef36L, "Facts.structure.DatetimeValue"));
       }
     }
     {
       final SNode integerType = SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role"));
       if (SNodeOperations.isInstanceOf(integerType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f366L, "Facts.structure.IntegerType"))) {
-        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d95eaL, "Facts.structure.IntegerValue")));
+        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d95eaL, "Facts.structure.IntegerValue"));
       }
     }
     {
       final SNode stringType = SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role"));
       if (SNodeOperations.isInstanceOf(stringType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f365L, "Facts.structure.StringType"))) {
-        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d95f0L, "Facts.structure.StringValue")));
+        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d95f0L, "Facts.structure.StringValue"));
       }
     }
     {
       final SNode entityTypeInRole = SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role"));
       if (SNodeOperations.isInstanceOf(entityTypeInRole, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f362L, "Facts.structure.EntityTypeInRole"))) {
-        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1284L, "Facts.structure.EntityValue")));
+        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1284L, "Facts.structure.EntityValue"));
       }
     }
     {
       final SNode factTypeInRole = SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role"));
       if (SNodeOperations.isInstanceOf(factTypeInRole, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x7131b251f0ec0054L, "Facts.structure.FactTypeInRole"))) {
-        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6d9151c34d5925acL, "Facts.structure.FactValue")));
+        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6d9151c34d5925acL, "Facts.structure.FactValue"));
       }
     }
     {
       final SNode enumerationType = SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role"));
       if (SNodeOperations.isInstanceOf(enumerationType, MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97df41d9L, "Facts.structure.EnumerationType"))) {
-        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97ff120aL, "Facts.structure.EnumerationValue")));
+        SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), MetaAdapterFactory.getConcept(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x432375ab97ff120aL, "Facts.structure.EnumerationValue"));
       }
     }
   }

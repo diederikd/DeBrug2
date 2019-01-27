@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Facts.intentions.DeleteEntity_Intention" file="DeleteEntity_Intention.java">
+  <dependency className="Facts.intentions.DeleteEntity_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -16,7 +16,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Facts.intentions.DeleteFact_Intention" file="DeleteFact_Intention.java">
+  <dependency className="Facts.intentions.DeleteFact_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -32,7 +32,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Facts.intentions.IntentionsDescriptor" file="IntentionsDescriptor.java">
+  <dependency className="Facts.intentions.IntentionsDescriptor">
     <classNode dependClassName="Facts.intentions.DeleteEntity_Intention" />
     <classNode dependClassName="Facts.intentions.DeleteFact_Intention" />
     <classNode dependClassName="Facts.intentions.NewEntityInEntityTable_Intention" />
@@ -55,7 +55,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionAspectDescriptor" />
   </dependency>
-  <dependency className="Facts.intentions.NewEntityInEntityTable_Intention" file="NewEntityInEntityTable_Intention.java">
+  <dependency className="Facts.intentions.NewEntityInEntityTable_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -74,7 +74,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Facts.intentions.NewEntityInEntityType_Intention" file="NewEntityInEntityType_Intention.java">
+  <dependency className="Facts.intentions.NewEntityInEntityType_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -101,7 +101,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Facts.intentions.NewFact_Intention" file="NewFact_Intention.java">
+  <dependency className="Facts.intentions.NewFact_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -121,7 +121,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Facts.intentions.RefreshFactWording_Intention" file="RefreshFactWording_Intention.java">
+  <dependency className="Facts.intentions.RefreshFactWording_Intention">
     <classNode dependClassName="Facts.behavior.helper" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -137,7 +137,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Facts.intentions.RefreshRolesFactTable_Intention" file="RefreshRolesFactTable_Intention.java">
+  <dependency className="Facts.intentions.RefreshRolesFactTable_Intention">
     <classNode dependClassName="Facts.behavior.Fact__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -156,7 +156,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Facts.intentions.RefreshRolesFact_Intention" file="RefreshRolesFact_Intention.java">
+  <dependency className="Facts.intentions.RefreshRolesFact_Intention">
     <classNode dependClassName="Facts.behavior.Fact__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />

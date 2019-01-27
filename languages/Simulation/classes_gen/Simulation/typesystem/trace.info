@@ -155,8 +155,8 @@
       <node id="7231564582496664947" at="37,0,40,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="7231564582496664947" at="40,0,43,0" concept="4" trace="overrides#()Z" />
       <node id="7231564582496770095" at="43,0,46,0" concept="7" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
-      <node id="7231564582496675989" at="21,406,25,7" concept="0" />
-      <node id="7231564582496674563" at="27,400,31,7" concept="0" />
+      <node id="7231564582496675989" at="21,397,25,7" concept="0" />
+      <node id="7231564582496674563" at="27,391,31,7" concept="0" />
       <node id="7231564582496675981" at="20,124,26,5" concept="3" />
       <node id="7231564582496664961" at="26,5,32,5" concept="3" />
       <node id="7231564582496664947" at="20,0,34,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
@@ -182,8 +182,8 @@
       <scope id="7231564582496770095" at="43,0,46,0">
         <var name="str" id="7231564582496770095" />
       </scope>
-      <scope id="7231564582496675988" at="21,406,25,7" />
-      <scope id="7231564582496664963" at="27,400,31,7" />
+      <scope id="7231564582496675988" at="21,397,25,7" />
+      <scope id="7231564582496664963" at="27,391,31,7" />
       <scope id="7231564582496664948" at="20,124,32,5" />
       <scope id="7231564582496664947" at="20,0,34,0">
         <var name="itestresult" id="7231564582496664947" />

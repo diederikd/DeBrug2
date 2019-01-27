@@ -27,6 +27,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.openapi.editor.cells.SubstituteInfo;
 import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
+import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.editor.runtime.EditorCell_Empty;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
@@ -196,13 +197,19 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
     @Override
     protected EditorCell createNodeCellNotNull(final EditorContext context, @NotNull final SNode node) {
       EditorCell cell;
-      {
-        final FactValue_EditorBuilder_a.Inline_Builder0 provider = new FactValue_EditorBuilder_a.Inline_Builder0(context, myNode, node);
-        cell = createCellDuplicatesSafe(new _FunctionTypes._return_P0_E0<EditorCell>() {
-          public EditorCell invoke() {
-            return provider.createCell();
-          }
-        });
+      getCellFactory().pushCellContext();
+      try {
+        getCellFactory().setNodeLocation(new SNodeLocation.FromNode(node));
+        {
+          final FactValue_EditorBuilder_a.Inline_Builder0 provider = new FactValue_EditorBuilder_a.Inline_Builder0(context, myNode, node);
+          cell = createCellDuplicatesSafe(new _FunctionTypes._return_P0_E0<EditorCell>() {
+            public EditorCell invoke() {
+              return provider.createCell();
+            }
+          });
+        }
+      } finally {
+        getCellFactory().popCellContext();
       }
       return cell;
     }
@@ -279,7 +286,7 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
           public EditorCell compute() {
             return new FactValue_EditorBuilder_a.Inline_Builder1(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "value");
+        }, targetNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x6d9151c34d5925acL, 0x6d9151c34d5925adL, "value"));
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull_smartReference(cell);

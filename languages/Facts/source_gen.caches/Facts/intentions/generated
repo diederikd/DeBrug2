@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-8imnzf0k1s5g9upyrrnnmkolu2cgb3j" />
+<product version="3" modelHash="-8imnzf0k1s5g9upyrrnnmkolu2cgb3j">
+  <files names="DeleteEntity_Intention.java:DeleteFact_Intention.java:IntentionsDescriptor.java:NewEntityInEntityTable_Intention.java:NewEntityInEntityType_Intention.java:NewFact_Intention.java:RefreshFactWording_Intention.java:RefreshRolesFactTable_Intention.java:RefreshRolesFact_Intention.java" />
+</product>
 

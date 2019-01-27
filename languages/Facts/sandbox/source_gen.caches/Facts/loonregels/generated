@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-d0zqc35lg67uyoy301f0k18vyx699ts" />
+<product version="3" modelHash="-d0zqc35lg67uyoy301f0k18vyx699ts">
+  <files names="Factbase_Feiten loonregels..sql:Factmodel_Loonregels..ddl" />
+</product>
 

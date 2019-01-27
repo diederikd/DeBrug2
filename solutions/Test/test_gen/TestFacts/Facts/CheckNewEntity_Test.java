@@ -6,21 +6,29 @@ import jetbrains.mps.MPSLaunch;
 import jetbrains.mps.lang.test.runtime.BaseTransformationTest;
 import org.junit.ClassRule;
 import jetbrains.mps.lang.test.runtime.TestParametersCache;
+import org.junit.Rule;
+import jetbrains.mps.lang.test.runtime.RunWithCommand;
 import jetbrains.mps.lang.test.runtime.BaseTestBody;
+import jetbrains.mps.lang.test.runtime.TransformationTest;
 
 @MPSLaunch
 public class CheckNewEntity_Test extends BaseTransformationTest {
   @ClassRule
   public static final TestParametersCache ourParamCache = new TestParametersCache(CheckNewEntity_Test.class, "/Users/diederikdulfer/MPSProjects/ProjectFacts", "r:36b39f3d-1e34-402b-b5a2-10a9be754a11(TestFacts.Facts@tests)", false);
-
+  @Rule
+  public final RunWithCommand myWithCommandRule = new RunWithCommand(this);
 
   public CheckNewEntity_Test() {
     super(ourParamCache);
   }
 
 
-  @MPSLaunch
-  public static class TestBody extends BaseTestBody {
+  /*package*/ static class TestBody extends BaseTestBody {
+
+    /*package*/ TestBody(TransformationTest owner) {
+      super(owner);
+    }
+
 
 
   }

@@ -39,8 +39,8 @@ public final class StateType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setSubjectWithRight_id2NfjlCvkSzh, getSubjectWithRight_id7y3pR7CKsGF, setSubjectWithDuty_id2NfjlCvkPzy, getSubjectWithDuty_id7y3pR7CKiC7, getEvent_id7y3pR7CKLOc);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL, 0x432375ab97172d5eL, "validity"), "" + (true));
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL, 0x432375ab97645f1cL, "known"), "" + (true));
+    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL, 0x432375ab97172d5eL, "validity"), true);
+    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL, 0x432375ab97645f1cL, "known"), true);
     SNode SubjectWithRight = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x33a3a1e244917bafL, "Position.structure.SubjectTypeInRole"));
     SPropertyOperations.set(SubjectWithRight, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "subject met recht");
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL, 0xe475eafb2f3f367L, "roles"))).addElement(SubjectWithRight);

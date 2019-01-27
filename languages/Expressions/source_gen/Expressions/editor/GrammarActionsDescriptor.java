@@ -275,7 +275,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                               }
                               protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
                                 String matchingText = getMatchingText(pattern);
-                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(subconcept), null), MetaAdapterFactory.getConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, "Expressions.structure.BinaryExpression"));
+                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(subconcept, null), MetaAdapterFactory.getConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, "Expressions.structure.BinaryExpression"));
                                 SNodeOperations.replaceWithAnother(sourceNode, wrapper);
                                 SLinkOperations.setTarget(wrapper, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43bL, "left"), SNodeOperations.cast(sourceNode, MetaAdapterFactory.getInterfaceConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L, "Expressions.structure.IExpression")));
 
@@ -376,7 +376,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                               }
                               protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
                                 String matchingText = getMatchingText(pattern);
-                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(subconcept), null), MetaAdapterFactory.getConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, "Expressions.structure.BinaryExpression"));
+                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(subconcept, null), MetaAdapterFactory.getConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, "Expressions.structure.BinaryExpression"));
                                 SNodeOperations.replaceWithAnother(sourceNode, wrapper);
                                 SLinkOperations.setTarget(wrapper, MetaAdapterFactory.getContainmentLink(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x5c2d31977f5ea16bL, 0x5c2d31977f5ea43cL, "right"), SNodeOperations.cast(sourceNode, MetaAdapterFactory.getInterfaceConcept(0x5517ea53210f4efdL, 0xb5752cc53b802339L, 0x6630b01532857226L, "Expressions.structure.IExpression")));
 
@@ -473,7 +473,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
             }
             @Override
             protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
-              SNode newNode = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(subconcept), null);
+              SNode newNode = SNodeFactoryOperations.createNewNode(subconcept, null);
 
               matcher.matches(elementsBefore, beforeMatchers, true, newNode);
               matcher.matches(elementsAfter, afterMatchers, true, newNode);

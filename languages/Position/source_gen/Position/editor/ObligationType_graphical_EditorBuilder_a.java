@@ -71,6 +71,7 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
 
         EditorCell contentCell = createCollection_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
+        contentCells.add(contentCell);
 
 
         IBoxAccessor accessor = new SNodeBoxAccessor(node) {

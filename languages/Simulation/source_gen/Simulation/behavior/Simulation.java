@@ -91,7 +91,7 @@ public class Simulation {
     if (actionTypeExists(states, action)) {
       for (SNode newStateType : Sequence.fromIterable(SLinkOperations.collect(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SLinkOperations.getTarget(action, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0ceebeb5L, "Position.structure.ActionType")), MetaAdapterFactory.getContainmentLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b9418cL, 0x78836771e8cfbff3L, "transitions"))).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return SPropertyOperations.hasValue(it, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbfdeL, "type"), "C", "C");
+          return SPropertyOperations.hasEnumValue(it, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbfdeL, "type"), "C");
         }
       }), MetaAdapterFactory.getReferenceLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbf94L, "state")))) {
         SNode newState = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x7e8caa0ea161570dL, "Position.structure.State"));
@@ -112,12 +112,12 @@ public class Simulation {
         }).first();
         State__BehaviorDescriptor.setSubjectWithDuty_id16mnka5pfXG.invoke(newState, subjectWithDuty);
         State__BehaviorDescriptor.setSubjectWithRight_id16mnka5ptXK.invoke(newState, subjectWithRight);
-        SPropertyOperations.set(newState, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x7e8caa0ea161570dL, 0x7e8caa0ea1982033L, "hidevariables"), "" + (true));
+        SPropertyOperations.set(newState, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x7e8caa0ea161570dL, 0x7e8caa0ea1982033L, "hidevariables"), true);
         ListSequence.fromList(states).addElement(newState);
       }
       for (final SNode stateTypeToBeEnded : Sequence.fromIterable(SLinkOperations.collect(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SLinkOperations.getTarget(action, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47ca8L, "facttype")), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0ceebeb5L, "Position.structure.ActionType")), MetaAdapterFactory.getContainmentLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b9418cL, 0x78836771e8cfbff3L, "transitions"))).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return SPropertyOperations.hasValue(it, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbfdeL, "type"), "B", "C");
+          return SPropertyOperations.hasEnumValue(it, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbfdeL, "type"), "B");
         }
       }), MetaAdapterFactory.getReferenceLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbf94L, "state")))) {
         SNode state = ListSequence.fromList(states).where(new IWhereFilter<SNode>() {

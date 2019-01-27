@@ -77,7 +77,7 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
       public String getText() {
-        String article = SPropertyOperations.getString_def(SLinkOperations.getTarget(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421802L, 0x35237532384546a2L, "role")), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord")), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL, 0x33810783f7fb3e6fL, "article"), "de");
+        String article = SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421802L, 0x35237532384546a2L, "role")), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord")), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL, 0x33810783f7fb3e6fL, "article"));
         if (article.equals("geen")) {
           article = "";
         }
@@ -103,7 +103,7 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
     return editorCell;
   }
   private boolean _StyleParameter_QueryFunction_2ly7zk_a0a0() {
-    return (SPropertyOperations.getString_def(SLinkOperations.getTarget(SLinkOperations.getTarget(getNode(), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421802L, 0x35237532384546a2L, "role")), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord")), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL, 0x33810783f7fb3e6fL, "article"), "de").equals("geen"));
+    return (SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(getNode(), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421802L, 0x35237532384546a2L, "role")), MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord")), MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL, 0x33810783f7fb3e6fL, "article")).equals("geen"));
   }
   private EditorCell createRefCell_0() {
     final SReferenceLink referenceLink = MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421802L, 0x35237532384546a2L, "role");
@@ -113,7 +113,7 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
           public EditorCell compute() {
             return new FactWordRole_EditorBuilder_a.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "role");
+        }, targetNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x3523753238421802L, 0x35237532384546a2L, "role"));
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull_smartReference(cell);
@@ -183,7 +183,7 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
             public EditorCell compute() {
               return new FactWordRole_EditorBuilder_a.Inline_Builder0.Inline_Builder1(getEditorContext(), getNode(), targetNode).createCell();
             }
-          }, targetNode, "roleOfWord");
+          }, targetNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea39L, 0x33810783f7eaea3aL, "roleOfWord"));
           CellUtil.setupIDeprecatableStyles(targetNode, cell);
           setSemanticNodeToCells(cell, getNode());
           installDeleteActions_notnull_smartReference(cell);

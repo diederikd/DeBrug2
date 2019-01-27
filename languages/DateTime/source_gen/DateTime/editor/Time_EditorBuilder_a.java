@@ -101,10 +101,10 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
         try {
           Integer uren = Integer.parseInt(text);
           if (uren < 24) {
-            SPropertyOperations.assign(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), "" + (uren));
+            SPropertyOperations.assign(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), uren);
           }
           if (uren >= 24) {
-            SPropertyOperations.assign(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), "" + (0));
+            SPropertyOperations.assign(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), 0);
           }
         } catch (NumberFormatException exception) {
           System.out.println("exception number format");
@@ -170,10 +170,10 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
         try {
           Integer minuten = Integer.parseInt(text);
           if (minuten < 60) {
-            SPropertyOperations.assign(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), "" + (minuten));
+            SPropertyOperations.assign(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), minuten);
           }
           if (minuten >= 60) {
-            SPropertyOperations.assign(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), "" + (0));
+            SPropertyOperations.assign(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), 0);
           }
         } catch (NumberFormatException exception) {
           System.out.println("exception number format");
@@ -239,10 +239,10 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
         try {
           Integer seconden = Integer.parseInt(text);
           if (seconden < 60) {
-            SPropertyOperations.assign(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), "" + (seconden));
+            SPropertyOperations.assign(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), seconden);
           }
           if (seconden >= 60) {
-            SPropertyOperations.assign(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), "" + (0));
+            SPropertyOperations.assign(myNode, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), 0);
           }
         } catch (NumberFormatException exception) {
           System.out.println("exception number format");

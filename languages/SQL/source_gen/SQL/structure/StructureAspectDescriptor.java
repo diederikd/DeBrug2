@@ -4,12 +4,16 @@ package SQL.structure;
 
 import jetbrains.mps.smodel.runtime.BaseStructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
+import jetbrains.mps.smodel.runtime.EnumerationDescriptor;
 import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
+import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
+import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBIGINT = createDescriptorForBIGINT();
@@ -40,6 +44,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptUSE = createDescriptorForUSE();
   /*package*/ final ConceptDescriptor myConceptVALUE = createDescriptorForVALUE();
   /*package*/ final ConceptDescriptor myConceptVARCHAR255 = createDescriptorForVARCHAR255();
+  /*package*/ final EnumerationDescriptor myEnumerationPARAMETERIO = new EnumerationDescriptor_PARAMETERIO();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -116,6 +121,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     }
   }
 
+  @Override
+  public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
+    return Arrays.asList(myEnumerationPARAMETERIO);
+  }
+
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
@@ -142,8 +152,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804584250889");
     b.version(2);
-    b.prop("autoincrement", 0x432375ab9900b51eL, "4837839804592862494");
-    b.prop("notnull", 0x432375ab9900b521L, "4837839804592862497");
+    b.property("autoincrement", 0x432375ab9900b51eL).type(PrimitiveTypeId.BOOLEAN).origin("4837839804592862494").done();
+    b.property("notnull", 0x432375ab9900b521L).type(PrimitiveTypeId.BOOLEAN).origin("4837839804592862497").done();
     b.associate("references", 0x432375ab990ac7a1L).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987d4e04L).optional(true).origin("4837839804593522593").done();
     b.aggregate("type", 0x1bdede5178cc4c9fL).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95489L).optional(false).ordered(true).multiple(false).origin("2008286925354192031").done();
     return b.create();
@@ -163,7 +173,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925353997441");
     b.version(2);
-    b.prop("comment", 0x1bdede5178e54244L, "2008286925355827780");
+    b.property("comment", 0x1bdede5178e54244L).type(PrimitiveTypeId.STRING).origin("2008286925355827780").done();
     b.aggregate("parameters", 0x1bdede5178c9a008L).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95486L).optional(true).ordered(true).multiple(true).origin("2008286925354016776").done();
     b.aggregate("statements", 0x1bdede5178c95484L).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95483L).optional(true).ordered(true).multiple(true).origin("2008286925353997444").done();
     return b.create();
@@ -174,8 +184,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("SQL.structure.DDS", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987dc64eL);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804584250875");
     b.version(2);
-    b.prop("schema", 0x432375ab987d4dfcL, "4837839804584250876");
-    b.prop("tablename", 0x432375ab987d4dffL, "4837839804584250879");
+    b.property("schema", 0x432375ab987d4dfcL).type(PrimitiveTypeId.STRING).origin("4837839804584250876").done();
+    b.property("tablename", 0x432375ab987d4dffL).type(PrimitiveTypeId.STRING).origin("4837839804584250879").done();
     b.aggregate("columns", 0x432375ab987da40fL).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987d4e04L).optional(true).ordered(true).multiple(true).origin("4837839804584272911").done();
     return b.create();
   }
@@ -253,7 +263,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("SQL.structure.DDS", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987dc64eL);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804584306703");
     b.version(2);
-    b.prop("tablename", 0x432375ab987e2810L, "4837839804584306704");
+    b.property("tablename", 0x432375ab987e2810L).type(PrimitiveTypeId.STRING).origin("4837839804584306704").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForENUM() {
@@ -279,7 +289,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("SQL.structure.DMS", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95482L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925354275117");
     b.version(2);
-    b.prop("tablename", 0x1bdede5178cd91d3L, "2008286925354275283");
+    b.property("tablename", 0x1bdede5178cd91d3L).type(PrimitiveTypeId.STRING).origin("2008286925354275283").done();
     b.aggregate("columns", 0x1bdede5178cd91ccL).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd9132L).optional(false).ordered(true).multiple(true).origin("2008286925354275276").done();
     b.aggregate("values", 0x1bdede5178cd91ceL).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd912eL).optional(false).ordered(true).multiple(true).origin("2008286925354275278").done();
     return b.create();
@@ -314,7 +324,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/2008286925353997446");
     b.version(2);
-    b.prop("io", 0x1bdede5178c95495L, "2008286925353997461");
+    b.property("io", 0x1bdede5178c95495L).type(MetaIdFactory.dataTypeId(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c9548cL)).origin("2008286925353997461").done();
     b.aggregate("type", 0x1bdede5178c9548aL).target(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95489L).optional(false).ordered(true).multiple(false).origin("2008286925353997450").done();
     return b.create();
   }
@@ -348,7 +358,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("SQL.structure.DDS", 0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987dc64eL);
     b.origin("r:fe7c283b-bef4-4178-9b5f-d85a456a990c(SQL.structure)/4837839804584353804");
     b.version(2);
-    b.prop("schemaname", 0x432375ab987ee00dL, "4837839804584353805");
+    b.property("schemaname", 0x432375ab987ee00dL).type(PrimitiveTypeId.STRING).origin("4837839804584353805").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVALUE() {

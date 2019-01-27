@@ -39,7 +39,7 @@ public final class State__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AddDefaultValues_id36gwYueDiM2, setSubjectWithRight_id16mnka5ptXK, setSubjectWithDuty_id16mnka5pfXG);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x7e8caa0ea161570dL, 0x7e8caa0ea1982033L, "hidevariables"), "" + (false));
+    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x7e8caa0ea161570dL, 0x7e8caa0ea1982033L, "hidevariables"), false);
   }
 
   /*package*/ static void AddDefaultValues_id36gwYueDiM2(@NotNull SNode __thisNode__) {
@@ -48,12 +48,12 @@ public final class State__BehaviorDescriptor extends BaseBHDescriptor {
       public boolean accept(SNode it) {
         return SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).equals("subject met recht");
       }
-    }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x319083e78e879dc2L, "Position.structure.SubjectValue")));
+    }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x319083e78e879dc2L, "Position.structure.SubjectValue"));
     SNodeFactoryOperations.setNewChild(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles"))).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb2f47cadL, "role")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).equals("subject met plicht");
       }
-    }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x319083e78e879dc2L, "Position.structure.SubjectValue")));
+    }).first(), MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47cacL, 0xe475eafb30d95edL, "value"), MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x319083e78e879dc2L, "Position.structure.SubjectValue"));
   }
   /*package*/ static void setSubjectWithRight_id16mnka5ptXK(@NotNull SNode __thisNode__, SNode subject) {
     EntityValue__BehaviorDescriptor.setEntityValue_id16mnka5prfj.invoke(SNodeOperations.cast(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles"))).where(new IWhereFilter<SNode>() {

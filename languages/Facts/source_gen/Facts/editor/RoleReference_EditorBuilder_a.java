@@ -90,7 +90,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
           public EditorCell compute() {
             return new RoleReference_EditorBuilder_a.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "role");
+        }, targetNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7e44d86L, 0x33810783f7e44d87L, "role"));
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull_smartReference(cell);

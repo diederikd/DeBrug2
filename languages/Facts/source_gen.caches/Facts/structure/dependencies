@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Facts.structure.ArticleType" file="ArticleType.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.LinkedList" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-  </dependency>
-  <dependency className="Facts.structure.ArticleType_PropertySupport" file="ArticleType_PropertySupport.java">
-    <classNode dependClassName="Facts.structure.ArticleType" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.Iterator" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
-  </dependency>
-  <dependency className="Facts.structure.ConceptPresentationAspectImpl" file="ConceptPresentationAspectImpl.java">
+  <dependency className="Facts.structure.ConceptPresentationAspectImpl">
     <classNode dependClassName="Facts.structure.LanguageConceptSwitch" />
     <classNode dependClassName="Facts.structure.StructureAspectDescriptor" />
     <classNode dependClassName="java.lang.Override" />
@@ -24,24 +11,38 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase" />
   </dependency>
-  <dependency className="Facts.structure.LanguageConceptSwitch" file="LanguageConceptSwitch.java">
+  <dependency className="Facts.structure.EnumerationDescriptor_ArticleType">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
+  </dependency>
+  <dependency className="Facts.structure.LanguageConceptSwitch">
     <classNode dependClassName="jetbrains.mps.lang.smodel.LanguageConceptIndex" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.LanguageConceptIndexBuilder" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SConceptId" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
   </dependency>
-  <dependency className="Facts.structure.Real_PropertySupport" file="Real_PropertySupport.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
-  </dependency>
-  <dependency className="Facts.structure.StructureAspectDescriptor" file="StructureAspectDescriptor.java">
+  <dependency className="Facts.structure.StructureAspectDescriptor">
+    <classNode dependClassName="Facts.structure.EnumerationDescriptor_ArticleType" />
     <classNode dependClassName="Facts.structure.LanguageConceptSwitch" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SConceptId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptKind" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstrainedStringDatatypeDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstrainedStringDatatypeDescriptorImpl" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.DataTypeDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StaticScope" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />

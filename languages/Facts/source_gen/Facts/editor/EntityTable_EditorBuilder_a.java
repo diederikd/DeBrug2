@@ -141,7 +141,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
           public EditorCell compute() {
             return new EntityTable_EditorBuilder_a.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "entitytype");
+        }, targetNode, MetaAdapterFactory.getReferenceLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xab4c0de8e6a1380L, 0xab4c0de8e6a1381L, "entitytype"));
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull_smartReference(cell);

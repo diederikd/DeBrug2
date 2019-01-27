@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Facts.textGen.TextGenAspectDescriptor" file="TextGenAspectDescriptor.java">
+  <dependency className="Facts.textGen.TextGenAspectDescriptor">
     <classNode dependClassName="Facts.structure.LanguageConceptSwitch" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenDescriptor" />

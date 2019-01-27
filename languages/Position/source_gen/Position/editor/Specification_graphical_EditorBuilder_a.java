@@ -49,12 +49,13 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import de.itemis.mps.editor.diagram.runtime.model.IConnectionType;
 import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
-import de.itemis.mps.editor.diagram.runtime.layout.LayeredLayouter;
-import de.cau.cs.kieler.kiml.options.Direction;
+import de.itemis.mps.editor.diagram.runtime.jgraph.LayeredLayouter;
+import org.eclipse.elk.core.options.Direction;
 import de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
+import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
 
 /*package*/ class Specification_graphical_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -162,7 +163,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
                           public Iterable<SNode> query() {
                             return ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0cdf2c74L, "Position.structure.PowerType"), false, new SAbstractConcept[]{})).concat(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x2ccf4d5a1f3e01d6L, "Position.structure.ObligationType"), false, new SAbstractConcept[]{}))).concat(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, "Position.structure.Transition"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
                               public boolean accept(SNode it) {
-                                return SPropertyOperations.hasValue(it, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbfdeL, "type"), "C", "C");
+                                return SPropertyOperations.hasEnumValue(it, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbfdeL, "type"), "C");
                               }
                             }).toListSequence());
                           }
@@ -190,7 +191,12 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
                       editorCell.value = new RootDiagramECell(editorContext, node, model);
                     }
                     editorCell.value.setCellId("Diagram_oj8d1m_e0");
-
+                    if (editorCell.value.getContextGraph() != null) {
+                      Object defaultParent = editorCell.value.getContextGraph().getDefaultParent();
+                      if (defaultParent instanceof RootDCell) {
+                        ((RootDCell) defaultParent).resetButtonConfig();
+                      }
+                    }
                   }
                 });
               }

@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="29zdj8v7dotnyg984ij4pkh45jepuma" />
+<product version="3" modelHash="-64ehpx4or7rufe7xotonxg3moh0xfzz">
+  <files names="AmountValue_Constraints.java:ConstraintsAspectDescriptor.java:DateValue_Constraints.java:EntityValue_Constraints.java:EnumerationValue_Constraints.java:FactBase_Constraints.java:FactTable_Constraints.java:FactTypeWordRole_Constraints.java:FactTypeWording_Constraints.java:FactType_Constraints.java:FactValue_Constraints.java:FactWording_Constraints.java:Fact_Constraints.java:Identifier_Constraints.java:PercentageValue_Constraints.java:RoleReferenceExpression_Constraints.java:RoleReferenceOperation_Constraints.java:RoleReference_Constraints.java:Role_Constraints.java:Variable_Constraints.java" />
+</product>
 

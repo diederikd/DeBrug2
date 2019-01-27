@@ -14,10 +14,10 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuPart;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.editor.menus.ConceptMenusPart;
 import java.util.Collection;
 import jetbrains.mps.smodel.ConceptDescendantsCache;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup;
 import jetbrains.mps.smodel.language.LanguageRegistry;
 
@@ -47,7 +47,8 @@ public class COLUMNReference_SubstituteMenu extends SubstituteMenuBase {
   public class SMP_ReferenceScope_qi06j5_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_qi06j5_a() {
-      super(MetaAdapterFactory.getConcept(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd9132L, "SQL.structure.COLUMNReference"), MetaAdapterFactory.getReferenceLink(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd9132L, 0x1bdede5178cd9133L, "column"));
+      // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
+      super((SAbstractConcept) MetaAdapterFactory.getConcept(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd9132L, "SQL.structure.COLUMNReference"), MetaAdapterFactory.getReferenceLink(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd9132L, 0x1bdede5178cd9133L, "column"));
     }
     @NotNull
     @Override

@@ -48,7 +48,7 @@ public final class Testcases__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(executeTests_idws$rq35Qdm, executeTestcase_idws$rq36caG, allActionsSuccess_idws$rq369Em, UpdateSimulatedEndState_idws$rq3oqFK);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x7e8caa0ea0d06cd6L, 0x645badac5e36e314L, "lastExecution"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, "DateTime.structure.DateTime")));
+    SNodeFactoryOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x7e8caa0ea0d06cd6L, 0x645badac5e36e314L, "lastExecution"), null);
   }
 
   /*package*/ static void executeTests_idws$rq35Qdm(@NotNull SNode __thisNode__) {
@@ -100,7 +100,7 @@ public final class Testcases__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static boolean allActionsSuccess_idws$rq369Em(@NotNull SNode __thisNode__, SNode testcase) {
     return (ListSequence.fromList(SLinkOperations.getChildren(testcase, MetaAdapterFactory.getContainmentLink(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x7e8caa0ea0d091d3L, 0x7e8caa0ea0d091d8L, "testActions"))).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return SPropertyOperations.hasValue(it, MetaAdapterFactory.getProperty(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ee4905bL, 0x319083e78ee4905cL, "testresult"), "success", "nottested");
+        return SPropertyOperations.hasEnumValue(it, MetaAdapterFactory.getProperty(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x319083e78ee4905bL, 0x319083e78ee4905cL, "testresult"), "success");
       }
     }).count() == ListSequence.fromList(SLinkOperations.getChildren(testcase, MetaAdapterFactory.getContainmentLink(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x7e8caa0ea0d091d3L, 0x7e8caa0ea0d091d8L, "testActions"))).count());
   }

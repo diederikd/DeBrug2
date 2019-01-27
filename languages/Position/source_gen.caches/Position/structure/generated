@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-3y69sgr7j89w4pevermr4l1j0wushhi" />
+<product version="3" modelHash="-85e6us5gnzq5wky06vil04sfwdkz9gh">
+  <files names="ConceptPresentationAspectImpl.java:EnumerationDescriptor_ChangeType.java:EnumerationDescriptor_RelationType.java:LanguageConceptSwitch.java:StructureAspectDescriptor.java" />
+</product>
 

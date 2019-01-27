@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="b98g6vqgngt3n0lkwo56utfqwwc2bv9" />
+<product version="3" modelHash="9rgu393rfkv4e10a33020k548c138xw">
+  <files names="AmountValue__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:Concept__BehaviorDescriptor.java:DateValue__BehaviorDescriptor.java:DatetimeValue__BehaviorDescriptor.java:EntityType__BehaviorDescriptor.java:EntityValue__BehaviorDescriptor.java:EnumerationValue__BehaviorDescriptor.java:EventDateTime__BehaviorDescriptor.java:FactBase__BehaviorDescriptor.java:FactModel__BehaviorDescriptor.java:FactTable__BehaviorDescriptor.java:FactTypeWording__BehaviorDescriptor.java:FactType__BehaviorDescriptor.java:FactValue__BehaviorDescriptor.java:Fact__BehaviorDescriptor.java:Identifier__BehaviorDescriptor.java:Instance__BehaviorDescriptor.java:IntegerValue__BehaviorDescriptor.java:KnownAt__BehaviorDescriptor.java:PercentageValue__BehaviorDescriptor.java:RoleReference__BehaviorDescriptor.java:Role__BehaviorDescriptor.java:StringValue__BehaviorDescriptor.java:TimeValue__BehaviorDescriptor.java:ValidityFrom__BehaviorDescriptor.java:ValidityTo__BehaviorDescriptor.java:Value__BehaviorDescriptor.java:Variable__BehaviorDescriptor.java:helper.java" />
+</product>
 

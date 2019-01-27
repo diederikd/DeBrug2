@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Simulation.typesystem.MessageForTestResult_NonTypesystemRule" file="MessageForTestResult_NonTypesystemRule.java">
+  <dependency className="Simulation.typesystem.MessageForTestResult_NonTypesystemRule">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
@@ -14,7 +14,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="Simulation.typesystem.TestActionSequence_NonTypesystemRule" file="TestActionSequence_NonTypesystemRule.java">
+  <dependency className="Simulation.typesystem.TestActionSequence_NonTypesystemRule">
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
@@ -23,7 +23,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="Simulation.typesystem.TypesystemDescriptor" file="TypesystemDescriptor.java">
+  <dependency className="Simulation.typesystem.TypesystemDescriptor">
     <classNode dependClassName="Simulation.typesystem.MessageForTestResult_NonTypesystemRule" />
     <classNode dependClassName="Simulation.typesystem.TestActionSequence_NonTypesystemRule" />
     <classNode dependClassName="Simulation.typesystem.typeof_EntityTypeSelection_InferenceRule" />
@@ -33,7 +33,7 @@
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.BaseHelginsDescriptor" />
   </dependency>
-  <dependency className="Simulation.typesystem.typeof_EntityTypeSelection_InferenceRule" file="typeof_EntityTypeSelection_InferenceRule.java">
+  <dependency className="Simulation.typesystem.typeof_EntityTypeSelection_InferenceRule">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
@@ -44,7 +44,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
-  <dependency className="Simulation.typesystem.typeof_Query_InferenceRule" file="typeof_Query_InferenceRule.java">
+  <dependency className="Simulation.typesystem.typeof_Query_InferenceRule">
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
@@ -53,7 +53,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
-  <dependency className="Simulation.typesystem.typeof_ValueTypeSelection_InferenceRule" file="typeof_ValueTypeSelection_InferenceRule.java">
+  <dependency className="Simulation.typesystem.typeof_ValueTypeSelection_InferenceRule">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />

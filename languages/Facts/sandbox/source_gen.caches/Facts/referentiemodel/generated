@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-arqqp1oo1sf15r8tofqg9jalpafffgw" />
+<product version="3" modelHash="-arqqp1oo1sf15r8tofqg9jalpafffgw">
+  <files names="Factbase_Feiten objectief- en subjectiefrecht..sql:Factmodel_Objectiefrecht..ddl:Factmodel_Subjectiefrecht..ddl" />
+</product>
 

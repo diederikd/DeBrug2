@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="6qj9xcnytklf1yo31j8ahimrcetxgq7" />
+<product version="3" modelHash="-6lp8klewshuswrx066rfvl7h98nye4">
+  <files names="BehaviorAspectDescriptor.java:DateTime__BehaviorDescriptor.java:Date__BehaviorDescriptor.java:Days__BehaviorDescriptor.java:Duration__BehaviorDescriptor.java:Hours__BehaviorDescriptor.java:Minutes__BehaviorDescriptor.java:Months__BehaviorDescriptor.java:Seconds__BehaviorDescriptor.java:Time__BehaviorDescriptor.java:Years__BehaviorDescriptor.java" />
+</product>
 

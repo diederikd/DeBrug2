@@ -79,7 +79,7 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
           public EditorCell compute() {
             return new Transition_EditorBuilder_a.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "eventtype");
+        }, targetNode, MetaAdapterFactory.getReferenceLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbf8eL, "eventtype"));
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull(cell);
@@ -209,7 +209,7 @@ import Facts.editor.Styles_StyleSheet.PlainStyleClass;
           public EditorCell compute() {
             return new Transition_EditorBuilder_a.Inline_Builder1(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "state");
+        }, targetNode, MetaAdapterFactory.getReferenceLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbf94L, "state"));
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull(cell);

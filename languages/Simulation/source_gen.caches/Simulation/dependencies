@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Simulation.Language" file="Language.java">
+  <dependency className="Simulation.Language">
     <classNode dependClassName="Simulation.actions.ActionAspectDescriptorImpl" />
     <classNode dependClassName="Simulation.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="Simulation.constraints.ConstraintsAspectDescriptor" />

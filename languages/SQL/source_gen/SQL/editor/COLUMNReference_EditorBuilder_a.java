@@ -74,7 +74,7 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
           public EditorCell compute() {
             return new COLUMNReference_EditorBuilder_a.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "column");
+        }, targetNode, MetaAdapterFactory.getReferenceLink(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178cd9132L, 0x1bdede5178cd9133L, "column"));
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull_smartReference(cell);

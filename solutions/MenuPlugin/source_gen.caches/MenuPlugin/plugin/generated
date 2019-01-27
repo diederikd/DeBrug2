@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="aky6vl56wof9357o40fs16djkw6uo02" />
+<product version="3" modelHash="18tusa6loudmhs2csyjch6d127spyhd">
+  <files names="Action_Add_Action.java:Action_Custom_Action.java:Action_Hide_Action.java:Action_NewFact_Action.java:Action_Repaint_Action.java:Action_Update_ActionGroup.java:Fact_ActionGroup.java:MenuPlugin_ApplicationPlugin.java" />
+</product>
 

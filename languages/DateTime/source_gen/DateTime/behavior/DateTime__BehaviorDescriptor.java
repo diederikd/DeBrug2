@@ -41,8 +41,8 @@ public final class DateTime__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDateTime_id5riiL_BUVyA, isBefore_id6hrFqLuBsXl, setDateTime_id4cztqIn5fVA, setMaxDateTime_id7UcEwUwYAq7, maxDate_id16mnka5QahA, maxTime_id16mnka5Qb4O, isEqualToMaxDateTime_id16mnka5GxER, setDateTimeNow_id4cztqIn5h$s, getDateTimeString_id5vursKRvZal);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SLinkOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum"), MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, "DateTime.structure.Date"));
-    SLinkOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd"), MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, "DateTime.structure.Time"));
+    SLinkOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum"), null);
+    SLinkOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd"), null);
   }
 
   /*package*/ static LocalDateTime getDateTime_id5riiL_BUVyA(@NotNull SNode __thisNode__) {
@@ -61,16 +61,16 @@ public final class DateTime__BehaviorDescriptor extends BaseBHDescriptor {
   }
   /*package*/ static SNode maxDate_id16mnka5QahA(@NotNull SNode __thisNode__) {
     SNode date = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, "DateTime.structure.Date"));
-    SPropertyOperations.set(date, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag"), "" + (31));
-    SPropertyOperations.set(date, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand"), "" + (12));
-    SPropertyOperations.set(date, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar"), "" + (9999));
+    SPropertyOperations.set(date, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag"), 31);
+    SPropertyOperations.set(date, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand"), 12);
+    SPropertyOperations.set(date, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar"), 9999);
     return date;
   }
   /*package*/ static SNode maxTime_id16mnka5Qb4O(@NotNull SNode __thisNode__) {
     SNode time = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, "DateTime.structure.Time"));
-    SPropertyOperations.set(time, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), "" + (23));
-    SPropertyOperations.set(time, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), "" + (59));
-    SPropertyOperations.set(time, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), "" + (59));
+    SPropertyOperations.set(time, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), 23);
+    SPropertyOperations.set(time, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), 59);
+    SPropertyOperations.set(time, MetaAdapterFactory.getProperty(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), 59);
     return time;
   }
   /*package*/ static boolean isEqualToMaxDateTime_id16mnka5GxER(@NotNull SNode __thisNode__) {

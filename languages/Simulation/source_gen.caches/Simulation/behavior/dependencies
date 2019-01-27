@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Simulation.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
+  <dependency className="Simulation.behavior.BehaviorAspectDescriptor">
     <classNode dependClassName="Simulation.behavior.Query__BehaviorDescriptor" />
     <classNode dependClassName="Simulation.behavior.Selection__BehaviorDescriptor" />
     <classNode dependClassName="Simulation.behavior.Testcase__BehaviorDescriptor" />
@@ -14,7 +14,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBehaviorAspectDescriptor" />
   </dependency>
-  <dependency className="Simulation.behavior.Query__BehaviorDescriptor" file="Query__BehaviorDescriptor.java">
+  <dependency className="Simulation.behavior.Query__BehaviorDescriptor">
     <classNode dependClassName="Facts.behavior.FactBase__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Integer" />
@@ -54,7 +54,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Simulation.behavior.Selection__BehaviorDescriptor" file="Selection__BehaviorDescriptor.java">
+  <dependency className="Simulation.behavior.Selection__BehaviorDescriptor">
     <classNode dependClassName="Facts.behavior.Role__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Integer" />
@@ -92,7 +92,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Simulation.behavior.Simulation" file="Simulation.java">
+  <dependency className="Simulation.behavior.Simulation">
     <classNode dependClassName="DateTime.behavior.DateTime__BehaviorDescriptor" />
     <classNode dependClassName="Facts.behavior.Fact__BehaviorDescriptor" />
     <classNode dependClassName="Position.behavior.StateType__BehaviorDescriptor" />
@@ -112,7 +112,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
-  <dependency className="Simulation.behavior.Testcase__BehaviorDescriptor" file="Testcase__BehaviorDescriptor.java">
+  <dependency className="Simulation.behavior.Testcase__BehaviorDescriptor">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.Void" />
@@ -139,7 +139,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Simulation.behavior.Testcases__BehaviorDescriptor" file="Testcases__BehaviorDescriptor.java">
+  <dependency className="Simulation.behavior.Testcases__BehaviorDescriptor">
     <classNode dependClassName="DateTime.behavior.DateTime__BehaviorDescriptor" />
     <classNode dependClassName="Facts.behavior.Fact__BehaviorDescriptor" />
     <classNode dependClassName="Simulation.behavior.Simulation" />

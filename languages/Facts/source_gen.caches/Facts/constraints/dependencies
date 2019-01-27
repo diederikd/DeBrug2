@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Facts.constraints.AmountValue_Constraints" file="AmountValue_Constraints.java">
+  <dependency className="Facts.constraints.AmountValue_Constraints">
     <classNode dependClassName="Facts.behavior.Value__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -15,7 +15,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.ConstraintsAspectDescriptor" file="ConstraintsAspectDescriptor.java">
+  <dependency className="Facts.constraints.ConstraintsAspectDescriptor">
     <classNode dependClassName="Facts.constraints.AmountValue_Constraints" />
     <classNode dependClassName="Facts.constraints.DateValue_Constraints" />
     <classNode dependClassName="Facts.constraints.EntityValue_Constraints" />
@@ -44,7 +44,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BaseConstraintsAspectDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.DateValue_Constraints" file="DateValue_Constraints.java">
+  <dependency className="Facts.constraints.DateValue_Constraints">
     <classNode dependClassName="DateTime.behavior.Date__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -60,7 +60,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.EntityValue_Constraints" file="EntityValue_Constraints.java">
+  <dependency className="Facts.constraints.EntityValue_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -80,7 +80,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.EnumerationValue_Constraints" file="EnumerationValue_Constraints.java">
+  <dependency className="Facts.constraints.EnumerationValue_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -105,11 +105,11 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.FactBase_Constraints" file="FactBase_Constraints.java">
+  <dependency className="Facts.constraints.FactBase_Constraints">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.FactTable_Constraints" file="FactTable_Constraints.java">
+  <dependency className="Facts.constraints.FactTable_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -119,15 +119,12 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.ReferenceScopeProvider" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseScopeProvider" />
-    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.FactTypeWordRole_Constraints" file="FactTypeWordRole_Constraints.java">
+  <dependency className="Facts.constraints.FactTypeWordRole_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -149,7 +146,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.FactTypeWording_Constraints" file="FactTypeWording_Constraints.java">
+  <dependency className="Facts.constraints.FactTypeWording_Constraints">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -165,7 +162,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.FactType_Constraints" file="FactType_Constraints.java">
+  <dependency className="Facts.constraints.FactType_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.lang.String" />
@@ -187,7 +184,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.FactValue_Constraints" file="FactValue_Constraints.java">
+  <dependency className="Facts.constraints.FactValue_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -207,7 +204,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.FactWording_Constraints" file="FactWording_Constraints.java">
+  <dependency className="Facts.constraints.FactWording_Constraints">
     <classNode dependClassName="Facts.behavior.helper" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
@@ -234,7 +231,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.Fact_Constraints" file="Fact_Constraints.java">
+  <dependency className="Facts.constraints.Fact_Constraints">
     <classNode dependClassName="Facts.behavior.Fact__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -247,17 +244,14 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.ReferenceScopeProvider" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseScopeProvider" />
-    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.Identifier_Constraints" file="Identifier_Constraints.java">
+  <dependency className="Facts.constraints.Identifier_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -266,7 +260,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.PercentageValue_Constraints" file="PercentageValue_Constraints.java">
+  <dependency className="Facts.constraints.PercentageValue_Constraints">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -282,11 +276,11 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.RoleReferenceExpression_Constraints" file="RoleReferenceExpression_Constraints.java">
+  <dependency className="Facts.constraints.RoleReferenceExpression_Constraints">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.RoleReferenceOperation_Constraints" file="RoleReferenceOperation_Constraints.java">
+  <dependency className="Facts.constraints.RoleReferenceOperation_Constraints">
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -305,7 +299,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.RoleReference_Constraints" file="RoleReference_Constraints.java">
+  <dependency className="Facts.constraints.RoleReference_Constraints">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -333,7 +327,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.Role_Constraints" file="Role_Constraints.java">
+  <dependency className="Facts.constraints.Role_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -342,7 +336,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Facts.constraints.Variable_Constraints" file="Variable_Constraints.java">
+  <dependency className="Facts.constraints.Variable_Constraints">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>

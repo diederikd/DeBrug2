@@ -1,46 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="TestFacts.Facts.CheckIntentionFact_Test" file="CheckIntentionFact_Test.java">
+  <dependency className="TestFacts.Facts.CheckIntentionFact_Test">
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.Throwable" />
     <classNode dependClassName="jetbrains.mps.MPSLaunch" />
     <classNode dependClassName="jetbrains.mps.lang.test.runtime.BaseEditorTestBody" />
     <classNode dependClassName="jetbrains.mps.lang.test.runtime.TestParametersCache" />
+    <classNode dependClassName="jetbrains.mps.lang.test.runtime.TransformationTest" />
     <classNode dependClassName="org.junit.ClassRule" />
     <classNode dependClassName="org.junit.Test" />
     <classNode extendsClassName="jetbrains.mps.lang.test.runtime.BaseTransformationTest" />
   </dependency>
-  <dependency className="TestFacts.Facts.CheckIntentionsEntity_Test" file="CheckIntentionsEntity_Test.java">
+  <dependency className="TestFacts.Facts.CheckIntentionsEntity_Test">
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.Throwable" />
     <classNode dependClassName="jetbrains.mps.MPSLaunch" />
     <classNode dependClassName="jetbrains.mps.lang.test.runtime.BaseEditorTestBody" />
     <classNode dependClassName="jetbrains.mps.lang.test.runtime.TestParametersCache" />
+    <classNode dependClassName="jetbrains.mps.lang.test.runtime.TransformationTest" />
     <classNode dependClassName="org.junit.ClassRule" />
     <classNode dependClassName="org.junit.Test" />
     <classNode extendsClassName="jetbrains.mps.lang.test.runtime.BaseTransformationTest" />
   </dependency>
-  <dependency className="TestFacts.Facts.CheckNameOfEntityShouldBeUnique_Test" file="CheckNameOfEntityShouldBeUnique_Test.java">
+  <dependency className="TestFacts.Facts.CheckNameOfEntityShouldBeUnique_Test">
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Throwable" />
     <classNode dependClassName="jetbrains.mps.MPSLaunch" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.test.behavior.INodesTestMethod__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.test.runtime.BaseTestBody" />
+    <classNode dependClassName="jetbrains.mps.lang.test.runtime.RunWithCommand" />
     <classNode dependClassName="jetbrains.mps.lang.test.runtime.TestParametersCache" />
+    <classNode dependClassName="jetbrains.mps.lang.test.runtime.TransformationTest" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.junit.ClassRule" />
+    <classNode dependClassName="org.junit.Rule" />
     <classNode dependClassName="org.junit.Test" />
     <classNode extendsClassName="jetbrains.mps.lang.test.runtime.BaseTransformationTest" />
   </dependency>
-  <dependency className="TestFacts.Facts.CheckNewEntity_Test" file="CheckNewEntity_Test.java">
+  <dependency className="TestFacts.Facts.CheckNewEntity_Test">
     <classNode dependClassName="jetbrains.mps.MPSLaunch" />
     <classNode dependClassName="jetbrains.mps.lang.test.runtime.BaseTestBody" />
+    <classNode dependClassName="jetbrains.mps.lang.test.runtime.RunWithCommand" />
     <classNode dependClassName="jetbrains.mps.lang.test.runtime.TestParametersCache" />
+    <classNode dependClassName="jetbrains.mps.lang.test.runtime.TransformationTest" />
     <classNode dependClassName="org.junit.ClassRule" />
+    <classNode dependClassName="org.junit.Rule" />
     <classNode extendsClassName="jetbrains.mps.lang.test.runtime.BaseTransformationTest" />
   </dependency>
 </dependenciesRoot>

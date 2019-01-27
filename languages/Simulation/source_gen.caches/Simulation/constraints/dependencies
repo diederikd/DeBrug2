@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Simulation.constraints.ConstraintsAspectDescriptor" file="ConstraintsAspectDescriptor.java">
+  <dependency className="Simulation.constraints.ConstraintsAspectDescriptor">
     <classNode dependClassName="Simulation.constraints.EntityTypeSelection_Constraints" />
     <classNode dependClassName="Simulation.constraints.SelectedEntity_Constraints" />
     <classNode dependClassName="Simulation.constraints.Selection_Constraints" />
@@ -14,7 +14,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BaseConstraintsAspectDescriptor" />
   </dependency>
-  <dependency className="Simulation.constraints.EntityTypeSelection_Constraints" file="EntityTypeSelection_Constraints.java">
+  <dependency className="Simulation.constraints.EntityTypeSelection_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -34,15 +34,15 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Simulation.constraints.SelectedEntity_Constraints" file="SelectedEntity_Constraints.java">
+  <dependency className="Simulation.constraints.SelectedEntity_Constraints">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Simulation.constraints.Selection_Constraints" file="Selection_Constraints.java">
+  <dependency className="Simulation.constraints.Selection_Constraints">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Simulation.constraints.ValueTypeSelection_Constraints" file="ValueTypeSelection_Constraints.java">
+  <dependency className="Simulation.constraints.ValueTypeSelection_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />

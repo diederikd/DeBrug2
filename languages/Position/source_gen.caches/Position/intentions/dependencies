@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Position.intentions.AddDefinitionObjectType_Intention" file="AddDefinitionObjectType_Intention.java">
+  <dependency className="Position.intentions.AddDefinitionObjectType_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -17,7 +17,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Position.intentions.AddDefinitionSubjectType_Intention" file="AddDefinitionSubjectType_Intention.java">
+  <dependency className="Position.intentions.AddDefinitionSubjectType_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -34,7 +34,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Position.intentions.AddEvent_Intention" file="AddEvent_Intention.java">
+  <dependency className="Position.intentions.AddEvent_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -53,7 +53,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Position.intentions.AddPower_Intention" file="AddPower_Intention.java">
+  <dependency className="Position.intentions.AddPower_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -72,7 +72,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Position.intentions.HideTable_Intention" file="HideTable_Intention.java">
+  <dependency className="Position.intentions.HideTable_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -89,7 +89,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Position.intentions.HideVariablesAction_Intention" file="HideVariablesAction_Intention.java">
+  <dependency className="Position.intentions.HideVariablesAction_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -106,7 +106,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Position.intentions.HideVariablesState_Intention" file="HideVariablesState_Intention.java">
+  <dependency className="Position.intentions.HideVariablesState_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -123,7 +123,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Position.intentions.IntentionsDescriptor" file="IntentionsDescriptor.java">
+  <dependency className="Position.intentions.IntentionsDescriptor">
     <classNode dependClassName="Position.intentions.AddDefinitionObjectType_Intention" />
     <classNode dependClassName="Position.intentions.AddDefinitionSubjectType_Intention" />
     <classNode dependClassName="Position.intentions.AddEvent_Intention" />
@@ -150,7 +150,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionAspectDescriptor" />
   </dependency>
-  <dependency className="Position.intentions.PushDefaultHint_Intention" file="PushDefaultHint_Intention.java">
+  <dependency className="Position.intentions.PushDefaultHint_Intention">
     <classNode dependClassName="java.lang.NullPointerException" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -167,7 +167,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Position.intentions.PushGraphicalHint_Intention" file="PushGraphicalHint_Intention.java">
+  <dependency className="Position.intentions.PushGraphicalHint_Intention">
     <classNode dependClassName="java.lang.NullPointerException" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -184,7 +184,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Position.intentions.ShowTable_Intention" file="ShowTable_Intention.java">
+  <dependency className="Position.intentions.ShowTable_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -201,7 +201,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Position.intentions.ShowVariablesAction_Intention" file="ShowVariablesAction_Intention.java">
+  <dependency className="Position.intentions.ShowVariablesAction_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -218,7 +218,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="Position.intentions.ShowVariablesState_Intention" file="ShowVariablesState_Intention.java">
+  <dependency className="Position.intentions.ShowVariablesState_Intention">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />

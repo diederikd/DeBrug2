@@ -25,8 +25,8 @@ public final class ImmunityType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL, 0x432375ab97172d5eL, "validity"), "" + (true));
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL, 0x432375ab97645f1cL, "known"), "" + (true));
+    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL, 0x432375ab97172d5eL, "validity"), true);
+    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL, 0x432375ab97645f1cL, "known"), true);
     SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b43ef1L, 0x337a9c0102b8d920L, "type"), "IMGB");
     Helper.AddValidityAndKnownAt(__thisNode__);
   }

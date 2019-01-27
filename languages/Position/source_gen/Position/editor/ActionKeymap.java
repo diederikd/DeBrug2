@@ -46,19 +46,19 @@ public class ActionKeymap extends KeyMapImpl {
       {
         final SNode powerType = node;
         if (SNodeOperations.isInstanceOf(powerType, MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0cdf2c74L, "Position.structure.PowerType"))) {
-          SNodeFactoryOperations.setNewChild(powerType, MetaAdapterFactory.getContainmentLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0cdf2c74L, 0x313fc3cd0ce0d0e0L, "action"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getInterfaceConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x33a3a1e24492f50bL, "Position.structure.ISpecificationElement")));
+          SNodeFactoryOperations.setNewChild(powerType, MetaAdapterFactory.getContainmentLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x313fc3cd0cdf2c74L, 0x313fc3cd0ce0d0e0L, "action"), null);
         }
       }
       {
         final SNode obligationType = node;
         if (SNodeOperations.isInstanceOf(obligationType, MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x2ccf4d5a1f3e01d6L, "Position.structure.ObligationType"))) {
-          SNodeFactoryOperations.setNewChild(obligationType, MetaAdapterFactory.getContainmentLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x2ccf4d5a1f3e01d6L, 0x2ccf4d5a1f403befL, "action"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getInterfaceConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x33a3a1e24492f50bL, "Position.structure.ISpecificationElement")));
+          SNodeFactoryOperations.setNewChild(obligationType, MetaAdapterFactory.getContainmentLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x2ccf4d5a1f3e01d6L, 0x2ccf4d5a1f403befL, "action"), null);
         }
       }
       {
         final SNode immunityType = node;
         if (SNodeOperations.isInstanceOf(immunityType, MetaAdapterFactory.getConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x2ccf4d5a1f4ef965L, "Position.structure.ImmunityType"))) {
-          SNodeFactoryOperations.setNewChild(immunityType, MetaAdapterFactory.getContainmentLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x2ccf4d5a1f4ef965L, 0x2ccf4d5a1f4f278bL, "action"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getInterfaceConcept(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x33a3a1e24492f50bL, "Position.structure.ISpecificationElement")));
+          SNodeFactoryOperations.setNewChild(immunityType, MetaAdapterFactory.getContainmentLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x2ccf4d5a1f4ef965L, 0x2ccf4d5a1f4f278bL, "action"), null);
         }
       }
     }

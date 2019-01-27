@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-1jot0vkwmbjozware73p2ygo87lsxl8" />
+<product version="3" modelHash="-1jot0vkwmbjozware73p2ygo87lsxl8">
+  <files names="BIGINT_TextGen.java:COLUMNDEFINITION_TextGen.java:COLUMNReference_TextGen.java:COLUMN_TextGen.java:CREATEPROCEDURE_TextGen.java:CREATETABLE_TextGen.java:DATETIME_TextGen.java:DATE_TextGen.java:DDL_TextGen.java:DML_TextGen.java:DROPPROCEDURE_TextGen.java:DROPTABLE_TextGen.java:ENUMERATIONVALUE_TextGen.java:ENUM_TextGen.java:INSERT_TextGen.java:INT_TextGen.java:MEDIUMINT_TextGen.java:NULL_TextGen.java:PARAMETERReference_TextGen.java:PARAMETER_TextGen.java:TIME_TextGen.java:TextGenAspectDescriptor.java:USE_TextGen.java:VARCHAR255_TextGen.java" />
+</product>
 

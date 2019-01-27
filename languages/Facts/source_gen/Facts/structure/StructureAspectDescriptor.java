@@ -4,14 +4,20 @@ package Facts.structure;
 
 import jetbrains.mps.smodel.runtime.BaseStructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
+import jetbrains.mps.smodel.runtime.EnumerationDescriptor;
+import jetbrains.mps.smodel.runtime.ConstrainedStringDatatypeDescriptor;
+import jetbrains.mps.smodel.runtime.ConstrainedStringDatatypeDescriptorImpl;
 import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
+import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.runtime.ConceptKind;
 import jetbrains.mps.smodel.runtime.StaticScope;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
+import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAmountType = createDescriptorForAmountType();
@@ -76,6 +82,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptValue = createDescriptorForValue();
   /*package*/ final ConceptDescriptor myConceptValueType = createDescriptorForValueType();
   /*package*/ final ConceptDescriptor myConceptVariable = createDescriptorForVariable();
+  /*package*/ final EnumerationDescriptor myEnumerationArticleType = new EnumerationDescriptor_ArticleType();
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeReal = new ConstrainedStringDatatypeDescriptorImpl(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x1fabc0b15d9b623aL, "Real", "r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/2282129504205496890", "-?[0-9]+((\\.|,)[0-9]+)?");
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -220,6 +228,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     }
   }
 
+  @Override
+  public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
+    return Arrays.asList(myEnumerationArticleType, myCSDatatypeReal);
+  }
+
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
@@ -328,7 +341,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/503348701156726176");
     b.version(2);
-    b.prop("article", 0x33810783f7f97de4L, "3711255831312432612");
+    b.property("article", 0x33810783f7f97de4L).type(MetaIdFactory.dataTypeId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7f97ddbL)).origin("3711255831312432612").done();
     b.aggregate("specialisaties", 0x3523753237fa564cL).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x60a1274b2203d5eaL).optional(true).ordered(true).multiple(true).origin("3829032966743021132").done();
     return b.create();
   }
@@ -445,8 +458,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592067373");
     b.version(2);
-    b.prop("validity", 0x432375ab97172d5eL, "4837839804560780638");
-    b.prop("known", 0x432375ab97645f1cL, "4837839804565839644");
+    b.property("validity", 0x432375ab97172d5eL).type(PrimitiveTypeId.BOOLEAN).origin("4837839804560780638").done();
+    b.property("known", 0x432375ab97645f1cL).type(PrimitiveTypeId.BOOLEAN).origin("4837839804565839644").done();
     b.aggregate("roles", 0xe475eafb2f3f367L).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32eL).optional(true).ordered(true).multiple(true).origin("1028895148592067431").done();
     b.aggregate("wordings", 0x33810783f7eaea9cL).target(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7eaea37L).optional(true).ordered(true).multiple(true).origin("3711255831311477404").done();
     return b.create();
@@ -601,7 +614,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Facts.structure.Value", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d415aL);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148593747434");
     b.version(2);
-    b.prop("value", 0xe475eafb30d95ebL, "1028895148593747435");
+    b.property("value", 0xe475eafb30d95ebL).type(PrimitiveTypeId.INTEGER).origin("1028895148593747435").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForKnownAt() {
@@ -648,7 +661,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/303191757000177474");
     b.version(2);
-    b.prop("value", 0x435274beed27743L, "303191757000177475");
+    b.property("value", 0x435274beed27743L).type(MetaIdFactory.dataTypeId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x1fabc0b15d9b623aL)).origin("303191757000177475").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRole() {
@@ -660,8 +673,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x11f8a0774f2L);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148592067374");
     b.version(2);
-    b.prop("mandatory", 0x33810783f7b1afeeL, "3711255831307726830");
-    b.prop("article", 0x33810783f7fb3e6fL, "3711255831312547439");
+    b.property("mandatory", 0x33810783f7b1afeeL).type(PrimitiveTypeId.BOOLEAN).origin("3711255831307726830").done();
+    b.property("article", 0x33810783f7fb3e6fL).type(MetaIdFactory.dataTypeId(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0x33810783f7f97ddbL)).origin("3711255831312547439").done();
     b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
     return b.create();
   }
@@ -745,7 +758,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Facts.structure.Value", 0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb30d415aL);
     b.origin("r:4d64f74f-2986-4b88-890d-52fda380b926(Facts.structure)/1028895148593747440");
     b.version(2);
-    b.prop("value", 0xe475eafb30d95f1L, "1028895148593747441");
+    b.property("value", 0xe475eafb30d95f1L).type(PrimitiveTypeId.STRING).origin("1028895148593747441").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTimeType() {

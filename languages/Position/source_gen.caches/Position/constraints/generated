@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-3ipfrmxe6qylpsipcqlqz7y66ajxfjm" />
+<product version="3" modelHash="-3ipfrmxe6qylpsipcqlqz7y66ajxfjm">
+  <files names="AbstractEventType_Constraints.java:ActionType_Constraints.java:Action_Constraints.java:ConstraintsAspectDescriptor.java:EventInRole_Constraints.java:ImmunityType_Constraints.java:ObjectTypeInRole_Constraints.java:ObligationType_Constraints.java:PowerType_Constraints.java:StateType_Constraints.java:State_Constraints.java:SubjectTypeInRole_Constraints.java" />
+</product>
 

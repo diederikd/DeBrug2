@@ -17,9 +17,6 @@ import jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.jetbrains.annotations.Nullable;
-import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
-import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
 
 public class Fact_Constraints extends BaseConstraintsDescriptor {
   public Fact_Constraints() {
@@ -59,11 +56,6 @@ public class Fact_Constraints extends BaseConstraintsDescriptor {
         if (ListSequence.fromList(SLinkOperations.getChildren(referenceNode, MetaAdapterFactory.getContainmentLink(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f47ca7L, 0xe475eafb2f47cafL, "variabeles"))).isEmpty()) {
           Fact__BehaviorDescriptor.AddAndRemoveRoles_idEOKdUeu$et.invoke(referenceNode);
         }
-      }
-      @Nullable
-      @Override
-      public ReferenceScopeProvider getScopeProvider() {
-        return new BaseScopeProvider() {};
       }
     });
     return references;

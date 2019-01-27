@@ -84,6 +84,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
     public SNode createNodeToInsert(EditorContext editorContext) {
       return nodeFactory();
     }
+
     public SNode nodeFactory() {
       return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x106e6c3abb1392ecL, "Simulation.structure.ValueTypeSelection"));
     }
@@ -165,6 +166,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
     public SNode createNodeToInsert(EditorContext editorContext) {
       return nodeFactory();
     }
+
     public SNode nodeFactory() {
       return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf2b5f4c3283f45e7L, 0x932a2eee84091ad4L, 0x106e6c3abb1392efL, "Simulation.structure.EntityTypeSelection"));
     }

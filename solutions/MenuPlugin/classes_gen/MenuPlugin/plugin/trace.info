@@ -18,15 +18,7 @@
       <node id="1045908811133610240" at="9,0,10,0" concept="3" trace="myId" />
       <node id="1045908811133610240" at="12,27,13,16" concept="8" />
       <node id="1045908811133610240" at="15,30,16,30" concept="9" />
-      <node id="1045908811133610240" at="16,30,17,39" concept="2" />
-      <node id="1045908811133610240" at="17,39,18,42" concept="2" />
-      <node id="1045908811133610240" at="18,42,19,40" concept="2" />
-      <node id="1045908811133610240" at="19,40,20,43" concept="2" />
-      <node id="1045908811133610240" at="20,43,21,43" concept="2" />
       <node id="1045908811133610240" at="21,43,22,14" concept="9" />
-      <node id="1045908811133610240" at="22,14,23,46" concept="2" />
-      <node id="1045908811133610240" at="23,46,24,37" concept="2" />
-      <node id="1045908811133610240" at="26,37,27,66" concept="2" />
       <node id="1045908811133610240" at="10,0,12,0" concept="1" trace="MenuPlugin_ApplicationPlugin#()V" />
       <node id="1045908811133610240" at="12,0,15,0" concept="6" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
       <node id="1045908811133610240" at="26,0,29,0" concept="6" trace="adjustRegularGroups#()V" />
@@ -57,6 +49,10 @@
       <scope id="1045908811133610314" at="9,0,18,0" />
       <unit id="1045908811133610314" at="7,0,19,0" name="MenuPlugin.plugin.Fact_ActionGroup" />
     </file>
+    <file name="MenuPlugin_ApplicationPlugin.java">
+      <node id="1045908811133610314" at="23,46,24,37" concept="2" />
+      <node id="1045908811133610321" at="26,37,27,66" concept="2" />
+    </file>
   </root>
   <root nodeRef="r:7c678aba-af3c-4b6d-a9a9-ab73c9f27bcc(MenuPlugin.plugin)/1045908811134313413">
     <file name="Action_NewFact_Action.java">
@@ -66,32 +62,32 @@
       <node id="1045908811134313413" at="23,35,24,41" concept="2" />
       <node id="1045908811134313413" at="27,32,28,16" concept="8" />
       <node id="1045908811134313413" at="32,53,33,19" concept="8" />
-      <node id="1045908811134313413" at="35,5,36,57" concept="7" />
-      <node id="1045908811134313413" at="37,25,38,21" concept="8" />
+      <node id="1045908811134317667" at="35,5,36,57" concept="7" />
+      <node id="1045908811134317669" at="37,25,38,21" concept="8" />
       <node id="1045908811134313413" at="40,5,41,16" concept="8" />
       <node id="1045908811133713903" at="45,5,46,63" concept="7" />
       <node id="1045908811134343138" at="47,164,48,174" concept="7" />
       <node id="1045908811134343694" at="48,174,49,338" concept="2" />
       <node id="1045908811134349576" at="49,338,50,252" concept="2" />
       <node id="1045908811134313413" at="31,95,34,5" concept="5" />
-      <node id="1045908811134313413" at="36,57,39,7" concept="5" />
+      <node id="1045908811134317669" at="36,57,39,7" concept="5" />
       <node id="1045908811134313413" at="26,0,30,0" concept="6" trace="isDumbAware#()Z" />
       <node id="1045908811134313413" at="21,0,26,0" concept="1" trace="Action_NewFact_Action#()V" />
       <node id="1045908811133713903" at="46,63,51,7" concept="5" />
-      <node id="1045908811134313413" at="34,5,40,5" concept="0" />
+      <node id="1045908811134317667" at="34,5,40,5" concept="0" />
       <node id="1045908811133713903" at="44,96,52,5" concept="0" />
       <node id="1045908811134313413" at="43,0,54,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
       <node id="1045908811134313413" at="30,0,43,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
       <scope id="1045908811134313413" at="27,32,28,16" />
       <scope id="1045908811134313413" at="32,53,33,19" />
-      <scope id="1045908811134313413" at="37,25,38,21" />
+      <scope id="1045908811134317669" at="37,25,38,21" />
       <scope id="1045908811134313413" at="21,34,24,41" />
       <scope id="1045908811133713905" at="47,164,50,252">
         <var name="newFact" id="1045908811134343141" />
       </scope>
       <scope id="1045908811134313413" at="26,0,30,0" />
-      <scope id="1045908811134313413" at="35,5,39,7">
-        <var name="node" id="1045908811134313413" />
+      <scope id="1045908811134317667" at="35,5,39,7">
+        <var name="node" id="1045908811134317667" />
       </scope>
       <scope id="1045908811134313413" at="21,0,26,0" />
       <scope id="1045908811133713903" at="45,5,51,7">
@@ -108,6 +104,9 @@
         <var name="event" id="1045908811134313413" />
       </scope>
       <unit id="1045908811134313413" at="18,0,55,0" name="MenuPlugin.plugin.Action_NewFact_Action" />
+    </file>
+    <file name="MenuPlugin_ApplicationPlugin.java">
+      <node id="1045908811134313413" at="19,40,20,43" concept="2" />
     </file>
   </root>
   <root nodeRef="r:7c678aba-af3c-4b6d-a9a9-ab73c9f27bcc(MenuPlugin.plugin)/1045908811134411242">
@@ -158,6 +157,9 @@
       </scope>
       <unit id="1045908811134411242" at="19,0,50,0" name="MenuPlugin.plugin.Action_Hide_Action" />
     </file>
+    <file name="MenuPlugin_ApplicationPlugin.java">
+      <node id="1045908811134411242" at="18,42,19,40" concept="2" />
+    </file>
   </root>
   <root nodeRef="r:7c678aba-af3c-4b6d-a9a9-ab73c9f27bcc(MenuPlugin.plugin)/4286865620419305954">
     <file name="Action_Add_Action.java">
@@ -191,6 +193,9 @@
       </scope>
       <unit id="4286865620419305954" at="14,0,36,0" name="MenuPlugin.plugin.Action_Add_Action" />
     </file>
+    <file name="MenuPlugin_ApplicationPlugin.java">
+      <node id="4286865620419305954" at="16,30,17,39" concept="2" />
+    </file>
   </root>
   <root nodeRef="r:7c678aba-af3c-4b6d-a9a9-ab73c9f27bcc(MenuPlugin.plugin)/4286865620419431275">
     <file name="Action_Repaint_Action.java">
@@ -220,6 +225,9 @@
         <var name="event" id="4286865620419431275" />
       </scope>
       <unit id="4286865620419431275" at="14,0,34,0" name="MenuPlugin.plugin.Action_Repaint_Action" />
+    </file>
+    <file name="MenuPlugin_ApplicationPlugin.java">
+      <node id="4286865620419431275" at="20,43,21,43" concept="2" />
     </file>
   </root>
   <root nodeRef="r:7c678aba-af3c-4b6d-a9a9-ab73c9f27bcc(MenuPlugin.plugin)/4286865620419500175">
@@ -261,6 +269,9 @@
       </scope>
       <unit id="4286865620419500175" at="18,0,44,0" name="MenuPlugin.plugin.Action_Custom_Action" />
     </file>
+    <file name="MenuPlugin_ApplicationPlugin.java">
+      <node id="4286865620419500175" at="17,39,18,42" concept="2" />
+    </file>
   </root>
   <root nodeRef="r:7c678aba-af3c-4b6d-a9a9-ab73c9f27bcc(MenuPlugin.plugin)/7329858909976974708">
     <file name="Action_Update_ActionGroup.java">
@@ -300,6 +311,9 @@
         <var name="event" id="7329858909976974708" />
       </scope>
       <unit id="7329858909976974708" at="17,0,40,0" name="MenuPlugin.plugin.Action_Update_ActionGroup" />
+    </file>
+    <file name="MenuPlugin_ApplicationPlugin.java">
+      <node id="7329858909976974708" at="22,14,23,46" concept="2" />
     </file>
   </root>
 </debug-info>

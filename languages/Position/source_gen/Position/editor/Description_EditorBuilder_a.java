@@ -10,6 +10,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import de.slisson.mps.editor.multiline.cellProviders.MultilineCellProvider;
 
@@ -55,8 +57,8 @@ import de.slisson.mps.editor.multiline.cellProviders.MultilineCellProvider;
     return editorCell;
   }
   private EditorCell createMultiline_0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new MultilineCellProvider(node, editorContext);
-    provider.setRole("name");
+    SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    CellProviderWithRole provider = new MultilineCellProvider(node, property, editorContext);
     provider.setNoTargetText("<no name>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);

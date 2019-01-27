@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-8oxskjxrqus7jh13fj06p4neoa2sp4a" />
+<product version="3" modelHash="c0pybg83zx8519g9k5nz5md6r38o2k7">
+  <files names="EditorAspectDescriptorImpl.java:EntityTypeSelection_Editor.java:EntityTypeSelection_EditorBuilder_a.java:EntityTypeSelection_SubstituteMenu.java:ExecuteQuery.java:ExecuteTests.java:Query_Editor.java:Query_EditorBuilder_a.java:Query_SubstituteMenu.java:SelectedEntity_Editor.java:SelectedEntity_EditorBuilder_a.java:Selection_Editor.java:Selection_EditorBuilder_a.java:Selection_SubstituteMenu.java:Selection_TransformationMenu.java:TestAction_Editor.java:TestAction_EditorBuilder_a.java:TestAction_InspectorBuilder_a.java:TestResultInspector.java:TestResultInspector_ComponentBuilder_a.java:TestState_Editor.java:TestState_EditorBuilder_a.java:TestState_InspectorBuilder_a.java:Testcase_Editor.java:Testcase_EditorBuilder_a.java:Testcases_Editor.java:Testcases_EditorBuilder_a.java:ValueTypeSelection_Editor.java:ValueTypeSelection_EditorBuilder_a.java:ValueTypeSelection_SubstituteMenu.java:Variable_QueryResult_Editor.java:Variable_QueryResult_EditorBuilder_a.java" />
+</product>
 

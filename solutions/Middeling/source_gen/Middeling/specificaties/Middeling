@@ -1,0 +1,446 @@
+Middeling
+verzoek middelingsteruggaaf
+een verzoek van een belanghebbende, 
+een besluit te nemen ten aanzien van de middelingsteruggaaf.
+verzoek intrekking middelingsteruggaaf
+een verzoek van een belanghebbende, 
+een verzoek middelingsteruggaaf in te trekken.
+betaling/vordering
+middelingstijdvak
+ontvangstbevestiging
+middelingsteruggaaf
+een teruggaaf van belasting op het belastbare inkomen uit werk en woning.
+verleende middelingsteruggaaf
+voor bezwaar vatbare beschikking
+een besluit dat niet van algemene strekking is, 
+met inbegrip van de afwijzing van een aanvraag daarvan.
+kalenderjaar
+natuurlijk persoon
+belastingplichtige
+binnenlands belastingplichtige
+kwalificerend buitenlands belastingplichtige
+nabestaande
+iemand uit het gezin of de naaste familie van een overlevende 
+die nog in leven is na dat overlijden; overlevend familielid
+diegene die belastingplichtig is geweest
+verzoeker middelingsteruggaaf
+inspecteur
+ontvanger
+Id
+natuurlijk_persoon
+geboortedatum
+datum_overlijden
+Id
+verzoek
+verzoeker
+belastingplichtige
+middelingstijdvak
+geaccepteerd_op
+afgewezen_op
+Id
+in_te_trekken_verzoek
+Id
+verzoek
+middelingsteruggaaf
+Id
+middelingstijdvak
+jaar
+Id
+verzoek
+ontvangst_bevestigd
+Id
+verzoek
+Id
+middelingsteruggaaf
+Id
+belastingplichtige
+belastingjaar
+belastbaar_inkomen_uit_werk_en_woning_
+premie_over_inkomen_uit_werk_en_woning
+null null heeft het recht <no name>[ActionType]
+subject_met_recht
+subject_met_plicht
+geldig_van
+geldig_tot
+bekend_op
+
+actor
+onderwerp
+uitgevoerd_op
+Aan het verzoek is een berekening toegevoegd van de middelingsteruggaaf.
+Het verzoek heeft een middelingstijdvak.
+null null heeft de plicht <no name>[ActionType]
+subject_met_recht
+subject_met_plicht
+geldig_van
+geldig_tot
+bekend_op
+
+actor
+onderwerp
+uitgevoerd_op
+null null heeft de plicht <no name>[ActionType]
+subject_met_recht
+subject_met_plicht
+geldig_van
+geldig_tot
+bekend_op
+
+actor
+onderwerp
+uitgevoerd_op
+null null heeft de immuniteit (recht) om de verplichting '<no name>[ActionType]' te neutraliseren
+subject_met_recht
+subject_met_plicht
+geldig_van
+geldig_tot
+bekend_op
+
+actor
+onderwerp
+uitgevoerd_op
+null null heeft de plicht <no name>[ActionType]
+subject_met_recht
+subject_met_plicht
+geldig_van
+geldig_tot
+bekend_op
+
+actor
+onderwerp
+uitgevoerd_op
+null null heeft het recht <no name>[ActionType]
+subject_met_recht
+subject_met_plicht
+geldig_van
+geldig_tot
+bekend_op
+
+actor
+onderwerp
+uitgevoerd_op
+null null heeft het recht <no name>[ActionType]
+subject_met_recht
+subject_met_plicht
+geldig_van
+geldig_tot
+bekend_op
+
+actor
+onderwerp
+uitgevoerd_op
+null null heeft de plicht <no name>[ActionType]
+subject_met_recht
+subject_met_plicht
+geldig_van
+geldig_tot
+bekend_op
+
+actor
+onderwerp
+uitgevoerd_op
+Tests handelingen
+verzoek 1
+Inspecteur Jan
+Pieter
+test enkele handeling uitvoeren met bestaande en geldige rechtsbetrekking
+[ Pieter, verzoek 1, 14-05-2018 19:14:28]
+
+[ Pieter, Inspecteur Jan, 10-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:07:14, 01-01-0001 23:59:59, 14-05-2018 19:06:56]
+
+
+
+[ Pieter, Inspecteur Jan, 10-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Pieter, Inspecteur Jan, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+test handeling uitvoeren waarvoor geen rechtsbetrekkig bestaat.
+[ Pieter, verzoek 1, 15-05-2018 21:27:57]
+
+[ Pieter, Inspecteur Jan, 11-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:07:14, 01-01-0001 23:59:59, 14-05-2018 19:06:56]
+
+
+
+[ Pieter, Inspecteur Jan, 11-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+test eerder handeling uitvoeren dan de rechtsbetrekking bestaat
+[ Pieter, verzoek 1, 11-05-2018 19:14:28]
+
+[ Pieter, Inspecteur Jan, 15-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:07:14, 01-01-0001 23:59:59, 14-05-2018 19:06:56]
+
+
+
+[ Pieter, Inspecteur Jan, 15-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Pieter, Inspecteur Jan, 11-05-2018 19:14:28, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 11-05-2018 19:14:28, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 11-05-2018 19:14:28, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+test twee handelingen uitvoeren met bestaande en geldige rechtsbetrekking
+[ Pieter, verzoek 1, 14-05-2018 19:14:28]
+
+[ Inspecteur Jan, verzoek 1, 16-05-2018 15:32:37]
+
+[ Pieter, Inspecteur Jan, 12-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:07:14, 01-01-0001 23:59:59, 14-05-2018 19:06:56]
+
+
+
+[ Pieter, Inspecteur Jan, 12-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Pieter, Inspecteur Jan, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 16-05-2018 15:32:37, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 16-05-2018 15:32:37, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+test drie handelingen uitvoeren met bestaande en geldige rechtsbetrekking
+[ Pieter, verzoek 1, 14-05-2018 19:14:28]
+
+[ Inspecteur Jan, verzoek 1, 16-05-2018 15:32:37]
+
+[ Inspecteur Jan, ontvangstbevestiging voor verzoek 1, 16-05-2018 20:14:48]
+
+[ Pieter, Inspecteur Jan, 12-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:07:14, 01-01-0001 23:59:59, 14-05-2018 19:06:56]
+
+
+
+[ Pieter, Inspecteur Jan, 12-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Pieter, Inspecteur Jan, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 16-05-2018 20:14:48, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 16-05-2018 15:32:37, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 16-05-2018 15:32:37, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+test drie handelingen uitvoeren met bestaande en geldige rechtsbetrekking
+[ Pieter, verzoek 1, 18-05-2018 19:14:28]
+
+[ Inspecteur Jan, verzoek 1, 16-05-2018 15:32:37]
+
+[ Inspecteur Jan, ontvangstbevestiging voor verzoek 1, 16-05-2018 20:14:48]
+
+[ Pieter, Inspecteur Jan, 12-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:07:14, 01-01-0001 23:59:59, 14-05-2018 19:06:56]
+
+
+
+[ Pieter, Inspecteur Jan, 12-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Pieter, Inspecteur Jan, 18-05-2018 19:14:28, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 18-05-2018 19:14:28, 16-05-2018 20:14:48, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 18-05-2018 19:14:28, 16-05-2018 15:32:37, 07-06-2018 15:36:57]
+
+
+
+[ Inspecteur Jan, Pieter, 16-05-2018 15:32:37, 01-01-0001 23:59:59, 07-06-2018 15:36:57]
+
+
+
+ontvangstbevestiging voor verzoek 1
+Tests rechtsbetrekkingen
+verzoek 1
+Inspecteur Jan
+Pieter
+test enkele handeling uitvoeren met bestaande en geldige rechtsbetrekking
+[ Pieter, verzoek 1, 14-05-2018 19:14:28]
+
+[ Pieter, Inspecteur Jan, 10-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:07:14, 01-01-0001 23:59:59, 14-05-2018 19:06:56]
+
+
+
+[ Pieter, Inspecteur Jan, 10-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Pieter, Inspecteur Jan, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 21-05-2018 11:09:31]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 21-05-2018 11:09:31]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 21-05-2018 11:09:31]
+
+
+
+test twee handelingen uitvoeren met bestaande en geldige rechtsbetrekking
+[ Pieter, verzoek 1, 14-05-2018 19:14:28]
+
+[ Inspecteur Jan, verzoek 1, 16-05-2018 15:32:37]
+
+[ Pieter, Inspecteur Jan, 12-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:07:14, 01-01-0001 23:59:59, 14-05-2018 19:06:56]
+
+
+
+[ Pieter, Inspecteur Jan, 12-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Pieter, Inspecteur Jan, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 21-05-2018 11:09:31]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 21-05-2018 11:09:31]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 16-05-2018 15:32:37, 21-05-2018 11:09:31]
+
+
+
+[ Inspecteur Jan, Pieter, 16-05-2018 15:32:37, 01-01-0001 23:59:59, 21-05-2018 11:09:31]
+
+
+
+test drie handelingen uitvoeren met bestaande en geldige rechtsbetrekking
+[ Pieter, verzoek 1, 14-05-2018 19:14:28]
+
+[ Inspecteur Jan, verzoek 1, 16-05-2018 15:32:37]
+
+[ Inspecteur Jan, ontvangstbevestiging voor verzoek 1, 16-05-2018 20:14:48]
+
+[ Pieter, Inspecteur Jan, 12-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Pieter, Inspecteur Jan, 12-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Pieter, Inspecteur Jan, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 20-05-2018 12:34:14]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 16-05-2018 20:14:48, 20-05-2018 12:34:14]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 14-05-2018 20:12:51, 14-05-2018 19:06:56]
+
+
+
+[ Inspecteur Jan, Pieter, 16-05-2018 15:32:37, 01-01-0001 23:59:59, 20-05-2018 12:34:14]
+
+
+
+[ Pieter, Inspecteur Jan, 12-05-2018 19:13:34, 01-01-0001 23:59:59, 14-05-2018 19:13:16]
+
+
+
+[ Pieter, Inspecteur Jan, 14-05-2018 19:14:28, 01-01-0001 23:59:59, 21-05-2018 11:09:31]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 16-05-2018 20:14:48, 21-05-2018 11:09:31]
+
+
+
+[ Inspecteur Jan, Pieter, 14-05-2018 19:14:28, 16-05-2018 15:32:37, 21-05-2018 11:09:31]
+
+
+
+[ Inspecteur Jan, Pieter, 16-05-2018 15:32:37, 01-01-0001 23:59:59, 21-05-2018 11:09:31]
+
+
+
+ontvangstbevestiging voor verzoek 1
+Factmodel_Inkomstenbelasting
+Id
+belastingjaar
+belastingschijf
+schijf 1
+schijf 2
+schijf 3
+schijf 4
+van_inkomsten
+tot_en_met_inkomsten
+heffingspercentage
+Factbase_Parameters inkomenstenbelasting

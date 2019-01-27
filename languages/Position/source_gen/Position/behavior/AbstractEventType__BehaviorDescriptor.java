@@ -25,7 +25,7 @@ public final class AbstractEventType__BehaviorDescriptor extends BaseBHDescripto
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL, 0x432375ab97645f1cL, "known"), "" + (true));
+    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x2aacdfbf487f43acL, 0xa43119468403f2c5L, 0xe475eafb2f3f32dL, 0x432375ab97645f1cL, "known"), true);
   }
 
 

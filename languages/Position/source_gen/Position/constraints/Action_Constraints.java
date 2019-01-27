@@ -12,9 +12,6 @@ import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import Position.behavior.Action__BehaviorDescriptor;
-import org.jetbrains.annotations.Nullable;
-import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
-import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
 
 public class Action_Constraints extends BaseConstraintsDescriptor {
   public Action_Constraints() {
@@ -36,11 +33,6 @@ public class Action_Constraints extends BaseConstraintsDescriptor {
       @Override
       public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
         Action__BehaviorDescriptor.AddDefaultValues_id36gwYuezked.invoke(referenceNode);
-      }
-      @Nullable
-      @Override
-      public ReferenceScopeProvider getScopeProvider() {
-        return new BaseScopeProvider() {};
       }
     });
     return references;

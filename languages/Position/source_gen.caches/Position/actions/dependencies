@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Position.actions.ActionAspectDescriptorImpl" file="ActionAspectDescriptorImpl.java">
+  <dependency className="Position.actions.ActionAspectDescriptorImpl">
     <classNode dependClassName="Position.actions.CreateActionType" />
     <classNode dependClassName="Position.actions.CreateImmunity" />
     <classNode dependClassName="Position.actions.CreateMethod" />
@@ -15,7 +15,7 @@
     <classNode extendsClassName="jetbrains.mps.actions.descriptor.BaseActionAspectDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
   </dependency>
-  <dependency className="Position.actions.CreateActionType" file="CreateActionType.java">
+  <dependency className="Position.actions.CreateActionType">
     <classNode dependClassName="Facts.behavior.FactType__BehaviorDescriptor" />
     <classNode dependClassName="Position.behavior.ActionType__BehaviorDescriptor" />
     <classNode dependClassName="Position.behavior.StateType__BehaviorDescriptor" />
@@ -29,7 +29,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
-  <dependency className="Position.actions.CreateImmunity" file="CreateImmunity.java">
+  <dependency className="Position.actions.CreateImmunity">
     <classNode dependClassName="Position.behavior.StateType__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.NodeFactory" />
@@ -37,7 +37,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
-  <dependency className="Position.actions.CreateMethod" file="CreateMethod.java">
+  <dependency className="Position.actions.CreateMethod">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.NodeFactory" />
@@ -45,7 +45,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
-  <dependency className="Position.actions.CreateTransition" file="CreateTransition.java">
+  <dependency className="Position.actions.CreateTransition">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.NodeFactory" />

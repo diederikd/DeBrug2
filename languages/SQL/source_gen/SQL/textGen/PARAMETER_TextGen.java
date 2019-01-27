@@ -13,7 +13,7 @@ public class PARAMETER_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append(SPropertyOperations.getString_def(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95486L, 0x1bdede5178c95495L, "io"), "IN"));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x1bdede5178c95486L, 0x1bdede5178c95495L, "io")));
     tgs.append(" ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.append(" ");

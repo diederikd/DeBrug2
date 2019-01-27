@@ -191,13 +191,13 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
     return createDiagramConnector_0(getEditorContext(), myNode);
   }
   private Color _StyleParameter_QueryFunction_9t39wh_a0a() {
-    if (SPropertyOperations.hasValue(getNode(), MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbfdeL, "type"), "C", "C")) {
+    if (SPropertyOperations.hasEnumValue(getNode(), MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbfdeL, "type"), "C")) {
       return Color.BLACK;
     }
-    if (SPropertyOperations.hasValue(getNode(), MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbfdeL, "type"), "W", "C")) {
+    if (SPropertyOperations.hasEnumValue(getNode(), MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbfdeL, "type"), "W")) {
       return Color.ORANGE;
     }
-    if (SPropertyOperations.hasValue(getNode(), MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbfdeL, "type"), "B", "C")) {
+    if (SPropertyOperations.hasEnumValue(getNode(), MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbfdeL, "type"), "B")) {
       return Color.RED;
     }
     return Color.BLACK;
@@ -235,7 +235,7 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
             public EditorCell compute() {
               return new Transition_graphical_EditorBuilder_a.Inline_Builder_9t39wh_a0.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
             }
-          }, targetNode, "eventtype");
+          }, targetNode, MetaAdapterFactory.getReferenceLink(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x78836771e8cfbf8dL, 0x78836771e8cfbf8eL, "eventtype"));
           CellUtil.setupIDeprecatableStyles(targetNode, cell);
           setSemanticNodeToCells(cell, getNode());
           installDeleteActions_notnull(cell);

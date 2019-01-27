@@ -54,7 +54,7 @@ public final class HideVariablesAction_Intention extends AbstractIntentionDescri
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x5816a80d01b605e4L, 0x5816a80d01b605e5L, "hidevariables"), "" + (true));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x5816a80d01b605e4L, 0x5816a80d01b605e5L, "hidevariables"), true);
     }
     @Override
     public IntentionDescriptor getDescriptor() {

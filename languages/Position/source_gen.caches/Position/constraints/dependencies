@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Position.constraints.AbstractEventType_Constraints" file="AbstractEventType_Constraints.java">
+  <dependency className="Position.constraints.AbstractEventType_Constraints">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Position.constraints.ActionType_Constraints" file="ActionType_Constraints.java">
+  <dependency className="Position.constraints.ActionType_Constraints">
     <classNode dependClassName="Position.behavior.ActionType__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -20,7 +20,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Position.constraints.Action_Constraints" file="Action_Constraints.java">
+  <dependency className="Position.constraints.Action_Constraints">
     <classNode dependClassName="Position.behavior.Action__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
@@ -28,15 +28,12 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.ReferenceScopeProvider" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseScopeProvider" />
-    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Position.constraints.ConstraintsAspectDescriptor" file="ConstraintsAspectDescriptor.java">
+  <dependency className="Position.constraints.ConstraintsAspectDescriptor">
     <classNode dependClassName="Position.constraints.AbstractEventType_Constraints" />
     <classNode dependClassName="Position.constraints.ActionType_Constraints" />
     <classNode dependClassName="Position.constraints.Action_Constraints" />
@@ -57,7 +54,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BaseConstraintsAspectDescriptor" />
   </dependency>
-  <dependency className="Position.constraints.EventInRole_Constraints" file="EventInRole_Constraints.java">
+  <dependency className="Position.constraints.EventInRole_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -79,7 +76,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Position.constraints.ImmunityType_Constraints" file="ImmunityType_Constraints.java">
+  <dependency className="Position.constraints.ImmunityType_Constraints">
     <classNode dependClassName="Position.behavior.StateType__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -97,7 +94,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Position.constraints.ObjectTypeInRole_Constraints" file="ObjectTypeInRole_Constraints.java">
+  <dependency className="Position.constraints.ObjectTypeInRole_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -119,7 +116,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Position.constraints.ObligationType_Constraints" file="ObligationType_Constraints.java">
+  <dependency className="Position.constraints.ObligationType_Constraints">
     <classNode dependClassName="Position.behavior.StateType__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -136,7 +133,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Position.constraints.PowerType_Constraints" file="PowerType_Constraints.java">
+  <dependency className="Position.constraints.PowerType_Constraints">
     <classNode dependClassName="Position.behavior.StateType__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -153,11 +150,11 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Position.constraints.StateType_Constraints" file="StateType_Constraints.java">
+  <dependency className="Position.constraints.StateType_Constraints">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Position.constraints.State_Constraints" file="State_Constraints.java">
+  <dependency className="Position.constraints.State_Constraints">
     <classNode dependClassName="Position.behavior.State__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
@@ -165,15 +162,12 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.ReferenceScopeProvider" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseScopeProvider" />
-    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Position.constraints.SubjectTypeInRole_Constraints" file="SubjectTypeInRole_Constraints.java">
+  <dependency className="Position.constraints.SubjectTypeInRole_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />

@@ -114,7 +114,7 @@ public class QueriesGenerated extends QueryProviderBase {
         return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).equalsIgnoreCase("Id");
       }
     }).first());
-    SPropertyOperations.set(_context.getOutputNode(), MetaAdapterFactory.getProperty(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987d4e09L, 0x432375ab9900b521L, "notnull"), "" + (true));
+    SPropertyOperations.set(_context.getOutputNode(), MetaAdapterFactory.getProperty(0x8941e8e48f174830L, 0xb99182ab0ce69beeL, 0x432375ab987d4e09L, 0x432375ab9900b521L, "notnull"), true);
   }
   private final Map<String, SourceNodesQuery> snsqMethods = new HashMap<String, SourceNodesQuery>();
   {

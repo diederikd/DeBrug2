@@ -4,12 +4,17 @@ package DateTime.structure;
 
 import jetbrains.mps.smodel.runtime.BaseStructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
+import jetbrains.mps.smodel.runtime.ConstrainedStringDatatypeDescriptor;
+import jetbrains.mps.smodel.runtime.ConstrainedStringDatatypeDescriptorImpl;
 import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
+import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
+import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDate = createDescriptorForDate();
@@ -22,6 +27,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptSeconds = createDescriptorForSeconds();
   /*package*/ final ConceptDescriptor myConceptTime = createDescriptorForTime();
   /*package*/ final ConceptDescriptor myConceptYears = createDescriptorForYears();
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypedouble = new ConstrainedStringDatatypeDescriptorImpl(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x1fabc0b15d9b623aL, "double", "r:cd2775e8-7314-4ba5-a646-a6601486577f(DateTime.structure)/2282129504205496890", "-?[0-9]+((\\.|,)[0-9]+)?");
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -62,6 +68,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     }
   }
 
+  @Override
+  public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
+    return Arrays.asList(myCSDatatypedouble);
+  }
+
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
@@ -71,9 +82,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:cd2775e8-7314-4ba5-a646-a6601486577f(DateTime.structure)/7136310554705381571");
     b.version(2);
-    b.prop("dag", 0x630944a3c415c8c4L, "7136310554705381572");
-    b.prop("maand", 0x630944a3c415c8c6L, "7136310554705381574");
-    b.prop("jaar", 0x630944a3c415c8c9L, "7136310554705381577");
+    b.property("dag", 0x630944a3c415c8c4L).type(PrimitiveTypeId.INTEGER).origin("7136310554705381572").done();
+    b.property("maand", 0x630944a3c415c8c6L).type(PrimitiveTypeId.INTEGER).origin("7136310554705381574").done();
+    b.property("jaar", 0x630944a3c415c8c9L).type(PrimitiveTypeId.INTEGER).origin("7136310554705381577").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDateTime() {
@@ -91,7 +102,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("DateTime.structure.Duration", 0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cba0L);
     b.origin("r:cd2775e8-7314-4ba5-a646-a6601486577f(DateTime.structure)/5105771847118671272");
     b.version(2);
-    b.prop("days", 0x46db587183b2cda9L, "5105771847118671273");
+    b.property("days", 0x46db587183b2cda9L).type(MetaIdFactory.dataTypeId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x1fabc0b15d9b623aL)).origin("5105771847118671273").done();
     b.alias("duur in dagen");
     return b.create();
   }
@@ -110,7 +121,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("DateTime.structure.Duration", 0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cba0L);
     b.origin("r:cd2775e8-7314-4ba5-a646-a6601486577f(DateTime.structure)/5105771847118670753");
     b.version(2);
-    b.prop("hours", 0x46db587183b2cba2L, "5105771847118670754");
+    b.property("hours", 0x46db587183b2cba2L).type(MetaIdFactory.dataTypeId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x1fabc0b15d9b623aL)).origin("5105771847118670754").done();
     b.alias("duur in uren");
     return b.create();
   }
@@ -120,7 +131,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("DateTime.structure.Duration", 0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cba0L);
     b.origin("r:cd2775e8-7314-4ba5-a646-a6601486577f(DateTime.structure)/5105771847118671304");
     b.version(2);
-    b.prop("minutes", 0x46db587183b2cdc9L, "5105771847118671305");
+    b.property("minutes", 0x46db587183b2cdc9L).type(MetaIdFactory.dataTypeId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x1fabc0b15d9b623aL)).origin("5105771847118671305").done();
     b.alias("duur in minuten");
     return b.create();
   }
@@ -130,7 +141,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("DateTime.structure.Duration", 0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cba0L);
     b.origin("r:cd2775e8-7314-4ba5-a646-a6601486577f(DateTime.structure)/5105771847118671307");
     b.version(2);
-    b.prop("months", 0x46db587183b2cdccL, "5105771847118671308");
+    b.property("months", 0x46db587183b2cdccL).type(MetaIdFactory.dataTypeId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x1fabc0b15d9b623aL)).origin("5105771847118671308").done();
     b.alias("duur in maanden");
     return b.create();
   }
@@ -140,7 +151,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("DateTime.structure.Duration", 0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cba0L);
     b.origin("r:cd2775e8-7314-4ba5-a646-a6601486577f(DateTime.structure)/5105771847118693154");
     b.version(2);
-    b.prop("seconden", 0x46db587183b32323L, "5105771847118693155");
+    b.property("seconden", 0x46db587183b32323L).type(MetaIdFactory.dataTypeId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x1fabc0b15d9b623aL)).origin("5105771847118693155").done();
     b.alias("duur in seconden");
     return b.create();
   }
@@ -149,9 +160,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:cd2775e8-7314-4ba5-a646-a6601486577f(DateTime.structure)/6256145404860625685");
     b.version(2);
-    b.prop("Uren", 0x56d24b1967e8f316L, "6256145404860625686");
-    b.prop("Minuten", 0x56d24b1967e8f328L, "6256145404860625704");
-    b.prop("Seconden", 0x56d24b1967e8f32bL, "6256145404860625707");
+    b.property("Uren", 0x56d24b1967e8f316L).type(PrimitiveTypeId.INTEGER).origin("6256145404860625686").done();
+    b.property("Minuten", 0x56d24b1967e8f328L).type(PrimitiveTypeId.INTEGER).origin("6256145404860625704").done();
+    b.property("Seconden", 0x56d24b1967e8f32bL).type(PrimitiveTypeId.INTEGER).origin("6256145404860625707").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForYears() {
@@ -160,7 +171,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("DateTime.structure.Duration", 0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x46db587183b2cba0L);
     b.origin("r:cd2775e8-7314-4ba5-a646-a6601486577f(DateTime.structure)/5105771847118693094");
     b.version(2);
-    b.prop("jaren", 0x46db587183b322eaL, "5105771847118693098");
+    b.property("jaren", 0x46db587183b322eaL).type(MetaIdFactory.dataTypeId(0xadd5042bc484352L, 0x832a07af4f0e5913L, 0x1fabc0b15d9b623aL)).origin("5105771847118693098").done();
     b.alias("duur in jaren");
     return b.create();
   }

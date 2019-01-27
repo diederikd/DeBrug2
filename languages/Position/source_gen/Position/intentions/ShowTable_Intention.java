@@ -54,7 +54,7 @@ public final class ShowTable_Intention extends AbstractIntentionDescriptor imple
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b598d2L, 0x25c20d98021cb5ffL, "showTable"), "" + (true));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x1172cef30f894114L, 0xad0ef59cef2bbaa3L, 0x337a9c0102b598d2L, 0x25c20d98021cb5ffL, "showTable"), true);
     }
     @Override
     public IntentionDescriptor getDescriptor() {
